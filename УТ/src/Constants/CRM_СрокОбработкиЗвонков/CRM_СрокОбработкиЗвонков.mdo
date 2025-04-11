@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a706ffc-6ac9-42bd-9a4e-b35fc88c348a">
+  <producedTypes>
+    <managerType typeId="13e4eb59-350b-47d9-9936-e43d75d47fb6" valueTypeId="a7154ca0-7d01-41be-83f8-a62740f734ad"/>
+    <valueManagerType typeId="0e6ddcc8-95fa-41b7-b572-8c25b569e4c5" valueTypeId="b33b69fa-383e-4d74-9036-5d198a2886a0"/>
+    <valueKeyType typeId="987947ea-89df-4111-acaa-228be7d96d82" valueTypeId="18347a06-4e0e-4fbc-a75b-9ac270c7e96e"/>
+  </producedTypes>
+  <name>CRM_СрокОбработкиЗвонков</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM срок обработки звонков</value>
+  </synonym>
+  <type>
+    <types>ValueStorage</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="72ace65c-7abd-41c0-b11e-3269292c03cd">
+  <producedTypes>
+    <objectType typeId="7f54df8b-647f-48c5-a009-dbd72fa617ed" valueTypeId="e493f4af-ba16-4067-b29c-e9903d0eb671"/>
+    <managerType typeId="32e90a77-217d-4f62-b1a6-23bbdc54c9e4" valueTypeId="d0d876ee-2f97-47e6-add2-a54d2b2e921e"/>
+  </producedTypes>
+  <name>CRM_ПараметрыРаспознаванияРечи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры распознавания речи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.CRM_ПараметрыРаспознаванияРечи.Form.ПараметрыРаспознаванияРечи</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="6ff179b5-1348-4825-99fd-7b6b90131926">
+    <name>ПараметрыРаспознаванияРечи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры распознавания</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d6b567e9-e839-4f29-9eb4-dd7c97cc0bc5">
+    <name>АвторизацияСеанса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Авторизация сеанса</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="67085994-89c6-4e8c-8036-e171d044f702">
+    <name>РедактированиеГрамматики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование грамматики</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a67f1f3-d4e1-49eb-8059-4f2a6ebf6a10">
+  <producedTypes>
+    <managerType typeId="7f0dc19b-3b03-49f2-a306-d72d9a5ea2f5" valueTypeId="251e18b4-a224-4d16-a983-0b616179676c"/>
+    <valueManagerType typeId="1b242adc-0831-4fb8-ab33-2954d59e925b" valueTypeId="745dd736-cd61-44b0-80ce-308af5d2dd45"/>
+    <valueKeyType typeId="18d9549a-ef38-46a8-882b-7b45222da8f8" valueTypeId="ab59c887-157c-4e65-9123-1239585f747a"/>
+  </producedTypes>
+  <name>CRM_ИспользоватьСервисыЯзыковыхМоделей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать сервисы языковых моделей</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

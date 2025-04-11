@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c128a61-528d-4d0c-87a8-90ce37ea7a97">
+  <producedTypes>
+    <managerType typeId="bff30a6f-de7c-46f2-8bd0-1cc0e593facb" valueTypeId="bc538db6-7a1b-4f1f-9425-f886cf984a63"/>
+    <valueManagerType typeId="81353c3c-cf14-4463-80a5-bfa3df87e164" valueTypeId="7aa0433a-d1ec-4977-9fcf-db458bdcaba0"/>
+    <valueKeyType typeId="ac2e881e-12a6-4a73-8b1e-a733637f80a8" valueTypeId="8bb4d459-6ec9-4dce-ad9e-0b5e2a03d15e"/>
+  </producedTypes>
+  <name>CRM_ТехподдержкаЛогин</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM техподдержка логин</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>150</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

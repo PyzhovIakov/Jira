@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a849ee83-a1a3-4aa2-80dd-39bc2628ff01">
+  <producedTypes>
+    <objectType typeId="69d0e4a7-e69d-4b6b-bad9-eb07d70333d5" valueTypeId="b3d1998f-dde4-43fa-9c25-b584ae3a5caa"/>
+    <managerType typeId="f4cfb419-8fa7-416b-8251-52154e2835a4" valueTypeId="58856418-df7f-4e04-b2e9-2a901513e564"/>
+  </producedTypes>
+  <name>CRM_АнализКаналовОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ каналов обращений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.CRM_АнализКаналовОбращений.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="f838f566-986c-41c2-aff1-c4ba3e593b27">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

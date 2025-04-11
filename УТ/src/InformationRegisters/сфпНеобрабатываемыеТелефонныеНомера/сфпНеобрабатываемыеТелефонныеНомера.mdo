@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ced64ef8-318f-47e3-887c-32a8d65b1848">
+  <producedTypes>
+    <selectionType typeId="d314e5ca-9e32-47c0-a1fd-bb27e68d6f9f" valueTypeId="66eb0534-eefe-4f1c-bcd9-05ee5e5bbb99"/>
+    <listType typeId="843a685b-490e-43b3-aa57-ba41b9dd1823" valueTypeId="7aee514e-125b-43f7-a2f7-b0cee4ff5e35"/>
+    <managerType typeId="f9564970-a33f-4117-9c3f-35f195b80385" valueTypeId="003fdc0d-14e1-4f64-8ac2-fb71b59fe7f7"/>
+    <recordSetType typeId="cd2a2c3a-7789-4e44-ace9-1ca108a3c1be" valueTypeId="e98fdd02-7cbd-4137-b143-b175b9a67131"/>
+    <recordKeyType typeId="afa391de-8f85-48e7-937a-30346e0a825f" valueTypeId="52a4e5ee-006f-4912-849c-cfe3e677fe4d"/>
+    <recordType typeId="b17fdf3d-bd40-4ee3-8959-fc9d68ef1f39" valueTypeId="9bed35ac-ba9a-4933-a0f2-234648e68fcf"/>
+    <recordManagerType typeId="86333928-beb8-47dc-b5a5-84c6f11f5ce2" valueTypeId="dc7aafca-ad35-46ff-8557-c377f8b76605"/>
+  </producedTypes>
+  <name>сфпНеобрабатываемыеТелефонныеНомера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Необрабатываемые телефонные номера</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Unhandled telephone numbers</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="b28ddf73-ed5f-49e9-9f0f-f41f7aba0b15">
+    <name>НомерТелефонаАбонента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер телефона абонента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Subscriber phone number</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

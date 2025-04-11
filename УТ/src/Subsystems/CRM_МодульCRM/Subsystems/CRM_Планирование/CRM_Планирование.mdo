@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cc87c5b-c0e9-476b-b4dc-5890ac550978">
+  <name>CRM_Планирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM планирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.CRM_СхемаПланаПродаж</content>
+  <content>Catalog.CRM_ПланПродаж</content>
+  <content>Catalog.CRM_КлючиАналитикиПланаПродаж</content>
+  <content>DataProcessor.CRM_ПланированиеПродаж</content>
+  <content>Report.CRM_АнализПлановПродаж</content>
+  <content>ChartOfCharacteristicTypes.CRM_ТипыАналитикПланирования</content>
+  <content>InformationRegister.CRM_ПланПродаж</content>
+  <content>Constant.CRM_ИспользоватьПланированиеПродаж</content>
+  <content>FunctionalOption.CRM_ИспользоватьПланированиеПродаж</content>
+  <content>Role.CRM_ПланированиеПродаж</content>
+  <content>InformationRegister.CRM_АналитикаУчетаПланаПродаж</content>
+  <content>CommonModule.CRM_ПланированиеПродаж</content>
+  <content>InformationRegister.CRM_ОбсужденияПланаПродаж</content>
+  <parentSubsystem>Subsystem.CRM_МодульCRM</parentSubsystem>
+</mdclass:Subsystem>

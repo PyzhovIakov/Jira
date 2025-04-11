@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe719723-9d18-4f42-99df-777171f47ce2">
+  <producedTypes>
+    <objectType typeId="ae15a926-efaf-4628-9a3a-4a12ee62500e" valueTypeId="2b5c5acc-45d7-417f-ba9b-3e2f74f24edf"/>
+    <managerType typeId="4ee2b16a-4b16-4ffc-b869-5493ed8b010e" valueTypeId="01f73907-d018-45bb-8b13-00fe5eb92ffe"/>
+  </producedTypes>
+  <name>CRM_СтраницаПриветствия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приветственное окно 1С:CRM</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.CRM_СтраницаПриветствия.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="d48a4a94-2a7d-43af-9eb5-f7ed2db1f711">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="aa6dd7a9-41dd-4789-ae55-f7144041d857">
+    <name>СтраницаПриветствия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница приветствия</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

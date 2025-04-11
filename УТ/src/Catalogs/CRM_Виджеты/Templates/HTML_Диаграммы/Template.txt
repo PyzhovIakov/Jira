@@ -1,0 +1,1782 @@
+<style>
+  /* ================ */
+  /* PLOTS            */
+
+  .d3-diagram-wrap > * {
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+
+  .d3-diagram-wrap {
+    width: 100%;
+    height: 100%;
+  }
+
+  .plot-selectable > * {
+    cursor: pointer;
+  }
+
+  /* ================ */
+  /* PLOT TOOLTIP     */
+
+  .plot-tooltip {
+    position: absolute;
+    z-index: 9999;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid;
+    border-width: 2px;
+    border-radius: 4px;
+  }
+
+  .plot_tooltip_not-selectable {
+    pointer-events: none;
+  }
+
+  .tooltip-centered-header {
+    text-align: center;
+  }
+
+  .tooltip-header {
+    margin: 0;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  .tooltip-secondary-text-wrap {
+    padding: 2px 0;
+  }
+
+  .tooltip-secondary-text-wrap p {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-style: italic;
+  }
+
+  .tooltip-table-text {
+    font-size: 11px;
+    font-style: italic;
+    margin-bottom: 2px;
+  }
+
+  .tooltip-table-offset-left td {
+    padding-left: 4px;
+  }
+
+  .tooltip-table-offset-bottom {
+    padding-bottom: 4px;
+  }
+
+  .tooltip-ref:hover {
+    cursor: pointer!important;
+  }
+
+  .tooltip-bar-color,
+  .tooltip-dot-color,
+  .legend-bar-color,
+  .legend-dot-color {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  .tooltip-dot-color,
+  .legend-dot-color {
+    border-radius: 50%;
+  }
+
+  .plot-tooltip-transcribe-ref {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    color: #00a0f2;
+  }
+
+  /* ================ */
+  /* PLOT LEGEND      */
+
+  .legend-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+  }
+
+  .legend-item {
+    break-inside: avoid;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+  }
+
+  .legend-label {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+</style>
+<script>
+  document.body.innerHTML += `
+    <!-- PLOT TOOLTIP -->
+
+    <div class="plot-tooltip" style="display: none;">
+      <div class="sales-funnel-type" style="display: none;">
+        <h5 class="tooltip-header"></h5>
+        <div class="tooltip-secondary-text-wrap">
+          <p class="tooltip-value"></p>
+          <p class="tooltip-avg"></p>
+        </div>
+      </div>
+
+      <div class="sales-plan-type" style="display: none;">
+        <h5 class="tooltip-header"></h5>
+        <div class="tooltip-secondary-text-wrap">
+          <p class="tooltip-value"></p>
+        </div>
+      </div>
+
+      <div class="sales-dynamics-type" style="display: none;">
+        <h5 class="tooltip-header"></h5>
+        <div class="tooltip-secondary-text-wrap">
+          <p class="tooltip-value"></p>
+        </div>
+      </div>
+
+      <div class="debtor-indebtedness-type" style="display: none;">
+        <h5 class="tooltip-header"></h5>
+        <div class="tooltip-secondary-text-wrap">
+          <p class="tooltip-value"></p>
+        </div>
+      </div>
+
+      <div class="client-status-dynamics-type" style="display: none;">
+        <h5 class="tooltip-header">Расшифровка периода</h5>
+        <div class="tooltip-secondary-text-wrap">
+          <table style="margin-top: 4px;"></table>
+        </div>
+      </div>
+
+      <div class="labor-costs-of-time-type" style="display: none;">
+        <h5 class="tooltip-header"></h5>
+        <div class="tooltip-secondary-text-wrap">
+          <p class="tooltip-value"></p>
+        </div>
+      </div>
+    </div>
+  `;
+
+  ///////////////////////////
+  // CONSTANTS - COMMON
+
+  const MONEY_CURRENCY = "<CRM::CURRENT_CURRENCY>";
+
+  ///////////////////////////
+  // CONSTANTS - HTML
+
+  const PLOT_TOOLTIP_ELEMENT = document.querySelector('.plot-tooltip');
+  const PLOT_TOOLTIP_SALES_PLAN_ELEMENT = document.querySelector('.sales-plan-type');
+  const PLOT_TOOLTIP_SALES_FUNNEL_ELEMENT = document.querySelector('.sales-funnel-type');
+  const PLOT_TOOLTIP_SALES_DYNAMICS_ELEMENT = document.querySelector('.sales-dynamics-type');
+  const PLOT_TOOLTIP_DEBTOR_INDEBTEDNESS_ELEMENT = document.querySelector('.debtor-indebtedness-type');
+  const PLOT_TOOLTIP_CLIENT_STATUS_DYNAMICS_ELEMENT = document.querySelector('.client-status-dynamics-type');
+  const PLOT_TOOLTIP_LABOR_COSTS_OF_TIME_ELEMENT = document.querySelector('.labor-costs-of-time-type');
+
+  ///////////////////////////
+  // OBJECTS
+
+  const PlotTooltip = {
+    _d3: d3.select(PLOT_TOOLTIP_ELEMENT),
+    _pos: null,
+    _owner: null,
+    _dataPoint: null,
+    _currentType: null,
+    _isVisible: false,
+
+    //-----------------
+    // GETTERS / SETTERS
+
+    set isVisible(value) {
+      if (this._isVisible !== value) {
+        this._isVisible = value;
+        this._d3.style('display', (value ? 'block' : 'none'));
+        this.dataPoint = null;
+      }
+    },
+
+    get isVisible() {
+      return this._d3.style('display') === 'block';
+    },
+
+    set owner(value) {
+      if (this._currentType) {
+        this._currentType.style.display = 'none';
+      }
+
+      if (value instanceof SalesFunnelBarPlot) {
+        this._currentType = PLOT_TOOLTIP_SALES_FUNNEL_ELEMENT;
+      } else if (value instanceof SalesPlanBarPlot) {
+        this._currentType = PLOT_TOOLTIP_SALES_PLAN_ELEMENT;
+      } else if (value instanceof SalesDynamicsPlot) {
+        this._currentType = PLOT_TOOLTIP_SALES_DYNAMICS_ELEMENT;
+      } else if (value instanceof DebtorIndebtednessPlot) {
+        this._currentType = PLOT_TOOLTIP_DEBTOR_INDEBTEDNESS_ELEMENT;
+      } else if (value instanceof ClientStatusDynamicsPlot) {
+        this._currentType = PLOT_TOOLTIP_CLIENT_STATUS_DYNAMICS_ELEMENT;
+      } else if (value instanceof LaborСostsOfTimePlot) {
+        this._currentType = PLOT_TOOLTIP_LABOR_COSTS_OF_TIME_ELEMENT;
+      } else {
+        return;
+      }
+
+      this._d3.classed("plot_tooltip_not-selectable", true);
+
+      this._currentType.style.display = 'block';
+      this._owner = value;
+    },
+
+    get owner() {
+      return this._owner;
+    },
+
+    set dataPoint(value) {
+      if (value !== this._dataPoint) {
+        if (this._dataPoint) {
+          const originalColor = this._dataPoint.style('stroke');
+
+          this._dataPoint.style('fill', originalColor);
+          this._dataPoint.style('stroke', null);
+          this._dataPoint.style('stroke-width', null);
+        }
+
+        this._dataPoint = value;
+
+        if (value) {
+          const fillAttribute = this._dataPoint.attr('fill');
+          const originalColor = d3.color(fillAttribute).rgb();
+          const colorWithOpacity = d3.color(fillAttribute).rgb();
+
+          colorWithOpacity.opacity = 0.5;
+
+          this._dataPoint.style("fill", colorWithOpacity);
+          this._dataPoint.style("stroke", originalColor);
+          this._dataPoint.style("stroke-width", "2");
+        }
+      }
+    },
+
+    get content() {
+      return d3.select(this._currentType);
+    },
+
+    //-----------------
+    // EVENTS
+
+    _event_onMouseLeave: function (event) {
+      const prevTarget = this._dataPoint.node();
+
+      if (prevTarget.contains(event.relatedTarget)) {
+        return;
+      }
+
+      this.isVisible = false;
+    }
+  };
+
+  ///////////////////////////
+  // UTILS FUNCTIONS
+
+  function textWrapOnAxis(text, width) {
+    text.each(function () {
+      const text = d3.select(this);
+      const words = text.text().split(/\s+/).reverse();
+
+      let word;
+      let line = [];
+      let lineNumber = 0;
+      let tspan = text.text(null)
+        .append("tspan")
+        .style("width", width + "px");
+
+      while (word = words.pop()) {
+        line.push(word);
+        tspan.text(line.join(" "));
+        if (tspan.node().getComputedTextLength() > width) {
+          line.pop();
+          tspan.text(line.join(" "));
+          line = [word];
+          tspan = text.append("tspan")
+            .attr("x", text.attr("x"))
+            .attr("dy", "1em")
+            .text(word);
+          lineNumber += 1;
+        }
+      }
+
+      text.attr('dy', parseFloat(text.attr("dy")) + -lineNumber / 2 + "em");
+    });
+  }
+
+  function getForegroundColor(value) {
+    const color = d3.rgb(value);
+    const lumin = (0.2126 * color.r + 0.7152 * color.g + 0.0722 * color.b);
+    return lumin > 180 ? "black" : "white";
+  }
+
+  ///////////////////////////
+  // PLOTS
+
+  class Plot {
+    constructor(widget) {
+      // Plot data.
+      this._data = null;
+
+      // Plot colors scale.
+      this._colorsScale = null;
+
+      // Plot margins.
+      this._margin = null;
+
+      // Plots values format in tooltip and on bar text.
+      this._format = null;
+
+      // Widget which own current plot.
+      this._widget = widget;
+
+      // Animation completion flag.
+      this._animationFlag = false;
+
+      // Plot node.
+      this._node = null;
+
+      // D3 instance of diagram node.
+      this._d3 = null;
+    }
+
+    //-----------------
+    // PUBLIC METHODS
+
+    init(data, colors, margin, options = {}) {
+      return;
+    }
+
+    draw() {
+      return;
+    }
+  }
+
+  class SalesFunnelBarPlot extends Plot {
+    constructor(widget) {
+      super(widget);
+
+      // D3 series for bars.
+      this._series = null;
+
+      // Coordinates scale - x.
+      this._x = null;
+
+      // Coordinates scale - y.
+      this._y = null;
+
+      // Events - bind 'this' context to bar events.
+      this._event_bar_onMouseEnter = this._event_bar_onMouseEnter.bind(this);
+      this._event_bar_onMouseLeave = this._event_bar_onMouseLeave.bind(this);
+    }
+
+    //-----------------
+    // PUBLIC METHODS
+
+    init(data, colors, margin, options = {}) {
+      this._data = data;
+
+      this._margin = {
+        top: 15,
+        left: 75,
+        right: 50,
+        bottom: 15,
+      };
+
+      this._isMoney = options.isMoney;
+
+      this._colorsScale = (() => {
+        const color = d3.scaleOrdinal()
+          .domain(colors.keys())
+          .range(colors.values());
+
+        return (d) => {
+          if (d.key === "Достроенные" || d.key === "Неудачно") {
+            return color(d.key);
+          }
+          return color(d.data[0]);
+        }
+      })();
+
+      this._series = d3.stack()
+        .keys(d3.union(data.map((d) => d.metric)))
+        .value(([, D], key) => {
+          const result = D.get(key);
+          return (result ? result.value : 0)
+        }
+      )(d3.index(data, d => d.stageRef, d => d.metric));
+
+      this._format = (() => {
+        if (this._isMoney) {
+          return d3.formatLocale({
+            decimal: ",",
+            thousands: " ",
+            grouping: [3]
+          }).format(",.2f");
+        }
+
+        return d3.formatLocale({
+          thousands: " ",
+          grouping: [3]
+        }).format(",");
+      })();
+
+      this._node = this._widget._node.querySelector('.d3-diagram-wrap');
+    }
+
+    draw() {
+      this._node.innerHTML = `<svg class="d3-diagram"></svg>`;
+
+      const size = this._node.getBoundingClientRect();
+
+      ////////////////
+      // PLOT (SVG)
+
+      const node_diagram = this._node.querySelector('.d3-diagram');
+
+      const svg = d3.select(node_diagram)
+        .attr("width", size.width)
+        .attr("height", size.height)
+        .attr("viewBox", [0, 0, size.width, size.height])
+        .attr("style", "max-width: 100%; height: 100%;");
+
+      this._d3 = svg;
+
+      ////////////////
+      // PLOT AXIS DESCTIPTION
+
+      const x = d3.scaleLinear()
+        .domain([0, d3.max(this._series, d => d3.max(d, d => d[1]))])
+        .range([this._margin.left, size.width - this._margin.right]);
+
+      const y = d3.scaleBand()
+        .domain(d3.union(this._data.map((d) => d.stageRef)))
+        .range([this._margin.top, size.height - this._margin.bottom - this._margin.top])
+        .padding(0.08);
+
+      this._x = x;
+      this._y = y;
+
+      ////////////////
+      // RENDER - PLOT AXIS - X
+
+      svg.append("g")
+        .attr("transform", `translate(0,${size.height - this._margin.bottom - this._margin.top})`)
+        .call(d3.axisBottom(x).ticks(size.width / 100, "s"))
+        .call(g => g.selectAll(".tick line").clone()
+          .attr("y2", -(size.height - this._margin.top * 2 - this._margin.bottom))
+          .attr("stroke-opacity", 0.25)
+          .attr("stroke-dasharray", "2,2"));
+
+      ////////////////
+      // RENDER - BARS
+
+      const barGroups = svg.append("g")
+        .selectAll()
+        .data(this._series)
+        .join("g")
+        .selectAll("rect")
+        .data(D => D.map(d => (d.key = D.key, d)))
+        .join('g')
+        .attr("class", "bar-element")
+        .on("mouseenter", this._event_bar_onMouseEnter)
+        .on("mouseleave", this._event_bar_onMouseLeave);
+
+      barGroups.append("rect")
+        .attr("fill", d => this._colorsScale(d))
+        .attr("x", d => x(d[0]))
+        .attr("y", d => y(d.data[0]))
+        .attr("height", y.bandwidth())
+        .attr("width", d => x(d[1]) - x(d[0]));
+
+      barGroups.filter((d, i) => (d[1] - d[0]))
+        .append('text')
+        .attr("fill", (d) => {
+          const color = d3.rgb(this._colorsScale(d));
+          const lumin = (0.2126 * color.r + 0.7152 * color.g + 0.0722 * color.b);
+          return lumin > 180 ? "black" : "white";
+        })
+        .attr("font-family", "sans-serif")
+        .attr("font-size", '10px')
+        .attr("x", (d) => x(d[0]) + (x(d[1]) - x(d[0])) / 2)
+        .attr("y", (d) => y(d.data[0]) + y.bandwidth() / 2)
+        .attr('text-anchor', 'middle')
+        .attr("dy", "0.33em")
+        .text(d => this._format((d[1] - d[0])))
+        .each(function (d) {
+          const bbox = this.getBBox();
+          const parentBBox = {
+            x: x(d[0]),
+            width: x(d[1]) - x(d[0])
+          };
+
+          const overlapLeft = (bbox.x >= parentBBox.x);
+          const overlapRight = (bbox.x + bbox.width - 20 <= parentBBox.x + parentBBox.width);
+
+          if (!(overlapLeft && overlapRight)) {
+            d3.select(this).remove();
+          }
+        }
+      );
+
+      ////////////////
+      // RENDER - PLOT AXIS - Y
+
+      svg.append("g")
+        .attr("transform", `translate(${this._margin.left}, 0)`)
+        .call(d3.axisLeft(y).tickSizeOuter(0).tickFormat((d, i) => {
+          const seriesItem = this._series[0][i].data[1];
+          return seriesItem.values().next().value.stageView;
+        }))
+        .selectAll('text').call(textWrapOnAxis, 75);
+    }
+
+    //-----------------
+    // EVENTS
+
+    _event_bar_onMouseEnter(event, d) {
+      PlotTooltip.owner = this;
+      PlotTooltip.isVisible = true;
+
+      ////////////////
+      // TOOLTIP - BAR DATA
+
+      const dataItem = d.data[1].get(d.key);
+      const dataBarColor = this._colorsScale(d);
+      const dataBarGroup = d3.select(event.target);
+      const dataGroupSize = dataBarGroup.node().getBBox();
+
+      PlotTooltip.dataPoint = dataBarGroup.select('rect');
+
+      ////////////////
+      // TOOLTIP - OBJECT
+
+      const tooltip = PlotTooltip._d3;
+      const content = PlotTooltip.content;
+
+      ////////////////
+      // TOOLTIP - HEADER
+
+      const tooltip_header = content.select('.tooltip-header');
+      tooltip_header.html(`<span class="tooltip-bar-color" style='background-color: ${dataBarColor}'></span>${dataItem.stageView} (${d.key})`);
+
+      ////////////////
+      // TOOLTIP - BAR VALUE
+
+      const tooltip_value = content.select('.tooltip-value');
+      tooltip_value.html("Значение: " + this._format((d[1] - d[0])) + (this._isMoney ? `, ${MONEY_CURRENCY}` : ""));
+
+      ////////////////
+      // TOOLTIP - POSITION
+
+      const plotSize = this._node.getBoundingClientRect();
+      const tooltipSize = tooltip.node().getBoundingClientRect();
+
+      const scrollTopPos = document.body.scrollTop;
+      const scrollLeftPos = document.body.scrollLeft;
+
+      const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      let startX = this._x(d[0]) + plotSize.left + dataGroupSize.width / 2 + scrollLeftPos;
+      let startY = this._y(d.data[0]) + plotSize.top + dataGroupSize.height / 2 + scrollTopPos;
+
+      startX = (startX < windowWidth / 2) ? startX : (startX - tooltipSize.width);
+      startY = (startY < windowHeight / 2) ? startY : (startY - tooltipSize.height);
+
+      tooltip.style("left", `${startX}px`);
+      tooltip.style("top", `${startY}px`);
+      tooltip.style("border-color", dataBarColor);
+    }
+
+    _event_bar_onMouseLeave(event) {
+      if (PLOT_TOOLTIP_ELEMENT.contains(event.relatedTarget)) {
+        return;
+      }
+      
+      PlotTooltip.isVisible = false;
+    }
+  }
+
+  class SalesPlanBarPlot extends Plot {
+    constructor(widget) {
+      super(widget);
+
+      // Events - bind 'this' context to bar events.
+      this._event_bar_onMouseEnter = this._event_bar_onMouseEnter.bind(this);
+      this._event_bar_onMouseLeave = this._event_bar_onMouseLeave.bind(this);
+    }
+
+    //-----------------
+    // PUBLIC METHODS
+
+    init(data, colors, margin, options = {}) {
+      this._data = data;
+      this._margin = margin;
+
+      this._isMoney = options.isMoney;
+
+      this._colorsScale = d3.scaleOrdinal(colors)
+        .domain(data.map(function (d) {
+          return d.title;
+        }
+        ));
+
+      this._format = (() => {
+        if (this._isMoney) {
+          return d3.formatLocale({
+            decimal: ",",
+            thousands: " ",
+            grouping: [3]
+          }).format(",.2f");
+        }
+
+        return d3.formatLocale({
+          thousands: " ",
+          grouping: [3]
+        }).format(",");
+      })();
+
+      this._node = this._widget._node.querySelector('.d3-diagram-wrap');
+    }
+
+    draw() {
+      this._node.innerHTML = `<svg class="d3-diagram"></svg>`;
+
+      const size = this._node.getBoundingClientRect();
+
+      ////////////////
+      // PLOT (SVG)
+
+      const node_diagram = this._node.querySelector('.d3-diagram');
+
+      const svg = d3.select(node_diagram)
+        .attr("width", size.width)
+        .attr("height", size.height)
+        .attr("viewBox", [0, 0, size.width, size.height])
+        .attr("style", "max-width: 100%; height: 100%;");
+
+      this._d3 = svg;
+
+      ////////////////
+      // PLOT AXIS DESCTIPTION
+
+      const x = d3.scaleBand()
+        .domain(this._data.map((d) => d.title))
+        .rangeRound([this._margin.left, size.width - this._margin.right])
+        .padding(0.05)
+        .paddingOuter(0.65);
+
+      const y = d3.scaleLinear()
+        .domain([0, d3.max(this._data, (d) => d.value)])
+        .rangeRound([size.height - this._margin.bottom, this._margin.top]);
+
+      this._x = x;
+      this._y = y;
+
+      ////////////////
+      // RENDER - PLOT AXIS - Y
+
+      svg.append("g")
+        .attr("transform", `translate(${this._margin.left},0)`)
+        .call(d3.axisRight(y).ticks(3)
+          .tickSize(size.width - this._margin.left - this._margin.right)
+          .tickFormat(d3.format("~s")))
+        .call(function (g) {
+          return g.select(".domain").remove()
+        })
+        .call(function (g) {
+          return g.selectAll(".tick:not(:first-of-type) line")
+            .attr("stroke-opacity", 0.25)
+            .attr("stroke-dasharray", "2,2")
+        })
+        .call(function (g) {
+          return g.selectAll(".tick text")
+            .attr("x", 4)
+            .attr("dy", -4)
+        }
+      );
+
+      ////////////////
+      // RENDER - BARS
+
+      svg.append("g")
+        .selectAll()
+        .data(this._data)
+        .join("rect")
+        .attr("x", d => x(d.title))
+        .attr("y", d => y(0))
+        .attr("width", x.bandwidth())
+        .attr("fill", d => this._colorsScale(d.title))
+          .on("mouseenter", this._event_bar_onMouseEnter)
+          .on("mouseleave", this._event_bar_onMouseLeave);
+
+      svg.selectAll('rect')
+        .attr("y", d => y(d.value))
+        .attr("height", d => y(0) - y(d.value));
+
+      ////////////////
+      // RENDER - PLOT AXIS - X
+
+      svg.append("g")
+        .attr("transform", `translate(0, ${size.height - this._margin.bottom})`)
+        .call(d3.axisBottom(x).tickSizeOuter(0))
+        .call(function (g) {
+          return g.selectAll("line").remove()
+        })
+        .call(function (g) {
+          return g.selectAll(".tick text")
+            .attr("dy", 3)
+        }
+      );
+    }
+
+    //-----------------
+    // EVENTS
+
+    _event_bar_onMouseEnter(event, d) {
+      PlotTooltip.owner = this;
+      PlotTooltip.isVisible = true;
+
+      ////////////////
+      // TOOLTIP - BAR DATA
+
+      const barColor = this._colorsScale(d.title);
+      const barItem = d3.select(event.target);
+      const barItemSize = barItem.node().getBBox();
+
+      PlotTooltip.dataPoint = barItem;
+
+      ////////////////
+      // TOOLTIP - OBJECT
+
+      const tooltip = PlotTooltip._d3;
+      const content = PlotTooltip.content;
+
+      ////////////////
+      // TOOLTIP - HEADER
+
+      const tooltipHeader = content.select('.tooltip-header');
+      tooltipHeader.html(`<span class="tooltip-bar-color" style='background-color: ${barColor}'></span>` + d.title);
+
+      ////////////////
+      // TOOLTIP - BAR VALUE
+
+      const tooltipBarValue = content.select('.tooltip-value');
+      tooltipBarValue.html("Значение: " + this._format(d.value) + (this._isMoney ? `, ${MONEY_CURRENCY}` : ""));
+
+      ////////////////
+      // TOOLTIP - POSITION
+
+      const plotSize = this._node.getBoundingClientRect();
+      const tooltipSize = tooltip.node().getBoundingClientRect();
+
+      const scrollTopPos = document.body.scrollTop;
+      const scrollLeftPos = document.body.scrollLeft;
+
+      const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      let startX = this._x(d.title) + plotSize.left + barItemSize.width / 2 + scrollLeftPos;
+      let startY = this._y(d.value) + plotSize.top + barItemSize.height / 2 + scrollTopPos;
+
+      startX = (startX < windowWidth / 2) ? startX : (startX - tooltipSize.width);
+      startY = (startY < windowHeight / 2) ? startY : (startY - tooltipSize.height);
+
+      tooltip.style("left", `${startX}px`);
+      tooltip.style("top", `${startY}px`);
+      tooltip.style("border-color", barColor);
+    }
+  
+    _event_bar_onMouseLeave(event) {
+      if (PLOT_TOOLTIP_ELEMENT.contains(event.relatedTarget)) {
+        return;
+      }
+
+      PlotTooltip.isVisible = false;
+    }
+  }
+
+  class SalesDynamicsPlot extends Plot {
+    constructor(widget) {
+      super(widget);
+
+      // Colors scale.
+      this._format = d3.formatLocale({
+        decimal: ",",
+        thousands: " ",
+        grouping: [3]
+      }).format(",.2f");
+
+      // Colors scale.
+      this._colorsScale = () => '#f78375';
+
+      // Absolute width of drawing plot.
+      this._plotBarsWidth = 0;
+
+      // Events - bind 'this' context to bar events.
+      this._event_bar_onMouseEnter = this._event_bar_onMouseEnter.bind(this);
+      this._event_bar_onMouseLeave = this._event_bar_onMouseLeave.bind(this);
+    }
+
+    //-----------------
+    // PUBLIC METHODS
+
+    init(data, colors, margin, options = {}) {
+      this._data = data;
+      this._margin = margin;
+
+      this._node = this._widget._node.querySelector('.d3-diagram-wrap');
+    }
+
+    draw() {
+      this._node.innerHTML = `<svg class="d3-diagram"></svg>`;
+
+      const size = this._node.getBoundingClientRect();
+
+      let marginBottom = this._margin.bottom;
+
+      this._plotBarsWidth = this._data.length * 80;
+      if (this._plotBarsWidth < size.width) {
+        this._plotBarsWidth = size.width;
+      } else {
+        d3.select(this._node)
+          .style("overflow-x", "scroll")
+          .style("overflow-y", "hidden")
+          .style("-webkit-overflow-scrolling", "touch");
+
+        marginBottom = this._margin.bottom + 15;
+      }
+
+      ////////////////
+      // PLOT (SVG)
+
+      const node_diagram = this._node.querySelector('.d3-diagram');
+
+      const svg = d3.select(node_diagram)
+        .attr('width', this._plotBarsWidth)
+        .attr('height', size.height)
+        .attr('style', `height: 100%; width: ${this._plotBarsWidth}px;`);
+
+      this._d3 = svg;
+
+      ////////////////
+      // PLOT AXIS DESCTIPTION
+
+      const x = d3.scaleBand()
+        .domain(this._data.map((d) => d.period))
+        .rangeRound([this._margin.left, this._plotBarsWidth - this._margin.right])
+        .padding(0.1)
+        .paddingOuter(0.65);
+
+      const y = d3.scaleLinear()
+        .domain([0, d3.max(this._data, (d) => d.value)])
+        .rangeRound([size.height - marginBottom, this._margin.top]);
+
+      this._x = x;
+      this._y = y;
+
+      ////////////////
+      // RENDER - PLOT AXIS - X
+
+      svg.append('g')
+        .attr('transform', `translate(0, ${size.height - marginBottom})`)
+        .call(d3.axisBottom(x).tickSizeOuter(0))
+        .call(function (g) {
+          return g.selectAll('line').remove()
+        })
+        .call(function (g) {
+          return g.selectAll('.tick text')
+            .attr('dy', 3)
+      });
+
+      ////////////////
+      // RENDER - PLOT AXIS - Y
+
+      svg.append('g')
+        .attr('transform', `translate(${this._margin.left},0)`)
+        .call(d3.axisRight(y)
+          .tickSize(this._plotBarsWidth - this._margin.left - this._margin.right)
+          .tickFormat(d3.format('~s')))
+        .call(g => g.select('.domain').remove())
+        .call(function (g) {
+          return g.selectAll('.tick:not(:first-of-type) line')
+            .attr('stroke-opacity', 0.25)
+            .attr('stroke-dasharray', "2,2")
+        })
+        .call(function (g) {
+          return g.selectAll('.tick text')
+            .attr('x', 4)
+            .attr('dy', -4)
+        })
+        .call(g => g.append('text')
+          .attr('x', 4)
+          .attr('y', 8)
+          .attr('fill', 'currentColor')
+          .attr('text-anchor', 'start')
+          .text('↑ Продажи')
+      );
+
+      ////////////////
+      // RENDER - BARS
+
+      svg.append('g')
+        .selectAll()
+        .data(this._data)
+        .join('rect')
+          .attr('fill', this._colorsScale())
+          .attr('x', (d) => x(d.period))
+          .attr('y', (d) => y(d.value))
+          .attr('height', (d) => y(0) - y(d.value))
+          .attr('width', x.bandwidth())
+            .on('mouseenter', this._event_bar_onMouseEnter)
+            .on('mouseleave', this._event_bar_onMouseLeave);
+
+    }
+
+    //-----------------
+    // EVENTS
+
+    _event_bar_onMouseEnter(event, d) {
+      PlotTooltip.owner = this;
+      PlotTooltip.isVisible = true;
+
+      ////////////////
+      // TOOLTIP - BAR DATA
+
+      const barColor = this._colorsScale(d.title);
+      const barItem = d3.select(event.target);
+      const barItemSize = barItem.node().getBBox();
+    
+      PlotTooltip.dataPoint = barItem;
+
+      ////////////////
+      // TOOLTIP - OBJECT
+
+      const tooltip = PlotTooltip._d3;
+      const content = PlotTooltip.content;
+
+      ////////////////
+      // TOOLTIP - HEADER
+
+      const tooltipHeader = content.select('.tooltip-header');
+      tooltipHeader.html(`<span class="tooltip-bar-color" style='background-color: ${barColor}'></span>` + d.period);
+
+      ////////////////
+      // TOOLTIP - BAR VALUE
+
+      const tooltipBarValue = content.select('.tooltip-value');
+      tooltipBarValue.html('Значение: ' + this._format(d.value) + `, ${MONEY_CURRENCY}`);
+
+      ////////////////
+      // TOOLTIP - POSITION
+
+      const plotSize = this._node.getBoundingClientRect();
+      const tooltipSize = tooltip.node().getBoundingClientRect();
+
+      const scrollTopPos = document.body.scrollTop;
+      const scrollLeftPos = document.body.scrollLeft;
+
+      const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      let startX = this._x(d.period) + plotSize.left + barItemSize.width / 2 + scrollLeftPos;
+      let startY = this._y(d.value) + plotSize.top + barItemSize.height / 2 + scrollTopPos;
+
+      startX -= this._node.scrollLeft;
+
+      startX = (startX < windowWidth / 2) ? startX : (startX - tooltipSize.width);
+      startY = (startY < windowHeight / 2) ? startY : (startY - tooltipSize.height);
+
+      tooltip.style("left", `${startX}px`);
+      tooltip.style("top", `${startY}px`);
+      tooltip.style("border-color", barColor);
+    }
+
+    _event_bar_onMouseLeave(event) {
+      if (PLOT_TOOLTIP_ELEMENT.contains(event.relatedTarget)) {
+        return;
+      }
+
+      PlotTooltip.isVisible = false;
+    }
+  }
+
+  class DebtorIndebtednessPlot extends Plot {
+    constructor(widget) {
+      super(widget);
+
+      // Callback for tooltip position.
+      this._tooltipLabel = null;
+
+      // Format.
+      this._format = d3.formatLocale({
+        decimal: ",",
+        thousands: " ",
+        grouping: [3]
+      }).format(",.2f");
+
+      // Events - bind 'this' context to pie events.
+      this._event_pie_onMouseEnter = this._event_pie_onMouseEnter.bind(this);
+      this._event_pie_onMouseLeave = this._event_pie_onMouseLeave.bind(this);
+    }
+
+    //-----------------
+    // PUBLIC METHODS
+
+    init(data, colors, margin, options = {}) {
+      this._data = data;
+
+      let colorsRange = [d3.interpolateSpectral(0)];
+      if (data.length > 1) {
+        colorsRange = d3.range(data.length).map(
+          i => d3.interpolateSpectral(i / (data.length - 1)))
+      };
+
+      this._colorsScale = d3.scaleOrdinal()
+        .domain(data.map(d => d.period))
+        .range(colorsRange);
+
+      this._node = this._widget._node.querySelector('.d3-diagram-wrap');
+    }
+
+    draw() {
+      this._node.innerHTML =
+        `<div class="d3-plot-placement" style="height: 100%; width: 70%;">
+          <svg class="d3-diagram"></svg>
+        </div>
+        <div class="d3-plot-legend legend-vertical" style="width: 30%;"></div>`;
+
+      const pieBodyElement = this._node.querySelector(".d3-plot-placement");
+      const size = pieBodyElement.getBoundingClientRect();
+
+      ////////////////
+      // PIE DESCRIPTION
+
+      const pie = d3.pie()
+        .sort(null)
+        .value(d => d.value);
+
+      const arc = d3.arc()
+        .innerRadius(0)
+        .outerRadius(Math.min(size.width, size.height) / 2 - 1);
+
+      const labelRadius = arc.outerRadius()() * 0.6;
+      const tooltipRadius = arc.outerRadius()() * 0.5;
+
+      const arcLabel = d3.arc()
+        .innerRadius(labelRadius)
+        .outerRadius(labelRadius);
+
+      const arcs = pie(this._data);
+
+      this._tooltipLabel = d3.arc()
+        .innerRadius(tooltipRadius)
+        .outerRadius(tooltipRadius);
+
+      ////////////////
+      // PLOT (SVG)
+
+      const node_diagram = this._node.querySelector('.d3-diagram');
+
+      const svg = d3.select(node_diagram)
+        .attr("height", size.height)
+        .attr("viewBox", [-size.width / 2, -size.height / 2, size.width, size.height])
+        .attr("style", "max-width: 100%; height: 100%;");
+
+      this._d3 = svg;
+
+      ////////////////
+      // PLOT arcs
+
+      const arcGroup = svg.append("g")
+        .attr("class", "pie-plot")
+        .selectAll()
+        .data(arcs)
+        .join("g")
+          .attr("class", "arc-element")
+          .attr("fill", d => this._colorsScale(d.data.period))
+            .on("mouseenter", this._event_pie_onMouseEnter)
+            .on("mouseleave", this._event_pie_onMouseLeave);
+
+      arcGroup.append("path")
+        .attr("stroke", "white")
+        .attr("d", arc);
+
+      arcGroup.append("text")
+        .attr("transform", d => `translate(${arcLabel.centroid(d)})`)
+        .attr("fill", (d) => getForegroundColor(this._colorsScale(d.data.period)))
+        .attr("font-family", "sans-serif")
+        .attr("font-size", '10px')
+        .attr("text-anchor", "middle")
+        .attr("stroke", "none")
+          .call(text => text.filter(d => (d.endAngle - d.startAngle) > 0.5)
+            .append("tspan").text(d => d.data.value));
+
+      this._buildPlotLegend();
+    }
+
+    //-----------------
+    // PRIVATE METHODS
+
+    _buildPlotLegend() {
+      const domain = this._colorsScale.domain();
+
+      const legendItems = domain.map((value) => {
+        const color = this._colorsScale(value);
+        return `
+          <div class="legend-item">
+            <div class="legend-bar-color" style="background: ${color}"></div>
+            <div class="legend-label" title=${value}>${value}</div>
+          </div>`;
+      }).join('');
+
+      const legendElement = this._node.querySelector(".d3-plot-legend");
+
+      legendElement.innerHTML =
+        '<h1 style="font-size: 13px; margin: 8px 0;">Обозначения</h1>' + legendItems;
+    }
+
+    //-----------------
+    // EVENTS
+
+    _event_pie_onMouseEnter(event, d) {
+      PlotTooltip.owner = this;
+      PlotTooltip.isVisible = true;
+
+      ////////////////
+      // TOOLTIP - BAR DATA
+
+      const dataItem = d.data;
+      const barColor = this._colorsScale(dataItem.period);
+      const barGroup = d3.select(event.target);
+      const barGroupSize = barGroup.node().getBBox();
+
+      PlotTooltip.dataPoint = barGroup;
+
+      ////////////////
+      // TOOLTIP - OBJECT
+
+      const tooltip = PlotTooltip._d3;
+      const content = PlotTooltip.content;
+
+      ////////////////
+      // TOOLTIP - HEADER
+
+      const tooltipHeader = content.select('.tooltip-header');
+      tooltipHeader.html(`<span class="tooltip-bar-color" style='background-color: ${barColor}'></span>` + dataItem.period);
+
+      ////////////////
+      // TOOLTIP - BAR VALUE
+
+      const tooltipBarValue = content.select('.tooltip-value');
+      tooltipBarValue.html('Значение: ' + this._format(dataItem.value) + `, ${MONEY_CURRENCY}`);
+
+      ////////////////
+      // TOOLTIP - POSITION
+
+      const pie = this._d3.select('.pie-plot');
+      const pieBodyElement = this._node.querySelector(".d3-plot-placement");
+
+      const pieSize = pie.node().getBoundingClientRect();
+      const plotSize = pieBodyElement.getBoundingClientRect();
+      const tooltipSize = tooltip.node().getBoundingClientRect();
+
+      const scrollTopPos = document.body.scrollTop;
+      const scrollLeftPos = document.body.scrollLeft;
+
+      const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      const tooltipOffset = this._tooltipLabel.centroid(d);
+
+      let startX = tooltipOffset[0] + pieSize.width / 2 + plotSize.left + scrollLeftPos;
+      let startY = tooltipOffset[1] + pieSize.height / 2 + plotSize.top + scrollTopPos;
+
+      startX = (startX < windowWidth / 2) ? startX : (startX - tooltipSize.width);
+      startY = (startY < windowHeight / 2) ? startY : (startY - tooltipSize.height);
+
+      tooltip.style("left", `${startX}px`);
+      tooltip.style("top", `${startY}px`);
+      tooltip.style("border-color", barColor);
+    }
+
+    _event_pie_onMouseLeave(event) {
+      if (PLOT_TOOLTIP_ELEMENT.contains(event.relatedTarget)) {
+        return;
+      }
+
+      PlotTooltip.isVisible = false;
+    }
+  }
+
+  class ClientStatusDynamicsPlot extends Plot {
+    constructor(widget) {
+      super(widget);
+
+      // Maximum data value.
+      this._maxY = 0;
+
+      // Vertical line.
+      this._verticalLine = null;
+
+      // Selected circles while interaction.
+      this._selectedCircles = null;
+
+      // Size of data without status.
+      this._plotDotsSize = 0;
+
+      // Absolute width of drawing plot.
+      this._plotDotsWidth = 0;
+
+      // Events - bind 'this' context to dots events.
+      this._event_dot_onMouseEnter = this._event_dot_onMouseEnter.bind(this);
+      this._event_dot_onMouseLeave = this._event_dot_onMouseLeave.bind(this);
+    }
+
+    //-----------------
+    // PUBLIC METHODS
+
+    init(data, colors, margin, options = {}) {
+      this._data = data;
+      this._margin = margin;
+      this._maxY = d3.max(data, d => d.value);
+
+      const statusUnion = d3.union(data.map(d => d.statusRef));
+
+      let colorsRange = [d3.interpolateSpectral(0)];
+      if (statusUnion.size > 1) {
+        colorsRange = d3.range(statusUnion.size).map(
+          i => d3.interpolateSpectral(i / (statusUnion.size - 1)))
+      };
+
+      this._colorsScale = d3.scaleOrdinal()
+        .domain(statusUnion)
+        .range(colorsRange);
+
+      this._plotDotsSize = data.length / statusUnion.size;
+
+      this._node = this._widget._node.querySelector('.d3-diagram-wrap');
+    }
+
+    draw() {
+      this._node.innerHTML =
+        `<div class="d3-plot-placement" style="height: 100%; width: 80%;">
+          <svg class="d3-diagram"></svg>
+        </div>
+        <div class="d3-plot-legend legend-vertical" style="width: 20%;"></div>`;
+
+      const plotBodyElement = this._node.querySelector(".d3-plot-placement");
+      const size = plotBodyElement.getBoundingClientRect();
+
+      let marginBottom = this._margin.bottom;
+
+      this._plotDotsWidth = this._plotDotsSize * 60;
+      if (this._plotDotsWidth < size.width) {
+        this._plotDotsWidth = size.width;
+      } else {
+        d3.select(plotBodyElement)
+          .style("overflow-x", "scroll")
+          .style("overflow-y", "hidden")
+          .style("-webkit-overflow-scrolling", "touch");
+
+        marginBottom = this._margin.bottom + 10;
+      }
+
+      ////////////////
+      // PLOT (SVG)
+
+      const node_diagram = this._node.querySelector('.d3-diagram');
+
+      const svg = d3.select(node_diagram)
+        .attr("width", this._plotDotsWidth)
+        .attr("height", size.height)
+        .attr("style", `height: 100%; width: ${this._plotDotsWidth}px;`);
+
+      this._d3 = svg;
+
+      ////////////////
+      // PLOT AXIS DESCTIPTION
+
+      const x = d3.scaleBand()
+        .domain(d3.union(this._data.map(d => d.period)))
+        .range([this._margin.left, this._plotDotsWidth - this._margin.right]);
+
+      const y = d3.scaleLinear()
+        .domain([0, this._maxY]).nice()
+        .range([size.height - marginBottom, this._margin.top]);
+
+      this._x = x;
+      this._y = y;
+
+      ////////////////
+      // RENDER - PLOT AXIS
+
+      // AXIS - X
+      svg.append("g")
+        .attr("transform", `translate(0,${y(0)})`)
+        .call(d3.axisBottom(x).tickSizeOuter(0));
+
+      // AXIS - Y
+      svg.append("g")
+        .attr("transform", `translate(${this._margin.left},0)`)
+        .call(d3.axisRight(y).ticks(4)
+          .tickSize(this._plotDotsWidth - this._margin.left - this._margin.right)
+          .tickFormat(d3.format("~s")))
+        .call(function (g) {
+          return g.select(".domain").remove()
+        })
+        .call(function (g) {
+          return g.selectAll(".tick:not(:first-of-type) line")
+            .attr("stroke-opacity", 0.25)
+            .attr("stroke-dasharray", "2,2")
+        })
+        .call(function (g) {
+          return g.selectAll(".tick text")
+            .attr("x", 4)
+            .attr("dy", -4)
+        });
+
+      ////////////////
+      // RENDER - VERTICAL LINE
+
+      const verticalLine = svg.append("g")
+        .append("line")
+          .attr("display", "none")
+          .attr("y1", size.height - marginBottom)
+          .attr("y2", this._margin.top)
+          .attr("stroke", "#bfbfbf")
+          .attr("stroke-dasharray", "2,2");
+
+      this._verticalLine = verticalLine;
+
+      ////////////////
+      // RENDER - LINES
+
+      svg.append("g")
+        .selectAll()
+        .data(d3.group(this._data, d => d.statusRef))
+        .join("g")
+          .append("path")
+          .attr("fill", "none")
+          .attr("stroke", d => this._colorsScale(d[0]))
+          .attr("stroke-width", 1.5)
+          .attr("d", d => d3.line()
+            .x(d => x(d.period) + x.bandwidth() / 2)
+            .y(d => y(d.value))(d[1]));
+
+      const valueGroupsByPeriod = d3.group(
+        this._data, d => d.period, d => d.value);
+
+      svg.append("g")
+        .selectAll("circle")
+        .data(this._data)
+        .join("circle")
+          .attr("cx", d => x(d.period) + x.bandwidth() / 2)
+          .attr("cy", d => y(d.value))
+          .attr("r", 3)
+          .attr("fill", d => {
+            const periodMap = valueGroupsByPeriod.get(d.period);
+            if (periodMap.get(d.value).length > 1) {
+              return "#eaeaea";
+            }
+            return this._colorsScale(d.statusRef);
+          })
+          .attr("stroke", function () {
+            const color = d3.color(d3.select(this).attr("fill"));
+            color.opacity = 0.5;
+            return color;
+          })
+          .attr("stroke-width", 0);
+
+      ////////////////
+      // RENDER - EVENT AREAS
+
+      svg.append("g")
+        .selectAll()
+        .data(d3.group(this._data, d => d.period, d => d.value))
+        .join("rect")
+          .attr("x", d => x(d[0]))
+          .attr("y", 0)
+          .attr("height", size.height)
+          .attr("width", x.bandwidth())
+          .attr("opacity", 0)
+            .on("mouseenter", this._event_dot_onMouseEnter)
+            .on("mouseleave", this._event_dot_onMouseLeave);
+
+      this._buildPlotLegend();
+    }
+
+    //-----------------
+    // PRIVATE METHODS
+
+    _buildPlotLegend() {
+      const domain = this._colorsScale.domain();
+
+      const legendItems = domain.map((value) => {
+        const color = this._colorsScale(value);
+        const item = this._data.find((d) => d.statusRef === value);
+
+        return `
+          <div class="legend-item">
+            <div class="legend-dot-color" style="background: ${color}"></div>
+            <div class="legend-label" title=${item.statusView}>${item.statusView}</div>
+          </div>`;
+      }).join('');
+
+      const legendElement = this._node.querySelector(".d3-plot-legend");
+
+      legendElement.innerHTML =
+        '<h1 style="font-size: 13px; margin: 8px 0;">Обозначения</h1>' + legendItems;
+    }
+
+    //-----------------
+    // EVENTS
+
+    _event_dot_onMouseEnter(event, d) {
+      PlotTooltip.owner = this;
+      PlotTooltip.isVisible = true;
+
+      this._verticalLine
+        .attr("display", null)
+        .attr("transform", `translate(${this._x(d[0]) + this._x.bandwidth() / 2},0)`);
+
+      this._selectedCircles = this._d3.selectAll("circle")
+        .filter(d1 => d1.period === d[0] )
+          .attr("stroke-width", 10);
+
+      ////////////////
+      // TOOLTIP - OBJECT
+
+      const tooltip = PlotTooltip._d3;
+      const content = PlotTooltip.content;
+
+      ////////////////
+      // TOOLTIP - VALUES
+
+      const pointItems = Array.from(d[1].entries());
+
+      const tableContent = pointItems.map((elem) => {
+        const dotColor = (elem[1].length > 1 ? "#eaeaea" : this._colorsScale(elem[1][0].statusRef));
+
+        return `
+          <tr class="tooltip-table-offset-left tooltip-table-offset-bottom" align="left" valign="top">
+            <td style="max-width: 16px;">
+              <span class="tooltip-dot-color" style='background-color: ${dotColor}'></span>
+            </td>
+            <td>${elem[1].map(item => `<div class="tooltip-table-text">${item.statusView}</div>`).join('')}</td>
+            <td class="tooltip-table-text" style="margin-left: 4px;">${elem[0]}</td>
+          </tr>`
+      }).join("");
+
+      content.select('table')
+        .html(tableContent);
+
+      ////////////////
+      // TOOLTIP - POSITION
+
+      const plotBodyElement = this._node.querySelector(".d3-plot-placement");
+
+      const plotSize = plotBodyElement.getBoundingClientRect();
+      const tooltipSize = tooltip.node().getBoundingClientRect();
+
+      const scrollTopPos = document.body.scrollTop;
+      const scrollLeftPos = document.body.scrollLeft;
+
+      const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      const tooltipOffset = 10;
+      const plotHalfWidth = tooltipSize.width / 2;
+
+      let startX = this._x(d[0]) + this._x.bandwidth() / 2 + plotSize.left + scrollLeftPos;
+      let startY = plotSize.height / 2 - tooltipSize.height / 2 + plotSize.top + scrollTopPos;
+
+      startX -= plotBodyElement.scrollLeft;
+
+      startX = (startX < windowWidth / 2) ? startX + tooltipOffset : (startX - tooltipSize.width - tooltipOffset);
+
+      tooltip.style("left", `${startX}px`);
+      tooltip.style("top", `${startY}px`);
+      tooltip.style("border-color", "#eaeaea");
+    }
+
+    _event_dot_onMouseLeave(event) {
+      if (this._selectedCircles) {
+        this._selectedCircles
+          .attr("stroke-width", 0);
+      }
+
+      this._verticalLine
+        .attr("display", "none");
+
+      PlotTooltip.isVisible = false;
+    }
+  }
+
+  class LaborСostsOfTimePlot extends Plot {
+    constructor(widget) {
+      super(widget);
+
+      this._timeScale = 1;
+
+      // Events - bind 'this' context to bar events.
+      this._event_bar_onMouseEnter = this._event_bar_onMouseEnter.bind(this);
+      this._event_bar_onMouseLeave = this._event_bar_onMouseLeave.bind(this);
+    }
+
+    //-----------------
+    // PUBLIC METHODS
+
+    init(data, colors, margin, options = {}) {
+      this._data = data;
+      this._margin = margin;
+
+      const maxValueTime = d3.max(this._data, (d) => d.value);
+      if (maxValueTime / 3600 >= 1) {
+        this._timeScale = 3600;
+      } else if (maxValueTime / 60 >= 1) {
+        this._timeScale = 60;
+      }
+
+      let colorsRange = [d3.interpolateSpectral(0)];
+      if (data.length > 1) {
+        colorsRange = d3.range(data.length).map(
+          i => d3.interpolateSpectral(i / (data.length - 1)))
+      };
+
+      this._colorsScale = d3.scaleOrdinal()
+        .domain(data.map(d => d.typeRef))
+        .range(colorsRange);
+
+      this._node = this._widget._node.querySelector('.d3-diagram-wrap');
+    }
+
+    draw() {
+      this._node.innerHTML =
+        `<div class="d3-plot-placement" style="height: 100%; width: 80%;">
+          <svg class="d3-diagram"></svg>
+        </div>
+        <div class="d3-plot-legend legend-vertical" style="width: 20%;"></div>`;
+
+      const plotBodyElement = this._node.querySelector(".d3-plot-placement");
+      const size = plotBodyElement.getBoundingClientRect();
+
+      ////////////////
+      // PLOT (SVG)
+
+      const node_diagram = this._node.querySelector('.d3-diagram');
+
+      const svg = d3.select(node_diagram)
+        .attr('width', size.width)
+        .attr('height', size.height)
+        .attr('style', 'max-width: 100%; height: 100%;');
+
+      this._d3 = svg;
+
+      ////////////////
+      // PLOT AXIS DESCTIPTION
+
+      const x = d3.scaleBand()
+        .domain(this._data.map((d) => d.typeRef))
+        .rangeRound([this._margin.left, size.width - this._margin.right])
+        .padding(0.1)
+        .paddingOuter(0.65);
+
+      const y = d3.scaleLinear()
+        .domain([0, Math.ceil(d3.max(this._data, (d) => d.value / this._timeScale))])
+        .rangeRound([size.height - this._margin.bottom, this._margin.top]).nice();
+
+      this._x = x;
+      this._y = y;
+
+      ////////////////
+      // RENDER - PLOT AXIS - X
+
+      const labels = this._data.map((d) => d.typeView);
+
+      svg.append('g')
+        .attr('transform', `translate(0, ${size.height - this._margin.bottom})`)
+        .call(d3.axisBottom(x).tickSizeOuter(0).tickFormat((d, i) => labels[i]))
+        .call(function (g) {
+          return g.selectAll('line').remove()
+        })
+        .call(function (g) {
+          return g.selectAll('.tick text')
+            .attr('dy', 3)
+      });
+
+      ////////////////
+      // RENDER - PLOT AXIS - Y
+
+      let scaleFormat = '(секунды)';
+      if (this._timeScale === 3600) {
+        scaleFormat = '(часы)';
+      } else if (this._timeScale === 60) {
+        scaleFormat = '(минуты)';
+      }
+
+      svg.append('g')
+        .attr('transform', `translate(${this._margin.left},0)`)
+        .call(d3.axisRight(y)
+          .tickSize(size.width - this._margin.left - this._margin.right))
+        .call(g => g.select('.domain').remove())
+        .call(function (g) {
+          return g.selectAll('.tick:not(:first-of-type) line')
+            .attr('stroke-opacity', 0.25)
+            .attr('stroke-dasharray', "2,2")
+        })
+        .call(function (g) {
+          return g.selectAll('.tick text')
+            .attr('x', 4)
+            .attr('dy', -4)
+        })
+        .call(g => g.append('text')
+          .attr('x', 4)
+          .attr('y', 8)
+          .attr('fill', 'currentColor')
+          .attr('text-anchor', 'start')
+          .text('↑ Трудозатраты ' + scaleFormat)
+      );
+
+      ////////////////
+      // RENDER - BARS
+
+      svg.append('g')
+        .selectAll()
+        .data(this._data)
+        .join('rect')
+          .attr('fill', (d) => this._colorsScale(d.typeRef))
+          .attr('x', (d) => x(d.typeRef))
+          .attr('y', (d) => y(d.value / this._timeScale))
+          .attr('height', (d) => y(0) - y(d.value / this._timeScale))
+          .attr('width', x.bandwidth())
+            .on('mouseenter', this._event_bar_onMouseEnter)
+            .on('mouseleave', this._event_bar_onMouseLeave);
+
+      ////////////////
+      // RENDER - LEGEND
+
+      this._buildPlotLegend();
+    }
+
+    //-----------------
+    // PRIVATE METHODS
+
+    _buildPlotLegend() {
+      const legendItems = this._data.map((value) => {
+        const color = this._colorsScale(value.typeRef);
+
+        return `
+          <div class="legend-item">
+            <div class="legend-bar-color" style="background: ${color}"></div>
+            <div class="legend-label" title=${value.typeView}>${value.typeView}</div>
+          </div>`;
+      }).join('');
+
+      const legendElement = this._node.querySelector(".d3-plot-legend");
+
+      legendElement.innerHTML =
+        '<h1 style="font-size: 13px; margin: 8px 0;">Обозначения</h1>' + legendItems;
+    }
+
+    //-----------------
+    // EVENTS
+
+    _event_bar_onMouseEnter(event, d) {
+      PlotTooltip.owner = this;
+      PlotTooltip.isVisible = true;
+
+      ////////////////
+      // TOOLTIP - BAR DATA
+
+      const barColor = this._colorsScale(d.typeRef);
+      const barItem = d3.select(event.target);
+      const barItemSize = barItem.node().getBBox();
+
+      PlotTooltip.dataPoint = barItem;
+
+      ////////////////
+      // TOOLTIP - OBJECT
+
+      const tooltip = PlotTooltip._d3;
+      const content = PlotTooltip.content;
+
+      ////////////////
+      // TOOLTIP - HEADER
+
+      const tooltipHeader = content.select('.tooltip-header');
+      tooltipHeader.html(`<span class="tooltip-bar-color" style='background-color: ${barColor}'></span>` + d.typeView);
+
+      ////////////////
+      // TOOLTIP - BAR VALUE
+
+      const hours = Math.floor(d.value / 3600);
+      const minutes = Math.floor((d.value % 3600) / 60);
+      const secs = d.value % 60;
+
+      const tooltipBarValue = content.select('.tooltip-value');
+      tooltipBarValue.html("Значение: " + `${hours} ч. ${minutes} м. ${secs} с.`);
+
+      ////////////////
+      // TOOLTIP - POSITION
+
+      const plotSize = this._node.getBoundingClientRect();
+      const tooltipSize = tooltip.node().getBoundingClientRect();
+
+      const scrollTopPos = document.body.scrollTop;
+      const scrollLeftPos = document.body.scrollLeft;
+
+      const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      let startX = this._x(d.typeRef) + plotSize.left + barItemSize.width / 2 + scrollLeftPos;
+      let startY = this._y(d.value / this._timeScale) + plotSize.top + barItemSize.height / 2 + scrollTopPos;
+
+      startX = (startX < windowWidth / 2) ? startX : (startX - tooltipSize.width);
+      startY = (startY < windowHeight / 2) ? startY : (startY - tooltipSize.height);
+
+      tooltip.style("left", `${startX}px`);
+      tooltip.style("top", `${startY}px`);
+      tooltip.style("border-color", barColor);
+    }
+
+    _event_bar_onMouseLeave(event) {
+      if (PLOT_TOOLTIP_ELEMENT.contains(event.relatedTarget)) {
+        return;
+      }
+
+      PlotTooltip.isVisible = false;
+    }
+  }
+
+  ///////////////////////////
+  // EVENTS
+
+  PLOT_TOOLTIP_ELEMENT.addEventListener(
+    'mouseleave', PlotTooltip._event_onMouseLeave.bind(PlotTooltip));
+
+</script>

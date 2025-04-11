@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0a211a1-7b6c-4ba5-9973-ecbc2ad8d3ee">
+  <producedTypes>
+    <refType typeId="b9acafba-b2a1-423f-92e1-92d6e6fe3138" valueTypeId="e73a8575-3128-47ed-ac87-09d9166c878d"/>
+    <listType typeId="98ca7445-76fc-479a-869b-601b8a111d64" valueTypeId="a76236fd-f054-4bd2-9a76-94896bd61a7f"/>
+    <managerType typeId="9ed4b2d6-483a-47e8-ad3f-a18ff6d74ddf" valueTypeId="336715f0-25ee-4c6a-b71b-bd66500a84e0"/>
+  </producedTypes>
+  <name>cbr_ПодпискаДляТриггера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подписка для тригера</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="985e0e6e-2be0-4a57-ad1c-b1ee2da600fe">
+    <name>ПроведениеДокументаЗадача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проведение документа задача</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3a3c939b-ecb8-4136-a283-4dbf6dc0858c">
+    <name>ПриСозданииНаСервереФормыЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>При создании на сервере формы задачи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5d0e6e64-65c9-4501-a0d0-6f0721e69ee0">
+    <name>КнопкаЗакрытияЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кнопка закрытия задачи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3db4bad1-816f-470f-8006-97f214964f8c">
+    <name>ОтветНаВопросПоЗадаче</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответ на вопрос по задаче</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="26f48b98-bbc0-41b2-be4a-8fde30b221e8">
+    <name>СозданиеВопросаПоЗадаче</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание вопроса по задаче</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a33db7d7-e38a-4a09-9d8e-daaacc6952ed">
+    <name>РегламентноеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентное задание</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

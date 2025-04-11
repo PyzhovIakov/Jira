@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bffb7556-78ab-423c-ae68-c9f7b512534f">
+  <name>CRM_ОтсутствиеСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отсутствие сотрудников</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.CRM_ПричиныОтсутствияСотрудника</content>
+  <content>Document.CRM_ОтсутствиеСотрудника</content>
+  <content>Enum.CRM_СостоянияОтсутствияСотрудника</content>
+  <content>InformationRegister.CRM_ОтсутствиеСотрудников</content>
+  <content>InformationRegister.CRM_ВременныйДоступПользователя</content>
+  <content>ScheduledJob.CRM_ЗавершениеОтсутствияСотрудников</content>
+  <content>Catalog.CRM_ОтсутствиеСотрудникаПрисоединенныеФайлы</content>
+  <content>ScheduledJob.CRM_НачалоОтсутствияСотрудников</content>
+  <parentSubsystem>Subsystem.CRM_МодульCRM.Subsystem.CRM_РазделКалендарьПочта</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a14df60-087c-451c-89a9-fd6be5a35ef8">
+  <name>CRM_ИспользоватьОповещенияМессенджер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать оповещения мессенджер</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>CRM use SMS notifications</value>
+  </synonym>
+  <location>Constant.CRM_ИспользоватьОповещенияМессенджер</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

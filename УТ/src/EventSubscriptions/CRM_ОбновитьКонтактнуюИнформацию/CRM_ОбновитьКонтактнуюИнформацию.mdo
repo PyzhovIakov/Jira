@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="980aaa15-0e44-4d7b-9513-239731785e5d">
+  <name>CRM_ОбновитьКонтактнуюИнформацию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновить контактную информацию</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Update contact information</value>
+  </synonym>
+  <source>
+    <types>DefinedType.CRM_ВладелецКонтактнойИнформации</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.УправлениеКонтактнойИнформацией.ОбработкаОбновленияКонтактнойИнформации</handler>
+</mdclass:EventSubscription>

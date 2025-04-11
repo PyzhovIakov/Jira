@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="758bbf70-4560-406e-8ea3-b648b735c6ac">
+  <producedTypes>
+    <managerType typeId="e0514be2-9fe4-4ebd-a1c7-91c8b16a0830" valueTypeId="778574ed-3a47-4297-a281-5b9d0b7af372"/>
+    <valueManagerType typeId="24d58698-f432-4788-aa84-4fe8b8737271" valueTypeId="840a272f-184f-47ea-bddf-40c59ba58887"/>
+    <valueKeyType typeId="1281ff7c-c201-4414-bfa1-3c09a71e2279" valueTypeId="55ed2363-06c0-4294-9d35-7e76e76f7f5e"/>
+  </producedTypes>
+  <name>CRM_УчетнаяЗаписьМессенджераОповещений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учетная запись мессенджера для отправки оповещений по электронной почте</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.CRM_УчетныеЗаписиМессенджеров</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <choiceParameters>
+    <name>Отбор.ТипМессенджера</name>
+    <value xsi:type="core:FixedArrayValue">
+      <values xsi:type="core:StringValue">
+        <value>WhatsApp</value>
+      </values>
+      <values xsi:type="core:StringValue">
+        <value>Telegram</value>
+      </values>
+    </value>
+  </choiceParameters>
+  <choiceParameters>
+    <name>Отбор.ПометкаУдаления</name>
+    <value xsi:type="core:BooleanValue"/>
+  </choiceParameters>
+  <choiceParameters>
+    <name>Отбор.Включена</name>
+    <value xsi:type="core:BooleanValue">
+      <value>true</value>
+    </value>
+  </choiceParameters>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

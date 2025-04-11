@@ -1,0 +1,64 @@
+#messages {
+	background: #ffffff;
+}
+
+.chat__message {
+	background: #F5F5F5;
+}
+
+.chat__item--responder .chat__message,
+.chat__item--responder .chat__favMessage {
+	background: -webkit-gradient(linear, left top, right top, from(#176DBD), to(#00A9FF));
+	background: -webkit-linear-gradient(left, #176DBD 0%, #00A9FF 100%);
+	background: -moz-linear-gradient(left, #176DBD 0%, #00A9FF 100%);
+	background: -o-linear-gradient(left, #176DBD 0%, #00A9FF 100%);
+	background: linear-gradient(90deg, #176DBD 0%, #00A9FF 100%);
+	color: #ffffff;
+}
+
+.action_button,
+.scheduled-message__cancel {
+	color: #00A0F2;
+}
+
+.chat__info {
+	background: rgba(245, 245, 245, 1);
+	color: #2E3238;
+}
+
+.chat__info-link {
+	color: #2E3238;
+}
+
+.chat__item--responder .action_button,
+.chat__item--responder .scheduled-message__cancel,
+.chat__item--responder .chat__message-content,
+.chat__item--responder .chat__message-author,
+.chat__item--responder .chat__message-time {
+	color: #FFFFFF;
+}
+
+.chat__item--responder .chat__message-favNotSelected {
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik00LjkwMDE2IDEwLjIxNjhMNy4wMDAxNiA4Ljk1MDE2TDkuMTAwMTYgMTAuMjMzNUw4LjU1MDE2IDcuODMzNUwxMC40MDAyIDYuMjMzNUw3Ljk2NjgzIDYuMDE2ODNMNy4wMDAxNiAzLjc1MDE2TDYuMDMzNSA2LjAwMDE2TDMuNjAwMTYgNi4yMTY4M0w1LjQ1MDE2IDcuODMzNUw0LjkwMDE2IDEwLjIxNjhaTTIuODgzNSAxMy4wMDAyTDMuOTY2ODMgOC4zMTY4M0wwLjMzMzQ5NiA1LjE2NjgzTDUuMTMzNSA0Ljc1MDE2TDcuMDAwMTYgMC4zMzM0OTZMOC44NjY4MyA0Ljc1MDE2TDEzLjY2NjggNS4xNjY4M0wxMC4wMzM1IDguMzE2ODNMMTEuMTE2OCAxMy4wMDAyTDcuMDAwMTYgMTAuNTE2OEwyLjg4MzUgMTMuMDAwMloiIGZpbGw9IndoaXRlIi8+DQo8L3N2Zz4NCg==");
+}
+
+.chat__item--responder .chat__message-favSelected {
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0yLjg4MzUgMTMuMDAwMkwzLjk2NjgzIDguMzE2ODNMMC4zMzM0OTYgNS4xNjY4M0w1LjEzMzUgNC43NTAxNkw3LjAwMDE2IDAuMzMzNDk2TDguODY2ODMgNC43NTAxNkwxMy42NjY4IDUuMTY2ODNMMTAuMDMzNSA4LjMxNjgzTDExLjExNjggMTMuMDAwMkw3LjAwMDE2IDEwLjUxNjhMMi44ODM1IDEzLjAwMDJaIiBmaWxsPSJ3aGl0ZSIvPg0KPC9zdmc+DQo=");
+}
+
+.chat__item--responder .chat__message-content > a  {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.quoted__message {
+	border-color: #FFFFFF;
+}
+
+#dialog::-webkit-scrollbar-thumb {
+	background-color: #0895E9
+}
+
+#dialog::-webkit-scrollbar-thumb:hover {
+	background-color: #0676b8;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3fbfb087-a93a-497c-aefe-a901c0a8eb4d">
+  <name>CRM_ПерейтиВМенеджерПочты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перейти в менеджер почты</value>
+  </synonym>
+</mdclass:CommonPicture>

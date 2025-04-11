@@ -1,0 +1,17 @@
+<tr>
+  <td>
+    <div class="d3-diagram-wrap" style="display: flex; flex-direction: row;"></div>
+    <script class="executable">
+      var w;
+
+      ((widget) => {
+        const data = '{{CRM:PLOT_DATA}}';
+
+        const plot = new DebtorIndebtednessPlot(widget);
+
+        plot.init(data);
+        plot.draw();
+      })(w);
+    </script>
+  </td>
+</tr>

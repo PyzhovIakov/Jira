@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="172bb7bd-015f-4cf0-8093-11c486b5eed6">
+  <name>CRM_КрасныйМикрофон</name>
+  <synonym>
+    <key>ru</key>
+    <value>Красный микрофон</value>
+  </synonym>
+  <availabilityForChoice>true</availabilityForChoice>
+  <availabilityForAppearance>true</availabilityForAppearance>
+</mdclass:CommonPicture>

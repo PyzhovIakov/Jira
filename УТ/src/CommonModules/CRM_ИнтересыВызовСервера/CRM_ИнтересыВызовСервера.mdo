@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f29f71f-2012-40db-9f3f-359332b0583b">
+  <name>CRM_ИнтересыВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM интересы вызов сервера</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>CRM Leads Server</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6582d93d-d610-4647-a5bf-4b49c9d0b200">
+  <name>CRM_Модуль_ИспользоватьРучныеСкидкиВПродажах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать ручные скидки в продажах (CRM)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Use discount adjustments in sales</value>
+  </synonym>
+  <location>Constant.ИспользоватьРучныеСкидкиВПродажах</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Document.CRM_Интерес.TabularSection.СкидкиНаценки</content>
+  <content>Document.CRM_Интерес.TabularSection.Товары.Attribute.ПроцентРучнойСкидки</content>
+  <content>Document.CRM_Интерес.TabularSection.Товары.Attribute.СуммаРучнойСкидки</content>
+</mdclass:FunctionalOption>

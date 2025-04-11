@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="555fc7d4-ae9c-477d-9e12-d2c656392d43">
+  <producedTypes>
+    <refType typeId="11a85808-023a-4457-b991-e00df629ab0b" valueTypeId="b241df18-58e4-4778-90e4-d3e94e5a21f9"/>
+    <listType typeId="7c7c443f-a8c9-4ecf-aaf3-df87f3c82e7d" valueTypeId="5ed2efb2-25e0-4eec-ac49-9fc687f69518"/>
+    <managerType typeId="070d2080-e24c-4dfc-bfc6-85f3e1f193ec" valueTypeId="adc0c6f1-7d47-4082-add6-2a972d27b32e"/>
+  </producedTypes>
+  <name>CRM_МетодыГруппировкиЗначенийПоказателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Методы группировки значений показателей</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="54d42508-5191-4822-a18c-080285aa8534">
+    <name>Среднее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Среднее</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e7b08156-a058-4de6-a201-3e79c40d2ccf">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

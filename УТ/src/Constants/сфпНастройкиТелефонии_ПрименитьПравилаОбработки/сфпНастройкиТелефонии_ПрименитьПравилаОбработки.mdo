@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17561eaf-af02-4c00-bd77-c786b4cdc19c">
+  <producedTypes>
+    <managerType typeId="25c62928-aaae-4ad2-aea4-ee6d7396e783" valueTypeId="ce7795a8-355c-42d2-af21-6eb20c3b4d59"/>
+    <valueManagerType typeId="719f0028-d39b-4858-80b3-c3695e9c92ee" valueTypeId="e743af01-86e5-4087-99ed-ccdf24139d7d"/>
+    <valueKeyType typeId="f3187ba5-35e6-42e7-bbea-d70ae2ec1c8c" valueTypeId="b795b09e-b295-454b-b115-188d2da771e0"/>
+  </producedTypes>
+  <name>сфпНастройкиТелефонии_ПрименитьПравилаОбработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Применить правила обработки (Телефония)</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

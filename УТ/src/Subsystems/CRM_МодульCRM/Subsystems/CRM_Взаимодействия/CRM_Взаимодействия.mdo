@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8410efe-f307-4c19-9ac3-64af3f0f283f">
+  <name>CRM_Взаимодействия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаимодействия (CRM)</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.CRM_УправлениеЭлектроннойПочтой</content>
+  <content>CommonModule.CRM_УправлениеЭлектроннойПочтойКлиент</content>
+  <content>ScheduledJob.CRM_ПолучениеИОтправкаЭлектронныхПисемПоток1</content>
+  <content>ScheduledJob.CRM_ПолучениеИОтправкаЭлектронныхПисемПоток2</content>
+  <content>ScheduledJob.CRM_ПолучениеИОтправкаЭлектронныхПисемПоток3</content>
+  <content>ScheduledJob.CRM_ПолучениеИОтправкаЭлектронныхПисемПоток4</content>
+  <content>ScheduledJob.CRM_ПолучениеИОтправкаЭлектронныхПисемПоток5</content>
+  <content>ScheduledJob.CRM_ПолучениеИОтправкаЭлектронныхПисемПоток6</content>
+  <content>Constant.CRM_ИспользоватьПотокиДоставкиЭлектроннойПочты</content>
+  <content>FunctionalOption.CRM_ИспользоватьПотокиДоставкиЭлектроннойПочты</content>
+  <content>ScheduledJob.CRM_ПолучениеИОтправкаЭлектронныхПисемПоток7</content>
+  <content>ScheduledJob.CRM_ПолучениеИОтправкаЭлектронныхПисемПоток8</content>
+  <content>ScheduledJob.CRM_ПолучениеИОтправкаЭлектронныхПисемПоток9</content>
+  <content>ScheduledJob.CRM_ПолучениеИОтправкаЭлектронныхПисемПоток10</content>
+  <content>Constant.CRM_НеИспользоватьПотокиДоставкиЭлектроннойПочты</content>
+  <content>FunctionalOption.CRM_НеИспользоватьПотокиДоставкиЭлектроннойПочты</content>
+  <content>CommonModule.CRM_Взаимодействия</content>
+  <content>CommonModule.CRM_ВзаимодействияВызовСервера</content>
+  <content>CommonModule.CRM_ВзаимодействияКлиент</content>
+  <content>CommonModule.CRM_ВзаимодействияКлиентСервер</content>
+  <content>CommonModule.CRM_ВзаимодействияСервер</content>
+  <content>InformationRegister.CRM_ПотокиДоставкиПочты</content>
+  <content>InformationRegister.CRM_ПапкиУчетныхЗаписей</content>
+  <content>InformationRegister.CRM_ПапкиВзаимодействий</content>
+  <content>CommonModule.CRM_РаботаСПочтовымиСообщениямиСлужебный</content>
+  <content>InformationRegister.CRM_ДоверенныеАдресаЭлектроннойПочты</content>
+  <content>InformationRegister.CRM_СкрытыеПисьма</content>
+  <parentSubsystem>Subsystem.CRM_МодульCRM</parentSubsystem>
+</mdclass:Subsystem>

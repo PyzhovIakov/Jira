@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bbd7fccc-dccb-4104-9619-088c4a3cd258">
+  <producedTypes>
+    <refType typeId="88948b21-706c-4f81-ac0a-24d0048cb948" valueTypeId="f22100fa-2828-45c5-ba01-908caeb64f92"/>
+    <listType typeId="85a7c209-cb13-4362-be1c-3673707d0dcd" valueTypeId="ffc255b7-d4a4-4538-97bc-123bcec36b03"/>
+    <managerType typeId="ca011970-9236-4ab7-9811-949e68012b6c" valueTypeId="1cc8bb7e-8931-4a80-8a72-aa45af68630d"/>
+  </producedTypes>
+  <name>cbr_ПредставленияВидовЗадачПоПостановщику</name>
+  <synonym>
+    <key>ru</key>
+    <value>Представления видов задач по постановщику (Джира)</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b0cc7fec-a1f0-4ff8-a04e-68468edd054d">
+    <name>Партнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партнер</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f41660bb-1614-4827-bc54-f4f1eba3875e">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

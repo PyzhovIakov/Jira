@@ -1,0 +1,19 @@
+<tr>
+  <td>
+    <div class="d3-diagram-wrap"></div>
+    <script class="executable">
+      var w;
+
+      ((widget) => {
+        const data = '{{CRM:PLOT_DATA}}';
+        const colors = new Map(Object.entries('{{CRM:PLOT_COLORS}}'));
+        const isMoney = '{{CRM:PLOT_IS_MONEY}}';
+
+        const plot = new SalesFunnelBarPlot(widget);
+
+        plot.init(data, colors, null, { isMoney: isMoney });
+        plot.draw();
+      })(w);
+    </script>
+  </td>
+</tr>

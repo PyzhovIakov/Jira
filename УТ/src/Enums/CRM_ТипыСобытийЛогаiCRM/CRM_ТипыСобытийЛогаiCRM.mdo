@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc19e724-e73e-457f-856f-cdc4c55d8858">
+  <producedTypes>
+    <refType typeId="8a487bb6-4d78-4cd6-a0a9-578b86436851" valueTypeId="e6d608b0-90ea-4449-8d15-b3cd11ab6125"/>
+    <listType typeId="26bf84c7-b25a-4687-ae4c-0cd522285631" valueTypeId="f4659ba2-9aa2-4724-b6b8-1404d379a55e"/>
+    <managerType typeId="084cccb1-f90f-4f56-97cc-6b96b8f33683" valueTypeId="09531bbc-64a1-42e0-95c5-6e384b313693"/>
+  </producedTypes>
+  <name>CRM_ТипыСобытийЛогаiCRM</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы событий лога iCRM (CRM)</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f0d6a582-321e-4e3a-916a-7e8030b39df8">
+    <name>Информация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c1c92ed2-9597-4bc1-95ef-5035d158510f">
+    <name>Предупреждение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предупреждение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="18d70680-9774-4a83-9857-a7cf1710374f">
+    <name>Ошибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

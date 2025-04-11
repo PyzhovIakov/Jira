@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="528e5180-e1ad-45cd-93b1-bc7d9ba51ba5">
+  <producedTypes>
+    <containerType typeId="1530fb85-a413-44aa-afd3-9e780075e86a" valueTypeId="cf9c094f-1d5d-4a9f-8ca0-2771e4977768"/>
+  </producedTypes>
+  <name>ПредметНапоминания</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DefinedTypeExtension">
+    <typeExtension>
+      <types>
+        <state>Extended</state>
+        <type>DocumentRef.cbr_Задача</type>
+      </types>
+    </typeExtension>
+  </extension>
+  <type/>
+</mdclass:DefinedType>

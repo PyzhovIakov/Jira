@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d6f34a7-ee0d-4b20-9a28-6bdde43d44c0">
+  <name>CRM_СистемаЛицензированияСЛК_СТАНДАРТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Система лицензирования (CRM СТАНДАРТ)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>The licensing system (CRM CORP)</value>
+  </synonym>
+  <comment>1AAD</comment>
+  <content>SessionParameter.слкМенеджерЗащиты</content>
+  <content>Role.слкУправлениеМенеджеромЛицензийСЛК</content>
+  <content>CommonTemplate.CRM_ФайлДанныхОРСР_СТАНДАРТ</content>
+  <parentSubsystem>Subsystem.CRM_МодульCRM.Subsystem.CRM_Лицензирование</parentSubsystem>
+</mdclass:Subsystem>

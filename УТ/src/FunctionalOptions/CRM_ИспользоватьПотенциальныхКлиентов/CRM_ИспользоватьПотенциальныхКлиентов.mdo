@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b6b9a1d6-e2fa-4f69-be6d-5e24d2439c50">
+  <name>CRM_ИспользоватьПотенциальныхКлиентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать потенциальных клиентов</value>
+  </synonym>
+  <location>Constant.CRM_ИспользоватьПотенциальныхКлиентов</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.CRM_ПотенциальныеКлиенты</content>
+  <content>DataProcessor.CRM_ЗагрузкаДанныхИзФайла.Command.ИмпортПотенциальныхКлиентов</content>
+  <content>InformationRegister.CRM_СвязанныеПотенциальныеКлиенты</content>
+</mdclass:FunctionalOption>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1521ea69-df68-4908-835d-a2558f846340">
+  <name>CRM_УТ_ПолучениеОбновленийПрограммы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получение обновлений программы (УТиВсК)</value>
+  </synonym>
+  <comment>АПК:1032 не проверять на орфографию синоним</comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

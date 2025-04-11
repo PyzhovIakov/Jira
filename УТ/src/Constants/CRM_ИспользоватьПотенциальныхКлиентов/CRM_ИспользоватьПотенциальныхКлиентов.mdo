@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="440a7494-6939-465f-a311-105933947e54">
+  <producedTypes>
+    <managerType typeId="bba6d761-6ce7-4e2a-87e2-6e98971f415e" valueTypeId="c7dc3c3a-a6c0-4d96-aab3-9d47ed27c0c7"/>
+    <valueManagerType typeId="6bbbb315-c2de-4580-a504-7b8c437ab599" valueTypeId="f9335811-3d0d-4a39-b2b9-2cb3c0c5e6ac"/>
+    <valueKeyType typeId="a0c5f797-6d53-416d-9d9b-163b1fba2159" valueTypeId="402f309f-56ac-463c-8e54-fd0a7fb3fd1e"/>
+  </producedTypes>
+  <name>CRM_ИспользоватьПотенциальныхКлиентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать потенциальных клиентов</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

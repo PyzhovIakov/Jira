@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9cc579a8-b53b-4aaf-8dfb-10192bca9604">
+  <name>CRM_НачалоОтсутствияСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начало отсутствия сотрудников</value>
+  </synonym>
+  <methodName>CommonModule.CRM_МетодыМодулейМенеджеровРегистров.CRM_НачалоОтсутствияСотрудника</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

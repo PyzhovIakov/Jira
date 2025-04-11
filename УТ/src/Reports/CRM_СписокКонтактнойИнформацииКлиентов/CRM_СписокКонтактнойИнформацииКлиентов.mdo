@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8805a876-e893-4b6c-bbe4-4f445c081320">
+  <producedTypes>
+    <objectType typeId="f2e306c3-0eb6-4109-b655-c60ac1bbb5c2" valueTypeId="1920ed91-a591-4f2a-be8c-2005e114d374"/>
+    <managerType typeId="73d1c0c3-dc0d-4ba6-b630-2928c54c427d" valueTypeId="11364843-be4a-415a-a644-1912ec7a0ff3"/>
+  </producedTypes>
+  <name>CRM_СписокКонтактнойИнформацииКлиентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список контактной информации клиентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.CRM_СписокКонтактнойИнформацииКлиентов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="04fe8c01-a752-49c8-8ae3-3d06f279dadd">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

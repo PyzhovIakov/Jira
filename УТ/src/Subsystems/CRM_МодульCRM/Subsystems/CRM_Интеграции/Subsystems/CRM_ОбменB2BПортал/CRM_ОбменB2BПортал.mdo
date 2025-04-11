@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07cf3f2b-b900-4982-ad54-ffdd82e0f4df">
+  <name>CRM_ОбменB2BПортал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с B2B порталом</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>ExchangePlan.CRM_ОбменB2BПортал</content>
+  <content>EventSubscription.CRM_РегистрацияИзмененийДляОбменаB2BПортал</content>
+  <content>CommonModule.CRM_ОбменB2BПортал</content>
+  <content>Constant.CRM_ИспользоватьОбменB2BПортал</content>
+  <content>FunctionalOption.CRM_ИспользоватьОбменB2BПортал</content>
+  <content>HTTPService.CRM_ОбменB2BПортал</content>
+  <content>InformationRegister.CRM_НастройкиОбменаСB2BПорталом</content>
+  <content>Catalog.CRM_СтатусыЗаявок</content>
+  <content>EventSubscription.CRM_ПодготовкаДокументовДляОбменаB2BПортал</content>
+  <content>EventSubscription.CRM_ПодготовкаСправочниковДляОбменаB2BПортал</content>
+  <content>ScheduledJob.CRM_ОбменB2BПортал</content>
+  <content>Enum.CRM_СтатусыПользователейB2BПортала</content>
+  <content>DataProcessor.CRM_РаботаСМессенджеромB2BПортал</content>
+  <parentSubsystem>Subsystem.CRM_МодульCRM.Subsystem.CRM_Интеграции</parentSubsystem>
+</mdclass:Subsystem>

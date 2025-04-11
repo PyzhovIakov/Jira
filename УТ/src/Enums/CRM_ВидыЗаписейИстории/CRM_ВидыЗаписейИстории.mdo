@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b2500c0-ccfe-4fd9-b389-a0a342530cd1">
+  <producedTypes>
+    <refType typeId="1b12f3f6-65d9-4af3-a6ca-34018a868f35" valueTypeId="87e23770-47f9-44b4-946b-e06fab108caa"/>
+    <listType typeId="b2c53128-217d-4e0e-a9c7-b705425271a6" valueTypeId="95e62989-af72-460b-85f2-f054598596a5"/>
+    <managerType typeId="a4d01566-fac9-4140-9937-7ba7f5b4e2c1" valueTypeId="49ac77e0-7c8b-4678-bfcf-82494a4c1049"/>
+  </producedTypes>
+  <name>CRM_ВидыЗаписейИстории</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM виды записей истории</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f75c6826-d407-422c-b005-9bdf48b13bd9">
+    <name>ЗаполнениеРеквизита</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнение реквизита</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6d2962b0-37e3-45a4-a9b6-b73535889a93">
+    <name>ОчисткаРеквизита</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очистка реквизита</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="63b8ce5c-004d-4215-8fa2-9796a267c8b9">
+    <name>ИзменениеРеквизита</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение реквизита</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6f6dbc78-1ce3-4eb3-a824-0300233073ae">
+    <name>ДобавлениеЗначенияВСписок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавление значения в список</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a02ea367-562a-4c7d-a9e6-f4e42c4a001a">
+    <name>УдалениеЗначенияИзСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаление значения из списка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9a5ee7ff-6d5d-4a4a-9884-14b8427fff15">
+    <name>ИзменениеЗначенияВСписке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение значения в списке</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="972bc177-fb7e-4e37-8ecf-77fd68b386ef">
+  <producedTypes>
+    <managerType typeId="2b34616d-47c7-40b9-a571-5548b6918073" valueTypeId="73d1e92f-b373-43ba-956a-ecd290976da2"/>
+    <valueManagerType typeId="44c05914-c73b-4db6-97c3-07c3c170d966" valueTypeId="8a7a3c1a-dca5-4009-a8d0-899e76370122"/>
+    <valueKeyType typeId="dd12f29b-5b18-412d-bc17-1b17331fb2e4" valueTypeId="4195133a-899e-4845-8120-cce9199e2347"/>
+  </producedTypes>
+  <name>CRM_ИспользоватьСтатусыОтветовБазыЗнаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать статусы ответов базы знаний</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

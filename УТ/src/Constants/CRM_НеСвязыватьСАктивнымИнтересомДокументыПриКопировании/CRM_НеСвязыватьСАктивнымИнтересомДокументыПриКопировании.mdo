@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a6ceb18-116d-4925-965e-e25de2fa2e5a">
+  <producedTypes>
+    <managerType typeId="3545b14c-c8dd-4df7-b303-945126599f07" valueTypeId="d9378d77-b400-46be-b475-041a1d464e2d"/>
+    <valueManagerType typeId="46b223c4-eb2d-4798-babd-33473bc80509" valueTypeId="97db67c4-3ac7-46c5-8286-8eaab9f48f52"/>
+    <valueKeyType typeId="bed590ac-0e70-4db5-ab2c-5309ed0eea74" valueTypeId="3fd8f905-45f3-4509-aadd-f6b606839d5b"/>
+  </producedTypes>
+  <name>CRM_НеСвязыватьСАктивнымИнтересомДокументыПриКопировании</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM не связывать с активным интересом документы при копировании</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

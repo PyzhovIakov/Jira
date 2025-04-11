@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b6fa1ac9-7626-40ee-82a8-b36600717aaf">
+  <name>CRM_Модуль_ИспользоватьПодразделения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать подразделения (CRM)</value>
+  </synonym>
+  <location>Constant.ИспользоватьПодразделения</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.CRM_КлючиАналитикиПланаПродаж.Attribute.Подразделение</content>
+  <content>Catalog.CRM_ПланПродаж.Attribute.ПодразделениеВерхнегоУровня</content>
+  <content>Catalog.CRM_Решения.Attribute.Подразделение</content>
+  <content>Catalog.CRM_СостоянияИнтересов.Attribute.Подразделение</content>
+  <content>Catalog.CRM_СостоянияИнтересов.TabularSection.Подразделения.Attribute.Подразделение</content>
+  <content>Catalog.CRM_СостоянияИнтересов.TabularSection.Подразделения</content>
+  <content>Catalog.CRM_ШаблоныПроектов.Attribute.CRM_Подразделение</content>
+  <content>Catalog.МаркетинговыеМероприятия.Attribute.CRM_Подразделение</content>
+  <content>Catalog.Проекты.Attribute.CRM_Подразделение</content>
+  <content>Document.CRM_Взаимодействие.Attribute.Подразделение</content>
+  <content>Document.CRM_Интерес.Attribute.Подразделение</content>
+  <content>Document.CRM_ОтчетОРаботе.Attribute.Подразделение</content>
+  <content>Document.CRM_ОтчетОРаботе.TabularSection.СтрокиОтчета.Attribute.ПодразделениеРабот</content>
+  <content>Document.CRM_ПланированиеВоронкиПродаж.Attribute.Подразделение</content>
+  <content>Document.CRM_РассылкаЭлектронныхПисем.Attribute.Подразделение</content>
+  <content>Document.CRM_РассылкаЭлектронныхПисем.Attribute.ПодразделениеЗаказчик</content>
+  <content>Document.CRM_Телемаркетинг.Attribute.Подразделение</content>
+  <content>Document.CRM_Телемаркетинг.Attribute.ПодразделениеЗаказчик</content>
+  <content>Document.CRM_Телемаркетинг.TabularSection.Участники.Attribute.ПодразделениеЗаказчик</content>
+  <content>Document.CRM_УстановкаИспользуемыхПоказателей.Attribute.Подразделение</content>
+  <content>Document.CRM_УстановкаИспользуемыхПоказателей.TabularSection.ИспользуемыеПоказатели.Attribute.Подразделение</content>
+  <content>Document.CRM_УстановкаИспользуемыхПоказателей.TabularSection.Менеджеры.Attribute.Подразделение</content>
+  <content>Document.CRM_ШаблонЭтапаКалендарногоПлана.Attribute.Подразделение</content>
+  <content>Document.CRM_ЭтапКалендарногоПлана.Attribute.Подразделение</content>
+  <content>DataProcessor.CRM_ПланированиеПроектов.TabularSection.Планы.Attribute.Подразделение</content>
+  <content>DataProcessor.CRM_ПланированиеПроектов.TabularSection.ПланыСвернутые.Attribute.Подразделение</content>
+  <content>InformationRegister.CRM_АналитикаУчетаПланаПродаж.Dimension.Подразделение</content>
+  <content>InformationRegister.CRM_ВесаПоказателейПотенциала.Dimension.Подразделение</content>
+  <content>InformationRegister.CRM_ЖурналДокументов.Resource.Подразделение</content>
+  <content>InformationRegister.CRM_ЗначенияКлючевыхПоказателей.Dimension.Подразделение</content>
+  <content>InformationRegister.CRM_ИнтересыНаКонтроле.Resource.Подразделение</content>
+  <content>InformationRegister.CRM_ИспользуемыеКлючевыеПоказатели.Dimension.Подразделение</content>
+  <content>InformationRegister.CRM_НастройкиАвтомотиватора.Dimension.Подразделение</content>
+  <content>InformationRegister.CRM_НастройкиАвтомотиватора.Command.НастройкиАвтомотиватора</content>
+  <content>InformationRegister.CRM_ПланыПроектов.Attribute.Подразделение</content>
+  <content>InformationRegister.CRM_Потенциалы.Dimension.Подразделение</content>
+  <content>InformationRegister.CRM_РабочееВремяПользователей.Dimension.Подразделение</content>
+  <content>InformationRegister.CRM_РасширенныйДоступПоПодразделениям.Dimension.Подразделение</content>
+  <content>InformationRegister.CRM_СобытияКалендаря.Resource.Подразделение</content>
+  <content>InformationRegister.CRM_СостоянияВоронкиПродаж.Resource.Подразделение</content>
+  <content>AccumulationRegister.CRM_Предложения.Dimension.Подразделение</content>
+  <content>AccumulationRegister.CRM_РабочееВремя.Dimension.ПодразделениеРабот</content>
+  <content>BusinessProcess.CRM_БизнесПроцесс.Attribute.Подразделение</content>
+  <content>InformationRegister.CRM_ОбъектыАРМ.Resource.Подразделение</content>
+</mdclass:FunctionalOption>

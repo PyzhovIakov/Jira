@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aeace05a-aca8-4cf7-ae2a-10b71fd1aaea">
+  <producedTypes>
+    <selectionType typeId="8365515f-a2d9-4ffe-b47d-362457649aa4" valueTypeId="64a3ab2f-b76a-4b38-be9a-43964da65c2c"/>
+    <listType typeId="9e2e9ccb-b397-4d45-92d8-61c247c5c730" valueTypeId="708b4e71-2443-41df-8d26-1e76cfd0a724"/>
+    <managerType typeId="27c8f917-2ba6-4802-8fde-5f3ce677e0fc" valueTypeId="6108be36-ce97-4cd2-a38c-eec357c41840"/>
+    <recordSetType typeId="b2eb219b-87d4-4c41-89e1-cc77454f210a" valueTypeId="0a466d58-850d-464c-8e20-9936ed61bff8"/>
+    <recordKeyType typeId="ef63c888-3fdb-4db7-be1e-92be50b0f579" valueTypeId="82fa73d9-da3f-40cc-b8d5-b72bc3069d05"/>
+    <recordType typeId="de979c33-9fe4-48b2-8d61-0e1240b599c6" valueTypeId="08f7af88-cbb1-4591-8edb-c4e5ccf47abb"/>
+    <recordManagerType typeId="a3091095-3fe4-4c0f-a07f-73a721eea189" valueTypeId="93f1449b-31d5-4cc2-a47a-ca3a505a90b1"/>
+  </producedTypes>
+  <name>CRM_ОбъектыОбновленияАналитики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты обновления аналитики</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="59dbfc44-b2d5-4a3c-97d6-e3c00fbd0468">
+    <name>Источник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ИсточникиПолученияЛидов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="73200454-4bb9-41c0-98ac-ea0b1ccd6344">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.CRM_Заявка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

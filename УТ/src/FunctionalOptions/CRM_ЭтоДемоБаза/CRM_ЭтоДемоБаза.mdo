@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c3f045c-8d19-4e06-b0ac-5c1fd2b2cce5">
+  <name>CRM_ЭтоДемоБаза</name>
+  <synonym>
+    <key>ru</key>
+    <value>Это демо база</value>
+  </synonym>
+  <location>Constant.CRM_ЭтоДемоБаза</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

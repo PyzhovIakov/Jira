@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="161f781f-d916-4278-9a2a-5f60ee7200c7">
+  <name>КонтрольНеразделенныхОбъектовПриЗаписиCRM</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль неразделенных объектов при записи CRM</value>
+  </synonym>
+  <source>
+    <types>ConstantValueManager.сфпПланНумерацииАдресРеестра</types>
+    <types>ConstantValueManager.CRM_ОсновнойВариантПоставки</types>
+    <types>ConstantValueManager.сфпИспользоватьСофтФон</types>
+    <types>ConstantValueManager.CRM_ПериодОчисткиВложенийЭлектронныхПисем</types>
+    <types>ConstantValueManager.сфпИспользуемаяВерсияСофтФон</types>
+    <types>ConstantValueManager.сфпПланНумерацииФайлыРеестра</types>
+    <types>ConstantValueManager.сфпПланНумерацииАвтоопределениеБизнесРегиона</types>
+    <types>ConstantValueManager.CRM_ИспользоватьКомандуПанельСофтФон</types>
+    <types>CatalogObject.CRM_ВысокочастотныеФИО</types>
+    <types>ConstantValueManager.CRM_ОчищатьВложенияЭлектронныхПисем</types>
+    <types>ConstantValueManager.CRM_ОчищатьТолькоВложенияВходящихПисем</types>
+    <types>ConstantValueManager.сфпОбщиеНастройкиТелефонии</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РаботаВМоделиСервисаБСП.КонтрольНеразделенныхОбъектовПриЗаписи</handler>
+</mdclass:EventSubscription>

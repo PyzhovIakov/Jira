@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9df28fe8-3fb9-4ca8-aab6-debf536ca104">
+  <producedTypes>
+    <selectionType typeId="b5665570-267a-46fc-a7f2-0918f5237468" valueTypeId="547e24d4-ad6b-46ae-95d6-5e5566b3b17b"/>
+    <listType typeId="b9550c93-9a99-480c-937c-ef421ac009f4" valueTypeId="3b444073-69b7-4d87-874f-efb79e61e1a3"/>
+    <managerType typeId="2bc76484-e5c2-4aae-8b1f-c468d6bb6e02" valueTypeId="f88e969e-0602-46eb-8bf4-939a56794861"/>
+    <recordSetType typeId="d3c76c22-760a-4c73-b2d2-745b78af4687" valueTypeId="7aa5fbdc-dc92-4c04-b077-021aff3cdef3"/>
+    <recordKeyType typeId="f7a06fbe-ad31-46c6-a212-6a1305a9322b" valueTypeId="5861dba7-8c85-4959-929f-3da1bdd9e809"/>
+    <recordType typeId="f8ade041-2b7e-47bf-bdab-f43f95f93750" valueTypeId="d6fe320f-6cb2-48cb-8131-e81d3042dea7"/>
+    <recordManagerType typeId="c32e02a7-7087-4354-ae29-d5bfbe85ba17" valueTypeId="6e0ea1cf-8e60-41c3-819e-611714585ccf"/>
+  </producedTypes>
+  <name>ПодключенияКБанкамBankFeeds</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подключения к банкам BankFeeds</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПодключенияКБанкамBankFeeds.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПодключенияКБанкамBankFeeds.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Данные необходимы для определения, что банк подключен к провайдеру, идентификаторы будут использоваться для заполнения запросов провайдеру</value>
+  </explanation>
+  <resources uuid="6a82d2a5-449a-436e-9588-88621d79e4e0">
+    <name>ИдентификаторОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор клиента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>идентификатор организации у провайдера</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="e3c4938c-3c18-49b6-a1c8-82b1fc812101">
+    <name>ИдентификаторПровайдера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор провайдера</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>идентификатор банка у провайдера</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="5ccb226c-a605-4a60-b6e1-1757a7667c37">
+    <name>ФорматПлатежаПоIBAN</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формат платежа по IBAN</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ФорматыПлатежейBankFeeds</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>SERA – такой формат будет там указываться, в будущем нужно будет поддержать остальные форматы (еще 14 форматов).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d61fd0a3-8636-4496-ba2b-6750a4c252a7">
+    <name>ФорматПлатежаПоBBAN</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формат платежа по BBAN</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ФорматыПлатежейBankFeeds</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3cc5f0b7-7c01-46e6-8f31-f7d1d12bf677">
+    <name>ИдентификаторСоединения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор соединения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор соединения у провайдера. Возникает, когда пользователь подключает банк к провайдеру. </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="33ba810d-973d-491e-b7a7-fe3dc86b02a7">
+    <name>ДатаПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создано</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>дата подключения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="37f98fe9-6bcb-48a9-870a-7df931820e37">
+    <name>НастройкиСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Провайдер сервиса</value>
+    </synonym>
+    <type>
+      <types>DefinedType.НастройкиПодключeнияКСервисамBankFeeds</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Настройки подключения к провайдерам банковской системы – настройки провайдера</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="edc8e092-32ad-4cd2-aa50-2f031d9fdac1">
+    <name>email</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтвержденный email</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="e8af337e-358a-4e7d-bba7-5ce587079844">
+    <name>НаименованиеПровайдера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование провайдера</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="b3175657-160e-4dac-aac3-14501374a3fc">
+    <name>РеквизитыРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизиты регистрации</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="35ca2c69-8e2e-49e6-948b-14c3736d85c7">
+    <name>ИдентификаторЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор записи</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="c692bbfc-0179-4948-baaf-62cc7bf63a73">
+    <name>ИдентификаторСогласия</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="a3e7bfb2-d17b-4d3a-adb6-4fdad4653f7b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="84a78206-ba7b-4dbd-8a30-e6b5f3c46df1">
+    <name>Банк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторБанков</types>
+      <types>CatalogRef.БанковскиеСчетаОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>банк, к которому была подключена организация через провайдера</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="fe18e7b0-788c-4565-90a8-08950ddcc517">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c1308f99-0852-44fd-bc1f-4d00020ef315">
+    <name>ФормаПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подключения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="03b05795-f6e7-45c3-b89a-4c1554d88798">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

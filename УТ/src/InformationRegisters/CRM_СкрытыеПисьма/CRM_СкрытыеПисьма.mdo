@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4cef6a67-7cc4-48e6-b43b-aa7b9f259cd0">
+  <producedTypes>
+    <selectionType typeId="cf3d248d-f9a3-473c-a7fc-eea23229deae" valueTypeId="6db1fad3-9f83-4433-975c-a2be1a10658f"/>
+    <listType typeId="f8f20fa3-96f8-49c9-a77e-0d3c63687873" valueTypeId="e13ba605-2be6-4ee4-a8a1-dd74b42fa5bc"/>
+    <managerType typeId="5e444ca7-d6d2-427c-b573-851aa3a5b01b" valueTypeId="a512bc1c-7340-4f41-a64c-56e20982b1d8"/>
+    <recordSetType typeId="76133f97-d317-49d9-81da-eca16a60e52c" valueTypeId="9d55b83e-4e01-4996-a80e-bd374244257c"/>
+    <recordKeyType typeId="217b7f2d-5007-4caa-8ae2-094ce8e1c3a7" valueTypeId="d0a045f0-75f6-420a-99d3-23483ddb8e51"/>
+    <recordType typeId="73b3e7f7-ab3f-4945-82a1-47a15493943e" valueTypeId="d2a955e0-e9d5-4ed3-bac6-4e7815a8f0ee"/>
+    <recordManagerType typeId="874bf5c4-2303-43ea-ab5b-3873c331ed36" valueTypeId="cff51bab-3e7d-4791-8dea-912f7ca3775a"/>
+  </producedTypes>
+  <name>CRM_СкрытыеПисьма</name>
+  <synonym>
+    <key>ru</key>
+    <value>Скрытые письма</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="f1c151cd-3e16-4748-a242-d45e3a1e69b4">
+    <name>УчетнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7f731cba-41c5-4105-87c7-e4c1e1635918">
+    <name>Письмо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЭлектронноеПисьмоИсходящее</types>
+      <types>DocumentRef.ЭлектронноеПисьмоВходящее</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51f0ed3d-100d-4916-8c2c-582c08605444">
+  <producedTypes>
+    <objectType typeId="e348e31d-b915-46f5-9edd-92f7053a0315" valueTypeId="76bd44c4-dcc4-4b52-b717-76344f39794b"/>
+    <managerType typeId="fcc845a1-d73f-41dd-b38a-2ab947118de1" valueTypeId="b9818db1-db45-469c-9b3d-6342f7d9857a"/>
+  </producedTypes>
+  <name>УдалитьCRM_Календарь</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Календарь</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Calendar (Old Version)</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="fbed0f1c-6cea-4ad5-ac08-13712c653716">
+    <name>ДатаКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата календаря</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Calendar date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата календаря CRM</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>CRM Calendar Date</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5fa416d5-d0bc-4855-b6c9-6ee61b38a793">
+    <name>ТекущееОтображение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущее отображение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Current display</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текущее отображение CRM</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Current CRM display</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="950f2c97-a373-4fc7-bc6a-6975f9618f47">
+    <name>КэшНастроекОтображения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кэш настроек отображения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Cache of settings of display</value>
+    </synonym>
+    <type/>
+    <toolTip>
+      <key>ru</key>
+      <value>Кэш настроек</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Settings cache</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="4f433404-113a-4d61-9dee-284bbcc0709d">
+    <name>КалендарьОформление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарь оформление</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Calendar design</value>
+    </synonym>
+  </templates>
+  <templates uuid="1561e359-91dd-4681-aa98-609aff6b9c5e">
+    <name>КалендарьЯчейки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарь ячейки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Calendar of a cell</value>
+    </synonym>
+  </templates>
+  <templates uuid="47b861b7-1125-4969-a1a3-698258d37f7a">
+    <name>МакетСписок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет список</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Template list</value>
+    </synonym>
+  </templates>
+  <templates uuid="1b890356-a060-483f-8986-7f18c16f526f">
+    <name>СписокЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список задач</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List of tasks</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

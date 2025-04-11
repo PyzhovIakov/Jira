@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			html {
+				height: 100%;
+				font-family: 'Arial';
+				font-style: normal;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			
+			::-webkit-scrollbar {
+				width: 8px;
+			}
+			
+			::-webkit-scrollbar-thumb {
+				-webkit-border-radius: 4px;
+				        border-radius: 4px;
+				border-width: 1px 1px 1px 2px;
+				border-color: #777;
+				background-color: #aaa;
+			}
+			
+			::-webkit-scrollbar-thumb:hover {
+				border-width: 1px 1px 1px 2px;
+				border-color: #555;
+				background-color: #777;
+			}
+			
+			::-webkit-scrollbar-track {
+				border-width: 0;
+			}
+			
+			::-webkit-scrollbar-track:hover {
+				background-color: #eee;
+			}
+			
+			#files {
+				height: 100%;
+				width: 100%;
+				background: #FAFAFA;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: column;
+				   -moz-box-orient: vertical;
+				   -moz-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+			}
+			
+			#files h1 {
+				color: #2C2C2C;
+				-o-text-overflow: ellipsis;
+				   text-overflow: ellipsis;
+				font-family: Arial;
+				font-size: 13px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 20px;
+				margin: 12px 0px 12px 0px;
+			}
+			
+			#files > * {
+				padding: 0px 8px 0px 12px;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+			}
+			
+			#files-items {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				padding-right: 12px;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: column;
+				   -moz-box-orient: vertical;
+				   -moz-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+				-webkit-box-align: start;
+				-webkit-align-items: flex-start;
+				   -moz-box-align: start;
+				    -ms-flex-align: start;
+				        align-items: flex-start;
+				overflow-y: auto;
+				margin: 0px 8px 18px 0px;
+				height: 100%;
+				width: 100%;
+			}
+			
+			.files-item {
+				width: 100%;
+				min-height: 20px;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				   -moz-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				margin-bottom: 8px;
+			}
+			
+			.files-item a {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				   -moz-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				text-decoration: none;
+			}
+			
+			.files-item-name-container {
+				overflow: hidden;
+				-o-text-overflow: ellipsis;
+				   text-overflow: ellipsis;
+			}
+			
+			.files-item-icon {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				width: 20px;
+				min-width: 20px;
+				height: 20px;
+				background: url("<FILE_ICONS_PATH>");
+				-webkit-background-size: auto 20px;
+				   -moz-background-size: auto 20px;
+				     -o-background-size: auto 20px;
+				        background-size: auto 20px;
+			}
+			
+			.files-item-name {
+				font-weight: 400;
+				line-height: 18px;
+			}
+			
+			.files-item-button {
+				visibility: hidden;
+			}
+			
+			.files-item:hover .files-item-button{
+				visibility: visible;
+			}
+			
+			#file-buttons-container {
+				min-height: 40px;
+				width: 100%;
+				border-top: 1px solid #E2E2E2;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				   -moz-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+			}
+			
+			.file-button {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				   -moz-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: row;
+				   -moz-box-orient: horizontal;
+				   -moz-box-direction: normal;
+				    -ms-flex-direction: row;
+				        flex-direction: row;
+				text-decoration: none;
+				overflow: hidden;
+			}
+			
+			.file-button-icon-small {
+				height: 16px;
+				width: 16px;
+				min-width: 16px;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				-webkit-background-size: 16px;
+				   -moz-background-size: 16px;
+				     -o-background-size: 16px;
+				        background-size: 16px;
+			}
+			
+			.file-button-icon-big {
+				width: 20px;
+				height: 20px;
+				min-width: 20px;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				-webkit-background-size: 20px;
+				   -moz-background-size: 20px;
+				     -o-background-size: 20px;
+				        background-size: 20px;
+			}
+			
+			.file-button-icon__save-all {
+				background: url("<BUTTON_ICON_DOWNLOAD>") no-repeat center;
+			}
+			
+			.file-button-icon__download-removed {
+				background: url("<BUTTON_ICON_DOWNLOAD_REMOVED>") no-repeat center;
+			}
+			
+			.file-button-icon__copy {
+				background: url("<BUTTON_ICON_COPY>") no-repeat center;
+				margin-left: 6px;
+			}
+			
+			.file-button-name {
+				font-weight: 700;
+				line-height: normal; 
+			}
+			
+			.files-item-name,
+			.file-button-name {
+				color: #00A0F2;
+				font-family: Arial;
+				font-size: 13px;
+				font-style: normal;
+				margin: 0 8px 0 6px;
+				white-space: nowrap;
+				overflow: hidden;
+				-o-text-overflow: ellipsis;
+				   text-overflow: ellipsis;
+			}
+			
+			.files-item__disabled a {
+				cursor: default;
+			}
+			
+			.files-item__disabled .files-item-name {
+				color: grey !important;
+			}
+			
+			.files-item__disabled .files-item-button {
+				display: none;
+			}
+		</style>
+		<script type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="files"><INNER_FILES_HTML></div>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e8b0fd6-c55c-4d05-a8b0-022eb00a6480">
+  <name>CRM_ИспользованиеМонитораРуководителя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование монитора руководителя (CRM)</value>
+  </synonym>
+</mdclass:Role>

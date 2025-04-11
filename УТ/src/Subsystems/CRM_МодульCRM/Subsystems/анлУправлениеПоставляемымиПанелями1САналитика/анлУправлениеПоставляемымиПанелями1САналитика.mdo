@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59e56cf2-f684-4877-89b2-17c20befde8f">
+  <name>анлУправлениеПоставляемымиПанелями1САналитика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление поставляемыми панелями 1С:Аналитика</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <content>DataProcessor.анлУправлениеПоставляемымиПанелями1САналитика</content>
+  <content>CommonModule.анлПоставляемыеПанели</content>
+  <content>CommonPicture.анлАналитикаИконка16х16</content>
+  <content>CommonPicture.анлКонфигуратор</content>
+  <content>CommonModule.анлПоставляемыеПанелиВызовСервера</content>
+  <content>CommonModule.анлПоставляемыеПанелиКлиент</content>
+  <content>CommonModule.анлАналитика</content>
+  <content>CommonModule.анлПоставляемыеПанелиПовтИсп</content>
+  <content>CommonPicture.анлАналитикаЛоготип</content>
+  <parentSubsystem>Subsystem.CRM_МодульCRM</parentSubsystem>
+</mdclass:Subsystem>

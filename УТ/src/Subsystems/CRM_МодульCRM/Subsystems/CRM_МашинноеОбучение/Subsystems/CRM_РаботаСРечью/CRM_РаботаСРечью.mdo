@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0d62176-201c-4664-ae19-b308d0909881">
+  <name>CRM_РаботаСРечью</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с речью</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonPicture.КоллекцияПиктограммФайлов</content>
+  <content>CommonPicture.CRM_МодельРаспознаванияРечиДоступна</content>
+  <content>CommonPicture.CRM_МодельРаспознаванияРечиЛокальная</content>
+  <content>CommonPicture.CRM_МодельРаспознаванияРечиНеДоступна</content>
+  <content>CommonPicture.CRM_МодельРаспознаванияРечиОблачная</content>
+  <content>CommonPicture.CRM_МодельРаспознаванияРечиСкачать</content>
+  <content>CommonPicture.CRM_ЧерныйМикрофон</content>
+  <content>CommonPicture.CRM_КрасныйМикрофон</content>
+  <content>CommonModule.CRM_ПоляВводаКлиент</content>
+  <content>CommonModule.CRM_ОбработкаРаспознанногоТекстаКлиентСервер</content>
+  <content>DataProcessor.CRM_ПанельАдминистрированияРаботыСРечью</content>
+  <content>Constant.CRM_НастройкиРаботыСРечью</content>
+  <content>CommonModule.CRM_ПараметрыРаспознаванияРечи</content>
+  <content>CommonModule.CRM_ПараметрыРаспознаванияРечиКлиент</content>
+  <content>DataProcessor.CRM_ПараметрыРаспознаванияРечи</content>
+  <content>Constant.CRM_ТокенСеансаРаботыСРечью</content>
+  <content>Constant.CRM_ОбщаяГрамматикаРаботыСРечью</content>
+  <content>StyleItem.ЦветНедоступногоТекста</content>
+  <content>Role.CRM_БазовыеПраваРаботаСРечью</content>
+  <content>CommonModule.CRM_ОбработкаРаспознанногоТекстаКлиентСерверПовтИсп</content>
+  <content>InformationRegister.CRM_ПараметрыРаспознаванияРечи</content>
+  <content>CommonModule.CRM_РаботаСРечьюБМОСервер</content>
+  <content>CommonModule.CRM_РаботаСРечьюБМОКлиент</content>
+  <content>CommonModule.CRM_РаботаСРечьюБМОКлиентТолько8323</content>
+  <content>CommonModule.CRM_РаботаСРечьюЖурналированиеКлиент</content>
+  <content>CommonModule.CRM_РаботаСРечьюЖурналированиеВызовСервера</content>
+  <content>CommonForm.CRM_ПожаловатьсяНаРезультатРаспознаванияРечи</content>
+  <content>CommonModule.CRM_РаботаСРечьюБМОСерверТолько8323</content>
+  <content>CommonPicture.CRM_ДиалогВосклицания16</content>
+  <content>CommonModule.CRM_СемантическийАнализ</content>
+  <content>CommonModule.CRM_РаботаСРечьюБМОКлиентСервер</content>
+  <content>CommonPicture.CRM_РаспознаваниеРечи72</content>
+  <parentSubsystem>Subsystem.CRM_МодульCRM.Subsystem.CRM_МашинноеОбучение</parentSubsystem>
+</mdclass:Subsystem>

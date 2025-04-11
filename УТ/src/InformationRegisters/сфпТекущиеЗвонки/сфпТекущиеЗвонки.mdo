@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5e660b02-4bda-4f59-a50f-a25d925b8e63">
+  <producedTypes>
+    <selectionType typeId="aca3811c-69ff-40e4-9411-966b621b2a66" valueTypeId="54c34272-324e-42ea-b7f7-019ab5d54dd1"/>
+    <listType typeId="caa82c02-a476-4764-87b7-256b15842877" valueTypeId="fb8b7ff0-73aa-4eed-a5d0-030549212bf9"/>
+    <managerType typeId="fd96c1a8-cbbf-48a2-9c4e-8eb2902012b1" valueTypeId="a6d86819-6192-4a16-a690-8e0f7e45142d"/>
+    <recordSetType typeId="b440f3ec-c52d-4adc-ac00-f21a5b770cd1" valueTypeId="c8fd2d73-e7b8-4830-83b2-2864a880a04c"/>
+    <recordKeyType typeId="f887562e-2e2e-40e4-a7f4-0a97b11b374a" valueTypeId="6f804fe2-f999-4c9b-bfc2-c21b58602cf2"/>
+    <recordType typeId="0eecf332-648b-41e7-8614-28b3bc568b6d" valueTypeId="bdc91b04-e505-4041-9b03-e66fc59a30ae"/>
+    <recordManagerType typeId="b8cabc7b-7066-499e-9bf5-d8bbd371e39f" valueTypeId="e50357a1-f8fd-48b5-ab48-1bde36cd9761"/>
+  </producedTypes>
+  <name>сфпТекущиеЗвонки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущие звонки</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Current calls</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f11df93d-5553-43a2-bfdb-5b4f0b59b9f3">
+    <name>АбонентКонтакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Абонент контакт</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Subscriber contact</value>
+    </synonym>
+    <type>
+      <types>DefinedType.сфпКонтактВзаимодействия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d94d7022-e134-4ad8-92ee-d5478f3e2b63">
+    <name>ДатаЗвонка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата звонка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Call date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="79c8d72a-e121-4329-b35d-84934edb3006">
+    <name>НомерТелефона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер телефона</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Phone Number</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="319e7a58-4f66-46ed-a69d-4a3e6ece0eee">
+    <name>Звонок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Звонок</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Call</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ТелефонныйЗвонок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7ea93b65-b93f-407f-8875-d4fea332e4e7">
+    <name>Входящий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входящий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Incoming</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="17d5a7ab-acb2-42e7-a6eb-154efbdcc223">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>User</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="60709226-0945-4419-8e21-5c7bd51e768f">
+    <name>ИдентификаторЗвонка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор звонка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Phone call ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>128</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

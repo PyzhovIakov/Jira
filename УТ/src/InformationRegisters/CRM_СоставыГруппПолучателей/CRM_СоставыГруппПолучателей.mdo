@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="47cf7131-3cbc-41d7-a754-9012a59ae261">
+  <producedTypes>
+    <selectionType typeId="2f22f4c2-d868-4ace-b85d-a79b39fbd139" valueTypeId="c41e8179-e987-46e9-9c8a-6396ada99725"/>
+    <listType typeId="57ebfd1c-efd8-44a0-acb1-03e7cb3d769d" valueTypeId="c4dbbee3-3c3f-4e3f-94fb-842ce8e3d062"/>
+    <managerType typeId="d5d31f76-a295-4690-b7dd-f50e3df3854b" valueTypeId="c07499f7-43ff-44d5-b811-d0e80d4efeb7"/>
+    <recordSetType typeId="c5330765-e54b-4512-86fb-752a34d94f7f" valueTypeId="caccd160-ac68-4d75-9288-7fc7f20e7013"/>
+    <recordKeyType typeId="60cdc6f1-c1a3-4fd5-b3da-65b2678ff40a" valueTypeId="6b2d5df2-5a8c-43fc-ab05-147eabfb7ea5"/>
+    <recordType typeId="e5f810af-2a24-489f-ad1f-975be1f2c4e9" valueTypeId="1a7fac6d-bfd7-4f0e-8e4f-5ca29cd2d04f"/>
+    <recordManagerType typeId="3853393e-4a96-44b2-9cdd-97b491505ba8" valueTypeId="4ceb9336-cc6b-4600-a995-6e6e5aaa5c82"/>
+  </producedTypes>
+  <name>CRM_СоставыГруппПолучателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Составы групп получателей</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="b22e97a0-8db7-47db-8984-c13e4cdf5d77">
+    <name>ГруппаПолучателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа получателей</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ГруппыПолучателей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b35c257c-5e46-4639-98f8-7598103a954f">
+    <name>Получатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатель</value>
+    </synonym>
+    <type>
+      <types>DefinedType.КонтактВзаимодействия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

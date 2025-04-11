@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e89a5d9-9e23-434b-9e99-984ca85e22f2">
+  <producedTypes>
+    <objectType typeId="ea39aaaa-d50a-4d3f-9255-f7de442e630d" valueTypeId="4477ff2d-1a0a-4042-bbfc-8ddfab1b639e"/>
+    <managerType typeId="f816cf72-ef1f-4766-9c3c-f78761b50951" valueTypeId="09624973-a892-48bf-ba6f-b4cadec5734b"/>
+  </producedTypes>
+  <name>CRM_АнализТелемаркетингаПоЗвонкамИИнтересам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ телемаркетинга по звонкам и интересам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.CRM_АнализТелемаркетингаПоЗвонкамИИнтересам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="c94d5f51-5a41-4fbd-a2a6-f5dc2ce661aa">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="1160cbd6-06aa-425d-ae6c-81b2575e0b85">
+    <name>КомандаАнализТелемаркетингаПоЗвонкамИИнтересамДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Анализ телемаркетинга по звонкам и интересам</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.CRM_Телемаркетинг</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

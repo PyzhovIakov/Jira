@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ddecfa89-dae4-4ca6-ac3c-447155f7357f">
+  <producedTypes>
+    <refType typeId="1da05cbe-1818-47bf-86e1-8075859ec597" valueTypeId="cb073b53-de72-45c5-a87d-a245d6d6006b"/>
+    <listType typeId="deedf0bc-1e98-430c-8b52-4d757a88d5e2" valueTypeId="bc256e52-9699-4824-a38c-63b87576cde2"/>
+    <managerType typeId="3f300849-1a08-444c-a433-3f1d2c4cb501" valueTypeId="64d23490-48d9-44f2-b268-7ff16345e018"/>
+  </producedTypes>
+  <name>CRM_ВариантыОтображенияНапоминаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты отображения напоминаний</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6902f0d5-e97c-4f94-9f00-de9d47dfd49b">
+    <name>ВЦентреОповещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>В центре оповещений</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="72938ce5-22c8-4f82-997a-3582d35bbf8c">
+    <name>ВОтдельномОкне</name>
+    <synonym>
+      <key>ru</key>
+      <value>В отдельном окне</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

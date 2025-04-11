@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5250c334-20ff-4850-9f9a-005063164278">
+  <producedTypes>
+    <objectType typeId="2bc69e27-5e99-4d74-adb5-696f7eed0d0a" valueTypeId="d70ee9e6-fc5e-4ba3-9042-609cc2ca630f"/>
+    <managerType typeId="523cd08d-8fe4-4dfe-9912-98bb76e64644" valueTypeId="d3e9c85f-f3e3-4f32-ae19-51eb724d90b2"/>
+  </producedTypes>
+  <name>CRM_ИсторияРеквизитов</name>
+  <synonym>
+    <key>ru</key>
+    <value>История реквизитов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.CRM_ИсторияРеквизитов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="8ae50661-2d86-4208-ab5b-aa0b7d2cd408">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="98c2eebe-b83d-44e9-92b6-267f70a2c6bf">
+    <name>Заголовок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовок</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

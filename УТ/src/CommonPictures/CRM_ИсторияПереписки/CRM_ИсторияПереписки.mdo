@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da992f5a-80b9-4d44-88a6-06bef80b4a54">
+  <name>CRM_ИсторияПереписки</name>
+  <synonym>
+    <key>ru</key>
+    <value>История переписки</value>
+  </synonym>
+</mdclass:CommonPicture>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="304ce52e-afa4-4f58-b083-4287487deda0">
+  <producedTypes>
+    <selectionType typeId="da13db71-8d58-44cf-942a-231854f995c3" valueTypeId="7e8cd20b-ab2d-467f-b259-87143171a669"/>
+    <listType typeId="5e281a2f-7914-4357-9123-a1367d038882" valueTypeId="85ab2989-fcce-4a1f-9d0b-138689d7b313"/>
+    <managerType typeId="f496e32b-5bdc-4089-8486-b754cc87acd5" valueTypeId="d81d99a8-c3a6-4c6f-88a1-ab7d1c98ec99"/>
+    <recordSetType typeId="f65f29e2-6937-4c50-a379-65030e04b438" valueTypeId="6d3a464a-9354-4fe0-a2b5-b73df0f08243"/>
+    <recordKeyType typeId="9b457882-74c2-4d39-9a63-417ac6ffe5a5" valueTypeId="eb3b241e-7154-4835-9c05-4336714ce5c6"/>
+    <recordType typeId="fc297e87-22ff-482c-bac9-ae3565d5dcb7" valueTypeId="b096e8cd-af41-4594-bcce-2cebf4ad2a56"/>
+    <recordManagerType typeId="8faab9a7-2047-46d8-88ce-c0e30ec461b7" valueTypeId="3170c982-9d5e-4d24-bcb7-f5264d9ecc32"/>
+  </producedTypes>
+  <name>CRM_КаналыОбращенийПоИнтересам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каналы обращений по интересам</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="cc4050f4-748d-4b74-ae7a-a9938a6f83ba">
+    <name>Интерес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интерес</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.CRM_Интерес</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="370f15c2-a09b-4404-90fe-42974b451448">
+    <name>КаналОбращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал обращения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.CRM_ВидыКаналовИнформации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="016a43d4-f2a3-412b-93d8-9c3673486e91">
+    <name>ИсточникОбращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник обращения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ИсточникиПолученияЛидов</types>
+      <types>CatalogRef.CRM_УчетныеЗаписиМессенджеров</types>
+      <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

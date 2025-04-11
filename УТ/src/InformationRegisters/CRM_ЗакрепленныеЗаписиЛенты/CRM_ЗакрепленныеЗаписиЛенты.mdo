@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf63ad9f-c6d1-4c9f-aa18-6a59a7080a82">
+  <producedTypes>
+    <selectionType typeId="3dd21cca-c906-4d2e-b89f-f5588baf74ab" valueTypeId="8b689ecd-9b6b-4890-82ce-a767dbdb2b40"/>
+    <listType typeId="a48e5083-3f00-456b-b935-6244972e3632" valueTypeId="87e6b26a-4615-4d67-b57b-017c77ff9000"/>
+    <managerType typeId="96f8d618-c1c8-44cd-ad02-1f5c18a08ad1" valueTypeId="79b4c849-1490-43ff-b027-3183a8534768"/>
+    <recordSetType typeId="4f1fafa5-f665-4965-808e-5aad85bbffe1" valueTypeId="02f9a1cb-dc2a-4c4f-afa6-d22cb1c84905"/>
+    <recordKeyType typeId="0105e904-6b1b-4002-80ef-a814dcd8d08f" valueTypeId="4bb4ecb7-5656-47b7-9662-c948dda814f6"/>
+    <recordType typeId="ed00215a-45b7-4148-9dc9-0e9d49b1a2e8" valueTypeId="41e8e17a-ef5a-434a-9d58-e5ef770bf67e"/>
+    <recordManagerType typeId="81d63cae-57d3-4f2a-9627-e14c39d87608" valueTypeId="e9e8ca53-3c2c-417f-913a-747c61e34a54"/>
+  </producedTypes>
+  <name>CRM_ЗакрепленныеЗаписиЛенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрепленные записи ленты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="4dde1598-270a-4b7f-b331-2334ba72af5b">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.CRM_Интерес</types>
+      <types>CatalogRef.Партнеры</types>
+      <types>CatalogRef.КонтактныеЛицаПартнеров</types>
+      <types>CatalogRef.CRM_ПотенциальныеКлиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9b9c64de-1e04-409f-8371-944bb898a6a5">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="67ad6a65-19d8-4965-a266-ba8c48f9b65e">
+    <name>Ссылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1eef60b4-da04-4c17-8ac6-4624d8caa58c">
+  <name>CRM_ОбменСВнешнимиКалендарями</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM обмен с внешними календарями</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

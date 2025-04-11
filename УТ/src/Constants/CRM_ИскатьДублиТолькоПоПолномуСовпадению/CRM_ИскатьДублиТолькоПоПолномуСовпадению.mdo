@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39ae2a9a-19ce-4978-9dd5-d474ad93e3ee">
+  <producedTypes>
+    <managerType typeId="978c6157-2973-4cd8-b2d1-18a309aedc8d" valueTypeId="8316e40a-34d4-4106-b778-229bb96b996b"/>
+    <valueManagerType typeId="88720a8c-2114-4599-8c1a-778fc4c08ae2" valueTypeId="4dd980b8-44be-4d6a-95df-c2fdd1f082f5"/>
+    <valueKeyType typeId="9c4be29e-9b75-49f4-b90f-b7141963e86e" valueTypeId="d648a63f-920d-48dd-97d6-9e94d8929497"/>
+  </producedTypes>
+  <name>CRM_ИскатьДублиТолькоПоПолномуСовпадению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Искать дубли только по полному совпадению</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

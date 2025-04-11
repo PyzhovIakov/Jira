@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3204a530-4764-4569-bdad-2dcd131c47f4">
+  <name>CRM_СвойстваСкрыть</name>
+  <synonym>
+    <key>ru</key>
+    <value>Скрыть свойства</value>
+  </synonym>
+</mdclass:CommonPicture>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af2edb68-8827-48c1-aba0-76e560a233fd">
+  <producedTypes>
+    <objectType typeId="5c49f9c5-0726-4067-ba42-1dedd59c4962" valueTypeId="e724ca53-9fc6-42b4-92f2-b616f31431eb"/>
+    <managerType typeId="050ed314-7fd5-491c-85a5-4962dd339d7d" valueTypeId="c383fe40-4f81-4deb-be95-571b228d3af7"/>
+  </producedTypes>
+  <name>CRM_НастройкиПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки пользователей CRM</value>
+  </synonym>
+  <defaultForm>DataProcessor.CRM_НастройкиПользователей.Form.КопированиеНастроекПользователей</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="b74593c8-d4e3-4649-9a30-ccacc344ee2b">
+    <name>ВыборПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор пользователей</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ef5d4545-9681-4a88-94b4-50a797072d48">
+    <name>КопированиеНастроекПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Копирование настроек пользователей</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

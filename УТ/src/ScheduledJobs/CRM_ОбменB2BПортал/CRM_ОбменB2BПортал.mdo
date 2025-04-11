@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44dc124d-a344-4e42-97ea-3c0ea559ffe0">
+  <name>CRM_ОбменB2BПортал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с B2B порталом</value>
+  </synonym>
+  <methodName>CommonModule.CRM_ОбменB2BПортал.ВыполнитьОбмен</methodName>
+  <description>CRM_ОбменB2BПортал</description>
+  <key>CRM_ОбменB2BПортал</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

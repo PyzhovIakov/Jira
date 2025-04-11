@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e7849be4-69e7-4515-bc0a-2ba60f844dee">
+  <name>CRM_РегистрацияИзмененийДляОбменаB2BПортал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистрация изменений для обмена с B2B порталом</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.CRM_ТипыОбращений</types>
+    <types>CatalogObject.КонтактныеЛицаПартнеров</types>
+    <types>DocumentObject.CRM_Интерес</types>
+    <types>DocumentObject.CRM_СообщениеМессенджера</types>
+    <types>CatalogObject.CRM_СообщениеМессенджераПрисоединенныеФайлы</types>
+    <types>CatalogObject.Партнеры</types>
+    <types>DocumentObject.CRM_Заявка</types>
+    <types>CatalogObject.CRM_ИнтересПрисоединенныеФайлы</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.CRM_ОбменB2BПортал.ЗарегистрироватьИзмененияПриЗаписи</handler>
+</mdclass:EventSubscription>

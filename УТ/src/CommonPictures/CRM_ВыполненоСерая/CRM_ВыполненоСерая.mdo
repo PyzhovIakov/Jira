@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4e2bed5-8c73-4042-91f5-59be51124201">
+  <name>CRM_ВыполненоСерая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнено серая</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Acceptable value</value>
+  </synonym>
+</mdclass:CommonPicture>

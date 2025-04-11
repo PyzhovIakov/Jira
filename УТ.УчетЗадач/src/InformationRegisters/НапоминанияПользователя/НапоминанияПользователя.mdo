@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="bcab703f-9655-4946-a5e9-f4334a965d44">
+  <producedTypes>
+    <selectionType typeId="9758a558-c62f-45ad-8788-d2637a3dd18b" valueTypeId="1257c7a6-bcc3-47ef-8c9d-5fe3a946771a"/>
+    <listType typeId="e8f51be0-c4f9-44bb-b82e-fef160de68b6" valueTypeId="764d49a9-e79c-4ad2-bf8d-b5ebfbb685fd"/>
+    <managerType typeId="45188c33-b62d-48dd-ac34-a6f462089c75" valueTypeId="8a3836e5-4853-43e3-9565-44a45b3d5263"/>
+    <recordSetType typeId="1b85b121-da09-499e-815b-38b9de93b75b" valueTypeId="256ddf20-853d-473f-b1a8-2b915d7d3b1e"/>
+    <recordKeyType typeId="91d0242e-5622-4925-a456-4b0501349c59" valueTypeId="72a2fbad-0340-4a03-a3e9-8d0be77823a8"/>
+    <recordType typeId="9b4d874d-650f-47a5-b2c7-7ba15ca4180a" valueTypeId="a9c9e7ad-8ad6-4c08-b26f-e478c1363557"/>
+    <recordManagerType typeId="1228e235-2ceb-414b-9cb2-91b935c3a1b9" valueTypeId="5fc7c3ca-68e2-4079-ad6c-61fcebbd7cd0"/>
+  </producedTypes>
+  <name>НапоминанияПользователя</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <dimensions uuid="25416155-904f-424f-a633-fcad263b2b89">
+    <name>Источник</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>DefinedType.ПредметНапоминания</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+</mdclass:InformationRegister>

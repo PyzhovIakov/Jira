@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			
+			::-webkit-scrollbar {
+				width: 0;
+				height: 0;
+			}
+			
+			html {
+				font-family: Arial, sans-serif;
+				font-style: normal;
+			}
+			
+			* {
+				cursor: default;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+				margin: 2px;
+				padding: 0;
+			}
+			
+			a, a:active, a:visited {
+				color: #00a0f2;
+				cursor: pointer;
+			}
+			
+			#wrapper1 {
+				width: 100%;
+				max-width: 100%;
+				padding: 0;
+				box-sizing: border-box;
+				overflow: hidden;
+				font-family: Arial, sans-serif;
+				/*line-height: 100%;*/
+				/*font-size: 8pt;*/
+				color: #333333;
+			}
+			.chapter_header1 {
+				margin: 0;
+				font-size: 11pt;
+				font-weight: bold;
+			}
+			.chapter_header2 {
+				margin: 0;
+				font-size: 11pt;
+			}
+			.chapter_text {
+				margin: 2px;
+				font-size: 10pt;
+			}
+			.splitter {
+				color: #f5f5f5;
+			}
+			#upbutton {
+				width: 25px;
+				height: 25px;
+				position: fixed;
+				bottom: 0;
+				right: 0;
+				z-index: 20;
+			}
+			#downbutton {
+				width: 25px;
+				height: 25px;
+				position: fixed;
+				bottom: 0;
+				right: 25px;
+				z-index: 20;
+			}
+		</style>
+	</head>
+	<script>
+		function scrollИByStep(direction) {
+			var step = document.documentElement.clientHeight / 10;
+			window.scrollBy(0, direction * step);
+		}
+	</script>
+	<body>
+		<div id="wrapper1"> 
+			<p class="chapter_header1">Обновление и сервисы ИТС</p>
+			<table width="100%" cellspacing="2">
+				<tr>
+					<td rowspan="2" valign="middle" width="56">
+						<img src="LOGO_URL" style="width: 56px">
+					</td>
+					<td>
+						<p class="chapter_header2"><b>PROGRAM_NAME</b></p>
+					</td>
+				</tr>	
+				<tr>
+					<td>
+						<p style="margin: 0;">Логин: <a href="ITS_LINK">ITS_LOGIN</a></p>
+					</td>
+				</tr>
+			</table>
+			<table width="100%" cellspacing="4">
+				<tr>
+					<td valign="middle" width="24">
+						<img src="SUPPORT_ICON" style="width: 24px;">
+					</td>
+					<td>
+						<p class="chapter_header2">SUPPORT_HEADER</p>
+						<p class="chapter_text" SUPPORT_DETAILS_HIDDEN>SUPPORT_DETAILS</p>
+						<p class="chapter_text" SUPPORT_LINK_HIDDEN><a href="SUPPORT_LINK">SUPPORT_LINK_TEXT</a></p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="middle" width="24">
+						<img src="UPDATE_ICON" style="width: 24px;">
+					</td>
+					<td>
+						<p class="chapter_header2">UPDATE_HEADER</p>
+						<p class="chapter_text" UPDATE_DETAILS_HIDDEN>UPDATE_DETAILS</p>
+						<p class="chapter_text" UPDATE_LINK_HIDDEN><a href="UPDATE_LINK">UPDATE_LINK_TEXT</a></p>
+					</td>
+					
+				</tr>
+				<tr>
+					<td valign="middle" width="24">
+						<img src="SERVICE_ICON" style="width: 24px;">
+					</td>
+					<td>
+						<p class="chapter_header2">SERVICE_HEADER</p>
+						<p class="chapter_text" SERVICE_DETAILS_HIDDEN>SERVICE_DETAILS</p>
+						<p class="chapter_text" SERVICE_LINK_HIDDEN><a href="SERVICE_LINK">SERVICE_LINK_TEXT</a></p>
+					</td>
+				</tr>	
+			</table>
+			<hr class="splitter"/>
+			<p class="chapter_header1">1С:КП Отраслевой</p>
+			<table width="100%" cellspacing="4">
+				<tr>
+					<td>
+						<p class="chapter_header2">Тип сервиса</p>
+					</td>
+					<td>
+						<p class="chapter_header2">SERVICE_TYPE</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p class="chapter_header2">Срок действия</p>
+					</td>
+					<td>
+						<p class="chapter_header2">SERVICE_PERIOD</p>
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						<p class="chapter_header2">Период</p>
+					</td>
+					<td>
+						<p class="chapter_header2">SERVICE_DATES <a href="SERVICE_RENEW_LINK">продлить</a></p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<a href="#head"><img src="UPBUTTON_ICON" id="upbutton" onclick="scrollИByStep(-1)"></a>
+		<a href="#head"><img src="DOWNBUTTON_ICON" id="downbutton" onclick="scrollИByStep(1)"></a>
+	</body>
+</html>

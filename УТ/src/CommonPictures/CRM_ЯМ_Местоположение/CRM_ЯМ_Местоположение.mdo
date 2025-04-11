@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2ac538bc-f96a-4200-a94d-b8f2c88410ab">
+  <name>CRM_ЯМ_Местоположение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Местоположение</value>
+  </synonym>
+</mdclass:CommonPicture>

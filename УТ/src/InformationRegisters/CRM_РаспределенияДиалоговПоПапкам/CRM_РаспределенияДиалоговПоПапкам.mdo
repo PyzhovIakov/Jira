@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a926a95-7330-4565-a2e0-59bc790501e1">
+  <producedTypes>
+    <selectionType typeId="dc61864b-1df2-446a-a858-6bef536af72d" valueTypeId="38073c4e-40c6-4628-acc3-8cbaddfb6599"/>
+    <listType typeId="c5a4b918-2cc1-4eca-8c47-b0a2daa3108f" valueTypeId="ec4ca416-68c5-41f0-9323-5b7f4c0a1fda"/>
+    <managerType typeId="17f5bc35-5e19-41cd-b1e7-49fc8e0a9936" valueTypeId="0a392fc5-d99e-4f24-b3fe-904238359bb0"/>
+    <recordSetType typeId="00618c0a-ba22-475a-807e-77a70312053d" valueTypeId="0eb9adcf-4dcd-4a79-a2ba-45e0724fdd7a"/>
+    <recordKeyType typeId="de9fc53b-b132-43c7-b409-2bc5fef52f46" valueTypeId="58dfa879-27bb-44eb-b9de-52ff6f57f123"/>
+    <recordType typeId="f4935968-9f15-4bd9-95e7-4dbf06367be8" valueTypeId="e988fe49-fed0-4cb1-a6e1-4eed7a135da4"/>
+    <recordManagerType typeId="82a09e25-989f-437c-b5d4-0db4011e1d47" valueTypeId="3847fdb7-ebdc-4186-8fa9-37bd1e5d9527"/>
+  </producedTypes>
+  <name>CRM_РаспределенияДиалоговПоПапкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распределение диалогов по папкам (CRM)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9cee023c-e4c1-4cad-8fb6-6697944bacdc">
+    <name>ПапкаДиалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Папка диалога</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ПапкиДиалогов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d31c8759-6b28-417d-b9d9-159c35717d60">
+    <name>УчетнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_УчетныеЗаписиМессенджеров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fc604bdc-94ef-44de-b072-922bef05ea9e">
+    <name>Группа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="61aa37b0-b30f-4a5a-9672-018b8853405a">
+    <name>ИдентификаторПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор пользователя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="bf8adf82-aeb2-45d3-85c8-ada633666383">
+    <name>ФормаРаспределенияДиалоговПоПапкам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распределение диалогов по папкам</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

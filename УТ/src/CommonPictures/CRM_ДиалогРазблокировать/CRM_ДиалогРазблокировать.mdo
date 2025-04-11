@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bdcfa788-9190-43c9-a060-8e092add6348">
+  <name>CRM_ДиалогРазблокировать</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диалог разблокировать (CRM)</value>
+  </synonym>
+</mdclass:CommonPicture>

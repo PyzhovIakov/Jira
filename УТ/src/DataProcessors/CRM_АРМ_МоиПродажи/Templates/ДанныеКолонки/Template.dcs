@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заголовок</dataPath>
+			<field>Заголовок</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокНаЭтапе</dataPath>
+			<field>СрокНаЭтапе</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок на этапе</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Автор</dataPath>
+			<field>Автор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объект</dataPath>
+			<field>Объект</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Просрочено</dataPath>
+			<field>Просрочено</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просрочено</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокНаЭтапеСветофор</dataPath>
+			<field>СрокНаЭтапеСветофор</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок на этапе светофор</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партнер</dataPath>
+			<field>Партнер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партнер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Соисполнение</dataPath>
+			<field>Соисполнение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соисполнение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПартнерНаименование</dataPath>
+			<field>ПартнерНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партнер наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПросроченоДляСортировки</dataPath>
+			<field>ПросроченоДляСортировки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просрочено для сортировки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаДляСортировки</dataPath>
+			<field>ДатаДляСортировки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Избранный</dataPath>
+			<field>Избранный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОписаниеИнтереса</dataPath>
+			<field>ОписаниеИнтереса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КрайнийСрокОкончание</dataPath>
+			<field>КрайнийСрокОкончание</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Крайний срок окончание</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипУслуги</dataPath>
+			<field>ТипУслуги</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КрайнийСрок</dataPath>
+			<field>КрайнийСрок</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Картинка</dataPath>
+			<field>Картинка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОжидаемаяВыручка</dataPath>
+			<field>ОжидаемаяВыручка</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ОбъектыАРМ.Объект КАК Объект,
+	ОбъектыАРМ.Заголовок КАК Заголовок,
+	ОбъектыАРМ.КрайнийСрок КАК КрайнийСрок,
+	ОбъектыАРМ.ДатаДляСортировки КАК ДатаДляСортировки,
+	ОбъектыАРМ.Избранный КАК Избранный,
+	ОбъектыАРМ.ОписаниеИнтереса КАК ОписаниеИнтереса,
+	МИНИМУМ(ОбъектыАРМ.Соисполнение) КАК Соисполнение
+ПОМЕСТИТЬ ОбъектыПользователя
+ИЗ
+	РегистрСведений.CRM_ОбъектыАРМ КАК ОбъектыАРМ
+ГДЕ
+	ВЫБОР
+		КОГДА &amp;ПользовательЗаполнен
+			ТОГДА ОбъектыАРМ.Пользователь В (&amp;Пользователь)
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ
+	И ОбъектыАРМ.КрайнийСрок &lt;= &amp;ПериодОтбораОкончание
+	И ОбъектыАРМ.НаименованиеАРМ = "МоиПродажи"
+	И ОбъектыАРМ.ИзмерениеАРМ = ""
+	И ОбъектыАРМ.СостояниеИнтереса В(&amp;СостояниеИнтереса)
+
+СГРУППИРОВАТЬ ПО
+	ОбъектыАРМ.Объект,
+	ОбъектыАРМ.Заголовок,
+	ОбъектыАРМ.КрайнийСрок,
+	ОбъектыАРМ.ДатаДляСортировки,
+	ОбъектыАРМ.Избранный,
+	ОбъектыАРМ.ОписаниеИнтереса
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ //{КОЛИЧЕСТВО_ЗАПИСЕЙ}
+	ОбъектыПользователя.Объект КАК Объект,
+	ВЫБОР
+		КОГДА Интерес.Партнер = ЗНАЧЕНИЕ(Справочник.Партнеры.ПустаяСсылка)
+			ТОГДА Интерес.ПотенциальныйКлиент
+		ИНАЧЕ Интерес.Партнер
+	КОНЕЦ КАК Партнер,
+	ВЫБОР
+		КОГДА Интерес.Партнер = ЗНАЧЕНИЕ(Справочник.Партнеры.ПустаяСсылка)
+			ТОГДА Интерес.ПотенциальныйКлиент.Наименование
+		ИНАЧЕ Интерес.Партнер.Наименование
+	КОНЕЦ КАК ПартнерНаименование,
+	ОбъектыПользователя.Заголовок КАК Заголовок,
+	ВЫБОР
+		КОГДА ОбъектыПользователя.КрайнийСрок &lt; &amp;ПериодПросроченных
+				И ОбъектыПользователя.КрайнийСрок &gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 1
+		КОГДА ОбъектыПользователя.КрайнийСрок &lt; &amp;ПериодТекущих
+				И ОбъектыПользователя.КрайнийСрок &gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 2
+		ИНАЧЕ 3
+	КОНЕЦ КАК Просрочено,
+	ВЫБОР
+		КОГДА ОбъектыПользователя.КрайнийСрок &lt; &amp;ПериодПросроченных
+				И ОбъектыПользователя.КрайнийСрок &gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 1
+		ИНАЧЕ 2
+	КОНЕЦ КАК ПросроченоДляСортировки,
+	ОбъектыПользователя.ДатаДляСортировки КАК ДатаДляСортировки,
+	ОбъектыПользователя.Избранный КАК Избранный,
+	ОбъектыПользователя.ОписаниеИнтереса КАК ОписаниеИнтереса,
+	Интерес.ТипУслуги КАК ТипУслуги,
+	ОбъектыПользователя.КрайнийСрок КАК КрайнийСрок,
+	ОбъектыПользователя.КрайнийСрок КАК КрайнийСрокОкончание,
+	ВЫБОР
+		КОГДА ОбъектыПользователя.Избранный
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК Картинка,
+	Интерес.Проект КАК Проект,
+	Интерес.Подразделение КАК Подразделение,
+	Интерес.Автор КАК Автор,
+	ВЫБОР
+		КОГДА ОбъектыПользователя.Соисполнение
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Соисполнение,
+	ВЫБОР
+		КОГДА ГОД(&amp;ПериодТекущих) = ЕСТЬNULL(ГОД(Интерес.СостояниеИнтересаДатаНачала), 0)
+			ТОГДА &amp;ДнейПоКалендарюНаСегодня - ЕСТЬNULL(Интерес.СостояниеИнтересаДнейСНачалаГода, 0)
+		КОГДА ГОД(&amp;ПериодТекущих) = ЕСТЬNULL(ГОД(Интерес.СостояниеИнтересаДатаНачала), 0) + 1
+			ТОГДА &amp;ДнейПоКалендарюНаСегодня + ЕСТЬNULL(Интерес.СостояниеИнтересаДнейДоКонцаГода, 0)
+		ИНАЧЕ 0
+	КОНЕЦ КАК СрокНаЭтапе,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(Интерес.СостояниеИнтересаДнейСНачалаГода, 0) = 0
+				ИЛИ &amp;ДнейПоКалендарюНаСегодня = 0
+				ИЛИ ЕСТЬNULL(Интерес.СостояниеИнтереса.ОжидаемыйСрокНаЭтапе, 0) = 0
+			ТОГДА -1
+		КОГДА ВЫБОР
+				КОГДА ГОД(&amp;ПериодТекущих) = ЕСТЬNULL(ГОД(Интерес.СостояниеИнтересаДатаНачала), 0)
+					ТОГДА &amp;ДнейПоКалендарюНаСегодня - ЕСТЬNULL(Интерес.СостояниеИнтересаДнейСНачалаГода, 0)
+				КОГДА ГОД(&amp;ПериодТекущих) = ЕСТЬNULL(ГОД(Интерес.СостояниеИнтересаДатаНачала), 0) + 1
+					ТОГДА &amp;ДнейПоКалендарюНаСегодня + ЕСТЬNULL(Интерес.СостояниеИнтересаДнейДоКонцаГода, 0)
+				ИНАЧЕ 0
+			КОНЕЦ &lt; Интерес.СостояниеИнтереса.ОжидаемыйСрокНаЭтапе
+			ТОГДА 0
+		КОГДА ВЫБОР
+				КОГДА ГОД(&amp;ПериодТекущих) = ЕСТЬNULL(ГОД(Интерес.СостояниеИнтересаДатаНачала), 0)
+					ТОГДА &amp;ДнейПоКалендарюНаСегодня - ЕСТЬNULL(Интерес.СостояниеИнтересаДнейСНачалаГода, 0)
+				КОГДА ГОД(&amp;ПериодТекущих) = ЕСТЬNULL(ГОД(Интерес.СостояниеИнтересаДатаНачала), 0) + 1
+					ТОГДА &amp;ДнейПоКалендарюНаСегодня + ЕСТЬNULL(Интерес.СостояниеИнтересаДнейДоКонцаГода, 0)
+				ИНАЧЕ 0
+			КОНЕЦ = Интерес.СостояниеИнтереса.ОжидаемыйСрокНаЭтапе
+			ТОГДА 1
+		ИНАЧЕ 2
+	КОНЕЦ КАК СрокНаЭтапеСветофор,
+	Интерес.ОжидаемаяВыручка КАК ОжидаемаяВыручка
+ИЗ
+	ОбъектыПользователя КАК ОбъектыПользователя
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.CRM_Интерес КАК Интерес
+		ПО ОбъектыПользователя.Объект = Интерес.Ссылка</query>
+	</dataSet>
+	<parameter>
+		<name>ДнейПоКалендарюНаСегодня</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дней по календарю на сегодня</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПериодПросроченных</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период просроченных</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПериодТекущих</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период текущих</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Пользователь</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пользователь</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.РолиИсполнителей</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>СостояниеИнтереса</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Состояние интереса</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.CRM_СостоянияИнтересов</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>ПериодОтбораОкончание</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отбора окончание</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПериодОтбораНачало</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отбора начало</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПользовательЗаполнен</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пользователь заполнен</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Объект</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Партнер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Заголовок</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Просрочено</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОписаниеИнтереса</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Картинка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Соисполнение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СрокНаЭтапе</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаДляСортировки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПросроченоДляСортировки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СрокНаЭтапеСветофор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Избранный</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОжидаемаяВыручка</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Пользователь</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

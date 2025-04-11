@@ -1,0 +1,2946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Приложения для 1С:CRM</value>
+  </title>
+  <title>
+    <key>en</key>
+    <value>1C:CRM Apps</value>
+  </title>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаВсеБлоки</name>
+    <id>15</id>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаРяд1</name>
+      <id>17</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаWhatsApp</name>
+        <id>341</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияЗаголовокWhatsApp</name>
+          <id>775</id>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTipRepresentation>Balloon</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ДекорацияЗаголовокWhatsAppРасширеннаяПодсказка</name>
+            <id>777</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияЗаголовокWhatsAppКонтекстноеМеню</name>
+            <id>776</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>23</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>true</skipOnInput>
+          <textColor xsi:type="core:ColorDef">
+            <red>67</red>
+            <green>176</green>
+            <blue>42</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаWhatsAppНажатие</name>
+            </handlers>
+            <pictureSize>AutoSizeIgnoreScale</pictureSize>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Доступно без ограничений</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКартинкаWhatsApp</name>
+          <id>346</id>
+          <title>
+            <key>en</key>
+            <value>Decoration mobile app</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКартинкаWhatsAppРасширеннаяПодсказка</name>
+            <id>348</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКартинкаWhatsAppКонтекстноеМеню</name>
+            <id>347</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>22</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>4</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаWhatsAppНажатие</name>
+            </handlers>
+            <picture xsi:type="form:FormPicture"/>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSize</pictureSize>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>НадписьWhatsApp</name>
+          <id>676</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTip>
+            <key>en</key>
+            <value>Facebook: Messages</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>НадписьWhatsAppРасширеннаяПодсказка</name>
+            <id>678</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НадписьWhatsAppКонтекстноеМеню</name>
+            <id>677</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>14.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаWhatsAppНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Интеграция с WhatsApp</value>
+            </nonselectedPictureText>
+            <nonselectedPictureText>
+              <key>en</key>
+              <value>WhatsApp Integration</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияОписаниеWhatsApp</name>
+          <id>859</id>
+          <title>
+            <key>ru</key>
+            <value>&lt;fontsize 10>Подключите мессенджер &lt;/>&lt;fontsize 10>&lt;b>WhatsApp&lt;/>&lt;/>&lt;fontsize 10>. &lt;/>&lt;fontsize 10>Обменивайтесь сообщениями с клиентами и регистрируйте новые интересы. Интеграция настраивается при помощи платных сервисов &lt;/>&lt;link https://1msg.io/>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>1msg.io&lt;/>&lt;/>&lt;/>&lt;fontsize 10>  &lt;/>&lt;fontsize 10>или &lt;/>&lt;link https://green-api.com/>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Green API&lt;/>&lt;/>&lt;/>&lt;fontsize 10>.&lt;/> &lt;link https://1crm.ru/help/Integractiya-s-whatsapp/>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Подробнее...&lt;/>&lt;/></value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияОписаниеWhatsAppРасширеннаяПодсказка</name>
+            <id>861</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияОписаниеWhatsAppКонтекстноеМеню</name>
+            <id>860</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <formatted>true</formatted>
+          <type>Label</type>
+          <width>25</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>6</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorDef">
+            <red>153</red>
+            <green>153</green>
+            <blue>153</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+          </font>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Center</horizontalAlign>
+            <verticalAlign>Top</verticalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа WhatsApp</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group Mobile app setting</value>
+        </title>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаWhatsAppРасширеннаяПодсказка</name>
+          <id>342</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <horizontalAlign>Center</horizontalAlign>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаTelegram</name>
+        <id>313</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияЗаголовокTelegram</name>
+          <id>769</id>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTipRepresentation>Balloon</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ДекорацияЗаголовокTelegramРасширеннаяПодсказка</name>
+            <id>771</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияЗаголовокTelegramКонтекстноеМеню</name>
+            <id>770</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>23</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>true</skipOnInput>
+          <textColor xsi:type="core:ColorDef">
+            <red>67</red>
+            <green>176</green>
+            <blue>42</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаTelegramНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSizeIgnoreScale</pictureSize>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Доступно без ограничений</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКартинкаTelegram</name>
+          <id>318</id>
+          <title>
+            <key>en</key>
+            <value>Decoration mobile app</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКартинкаTelegramРасширеннаяПодсказка</name>
+            <id>320</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКартинкаTelegramКонтекстноеМеню</name>
+            <id>319</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>22</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>4</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаTelegramНажатие</name>
+            </handlers>
+            <picture xsi:type="form:FormPicture"/>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSize</pictureSize>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>НадписьTelegram</name>
+          <id>670</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTip>
+            <key>en</key>
+            <value>Facebook: Messages</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>НадписьTelegramРасширеннаяПодсказка</name>
+            <id>672</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НадписьTelegramКонтекстноеМеню</name>
+            <id>671</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>14.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаTelegramНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Интеграция с Telegram</value>
+            </nonselectedPictureText>
+            <nonselectedPictureText>
+              <key>en</key>
+              <value>Telegram Integration</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияОписаниеTelegram</name>
+          <id>324</id>
+          <title>
+            <key>ru</key>
+            <value>&lt;fontsize 10>Подключите мессенджер &lt;/>&lt;b>&lt;fontsize 10>Telegram&lt;/>&lt;/>&lt;fontsize 10>. &lt;/>&lt;fontsize 10>Обменивайтесь &lt;/>&lt;fontsize 10>сообщениями&lt;/>&lt;fontsize 10> с клиентами и регистрируйте новые интересы. &lt;/>&lt;fontsize 10>Создавайте и используйте &lt;/>&lt;b>&lt;fontsize 10>чат-боты&lt;/>&lt;/>&lt;fontsize 10>. &lt;/>&lt;link https://1crm.ru/help/integratsiya-s-telegram/>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Подробнее&lt;/>&lt;/>&lt;/>&lt;link https://1crm.ru/help/Dialogi-podkluchenie-vkontakte-i-telegram/?sphrase_id=9097>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>...&lt;/>&lt;/>&lt;/></value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияОписаниеTelegramРасширеннаяПодсказка</name>
+            <id>326</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияОписаниеTelegramКонтекстноеМеню</name>
+            <id>325</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <formatted>true</formatted>
+          <type>Label</type>
+          <width>25</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>6</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorDef">
+            <red>153</red>
+            <green>153</green>
+            <blue>153</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+          </font>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Center</horizontalAlign>
+            <verticalAlign>Top</verticalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа Telegram</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group Mobile app setting</value>
+        </title>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаTelegramРасширеннаяПодсказка</name>
+          <id>314</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <horizontalAlign>Center</horizontalAlign>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаTelegramБот</name>
+        <id>864</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКартинкаTelegramБот</name>
+          <id>869</id>
+          <title>
+            <key>en</key>
+            <value>Decoration mobile app</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Декорация картинка telegram бот</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКартинкаTelegramБотРасширеннаяПодсказка</name>
+            <id>871</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКартинкаTelegramБотКонтекстноеМеню</name>
+            <id>870</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>25</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>4</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаTelegramБотНажатие</name>
+            </handlers>
+            <picture xsi:type="form:FormPicture"/>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSize</pictureSize>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>НадписьTelegramБот</name>
+          <id>872</id>
+          <title>
+            <key>ru</key>
+            <value>Надпись telegram бот</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTip>
+            <key>en</key>
+            <value>Facebook: Messages</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>НадписьTelegramБотРасширеннаяПодсказка</name>
+            <id>874</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НадписьTelegramБотКонтекстноеМеню</name>
+            <id>873</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>14.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаTelegramБотНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Подключение бота</value>
+            </nonselectedPictureText>
+            <nonselectedPictureText>
+              <key>en</key>
+              <value>Telegram Integration</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияОписаниеTelegramБот</name>
+          <id>875</id>
+          <title>
+            <key>ru</key>
+            <value>&lt;fontsize 10>Создавайте и используйте &lt;/>&lt;fontsize 10>&lt;b>чат-боты, &lt;/>&lt;/>&lt;fontsize 10>п&lt;/>&lt;fontsize 10>одключив мессенджер &lt;/>&lt;fontsize 10>&lt;b>Telegram&lt;/>&lt;/>&lt;fontsize 10>. &lt;/>&lt;fontsize 10>Обменивайтесь &lt;/>&lt;fontsize 10>сообщениями&lt;/>&lt;fontsize 10> с клиентами и регистрируйте новые интересы.&lt;/>&lt;fontsize 10> &lt;/>&lt;link https://1crm.ru/help/integratsiya-s-telegram/>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Подробнее...&lt;/>&lt;/>&lt;/></value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияОписаниеTelegramБотРасширеннаяПодсказка</name>
+            <id>877</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияОписаниеTelegramБотКонтекстноеМеню</name>
+            <id>876</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <formatted>true</formatted>
+          <type>Label</type>
+          <width>25</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>6</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorDef">
+            <red>153</red>
+            <green>153</green>
+            <blue>153</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+          </font>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Center</horizontalAlign>
+            <verticalAlign>Top</verticalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа Telegram Бот</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group Mobile app setting</value>
+        </title>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаTelegramБотРасширеннаяПодсказка</name>
+          <id>865</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <horizontalAlign>Center</horizontalAlign>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаViber</name>
+        <id>327</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияЗаголовокViber</name>
+          <id>772</id>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTipRepresentation>Balloon</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ДекорацияЗаголовокViberРасширеннаяПодсказка</name>
+            <id>774</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияЗаголовокViberКонтекстноеМеню</name>
+            <id>773</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>23</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>true</skipOnInput>
+          <textColor xsi:type="core:ColorDef">
+            <red>67</red>
+            <green>176</green>
+            <blue>42</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаViberНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSizeIgnoreScale</pictureSize>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Доступно без ограничений</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКартинкаViber</name>
+          <id>332</id>
+          <title>
+            <key>en</key>
+            <value>Decoration mobile app</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКартинкаViberРасширеннаяПодсказка</name>
+            <id>334</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКартинкаViberКонтекстноеМеню</name>
+            <id>333</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>22</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>4</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаViberНажатие</name>
+            </handlers>
+            <picture xsi:type="form:FormPicture"/>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSize</pictureSize>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>НадписьViber</name>
+          <id>673</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTip>
+            <key>en</key>
+            <value>Facebook: Messages</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>НадписьViberРасширеннаяПодсказка</name>
+            <id>675</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НадписьViberКонтекстноеМеню</name>
+            <id>674</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>14.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаViberНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Интеграция с Viber</value>
+            </nonselectedPictureText>
+            <nonselectedPictureText>
+              <key>en</key>
+              <value>Viber Integration</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияОписаниеViber</name>
+          <id>338</id>
+          <title>
+            <key>ru</key>
+            <value>&lt;fontsize 10>Подключите мессенджер &lt;/>&lt;b>&lt;fontsize 10>Viber&lt;/>&lt;/>&lt;fontsize 10>. &lt;/>&lt;fontsize 10>Обменивайтесь &lt;/>&lt;fontsize 10>сообщениями&lt;/>&lt;fontsize 10> с клиентами и регистрируйте новые интересы. &lt;/>&lt;fontsize 10> &lt;/>&lt;link https://1crm.ru/help/Integractiya-s-Viber/>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Подробнее&lt;/>&lt;/>&lt;link https://1crm.ru/help/Integractiya-s-Viber/?sphrase_id=9315>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>...&lt;/>&lt;/></value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияОписаниеViberРасширеннаяПодсказка</name>
+            <id>340</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияОписаниеViberКонтекстноеМеню</name>
+            <id>339</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <formatted>true</formatted>
+          <type>Label</type>
+          <width>25</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>6</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorDef">
+            <red>153</red>
+            <green>153</green>
+            <blue>153</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+          </font>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Center</horizontalAlign>
+            <verticalAlign>Top</verticalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа Viber</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group Mobile app setting</value>
+        </title>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаViberРасширеннаяПодсказка</name>
+          <id>328</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <horizontalAlign>Center</horizontalAlign>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>РазделительКонечныйРаздел1</name>
+        <id>372</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>РазделительКонечныйРаздел1РасширеннаяПодсказка</name>
+          <id>374</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>РазделительКонечныйРаздел1КонтекстноеМеню</name>
+          <id>373</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Section 2</value>
+      </title>
+      <titleTextColor xsi:type="core:ColorDef"/>
+      <titleFont xsi:type="core:FontRef">
+        <font>Style.NormalTextFont</font>
+        <height>14.0</height>
+        <bold>true</bold>
+        <italic>false</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+      </titleFont>
+      <toolTip>
+        <key>en</key>
+        <value>Group section1</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ГруппаРяд1РасширеннаяПодсказка</name>
+        <id>18</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <representation>WeakSeparation</representation>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаРяд2</name>
+      <id>378</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаВКонтакте</name>
+        <id>355</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияЗаголовокВКонтакте</name>
+          <id>757</id>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTipRepresentation>Balloon</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ДекорацияЗаголовокВКонтактеРасширеннаяПодсказка</name>
+            <id>759</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияЗаголовокВКонтактеКонтекстноеМеню</name>
+            <id>758</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>23</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>true</skipOnInput>
+          <textColor xsi:type="core:ColorDef">
+            <red>67</red>
+            <green>176</green>
+            <blue>42</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаВКонтактеНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSizeIgnoreScale</pictureSize>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Доступно без ограничений</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКартинкаВКонтакте</name>
+          <id>360</id>
+          <title>
+            <key>en</key>
+            <value>Decoration mobile app</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Декорация картинка в контакте</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКартинкаВКонтактеРасширеннаяПодсказка</name>
+            <id>362</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКартинкаВКонтактеКонтекстноеМеню</name>
+            <id>361</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>22</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>4</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаВКонтактеНажатие</name>
+            </handlers>
+            <picture xsi:type="form:FormPicture"/>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSize</pictureSize>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>НадписьВКонтакте</name>
+          <id>661</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>НадписьВКонтактеРасширеннаяПодсказка</name>
+            <id>663</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НадписьВКонтактеКонтекстноеМеню</name>
+            <id>662</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>14.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаВКонтактеНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>ВКонтакте: сообщения</value>
+            </nonselectedPictureText>
+            <nonselectedPictureText>
+              <key>en</key>
+              <value>VKontakte: Messages</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияОписаниеViber2</name>
+          <id>366</id>
+          <title>
+            <key>ru</key>
+            <value>&lt;fontsize 10>Подключите публичную страницу &lt;/>&lt;b>&lt;fontsize 10>ВКонтакте&lt;/>&lt;/>&lt;fontsize 10>. &lt;/>&lt;fontsize 10>Обменивайтесь сообщениями с клиентами и регистрируйте новые интересы. &lt;/>&lt;link https://1crm.ru/help/integratsiya-s-vkontakte-soobshcheniya/>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Подробнее&lt;/>&lt;/>&lt;/>&lt;link https://1crm.ru/help/Dialogi-podkluchenie-vkontakte-i-telegram/?sphrase_id=9097>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>...&lt;/>&lt;/>&lt;/></value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияОписаниеViber2РасширеннаяПодсказка</name>
+            <id>368</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияОписаниеViber2КонтекстноеМеню</name>
+            <id>367</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <formatted>true</formatted>
+          <type>Label</type>
+          <width>25</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>6</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorDef">
+            <red>153</red>
+            <green>153</green>
+            <blue>153</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+          </font>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Center</horizontalAlign>
+            <verticalAlign>Top</verticalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа ВКонтакте</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group Mobile app setting</value>
+        </title>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаВКонтактеРасширеннаяПодсказка</name>
+          <id>356</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <horizontalAlign>Center</horizontalAlign>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаСистемаВзаимодействияСообщения</name>
+        <id>740</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияЗаголовокСистемаВзаимодействияСообщения</name>
+          <id>778</id>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTipRepresentation>Balloon</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ДекорацияЗаголовокСистемаВзаимодействияСообщенияРасширеннаяПодсказка</name>
+            <id>780</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияЗаголовокСистемаВзаимодействияСообщенияКонтекстноеМеню</name>
+            <id>779</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>23</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>true</skipOnInput>
+          <textColor xsi:type="core:ColorDef">
+            <red>67</red>
+            <green>176</green>
+            <blue>42</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаСистемаВзаимодействияСообщенияНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSizeIgnoreScale</pictureSize>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Доступно без ограничений</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКартинкаСистемаВзаимодействияСообщения</name>
+          <id>745</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКартинкаСистемаВзаимодействияСообщенияРасширеннаяПодсказка</name>
+            <id>747</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКартинкаСистемаВзаимодействияСообщенияКонтекстноеМеню</name>
+            <id>746</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>22</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>4</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаСистемаВзаимодействияСообщенияНажатие</name>
+            </handlers>
+            <picture xsi:type="form:FormPicture"/>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSize</pictureSize>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>НадписьСистемаВзаимодействияСообщения</name>
+          <id>748</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTip>
+            <key>en</key>
+            <value>Facebook: Messages</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>НадписьСистемаВзаимодействияСообщенияРасширеннаяПодсказка</name>
+            <id>750</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НадписьСистемаВзаимодействияСообщенияКонтекстноеМеню</name>
+            <id>749</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>14.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаСистемаВзаимодействияНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Диалоги взаимодействий</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияОписаниеСистемаВзаимодействияСообщения</name>
+          <id>751</id>
+          <title>
+            <key>ru</key>
+            <value>&lt;b>Система взаимодействия &lt;/>позволяет пользователям обмениваться сообщениями, обсуждать документы, устраивать  видеоконференции. Также есть  возможность демонстрировать экран своего компьютера. &lt;link https://v8.1c.ru/platforma/sistema-vzaimodeystviy/>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Подробнее&lt;/>&lt;/>&lt;link https://telefon.1crm.ru/>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>...&lt;/>&lt;/></value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияОписаниеСистемаВзаимодействияСообщенияРасширеннаяПодсказка</name>
+            <id>753</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияОписаниеСистемаВзаимодействияСообщенияКонтекстноеМеню</name>
+            <id>752</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <formatted>true</formatted>
+          <type>Label</type>
+          <width>25</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>6</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorDef">
+            <red>153</red>
+            <green>153</green>
+            <blue>153</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+          </font>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Center</horizontalAlign>
+            <verticalAlign>Top</verticalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа настройка сообщений Системы Взаимодействия</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group telephony setup</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа система взаимодействия сообщения</value>
+        </toolTip>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаСистемаВзаимодействияСообщенияРасширеннаяПодсказка</name>
+          <id>741</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <horizontalAlign>Center</horizontalAlign>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаСистемаВзаимодействия</name>
+        <id>481</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияЗаголовокСистемаВзаимодействия</name>
+          <id>483</id>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTipRepresentation>Balloon</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ДекорацияЗаголовокСистемаВзаимодействияРасширеннаяПодсказка</name>
+            <id>485</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияЗаголовокСистемаВзаимодействияКонтекстноеМеню</name>
+            <id>484</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>23</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>true</skipOnInput>
+          <textColor xsi:type="core:ColorDef">
+            <red>67</red>
+            <green>176</green>
+            <blue>42</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаСистемаВзаимодействияНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSizeIgnoreScale</pictureSize>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Доступно без ограничений</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКартинкаСистемаВзаимодействия</name>
+          <id>486</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКартинкаСистемаВзаимодействияРасширеннаяПодсказка</name>
+            <id>488</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКартинкаСистемаВзаимодействияКонтекстноеМеню</name>
+            <id>487</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>22</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>4</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаСистемаВзаимодействияНажатие</name>
+            </handlers>
+            <picture xsi:type="form:FormPicture"/>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSize</pictureSize>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>НадписьСистемаВзаимодействия</name>
+          <id>685</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTip>
+            <key>en</key>
+            <value>Facebook: Messages</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>НадписьСистемаВзаимодействияРасширеннаяПодсказка</name>
+            <id>687</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НадписьСистемаВзаимодействияКонтекстноеМеню</name>
+            <id>686</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>14.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаСистемаВзаимодействияНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Система взаимодействия</value>
+            </nonselectedPictureText>
+            <nonselectedPictureText>
+              <key>en</key>
+              <value>Collaboration System</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияОписаниеСистемаВзаимодействия</name>
+          <id>492</id>
+          <title>
+            <key>ru</key>
+            <value>&lt;b>Система взаимодействия &lt;/>позволяет пользователям обмениваться сообщениями, обсуждать документы, устраивать  видеоконференции. Также есть  возможность демонстрировать экран своего компьютера. &lt;link https://v8.1c.ru/platforma/sistema-vzaimodeystviy/>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Подробнее&lt;/>&lt;/>&lt;link https://telefon.1crm.ru/>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>...&lt;/>&lt;/></value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияОписаниеСистемаВзаимодействияРасширеннаяПодсказка</name>
+            <id>494</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияОписаниеСистемаВзаимодействияКонтекстноеМеню</name>
+            <id>493</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <formatted>true</formatted>
+          <type>Label</type>
+          <width>25</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>6</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorDef">
+            <red>153</red>
+            <green>153</green>
+            <blue>153</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+          </font>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Center</horizontalAlign>
+            <verticalAlign>Top</verticalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа настройка Системы Взаимодействия</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group telephony setup</value>
+        </title>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаСистемаВзаимодействияРасширеннаяПодсказка</name>
+          <id>482</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <horizontalAlign>Center</horizontalAlign>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаТелефония</name>
+        <id>105</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияЗаголовокТелефония</name>
+          <id>274</id>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTipRepresentation>Balloon</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ДекорацияЗаголовокТелефонияРасширеннаяПодсказка</name>
+            <id>276</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияЗаголовокТелефонияКонтекстноеМеню</name>
+            <id>275</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>23</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>true</skipOnInput>
+          <textColor xsi:type="core:ColorDef">
+            <red>67</red>
+            <green>176</green>
+            <blue>42</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияТелефонияНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSizeIgnoreScale</pictureSize>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Доступно без ограничений</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКартинкаТелефония</name>
+          <id>115</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКартинкаТелефонияРасширеннаяПодсказка</name>
+            <id>117</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКартинкаТелефонияКонтекстноеМеню</name>
+            <id>116</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>22</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>4</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияТелефонияНажатие</name>
+            </handlers>
+            <picture xsi:type="form:FormPicture"/>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSize</pictureSize>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>НадписьТелефония</name>
+          <id>688</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTip>
+            <key>en</key>
+            <value>Facebook: Messages</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>НадписьТелефонияРасширеннаяПодсказка</name>
+            <id>690</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НадписьТелефонияКонтекстноеМеню</name>
+            <id>689</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>14.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияТелефонияНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Интеграция с телефонией</value>
+            </nonselectedPictureText>
+            <nonselectedPictureText>
+              <key>en</key>
+              <value>Telephony Integration</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияОписаниеТелефония</name>
+          <id>124</id>
+          <title>
+            <key>ru</key>
+            <value>Подключите &quot;&lt;b>железную&lt;/>&quot; или &lt;b>облачную АТС&lt;/> для управления телефонными звонками, автоподнятие карточки Интереса при звонке, прослушивание записей разговора и ряд других возможностей. &lt;link https://telefon.1crm.ru/>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Подробнее...&lt;/>&lt;/></value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Connecting &lt;b>&quot;hardware&quot; or cloud PBX &lt;/>to manage phone calls, automatically show Lead card while making a call, listening recordings and other features from 1C:CRM interface. &lt;link https://telefon.1crm.ru/>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Details...&lt;/>&lt;/></value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияОписаниеТелефонияРасширеннаяПодсказка</name>
+            <id>126</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияОписаниеТелефонияКонтекстноеМеню</name>
+            <id>125</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <formatted>true</formatted>
+          <type>Label</type>
+          <width>25</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>6</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorDef">
+            <red>153</red>
+            <green>153</green>
+            <blue>153</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+          </font>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Center</horizontalAlign>
+            <verticalAlign>Top</verticalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа настройка телефонии</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group telephony setup</value>
+        </title>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаТелефонияРасширеннаяПодсказка</name>
+          <id>106</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <horizontalAlign>Center</horizontalAlign>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>РазделительКонечныйРаздел2</name>
+        <id>464</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>РазделительКонечныйРаздел2РасширеннаяПодсказка</name>
+          <id>466</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>РазделительКонечныйРаздел2КонтекстноеМеню</name>
+          <id>465</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Section 2</value>
+      </title>
+      <titleTextColor xsi:type="core:ColorDef"/>
+      <titleFont xsi:type="core:FontRef">
+        <font>Style.NormalTextFont</font>
+        <height>14.0</height>
+        <bold>true</bold>
+        <italic>false</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+      </titleFont>
+      <toolTip>
+        <key>en</key>
+        <value>Group section1</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ГруппаРяд2РасширеннаяПодсказка</name>
+        <id>379</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <representation>WeakSeparation</representation>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаРяд3</name>
+      <id>781</id>
+      <items xsi:type="form:Decoration">
+        <name>РазделительКонечныйРаздел3</name>
+        <id>853</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>РазделительКонечныйРаздел3РасширеннаяПодсказка</name>
+          <id>855</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>РазделительКонечныйРаздел3КонтекстноеМеню</name>
+          <id>854</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Section 2</value>
+      </title>
+      <titleTextColor xsi:type="core:ColorDef"/>
+      <titleFont xsi:type="core:FontRef">
+        <font>Style.NormalTextFont</font>
+        <height>14.0</height>
+        <bold>true</bold>
+        <italic>false</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+      </titleFont>
+      <toolTip>
+        <key>en</key>
+        <value>Group section1</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ГруппаРяд3РасширеннаяПодсказка</name>
+        <id>782</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <representation>WeakSeparation</representation>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаОтключенные</name>
+      <id>862</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаInstagram</name>
+        <id>299</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияЗаголовокInstagram</name>
+          <id>763</id>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTipRepresentation>Balloon</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ДекорацияЗаголовокInstagramРасширеннаяПодсказка</name>
+            <id>765</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияЗаголовокInstagramКонтекстноеМеню</name>
+            <id>764</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>23</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>true</skipOnInput>
+          <textColor xsi:type="core:ColorDef">
+            <red>67</red>
+            <green>176</green>
+            <blue>42</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаInstagramНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSizeIgnoreScale</pictureSize>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Доступно без ограничений</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКартинкаInstagram</name>
+          <id>304</id>
+          <title>
+            <key>en</key>
+            <value>Decoration mobile app</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКартинкаInstagramРасширеннаяПодсказка</name>
+            <id>306</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКартинкаInstagramКонтекстноеМеню</name>
+            <id>305</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>22</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>4</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаInstagramНажатие</name>
+            </handlers>
+            <picture xsi:type="form:FormPicture"/>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSize</pictureSize>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>НадписьInstagram</name>
+          <id>667</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTip>
+            <key>en</key>
+            <value>Facebook: Messages</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>НадписьInstagramРасширеннаяПодсказка</name>
+            <id>669</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НадписьInstagramКонтекстноеМеню</name>
+            <id>668</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>14.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаInstagramНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Instagram для бизнеса</value>
+            </nonselectedPictureText>
+            <nonselectedPictureText>
+              <key>en</key>
+              <value>Instagram for Business</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияОписаниеInstagram</name>
+          <id>310</id>
+          <title>
+            <key>ru</key>
+            <value>&lt;fontsize 10>Подключите бизнес-аккаунт &lt;/>&lt;b>&lt;fontsize 10>Instagram&lt;/>&lt;/>&lt;fontsize 10>. &lt;/>&lt;fontsize 10>Обменивайтесь комментариями с клиентами и регистрируйте новые интересы. &lt;/>&lt;link https://1crm.ru/help/integratsiya-s-instagram-kommentarii/>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Подробнее&lt;/>&lt;/>&lt;/>&lt;link https://1crm.ru/help/Dialogi-podkluchenie-vkontakte-i-telegram/?sphrase_id=9097>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>...&lt;/>&lt;/>&lt;/></value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияОписаниеInstagramРасширеннаяПодсказка</name>
+            <id>312</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияОписаниеInstagramКонтекстноеМеню</name>
+            <id>311</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <formatted>true</formatted>
+          <type>Label</type>
+          <width>25</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>6</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorDef">
+            <red>153</red>
+            <green>153</green>
+            <blue>153</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+          </font>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Center</horizontalAlign>
+            <verticalAlign>Top</verticalAlign>
+          </extInfo>
+        </items>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа Instagram</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group Mobile app setting</value>
+        </title>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаInstagramРасширеннаяПодсказка</name>
+          <id>300</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <horizontalAlign>Center</horizontalAlign>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаInstagramDirect</name>
+        <id>726</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияЗаголовокInstagramDirect</name>
+          <id>766</id>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTipRepresentation>Balloon</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ДекорацияЗаголовокInstagramDirectРасширеннаяПодсказка</name>
+            <id>768</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияЗаголовокInstagramDirectКонтекстноеМеню</name>
+            <id>767</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>23</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>true</skipOnInput>
+          <textColor xsi:type="core:ColorDef">
+            <red>67</red>
+            <green>176</green>
+            <blue>42</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаInstagramDirectНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSizeIgnoreScale</pictureSize>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Доступно без ограничений</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКартинкаInstagramDirect</name>
+          <id>731</id>
+          <title>
+            <key>en</key>
+            <value>Decoration mobile app</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Декорация картинка instagram direct</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКартинкаInstagramDirectРасширеннаяПодсказка</name>
+            <id>733</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКартинкаInstagramDirectКонтекстноеМеню</name>
+            <id>732</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>22</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>4</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаInstagramDirectНажатие</name>
+            </handlers>
+            <picture xsi:type="form:FormPicture"/>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSize</pictureSize>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>НадписьInstagramDirect</name>
+          <id>734</id>
+          <title>
+            <key>ru</key>
+            <value>Надпись instagram direct</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTip>
+            <key>en</key>
+            <value>Facebook: Messages</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>НадписьInstagramDirectРасширеннаяПодсказка</name>
+            <id>736</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НадписьInstagramDirectКонтекстноеМеню</name>
+            <id>735</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>14.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияКартинкаInstagramDirectНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Instagram Direct</value>
+            </nonselectedPictureText>
+            <nonselectedPictureText>
+              <key>en</key>
+              <value>Instagram for Business</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияОписаниеDirect</name>
+          <id>856</id>
+          <title>
+            <key>ru</key>
+            <value>&lt;fontsize 10>Подключите &lt;/>&lt;b>&lt;fontsize 10>Direct&lt;/>&lt;/>&lt;fontsize 10> для бизнес-аккаунта &lt;/>&lt;b>&lt;fontsize 10>Instagram&lt;/>&lt;/>&lt;fontsize 10>. Обменивайтесь личными сообщениями с клиентами, консультируйте и регистрируйте новые интересы.&lt;/>&lt;fontsize 10> &lt;/>&lt;link https://1crm.ru/help/integratsiya-s-instagram-kommentarii/>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Подробнее&lt;/>&lt;/>&lt;/>&lt;link https://1crm.ru/help/Dialogi-podkluchenie-vkontakte-i-telegram/?sphrase_id=9097>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>...&lt;/>&lt;/>&lt;/></value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияОписаниеDirectРасширеннаяПодсказка</name>
+            <id>858</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияОписаниеDirectКонтекстноеМеню</name>
+            <id>857</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <formatted>true</formatted>
+          <type>Label</type>
+          <width>25</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>6</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorDef">
+            <red>153</red>
+            <green>153</green>
+            <blue>153</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+          </font>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Center</horizontalAlign>
+            <verticalAlign>Top</verticalAlign>
+          </extInfo>
+        </items>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа Instagram Direct</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group Mobile app setting</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа instagram direct</value>
+        </toolTip>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаInstagramDirectРасширеннаяПодсказка</name>
+          <id>727</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <horizontalAlign>Center</horizontalAlign>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаFacebook</name>
+        <id>236</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияЗаголовокFacebook</name>
+          <id>760</id>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTipRepresentation>Balloon</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ДекорацияЗаголовокFacebookРасширеннаяПодсказка</name>
+            <id>762</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияЗаголовокFacebookКонтекстноеМеню</name>
+            <id>761</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>23</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>true</skipOnInput>
+          <textColor xsi:type="core:ColorDef">
+            <red>67</red>
+            <green>176</green>
+            <blue>42</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияFacebookНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSizeIgnoreScale</pictureSize>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Доступно без ограничений</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКартинкаFacebook</name>
+          <id>241</id>
+          <title>
+            <key>en</key>
+            <value>Decoration mobile app</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКартинкаFacebookРасширеннаяПодсказка</name>
+            <id>243</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКартинкаFacebookКонтекстноеМеню</name>
+            <id>242</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>22</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>4</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияFacebookНажатие</name>
+            </handlers>
+            <picture xsi:type="form:FormPicture"/>
+            <hyperlink>true</hyperlink>
+            <pictureSize>AutoSize</pictureSize>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>НадписьFacebook</name>
+          <id>664</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <toolTip>
+            <key>en</key>
+            <value>Facebook: Messages</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>НадписьFacebookРасширеннаяПодсказка</name>
+            <id>666</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НадписьFacebookКонтекстноеМеню</name>
+            <id>665</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>14.0</height>
+            <bold>true</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияFacebookНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <nonselectedPictureText>
+              <key>ru</key>
+              <value>Facebook: сообщения</value>
+            </nonselectedPictureText>
+            <nonselectedPictureText>
+              <key>en</key>
+              <value>Facebook: Messages</value>
+            </nonselectedPictureText>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияОписаниеFacebook</name>
+          <id>247</id>
+          <title>
+            <key>ru</key>
+            <value>&lt;fontsize 10>&lt;color #999999>Подключите публичную страницу &lt;/>&lt;/>&lt;b>&lt;fontsize 10>&lt;color #999999>Facebook&lt;/>&lt;/>&lt;/>&lt;fontsize 10>&lt;color #999999>. &lt;/>&lt;/>&lt;fontsize 10>&lt;color #999999>Обменивайтесь сообщениями с клиентами и регистрируйте новые интересы. &lt;/>&lt;/>&lt;link https://1crm.ru/help/integratsiya-s-facebook-soobshcheniya/>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>Подробнее&lt;/>&lt;/>&lt;/>&lt;link https://1crm.ru/help/Dialogi-podkluchenie-vkontakte-i-telegram/?sphrase_id=9097>&lt;fontsize 10>&lt;colorstyle 0:030ab1c0-0343-4e42-b7f3-0acce041c67e>...&lt;/>&lt;/>&lt;/></value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияОписаниеFacebookРасширеннаяПодсказка</name>
+            <id>249</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияОписаниеFacebookКонтекстноеМеню</name>
+            <id>248</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <formatted>true</formatted>
+          <type>Label</type>
+          <width>25</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>6</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorDef">
+            <red>153</red>
+            <green>153</green>
+            <blue>153</blue>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+            <height>10.0</height>
+          </font>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Center</horizontalAlign>
+            <verticalAlign>Top</verticalAlign>
+          </extInfo>
+        </items>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа Facebook</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group Mobile app setting</value>
+        </title>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаFacebookРасширеннаяПодсказка</name>
+          <id>237</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <horizontalAlign>Center</horizontalAlign>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа отключенные</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаОтключенныеРасширеннаяПодсказка</name>
+        <id>863</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <behavior>Auto</behavior>
+        <representation>WeakSeparation</representation>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <showTitle>true</showTitle>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Все блоки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>All blocks</value>
+    </title>
+    <horizontalStretch>true</horizontalStretch>
+    <extendedTooltip>
+      <name>ГруппаВсеБлокиРасширеннаяПодсказка</name>
+      <id>16</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Объект</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.CRM_Приложения</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+  </attributes>
+  <attributes>
+    <name>ПоддерживаетРабочийСтол</name>
+    <id>2</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПереинициализироватьРабочийСтол</name>
+    <id>3</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

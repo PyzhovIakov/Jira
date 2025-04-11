@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc3989a8-1334-4d8c-b03f-a53a53853ca8">
+  <name>CRM_ШаблоныЭлементовФорм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны элементов форм</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

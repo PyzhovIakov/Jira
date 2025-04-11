@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6561c4f-32bd-4e05-ac84-af0fd195be7d">
+  <name>CRM_ЧекЛист</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чек-лист</value>
+  </synonym>
+</mdclass:CommonPicture>

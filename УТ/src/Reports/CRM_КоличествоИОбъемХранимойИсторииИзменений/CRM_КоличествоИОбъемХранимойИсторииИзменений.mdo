@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5d7ff15-ec65-40fc-ae55-8b468d062501">
+  <producedTypes>
+    <objectType typeId="e80135a9-6d98-4525-a294-c96efe8a4b17" valueTypeId="f5b01dd8-02d9-454a-800f-c1ed0ed47c54"/>
+    <managerType typeId="e1729e27-a9ff-41d5-9f86-32d507da7b08" valueTypeId="4a35a1d6-db96-4156-96f1-74b6c94b2ba6"/>
+  </producedTypes>
+  <name>CRM_КоличествоИОбъемХранимойИсторииИзменений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество и объем хранимой истории изменений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.CRM_КоличествоИОбъемХранимойИсторииИзменений.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="49e7f44e-ac0f-4d6a-a8ec-d785a6389c4c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

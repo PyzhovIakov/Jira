@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d7b95632-0e8d-4f27-acc7-71ea0ba28138">
+  <name>CRM_РаботаСРечьюБМОКлиентСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM. Работа с речью БМО клиент сервер</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

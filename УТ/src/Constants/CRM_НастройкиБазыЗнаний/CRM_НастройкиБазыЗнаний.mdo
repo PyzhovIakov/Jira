@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da20961c-2f36-4dba-84df-47af28683bce">
+  <producedTypes>
+    <managerType typeId="bb9d2f19-6b28-42dc-b9dd-8f5aa66511a7" valueTypeId="7f702c1a-f2aa-4fe3-b123-a0c9ea716b48"/>
+    <valueManagerType typeId="d8ae7534-9237-42cb-b20a-f5997de62fcb" valueTypeId="a4beb5f4-65b4-4cc5-a14e-fcb7820a91a9"/>
+    <valueKeyType typeId="c9452f96-dafe-4baa-af42-02e5b989a629" valueTypeId="49172f33-2a59-41c4-ab2f-206cc0267bae"/>
+  </producedTypes>
+  <name>CRM_НастройкиБазыЗнаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки базы знаний</value>
+  </synonym>
+  <type>
+    <types>ValueStorage</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

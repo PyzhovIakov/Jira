@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d13d61f0-813f-4863-ae0b-9a8453896e22">
+  <producedTypes>
+    <objectType typeId="a1f71c69-3ddb-441f-bbc6-8248a4cd4393" valueTypeId="67eb5edf-26ae-4fb1-963d-41bfaabef48b"/>
+    <managerType typeId="346af7f4-c99b-4529-8292-a711c2f57b38" valueTypeId="2ed11725-d3fb-49c6-9d80-b66fe62c5570"/>
+  </producedTypes>
+  <name>CRM_ПутьКлиента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь клиента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.CRM_ПутьКлиента.Form.ФормаОтчета</defaultForm>
+  <defaultSettingsForm>Report.CRM_ПутьКлиента.Form.ФормаНастроек</defaultSettingsForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="6b58be4a-8f30-4767-b62a-e229c1313693">
+    <name>АдресСхемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес схемы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="5bd0dae4-6c55-4f7c-a634-151a46a60eb2">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="df24c9f7-c638-4ddd-8055-c20c311e8a88">
+    <name>ФормаОтчетаПечать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета печать</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a10ab1c0-bc1b-456e-8796-1e4f36e61bfe">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f9666b33-7958-493a-8278-4f18b8fe29cc">
+    <name>ФормаОтбораМенеджеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отбора менеджеров</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3e1f53a9-6146-4306-b96f-361ab52d36d3">
+    <name>ФормаПорядкаВерхнейГоризонтали</name>
+    <synonym>
+      <key>ru</key>
+      <value>Верхняя горизонталь: отображение отчетов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d2c9e7ba-b6d1-4055-abdc-7fbf7b3d7294">
+    <name>D3_ДиаграммаПричиныПотериИнтересов</name>
+    <synonym>
+      <key>ru</key>
+      <value>D3 диаграмма причины потери интересов</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="093e13c9-4757-40cb-ab2a-16886726eb47">
+    <name>D3_ДиаграммаСтатистикиПоИнтересам</name>
+    <synonym>
+      <key>ru</key>
+      <value>D3 диаграмма статистики по интересам</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="739bd9be-3d3b-4a4e-adb5-12ca222205e9">
+    <name>D3_ДиаграммаИсточникОбращений</name>
+    <synonym>
+      <key>ru</key>
+      <value>D3 диаграмма источник обращений</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="e2a6c1af-14b8-419f-8ec4-1e11ef73ed9d">
+    <name>МакетДетализация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет детализация</value>
+    </synonym>
+  </templates>
+  <templates uuid="edfe52d4-d901-460d-bb49-b7932d131407">
+    <name>МакетИсточникОбращений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет источник обращений</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="635e5edd-c65d-4bac-819d-098e11033403">
+    <name>МакетИтогиHTML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет итоги HTML</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="c0153c8a-e70c-4be1-9e41-d8fb6c92d81c">
+    <name>МакетОтвалКлиентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет отвал клиентов</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="718e357c-f535-4b5b-85a4-49b916ebf9b7">
+    <name>МакетПричиныПотериИнтересов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет причины потери интересов</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="eb650fb8-4edd-435f-9133-ea405010b96c">
+    <name>МакетСуммыИнтересов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет суммы интересов</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="95b7c2d2-e7e5-4f4f-9af7-8848925376b7">
+    <name>ПечатнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатная форма</value>
+    </synonym>
+  </templates>
+  <templates uuid="b69654bc-7a8d-4028-89bc-99029f4ebb50">
+    <name>МакетДетализацияЛидов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет детализация лидов</value>
+    </synonym>
+    <comment>АПК:1032 АПК:265 не проверять на орфографию синоним и имя</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="80933940-9964-47b1-ba62-ae871391f636">
+    <name>МакетСтатистика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет статистика</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="e2623901-2785-4fab-a1c6-ea9b7424ecec">
+    <name>МакетДлительность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет длительность</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="8bd39eda-b1a0-4630-b732-1fe5a726dfc9">
+    <name>HTMLМакетОтсутствияДанныхДиаграммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>HTMLМакет отсутствия данных диаграммы</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <commands uuid="825eb9a6-af1d-4987-b6b5-f5627af543ed">
+    <name>ПутьКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь клиента</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

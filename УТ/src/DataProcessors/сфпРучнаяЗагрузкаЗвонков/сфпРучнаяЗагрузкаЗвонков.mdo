@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58b1e0f1-801c-47d0-a91d-f16155b89a84">
+  <producedTypes>
+    <objectType typeId="d158951b-6785-415f-92e0-c383a934e36a" valueTypeId="ac8e203f-c130-4a0b-9913-5e7f232808d1"/>
+    <managerType typeId="3db39ea9-fc58-4193-8f72-814b1670e527" valueTypeId="c781fde9-3fc9-4650-87a6-14d5c8b25992"/>
+  </producedTypes>
+  <name>сфпРучнаяЗагрузкаЗвонков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ручная загрузка звонков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.сфпРучнаяЗагрузкаЗвонков.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="6e67ea2b-ef45-4ff0-be29-e6221e2d6b10">
+    <name>Токен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Токен</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0af971f8-6786-46cf-8ef1-11f3ca9d2ef5">
+    <name>ДатаНачалаВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала выгрузки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7fb16d00-010b-4f54-896a-e349cc5370df">
+    <name>ДатаОкончанияВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания выгрузки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="97260f9b-e231-4d47-be23-4b0c5f817ce0">
+    <name>ApiKey</name>
+    <synonym>
+      <key>ru</key>
+      <value>Api key</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="554b0dae-f99e-47d4-8543-6198de1c9b5e">
+    <name>ApiSalt</name>
+    <synonym>
+      <key>ru</key>
+      <value>Api salt</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4efe03b0-db64-45c7-8550-30a828589840">
+    <name>ТокенМегафон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Токен мегафон</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="27658188-963f-47ae-9d55-618061193379">
+    <name>ИспользуемаяАТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используемая АТС</value>
+    </synonym>
+    <type>
+      <types>EnumRef.сфпДоступныеАТС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8b9593c2-9169-4e6b-a3db-2319a1d626c7">
+    <name>АдресОблачнойАТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес облачной АТС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="3c74933f-9ee7-4b1f-bb5f-e51ddbec56f3">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

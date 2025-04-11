@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c3cd793-63cc-4508-91b3-e2ce6fa16d28">
+  <name>CRM_СтрелкаВниз16</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стрелка вниз 16 (CRM)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Up arrow (CRM)</value>
+  </synonym>
+</mdclass:CommonPicture>

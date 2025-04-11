@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cbaf5f4-81d4-44b9-8885-2a529da897b1">
+  <name>ТаблицаСчетовBankFeeds</name>
+  <synonym>
+    <key>ru</key>
+    <value>Таблица счетов bank feeds</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

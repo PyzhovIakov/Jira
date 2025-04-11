@@ -1,0 +1,60 @@
+<html>
+<head>
+<style type="text/css">
+body {
+  background: rgb(240,240,240); 
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5); /* тень */ 
+}
+page[size="A4"] {  
+  width: 21cm; /* ширина */
+  /* height: 29.7cm;  Высота */
+  padding: 15mm 15mm 15mm 20mm; /* внутренние отступы - верх, право, низ, лево */
+}
+@media print {
+  body, page {
+    margin: 0;
+  }
+}
+</style>
+</head>
+
+<body><page size="A4">
+<h3 style="text-align: left;"><b>ЭЛЕКТРОННОЕ ПИСЬМО</b></h3>
+
+<table border="0" align="left" cellspacing="0" width="100%">
+<colgroup>
+<col style="width: 15%;">
+<col style="width: 85%;">
+</colgroup>
+<tbody>
+<tr>
+<td><b>Тема:</b></td>
+<td>%Тема%</td>
+</tr>
+<tr>
+<td><b>От:</b></td>
+<td>%От%</td>
+</tr>
+<tr>
+<td><b>Кому:</b></td>
+<td>%Кому%</td>
+</tr>
+<tr>
+<td><b>Дата:</b></td>
+<td>%Дата%</td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+<br>
+%ТекстПисьма%
+</page>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4cd01351-7496-473e-b355-eac60996a8b0">
+  <name>CRM_МенюДополнительныеФункции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Меню дополнительные функции (CRM)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Business process</value>
+  </synonym>
+</mdclass:CommonPicture>

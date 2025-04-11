@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7127f633-477c-4243-bbe4-707b4dde16a1">
+  <name>CRM_Модуль_ОбработкаПолученияФормСправочников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка получения форм справочников (Модуль CRM)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Processing of catalog forms receipt (CRM)</value>
+  </synonym>
+  <comment>Обработка получения форм справочников (Модуль CRM)</comment>
+  <source>
+    <types>CatalogManager.Контрагенты</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.CRM_МетодыМодулейМенеджеровСправочников.ОбработкаПолученияФормОбъектовCRM</handler>
+</mdclass:EventSubscription>

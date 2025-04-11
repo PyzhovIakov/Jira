@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="91897251-803d-4c00-b3e7-56f538cb8166">
+  <producedTypes>
+    <managerType typeId="0f677502-0e36-42ae-b1d6-bda40f5c3952" valueTypeId="eae0768a-7589-4183-b0ea-2bf846a68951"/>
+    <valueManagerType typeId="f4e76cbb-cb1c-4f33-a189-dda1deaff509" valueTypeId="4290c5a6-fc37-4e0a-9292-172d5f8a67f8"/>
+    <valueKeyType typeId="e12858dc-61d5-4e2b-ad8b-ad1417b1cc3d" valueTypeId="81c8a4bd-a59a-439b-a89e-a767bb5a27f8"/>
+  </producedTypes>
+  <name>CRM_ПериодХраненияИсторииРеквизитовОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Период хранения истории реквизитов объектов</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

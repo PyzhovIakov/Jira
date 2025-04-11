@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54cc6a02-cef8-4e41-9987-67a1efc8543c">
+  <producedTypes>
+    <managerType typeId="150b745c-f7e5-46c1-81dc-57124e040716" valueTypeId="9d4449bc-1751-4f1f-9ee3-ab9430f3ba13"/>
+    <valueManagerType typeId="ca9ef1d0-3c88-462d-86cb-fd1dd20107c2" valueTypeId="37f7cc29-b76c-4ad0-90d4-b16b7d3e479f"/>
+    <valueKeyType typeId="0ad19e06-4d3a-409c-8e87-86c27f844ae1" valueTypeId="3b134f69-47b8-4ddb-9233-6868549b964e"/>
+  </producedTypes>
+  <name>CRM_ТехподдержкаURL</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM техподдержка URL</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

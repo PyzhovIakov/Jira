@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b680a34c-f3b9-4f15-b5a8-aa218c08571c">
+  <producedTypes>
+    <selectionType typeId="739e5e4f-c082-46f6-91ae-146e522b057d" valueTypeId="069ada92-b3a4-4e4d-8ab7-25a381cbbdac"/>
+    <listType typeId="31d2f913-822a-4897-ab5d-cd20fe3bfdcb" valueTypeId="63d65120-66c3-4d31-827d-089d752a8d39"/>
+    <managerType typeId="ae61c763-4f66-484d-8b7e-9c4c18bcfa6f" valueTypeId="e98c62a9-5c4b-4bf3-af32-a18a6fb912b6"/>
+    <recordSetType typeId="bd85d346-9907-4633-9fae-9aeff6e34226" valueTypeId="ff0236e7-dc3e-48c5-a1ce-60789a468c85"/>
+    <recordKeyType typeId="8d95a886-f8ec-4ce3-84bd-3374705c2503" valueTypeId="336dd1bf-3518-4a92-92ff-1603aad7137b"/>
+    <recordType typeId="fe52afb7-e09f-4ca7-a988-73c21b80b024" valueTypeId="2a87aafe-8dad-4dcc-8bf1-2fb6801d70ac"/>
+    <recordManagerType typeId="c2f5b0e3-d585-4f98-aaa6-9784868057f4" valueTypeId="45ebcab1-c0cb-46fd-9944-0d68ffee67d8"/>
+  </producedTypes>
+  <name>CRM_НастройкиОбменаСB2BПорталом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки обмена с B2B порталом</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5cc31ea8-4ad6-4ddc-af07-06fef1124a6a">
+    <name>EmailКонтактов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Email контактов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="467f4710-d357-4117-b5e1-07170d10054d">
+    <name>ТипОтношенийПартнеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип отношений партнеров</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ТипыОтношений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9734f45c-b669-4c6f-a426-74119c64e3fc">
+    <name>ШаблонУведомленияОРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон уведомления о регистрации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ШаблоныРассылки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="59b21203-dacf-45f9-b0ce-aa17aad904ee">
+    <name>ШаблонУведомленияОбИзменениях</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон уведомления об изменениях</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ШаблоныРассылки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a7b4e7a7-6906-4773-be2d-b0de016a427c">
+    <name>СценарийПоддержки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарий поддержки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_СостоянияИнтересов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e74a5d2d-597c-415d-a62c-b94629eec6d7">
+    <name>ТипУслуги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип услуги</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ТипУслуги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3a71e760-201f-462f-b7d2-41b46b9b9489">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="479ef4fa-3df8-44aa-a6c9-f72fb45711b9">
+    <name>ИсточникПолученияЗаявок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник получения заявок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ИсточникиПолученияЛидов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c2f5a1ad-e6fd-4b22-b963-6012f941e2c5">
+    <name>КаналРекламногоВоздействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал рекламного воздействия</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.КаналыРекламныхВоздействий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6cdc4bb4-0054-462b-a5c7-634fa97e9e58">
+    <name>ИсточникРекламногоВоздействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник рекламного воздействия</value>
+    </synonym>
+    <type>
+      <types>Characteristic.КаналыРекламныхВоздействий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <forms uuid="1c087bc2-d822-4abd-9607-fe34f3b17b0b">
+    <name>Настройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

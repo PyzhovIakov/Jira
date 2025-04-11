@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e9e6e682-4780-4a78-badb-7c80846707a7">
+  <producedTypes>
+    <managerType typeId="3f3e295e-deff-4304-818d-78e6acfaf4ac" valueTypeId="679dd2f4-b225-4b9e-bc6a-9356b149b0b9"/>
+    <valueManagerType typeId="6c7e05e8-610a-42f9-9a01-22d51717c42d" valueTypeId="fbe1a400-c074-47e7-929d-a80dde268079"/>
+    <valueKeyType typeId="0695923c-097c-4377-80db-af463ba879f1" valueTypeId="4b4eae5f-1aa6-48d6-96af-0f6a7c1895f9"/>
+  </producedTypes>
+  <name>CRM_УтверждатьОтветСразу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Утверждать ответ сразу</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

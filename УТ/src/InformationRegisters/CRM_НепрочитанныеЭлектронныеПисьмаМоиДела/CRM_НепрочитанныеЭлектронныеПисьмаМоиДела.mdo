@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96b5988c-f307-455f-bf81-265e6a21c4e8">
+  <producedTypes>
+    <selectionType typeId="cadce2bc-7217-441c-93af-29c1ea83e6d7" valueTypeId="74571eb2-e2e0-4a0c-8e72-5394e646e834"/>
+    <listType typeId="c8e91b37-6bcf-4808-9e32-4e6bd03ce59c" valueTypeId="fb07ada9-12d5-4467-bed7-2fb859146794"/>
+    <managerType typeId="d31185b3-8be2-4404-801e-4a9aec7aeec8" valueTypeId="7e097c1e-26b8-4dd3-b9bf-29eadfdc2028"/>
+    <recordSetType typeId="8bd4733f-7253-402d-a032-ec05bc94f5be" valueTypeId="63576813-8852-4271-8317-5719a9b93957"/>
+    <recordKeyType typeId="7592b2d7-4d5b-4f41-9cf6-77ac7e9343b0" valueTypeId="25147cb2-b00b-4253-8d2f-b70a76777987"/>
+    <recordType typeId="febb9473-066b-49d9-9070-feec96cb77ce" valueTypeId="bf806410-ac6b-43b1-8e8c-5b5b6b469aca"/>
+    <recordManagerType typeId="cec6bc5b-41fe-4753-8983-e1e278a98f88" valueTypeId="0187b2a3-604a-4d72-ab4c-f2ca0d99e360"/>
+  </producedTypes>
+  <name>CRM_НепрочитанныеЭлектронныеПисьмаМоиДела</name>
+  <synonym>
+    <key>ru</key>
+    <value>Непрочитанные электронные письма (Мои дела в почте)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Unread electronic letters</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="56c315d5-96de-488b-a311-2e941dbd5567">
+    <name>Письмо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Letter</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЭлектронноеПисьмоВходящее</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текст письма</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>text of the letter</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e6a36e64-40b8-4fed-bead-7af5757e4e83">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>User</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РолиИсполнителей</types>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

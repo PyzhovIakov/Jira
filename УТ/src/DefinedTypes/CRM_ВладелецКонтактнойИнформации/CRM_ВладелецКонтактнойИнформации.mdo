@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3a116a8-6f8e-4764-a514-2ee3f406df52">
+  <producedTypes>
+    <containerType typeId="fc6e9320-8838-453d-95aa-605e3cb77204" valueTypeId="56a045fc-384b-402b-9731-540a280d4a34"/>
+  </producedTypes>
+  <name>CRM_ВладелецКонтактнойИнформации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Владелец контактной информации</value>
+  </synonym>
+  <type>
+    <types>CatalogObject.CRM_ПотенциальныеКлиенты</types>
+  </type>
+</mdclass:DefinedType>

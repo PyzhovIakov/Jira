@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a809c7c-a9a8-4933-a8dd-63733daf3572">
+  <name>CRM_ЯМ_Флаг2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Флаг 2</value>
+  </synonym>
+</mdclass:CommonPicture>

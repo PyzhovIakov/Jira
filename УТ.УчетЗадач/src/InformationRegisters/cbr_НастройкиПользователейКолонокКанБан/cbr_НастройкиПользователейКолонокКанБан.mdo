@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95c46ab8-b3b4-47ac-ac6d-197cc9db0310">
+  <producedTypes>
+    <selectionType typeId="4fd949a3-1bcf-40c2-adb4-03015bfa8582" valueTypeId="130a4a69-f91f-4127-8046-c7c35f89cc41"/>
+    <listType typeId="586682e3-1cd1-4aa0-b71f-fa68239130ea" valueTypeId="fbc503b5-458a-4edf-9129-ab2fe55a1811"/>
+    <managerType typeId="e7327678-d4e7-419f-a48d-d34503bae7e1" valueTypeId="e7f158cc-1d75-4d65-9af6-c38fb5f710df"/>
+    <recordSetType typeId="c7535bfe-c563-4093-870a-087a095b7149" valueTypeId="1eb6d325-74ea-44e1-bc49-e2d954cd5458"/>
+    <recordKeyType typeId="560fa323-48a5-4bd6-ad92-2ad542494ad1" valueTypeId="356305e5-96d7-40e0-8026-db54949f2ec5"/>
+    <recordType typeId="b57e326e-3387-41e9-bd80-8bcd3de77399" valueTypeId="933c3f1f-dc18-44a9-b140-62ca552a9a98"/>
+    <recordManagerType typeId="9ad09ef6-9ade-4d23-92ca-64448fe93bc2" valueTypeId="8b791d21-3de0-4412-a2e7-5f4d9958aa30"/>
+  </producedTypes>
+  <name>cbr_НастройкиПользователейКолонокКанБан</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки  колонок  КанБан (Джира)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.cbr_НастройкиПользователейКолонокКанБан.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Настройка колонок пользователя</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Настройки колонок пользователя</value>
+  </listPresentation>
+  <resources uuid="af796f1f-debe-400d-a5a3-d55b20aeeb71">
+    <name>НастройкиКолонки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки колонки</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="dc4ef14f-0685-4cca-980c-82f6feaa4049">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="30d96179-a44f-407c-82b3-2e178dbebb92">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1be9aaa6-e33c-4bb2-9e44-dcd1b937b47b">
+    <name>Доска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доска</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.cbr_Доски</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9f25b210-6c9b-4137-80f6-47d16a141ce0">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1f90b254-f32c-4e0c-9d6f-fa9866e428a8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

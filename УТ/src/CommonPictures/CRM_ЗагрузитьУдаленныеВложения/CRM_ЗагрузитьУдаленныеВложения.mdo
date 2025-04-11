@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a95015a1-8ae9-462f-9977-897201316614">
+  <name>CRM_ЗагрузитьУдаленныеВложения</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM загрузить удаленные вложения</value>
+  </synonym>
+</mdclass:CommonPicture>

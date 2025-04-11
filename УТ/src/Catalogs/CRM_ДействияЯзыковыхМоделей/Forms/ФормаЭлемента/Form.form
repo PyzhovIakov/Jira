@@ -1,0 +1,2451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаФлажки</name>
+    <id>23</id>
+    <items xsi:type="form:FormField">
+      <name>Используется</name>
+      <id>20</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Используется</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <extendedTooltip>
+        <name>ИспользуетсяРасширеннаяПодсказка</name>
+        <id>22</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИспользуетсяКонтекстноеМеню</name>
+        <id>21</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+        <checkBoxType>Switcher</checkBoxType>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ИзменяетТекст</name>
+      <id>10</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.ИзменяетТекст</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <extendedTooltip>
+        <name>ИзменяетТекстРасширеннаяПодсказка</name>
+        <id>12</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИзменяетТекстКонтекстноеМеню</name>
+        <id>11</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+        <checkBoxType>Switcher</checkBoxType>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Группа флажки</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа флажки</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>ГруппаФлажкиРасширеннаяПодсказка</name>
+      <id>24</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <behavior>Auto</behavior>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>Наименование</name>
+    <id>4</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Description</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>НаименованиеРасширеннаяПодсказка</name>
+      <id>6</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>НаименованиеКонтекстноеМеню</name>
+      <id>5</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <extendedEditMultipleValues>true</extendedEditMultipleValues>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>Родитель</name>
+    <id>7</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Parent</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>РодительРасширеннаяПодсказка</name>
+      <id>9</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>РодительКонтекстноеМеню</name>
+      <id>8</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <extendedEditMultipleValues>true</extendedEditMultipleValues>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаКартинкаКоманда</name>
+    <id>214</id>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаКартинка</name>
+      <id>30</id>
+      <items xsi:type="form:FormField">
+        <name>Иконка</name>
+        <id>27</id>
+        <title>
+          <key>ru</key>
+          <value>Иконка меню</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Иконка</segments>
+        </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>Нажмите для выбора картинки</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ИконкаРасширеннаяПодсказка</name>
+          <id>29</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ИконкаКонтекстноеМеню</name>
+          <id>28</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>PictureField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:ImageFieldExtInfo">
+          <width>2</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <border xsi:type="core:BorderDef">
+            <width>1</width>
+          </border>
+          <fileDragMode>AsFileRef</fileDragMode>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ВыбратьКартинку</name>
+        <id>32</id>
+        <items xsi:type="form:FormGroup">
+          <name>ВыбратьКартинку1</name>
+          <id>34</id>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Объясни</name>
+            <id>90</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 1</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ОбъясниРасширеннаяПодсказка</name>
+              <id>92</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ОбъясниКонтекстноеМеню</name>
+              <id>91</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Объясни</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_ОтветьНаВопрос</name>
+            <id>93</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 2</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ОтветьНаВопросРасширеннаяПодсказка</name>
+              <id>95</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ОтветьНаВопросКонтекстноеМеню</name>
+              <id>94</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_ОтветьНаВопрос</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_ВыделиГлавное</name>
+            <id>96</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 3</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ВыделиГлавноеРасширеннаяПодсказка</name>
+              <id>98</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ВыделиГлавноеКонтекстноеМеню</name>
+              <id>97</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_ВыделиГлавное</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_СвойЗапрос</name>
+            <id>87</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 4</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_СвойЗапросРасширеннаяПодсказка</name>
+              <id>89</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_СвойЗапросКонтекстноеМеню</name>
+              <id>88</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_СвойЗапрос</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Продолжи</name>
+            <id>99</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 5</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ПродолжиРасширеннаяПодсказка</name>
+              <id>101</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ПродолжиКонтекстноеМеню</name>
+              <id>100</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Продолжи</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_ИсправьОшибки</name>
+            <id>102</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 6</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ИсправьОшибкиРасширеннаяПодсказка</name>
+              <id>104</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ИсправьОшибкиКонтекстноеМеню</name>
+              <id>103</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_ИсправьОшибки</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Улучши</name>
+            <id>105</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 7</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_УлучшиРасширеннаяПодсказка</name>
+              <id>107</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_УлучшиКонтекстноеМеню</name>
+              <id>106</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Улучши</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ВыбратьКартинку1РасширеннаяПодсказка</name>
+            <id>35</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>AlwaysHorizontal</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ВыбратьКартинку2</name>
+          <id>51</id>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Короче</name>
+            <id>108</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 8</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_КорочеРасширеннаяПодсказка</name>
+              <id>110</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_КорочеКонтекстноеМеню</name>
+              <id>109</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Короче</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Длиннее</name>
+            <id>111</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 9</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ДлиннееРасширеннаяПодсказка</name>
+              <id>113</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ДлиннееКонтекстноеМеню</name>
+              <id>112</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Длиннее</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_ДобавьСмайлики</name>
+            <id>114</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 10</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ДобавьСмайликиРасширеннаяПодсказка</name>
+              <id>116</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ДобавьСмайликиКонтекстноеМеню</name>
+              <id>115</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_ДобавьСмайлики</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Мягче</name>
+            <id>117</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 11</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_МягчеРасширеннаяПодсказка</name>
+              <id>119</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_МягчеКонтекстноеМеню</name>
+              <id>118</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Мягче</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Жестче</name>
+            <id>120</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 12</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ЖестчеРасширеннаяПодсказка</name>
+              <id>122</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ЖестчеКонтекстноеМеню</name>
+              <id>121</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Жестче</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Формальнее</name>
+            <id>123</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 13</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ФормальнееРасширеннаяПодсказка</name>
+              <id>125</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ФормальнееКонтекстноеМеню</name>
+              <id>124</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Формальнее</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Неформальнее</name>
+            <id>126</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 14</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_НеформальнееРасширеннаяПодсказка</name>
+              <id>128</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_НеформальнееКонтекстноеМеню</name>
+              <id>127</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Неформальнее</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ВыбратьКартинку2РасширеннаяПодсказка</name>
+            <id>52</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>AlwaysHorizontal</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ВыбратьКартинку3</name>
+          <id>68</id>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Английский</name>
+            <id>129</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 15</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_АнглийскийРасширеннаяПодсказка</name>
+              <id>131</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_АнглийскийКонтекстноеМеню</name>
+              <id>130</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Английский</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Китайский</name>
+            <id>132</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 16</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_КитайскийРасширеннаяПодсказка</name>
+              <id>134</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_КитайскийКонтекстноеМеню</name>
+              <id>133</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Китайский</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Русский</name>
+            <id>137</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 17</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_РусскийРасширеннаяПодсказка</name>
+              <id>139</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_РусскийКонтекстноеМеню</name>
+              <id>138</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Русский</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Поиск</name>
+            <id>152</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 18</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ПоискРасширеннаяПодсказка</name>
+              <id>154</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ПоискКонтекстноеМеню</name>
+              <id>153</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Поиск</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_КругСПометкой</name>
+            <id>155</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 19</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_КругСПометкойРасширеннаяПодсказка</name>
+              <id>157</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_КругСПометкойКонтекстноеМеню</name>
+              <id>156</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_КругСПометкой</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Избранное</name>
+            <id>158</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 20</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ИзбранноеРасширеннаяПодсказка</name>
+              <id>160</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ИзбранноеКонтекстноеМеню</name>
+              <id>159</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Избранное</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Звезда</name>
+            <id>161</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 21</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ЗвездаРасширеннаяПодсказка</name>
+              <id>163</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ЗвездаКонтекстноеМеню</name>
+              <id>162</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Звезда</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ВыбратьКартинку3РасширеннаяПодсказка</name>
+            <id>69</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>AlwaysHorizontal</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ВыбратьКартинку4</name>
+          <id>85</id>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Флаг1</name>
+            <id>164</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 22</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_Флаг1РасширеннаяПодсказка</name>
+              <id>166</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_Флаг1КонтекстноеМеню</name>
+              <id>165</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Флаг1</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Флаг2</name>
+            <id>167</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 23</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_Флаг2РасширеннаяПодсказка</name>
+              <id>169</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_Флаг2КонтекстноеМеню</name>
+              <id>168</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Флаг2</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Лампочка</name>
+            <id>170</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 24</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ЛампочкаРасширеннаяПодсказка</name>
+              <id>172</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ЛампочкаКонтекстноеМеню</name>
+              <id>171</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Лампочка</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Молния</name>
+            <id>173</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 25</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_МолнияРасширеннаяПодсказка</name>
+              <id>175</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_МолнияКонтекстноеМеню</name>
+              <id>174</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Молния</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Рубль</name>
+            <id>188</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 26</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_РубльРасширеннаяПодсказка</name>
+              <id>190</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_РубльКонтекстноеМеню</name>
+              <id>189</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Рубль</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Местоположение</name>
+            <id>176</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 27</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_МестоположениеРасширеннаяПодсказка</name>
+              <id>178</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_МестоположениеКонтекстноеМеню</name>
+              <id>177</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Местоположение</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Книга</name>
+            <id>179</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 28</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_КнигаРасширеннаяПодсказка</name>
+              <id>181</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_КнигаКонтекстноеМеню</name>
+              <id>180</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Книга</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ВыбратьКартинку4РасширеннаяПодсказка</name>
+            <id>86</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>AlwaysHorizontal</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ВыбратьКартинку5</name>
+          <id>135</id>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Сигма</name>
+            <id>182</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 29</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_СигмаРасширеннаяПодсказка</name>
+              <id>184</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_СигмаКонтекстноеМеню</name>
+              <id>183</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Сигма</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Заметки</name>
+            <id>185</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 30</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ЗаметкиРасширеннаяПодсказка</name>
+              <id>187</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ЗаметкиКонтекстноеМеню</name>
+              <id>186</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Заметки</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Параграф</name>
+            <id>191</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 31</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ПараграфРасширеннаяПодсказка</name>
+              <id>193</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ПараграфКонтекстноеМеню</name>
+              <id>192</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Параграф</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Щит</name>
+            <id>194</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 32</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ЩитРасширеннаяПодсказка</name>
+              <id>196</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ЩитКонтекстноеМеню</name>
+              <id>195</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Щит</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Фонарик</name>
+            <id>197</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 33</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ФонарикРасширеннаяПодсказка</name>
+              <id>199</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ФонарикКонтекстноеМеню</name>
+              <id>198</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Фонарик</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Рисование</name>
+            <id>200</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 34</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_РисованиеРасширеннаяПодсказка</name>
+              <id>202</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_РисованиеКонтекстноеМеню</name>
+              <id>201</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Рисование</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Циркуль</name>
+            <id>203</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 35</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_ЦиркульРасширеннаяПодсказка</name>
+              <id>205</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_ЦиркульКонтекстноеМеню</name>
+              <id>204</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Циркуль</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ВыбратьКартинку5РасширеннаяПодсказка</name>
+            <id>136</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>AlwaysHorizontal</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ВыбратьКартинку6</name>
+          <id>212</id>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Редактирование</name>
+            <id>206</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 36</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_РедактированиеРасширеннаяПодсказка</name>
+              <id>208</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_РедактированиеКонтекстноеМеню</name>
+              <id>207</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Редактирование</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>CRM_ЯМ_Навигация</name>
+            <id>209</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка 37</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CRM_ЯМ_НавигацияРасширеннаяПодсказка</name>
+              <id>211</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CRM_ЯМ_НавигацияКонтекстноеМеню</name>
+              <id>210</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>3</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>КартинкаНажатие</name>
+              </handlers>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.CRM_ЯМ_Навигация</picture>
+              </picture>
+              <hyperlink>true</hyperlink>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ВыбратьКартинку6РасширеннаяПодсказка</name>
+            <id>213</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>AlwaysHorizontal</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Выбрать иконку</value>
+        </title>
+        <titleTextColor xsi:type="core:ColorRef">
+          <color>Style.CRM_ОсновнойГолубой</color>
+        </titleTextColor>
+        <toolTip>
+          <key>ru</key>
+          <value>Выбрать картинку</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ВыбратьКартинкуРасширеннаяПодсказка</name>
+          <id>33</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <horizontalSpacing>Half</horizontalSpacing>
+          <behavior>PopUp</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа картинка</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаКартинкаРасширеннаяПодсказка</name>
+        <id>31</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>AlwaysHorizontal</group>
+        <behavior>Auto</behavior>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ВосстановитьПромпт</name>
+      <id>216</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ВосстановитьПромптРасширеннаяПодсказка</name>
+        <id>217</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Command.ВосстановитьПромпт</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <groupHorizontalAlign>Right</groupHorizontalAlign>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <shapeRepresentation>None</shapeRepresentation>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Группа картинка команда</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа картинка команда</value>
+    </toolTip>
+    <horizontalStretch>true</horizontalStretch>
+    <extendedTooltip>
+      <name>ГруппаКартинкаКомандаРасширеннаяПодсказка</name>
+      <id>215</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>AlwaysHorizontal</group>
+      <behavior>Auto</behavior>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>СистемныйПромпт</name>
+    <id>13</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.СистемныйПромпт</segments>
+    </dataPath>
+    <titleLocation>Left</titleLocation>
+    <extendedTooltip>
+      <name>СистемныйПромптРасширеннаяПодсказка</name>
+      <id>15</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>СистемныйПромптКонтекстноеМеню</name>
+      <id>14</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <height>5</height>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <multiLine>true</multiLine>
+      <extendedEditMultipleValues>true</extendedEditMultipleValues>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>ФормаЗаписатьИЗакрыть</name>
+      <id>16</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаЗаписатьИЗакрытьРасширеннаяПодсказка</name>
+        <id>17</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.WriteAndClose</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.FormBackColor</color>
+      </textColor>
+      <backColor xsi:type="core:ColorRef">
+        <color>Style.CRM_ОсновнойГолубой</color>
+      </backColor>
+      <borderColor xsi:type="core:ColorRef">
+        <color>Style.CRM_ОсновнойГолубой</color>
+      </borderColor>
+      <font xsi:type="core:FontRef">
+        <font>Style.NormalTextFont</font>
+        <bold>true</bold>
+        <italic>false</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <scale>100</scale>
+      </font>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаЗаписать</name>
+      <id>140</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаЗаписатьРасширеннаяПодсказка</name>
+        <id>141</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Write</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаПеречитать</name>
+      <id>142</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаПеречитатьРасширеннаяПодсказка</name>
+        <id>143</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Reread</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаСкопировать</name>
+      <id>144</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаСкопироватьРасширеннаяПодсказка</name>
+        <id>145</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Copy</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаУстановитьПометкуУдаления</name>
+      <id>146</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаУстановитьПометкуУдаленияРасширеннаяПодсказка</name>
+        <id>147</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.SetDeletionMark</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаПоказатьВСписке</name>
+      <id>148</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаПоказатьВСпискеРасширеннаяПодсказка</name>
+        <id>149</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.ShowInList</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаИсторияИзменений</name>
+      <id>150</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаИсторияИзмененийРасширеннаяПодсказка</name>
+        <id>151</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.ChangeHistory</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <width>46</width>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Объект</name>
+    <id>1</id>
+    <valueType>
+      <types>CatalogObject.CRM_ДействияЯзыковыхМоделей</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>Иконка</name>
+    <title>
+      <key>ru</key>
+      <value>Иконка</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>ВосстановитьПромпт</name>
+    <title>
+      <key>ru</key>
+      <value>Восстановить промпт</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Восстановить промпт</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.RestoreValues</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВосстановитьПромпт</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:CatalogFormExtInfo"/>
+</form:Form>

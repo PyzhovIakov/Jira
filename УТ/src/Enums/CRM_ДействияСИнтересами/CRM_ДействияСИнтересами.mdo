@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82435970-fdd1-4316-8ff0-52e23405c49e">
+  <producedTypes>
+    <refType typeId="d356e0d5-285a-4e16-bdce-d951c79a30ca" valueTypeId="5876f6d1-06bd-472a-a3cc-5fdc379c831a"/>
+    <listType typeId="27deaffe-7f6b-4b73-8a04-3cc2a9a8a1cd" valueTypeId="d023ac5c-71b9-45a9-b93d-544cba753040"/>
+    <managerType typeId="03c03ba8-b6c1-4630-a12e-39ef7f3534ca" valueTypeId="a51733e6-66c6-4b46-bd6b-6bc8376434dc"/>
+  </producedTypes>
+  <name>CRM_ДействияСИнтересами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Действия с интересами</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e2172613-50bb-419a-872b-8612c2f1553a">
+    <name>ДобавленСоисполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавлен соисполнитель</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6e34904a-a658-440e-91d7-f2d9b847b56f">
+    <name>УдаленСоисполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удален соисполнитель</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

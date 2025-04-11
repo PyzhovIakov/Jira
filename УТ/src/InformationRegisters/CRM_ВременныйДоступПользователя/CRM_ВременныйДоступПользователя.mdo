@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8e549f7-23d3-478f-b64b-35fac6c25940">
+  <producedTypes>
+    <selectionType typeId="b5564c76-cc8a-4393-aa85-f2319198e98a" valueTypeId="e52e782f-c704-4301-853e-1226ee56830d"/>
+    <listType typeId="dc405948-67e3-47a2-a281-7515787c02d7" valueTypeId="40ad376f-0063-4d33-9e45-b3616d60c59c"/>
+    <managerType typeId="cb6b8c37-c711-4f73-8e3d-17eb89b367aa" valueTypeId="f174d56e-8694-482c-b730-20812c4ca744"/>
+    <recordSetType typeId="32308e17-bfc2-4dd2-9a44-31e54270a756" valueTypeId="40eaa751-8178-419a-9dbf-841608ac52b4"/>
+    <recordKeyType typeId="dd2ab846-8711-4042-b0e9-6afa57e24129" valueTypeId="45c73b46-97ce-4837-8341-05f762971915"/>
+    <recordType typeId="e9e1aea0-0504-4bf6-bdc8-fb077e3fdfa9" valueTypeId="7518e6fe-e6da-46a1-8874-80f71186b008"/>
+    <recordManagerType typeId="f4bac8f0-bc08-4c56-9b2a-582703670d63" valueTypeId="09736476-910b-4c67-a279-72e445fd5eae"/>
+  </producedTypes>
+  <name>CRM_ВременныйДоступПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Временный доступ пользователя</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="90e302f1-6ace-411f-bbc3-fe7a339b4cef">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2c43ce4b-bd78-4c4a-8290-e3ea7ce8b1ce">
+    <name>ЭлементДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Элемент доступа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыДоступа</types>
+      <types>CatalogRef.РолиИсполнителей</types>
+      <types>CatalogRef.CRM_УчетныеЗаписиМессенджеров</types>
+      <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d6731ebd-8427-4061-ac24-03340dba240c">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment>АПК:1208 имя корректное</comment>
+    <type>
+      <types>DocumentRef.CRM_ОтсутствиеСотрудника</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd562e8c-d71f-4197-9133-f3d11dc37bb5">
+  <name>CRM_ОчищатьИсториюРеквизитовОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очищать историю реквизитов объектов</value>
+  </synonym>
+  <location>Constant.CRM_ОчищатьИсториюРеквизитовОбъектов</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

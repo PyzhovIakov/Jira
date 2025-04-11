@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d0d72cd3-5668-4f50-83a3-4ac2dfd9c7ae">
+  <producedTypes>
+    <managerType typeId="f84ffbe4-fda2-41ed-b432-89b5affbd291" valueTypeId="231f613b-7be5-44fb-b295-235e7031ebed"/>
+    <valueManagerType typeId="fd816f48-e057-4756-b1d5-05f1017eff4c" valueTypeId="a3587939-563c-4bde-a5e9-21e080f29a35"/>
+    <valueKeyType typeId="89838911-adee-453a-812e-5dd0b2f9c4cd" valueTypeId="15f2c2a2-0bb2-48bb-b8d8-615ceba21969"/>
+  </producedTypes>
+  <name>CRM_НастройкиСозданияКлиентовПриЗвонке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки создания клиентов при звонке</value>
+  </synonym>
+  <type>
+    <types>ValueStorage</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

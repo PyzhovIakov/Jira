@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3ed030c-11a6-4efb-8df6-140828016c25">
+  <name>CRM_Модуль_ОбработкаТабличнойЧастиСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM модуль обработка табличной части сервер</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

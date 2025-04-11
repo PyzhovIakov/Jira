@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc7874d6-37ba-4081-bbb5-feab6ebe1b1d">
+  <name>CRM_Модуль_ИспользоватьПроекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать проекты</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Use projects</value>
+  </synonym>
+  <location>Constant.ИспользоватьПроекты</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.Проекты</content>
+  <content>Catalog.ЗадачиПроектов</content>
+  <content>Catalog.ПроектыПрисоединенныеФайлы</content>
+  <content>Catalog.CRM_Решения.Attribute.Проект</content>
+  <content>Document.CRM_Интерес.Attribute.Проект</content>
+  <content>Document.CRM_ОтчетОРаботе.TabularSection.СтрокиОтчета.Attribute.Проект</content>
+  <content>Document.CRM_РассылкаЭлектронныхПисем.Attribute.Проект</content>
+  <content>Document.CRM_Телемаркетинг.Attribute.Проект</content>
+  <content>Document.CRM_ЭтапКалендарногоПлана.Attribute.Проект</content>
+  <content>Document.ЭлектронноеПисьмоВходящее.Attribute.CRM_Проект</content>
+  <content>Document.ЭлектронноеПисьмоИсходящее.Attribute.CRM_Проект</content>
+  <content>Catalog.МаркетинговыеМероприятия.Attribute.CRM_Проект</content>
+  <content>Document.КоммерческоеПредложениеКлиенту.Attribute.CRM_Проект</content>
+  <content>Task.ЗадачаИсполнителя.Attribute.CRM_Проект</content>
+  <content>BusinessProcess.CRM_БизнесПроцесс.Attribute.Проект</content>
+</mdclass:FunctionalOption>

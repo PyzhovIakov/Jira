@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f092300b-7bdd-4515-8608-f0de0e5c86dd">
+  <producedTypes>
+    <managerType typeId="05b99cc2-ce94-42a9-9c4a-143816f2275f" valueTypeId="5c49dd03-6695-43d7-b3c8-d0c0fac950dc"/>
+    <valueManagerType typeId="663f232c-f366-4d34-867e-c41cf1beecea" valueTypeId="2e988518-3ee2-4673-8971-1481dce327fa"/>
+    <valueKeyType typeId="71cd60b5-ec82-4b15-b5ad-d07a3f9dc59d" valueTypeId="b7fab219-5812-4689-b496-f6fe7d532dfd"/>
+  </producedTypes>
+  <name>CRM_СрокАктуальностиНапоминанийПоУмолчанию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Срок актуальности оповещений по умолчанию</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

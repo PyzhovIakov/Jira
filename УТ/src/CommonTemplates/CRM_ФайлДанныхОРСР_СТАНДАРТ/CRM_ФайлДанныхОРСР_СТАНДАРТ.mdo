@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28ac9654-621c-4db0-8b42-621efca1bb97">
+  <name>CRM_ФайлДанныхОРСР_СТАНДАРТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Файл данных ОРСР (CRM СТАНДАРТ)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>The ORPD data file (CRM CORP)</value>
+  </synonym>
+  <comment>1AAD</comment>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

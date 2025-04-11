@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0dfc93f0-c029-4732-9e6a-f2d257e75226">
+  <producedTypes>
+    <objectType typeId="d3f5b2e1-f0f6-4f21-8642-56d92351d615" valueTypeId="f7904016-a2e0-4f6a-ba5f-69664d95081e"/>
+    <managerType typeId="22aeab97-6a0d-44df-aee6-2ee767854936" valueTypeId="abdcf23a-40cf-43e8-8b5a-e5c4f7d2db1b"/>
+  </producedTypes>
+  <name>CRM_Модуль_ОценкаПотенциалаПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценка потенциала продаж</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.CRM_Модуль_ОценкаПотенциалаПродаж.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="06862bc4-77c0-4127-a828-a349204088dc">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

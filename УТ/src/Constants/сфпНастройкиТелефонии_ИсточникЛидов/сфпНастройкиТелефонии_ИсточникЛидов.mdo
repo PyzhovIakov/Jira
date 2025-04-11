@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54b5aed4-71fb-4235-bdc3-423a93035bb5">
+  <producedTypes>
+    <managerType typeId="38a5726b-851d-4e83-9d5a-a9bf3c80ff60" valueTypeId="cf46f5a4-804e-4bb0-bd29-91caeb79a5c3"/>
+    <valueManagerType typeId="300ef1ca-c95e-41e8-9820-79dc3689089c" valueTypeId="e54f514a-acdc-4af6-9521-265263dcf17d"/>
+    <valueKeyType typeId="afbb271e-c393-4a8d-840e-d9c49ba2db0f" valueTypeId="e0b6af7c-903c-43f1-8f16-5708497e3912"/>
+  </producedTypes>
+  <name>сфпНастройкиТелефонии_ИсточникЛидов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Источник лидов (Телефония)</value>
+  </synonym>
+  <comment>АПК:1032 АПК:265 не проверять на орфографию синоним и имя</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

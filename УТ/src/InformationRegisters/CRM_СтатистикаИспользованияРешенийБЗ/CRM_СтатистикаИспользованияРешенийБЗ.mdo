@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23c4c8c7-97b9-4fda-81eb-f8a9fdb8570f">
+  <producedTypes>
+    <selectionType typeId="3bf08046-0c39-46fc-8366-425049f79c7a" valueTypeId="5820b033-2941-47d1-aea4-19e91755fd21"/>
+    <listType typeId="4c99ef59-d5b2-4623-be0b-b4b778ed7c56" valueTypeId="a5f39641-be47-4833-8834-5ac41679377d"/>
+    <managerType typeId="9c80d3e2-9339-493a-8e0b-b96c2d5a2d9b" valueTypeId="f0de4c3e-c623-4e65-9aa2-8a1fd026149d"/>
+    <recordSetType typeId="9c0fcc34-bf35-48fe-9f82-6576b8e03039" valueTypeId="d51ea81f-55ab-4158-9c3d-cf89cd5361af"/>
+    <recordKeyType typeId="09b3d668-be5e-4578-a270-cb876f148592" valueTypeId="a94f4d42-892d-4e78-9995-344b3f90046f"/>
+    <recordType typeId="b3c7f0c4-4c4e-483d-ac9c-d079a95bb79f" valueTypeId="65490416-66f8-4e8a-b889-f0b00d51a697"/>
+    <recordManagerType typeId="4aab9b83-1ace-44a2-a7fb-070cee39111b" valueTypeId="62ab8e62-dd5d-4cf5-85a5-bf6f15f95c28"/>
+  </producedTypes>
+  <name>CRM_СтатистикаИспользованияРешенийБЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика использования решений базы знаний (CRM)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f4bb3faf-1a08-43df-868b-95329730ccbb">
+    <name>Использований</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использований</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5f352d97-333a-4b6d-be48-e6e484b320fb">
+    <name>Обращений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращений</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="b81874da-eb1c-4023-a887-76d62a1d31a0">
+    <name>ДатаПоследнего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последнего</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="f7eccd0a-6683-4217-a77a-c5969e757606">
+    <name>Решение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Решение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_Решения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3ff91585-0b71-47e2-b6fb-909807cdf75d">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

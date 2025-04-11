@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8386f4ad-a83d-4fb2-a696-46ac4743ece2">
+  <name>CRM_СтруктураПодчиненности24</name>
+  <synonym>
+    <key>ru</key>
+    <value>Структура подчиненности</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Subordination Structure</value>
+  </synonym>
+  <comment>Структура подчиненности</comment>
+</mdclass:CommonPicture>

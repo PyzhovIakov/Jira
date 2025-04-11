@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56c1d24a-d446-4552-ac94-bbe8b7d0d248">
+  <name>CRM_ИерархияСправочника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Иерархия справочника</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Catalog hierarchy</value>
+  </synonym>
+  <transparentPixel>
+    <x>11</x>
+  </transparentPixel>
+</mdclass:CommonPicture>

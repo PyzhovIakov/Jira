@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b617f5f6-9798-4d1e-8251-50f930efe5b7">
+  <name>cbr_ВыборЦветаHTMLПовтИсп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выбор цвета HTMLПовт исп</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

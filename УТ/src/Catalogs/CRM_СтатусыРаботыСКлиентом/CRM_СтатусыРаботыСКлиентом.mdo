@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ed4f442-3e56-48f6-9b67-9a917bc5c108">
+  <producedTypes>
+    <objectType typeId="62167839-01d4-44d9-9bbd-aa0d56baf197" valueTypeId="44b12a32-748e-485b-8763-efc3c5c92596"/>
+    <refType typeId="892b7021-a499-4df7-b207-c0ed43cf6ab2" valueTypeId="c494b27f-5365-4e65-96bb-36d039d283ec"/>
+    <selectionType typeId="5e954539-e33e-4823-ad5f-be3851de17e6" valueTypeId="73e4e5e0-f863-4249-8686-1eb7d7fb4a8f"/>
+    <listType typeId="dc22f7ac-cb62-4bb5-b72e-97105a1b67a2" valueTypeId="b0ad4c7c-3e2a-4a1d-bc60-dca7f643ce52"/>
+    <managerType typeId="92ca8ece-d5b8-4d5b-b1fb-a138db4de3ae" valueTypeId="156aeb34-d5dd-4db9-aba9-6ecf949f5a16"/>
+  </producedTypes>
+  <name>CRM_СтатусыРаботыСКлиентом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы работы с клиентом</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Customer Work Statuses</value>
+  </synonym>
+  <comment>Статусы работы с клиентом</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.CRM_СтатусыРаботыСКлиентом.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Name</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование статуса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Name of the status</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Code</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Код статуса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Status Code</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <explanation>
+    <key>ru</key>
+    <value>Статусы работы с клиентом</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Customer Work Statuses</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>8</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefinedDataUpdate>DontAutoUpdate</predefinedDataUpdate>
+  <quickChoice>true</quickChoice>
+  <choiceMode>QuickChoice</choiceMode>
+  <defaultObjectForm>Catalog.CRM_СтатусыРаботыСКлиентом.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.CRM_СтатусыРаботыСКлиентом.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.CRM_СтатусыРаботыСКлиентом.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="aea577a3-7634-4c54-9430-85a2238a099c">
+    <name>РеквизитДопУпорядочивания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Order</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для упорядочивания (служебный)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Used for ordering (system)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bac386c0-5e01-462b-ba4a-5977bb71fa18">
+    <name>СпособУстановки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ установки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.CRM_СпособыУстановкиСтатусаКлиента</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="994a1854-2191-4197-b85c-0ad76d46dc7f">
+    <name>ШаблонРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон расчета</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4d5bb34e-203e-450e-9075-1b5aca64e894">
+    <name>НастройкиРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки расчета</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eff3f9d9-a3b6-4261-b280-28dbeeb8ad00">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c9018b5e-4042-4635-82a5-a01b2623963e">
+    <name>ЦветФона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет фона</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>11</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="452943e5-40a3-4f59-9a3b-8d43ffa17522">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Choice Form</value>
+    </synonym>
+    <comment>Форма выбора справочника</comment>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fd782107-5fa6-4ea6-9fff-e62a41b93644">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form of the list</value>
+    </synonym>
+    <comment>Форма списка справочника</comment>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1e9c02e6-f4cc-4765-80ff-18d7e1aeb770">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4fa4d20d-2920-4837-ae99-5a505a1b4503">
+    <name>Расчет_ВПроработке</name>
+    <synonym>
+      <key>ru</key>
+      <value>В проработке</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="3b1380f1-7e10-43d9-9fb7-0ab062c0195c">
+    <name>Расчет_Активный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активный</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="e61cdea6-34f3-4ab3-b7de-168b116cf0b1">
+    <name>Расчет_Потерянный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потерянный</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c03372ef-1229-41fb-92dc-d4ee6056da29">
+    <name>Расчет_Возвращенный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возвращенный</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="dfec8704-bb3c-4ba8-aa30-24286532a222">
+    <name>Расчет_Ликвидирован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ликвидирован</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="3aa8d69b-d7a9-4685-9f8b-94b1804fcd51">
+    <name>Модуль_Расчет_ВПроработке</name>
+    <synonym>
+      <key>ru</key>
+      <value>В проработке</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="0f6880c9-4c16-4a6b-8f59-a6c8bfb2e335">
+    <name>Модуль_Расчет_Активный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активный</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="5ba447e8-6828-4a5f-8fd3-3dbaae2e0786">
+    <name>Модуль_Расчет_Потерянный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потерянный</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="0668b94e-969f-4d1e-843d-6f117f4c56d2">
+    <name>Модуль_Расчет_Возвращенный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возвращенный</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="5f7ea5e7-1d99-479f-9769-7d0c1dd31a35">
+    <name>Модуль_Расчет_Ликвидирован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ликвидирован</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Catalog>

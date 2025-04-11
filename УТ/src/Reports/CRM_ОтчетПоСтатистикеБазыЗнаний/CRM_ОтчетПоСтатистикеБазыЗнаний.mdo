@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3eeef8b4-bdda-4d35-b793-65adb00ad347">
+  <producedTypes>
+    <objectType typeId="abd2307a-c81e-45fb-b660-9ce2ff12bf08" valueTypeId="846d376e-4d07-4358-a28c-85a6599a48aa"/>
+    <managerType typeId="9c1e73b3-455b-47f3-b3e4-59f150cc6f06" valueTypeId="4c31d635-380a-4721-a1f3-8a45c804a97d"/>
+  </producedTypes>
+  <name>CRM_ОтчетПоСтатистикеБазыЗнаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по статистике базы знаний</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.CRM_ОтчетПоСтатистикеБазыЗнаний.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="fa3808df-b8f0-4fcf-a159-950b4c198924">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

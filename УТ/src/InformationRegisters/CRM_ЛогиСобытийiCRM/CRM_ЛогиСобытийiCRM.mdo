@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="09236bce-a0b7-4b72-b9c6-5d6ad79c7b2f">
+  <producedTypes>
+    <selectionType typeId="82b6294e-28f2-4008-b522-bf7b574ac7c8" valueTypeId="4f3fa572-a174-4cb0-bfa5-03b619ad9b1c"/>
+    <listType typeId="4b841801-a599-42ee-9b9e-fd2489c8c5d8" valueTypeId="cc9f4edd-1cac-4741-9794-bccf8b7a0c73"/>
+    <managerType typeId="b2b56530-fa36-48ee-be03-d43ab295229b" valueTypeId="72e6d1f7-63f5-4beb-a4b8-f9b37a5cce09"/>
+    <recordSetType typeId="8efac735-aff9-415b-b085-aa5c52c10e31" valueTypeId="230a06fd-6739-42e5-9a92-8243e59540f1"/>
+    <recordKeyType typeId="3ac8a45b-c788-47f8-9d9d-d1e19ee65603" valueTypeId="afd9d35b-6d00-4402-aaa5-ec83a9f36291"/>
+    <recordType typeId="ac33be6f-1741-4ecf-8b8f-4ac762f31515" valueTypeId="066f986b-d5fe-4765-9512-5eeb90309d88"/>
+    <recordManagerType typeId="f67c43f4-966a-4b3e-bbaa-8cfebe9645a3" valueTypeId="0874d12c-99d7-4b7c-8ec7-9ef3de56fda9"/>
+  </producedTypes>
+  <name>CRM_ЛогиСобытийiCRM</name>
+  <synonym>
+    <key>ru</key>
+    <value>Логи событий iCRM (CRM)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.CRM_ЛогиСобытийiCRM.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="cf4a6859-7b48-4e4a-badc-d9a0e33c50a7">
+    <name>ОписаниеСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание события</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="0b9589f4-3882-4ea7-821d-f0a19ee8f4a8">
+    <name>ТипСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип события</value>
+    </synonym>
+    <type>
+      <types>EnumRef.CRM_ТипыСобытийЛогаiCRM</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1186cfd0-1e91-4925-8cc0-3570f4ae43ae">
+    <name>ДатаСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата события</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="2f252773-8f20-46df-ac5a-413f431e03ad">
+    <name>УзелОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел обмена</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Node of an exchange</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef.CRM_СинхронизацияСМобильнымПриложениемНовый</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4f332dcc-f384-49bc-ae66-2137df5015a6">
+    <name>ИдентификаторСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор события</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="956b850b-345a-4170-9437-a9070c4764c4">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="439084c9-07e2-4896-8622-2caceff6ede7">
+    <name>ФормаЗаписиНезависимая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи независимая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

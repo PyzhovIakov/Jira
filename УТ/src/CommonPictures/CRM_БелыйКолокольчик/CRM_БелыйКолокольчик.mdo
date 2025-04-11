@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d5afc09-f65f-4916-b1fc-8e8c7230d90e">
+  <name>CRM_БелыйКолокольчик</name>
+  <synonym>
+    <key>ru</key>
+    <value>Белый колокольчик</value>
+  </synonym>
+</mdclass:CommonPicture>

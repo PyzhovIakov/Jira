@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="679eaff0-e67d-4e2a-8523-fe7e535fff6a">
+  <producedTypes>
+    <selectionType typeId="648abccd-c5c7-499b-9bb2-1421f35397b8" valueTypeId="44bf85cf-a0f3-4b46-8d75-350274d5a03d"/>
+    <listType typeId="af2ec754-0f0d-49f7-b494-c124c50ff9f0" valueTypeId="24ef32ec-ac18-4a8e-8e0f-52c3028bd6c0"/>
+    <managerType typeId="395a454c-6679-4ddd-808b-4f3991fa7cff" valueTypeId="86e13fae-e204-4e85-89b6-4982252857c1"/>
+    <recordSetType typeId="2aa12984-211f-446f-9670-c68bc35d3123" valueTypeId="ffdfdef0-a39e-455c-9756-5d94c595f2f4"/>
+    <recordKeyType typeId="d66c1b22-bc97-438c-90bb-7a1d40f6817a" valueTypeId="086419f7-3cc9-4a0b-930a-a98cfe18665b"/>
+    <recordType typeId="64928df7-76ed-4531-9f20-e90bf5544d19" valueTypeId="a757eba4-5a86-4fdc-bc4a-584f9a492603"/>
+    <recordManagerType typeId="f292daaf-76d3-4509-b718-2ab335f88da5" valueTypeId="b571c5b5-b9d3-4353-9425-9dc2231fa484"/>
+  </producedTypes>
+  <name>CRM_НастройкиСинхронизацииСВнешнимиКалендарями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки синхронизации с внешними календарями</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Настройки синхронизации с внешними календарями (Yandex, Mail.ru, iCloud)</value>
+  </explanation>
+  <resources uuid="83a94b85-cfc2-4cea-a51e-d46d47551260">
+    <name>КалендарьDAVНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарь DAVНаименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="1e57dcda-a1f1-417a-b30c-6c4af1646116">
+    <name>КалендарьСотрудника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарь сотрудника</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_КалендариСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e088ad97-3d78-404c-906f-3f06851a712f">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fe124d42-bd2c-43c5-a6a9-8a36f7011d61">
+    <name>ТокенСинхронизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Токен синхронизации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="fe34a018-ecef-43ba-8f5c-643d3ba11722">
+    <name>КодВнешнегоКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код внешнего календаря</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2054dfaf-1d10-46be-8afe-eab877b7402f">
+    <name>УчетнаяЗаписьВнешнегоКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись внешнего календаря</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_УчетныеЗаписиВнешнихКалендарей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

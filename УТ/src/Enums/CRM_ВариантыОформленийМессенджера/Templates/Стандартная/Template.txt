@@ -1,0 +1,22 @@
+#messages {
+	background-color: #ffffff;
+}
+
+.chat__message {
+	background: #F5F5F5;
+}
+
+.chat__item--responder .chat__message,
+.chat__item--responder .chat__favMessage {
+	background: #D1F0FF;
+}
+
+.action_button,
+.scheduled-message__cancel {
+	color: #6b7889;
+}
+
+.chat__info-link,
+.quoted__message {
+	color: #00A0F2;
+}

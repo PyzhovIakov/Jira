@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8b59c45-55e8-4c51-9db8-38908789bc56">
+  <name>CRM_ЗагрузитьПисьма</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузить письма</value>
+  </synonym>
+</mdclass:CommonPicture>

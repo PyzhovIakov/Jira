@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fff01f39-46d3-44b1-b880-9940a4b14af9">
+  <name>CRM_КоллекцияПиктограммФайлов20</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM коллекция пиктограмм файлов</value>
+  </synonym>
+</mdclass:CommonPicture>

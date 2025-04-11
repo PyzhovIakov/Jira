@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0bf14385-312c-44d8-9e85-5b5cb4185b1d">
+  <producedTypes>
+    <selectionType typeId="e12a5707-ba19-45ba-802d-fba6044094a2" valueTypeId="b9b4a6de-3cf0-4810-94ff-d363c1fc84c7"/>
+    <listType typeId="5ea84e3f-f515-414b-8291-2bca4e74e9ae" valueTypeId="1c08670c-addc-48ab-bc60-b85effd063cc"/>
+    <managerType typeId="c9e1934f-682d-43dd-bb0e-df03d9b32338" valueTypeId="eb335fee-fa78-4e6d-9abe-2bbea2745e33"/>
+    <recordSetType typeId="6441fb86-2ce8-4f1b-9c77-1f6809c164d5" valueTypeId="f0b80359-2fbb-430e-b80a-8b47d8588eec"/>
+    <recordKeyType typeId="10fafe19-45e6-4127-92d8-b3cb48025bf2" valueTypeId="e1dd92e9-ed0b-42c0-a2f6-dfabef719ba1"/>
+    <recordType typeId="c39e7eb4-dbc8-4372-9488-55b0e5e7c8b2" valueTypeId="0686fac1-87ac-4c07-bbcb-f1f090755f07"/>
+    <recordManagerType typeId="01e893ea-fd32-40fc-a53d-cfd1f6381197" valueTypeId="84ebe852-c092-4cc7-9852-ec7a1d920f1c"/>
+  </producedTypes>
+  <name>cbr_НастройкиПользователяКанБан</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки пользователя КанБан (Джира)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Настройки КанБан пользователя</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Настройки КанБан пользователя</value>
+  </listPresentation>
+  <resources uuid="5c8dbb07-604c-4385-88ba-484098f8b436">
+    <name>Доска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доска</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.cbr_Доски</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c1967f8f-dbc0-4ebb-8050-11dfd964ebb1">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

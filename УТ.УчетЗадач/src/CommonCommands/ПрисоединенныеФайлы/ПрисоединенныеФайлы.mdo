@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="dcc94bcb-42a1-4504-b6d9-cd4d7bbe6c63">
+  <name>ПрисоединенныеФайлы</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:BasicCommandExtension">
+    <group>Checked</group>
+    <commandParameterTypeExtension>
+      <types>
+        <state>Extended</state>
+        <type>DocumentRef.cbr_Задача</type>
+      </types>
+    </commandParameterTypeExtension>
+  </extension>
+  <group>FormNavigationPanelGoTo</group>
+  <commandParameterType/>
+</mdclass:CommonCommand>

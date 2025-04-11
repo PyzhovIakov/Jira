@@ -1,0 +1,43 @@
+<table height="100%" width="100%">
+  <tbody>
+    <tr>
+      <td>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <font class="items-center" face="Arial" style="font-size: 40px" color="{{CRM:WIDGET_FACT_COLOR}}">
+                  {{CRM:WIDGET_FACT_VALUE}}
+                  <div class="widget-plan-dynamic {{CRM:WIDGET_DYNAMIC}}"></div>
+                </font>
+              </td>
+              <td class="{{CRM:WIDGET_PLAN_FLAG}}">
+                <div class="widget-info-secondary-vertical">
+                  <p class="widget-secondary-header">План</p>
+                  <p class="widget-secondary-value">
+                    <span class="widget-secondary-slash">/</span>
+                    {{CRM:WIDGET_PLAN_VALUE}}
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    <tr class="{{CRM:WIDGET_COMPANY_FLAG}}">
+      <td>
+        <div class="widget-info-secondary-horizontal">
+          <p class="widget-secondary-header">
+            Компания:
+            <span class="widget-secondary-value">
+              {{CRM:WIDGET_COMPANY_VALUE}}
+              <span class="widget-company-dynamic-text">
+                <span class="widget-company-dynamic-line" style="border-color: {{CRM:DYNAMIC_LINE_COLOR}};"></span>
+                {{CRM:WIDGET_COMPANY_VALUE_PER}}%
+              </span>
+            </span>
+          </p>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

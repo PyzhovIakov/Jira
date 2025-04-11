@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9753dfc-5238-4db8-9c17-d04ba7195ec5">
+  <name>CRM_ИспользоватьПотокиДоставкиЭлектроннойПочты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать потоки доставки электронной почты</value>
+  </synonym>
+  <location>Constant.CRM_ИспользоватьПотокиДоставкиЭлектроннойПочты</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

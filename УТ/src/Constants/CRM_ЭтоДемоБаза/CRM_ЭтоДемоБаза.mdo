@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a25f5de0-e217-47b9-96d8-721553d4fdcc">
+  <producedTypes>
+    <managerType typeId="daf17be0-dfd4-442b-958e-365c73d2cb75" valueTypeId="cbf4f924-a0c2-4747-b542-b17cd4fc69e8"/>
+    <valueManagerType typeId="5cfe2092-910b-459a-9831-14b15789a4a3" valueTypeId="7f931d11-cf64-4045-9786-d2dba6e8c437"/>
+    <valueKeyType typeId="f17c2c9d-2a3f-41b7-a229-3fb9609a3af9" valueTypeId="41f66e23-0434-4679-b415-092e738012ba"/>
+  </producedTypes>
+  <name>CRM_ЭтоДемоБаза</name>
+  <synonym>
+    <key>ru</key>
+    <value>Это демо база</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <explanation>
+    <key>ru</key>
+    <value>Константа используется для анализа статистики на сервере статистики</value>
+  </explanation>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

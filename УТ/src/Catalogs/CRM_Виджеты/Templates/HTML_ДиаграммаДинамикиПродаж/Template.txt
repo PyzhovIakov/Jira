@@ -1,0 +1,18 @@
+<tr>
+  <td>
+    <div class="d3-diagram-wrap"></div>
+    <script class="executable">
+      var w;
+
+      ((widget) => {
+        const data = '{{CRM:PLOT_DATA}}';
+        const margin = { top: 15, left: 15, right: 15, bottom: 15 };
+
+        const plot = new SalesDynamicsPlot(widget);
+
+        plot.init(data, null, margin);
+        plot.draw();
+      })(w);
+    </script>
+  </td>
+</tr>

@@ -1,0 +1,42 @@
+#messages {
+	background: #ECF9FF;
+}
+
+.chat__message {
+	background: #ffffff;
+}
+
+.chat__item--responder .chat__message,
+.chat__item--responder .chat__favMessage {
+	background: -webkit-gradient(linear, left top, right top, from(#C9F2FF), to(#C4FBFF));
+	background: -webkit-linear-gradient(left, #C9F2FF 0%, #C4FBFF 100%);
+	background: -moz-linear-gradient(left, #C9F2FF 0%, #C4FBFF 100%);
+	background: -o-linear-gradient(left, #C9F2FF 0%, #C4FBFF 100%);
+	background: linear-gradient(90deg, #C9F2FF 0%, #C4FBFF 100%);
+}
+
+.action_button,
+.scheduled-message__cancel {
+	color: #00a0f2;
+}
+
+.chat__info {
+	background: rgba(3, 28, 65, 0.3);
+	color: #ffffff;
+}
+
+.chat__info-link {
+	color: #ffffff;
+}
+
+.quoted__message {
+	border-color: #00A0F2;
+}
+
+#dialog::-webkit-scrollbar-thumb {
+	background-color: #75DAF7;
+}
+
+#dialog::-webkit-scrollbar-thumb:hover {
+	background-color: #42cef5;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="904acbf2-c175-471b-b4ae-fb2f23b7492f">
+  <name>CRM_ЯзыковыеМодели</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM языковые модели</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.CRM_РаботаСЯзыковымиМоделямиВызовСервера</content>
+  <content>CommonModule.CRM_РаботаСЯзыковымиМоделямиКлиент</content>
+  <content>CommonModule.CRM_РаботаСЯзыковымиМоделямиСервер</content>
+  <content>Catalog.CRM_СервисыЯзыковыхМоделей</content>
+  <content>Catalog.CRM_ДействияЯзыковыхМоделей</content>
+  <content>InformationRegister.CRM_ТокеныДоступаКСервисам</content>
+  <content>CommonForm.CRM_ФормаОтветаЯзыковойМодели</content>
+  <content>CommonPicture.CRM_ЯМ_ChatGPT</content>
+  <content>CommonPicture.CRM_ЯМ_Claude</content>
+  <content>CommonPicture.CRM_ЯМ_GigaChat</content>
+  <content>CommonPicture.CRM_ЯМ_OpenRouter</content>
+  <content>CommonPicture.CRM_ЯМ_YandexGPT</content>
+  <content>CommonPicture.CRM_ЯМ_Английский</content>
+  <content>CommonPicture.CRM_ЯМ_ВыделиГлавное</content>
+  <content>CommonPicture.CRM_ЯМ_Длиннее</content>
+  <content>CommonPicture.CRM_ЯМ_ДобавьСмайлики</content>
+  <content>CommonPicture.CRM_ЯМ_Жестче</content>
+  <content>CommonPicture.CRM_ЯМ_ИсправьОшибки</content>
+  <content>CommonPicture.CRM_ЯМ_Китайский</content>
+  <content>CommonPicture.CRM_ЯМ_Короче</content>
+  <content>CommonPicture.CRM_ЯМ_Мягче</content>
+  <content>CommonPicture.CRM_ЯМ_Неформальнее</content>
+  <content>CommonPicture.CRM_ЯМ_Объясни</content>
+  <content>CommonPicture.CRM_ЯМ_ОтветьНаВопрос</content>
+  <content>CommonPicture.CRM_ЯМ_Русский</content>
+  <content>CommonPicture.CRM_ЯМ_СвойЗапрос</content>
+  <content>CommonPicture.CRM_ЯМ_Улучши</content>
+  <content>CommonPicture.CRM_ЯМ_Формальнее</content>
+  <content>FunctionalOption.CRM_ИспользоватьСервисыЯзыковыхМоделей</content>
+  <content>Constant.CRM_ИспользоватьСервисыЯзыковыхМоделей</content>
+  <parentSubsystem>Subsystem.CRM_МодульCRM</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="72e95868-dced-42e6-94fa-422a04b8bc27">
+  <name>CRM_НачатьУчетВремени24Анимация</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM начать учет времени24 анимация</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>CRM start keeping track of time</value>
+  </synonym>
+</mdclass:CommonPicture>

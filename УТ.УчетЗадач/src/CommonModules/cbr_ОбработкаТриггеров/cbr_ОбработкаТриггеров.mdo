@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a669b263-2baa-4547-a9e7-9f1af82f4039">
+  <name>cbr_ОбработкаТриггеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Cbr обработка триггеров</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

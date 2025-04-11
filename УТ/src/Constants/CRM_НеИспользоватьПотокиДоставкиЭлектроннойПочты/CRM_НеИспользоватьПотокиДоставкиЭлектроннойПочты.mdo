@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb980a80-b2bc-423a-98f5-a81755516ee3">
+  <producedTypes>
+    <managerType typeId="99aa39dd-da5e-4c56-ba50-a26cbc979674" valueTypeId="2800b4b0-a119-4fd6-9dc7-0d5e5735b15a"/>
+    <valueManagerType typeId="04add70c-aa65-44ae-b916-e3beb278ba65" valueTypeId="584f4f40-d4be-4b63-bae3-ea32c03ca6a3"/>
+    <valueKeyType typeId="02f865e7-e491-4f5a-b244-2f7276286627" valueTypeId="a4ec14aa-e376-45e3-865f-40058a4976c5"/>
+  </producedTypes>
+  <name>CRM_НеИспользоватьПотокиДоставкиЭлектроннойПочты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Не использовать потоки доставки электронной почты</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+
+    <head>
+    <style>
+    html {
+        overflow: hidden;
+        font-family: Verdana, sans-serif;
+        font-size: small;
+    }
+
+    .row {
+        display: flex;
+        height: 100%;
+    }
+    
+    .col {
+        width: 20%;
+    }
+        
+    .item {
+        height: calc(50% - 5px);
+        background-color: #f5f5f5;
+        padding: 2px 5px 2px 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+
+    .item+.item {
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+    
+    .item_data {
+		padding-top: 3px;
+        font-weight: bold;
+    }
+    
+    .total {
+        height: 100%;
+        /*height: calc(100% - 12px);*/
+        background-color: #f5f5f5;
+        padding: 5px;
+    }
+    
+    .total_title {
+        height: 50%;
+    }
+    
+    .total_data {
+        height: 50%;
+        font-size: large;
+        padding-top: 10;
+    }
+    
+    .text_green {
+        color: #00b050;
+    }
+
+    .text_yellow {
+        color: #ffc000;
+    }
+
+    .text_red {
+        color: red;
+    }
+
+    .text_blue {
+        color: #00a0f2;
+    }
+
+    .total_title_container {
+        display: flex;
+    }
+
+    #result_hint {
+        height: 16px;
+        width: 16px;
+        margin-left: auto;
+        background: url('images/hint.png');
+        background-size: 16px;
+    }
+
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+	        <div class="header">
+	        </div>
+	        <div class="content">
+		        <div class="row">
+			        <div class="col">
+				        <div class="item">
+							<div class="item_title  text_blue">ЗаголовокВВоронке</div>
+			                <div class="item_data">
+								<span id="in_funnel_summ">0 RUB</span><span id="in_funnel" style="float:right;">0 Интересов</span>
+			                </div>
+						</div>
+				        <div class="item">
+							<div class="item_title  text_blue">ЗаголовокКонверсия</div>
+			                <div class="item_data">
+			                    <span id="conversion">0</span>
+			                </div>
+				        </div>
+			        </div>
+			        <div class="col">
+				        <div class="item">
+							<div class="item_title  text_blue">ЗаголовокЗакрытоНеудачно</div>
+			                <div class="item_data">
+								<span id="unsuccessfully_summ">0 RUB</span><span id="unsuccessfully" style="float:right;">0 Интересов</span>
+			                </div>
+				        </div>
+				        <div class="item">
+							<div class="item_title  text_blue">ЗаголовокЗакрытоУспешно</div>
+			                <div class="item_data">
+								<span id="successfully_summ">0 RUB</span><span id="successfully" style="float:right;">0 Интересов</span>
+			                </div>
+				        </div>
+			        </div>
+			        <div class="col">
+				        <div class="item">
+							<div class="item_title  text_blue">ЗаголовокСредняяДлительность</div>
+			                <div class="item_data">
+			                    <span id="average_duration">0</span> <span id="average_duration_unit"></span>
+			                </div>
+				        </div>
+				        <div class="item">
+							<div class="item_title  text_blue">ЗаголовокСреднийЧек</div>
+			                <div class="item_data">
+								<span id="average_amount_summ">0 RUB</span>
+			                </div>
+				        </div>
+			        </div>
+			        <div class="col">
+				        <div class="item">
+							<div class="item_title  text_blue">ЗаголовокЛидыВВоронке</div>
+			                <div class="item_data">
+			                    <span id="lead_in_funnel">0</span>
+			                </div>
+				        </div>
+				        <div class="item">
+							<div class="item_title  text_blue">ЗаголовокЗабытыеИнтересы</div>
+			                <div class="item_data">
+			                    <span id="forgotten">0</span>
+			                </div>
+				        </div>
+			        </div>
+			        <div class="col">
+				        <div class="total">
+				            <div class="total_title_container">
+								<div class="total_title text_blue">ЗаголовокРезультат</div>
+								<a id="result_hint" href="ОткрытьПодсказкуРезультатов" title="Информация"></a>
+							</div>
+			                <div class="total_data  text_green">
+			                    <span id="result">0</span>
+			                </div>
+				        </div>
+			        </div>
+		        </div>
+	        </div>
+ 	        <div class="footer">
+	        </div>
+       </div>
+    </body>
+
+</html>    

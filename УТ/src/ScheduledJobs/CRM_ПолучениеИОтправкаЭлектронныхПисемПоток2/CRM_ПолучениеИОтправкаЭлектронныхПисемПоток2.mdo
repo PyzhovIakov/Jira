@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56120dc4-516d-4cda-8b45-95f61dca9aae">
+  <name>CRM_ПолучениеИОтправкаЭлектронныхПисемПоток2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получение и отправка электронных писем поток 2</value>
+  </synonym>
+  <methodName>CommonModule.CRM_УправлениеЭлектроннойПочтой.ПолучениеИОтправкаЭлектронныхПисемПоток2</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

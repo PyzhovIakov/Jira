@@ -1,0 +1,18 @@
+<tr>
+  <td>
+    <div class="d3-diagram-wrap" style="display: flex; flex-direction: row;"></div>
+    <script class="executable">
+      var w;
+
+      ((widget) => {
+        const data = '{{CRM:PLOT_DATA}}';
+        const margin = { top: 15, left: 15, right: 15, bottom: 20 };
+
+        const plot = new ClientStatusDynamicsPlot(widget);
+
+        plot.init(data, null, margin);
+        plot.draw();
+      })(w);
+    </script>
+  </td>
+</tr>

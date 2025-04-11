@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b4e60cc-cd71-4ec1-a923-c8e2fad91c9f">
+  <producedTypes>
+    <selectionType typeId="c46ffeaf-eb90-424a-82ba-511cb865aca2" valueTypeId="a6093d3c-49a9-45cb-92d0-769c1ef598d2"/>
+    <listType typeId="c71200e2-0983-4c12-82ed-90ed681730a9" valueTypeId="1f00dc3e-b119-4bc1-8ddc-766ef8ac0493"/>
+    <managerType typeId="a2b1df20-fe7f-434a-86f8-62f7393b1d1c" valueTypeId="f8f2a9c5-4df9-48d6-8faf-66f57960ea3a"/>
+    <recordSetType typeId="9550ee94-086d-4dc7-a86f-9db077f7553c" valueTypeId="9191f9a7-66ae-415e-a549-ddb2f3fcf744"/>
+    <recordKeyType typeId="10b98129-0e18-47de-8e0a-a2ae43c2c780" valueTypeId="e5325f5a-0056-4dd0-8257-1195d4674d79"/>
+    <recordType typeId="7e0c6916-42f2-4688-9495-3aff40826dac" valueTypeId="49931b12-6fc9-4f65-9748-39cdf64e9190"/>
+    <recordManagerType typeId="c19037bd-82eb-4f5b-b995-53b45fe02b04" valueTypeId="8b71174b-ec90-4cc7-b457-3ce4370f3209"/>
+  </producedTypes>
+  <name>cbr_СвязанныеЗадачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связанные задачи (Джира)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Связанная задача</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Связанные задачи</value>
+  </listPresentation>
+  <dimensions uuid="1f32b885-24bb-4b25-92a2-bf7a1fc6db76">
+    <name>Задача1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача1</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.cbr_Задача</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="36cdcd19-f4b1-48f5-ae55-e945fa215464">
+    <name>Задача2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача2</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.cbr_Задача</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

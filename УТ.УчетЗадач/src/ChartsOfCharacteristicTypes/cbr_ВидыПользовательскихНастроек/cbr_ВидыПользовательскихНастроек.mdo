@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="537083e9-1028-4d47-bb03-f9e6c45788ba">
+  <producedTypes>
+    <objectType typeId="fbce4d81-5a13-4943-99f7-8a139af7eec8" valueTypeId="fe702630-1ad1-472b-80d9-197ed09bdb64"/>
+    <refType typeId="5d24eca5-9a00-4b44-94b0-9104413fdc72" valueTypeId="132a09f1-ce67-4e10-b1cc-9a4946df490a"/>
+    <selectionType typeId="21959175-4764-4943-a9b0-9af9c4630e0d" valueTypeId="00efe07e-8495-4d0c-9311-07210ae18ad7"/>
+    <listType typeId="ef7f60ee-7225-4f6c-8f51-ab006280ba02" valueTypeId="739d3392-9d1d-4b42-8cc3-b9491920a955"/>
+    <managerType typeId="0f579b12-9e23-48fb-bdb3-859cefd42f98" valueTypeId="de0c3bc6-00d7-44d7-bfe1-5014f805fa62"/>
+    <containerType typeId="a0e86083-f5ab-4944-9400-b56d0d42dbbc" valueTypeId="0722b319-1d17-404d-8d2c-b14568903565"/>
+  </producedTypes>
+  <name>cbr_ВидыПользовательскихНастроек</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды пользовательских настроек (Джира)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ValueType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Виды пользовательских настроек (Джира)</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Виды пользовательских настроек (Джира)</value>
+  </listPresentation>
+  <type>
+    <types>CatalogRef.Пользователи</types>
+    <types>CatalogRef.cbr_ГруппыДоступаКЗадачам</types>
+    <types>CatalogRef.cbr_ВидыЗадач</types>
+    <types>Boolean</types>
+    <types>CatalogRef.cbr_Приоритеты</types>
+    <types>CatalogRef.Партнеры</types>
+  </type>
+  <hierarchical>true</hierarchical>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>50</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="c8cecdb3-62f2-40e9-8a43-153d81cb3f74">
+      <name>НачальноеЗаполнениеЗадачи</name>
+      <description>Начальное заполнение задачи</description>
+      <isFolder>true</isFolder>
+      <code>000000001</code>
+      <type/>
+      <content id="2e79d43c-5d63-49ff-a4f6-3fca1236ccb4">
+        <name>ВидЗадачи</name>
+        <description>Вид задачи</description>
+        <code>000000002</code>
+        <type>
+          <types>CatalogRef.cbr_ВидыЗадач</types>
+        </type>
+      </content>
+      <content id="b3b3ea52-f408-44c0-8a4e-007a429c0f4d">
+        <name>Исполнитель</name>
+        <description>Исполнитель</description>
+        <code>000000003</code>
+        <type>
+          <types>CatalogRef.Пользователи</types>
+          <types>CatalogRef.cbr_ГруппыДоступаКЗадачам</types>
+        </type>
+      </content>
+      <content id="d9f12ab0-4ac8-468a-a65e-1be06fc7d279">
+        <name>КонтрольВремени</name>
+        <description>Контроль времени</description>
+        <code>000000004</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="a9124120-8910-4a4d-af27-d0a41d1714ef">
+        <name>Постановщик</name>
+        <description>Постановщик</description>
+        <code>000000005</code>
+        <type>
+          <types>CatalogRef.Пользователи</types>
+          <types>CatalogRef.Партнеры</types>
+        </type>
+      </content>
+      <content id="d4cfdd82-959b-46b3-a89a-a9a941897296">
+        <name>Приоритет</name>
+        <description>Приоритет</description>
+        <code>000000006</code>
+        <type>
+          <types>CatalogRef.cbr_Приоритеты</types>
+        </type>
+      </content>
+      <content id="58371a52-2fc4-4f13-b765-63e732c62da9">
+        <name>УчетВремени</name>
+        <description>Учет времени</description>
+        <code>000000007</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+    </items>
+    <items id="6c81bced-d16f-4f47-b936-4b65adbf7366">
+      <name>СпособыОповещения</name>
+      <description>Способы оповещения</description>
+      <isFolder>true</isFolder>
+      <code>000000008</code>
+      <type/>
+      <content id="2d7ba43e-6c47-464e-adfe-effcbac5f9bb">
+        <name>База</name>
+        <description>База</description>
+        <code>000000009</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="6a8921bc-e3bc-4927-89b5-383fa20b1256">
+        <name>Битрикс</name>
+        <description>Битрикс</description>
+        <code>000000010</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="d94ba886-5bf0-4fc0-803a-9715bcee4ab4">
+        <name>Телеграм</name>
+        <description>Телеграм</description>
+        <code>000000011</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="ec66cecb-4a35-47a8-803d-3a68fa9b9edf">
+        <name>ЭлектроннаяПочта</name>
+        <description>Электронная почта</description>
+        <code>000000012</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfCharacteristicTypes>

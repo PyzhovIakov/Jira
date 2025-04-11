@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cda3aaa0-839b-4219-8516-209e24091029">
+  <producedTypes>
+    <refType typeId="9a6c6af3-06cb-44f4-8142-306153a0c30e" valueTypeId="fa763ee9-5106-4d10-a4d2-5e2e89c55cc9"/>
+    <listType typeId="8dc6e785-8093-4d97-a2f4-6d8961ad9cdf" valueTypeId="b252a0c3-cac0-4ca2-b62a-ec68ba9d258c"/>
+    <objectType typeId="2829100b-35f7-4f4e-83f4-44f413dea03c" valueTypeId="44f1d172-5474-4f62-a75c-e1b171cf87d0"/>
+    <managerType typeId="b6647c86-b8d8-4b99-ab2a-750bdd6f73d0" valueTypeId="9f047502-940a-42c0-9118-57e119695af1"/>
+    <recordManagerType typeId="745a1913-8c1e-4351-9b9f-93b2ba0f10a8" valueTypeId="539a068d-3fd6-467d-8cfd-e7fc35946395"/>
+    <recordSetType typeId="26530acd-3fc3-40c1-960f-0f564125ae41" valueTypeId="2248d5e0-4063-44b3-a82d-a2bb23b19c8e"/>
+    <recordType typeId="c9a48e96-042b-43d0-bdfa-76974bf6b386" valueTypeId="118be62d-a00d-4481-9333-ecdadf170c6e"/>
+    <recordKeyType typeId="ea7bcd89-50c3-4b04-beec-11c45afe4bed" valueTypeId="6f0b5f63-0e15-4943-abcc-efb9f9e07c94"/>
+  </producedTypes>
+  <name>public_params</name>
+  <synonym>
+    <key>ru</key>
+    <value>Public params</value>
+  </synonym>
+  <parentDataSource>ExternalDataSource.сфпВнешнийИсточникДанныхИсторииЗвонков</parentDataSource>
+  <nameInDataSource>public.params</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="98986ec4-3854-4c01-8faa-f7446cd17db0">
+    <name>param_name</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>param_name</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="13816c01-4d80-46f2-a8e1-369ecb87b4c6">
+    <name>param_value</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>param_value</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

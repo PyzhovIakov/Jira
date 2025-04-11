@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba731c4f-5c17-440e-b3ac-97a03f17e6c2">
+  <name>CRM_РегистрацияПотерянныхОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистрация потерянных обращений</value>
+  </synonym>
+  <methodName>CommonModule.CRM_РаботаСОбращениями.CRM_РегистрацияПотерянныхОбращений</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

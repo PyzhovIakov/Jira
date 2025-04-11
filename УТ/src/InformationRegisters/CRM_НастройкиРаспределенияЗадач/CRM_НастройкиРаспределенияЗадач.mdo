@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57077044-02ef-4d37-8f40-77d128eb0db7">
+  <producedTypes>
+    <selectionType typeId="598d801e-1900-46b7-93a4-3eab67a6c4d3" valueTypeId="67008156-574a-4847-85fb-d98145d0fa5c"/>
+    <listType typeId="6441bbf5-e870-406d-bd28-cb628854bdbb" valueTypeId="1485cd8c-aa74-4953-b5da-492a1c4b2b58"/>
+    <managerType typeId="fd420723-4c3e-4810-990f-78030d975ee1" valueTypeId="1cd3230b-1426-4d42-8823-87419a239e12"/>
+    <recordSetType typeId="857dcf6d-be01-4fdb-8f2e-5157ce5759fb" valueTypeId="1acbb7cd-b8f3-4c2f-9096-8f0ca1a05670"/>
+    <recordKeyType typeId="ad87ce2d-b87c-4390-a985-66b011209503" valueTypeId="9b6177a1-1e89-4255-990d-c6b258730db3"/>
+    <recordType typeId="c4298c08-b403-4ca4-a5c1-d714418e9695" valueTypeId="c1644be6-4f87-44fb-ab96-be9a3654b83c"/>
+    <recordManagerType typeId="01d765ff-bd32-40f8-afdc-0e71f652bfa4" valueTypeId="7ca5ab67-3a51-459a-857b-4aa6a3fcc7de"/>
+  </producedTypes>
+  <name>CRM_НастройкиРаспределенияЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки распределения задач</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="429df2e3-6d55-4362-9486-27cddf4611b3">
+    <name>НастройкиВажности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки важности</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="22085b4e-06bd-4461-b47e-81164f8e523d">
+    <name>НастройкиСрочности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки срочности</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1152a3a2-6383-4632-aa13-58a301e7099f">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Object</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+      <types>CatalogRef.Пользователи</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="e0348b76-b5a9-4c26-bb05-ef484159abf6">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form used indicators</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1862d5bb-32f7-4ed1-a117-20e7f873b4f1">
+    <name>Настройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:InformationRegister>

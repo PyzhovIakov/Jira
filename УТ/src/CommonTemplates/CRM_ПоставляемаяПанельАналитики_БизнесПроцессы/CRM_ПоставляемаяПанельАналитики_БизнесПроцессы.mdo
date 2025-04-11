@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="276cd9b6-36c5-4f52-8b63-1525e22b8a0f">
+  <name>CRM_ПоставляемаяПанельАналитики_БизнесПроцессы</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM Управление взаимоотношениями с клиентами/Бизнес-процессы</value>
+  </synonym>
+  <comment>Бизнес-процессы/1С-Рарус Специализированные решения</comment>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

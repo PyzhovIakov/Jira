@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d8de912d-1f99-48d7-a3d8-0ba46d1a45f3">
+  <producedTypes>
+    <managerType typeId="2afd8328-c1b8-47ee-81a3-ffd67a2e30f4" valueTypeId="e58b22f4-ec00-4f2a-a401-a4e5f40f70df"/>
+    <valueManagerType typeId="604f12c8-357e-4aa4-bb71-7da816a68ee5" valueTypeId="5520580f-c112-4918-89c0-6a41e87f2ec1"/>
+    <valueKeyType typeId="905f9931-d99f-4698-9502-7f1b0b1f2cac" valueTypeId="a4370d25-f6ce-4585-84b5-2997b9c93cd9"/>
+  </producedTypes>
+  <name>CRM_ТокенСеансаРаботыСРечью</name>
+  <synonym>
+    <key>ru</key>
+    <value>Токен сеанса работы с речью</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>50</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

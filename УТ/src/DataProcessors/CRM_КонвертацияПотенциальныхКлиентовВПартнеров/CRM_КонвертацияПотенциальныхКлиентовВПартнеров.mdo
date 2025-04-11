@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa53c7a5-9a41-44b2-8925-32a98e9ade37">
+  <producedTypes>
+    <objectType typeId="2000dab4-b254-4dae-92ab-d51ec0e78f81" valueTypeId="af794da3-753e-4260-b864-5f2f9c3faab6"/>
+    <managerType typeId="9a7c77a2-ce5a-4338-8964-05c6be5fd0bb" valueTypeId="9b0ec26f-aaf3-44c9-8392-2a3a5d26e8f2"/>
+  </producedTypes>
+  <name>CRM_КонвертацияПотенциальныхКлиентовВПартнеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конвертация потенциальных клиентов в партнеров</value>
+  </synonym>
+  <defaultForm>DataProcessor.CRM_КонвертацияПотенциальныхКлиентовВПартнеров.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="00fa0565-1b4d-4b27-b77d-060c0041e46b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

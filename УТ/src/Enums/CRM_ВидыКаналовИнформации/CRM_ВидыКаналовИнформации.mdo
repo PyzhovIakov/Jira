@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="71dbb31e-6085-4484-aa02-347e9fdea3d2">
+  <producedTypes>
+    <refType typeId="3227521e-f1af-4971-85ee-dab2f64872a5" valueTypeId="8e483fe1-d7cb-4a43-92e6-3f8d83bd1e27"/>
+    <listType typeId="8129cf2e-0671-4be9-a256-9aabd862f42f" valueTypeId="b73b63d8-2127-44d4-81ad-9855a0f8f119"/>
+    <managerType typeId="a9adf607-3ca3-4092-b195-b1438c26b9c1" valueTypeId="3ee36895-dc0a-42f1-9e54-d1e93af2b1d3"/>
+  </producedTypes>
+  <name>CRM_ВидыКаналовИнформации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды каналов информации</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d56790e8-9b33-42e6-9af1-47c070699c47">
+    <name>Взаимодействие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взаимодействие</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="40a18329-3abe-4d7f-955c-2f615cce1084">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fca7a9c5-8c7d-431e-ae97-de2b2902510a">
+    <name>Мессенджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мессенджер</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d026b6ee-eab1-4b87-8679-3c093f85a267">
+    <name>Телефония</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефония</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ee09e9c4-d606-437f-8ef2-a8d1775c60ea">
+    <name>ЭлектроннаяПочта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронная почта</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

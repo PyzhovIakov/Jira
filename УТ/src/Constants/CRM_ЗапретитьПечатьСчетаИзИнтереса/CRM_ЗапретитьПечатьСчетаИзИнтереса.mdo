@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="625b1796-8801-41ca-b73c-a92ebf4b519a">
+  <producedTypes>
+    <managerType typeId="a3629bcf-f420-4112-92e4-c2a8874dc45e" valueTypeId="9913ac86-3e72-4f00-9053-ab05e0bbef6b"/>
+    <valueManagerType typeId="10e94b6b-5aa5-4aa9-bb1e-7970534678c1" valueTypeId="34e600a6-a7c2-40c8-8e88-7c8727b72047"/>
+    <valueKeyType typeId="b6418552-3ff7-43a1-9dbe-53ceacc9d666" valueTypeId="854da2cc-9f57-4f4e-98b7-9328fc896c92"/>
+  </producedTypes>
+  <name>CRM_ЗапретитьПечатьСчетаИзИнтереса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запретить печать счета из интереса</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

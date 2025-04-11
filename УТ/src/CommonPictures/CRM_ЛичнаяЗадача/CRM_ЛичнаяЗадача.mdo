@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0555603f-4cb9-48be-b6dc-5c0764cfcab3">
+  <name>CRM_ЛичнаяЗадача</name>
+  <synonym>
+    <key>ru</key>
+    <value>Личная задача</value>
+  </synonym>
+</mdclass:CommonPicture>

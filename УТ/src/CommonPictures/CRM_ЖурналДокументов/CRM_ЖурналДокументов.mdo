@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d40e9247-e072-4c58-bb65-00373c3996ad">
+  <name>CRM_ЖурналДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM журнал документов</value>
+  </synonym>
+</mdclass:CommonPicture>

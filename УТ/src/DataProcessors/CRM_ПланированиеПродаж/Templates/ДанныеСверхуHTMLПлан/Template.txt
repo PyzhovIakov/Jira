@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+
+    <head>
+    <style>
+    html {
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        font-size: 90%;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .header {
+        display: block;
+        flex-grow: 0;
+    }
+
+    .content {
+        display: block;
+        overflow-y: scroll;
+        height: auto;
+        flex-grow: 2;
+    }
+
+    .footer {
+        display: block;
+        flex-grow: 0;
+    }
+
+    .plan {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 3px;
+        border-color: #f1f1f1;
+        margin-bottom: 10px;
+    }
+
+    .plan_items {
+        /*Ширина_items*/
+    }
+
+    .plan_item {
+        display: flex;
+    }
+
+    .plan_item-title {
+        color: #a3adbb;
+        /*Ширина_item-title*/
+        padding-right: 5px;
+    }
+
+    .plan_item-text {
+        font-weight: bold;
+    }
+
+    .plan_top {
+        background-color: #f5f5f5;
+        color: #a3adbb;
+        padding: 2px 10px;
+        margin-bottom: 5px;
+        margin-right: 8px;
+    }
+
+    .plan_summ_top {
+        display: flex;
+        /*Ширина_items*/
+    }
+
+    .plan_summ {
+        display: flex;
+    }
+
+    .plan_summ-text {
+        width: 30%;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .plan_summ-title {
+        color: #a3adbb;
+        width: 40%;
+        padding-right: 5px;
+    }
+
+    .amounts {
+        display: flex;
+    }
+
+    .plan_amount {
+        width: 50%;
+        background-color: #f5f5f5;
+        padding: 5px;
+        margin-right: 8px;
+    }
+
+    .deviation_amount {
+        width: 50%;
+        background-color: #f5f5f5;
+        padding: 5px;
+    }
+
+    .item_amount {
+        background-color: #f5f5f5;
+        padding: 5px;
+        margin-top: 8px;
+    }
+
+    .percent {
+        font-weight: bold;
+    }
+
+    .text_green {
+        color: #00b050;
+    }
+
+    .text_yellow {
+        color: #ffc000;
+    }
+
+    .text_red {
+        color: red;
+    }
+
+    .text_blue {
+        color: #00a0f2;
+    }
+
+    .text_grey {
+        color: #a3adbb;
+    }
+
+    .current {
+        background-color: #e1f5ff;
+        border-color: #9adafa
+    }
+
+    a {
+        text-decoration: none;
+        color: #333333;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #333333;
+    }
+
+    a:active {
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .check_div {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    /* для элемента input c type="checkbox" */
+
+    .check_item {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    /* для элемента label, связанного с .custom-checkbox */
+
+    .check_item+label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+    }
+
+    /* создание в label псевдоэлемента before со следующими стилями */
+
+    .check_item+label::before {
+        content: '';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #adb5bd;
+        border-radius: 0.5em;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 150% 150%;
+        background-color: white;
+    }
+
+    /* стили при наведении курсора на checkbox */
+
+    .check_item:not(:disabled):not(:checked)+label:hover::before {
+        border-color: #b3d7ff;
+    }
+
+    /* стили для активного чекбокса (при нажатии на него) */
+
+    .check_item:not(:disabled):active+label::before {
+        background-color: #b3d7ff;
+        border-color: #b3d7ff;
+    }
+
+    /* стили для чекбокса, находящегося в фокусе */
+
+    .check_item:focus+label::before {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+
+    .check_item:focus:not(:checked)+label::before {
+        border-color: #80bdff;
+    }
+
+    /* стили для чекбокса, находящегося в состоянии checked */
+
+    .check_item:checked+label::before {
+        border-color: #00a0f2;
+        background-color: #00a0f2;
+        background-image: url("data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M16.6144 8.43858C16.83 8.66367 16.83 9.01866 16.6144 9.24375L10.865 15.2461C10.4713 15.6571 9.81441 15.6571 9.4207 15.2461L7.38577 13.1216C7.17008 12.8964 7.17008 12.5413 7.38577 12.3161V12.3161C7.6148 12.077 7.99687 12.0768 8.2262 12.3156L10.1429 14.3117L15.774 8.43838C16.0032 8.19935 16.3853 8.19944 16.6144 8.43858V8.43858Z' fill='white'/%3e%3c/svg%3e");
+    }
+
+    /* стили для чекбокса, находящегося в состоянии disabled */
+
+    .check_item:disabled+label::before {
+        background-color: #e9ecef;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        border-width: 1px 1px 1px 2px;
+        border-color: #777;
+        background-color: #aaa;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        border-width: 1px 1px 1px 2px;
+        border-color: #555;
+        background-color: #777;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-width: 0;
+    }
+
+    ::-webkit-scrollbar-track:hover {
+        border-left: solid 1px #aaa;
+        background-color: #eee;
+    }
+
+    .amount_data {
+        margin-right: 10px;
+        /*font-size: 120%;*/
+        font-weight: bold;
+    }
+
+    .unit {
+        color: #a3adbb;
+        margin-left: 5px;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+	        <div class="header">
+	       	ДанныеШапки
+	        </div>
+	        <div class="content">
+	       	ДанныеПлана
+	        </div>
+	        <div class="footer">
+		        <div class="amounts">
+		            <div class="plan_amount">
+		                <div class="amount_title  text_blue">
+		                    ЗаголовокИтого
+		                </div>
+		                <div class="amount_data">
+		                    <span id="amount_summ">0</span> <span id="amount_summ_unit" class="unit"></span>
+		                </div>
+		                <div class="amount_data">
+		                    <span id="amount_quantity">0</span> <span id="amount_quantity_unit" class="unit"></span>
+		                </div>
+		            </div>
+		            <div class="deviation_amount">
+		                <div class="amount_title  text_blue">
+		                    ЗаголовокОтклонение
+		                </div>
+		                <div class="amount_data">
+		                    <span id="deviation_summ">0</span> <span id="deviation_summ_unit" class="unit"></span>
+		                </div>
+		                <div class="amount_data">
+		                    <span id="deviation_quantity">0</span> <span id="deviation_quantity_unit" class="unit"></span>
+		                </div>
+		            </div>
+		        </div>
+		        <div id = "ByLine" class="item_amount hidden">
+                    <div class="amount_title  text_blue">
+                        Группировка по строке
+                    </div>
+                    <div id = "ItemsByLine" class="amount_data">
+                    </div>
+                </div>
+	        </div>
+        </div>
+    </body>
+
+</html>    

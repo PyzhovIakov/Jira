@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4ffc689f-1ac8-44fa-b863-f7236e03b999">
+  <producedTypes>
+    <managerType typeId="b746332a-7841-4bf1-8a65-bae8410314f6" valueTypeId="df7b93ef-59bd-4b54-bcb5-9468f723d9d0"/>
+    <valueManagerType typeId="d3be6f15-a883-4b59-8521-3ed84e89fc25" valueTypeId="b84d44a1-fdcd-427d-9e69-29f4fde949c0"/>
+    <valueKeyType typeId="544d881f-4cdd-4116-85dd-5de3da4660b9" valueTypeId="0106ef67-64ef-4798-aeb5-a2698e0a39f9"/>
+  </producedTypes>
+  <name>CRM_СрокЖизниЗвонков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время жизни звонков как лидов</value>
+  </synonym>
+  <comment>Время жизни звонков как лидов (дней)</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b51b2a91-485a-4193-a0d0-96af551c87f0">
+  <name>CRM_ФормаОтветаЯзыковойМодели</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ответ языковой модели</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df14b6c3-d7c4-4128-bf7d-26c5808d0cce">
+  <name>CRM_ПодготовкаСправочниковДляОбменаB2BПортал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подготовка справочников для обмена с B2B порталом</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.CRM_ТипыОбращений</types>
+    <types>CatalogObject.КонтактныеЛицаПартнеров</types>
+    <types>CatalogObject.CRM_СообщениеМессенджераПрисоединенныеФайлы</types>
+    <types>CatalogObject.Партнеры</types>
+    <types>CatalogObject.CRM_ИнтересПрисоединенныеФайлы</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.CRM_ОбменB2BПортал.ПодготовитьИзмененияПередЗаписью</handler>
+</mdclass:EventSubscription>

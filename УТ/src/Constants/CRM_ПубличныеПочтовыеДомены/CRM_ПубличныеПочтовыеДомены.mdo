@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c577f4d9-6af5-437a-8366-b0465e82580c">
+  <producedTypes>
+    <managerType typeId="2851636d-c060-4b1c-b5d0-bcd7c59891ff" valueTypeId="8e1e1c39-78a1-4e41-ba8f-618316d56c3a"/>
+    <valueManagerType typeId="52ec3fc5-26aa-4d33-8e51-bab13601dd36" valueTypeId="1024985b-bc3d-4f51-8539-dfb52ed3affb"/>
+    <valueKeyType typeId="48a5cee6-bd43-414e-be95-85eb35348e6b" valueTypeId="ffcf10fb-b031-4f23-b7df-781f06d8abb6"/>
+  </producedTypes>
+  <name>CRM_ПубличныеПочтовыеДомены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список публичных почтовых доменов (CRM)</value>
+  </synonym>
+  <type>
+    <types>ValueStorage</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

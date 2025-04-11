@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2db70c89-8a98-4fe7-9a99-5c2c6f61e4da">
+  <producedTypes>
+    <objectType typeId="24011f95-8295-44d5-baca-5ac66b115bf6" valueTypeId="1df68541-1e03-4b4f-9d19-5ad1963991a6"/>
+    <managerType typeId="af6b0321-8e68-4d8a-94b2-e214f2dca219" valueTypeId="1725076c-6da4-4701-9581-4edca2337542"/>
+  </producedTypes>
+  <name>CRM_АнализПлановПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ планов продаж</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.CRM_АнализПлановПродаж.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="b37d381a-1391-4b7f-805f-ba513f8e963f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

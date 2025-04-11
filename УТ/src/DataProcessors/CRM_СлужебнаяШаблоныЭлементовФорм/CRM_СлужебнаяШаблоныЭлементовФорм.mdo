@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c953ab51-2b51-4f31-8f89-e00ca88f7341">
+  <producedTypes>
+    <objectType typeId="24e65729-65ed-4dbd-b28d-3331b1e5418f" valueTypeId="477ae707-6b38-4736-a8d8-d45fab1979f6"/>
+    <managerType typeId="0b92f196-0b18-4394-bd9d-72a5635a1806" valueTypeId="80683580-0747-494f-b2c9-e28074e9f81c"/>
+  </producedTypes>
+  <name>CRM_СлужебнаяШаблоныЭлементовФорм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Служебная шаблоны элементов форм</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="413d8b69-9c7b-4d98-8e73-70a04da0b02c">
+    <name>ШаблонСозданиеКлиентаИКонтакта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание клиента и контакта</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2fb85b71-87d3-432e-9599-f49040b04ba9">
+  <producedTypes>
+    <selectionType typeId="6df6a163-1fe4-4878-a174-558f3a12f7da" valueTypeId="2b4fde62-cd12-4b16-abbb-76946da3616c"/>
+    <listType typeId="10e6d5d0-d672-4488-95cb-eb2b86468b50" valueTypeId="95c0b91d-62da-467e-9e3f-02e21095c3cd"/>
+    <managerType typeId="5dd619c0-ec2b-47bb-b4c2-92c79cb41916" valueTypeId="c505e71a-4a81-4a5e-978b-7131c0674275"/>
+    <recordSetType typeId="45290aa7-1b34-49a6-9717-8ee674bec1ab" valueTypeId="67a0f233-b799-40c5-adf9-7815e83b644a"/>
+    <recordKeyType typeId="45c7c3b6-d583-4404-be73-cbf99615f2c3" valueTypeId="fd597940-463b-42b7-98ea-35981fe8b78e"/>
+    <recordType typeId="74750c91-52ef-4e5b-8af3-b4f8ee510655" valueTypeId="d2389ec1-ab39-4bd8-8aa5-49899b1cb187"/>
+    <recordManagerType typeId="1a444317-b61d-43a8-b481-4ab0326b5d9e" valueTypeId="5b42e1de-3cb6-4158-bb16-099109fc361b"/>
+  </producedTypes>
+  <name>cbr_СтатусыЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установленные статусы задач (Джира)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Статус задачи</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Статусы задач</value>
+  </listPresentation>
+  <resources uuid="b932ef47-bafd-42bd-9ab7-7fd5b38aa091">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.cbr_СтатусыЗадач</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c9f5180a-cd5f-4115-a2cb-9ae103bd8f9f">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.cbr_Задача</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

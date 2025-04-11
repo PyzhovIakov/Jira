@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f055b036-ba01-4fa5-9363-f4a03788879c">
+  <producedTypes>
+    <objectType typeId="d1f534b7-4a8a-4ad0-a3c0-f675006972bf" valueTypeId="00a7bfdc-ce62-4cff-a43e-7f0465f71912"/>
+    <managerType typeId="97be0268-fc96-4e79-91d4-ab74bf536c31" valueTypeId="a098b146-dff1-4fa8-be83-39a3cedf55e9"/>
+  </producedTypes>
+  <name>CRM_ПанельАдминистрированияРаботыСРечью</name>
+  <synonym>
+    <key>ru</key>
+    <value>Панель администрирования работы с речью</value>
+  </synonym>
+  <defaultForm>DataProcessor.CRM_ПанельАдминистрированияРаботыСРечью.Form.НастройкаРаботыСРечью</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="6c52dd66-c45a-4b9a-98c5-f711afb6aced">
+    <name>НастройкаРаботыСРечью</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка работы с речью</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="f3fe1ecc-57ac-4a09-8ea6-78480cc61519">
+    <name>НастройкаРаботыСРечью</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка работы с речью</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Настройка параметров работы с речью.</value>
+    </toolTip>
+  </commands>
+</mdclass:DataProcessor>

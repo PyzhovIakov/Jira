@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92b2408a-e785-4310-8d17-59e2fc4cd32a">
+  <name>CRM_МодельРаспознаванияРечиСкачать</name>
+  <synonym>
+    <key>ru</key>
+    <value>Модель распознавания речи скачать</value>
+  </synonym>
+</mdclass:CommonPicture>

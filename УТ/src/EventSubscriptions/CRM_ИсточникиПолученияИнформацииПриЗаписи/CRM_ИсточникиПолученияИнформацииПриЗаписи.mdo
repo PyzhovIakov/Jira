@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="018202f5-f9e3-40ed-a1f6-5cc8750a7c6b">
+  <name>CRM_ИсточникиПолученияИнформацииПриЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM источники получения информации при записи</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.CRM_Интерес</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.CRM_КлиентыСервер.CRM_ИсточникиполученияИнформацииПриЗаписи</handler>
+</mdclass:EventSubscription>

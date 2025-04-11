@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c372a78-61e3-4ddc-9694-246d5145f21a">
+  <name>CRM_РазделКалендарьПочтаНастройкиИСправочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Cправочники и настройки</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Catalogs and Settings</value>
+  </synonym>
+  <group>NavigationPanelImportant</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

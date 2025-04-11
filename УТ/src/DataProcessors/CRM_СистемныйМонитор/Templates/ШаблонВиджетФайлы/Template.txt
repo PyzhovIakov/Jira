@@ -1,0 +1,651 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{{CRM:PATH_TO_LIBRARY}}
+		<style>
+			
+			::-webkit-scrollbar {
+				width: 0;
+				height: 0;
+			}
+			
+			html {
+				font-family: Arial, sans-serif;
+				font-style: normal;
+				width: 100%;
+				height: 100%;
+			}
+			
+			* {
+				cursor: default;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 2px;
+				box-sizing: border-box;
+			}
+			
+			a, a:active, a:visited {
+				color: #00a0f2;
+				cursor: pointer;
+			}
+			
+			#wrapper5 {
+				overflow: hidden;
+				width: 100%;
+				padding: 0;
+				color: #333333;
+			}
+			
+			.chapter_header1 {
+				margin: 0;
+				font-size: 11pt;
+				font-weight: bold;
+			}
+			
+			.chapter_header2 {
+				margin: 4px 0 4px 0;
+				font-size: 11pt;
+			}
+			
+			.splitter {
+				margin: 4px 0;
+				color: #f5f5f5;
+			}
+			
+			.chapter_addition {
+				font-size: 10pt;
+			}
+			
+			#upbutton {
+				width: 25px;
+				height: 25px;
+				position: fixed;
+				bottom: 0;
+				right: 0;
+				z-index: 20;
+			}
+			#downbutton {
+				width: 25px;
+				height: 25px;
+				position: fixed;
+				bottom: 0;
+				right: 25px;
+				z-index: 20;
+			}
+			
+			#d3-diagram-wrap {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				height: 90vh;
+			}
+			
+			.bar-element>* {
+				cursor: pointer;
+			}
+			
+			#d3-context-menu {
+				position: absolute;
+				min-width: 100px;
+				z-index: 9999;
+				border-radius: 1px;
+				padding: 6px 0;
+				background-color: #fff;
+				border: 1px solid #e5e5e5;
+			}
+			
+			#d3-context-ul {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			
+			#d3-context-ul li {
+				display: block;
+				padding: 6px 12px;
+				font-size: 12px;
+				line-height: 14px;
+				color: #2c2c2c;
+				text-decoration: none;
+			}
+			
+			#d3-context-ul li:hover {
+				cursor: pointer;
+				background-color: #e2e2e2;
+			}
+			
+			#d3-tooltip {
+				position: absolute;
+				z-index: 9999;
+				padding: 8px;
+				background: rgba(255, 255, 255, 0.8);
+				border: 1px solid;
+				border-width: 2px;
+				border-radius: 4px;
+				max-width: 250px;
+			}
+			
+			.tooltip-centered-header {
+				text-align: center;
+			}
+			
+			#tooltip-header {
+				margin: 0;
+				font-size: 12px;
+				display: flex;
+				align-items: center;
+			}
+			
+			.tooltip-secondary-text-wrap {
+				margin: 4px 0 0 22px;
+				padding: 0;
+			}
+			
+			.tooltip-secondary-text-wrap p {
+				margin: 0;
+				padding: 0;
+				font-size: 11px;
+			}
+			
+			#tooltip-ref {
+				font-size: 11px;
+				margin: 0 0 0 22px;
+				padding: 0;
+				color: #00a0f2;
+			}
+			
+			#tooltip-ref:hover {
+				cursor: pointer !important;
+			}
+			
+			#tooltip-bar-color {
+				width: 14px;
+				min-width: 14px;
+				height: 14px;
+				display: inline-block;
+				margin-right: 8px;
+			}
+			
+			.display-none {
+				display: none !important;
+			}
+			
+		</style>
+	</head>
+	<script>
+		function scrollИByStep(direction) {
+			var step = document.documentElement.clientHeight / 10;
+			window.scrollBy(0, direction * step);
+		}
+	</script>
+	<body>
+		<div id="wrapper5">
+			<p class="chapter_header1">Размер файлов по объектам <span class="chapter_addition"> (top-5)</span></p>
+			<div id="d3-diagram-wrap">
+				<svg id="d3-diagram"></svg>
+			</div>
+		</div>
+		<script>
+			
+			var showExpandLink = "{{CRM:SHOW_EXPAND_LINK}}";
+			
+			var ext_selectedBarData;
+			
+			var showContextMenu = "{{CRM:SHOW_CONTEXT_MENU_FLAG}}";
+
+			//////////////////////////////////////////
+			// Данные.
+			//////////////////////////////////////////
+
+			// Данные.
+			var data = "{{CRM:DATA}}";
+
+			// Отступы.
+			var margin = { top: 16, right: 16, bottom: 16, left: 100 };
+
+			// Все возможные цвета.
+			var colors = new Map(Object.entries("{{CRM:COLORS}}"));
+
+			// Цвета
+			var colorScale = d3.scaleOrdinal()
+				.domain(colors.keys())
+				.range(colors.values());
+
+			// Флаг выполнения анимации.
+			var isAnimationDone = false;
+
+			//Локализация
+			var fLocale = d3.formatLocale({
+				decimal: ",",
+				thousands: " ",
+				grouping: [3],
+				currency: ["", " МБ"]
+			});
+			var fFormat = fLocale.format("$,.2f");
+
+			var dLocale = d3.formatLocale({
+				decimal: ",",
+				thousands: " ",
+				grouping: [3]
+			});
+			var dFormat = dLocale.format(".0f");
+
+			function windowOnResize() {
+				var diagramWrap = document.getElementById('d3-diagram-wrap');
+				var diagramSize = diagramWrap.getBoundingClientRect();
+
+				diagramWrap.innerHTML =
+					'<svg id="d3-diagram"></svg>' +
+					'<div id="d3-context-menu"></div>' +
+					`<div id="d3-tooltip">
+				<h5 id="tooltip-header"></h5>
+				<div class="tooltip-secondary-text-wrap">
+				<p id="tooltip-value"></p>
+				<p id="tooltip-avg"></p>
+				</div>
+				<a href="РасшифроватьСтолбецДиаграммы" id="tooltip-ref">Расшифровать</a>
+			</div>`;
+
+				if (!showExpandLink) {
+					document.getElementById('tooltip-ref').classList.add("display-none")
+				}
+
+				document.getElementById('tooltip-ref').onclick = transcribeColumn;
+
+				drawPlot(diagramSize, margin);
+			}
+
+			function drawPlot(size, margin) {
+				//////////////////////////////////////////
+				// Служебные флаги.
+				//////////////////////////////////////////
+
+				var isContextMenuVisible = false;
+				var isTooltipVisible = false;
+
+				//////////////////////////////////////////
+				// Отрисовка графика.
+				//////////////////////////////////////////
+
+				const series = d3.stack()
+					.keys(d3.union(data.map((d) => d.source)))
+					.value(function ([, D], key) {
+						var searchResult = D.get(key);
+						return (searchResult ? searchResult.barValue : 0)
+					})(d3.index(data, d => d.status, d => d.source));
+
+				const x = d3.scaleLinear()
+					.domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
+					.range([margin.left, size.width - margin.right]);
+
+				const y = d3.scaleBand()
+					.domain(data.map((d) => d.status))
+					.range([margin.top, size.height - margin.bottom - margin.top])
+					.padding(0.08);
+
+				const svg = d3.select("svg")
+					.attr("width", size.width)
+					.attr("height", size.height)
+					.attr("viewBox", [0, 0, size.width, size.height])
+					.attr("style", "max-width: 100%; height: 100%;")
+					.on("click", (event) => {
+						if (isContextMenuVisible && event.buttons !== 2) {
+							event.preventDefault();
+							event.stopPropagation();
+						} else {
+							ext_selectedBarData = undefined;
+						}
+
+						closeContextMenu();
+					});
+
+				if (showContextMenu) {
+					svg.on("contextmenu", onContextMenu);
+				}
+
+				svg.append("g")
+					.attr("transform", `translate(0,${size.height - margin.bottom - margin.top})`)
+					.call(d3.axisBottom(x).ticks(size.width / 100, "s"))
+					.call(g => g.selectAll(".tick line").clone()
+						.attr("y2", -(size.height - margin.top * 2 - margin.bottom))
+						.attr("stroke-opacity", 0.25)
+						.attr("stroke-dasharray", "2,2"));
+
+				var yWrap = svg.append("g")
+					.attr("transform", `translate(${margin.left}, 0)`)
+					.call(d3.axisLeft(y).tickSizeOuter(0));
+
+				yWrap.selectAll('text').call(wrap, margin.left - 16);
+
+				var barGroups = svg.append("g")
+					.selectAll()
+					.data(series)
+					.join("g")
+					.selectAll("rect")
+					.data(D => D.map(d => (d.key = D.key, d)))
+					.join('g')
+					.attr("class", "bar-element")
+					.on("mouseenter", mouseenter)
+					.on("mouseout", mouseout)
+					.on("mouseleave", mouseleave)
+					.on("touchstart", (event) => event.preventDefault())
+					.on("dblclick", barOnClick)
+					.on("click", (event) => { event.stopPropagation(); closeContextMenu(); });
+
+				barGroups.append("rect")
+					.attr("fill", d => colorScale(d.data[0]))
+					.attr("x", d => x(d[0]))
+					.attr("y", d => y(d.data[0]))
+					.attr("height", y.bandwidth())
+					.attr("width", d => x(d[1]) - x(d[0]));
+
+				barGroups.filter((d, i) => (d[1] - d[0]))
+					.append('text')
+					.attr("fill", (d) => {
+						var color = d3.rgb(colorScale(d.data[0]));
+						var lumin = (0.2126 * color.r + 0.7152 * color.g + 0.0722 * color.b);
+						return lumin > 180 ? "black" : "white";
+					})
+					.attr("font-family", "sans-serif")
+					.attr("font-size", '12px')
+					.attr("x", (d) => x(d[0]) + (x(d[1]) - x(d[0])) / 2)
+					.attr("y", (d) => y(d.data[0]) + y.bandwidth() / 2)
+					.attr('text-anchor', 'middle')
+					.attr("dy", "0.33em")
+					.text(d => fFormat(d[1] - d[0]))
+					.each(function (d) {
+						var bbox = this.getBBox();
+						var parentBBox = { width: x(d[1]) - x(d[0]), x: x(d[0]) }
+						if (bbox.x >= parentBBox.x && bbox.x + bbox.width - 20 <= parentBBox.x + parentBBox.width) {
+						} else {
+							d3.select(this).remove();
+						}
+					});
+
+				//////////////////////////////////////////
+				// Элемент для отображения данных при наведении.
+				//////////////////////////////////////////
+
+				var tooltip = d3.select('#d3-tooltip');
+				tooltip.style("display", "none");
+
+				tooltip
+					.on("mouseenter", onTooltipItemMouseEnter)
+					.on("mouseleave", mouseleave);
+
+				function onTooltipItemMouseEnter(event) {
+					tooltip.style("display", "block");
+					isTooltipVisible = true;
+				}
+
+				//////////////////////////////////////////
+				// События мыши для вывода подсказки.
+				//////////////////////////////////////////
+
+				function mouseenter(event, d) {
+					if (isContextMenuVisible) {
+						return;
+					}
+
+					tooltip.style("display", "block");
+
+					var dataItem = d.data[1].get(d.key);
+					var barColor = colorScale(d.data[0]);
+					var barGroup = d3.select(event.target);
+					var barGroupSize = barGroup.node().getBBox();
+
+					changeBarSelection(barGroup, barColor);
+
+					var tooltipHeader = tooltip.select('#tooltip-header');
+					tooltipHeader.html(`<span id="tooltip-bar-color" style='background-color: ${barColor}'></span>` + d.data[0]);
+
+					var tooltipBarValue = tooltip.select('#tooltip-value');
+					tooltipBarValue.html("Размер: " + fFormat(d[1] - d[0]));
+
+					var tooltipAvgValue = tooltip.select('#tooltip-avg');
+					if (dataItem && dataItem.avgStageTime) {
+						tooltipAvgValue.style('display', null);
+						tooltipAvgValue.html("Количество: " + dFormat(dataItem.avgStageTime));
+					} else {
+						tooltipAvgValue.style('display', 'none');
+					}
+
+					var toolTipSize = tooltip.node().getBoundingClientRect();
+
+					var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+					var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+					var startX = x(d[0]) + barGroupSize.width / 2;
+					var startY = y(d.data[0]) + document.getElementById('d3-diagram-wrap').getBoundingClientRect().top + barGroupSize.height / 2;
+
+					startX = (startX < windowWidth / 2) ? startX : (startX - toolTipSize.width);
+					startY = (startY < windowHeight / 2) ? startY : (startY - toolTipSize.height);
+
+					tooltip.style("left", `${startX}px`);
+					tooltip.style("top", `${startY}px`);
+					tooltip.style("border-color", barColor);
+
+					isTooltipVisible = true;
+				}
+
+				function mouseout(event) {
+					if (isContextMenuVisible) {
+						return;
+					}
+
+					var tooltipNode = tooltip.node();
+					isTooltipVisible = tooltipNode.contains(event.relatedTarget);
+				}
+
+				function mouseleave(event) {
+					if (isContextMenuVisible) {
+						return;
+					}
+
+					if (event.target === tooltip.node()) {
+						isTooltipVisible = false;
+					}
+
+					if (!isTooltipVisible) {
+						tooltip.style("display", "none");
+						changeBarSelection(d3.select("#selected-bar"));
+					}
+				}
+
+				//////////////////////////////////////////
+				// Контексное меню.
+				//////////////////////////////////////////
+
+				var menuItems = [
+					{
+						title: 'Перестроить',
+						action: function (event) {
+							var clickEvent = document.createEvent('MouseEvents');
+							clickEvent.initEvent('dblclick', true, true);
+							event.target.dispatchEvent(clickEvent);
+						},
+						visibility: function (event) {
+							return event.target.nodeName === "rect";
+						},
+					},
+					{
+						title: 'Сбросить',
+						action: function (event) {
+							ext_selectedBarData = undefined;
+						},
+						visibility: function (event) {
+							return ext_selectedBarData !== undefined;
+						}
+					}
+				];
+
+				var lastSelectedBarGroup;
+
+				var contextMenuBlock = d3.select('#d3-context-menu');
+				contextMenuBlock.style("display", "none");
+				var contextMenuUl = contextMenuBlock.append('ul');
+				contextMenuUl.attr("id", "d3-context-ul");
+
+				var contextMenuItems = contextMenuUl.selectAll('li')
+					.data(menuItems)
+					.enter()
+					.append('li')
+					.each(function (menuItem) {
+						var menuItem_li = d3.select(this)
+							.html(menuItem.title);
+					});
+
+				function onContextMenu(event) {
+					event.preventDefault();
+
+					var hasShownMenuItem = false;
+
+					var pointerPos = d3.pointer(event, document.getElementById('d3-diagram'));
+					var contextMenuItems = contextMenuUl.selectAll('li')
+						.each(function (menuItem) {
+							var isVisibleItem = menuItem.visibility(event);
+
+							if (isVisibleItem) {
+								hasShownMenuItem = true;
+							}
+
+							var menuItem_li = d3.select(this)
+								.style("display", isVisibleItem ? "block" : "none")
+								.on("click", () => { menuItem.action(event); closeContextMenu(); });
+						});
+
+					if (lastSelectedBarGroup) {
+						changeBarSelection(lastSelectedBarGroup);
+						lastSelectedBarGroup = undefined;
+					}
+
+					if (event.target.nodeName === "rect") {
+						var selectedBar = d3.select(event.target);
+						var selectedParent = d3.select(event.target.parentNode);
+
+						changeBarSelection(selectedBar, selectedParent.attr("fill"));
+
+						lastSelectedBarGroup = selectedBar;
+					}
+
+					if (!hasShownMenuItem) {
+						closeContextMenu();
+						return;
+					}
+
+					tooltip.style("display", "none");
+
+					var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+					var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+					var contextMenuSize =
+						document.getElementById('d3-context-menu').getBoundingClientRect();
+
+					startX = (pointerPos[0] < windowWidth / 2) ? pointerPos[0] : pointerPos[0] - contextMenuSize.width;
+					startY = (pointerPos[1] < windowHeight / 2) ? pointerPos[1] : pointerPos[1] - contextMenuSize.height;
+
+					contextMenuBlock.style("display", "block");
+					contextMenuBlock.style("left", `${startX}px`);
+					contextMenuBlock.style("top", `${startY}px`);
+
+					isContextMenuVisible = true;
+				}
+
+				function closeContextMenu() {
+					isContextMenuVisible = false;
+					contextMenuBlock.style("display", "none");
+
+					if (lastSelectedBarGroup) {
+						changeBarSelection(lastSelectedBarGroup);
+						lastSelectedBarGroup = undefined;
+					}
+				}
+			}
+
+			function changeBarSelection(selectedBarGroup, color) {
+				var selectedBar = selectedBarGroup.select('rect');
+				var barText = selectedBarGroup.select('text');
+
+				if (color) {
+					selectedBarGroup.attr('id', 'selected-bar');
+					selectedBar.style("fill", color.replace('rgb(', 'rgba(').replace(')', ',0.65)'));
+					selectedBar.style("stroke", color);
+					selectedBar.style("stroke-width", "2");
+					barText.style('display', 'none');
+				} else {
+					selectedBarGroup.attr('id', null);
+					selectedBar.style("stroke", null);
+					selectedBar.style("fill", null);
+					selectedBar.style("stroke-width", null);
+					barText.style('display', null);
+				}
+			}
+
+			function barOnClick(event, d) {
+				setExtSelectedBarData(d);
+				document.getElementById('d3-diagram-wrap').click();
+			}
+
+			function transcribeColumn(event) {
+				event.preventDefault();
+
+				var selectedBar = d3.select('#selected-bar');
+				if (selectedBar) {
+					setExtSelectedBarData(selectedBar.datum());
+				}
+			}
+
+			function setExtSelectedBarData(data) {
+				sourceItem = data.key;
+				dataCollection = data.data[1];
+				ext_selectedBarData = dataCollection.get(sourceItem);
+			}
+
+			function wrap(text, width) {
+				text.each(function () {
+					var text = d3.select(this);
+					var words = text.text().split(/\s+/).reverse();
+					var word;
+					var line = [];
+					var lineNumber = 0;
+					var tspan = text.text(null)
+						.append("tspan")
+						.style("width", width + "px");
+
+					while (word = words.pop()) {
+						line.push(word);
+						tspan.text(line.join(" "));
+						if (tspan.node().getComputedTextLength() > width) {
+							line.pop();
+							tspan.text(line.join(" "));
+							line = [word];
+							tspan = text.append("tspan")
+								.attr("x", text.attr("x"))
+								.attr("dy", "1em")
+								.text(word);
+							lineNumber += 1;
+						}
+					}
+
+					text.attr('dy', parseFloat(text.attr("dy")) + -lineNumber / 2 + "em");
+				});
+			}
+
+			window.addEventListener("resize", windowOnResize);
+
+			windowOnResize();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ab0ccf8-e1ff-47b6-8ac4-2bf614f16ae3">
+  <producedTypes>
+    <objectType typeId="aae0c758-466d-4705-8843-c8e325cc848a" valueTypeId="1395986e-e607-4224-a928-a3ea208adceb"/>
+    <refType typeId="cedaa944-e88c-4a36-9edf-d9f42a794a47" valueTypeId="e45d53fd-9c52-4ca3-800e-a95ab7aafaa1"/>
+    <selectionType typeId="0cf87c37-460f-4463-b53e-ea22bf790274" valueTypeId="63ba4440-16a4-4c96-8cf8-c4852561d2c9"/>
+    <listType typeId="b88814ac-3186-4641-80ce-451758349a46" valueTypeId="6296f32f-a1c4-4ce5-befe-73416d77d6d0"/>
+    <managerType typeId="7ea78623-4363-459d-b134-04f83cbfaf49" valueTypeId="2bae3be9-be4e-41fa-91a6-ad0463794416"/>
+  </producedTypes>
+  <name>CRM_КлючиАналитикиПланаПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ключи аналитики плана продаж (CRM)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.CRM_КлючиАналитикиПланаПродаж.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockFields>Catalog.CRM_КлючиАналитикиПланаПродаж.Attribute.Подразделение</dataLockFields>
+  <dataLockFields>Catalog.CRM_КлючиАналитикиПланаПродаж.Attribute.Менеджер</dataLockFields>
+  <dataLockFields>Catalog.CRM_КлючиАналитикиПланаПродаж.Attribute.Партнер</dataLockFields>
+  <dataLockFields>Catalog.CRM_КлючиАналитикиПланаПродаж.Attribute.Номенклатура</dataLockFields>
+  <dataLockFields>Catalog.CRM_КлючиАналитикиПланаПродаж.Attribute.УдалитьНаправлениеДеятельности</dataLockFields>
+  <dataLockFields>Catalog.CRM_КлючиАналитикиПланаПродаж.Attribute.Склад</dataLockFields>
+  <dataLockFields>Catalog.CRM_КлючиАналитикиПланаПродаж.Attribute.УдалитьТоварнаяКатегория</dataLockFields>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.CRM_КлючиАналитикиПланаПродаж.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.CRM_КлючиАналитикиПланаПродаж.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="b5ca5eb9-a292-4542-a493-bb8ae88253bc">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5fa9f344-ce95-4bcd-80c7-770a1a4fd0dd">
+    <name>Менеджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Менеджер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="39df6a16-86b1-4005-ab8a-468bdbbfe85c">
+    <name>Партнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партнер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8880d9e3-5a58-49b4-adb9-cdf50a00cbfd">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5e523e31-f1f7-45f7-9e53-b9c86da070d5">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b0b8b953-0f7c-4551-83ca-0a0a9ebcc13d">
+    <name>Аналитика1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика1</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_СегментыРынка</types>
+      <types>CatalogRef.Номенклатура</types>
+      <types>EnumRef.ТипыНоменклатуры</types>
+      <types>CatalogRef.НаправленияДеятельности</types>
+      <types>CatalogRef.БизнесРегионы</types>
+      <types>CatalogRef.CRM_Отрасли</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ffd614dd-87c1-4bcc-bd52-80d099834d19">
+    <name>Аналитика2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика2</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_СегментыРынка</types>
+      <types>CatalogRef.Номенклатура</types>
+      <types>EnumRef.ТипыНоменклатуры</types>
+      <types>CatalogRef.НаправленияДеятельности</types>
+      <types>CatalogRef.БизнесРегионы</types>
+      <types>CatalogRef.CRM_Отрасли</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8ad04b27-8dc1-429e-a6b1-0a883f63c991">
+    <name>Аналитика3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика3</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_СегментыРынка</types>
+      <types>CatalogRef.Номенклатура</types>
+      <types>EnumRef.ТипыНоменклатуры</types>
+      <types>CatalogRef.НаправленияДеятельности</types>
+      <types>CatalogRef.БизнесРегионы</types>
+      <types>CatalogRef.CRM_Отрасли</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f91ae4a0-3cf6-45d3-8bc1-8971c759411a">
+    <name>УдалитьНаправлениеДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить направление деятельности</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НаправленияДеятельности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="42af8121-c431-49cf-943b-b0b72b4c0cf3">
+    <name>УдалитьВидНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить вид номенклатуры</value>
+    </synonym>
+    <comment>В CRM тип не задан, используется только в объединенных решениях</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9b5320ab-0172-4270-9c49-513b8e8d261a">
+    <name>УдалитьТоварнаяКатегория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить товарная категория</value>
+    </synonym>
+    <comment>В CRM тип не задан, используется только в объединенных решениях</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e7b6cee4-8115-47ca-a70d-018c1c4d6818">
+    <name>УдалитьГруппаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить группа номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>Folders</choiceFoldersAndItems>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="04e7a03c-0ab5-4daf-8c71-6443f17807a3">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3fa1ce22-c628-4d61-b2a4-50a2b37cac36">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

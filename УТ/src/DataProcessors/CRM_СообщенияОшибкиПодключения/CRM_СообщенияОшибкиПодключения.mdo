@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c7e4e1d-222c-4d23-ad6f-61599054c1ee">
+  <producedTypes>
+    <objectType typeId="f13dbafb-c8c0-4bf2-bb19-e37da4fcfe8a" valueTypeId="88b36267-5699-4dc4-add6-7009ec3b4932"/>
+    <managerType typeId="9e38ba46-1c2d-4e8e-80d5-0d2d6abe9b13" valueTypeId="e0a07f7a-8730-43ec-8609-0d4b509546c8"/>
+  </producedTypes>
+  <name>CRM_СообщенияОшибкиПодключения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сообщения ошибки подключения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="b761e3ea-f5c6-4912-b715-5684e54616a6">
+    <name>ФормаСофтфон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма софтфон</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="12595ca8-9481-4a5d-8bb9-e025eef0f069">
+    <name>ФормаСМС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма СМС</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f602a77c-7611-4b03-be35-50a3e1904ffd">
+    <name>ФормаGoogle</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма google</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

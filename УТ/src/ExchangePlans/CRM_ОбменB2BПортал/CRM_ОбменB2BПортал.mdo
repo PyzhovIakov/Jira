@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b492e58b-644a-4e60-9d08-f04e2f96e086" thisNode="b5a84de0-f9fb-4ffd-a51e-e980bae8fe87">
+  <producedTypes>
+    <objectType typeId="a893ff9a-78c7-4c86-9fd6-b4b7fd8cc630" valueTypeId="62e7d2cc-cfdb-43e7-80df-da3d42902c26"/>
+    <refType typeId="18a92939-aa1e-4698-a732-52d8b7bbbf1e" valueTypeId="98bd792a-5c8e-419d-b50d-f4f967384f3e"/>
+    <selectionType typeId="ae88fa0a-44ec-43a8-a945-23c180a92b9b" valueTypeId="2e67db23-1b40-4a5d-bfd0-d44b72580355"/>
+    <listType typeId="f310a413-865a-49fe-997c-48137afc224a" valueTypeId="3c9597c0-34ce-491f-bb24-85969bc2c06b"/>
+    <managerType typeId="4bf87254-4bb5-48be-84a3-e9a80082ca85" valueTypeId="53e683ac-8145-4302-b261-90f145de76b4"/>
+  </producedTypes>
+  <name>CRM_ОбменB2BПортал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с B2B порталом</value>
+  </synonym>
+  <inputByString>ExchangePlan.CRM_ОбменB2BПортал.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.CRM_ОбменB2BПортал.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ThisNode</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ReceivedNo</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>SentNo</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Узел обмена с B2B порталом</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Узлы обмена с B2B порталом</value>
+  </listPresentation>
+  <codeLength>2</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <content>
+    <mdObject>Catalog.CRM_ИнтересПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.CRM_ТипыОбращений</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.CRM_СообщениеМессенджера</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.КонтактныеЛицаПартнеров</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.CRM_Интерес</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.CRM_Заявка</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.Партнеры</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.CRM_СообщениеМессенджераПрисоединенныеФайлы</mdObject>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ExchangePlan.CRM_ОбменB2BПортал.Form.ФормаУзла</defaultObjectForm>
+  <defaultListForm>ExchangePlan.CRM_ОбменB2BПортал.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="5970036b-cecf-4e6f-b591-de0bf1d32b98">
+    <name>URL</name>
+    <synonym>
+      <key>ru</key>
+      <value>URL</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3b1b2b17-54b8-4524-b805-52d2c0a8b5dd">
+    <name>Логин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логин</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dae27575-76e4-45e3-9889-db8620d27cdd">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9c23ff6d-1975-4230-b768-d7735df184d1">
+    <name>Таймаут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:NumberValue">
+      <value>60</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c3bd1946-568e-48a5-b0a5-b90698a713f6">
+    <name>ФормаУзла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма узла</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ab9cfa78-b6c1-424d-b147-e6318163f4cd">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3b094152-485e-42bc-a2c4-860aa9e52f3c">
+    <name>СоответствиеОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствие объектов</value>
+    </synonym>
+  </templates>
+</mdclass:ExchangePlan>

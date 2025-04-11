@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a99327b9-b382-44b0-81b4-569a1d801cd4">
+  <producedTypes>
+    <selectionType typeId="ff7c9f8a-7669-4ba6-a03f-21e33ac73b1f" valueTypeId="c7c87ef1-39a6-46ef-9848-7d6333808b3e"/>
+    <listType typeId="7ffe00e0-cddc-4688-bf4a-5070f6ac6332" valueTypeId="e68a099c-e1b8-4c65-8168-c8b97121b2a6"/>
+    <managerType typeId="60187ad6-6969-4009-8dfa-cafb1517f0cf" valueTypeId="f18675ae-072c-4e6b-9340-6652ae908d41"/>
+    <recordSetType typeId="d4003f7a-f212-4159-8191-c6e1a0e878f1" valueTypeId="a72a3914-c623-46a7-9930-568155487cdf"/>
+    <recordKeyType typeId="71b9461f-dfc8-415b-a537-0d391de794db" valueTypeId="5aa322ad-57a6-447d-b430-3c7eb1a30417"/>
+    <recordType typeId="16caacda-81cd-4c11-bde9-6e9c3c023622" valueTypeId="07d4fdf2-17d5-476b-8218-ce3ba88ec30e"/>
+    <recordManagerType typeId="eee879dd-c1f4-439b-83ba-ca4c94896843" valueTypeId="680c130a-273b-44d2-a604-f6eb119b6767"/>
+  </producedTypes>
+  <name>CRM_ПапкиВзаимодействий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Письма в папках</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7ee5c0c6-75a6-48e5-9874-f5fc214ba64f">
+    <name>ИдентификаторНаСервере</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор на сервере</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="b63b82c0-7675-455f-a33e-ba6ae822fd67">
+    <name>Взаимодействие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взаимодействие</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЭлектронноеПисьмоИсходящее</types>
+      <types>DocumentRef.ЭлектронноеПисьмоВходящее</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="586cfb1c-be78-4e1d-a7ee-36d55c54382a">
+    <name>ПапкаЭлектронногоПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Папка электронного письма</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПапкиЭлектронныхПисем</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

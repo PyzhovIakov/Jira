@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39cf361e-3813-4526-8291-3142957f6267">
+  <producedTypes>
+    <selectionType typeId="0ff282cd-fc17-4546-a55f-1391c04bfb54" valueTypeId="4bf9e60f-4739-4c83-8be3-323367ebd673"/>
+    <listType typeId="589f56b4-7943-4292-97a2-b957c7ed4c5d" valueTypeId="bf5e0e3f-4b9d-4d97-9aa9-3af11caf7956"/>
+    <managerType typeId="d398312c-667d-4f82-97c7-2e271f31c1e6" valueTypeId="2b9fa95c-c208-4e19-9f76-048a9064bbd7"/>
+    <recordSetType typeId="53a21b06-bea9-4537-9da0-abffc35a0ab1" valueTypeId="2c071179-e91e-4a8b-aa7d-b9bdd15c0968"/>
+    <recordKeyType typeId="6a75c1b5-9fd2-4f10-9a45-8c70d270843c" valueTypeId="b9afa4b6-1278-4e10-a98f-62a8316ebb68"/>
+    <recordType typeId="02662f90-aebc-4df0-ab52-ddecff086b1b" valueTypeId="40858c15-ff0a-461c-97be-b03dafa6ab6f"/>
+    <recordManagerType typeId="c6dd2af5-93b8-4f0d-af04-0b86a3d2d96e" valueTypeId="6b5700ba-940e-4b7f-ac26-320b56258b4c"/>
+  </producedTypes>
+  <name>CRM_СвязанныеПотенциальныеКлиенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связанные потенциальные клиенты (CRM)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.CRM_СвязанныеПотенциальныеКлиенты.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="0a2ab003-ba66-4547-bb03-c6f30b6feebc">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Author</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник, зарегистрировавший связь.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The employee which had register communication.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Пользователи.EmptyRef</value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="d6bed8ac-2ea7-4d85-a48c-a51cf8df315d">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Комментарии сотрудника, зарегистрировавшего связь.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Comments of the employee which had register communication.</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="c3a373ad-1b1b-43fc-b164-738f3c53ada8">
+    <name>ПотенциальныйКлиентА</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потенциальный клиент А</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ПотенциальныеКлиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="df9a6b90-625a-4c5a-b174-f0c2097bd56b">
+    <name>ПотенциальныйКлиентБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потенциальный клиент Б</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ПотенциальныеКлиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ecd0b013-0b38-4519-b27c-a56ad066a537">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

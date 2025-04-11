@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d0a04dfe-6772-475e-8be8-4f330a7f80f8">
+  <producedTypes>
+    <selectionType typeId="b0051d41-73a2-4563-bdf5-a522570c053c" valueTypeId="b8deab4c-17a4-44d0-966e-0f14b2a29d84"/>
+    <listType typeId="2e060acb-6695-475b-bf2a-b733061f2385" valueTypeId="0843ecd9-d757-449c-9378-308a7f50035a"/>
+    <managerType typeId="4a53d442-98a3-47e8-8c4f-9c87e749a09b" valueTypeId="e6ca36e2-4299-4e8b-8df4-6da42d2e0126"/>
+    <recordSetType typeId="a1be8fe7-aa46-4e57-878a-197fc2ee3cad" valueTypeId="31c6e457-7541-4766-b532-03876b72e1c7"/>
+    <recordKeyType typeId="053fc9fb-58ba-40a1-98a9-e3c9bab546ef" valueTypeId="792b05d6-32c1-4459-ae16-1a9d3fd94abe"/>
+    <recordType typeId="fa70ad3c-f7ab-409a-ba4b-6e406f8a22c5" valueTypeId="c3099a9b-a214-4156-8729-92c165d47910"/>
+    <recordManagerType typeId="f9881978-0414-4d30-ae76-122d92f798b8" valueTypeId="a75b5b47-4a1d-450e-afb0-7ef3044f2369"/>
+  </producedTypes>
+  <name>CRM_ПорядокВиджетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порядок виджетов (CRM)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d2d074c2-73df-4aa3-be96-380d27e4328c">
+    <name>ИндексВертикальный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Индекс вертикальный</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+  </resources>
+  <resources uuid="2ec6301b-20e7-4883-be79-58e42cb9b207">
+    <name>ИндексГоризонтальный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Индекс горизонтальный</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8235dd1f-453e-4897-bdc0-84db30adf042">
+    <name>ВариантРаботыВиджетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант работы виджетов</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>64</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f154f9f9-45d4-477b-9230-c45e5382da7d">
+    <name>ВариантВиджета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант виджета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ВариантыВиджетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9a281bfc-c151-46f7-bf08-d0f61b72b9a2">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d97b0245-2213-4931-9626-720ad6927c59">
+  <name>CRM_НеБазоваяВерсия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Не базовая версия (CRM)</value>
+  </synonym>
+  <location>Constant.CRM_НеБазоваяВерсия</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

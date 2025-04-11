@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- {{CRM:PATH_TO_LIBRARY}} -->
+    <style>
+      /* ================ */
+      /* COMMON           */
+
+      html {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial;
+        overflow-y: scroll;
+        box-sizing: border-box;
+      }
+
+      tr, td { padding: 0px; }
+
+      a { text-decoration: none; }
+
+      /* ================ */
+      /* SCROLLBAR        */
+
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: #777 #aaa;
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        border-width: 1px 1px 1px 2px;
+        border-color: #777;
+        background-color: #aaa;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        border-width: 1px 1px 1px 2px;
+        border-color: #555;
+        background-color: #777;
+      }
+
+      ::-webkit-scrollbar-track {
+        border-width: 0;
+      }
+
+      ::-webkit-scrollbar-track:hover {
+        border-left: solid 1px #aaa;
+        background-color: #eee;
+      }
+
+      /* ================ */
+      /* GRID             */
+
+      #grid {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+      }
+
+      #grid-placeholder {
+        position: absolute;
+        background-color: #f0f0f0;
+      }
+
+      .widget {
+        position: absolute;
+      }
+
+      .widget__dragging {
+        z-index: 10000;
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+        opacity: 0.8;
+        will-change: left, top;
+        cursor: move;
+        position: fixed;
+      }
+
+      .widget__moveAnimation,
+      .widget__moveAnimation .widget {
+        transition: left .3s, top .3s;
+      }
+
+      .widget__moveAnimation .widget__dragging {
+        transition: left 0s, top 0s;
+      }
+
+      /* ================ */
+      /* WIDGET           */
+
+      .widget-container {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background-color: #f5f5f5;
+        padding: 6px 10px 4px 10px;
+      }
+
+      .widget-block-header,
+      .widget-block-footer {
+        height: 29px;
+      }
+
+      .widget-block-main {
+        height: calc(100% - 68px);
+        margin-top: 10px;
+      }
+
+      .widget-button-padding {
+        padding-left: 12px;
+      }
+
+      .widget-button {
+        width: 24px;
+        height: 24px;
+        display: block;
+        background-size: 24px;
+      }
+
+      .widget-button__update {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO7SURBVHgB7ZnNbtNAEMdn10Vqb3kDzBuEA4gDqOHQc/MGDTcgHIIETaMe6hyqJIDUHHALt/AEtGeQGqTeQCKPkL5BjpQqHmbsBBwnu/4MbSX/pCjJZL2e8azX/5kA5OTk5FwlAjKiuvvuNqJTBscpChAlmrkASC/vLCNwYIiAQ5TiWEqjb++/Oo869/Odzt5hu95c9FvqAKqNzhYgVoCdjgX2HSF6R636J90odp6ctOx2faGviQN41nizLtHp0RQmpICzItCo2Z3XJ8Hfps7zZ1UAEmJSq1kFuuoHErGf1nlG8BzCOa7WOwd+u995/fExeLrTMg0Un0GIonpGMaLLOkBwhvRl6JoQCyBkkc5WBP6sgo6DFaOM43El6LwqAysQx3kQp+SguXiE6AsYN9+3Gn3dPC8anTIibtL4yvwUFKAzHpCnBYhIpAzwsrlcXf25eMlMHG/rHQ/iXRB5Sh/NKONTZeBybW2P0msG7UhpPmxvNyEBH9qNIb3d4fuJJqpBQkJvYm+bnD+B53w9kfN+7Fb9JWcREhK+CyFac6aMnGd4t6EZS5AQbQDu1Qdh+m3k/DBL56NslTr0GcD5nUIYRgkyIAvnGeVNzLtEMLX01OwdxtAwKrJynlFmwBByfX4wanVLFLJ0nlEGQGu9HDCM4u71QbJ2nlEuIRF8wAgcQAqqu283YewuyT5kiO5BZs58Y52SAnvfVZsnkDHqXQhn9QiySLuGxJbT1w11AFwGzoAmXEN0S2gmABFRNf5vNEuIKy7/V00Rc4UodyGUciAc/GegLgPXwUet7W+wRFgBSJBbfhvJl56qi6EMwHHGJ1RwdP02KuItensMS4SqPlKnUAmYe6rxyiXkFRxBnS5KnAVYEp7+CgpI1PaQ9NuowN7cAV4WloJbcwfg3pHuGG0Attd0Gs5aRckrQrLFm1OYfhvXHmGNr9AHGV2BStDGgizLIFQiT4LzJOxYI2zAj7Mv5/cfbbCseOC30wlL9x5uwPezr6l2JaVCRezancbHsOOjtVWsg8Llxe9Tyuncs8BtDRorJTtmoTNpTVoLe6okHO1O/W6UeSJ35sL6OFytoZC9sOeE1nHw1j2XrVEvSPzWYlgzijUUUu3A7cW/ChZNV4pwSxIhtLUYJ5uxAmAmy2kvTTNqIbTmb138ana7VizZHjuAKZOGlwUpRR4vGd5tkpariQOY4gXCW23c5pSgPzgw9A+O0FkgI9z7gzoZ3Axwe/6cmWkr3W254whZ4ZJIZJ016Y3m5OTk3HD+ACkHfmUoWskFAAAAAElFTkSuQmCC);
+      }
+
+      .widget-button__settings {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKJSURBVHgB7ZlBbtpAFIbfG4eorJKcoPQGcIPkBnCCpLsUKoUsArSbwKIq0EVdKUGVukhzguYG5AaQG/gI7IgC49f3nJKawU6IiLGqzrex583v0fwzvDe2ALBYLJY0wbiOSqNDsALn7TomOd4MBf841kDaWANpYw2kjTWQNtZA2lgDaWMNWP53EFKkfPIpj87GIBy701j48aU2XHaMdHPAUXkzlHF0Hp7BRlxHUt+wcxDmF38D+DIGXpLD+uecg86pJn35vfPh+r6tLrhr19Qi4FGl0d1ibYu1Hmt3FWLRJ3KlDWkY4Mk2ebn3+XrAO+vxym9zezv+CTpwAIuVepcd3esU4Gu+lExl4jnwrtYp8mU/FMrNJvUoyCZDOkQovufdMGWJG1AIp7GdCEMkfy9zO96RnJF7TjwvTk5KfV0YHxJGg1+KnBRPPjMe751xTrhucyQhud+83SwAQVQZ9WiKb81g4gYk8fyIldW+X5pNPIzrHo8Q/GMj7GkeoxdxPqzlHBATCOQ9BIhGURVlhuxE2DAR3cTp13aQEeHf1UYcPaXHoFLN5LgVp1uLAan7/JsPH1C5qIoyr5+rVLkgFkHiBson3bxC1UcpnyGkolSrzYVyKjFHqV9GWA6+fpSJxA2gogtz8gEE+cmr7ODwz07IxOV+ks32pS9iqJyjHNNY8iexVBQC1Y/pDlaWT2eYcMORyCNvYKinLTOW+A4EFYXg6iEgyUxPJ7Fo5ksv/TzrfrwyZWtJYj/YBfomJ+15p7ajQRc4fBn/BF2Lpteuv5FnRKuJWlHKtf3FFEW53na5RB6FY2K0125UYUk2VpnAyiANzTVkQ4NnjJDyF5n2F14N7qZ4AxaLZWl+A3ks+wDzgJ2bAAAAAElFTkSuQmCC);
+      }
+
+      .widget-button__remove {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMTIuMzEzNyIgeT0iNS4xNzE2MyIgd2lkdGg9IjkuOTk5OTkiIGhlaWdodD0iMiIgdHJhbnNmb3JtPSJyb3RhdGUoMTM1IDEyLjMxMzcgNS4xNzE2MykiIGZpbGw9IiM2Qjc4ODkiLz4KPHJlY3QgeD0iMTAuODk5NSIgeT0iMTIuMjQyNyIgd2lkdGg9IjEwIiBoZWlnaHQ9IjIiIHRyYW5zZm9ybT0icm90YXRlKC0xMzUgMTAuODk5NSAxMi4yNDI3KSIgZmlsbD0iIzZCNzg4OSIvPgo8L3N2Zz4K");
+      }
+
+      .widget-header {
+        width: 100%;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        color: #687583;
+        position: relative;
+      }
+
+      .widget-header-text {
+        position: absolute;
+        margin: 0;
+        top: 5px;
+        left: 0;
+        max-height: 34px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+      }
+
+      .widget-detail {
+        color: #00a0f2;
+        font-family: Arial;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .widget-info-secondary-horizontal p {
+        margin: 0;
+        padding: 0;
+      }
+
+      .widget-info-secondary-vertical {
+        margin-left: 10px;
+      }
+
+      .widget-info-secondary-vertical p {
+        margin: 0;
+        padding: 3px 0;
+      }
+
+      .widget-secondary-header {
+        font-family: Arial;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        color: #6b7889;
+      }
+
+      .widget-secondary-value {
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #2e3238;
+        white-space: nowrap;
+      }
+
+      .widget-secondary-slash {
+        margin: 0 6px 0 0;
+      }
+
+      .widget-plan-dynamic {
+        margin: 0 0 0 4px;
+        height: 30px;
+        width: 30px;
+      }
+
+      .widget-plan-dynamic__up {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy45MzkzIDAuOTM5MzRDMTQuNTI1MSAwLjM1MzU1MyAxNS40NzQ5IDAuMzUzNTUzIDE2LjA2MDYgMC45MzkzNEwyNS42MDY2IDEwLjQ4NTNDMjYuMTkyNCAxMS4wNzExIDI2LjE5MjQgMTIuMDIwOCAyNS42MDY2IDEyLjYwNjZDMjUuMDIwOCAxMy4xOTI0IDI0LjA3MTEgMTMuMTkyNCAyMy40ODUzIDEyLjYwNjZMMTYuNSA1LjYyMTMyVjMwSDEzLjVWNS42MjEzMkw2LjUxNDcgMTIuNjA2NkM1LjkyODkxIDEzLjE5MjQgNC45NzkxNyAxMy4xOTI0IDQuMzkzMzggMTIuNjA2NkMzLjgwNzU5IDEyLjAyMDggMy44MDc1OSAxMS4wNzExIDQuMzkzMzggMTAuNDg1M0wxMy45MzkzIDAuOTM5MzRaIiBmaWxsPSIjM0NCMzcxIi8+Cjwvc3ZnPgo=);
+      }
+      
+      .widget-plan-dynamic__flat {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOS41MTQ3IDQuMzkzNDFMMjkuMDYwNyAxMy45Mzk0QzI5LjY0NjQgMTQuNTI1MSAyOS42NDY0IDE1LjQ3NDkgMjkuMDYwNyAxNi4wNjA3TDE5LjUxNDcgMjUuNjA2NkMxOC45Mjg5IDI2LjE5MjQgMTcuOTc5MiAyNi4xOTI0IDE3LjM5MzQgMjUuNjA2NkMxNi44MDc2IDI1LjAyMDggMTYuODA3NiAyNC4wNzExIDE3LjM5MzQgMjMuNDg1M0wyNC4zNzg3IDE2LjVMLTEuMDk2OGUtMDYgMTYuNUwtOC4zNDUzM2UtMDcgMTMuNUwyNC4zNzg3IDEzLjVMMTcuMzkzNCA2LjUxNDczQzE2LjgwNzYgNS45Mjg5NSAxNi44MDc2IDQuOTc5MiAxNy4zOTM0IDQuMzkzNDFDMTcuOTc5MiAzLjgwNzYzIDE4LjkyODkgMy44MDc2MyAxOS41MTQ3IDQuMzkzNDFaIiBmaWxsPSIjRjdCRjFFIi8+Cjwvc3ZnPgo=);
+      }
+
+      .widget-plan-dynamic__down {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAzMCAzMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNC42MDY2IDIwLjUxNDdMMTUuMDYwNyAzMC4wNjA3QzE0LjQ3NDkgMzAuNjQ2NCAxMy41MjUxIDMwLjY0NjQgMTIuOTM5NCAzMC4wNjA3TDMuMzkzNDEgMjAuNTE0N0MyLjgwNzYzIDE5LjkyODkgMi44MDc2MyAxOC45NzkyIDMuMzkzNDEgMTguMzkzNEMzLjk3OTIgMTcuODA3NiA0LjkyODk1IDE3LjgwNzYgNS41MTQ3NCAxOC4zOTM0TDEyLjUgMjUuMzc4N0wxMi41IDAuOTk5OTk5TDE1LjUgMUwxNS41IDI1LjM3ODdMMjIuNDg1MyAxOC4zOTM0QzIzLjA3MTEgMTcuODA3NiAyNC4wMjA4IDE3LjgwNzYgMjQuNjA2NiAxOC4zOTM0QzI1LjE5MjQgMTguOTc5MiAyNS4xOTI0IDE5LjkyODkgMjQuNjA2NiAyMC41MTQ3WiIgZmlsbD0iI0IyMjIyMiIvPgo8L3N2Zz4K);
+      }
+
+      .widget-company-dynamic-line {
+        display: inline;
+        border: solid;
+        border-width: 0 2px 0 1px;
+        border-radius: 25%;
+        margin: 0 4px 0 4px;
+      }
+
+      .widget-company-dynamic-text {
+        font-family: Arial;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 0em;
+      }
+
+      .items-center {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      /* ============ */
+      /* CALLS WIDGET */
+
+      .calls-info {
+        height: 100%;
+        color: #687583;
+      }
+
+      .calls-info tr {
+        height: 25%;
+      }
+
+      .calls-info td * {
+        display: flex;
+        align-items: center;
+      }
+
+      .calls-info__img {
+        height: 30px;
+        width: 30px;
+        margin-right: 12px;
+        background-size: 30px 30px;
+      }
+
+      .calls-info__title {
+        font-size: 12px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+      }
+
+      .calls-info__title,
+      .calls-info__value {
+        margin: 0;
+        padding: 0;
+      }
+
+      .calls-info__value {
+        margin-left: 12px;
+      }
+
+      .calls-info__icon1 {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjNkQ3Nzg1Ij48cGF0aCBkPSJNNzk4LTEyMHEtMTI1IDAtMjQ3LTU0LjVUMzI5LTMyOVEyMjktNDI5IDE3NC41LTU1MVQxMjAtNzk4cTAtMTggMTItMzB0MzAtMTJoMTYycTE0IDAgMjUgOS41dDEzIDIyLjVsMjYgMTQwcTIgMTYtMSAyN3QtMTEgMTlsLTk3IDk4cTIwIDM3IDQ3LjUgNzEuNVQzODctMzg2cTMxIDMxIDY1IDU3LjV0NzIgNDguNWw5NC05NHE5LTkgMjMuNS0xMy41VDY3MC0zOTBsMTM4IDI4cTE0IDQgMjMgMTQuNXQ5IDIzLjV2MTYycTAgMTgtMTIgMzB0LTMwIDEyWk0yNDEtNjAwbDY2LTY2LTE3LTk0aC04OXE1IDQxIDE0IDgxdDI2IDc5Wm0zNTggMzU4cTM5IDE3IDc5LjUgMjd0ODEuNSAxM3YtODhsLTk0LTE5LTY3IDY3Wk0yNDEtNjAwWm0zNTggMzU4WiIvPjwvc3ZnPg==");
+      }
+
+      .calls-info__icon2 {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjNkQ3Nzg1Ij48cGF0aCBkPSJtMTM2LTE0NC05Mi05MHEtMTItMTItMTItMjh0MTItMjhxODgtOTUgMjAzLTE0Mi41VDQ4MC00ODBxMTE4IDAgMjMyLjUgNDcuNVQ5MTYtMjkwcTEyIDEyIDEyIDI4dC0xMiAyOGwtOTIgOTBxLTExIDExLTI1LjUgMTJ0LTI2LjUtOGwtMTE2LTg4cS04LTYtMTItMTR0LTQtMTh2LTExNHEtMzgtMTItNzgtMTl0LTgyLTdxLTQyIDAtODIgN3QtNzggMTl2MTE0cTAgMTAtNCAxOHQtMTIgMTRsLTExNiA4OHEtMTIgOS0yNi41IDhUMTM2LTE0NFptMTA0LTIwMnEtMjkgMTUtNTYgMzQuNVQxMjgtMjY4bDQwIDQwIDcyLTU2di02MlptNDgwIDJ2NjBsNzIgNTYgNDAtMzhxLTI5LTI2LTU2LTQ1dC01Ni0zM1ptLTQ4MC0yWm00ODAgMlpNNDc4LTUwNiAyODAtNzA0djEwNGgtODB2LTI0MGgyNDB2ODBIMzM2bDE0MSAxNDEgMjI2LTIyNiA1NyA1Ny0yODIgMjgyWiIvPjwvc3ZnPg==");
+      }
+
+      .calls-info__icon3 {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjNkQ3Nzg1Ij48cGF0aCBkPSJNMzQwLTE2MHEtMTI1IDAtMjEyLjUtODcuNVQ0MC00NjBxMC0xMjUgODcuNS0yMTIuNVQzNDAtNzYwcTUyIDAgOTggMTYuNXQ4NCA0NS41bDQyLTQyIDU2IDU2LTQyIDQycTI5IDM4IDQ1LjUgODQuNVQ2NDAtNDYwcTAgMTI1LTg3LjUgMjEyLjVUMzQwLTE2MFptNDQwIDBMNjQwLTMwMGw1Ni01NiA0NCA0NHYtNDg4aDgwdjQ4N2w0My00MyA1NyA1Ni0xNDAgMTQwWk0yNDAtODAwdi04MGgyMDB2ODBIMjQwWm0xMDAgNTYwcTkyIDAgMTU2LTY0dDY0LTE1NnEwLTkyLTY0LTE1NnQtMTU2LTY0cS05MiAwLTE1NiA2NHQtNjQgMTU2cTAgOTIgNjQgMTU2dDE1NiA2NFptLTQwLTE4MGg4MHYtMjAwaC04MHYyMDBabTQwLTQwWiIvPjwvc3ZnPg==");
+      }
+
+      .calls-info__icon4 {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjNkQ3Nzg1Ij48cGF0aCBkPSJNMzQwLTE2MHEtMTI1IDAtMjEyLjUtODcuNVQ0MC00NjBxMC0xMjUgODcuNS0yMTIuNVQzNDAtNzYwcTUyIDAgOTggMTYuNXQ4NCA0NS41bDQyLTQyIDU2IDU2LTQyIDQycTI5IDM4IDQ1LjUgODQuNVQ2NDAtNDYwcTAgMTI1LTg3LjUgMjEyLjVUMzQwLTE2MFptNDAwIDB2LTQ4OGwtNDQgNDQtNTYtNTYgMTQwLTE0MCAxNDAgMTQwLTU3IDU2LTQzLTQzdjQ4N2gtODBaTTI0MC04MDB2LTgwaDIwMHY4MEgyNDBabTEwMCA1NjBxOTIgMCAxNTYtNjR0NjQtMTU2cTAtOTItNjQtMTU2dC0xNTYtNjRxLTkyIDAtMTU2IDY0dC02NCAxNTZxMCA5MiA2NCAxNTZ0MTU2IDY0Wm0tNDAtMTgwaDgwdi0yMDBoLTgwdjIwMFptNDAtNDBaIi8+PC9zdmc+");
+      }
+    </style>
+  </head>
+  <body>
+    <!-- GRID -->
+
+    <div id="grid" class="widget__moveAnimation">
+      <div id="grid-placeholder"></div>
+    </div>
+
+    <!-- SCRIPT -->
+
+    <!-- {{CRM:PLOT_SCRIPT}} -->
+    
+    <script>
+      ///////////////////////////
+      // CONSTANTS
+
+      const GRID_CELL_MARGIN = 10;
+      const GRID_CELL_WIDTH = 250;
+      const GRID_CELL_HEIGHT = 155;
+
+      const SKIP_DRAG_ELEMENTS = 'a,input,textarea,button,select,option,g,path,line,text,rect';
+
+      ///////////////////////////
+      // CONSTANTS - HTML
+
+      const GRID_ELEMENT = document.getElementById('grid');
+      const PLACEHOLDER_ELEMENT = document.getElementById('grid-placeholder');
+
+      ///////////////////////////
+      // OBJECTS
+
+      const Placeholder = {
+        x: null,
+        y: null,
+
+        w: null,
+        h: null,
+
+        _node: PLACEHOLDER_ELEMENT,
+
+        //-----------------
+        // PUBLIC METHODS
+
+        show() {
+          this._node.style.display = 'block';
+        },
+
+        hide() {
+          this._node.style.display = 'none';
+        }
+      }
+
+      ///////////////////////////
+      // UTILS FUNCTIONS
+
+      function isIntersection(a, b) {
+        if (a === b) {
+          return false;
+        }
+
+        const ax1 = a.x;
+        const ay1 = a.y;
+        const ax2 = a.x + a.w;
+        const ay2 = a.y + a.h;
+
+        const bx1 = b.x;
+        const by1 = b.y;
+        const bx2 = b.x + b.w;
+        const by2 = b.y + b.h;
+
+        return !(ax2 <= bx1 || ax1 >= bx2 || ay2 <= by1 || ay1 >= by2);
+      }
+
+      function updateElementView(gridElement) {
+        // Element DOM size and position calculation.
+
+        const width = gridElement.w * GRID_CELL_WIDTH;
+        const height = gridElement.h * GRID_CELL_HEIGHT;
+
+        const positionX = gridElement.x * GRID_CELL_WIDTH;
+        const positionY = gridElement.y * GRID_CELL_HEIGHT;
+
+        const marginTop = GRID_CELL_MARGIN + gridElement.y * GRID_CELL_MARGIN;
+        const marginLeft = GRID_CELL_MARGIN + gridElement.x * GRID_CELL_MARGIN;
+
+        const cellMarginHeight = (gridElement.h - 1) * GRID_CELL_MARGIN;
+        const cellMarginWidth = (gridElement.w - 1) * GRID_CELL_MARGIN;
+
+        // Update styles.
+
+        gridElement._node.style.width = `${width + cellMarginWidth}px`;
+        gridElement._node.style.height = `${height + cellMarginHeight}px`;
+
+        gridElement._node.style.left = `${positionX + marginLeft}px`;
+        gridElement._node.style.top = `${positionY + marginTop}px`;
+      }
+
+      function copyWidgetSizeAndPosition(a, b) {
+        a.x = b.x;
+        a.y = b.y;
+
+        a.h = b.h;
+        a.w = b.w;
+
+        return a;
+      }
+
+      ///////////////////////////
+      // CLASS LIST
+
+      class Widget {
+        constructor(id, content, w, h) {
+          // Unique widget ID.
+          this._id = id;
+
+          // Widget content.
+          this._content = content;
+
+          // Widget position.
+          this.x = undefined;
+          this.y = undefined;
+
+          // Widget size.
+          this.w = w;
+          this.h = h;
+
+          // Widget original size.
+          this._orig = undefined;
+
+          // Widget DOM node.
+          this._node = undefined;
+
+          // Widget flag for moving.
+          this._moving = false;
+
+          // For capture click event then not moving widget.
+          this._captureOnClick = false;
+
+          // Map for custom event handlers.
+          this._customEvents = {};
+
+          // Bind object to events.
+          this._event_onMouseDown = this._event_onMouseDown.bind(this);
+          this._event_onMoveMouse = this._event_onMoveMouse.bind(this);
+          this._event_onMouseUp = this._event_onMouseUp.bind(this);
+          this._event_onClick = this._event_onClick.bind(this);
+
+          // Contains mouse offset from current node.
+          this._dragOffsetX = undefined;
+          this._dragOffsetY = undefined;
+        }
+
+        //-----------------
+        // PUBLIC METHODS
+
+        render() {
+          let needToExecute = false;
+
+          // Lazy DOM node initialization.
+          if (!this._node) {
+            this._node = document.createElement('div');
+            this._node.className = 'widget';
+            this._node.innerHTML = this._content;
+
+            this._node.addEventListener('mousedown', this._event_onMouseDown);
+            this._node.addEventListener('click', this._event_onClick);
+
+            GRID_ELEMENT.appendChild(this._node);
+
+            needToExecute = true;
+          }
+
+          updateElementView(this);
+
+          if (needToExecute) {
+            this._execute_script();
+          }
+        }
+
+        remove() {
+          if (this._node) {
+            GRID_ELEMENT.removeChild(this._node);
+          }
+        }
+
+        on(event, handler) {
+          this._customEvents[event] = handler;
+        }
+
+        //-----------------
+        // PRIVATE METHODS
+
+        _execute_script() {
+          const scriptToExecuteElement = this._node.querySelector('.executable');
+          if (scriptToExecuteElement) {
+            new Function('w', scriptToExecuteElement.innerHTML)(this);
+          }
+        }
+
+        _calculate_position_onDrag(event) {
+          this._node.style.left = `${event.clientX - this._dragOffsetX}px`;
+          this._node.style.top = `${event.clientY - this._dragOffsetY}px`;
+        }
+
+        //-----------------
+        // GETTERS / SETTERS
+
+        set content(value) {
+          this._content = value;
+
+          if (this._node) {
+            this._node.innerHTML = this._content;
+            this._execute_script();
+          }
+        }
+
+        //-----------------
+        // EVENTS
+
+        _event_onMouseDown(event) {
+          if (event.button !== 0) return;
+          if (event.target.closest(SKIP_DRAG_ELEMENTS)) return;
+
+          this._event = event;
+          this._event.preventDefault();
+
+          const nodeRect = this._node.getBoundingClientRect();
+
+          this._dragOffsetX = event.clientX - nodeRect.left;
+          this._dragOffsetY = event.clientY - nodeRect.top;
+
+          document.addEventListener('mousemove', this._event_onMoveMouse, { capture: true, passive: true });
+          document.addEventListener('mouseup', this._event_onMouseUp, true);
+
+          this._customEvents['onStartDrag'](event, this);
+        }
+
+        _event_onMoveMouse(event) {
+          if (this._moving) {
+            this._calculate_position_onDrag(event);
+            this._customEvents['onMove'](event, this);
+          }
+
+          if (Math.abs(event.x - this._event.x) + Math.abs(event.y - this._event.y) > 3) {
+            if (!this._moving) {
+              this._node.classList.toggle('widget__dragging', true);
+              this._calculate_position_onDrag(event);
+            }
+            this._moving = true;
+          }
+        }
+
+        _event_onMouseUp(event) {
+          document.removeEventListener('mousemove', this._event_onMoveMouse, true);
+          document.removeEventListener('mouseup', this._event_onMouseUp, true);
+
+          if (this._moving) {
+            this._captureOnClick = true;
+            this._moving = false;
+
+            this._node.classList.toggle('widget__dragging', false);
+
+            this._customEvents['onEndDrag'](event, this);
+          }
+        }
+
+        _event_onClick(event) {
+          if (this._captureOnClick) {
+            this._captureOnClick = false;
+            return;
+          }
+
+          if (event.target) {
+            API_EVENT = {
+              id: this._id,
+            };
+
+            if (event.target.classList.contains('widget-button__update')) {
+              API_EVENT['type'] = 'WIDGET_BUTTON_UPDATE';
+            } else if (event.target.classList.contains('widget-button__settings')) {
+              API_EVENT['type'] = 'WIDGET_BUTTON_SETTINGS';
+            } else if (event.target.classList.contains('widget-button__remove')) {
+              API_EVENT['type'] = 'WIDGET_BUTTON_REMOVE';
+            } else if (event.target.classList.contains('widget-detail')) {
+              API_EVENT['type'] = 'WIDGET_BUTTON_TRANSCRIBE';
+            }
+          }
+        }
+      }
+
+      class Grid {
+        constructor(w) {
+          // Grid width size.
+          this.w = w;
+
+          // Grid widgets.
+          this.widgets = [];
+
+          // Bind object to events.
+          this._custom_event_onDragStart = this._custom_event_onDragStart.bind(this);
+          this._custom_event_onMove = this._custom_event_onMove.bind(this);
+          this._custom_event_onEndDrag = this._custom_event_onEndDrag.bind(this);
+        }
+
+        //-----------------
+        // PUBLIC METHODS
+
+        addWidget(widget, fromBase = false) {
+          if (this._findWidgetById(widget._id)) {
+            return widget;
+          }
+
+          if (!fromBase && !this._findEmptyPosition(widget)) {
+            return undefined;
+          }
+
+          this.widgets.push(widget);
+
+          widget.on('onStartDrag', this._custom_event_onDragStart);
+          widget.on('onMove', this._custom_event_onMove);
+          widget.on('onEndDrag', this._custom_event_onEndDrag);
+
+          widget.render();
+
+          return widget;
+        }
+
+        removeWidgetByID(id) {
+          const widgetToRemove = this._findWidgetById(id);
+          if (widgetToRemove) {
+            this.widgets = this.widgets.filter(widget => widget !== widgetToRemove);
+            widgetToRemove.remove();
+
+            this._packWidgetsAllDirections();
+
+            return true;
+          }
+          return false;
+        }
+
+        updateWidgetByID(id, content) {
+          const widget = this._findWidgetById(id);
+          
+          if (widget) {
+            widget.content = content;
+          }
+        }
+
+        //-----------------
+        // PRIVATE METHODS
+
+        _beginUpdate() {
+          this.widgets.forEach(n => {
+            n._orig = { x: n.x, y: n.y };
+          });
+        }
+
+        _restoreWidgetsPositions() {
+          this.widgets.forEach(widget => {
+            if (!widget._moving) {
+              Object.assign(widget, widget._orig);
+            }
+          });
+        }
+
+        _findEmptyPosition(widget, gridWidth = this.w, afterWidget = undefined) {
+          const startPosition = (afterWidget ? afterWidget.y * gridWidth + (afterWidget.x + afterWidget.w) : 0);
+
+          let foundPosition = false;
+          for (let i = startPosition; !foundPosition; i++) {
+            const x = i % gridWidth;
+            const y = Math.floor(i / gridWidth);
+
+            if (x + widget.w > gridWidth) {
+              continue;
+            }
+
+            const checkBox = { x: x, y: y, w: widget.w, h: widget.h };
+            const hasIntersection = this.widgets.find((checkWidget) => isIntersection(checkBox, checkWidget));
+
+            if (!hasIntersection) {
+              if (widget.x !== x || widget.y !== y) {
+                widget._dirty = true;
+              }
+
+              widget.x = x;
+              widget.y = y;
+
+              foundPosition = true;
+            }
+          }
+
+          return foundPosition;
+        }
+
+        _findWidgetById(id) {
+          return this.widgets.find(checkWidget => id === checkWidget._id);
+        }
+
+        _sortWidgets(dir = 1) {
+          const und = 10000;
+          
+          this.widgets = this.widgets.sort((a, b) => {
+            const posAy = (a.y !== undefined && a.y !== null ? a.y : und);
+            const posBy = (b.y !== undefined && b.y !== null ? b.y : und);
+            
+            const diffY = dir * (posAy - posBy);
+            
+            if (diffY === 0) {
+              const posAx = (a.x !== undefined && a.x !== null ? a.x : und);
+              const posBx = (b.x !== undefined && b.x !== null ? b.x : und);
+
+              return dir * (posAx - posBx);
+            }
+
+            return diffY;
+          });
+        }
+
+        _packWidgets(dir = 'y') {
+          this._sortWidgets();
+
+          let isMoved = false;
+          this.widgets.forEach((widget, index) => {
+            while (widget[dir] > 0) {
+              const checkBox = {
+                x: widget.x,
+                y: widget.y,
+                w: widget.w,
+                h: widget.h
+              };
+
+              checkBox[dir] = checkBox[dir] - 1;
+
+              if (this._collide(widget, checkBox)) {
+                break;
+              }
+
+              widget[dir] = checkBox[dir];
+              
+              isMoved = true;
+            }
+
+            if (!widget._moving) {
+              widget.render();
+            }
+          });
+
+          return isMoved;
+        }
+
+        _packWidgetsAllDirections() {
+          while (this._packWidgets('y') || this._packWidgets('x')) {};
+        }
+
+        _moveWidget(widget, x, y) {
+          widget.x = x;
+          widget.y = y;
+
+          this._resolveCollisions(widget);
+        }
+
+        _resolveCollisions(widget, initial = false) {
+          this._sortWidgets(-1);
+
+          const collisions = this._getAllCollisionWidgets(widget);
+          const widgetBottom = widget.y + widget.h;
+
+          if (collisions.length === 1 && initial) {
+            const origSwapPos = {
+              x: widget.x, y: widget.y,
+              h: widget.h, w: widget.w
+            };
+
+            Object.assign(widget, widget._orig);
+
+            if (this._swapWidgets(widget, collisions[0])) {
+              this._moveWidget(collisions[0], collisions[0].x, collisions[0].y);
+            }
+
+            Object.assign(widget, origSwapPos);
+          }
+
+          collisions.forEach((collisionWidget) => {
+            this._moveWidget(collisionWidget, collisionWidget.x, widgetBottom);
+          });
+        }
+
+        _collide(widget, area) {
+          return this.widgets.find(checkWidget => {
+            return checkWidget._id !== widget._id && isIntersection(checkWidget, area)
+          });
+        }
+
+        _getAllCollisionWidgets(widget) {
+          return this.widgets.filter((checkWidget) => {
+            return isIntersection(widget, checkWidget);
+          });
+        }
+
+        _swapWidgets(a, b) {
+          // If same widgets has same size and same row or column.
+          if (a.w === b.w && a.h === b.h && (a.x === b.x || a.y === b.y)) {
+            this._swap_doSwapWidgets(a, b);
+            return true;
+          }
+
+          // If same row but different height.
+          if (a.w === b.w && a.x === b.x) {
+            if (b.y < a.y) {
+              this._swap_doSwapWidgets(b, a);
+            } else {
+              this._swap_doSwapWidgets(a, b);
+            }
+            return true;
+          }
+
+          // If same columns but different width.
+          if (a.h === b.h && a.y === b.y) {
+            if (b.x < a.x) {
+              this._swap_doSwapWidgets(b, a);
+            } else {
+              this._swap_doSwapWidgets(a, b);
+            }
+            return true;
+          }
+
+          return false;
+        }
+
+        _swap_doSwapWidgets(a, b) {
+          const swapX = b.x;
+          const swapY = b.y;
+
+          b.x = a.x;
+          b.y = a.y;
+
+          if (a.h !== b.h) {
+            a.x = swapX;
+            a.y = b.y + b.h;
+          } else if (a.w !== b.w) {
+            a.x = b.x + b.w;
+            a.y = swapY;
+          } else {
+            a.x = swapX;
+            a.y = swapY;
+          }
+        }
+
+        //-----------------
+        // EVENTS
+
+        _custom_event_onDragStart(event, widget) {
+          this._beginUpdate();
+
+          Placeholder.show();
+
+          copyWidgetSizeAndPosition(Placeholder, widget);
+          updateElementView(Placeholder);
+        }
+
+        _custom_event_onMove(event, widget) {
+          const newXPosition = Math.floor((event.pageX - widget._dragOffsetX) / GRID_CELL_WIDTH);
+          const newYPosition = Math.floor((event.pageY - widget._dragOffsetY) / GRID_CELL_HEIGHT);
+
+          if (newXPosition < 0 || newYPosition < 0) {
+            return;
+          }
+
+          if (newXPosition !== widget.x || newYPosition !== widget.y) {
+            this._restoreWidgetsPositions();
+
+            widget.x = Math.min(newXPosition, this.w - widget.w);
+            widget.y = newYPosition;
+
+            this._resolveCollisions(widget, true);
+            this._packWidgetsAllDirections();
+
+            copyWidgetSizeAndPosition(Placeholder, widget);
+            updateElementView(Placeholder);
+          }
+        }
+
+        _custom_event_onEndDrag(event, widget) {
+          widget.render();
+
+          Placeholder.hide();
+
+          if (widget._orig.x !== widget.x || widget._orig.y !== widget.y) {
+            API_EVENT = {
+              type: 'GRID_LAYOUT_UPDATE'
+            };
+          }
+        }
+      }
+
+      ///////////////////////////
+      // GRID OBJECT
+
+      const GridObject = new Grid(6);
+
+      ///////////////////////////
+      // API
+
+      var API_EVENT = undefined;
+
+      function createWidget(id, x, y, w, h, content) {
+        const widget = new Widget(id, content, w, h);
+
+        widget.x = x;
+        widget.y = y;
+
+        GridObject.addWidget(widget, true);
+      }
+
+      function appendWidgetToGrid(id, w, h, content) {
+        const widget = new Widget(id, content, w, h);
+        GridObject.addWidget(widget);
+      }
+
+      function removeWidgetByID(id) {
+        return GridObject.removeWidgetByID(id);
+      }
+
+      function updateWidgetByID(id, content) {
+        GridObject.updateWidgetByID(id, content);
+      }
+
+      ///////////////////////////
+      // API - WEB CLIENT SUPPORT
+
+      function getWidgets() {
+        return GridObject.widgets;
+      }
+
+      function getEvent() {
+        return API_EVENT;
+      }
+    </script>
+  </body>
+</html>

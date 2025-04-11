@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f6dd16e-ef11-4481-be28-c6f87d56f40f">
+  <name>CRM_СервисiCloud</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM сервис iCloud</value>
+  </synonym>
+</mdclass:CommonPicture>

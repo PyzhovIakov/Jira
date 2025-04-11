@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b04b8bd-5696-4dc9-bedd-da8e5d3c0ff1">
+  <name>CRM_РаботаСHTML</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с HTML</value>
+  </synonym>
+  <content>CommonModule.CRM_РаботаСHTML</content>
+  <content>CommonModule.CRM_РаботаСHTMLПовтИсп</content>
+  <content>DataProcessor.CRM_РаботаСHTML</content>
+  <content>CommonModule.CRM_РаботаСHTMLКлиент</content>
+  <content>CommonTemplate.CRM_КомпонентаПолученияКартинкиИзБуфера</content>
+  <content>CommonPicture.CRM_КартинкаИзБуфера</content>
+  <parentSubsystem>Subsystem.CRM_МодульCRM</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="8649dcb8-66e0-409e-9563-44c3625b276b">
+  <name>УчетЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет задач</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <defaultLanguage>Checked</defaultLanguage>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+    <defaultRoles>Extended</defaultRoles>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="22303d25-18bf-484b-bc64-7f2ddc1deb9d"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="3cd0efe4-8752-47b0-9315-1a97ddd7d399"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="5b09a285-762a-41e5-9dac-ec8c0ec111dd"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="e3474dd4-cd52-4405-bdb6-2fb658dfd0cd"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="3f087492-1711-4002-8040-6f31135be652"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="9b9af0c1-4c3f-4497-a26e-b2908d9f2230"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="f3c73161-436a-47b2-8e7a-9e518948fd51"/>
+  <namePrefix>cbr_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.24</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultRoles>Role.cbr_ОсновнаяРоль</defaultRoles>
+  <vendor>ООО Разработка и аналитика</vendor>
+  <version>1,0</version>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
+  <compatibilityMode>8.3.26</compatibilityMode>
+  <languages uuid="939cf021-7c0e-48ea-9d1a-a5cd09c08f19" extendedConfigurationObject="0663bf5b-bcba-4a40-a862-a0b3baa2d884">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.cbr_НСИ_УчетЗадач</subsystems>
+  <subsystems>Subsystem.cbr_УчетЗадач</subsystems>
+  <roles>Role.cbr_ОсновнаяРоль</roles>
+  <commonModules>CommonModule.cbr_ВыборЦветаHTMLПовтИсп</commonModules>
+  <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроля</commonModules>
+  <commonModules>CommonModule.cbr_ОбработкаТриггеров</commonModules>
+  <commonModules>CommonModule.cbr_ОбработчикиФормыЗадачиСервер</commonModules>
+  <commonModules>CommonModule.cbr_УведомленияПользователей</commonModules>
+  <commonModules>CommonModule.cbr_ЭлементыФормы</commonModules>
+  <commonModules>CommonModule.РаботаСФайламиКлиентСервер</commonModules>
+  <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументов</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПереопределитьПолучаемуюФормуПрисоединенногоФайла</eventSubscriptions>
+  <scheduledJobs>ScheduledJob.cbr_ВызовТриггера</scheduledJobs>
+  <scheduledJobs>ScheduledJob.Центр_ПроверкаВыполненияЭтаповКонтроля1</scheduledJobs>
+  <definedTypes>DefinedType.ВладелецПрисоединенныхФайлов</definedTypes>
+  <definedTypes>DefinedType.ВладелецПрисоединенныхФайловОбъект</definedTypes>
+  <definedTypes>DefinedType.ПредметНапоминания</definedTypes>
+  <definedTypes>DefinedType.ПрисоединенныйФайл</definedTypes>
+  <definedTypes>DefinedType.ПрисоединенныйФайлОбъект</definedTypes>
+  <commonCommands>CommonCommand.ПрисоединенныеФайлы</commonCommands>
+  <commonForms>CommonForm.cbr_ФормаОтветаНаВопросПоЗадаче</commonForms>
+  <commonForms>CommonForm.cbr_ФормаСпискаВопросовПоЗадаче</commonForms>
+  <commonForms>CommonForm.cbr_ИерархияЗадачОбщая</commonForms>
+  <commonForms>CommonForm.cbr_КомментарииЗадач</commonForms>
+  <commonForms>CommonForm.cbr_ФормаВыбораЦвета</commonForms>
+  <catalogs>Catalog.Пользователи</catalogs>
+  <catalogs>Catalog.cbr_ВидыЗадач</catalogs>
+  <catalogs>Catalog.cbr_ГруппыДоступаКЗадачам</catalogs>
+  <catalogs>Catalog.cbr_Доски</catalogs>
+  <catalogs>Catalog.cbr_МеткиЗадач</catalogs>
+  <catalogs>Catalog.cbr_Партнеры</catalogs>
+  <catalogs>Catalog.cbr_Приоритеты</catalogs>
+  <catalogs>Catalog.cbr_ПричинаПереносаДедлайна</catalogs>
+  <catalogs>Catalog.cbr_ПричиныОтказаОтЗадачи</catalogs>
+  <catalogs>Catalog.cbr_СтатусыЗадач</catalogs>
+  <catalogs>Catalog.cbr_Сценарии</catalogs>
+  <catalogs>Catalog.cbr_КонтрольНадЭтапамиЗадач</catalogs>
+  <catalogs>Catalog.УчетныеЗаписиСинхронизацииФайлов</catalogs>
+  <catalogs>Catalog.ТомаХраненияФайлов</catalogs>
+  <catalogs>Catalog.cbr_ЗадачаПрисоединенныеФайлы</catalogs>
+  <catalogs>Catalog.cbr_Триггеры</catalogs>
+  <catalogs>Catalog.Партнеры</catalogs>
+  <documents>Document.cbr_Задача</documents>
+  <documents>Document.cbr_ТрудозатратыПоЗадаче</documents>
+  <enums>Enum.cbr_ВидыВопросов</enums>
+  <enums>Enum.cbr_ЕдиницыИзмеренийВремени</enums>
+  <enums>Enum.cbr_ПодпискаДляТриггера</enums>
+  <enums>Enum.cbr_ПредставленияВидовЗадачПоПостановщику</enums>
+  <enums>Enum.cbr_ТипОценкиЧасов</enums>
+  <enums>Enum.СтатусыИзвлеченияТекстаФайлов</enums>
+  <enums>Enum.ТипыХраненияФайлов</enums>
+  <dataProcessors>DataProcessor.cbr_Канбан</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
+  <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_ВопросыПоЗадачам</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_ДедлайнЗадач</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_ИсполнителиЗадач</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_КомментарииЗадач</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_НастройкиПользователейКолонокКанБан</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_НастройкиПользователяКанБан</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_ОценкаЧасов</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_ПользовательскиеНастройки</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_ПросроченныеДействияПоЗадачам</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_СвязанныеЗадачи</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_СтатусыЗадач</informationRegisters>
+  <informationRegisters>InformationRegister.НапоминанияПользователя</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>
+</mdclass:Configuration>

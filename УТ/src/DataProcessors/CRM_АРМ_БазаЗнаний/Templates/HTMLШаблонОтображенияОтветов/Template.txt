@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html {
+        height: 100%;
+        font-family: 'Arial';
+        font-style: normal;
+      }
+
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      p {
+        line-height: 1.15;
+        color: #1f1f1f;
+        margin: 0px;
+      }
+
+      a {
+        color: #00a0f2;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        border: none;
+      }
+
+      .primaryText {
+        font-style: normal;
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      .secondaryText {
+        font-style: normal;
+        font-size: 13px;
+        line-height: 15px;
+      }
+
+      .listItemHeaderText {
+        font-size: 13px;
+        line-height: 20px;
+        color: #657081;
+      }
+
+      .listItemValueText {
+        font-size: 13px;
+        line-height: 17px;
+        color: #1F1F1F;
+      }
+
+      .textBold {
+        font-weight: 700;
+      }
+
+      .textThin {
+        font-weight: 400;
+      }
+
+      .answerBlockContent {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 28px 12px 28.5px;
+      }
+
+      .answerBlockContent img {
+        background-size: contain;
+        max-width: 100%;
+        display: block;
+      }
+
+      .answerBlockContent:first-child {
+        padding-top: 12px;
+      }
+
+      .answerBlockContent > *:not(:first-child) {
+        margin-top: 12px;
+      }
+
+      .answerBlockColor:nth-child(2n+1) {
+        background-color: #f5f5f5;
+      }
+
+      .answerBlockColor:last-child {
+        border-bottom: 1px solid #B5BBC4;
+      }
+
+      .answerBlockLine {
+        height: 1px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #b5bbc4;
+      }
+
+      .answerBlockTitle {
+        position: absolute;
+        left: 12px;
+        background-color: #ffffff;
+        border-radius: 32px;
+        border: 1px solid #B5BBC4;
+        padding: 8px 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+        white-space: nowrap;
+      }
+
+      .answerBlockTitle-actionLink {
+        margin-left: 16px;
+      }
+
+      .answerBlockInformation {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .answerBlockInformation-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      answerBlockInformation-list li:not(:last-child) { 
+        margin-bottom: 2px;
+      }
+
+      .answerBlockInformation-sideActionsWrap {
+        margin-left: auto;
+        margin-top: auto;
+      }
+
+      .answerBlockInformation-sideActions {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .answerBlockInformationExpandCollapse__hidden,
+      .answerBlockInformation__collapsed {
+        display: none;
+      }
+
+      .answerBlockInformationExpandCollapse {
+        margin-top: 12px;
+      }
+
+      .answerBlockInformation__outdated .textBold:not(a) {
+        color: #6B7889;
+      }
+
+      .answerBlockInformation__outdated .answerBlockTitle {
+        background: #f5f5f5;
+      }
+
+      .answerBlockInformationImage {
+        display: block;
+        height: 20px;
+        width: 20px;
+        margin-right: 8px;
+        background-size: 20px 20px;
+      }
+
+      .answerBlockInformationImage-attach {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM1NDBfNjIzMCkiPgo8cGF0aCBkPSJNMi40OTk5OCA1LjgzMzMzTDkuMTY2NjUgMTBMMTUuODMzMyA1LjgzMzMzVjguMzMzMzNIMTcuNVY0LjE2NjY3QzE3LjUgMy4yNSAxNi43NSAyLjUgMTUuODMzMyAyLjVIMi40OTk5OEMxLjU4MzMxIDIuNSAwLjg0MTY0NiAzLjI1IDAuODQxNjQ2IDQuMTY2NjdMMC44MzMzMTMgMTQuMTY2N0MwLjgzMzMxMyAxNS4wODMzIDEuNTgzMzEgMTUuODMzMyAyLjQ5OTk4IDE1LjgzMzNIMTAuODMzM1YxNC4xNjY3SDIuNDk5OThWNS44MzMzM1pNMTUuODMzMyA0LjE2NjY3TDkuMTY2NjUgOC4zMzMzM0wyLjQ5OTk4IDQuMTY2NjdIMTUuODMzM1oiIGZpbGw9IiMwMEEwRjIiLz4KPHBhdGggZD0iTTE3LjUgMTIuNVYxNS44MzMzQzE3LjUgMTYuNzUgMTYuNzUgMTcuNSAxNS44MzMzIDE3LjVDMTQuOTE2NyAxNy41IDE0LjE2NjcgMTYuNzUgMTQuMTY2NyAxNS44MzMzVjEyLjA4MzNDMTQuMTY2NyAxMS44NSAxNC4zNSAxMS42NjY3IDE0LjU4MzMgMTEuNjY2N0MxNC44MTY3IDExLjY2NjcgMTUgMTEuODUgMTUgMTIuMDgzM1YxNS44MzMzSDE2LjY2NjdWMTIuMDgzM0MxNi42NjY3IDEwLjkzMzMgMTUuNzMzMyAxMCAxNC41ODMzIDEwQzEzLjQzMzMgMTAgMTIuNSAxMC45MzMzIDEyLjUgMTIuMDgzM1YxNS44MzMzQzEyLjUgMTcuNjc1IDEzLjk5MTcgMTkuMTY2NyAxNS44MzMzIDE5LjE2NjdDMTcuNjc1IDE5LjE2NjcgMTkuMTY2NyAxNy42NzUgMTkuMTY2NyAxNS44MzMzVjEyLjVIMTcuNVoiIGZpbGw9IiMwMEEwRjIiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zNTQwXzYyMzAiPgo8cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==");
+      }
+
+      .answerBlockInformationImage-arrow {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzLjY5ODMgN0w5LjUgMTEuMzI2Nkw1LjI5MjUgN0w0IDguMzMxOThMOS41IDE0TDE1IDguMzMxOThMMTMuNjk4MyA3WiIgZmlsbD0iIzAwQTBGMiIvPgo8L3N2Zz4K");
+      }
+
+      .answerBlockInformationImage-arrow__expand {
+        transform: rotate(-180deg);
+      }
+
+      .answerBlockInformationExpandCollapse__show {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+    <script type="text/javascript">
+      "use strict";
+      
+      function getAnswerBlockContent(startElement) {
+        var searchElement = startElement;
+
+        while (searchElement.parentNode && searchElement.className !== 'answerBlockContent') {
+          searchElement = searchElement.parentNode;
+        }
+
+        return searchElement;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ANSWERS -->
+  </body>
+</html>

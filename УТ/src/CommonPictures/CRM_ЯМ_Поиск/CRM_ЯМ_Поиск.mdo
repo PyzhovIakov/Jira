@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8755b7d2-a87e-46e1-9db8-ca886f5ebaf2">
+  <name>CRM_ЯМ_Поиск</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск</value>
+  </synonym>
+</mdclass:CommonPicture>

@@ -1,0 +1,1853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:schema="http://g5.1c.ru/v8/dt/data-composition-system/schema">
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаОсновная</name>
+    <id>76</id>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаСписокБлокировок</name>
+      <id>47</id>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияЗаблокированные</name>
+        <id>105</id>
+        <title>
+          <key>ru</key>
+          <value>Заблокированные отправители</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДекорацияЗаблокированныеРасширеннаяПодсказка</name>
+          <id>107</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияЗаблокированныеКонтекстноеМеню</name>
+          <id>106</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>true</horizontalStretch>
+        <font xsi:type="core:FontRef">
+          <font>Style.NormalTextFont</font>
+          <bold>true</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+          <scale>100</scale>
+        </font>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Center</horizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>КоманднаяПанельСписокБлокировокФон</name>
+        <id>39</id>
+        <items xsi:type="form:FormGroup">
+          <name>КоманднаяПанельСписокБлокировок</name>
+          <id>41</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Командная панель список блокировок</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Командная панель список блокировок</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>КоманднаяПанельСписокБлокировокРасширеннаяПодсказка</name>
+            <id>42</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>CommandBar</type>
+          <extInfo xsi:type="form:CommandBarExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+            <commandSource>Item.СписокБлокировок</commandSource>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Командная панель список блокировок фон</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Командная панель список блокировок фон</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>КоманднаяПанельСписокБлокировокФонРасширеннаяПодсказка</name>
+          <id>40</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Table">
+        <name>СписокБлокировок</name>
+        <id>3</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>СписокБлокировок</segments>
+        </dataPath>
+        <defaultItem>true</defaultItem>
+        <titleLocation>None</titleLocation>
+        <excludedCommands>CopyToClipboard</excludedCommands>
+        <items xsi:type="form:FormField">
+          <name>СписокБлокировокИконка</name>
+          <id>22</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СписокБлокировок.Иконка</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <extendedTooltip>
+            <name>СписокБлокировокИконкаРасширеннаяПодсказка</name>
+            <id>24</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокБлокировокИконкаКонтекстноеМеню</name>
+            <id>23</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>PictureField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerPicture xsi:type="core:PictureRef">
+            <picture>CommonPicture.CRM_ОтправкаЧерезМессенджер</picture>
+          </headerPicture>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:ImageFieldExtInfo">
+            <width>2</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>true</horizontalStretch>
+            <verticalStretch>true</verticalStretch>
+            <valuesPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.CRM_Мессенджеры</picture>
+            </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>СписокБлокировокГруппаКонтактаИДиалога</name>
+          <id>114</id>
+          <items xsi:type="form:FormField">
+            <name>СписокБлокировокКонтакт</name>
+            <id>25</id>
+            <title>
+              <key>ru</key>
+              <value>Контакт</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>СписокБлокировок.Контакт</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>СписокБлокировокКонтактРасширеннаяПодсказка</name>
+              <id>27</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СписокБлокировокКонтактКонтекстноеМеню</name>
+              <id>26</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>LabelField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:LabelFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>СписокБлокировокДиалог</name>
+            <id>111</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>СписокБлокировок.Диалог</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>СписокБлокировокДиалогРасширеннаяПодсказка</name>
+              <id>113</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СписокБлокировокДиалогКонтекстноеМеню</name>
+              <id>112</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>LabelField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:LabelFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Список блокировок группа контакта и диалога</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Список блокировок группа контакта и диалога</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>СписокБлокировокГруппаКонтактаИДиалогаРасширеннаяПодсказка</name>
+            <id>115</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>ColumnGroup</type>
+          <extInfo xsi:type="form:ColumnGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>СписокБлокировокГруппаИдентификатораИКонтактнойИнформации</name>
+          <id>116</id>
+          <items xsi:type="form:FormField">
+            <name>СписокБлокировокКонтактнаяИнформация</name>
+            <id>108</id>
+            <title>
+              <key>ru</key>
+              <value>Контактная информация</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>СписокБлокировок.КонтактнаяИнформацияПредставление</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>СписокБлокировокКонтактнаяИнформацияРасширеннаяПодсказка</name>
+              <id>110</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СписокБлокировокКонтактнаяИнформацияКонтекстноеМеню</name>
+              <id>109</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>LabelField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:LabelFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>СписокБлокировокИдентификаторБлокировки</name>
+            <id>16</id>
+            <title>
+              <key>ru</key>
+              <value>Идентификатор</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>СписокБлокировок.ИдентификаторБлокировки</segments>
+            </dataPath>
+            <defaultItem>true</defaultItem>
+            <extendedTooltip>
+              <name>СписокБлокировокИдентификаторБлокировкиРасширеннаяПодсказка</name>
+              <id>18</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СписокБлокировокИдентификаторБлокировкиКонтекстноеМеню</name>
+              <id>17</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>LabelField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:LabelFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Список блокировок группа идентификатора и контактной информации</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Список блокировок группа идентификатора и контактной информации</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>СписокБлокировокГруппаИдентификатораИКонтактнойИнформацииРасширеннаяПодсказка</name>
+            <id>117</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>ColumnGroup</type>
+          <extInfo xsi:type="form:ColumnGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <commandBarLocation>None</commandBarLocation>
+        <autoCommandBar>
+          <name>СписокБлокировокКоманднаяПанель</name>
+          <id>5</id>
+          <horizontalAlign>Left</horizontalAlign>
+        </autoCommandBar>
+        <handlers>
+          <event>Selection</event>
+          <name>СписокБлокировокВыбор</name>
+        </handlers>
+        <searchStringAddition>
+          <name>СписокБлокировокСтрокаПоиска</name>
+          <id>7</id>
+          <extendedTooltip>
+            <name>СписокБлокировокСтрокаПоискаРасширеннаяПодсказка</name>
+            <id>9</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокБлокировокСтрокаПоискаКонтекстноеМеню</name>
+            <id>8</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <source>СписокБлокировок</source>
+          <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </searchStringAddition>
+        <viewStatusAddition>
+          <name>СписокБлокировокСостояниеПросмотра</name>
+          <id>10</id>
+          <extendedTooltip>
+            <name>СписокБлокировокСостояниеПросмотраРасширеннаяПодсказка</name>
+            <id>12</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокБлокировокСостояниеПросмотраКонтекстноеМеню</name>
+            <id>11</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>ViewStatusAddition</type>
+          <source>СписокБлокировок</source>
+          <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </viewStatusAddition>
+        <searchControlAddition>
+          <name>СписокБлокировокУправлениеПоиском</name>
+          <id>13</id>
+          <extendedTooltip>
+            <name>СписокБлокировокУправлениеПоискомРасширеннаяПодсказка</name>
+            <id>15</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокБлокировокУправлениеПоискомКонтекстноеМеню</name>
+            <id>14</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>SearchControlAddition</type>
+          <source>СписокБлокировок</source>
+          <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </searchControlAddition>
+        <extendedTooltip>
+          <name>СписокБлокировокРасширеннаяПодсказка</name>
+          <id>6</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>СписокБлокировокКонтекстноеМеню</name>
+          <id>4</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <changeRowSet>true</changeRowSet>
+        <changeRowOrder>true</changeRowOrder>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <autoMaxRowsCount>true</autoMaxRowsCount>
+        <selectionMode>MultiRow</selectionMode>
+        <header>true</header>
+        <headerHeight>1</headerHeight>
+        <footerHeight>1</footerHeight>
+        <horizontalScrollBar>AutoUse</horizontalScrollBar>
+        <verticalScrollBar>AutoUse</verticalScrollBar>
+        <horizontalLines>true</horizontalLines>
+        <verticalLines>true</verticalLines>
+        <useAlternationRowColor>true</useAlternationRowColor>
+        <searchOnInput>Auto</searchOnInput>
+        <initialListView>Auto</initialListView>
+        <initialTreeView>ExpandTopLevel</initialTreeView>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+        <enableStartDrag>true</enableStartDrag>
+        <fileDragMode>AsFileRef</fileDragMode>
+        <rowPictureDataPath xsi:type="form:DataPath">
+          <segments>СписокБлокировок.DefaultPicture</segments>
+        </rowPictureDataPath>
+        <extInfo xsi:type="form:DynamicListTableExtInfo">
+          <autoRefreshPeriod>60</autoRefreshPeriod>
+          <period>
+            <startDate>0001-01-01T00:00:00</startDate>
+            <endDate>0001-01-01T00:00:00</endDate>
+          </period>
+          <topLevelParent xsi:type="core:UndefinedValue"/>
+          <showRoot>true</showRoot>
+          <allowGettingCurrentRowURL>true</allowGettingCurrentRowURL>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Заблокированные</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа список блокировок</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ГруппаСписокБлокировокРасширеннаяПодсказка</name>
+        <id>48</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <behavior>Auto</behavior>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаПеретаскивания</name>
+      <id>96</id>
+      <items xsi:type="form:Button">
+        <name>ДобавитьБлокировкуОтправителя</name>
+        <id>98</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДобавитьБлокировкуОтправителяРасширеннаяПодсказка</name>
+          <id>99</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.ДобавитьБлокировкуОтправителя</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+        <shapeRepresentation>None</shapeRepresentation>
+      </items>
+      <items xsi:type="form:Button">
+        <name>УбратьБлокировкуОтправителя</name>
+        <id>100</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>УбратьБлокировкуОтправителяРасширеннаяПодсказка</name>
+          <id>101</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.УбратьБлокировкуОтправителя</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+        <shapeRepresentation>None</shapeRepresentation>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Команды перетаскивания</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа перетаскивания</value>
+      </toolTip>
+      <verticalStretch>true</verticalStretch>
+      <extendedTooltip>
+        <name>ГруппаПеретаскиванияРасширеннаяПодсказка</name>
+        <id>97</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <verticalAlign>Center</verticalAlign>
+        <behavior>Auto</behavior>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаСпискаОтправителей</name>
+      <id>49</id>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияВсеОтправители</name>
+        <id>102</id>
+        <title>
+          <key>ru</key>
+          <value>Все отправители</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДекорацияВсеОтправителиРасширеннаяПодсказка</name>
+          <id>104</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияВсеОтправителиКонтекстноеМеню</name>
+          <id>103</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>true</horizontalStretch>
+        <font xsi:type="core:FontRef">
+          <font>Style.NormalTextFont</font>
+          <bold>true</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+          <scale>100</scale>
+        </font>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Center</horizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>КоманднаяПанельСпискаОтправителейФон</name>
+        <id>78</id>
+        <items xsi:type="form:FormGroup">
+          <name>КоманднаяПанельСпискаОтправителей</name>
+          <id>80</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Командная панель основного списка</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Командная панель основного списка</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>КоманднаяПанельСпискаОтправителейРасширеннаяПодсказка</name>
+            <id>81</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>CommandBar</type>
+          <extInfo xsi:type="form:CommandBarExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+            <commandSource>Item.СписокОтправителей</commandSource>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Командная панель основного списка фон</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Командная панель основного списка фон</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>КоманднаяПанельСпискаОтправителейФонРасширеннаяПодсказка</name>
+          <id>79</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.CRM_СерыйДляПодложек</color>
+          </backColor>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Table">
+        <name>СписокОтправителей</name>
+        <id>51</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>СписокОтправителей</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <items xsi:type="form:FormField">
+          <name>СписокОтправителейИконка</name>
+          <id>84</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СписокОтправителей.Иконка</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <extendedTooltip>
+            <name>СписокОтправителейИконкаРасширеннаяПодсказка</name>
+            <id>86</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокОтправителейИконкаКонтекстноеМеню</name>
+            <id>85</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>PictureField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerPicture xsi:type="core:PictureRef">
+            <picture>CommonPicture.CRM_ОтправкаЧерезМессенджер</picture>
+          </headerPicture>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:ImageFieldExtInfo">
+            <width>2</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>true</horizontalStretch>
+            <verticalStretch>true</verticalStretch>
+            <valuesPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.CRM_Мессенджеры</picture>
+            </valuesPicture>
+            <border xsi:type="core:BorderDef">
+              <style>Single</style>
+              <width>1</width>
+            </border>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>СписокОтправителейГруппаКонтактаИДиалога</name>
+          <id>118</id>
+          <items xsi:type="form:FormField">
+            <name>СписокОтправителейКонтакт</name>
+            <id>93</id>
+            <title>
+              <key>ru</key>
+              <value>Контакт</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>СписокОтправителей.Контакт</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>СписокОтправителейКонтактРасширеннаяПодсказка</name>
+              <id>95</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СписокОтправителейКонтактКонтекстноеМеню</name>
+              <id>94</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>LabelField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:LabelFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>СписокОтправителейДиалог</name>
+            <id>122</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>СписокОтправителей.Диалог</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>СписокОтправителейДиалогРасширеннаяПодсказка</name>
+              <id>124</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СписокОтправителейДиалогКонтекстноеМеню</name>
+              <id>123</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>LabelField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:LabelFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Список отправителей группа контакта и диалога</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Список отправителей группа контакта и диалога</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>СписокОтправителейГруппаКонтактаИДиалогаРасширеннаяПодсказка</name>
+            <id>119</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>ColumnGroup</type>
+          <extInfo xsi:type="form:ColumnGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>СписокОтправителейГруппаИдентификатораИКонтактнойИнформации</name>
+          <id>120</id>
+          <items xsi:type="form:FormField">
+            <name>СписокОтправителейКонтактнаяИнформация</name>
+            <id>125</id>
+            <title>
+              <key>ru</key>
+              <value>Контактная информация</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>СписокОтправителей.КонтактнаяИнформацияПредставление</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>СписокОтправителейКонтактнаяИнформацияРасширеннаяПодсказка</name>
+              <id>127</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СписокОтправителейКонтактнаяИнформацияКонтекстноеМеню</name>
+              <id>126</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>LabelField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:LabelFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>СписокОтправителейИдентификаторБлокировки</name>
+            <id>87</id>
+            <title>
+              <key>ru</key>
+              <value>Идентификатор</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>СписокОтправителей.ИдентификаторБлокировки</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>СписокОтправителейИдентификаторБлокировкиРасширеннаяПодсказка</name>
+              <id>89</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>СписокОтправителейИдентификаторБлокировкиКонтекстноеМеню</name>
+              <id>88</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>LabelField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:LabelFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Список отправителей группа идентификатора и контактной информации</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Список отправителей группа идентификатора и контактной информации</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>СписокОтправителейГруппаИдентификатораИКонтактнойИнформацииРасширеннаяПодсказка</name>
+            <id>121</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>ColumnGroup</type>
+          <extInfo xsi:type="form:ColumnGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <commandBarLocation>None</commandBarLocation>
+        <autoCommandBar>
+          <name>СписокОтправителейКоманднаяПанель</name>
+          <id>53</id>
+          <horizontalAlign>Left</horizontalAlign>
+          <autoFill>true</autoFill>
+        </autoCommandBar>
+        <handlers>
+          <event>Selection</event>
+          <name>СписокОтправителейВыбор</name>
+        </handlers>
+        <searchStringAddition>
+          <name>СписокОтправителейСтрокаПоиска</name>
+          <id>55</id>
+          <extendedTooltip>
+            <name>СписокОтправителейСтрокаПоискаРасширеннаяПодсказка</name>
+            <id>57</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокОтправителейСтрокаПоискаКонтекстноеМеню</name>
+            <id>56</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <source>СписокОтправителей</source>
+          <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </searchStringAddition>
+        <viewStatusAddition>
+          <name>СписокОтправителейСостояниеПросмотра</name>
+          <id>58</id>
+          <extendedTooltip>
+            <name>СписокОтправителейСостояниеПросмотраРасширеннаяПодсказка</name>
+            <id>60</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокОтправителейСостояниеПросмотраКонтекстноеМеню</name>
+            <id>59</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>ViewStatusAddition</type>
+          <source>СписокОтправителей</source>
+          <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </viewStatusAddition>
+        <searchControlAddition>
+          <name>СписокОтправителейУправлениеПоиском</name>
+          <id>61</id>
+          <extendedTooltip>
+            <name>СписокОтправителейУправлениеПоискомРасширеннаяПодсказка</name>
+            <id>63</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокОтправителейУправлениеПоискомКонтекстноеМеню</name>
+            <id>62</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>SearchControlAddition</type>
+          <source>СписокОтправителей</source>
+          <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </searchControlAddition>
+        <extendedTooltip>
+          <name>СписокОтправителейРасширеннаяПодсказка</name>
+          <id>54</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>СписокОтправителейКонтекстноеМеню</name>
+          <id>52</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <representation>HierarchicalList</representation>
+        <changeRowSet>true</changeRowSet>
+        <changeRowOrder>true</changeRowOrder>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <autoMaxRowsCount>true</autoMaxRowsCount>
+        <selectionMode>MultiRow</selectionMode>
+        <header>true</header>
+        <headerHeight>1</headerHeight>
+        <footerHeight>1</footerHeight>
+        <horizontalScrollBar>AutoUse</horizontalScrollBar>
+        <verticalScrollBar>AutoUse</verticalScrollBar>
+        <horizontalLines>true</horizontalLines>
+        <verticalLines>true</verticalLines>
+        <useAlternationRowColor>true</useAlternationRowColor>
+        <searchOnInput>Auto</searchOnInput>
+        <initialListView>Auto</initialListView>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+        <enableStartDrag>true</enableStartDrag>
+        <fileDragMode>AsFileRef</fileDragMode>
+        <rowPictureDataPath xsi:type="form:DataPath">
+          <segments>СписокОтправителей.DefaultPicture</segments>
+        </rowPictureDataPath>
+        <extInfo xsi:type="form:DynamicListTableExtInfo">
+          <autoRefreshPeriod>60</autoRefreshPeriod>
+          <period>
+            <startDate>0001-01-01T00:00:00</startDate>
+            <endDate>0001-01-01T00:00:00</endDate>
+          </period>
+          <topLevelParent xsi:type="core:UndefinedValue"/>
+          <showRoot>true</showRoot>
+          <allowGettingCurrentRowURL>true</allowGettingCurrentRowURL>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Все отправители</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа списка отправителей</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ГруппаСпискаОтправителейРасширеннаяПодсказка</name>
+        <id>50</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <behavior>Auto</behavior>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Группа основная</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа основная</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>ГруппаОсновнаяРасширеннаяПодсказка</name>
+      <id>77</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>AlwaysHorizontal</group>
+      <behavior>Auto</behavior>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>None</commandBarLocation>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>ПриЗакрытии</name>
+  </handlers>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>СписокБлокировок</name>
+    <title>
+      <key>ru</key>
+      <value>Список блокировок</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>DynamicList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокБлокировок.Группа</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокБлокировок.ДиалогБлокировки</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокБлокировок.ИдентификаторПользователя</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокБлокировок.КонтактДиалога</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокБлокировок.Диалог</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокБлокировок.ИдентификаторБлокировки</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокБлокировок.Контакт</segments>
+    </notDefaultUseAlwaysAttributes>
+    <extInfo xsi:type="form:DynamicListExtInfo">
+      <queryText>ВЫБРАТЬ
+	ВЫБОР
+		КОГДА CRM_Диалоги.ID_Пользователя = &quot;&quot;
+			ТОГДА CRM_Диалоги.Группа
+		КОГДА CRM_Диалоги.ID_Пользователя &lt;> CRM_Диалоги.Группа
+			ТОГДА CRM_Диалоги.ID_Пользователя
+		ИНАЧЕ CRM_Диалоги.Группа
+	КОНЕЦ КАК ИдентификаторБлокировки,
+	CRM_Диалоги.Ссылка КАК Ссылка,
+	CRM_Диалоги.УчетнаяЗапись КАК УчетнаяЗапись,
+	МАКСИМУМ(CRM_Диалоги.ДатаНачала) КАК ДатаНачала
+ПОМЕСТИТЬ втПоследниеДиалогиОтправителей
+ИЗ
+	Справочник.CRM_Диалоги КАК CRM_Диалоги
+ГДЕ
+	CRM_Диалоги.УчетнаяЗапись.ТипМессенджера В(&amp;ТипМессенджера)
+
+СГРУППИРОВАТЬ ПО
+	ВЫБОР
+		КОГДА CRM_Диалоги.ID_Пользователя = &quot;&quot;
+			ТОГДА CRM_Диалоги.Группа
+		КОГДА CRM_Диалоги.ID_Пользователя &lt;> CRM_Диалоги.Группа
+			ТОГДА CRM_Диалоги.ID_Пользователя
+		ИНАЧЕ CRM_Диалоги.Группа
+	КОНЕЦ,
+	CRM_Диалоги.УчетнаяЗапись,
+	CRM_Диалоги.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	CRM_ЗаблокированныеОтправителиМессенджера.Идентификатор КАК ИдентификаторБлокировки,
+	МАКСИМУМ(втПоследниеДиалогиОтправителей.Ссылка) КАК Диалог,
+	МАКСИМУМ(ВЫБОР
+			КОГДА втПоследниеДиалогиОтправителей.УчетнаяЗапись.ТипМессенджера = &quot;ВКонтакте&quot;
+				ТОГДА 1
+			КОГДА втПоследниеДиалогиОтправителей.УчетнаяЗапись.ТипМессенджера = &quot;InstagramDirect&quot;
+				ТОГДА 2
+			КОГДА втПоследниеДиалогиОтправителей.УчетнаяЗапись.ТипМессенджера = &quot;Telegram&quot;
+					ИЛИ втПоследниеДиалогиОтправителей.УчетнаяЗапись.ТипМессенджера = &quot;TelegramBot&quot;
+				ТОГДА 3
+			КОГДА втПоследниеДиалогиОтправителей.УчетнаяЗапись.ТипМессенджера = &quot;WhatsApp&quot;
+				ТОГДА 4
+			КОГДА втПоследниеДиалогиОтправителей.УчетнаяЗапись.ТипМессенджера = &quot;Facebook&quot;
+				ТОГДА 5
+			КОГДА втПоследниеДиалогиОтправителей.УчетнаяЗапись.ТипМессенджера = &quot;Viber&quot;
+				ТОГДА 6
+			КОГДА втПоследниеДиалогиОтправителей.УчетнаяЗапись.ТипМессенджера = &quot;Instagram&quot;
+				ТОГДА 7
+			КОГДА втПоследниеДиалогиОтправителей.УчетнаяЗапись.ТипМессенджера = &quot;ВКонтактеКомментарии&quot;
+				ТОГДА 8
+			КОГДА втПоследниеДиалогиОтправителей.УчетнаяЗапись.ТипМессенджера = &quot;СистемаВзаимодействия&quot;
+				ТОГДА 9
+			ИНАЧЕ 0
+		КОНЕЦ) КАК Иконка,
+	МАКСИМУМ(втПоследниеДиалогиОтправителей.Ссылка.Контакт) КАК Контакт,
+	МАКСИМУМ(втПоследниеДиалогиОтправителей.Ссылка.КонтактПредставление) КАК КонтактПредставление,
+	МАКСИМУМ(втПоследниеДиалогиОтправителей.Ссылка.ГруппаПредставление) КАК ГруппаПредставление
+ПОМЕСТИТЬ втЗаблокированныеОтправители
+ИЗ
+	РегистрСведений.CRM_ЗаблокированныеОтправителиМессенджера КАК CRM_ЗаблокированныеОтправителиМессенджера
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ втПоследниеДиалогиОтправителей КАК втПоследниеДиалогиОтправителей
+		ПО CRM_ЗаблокированныеОтправителиМессенджера.Идентификатор = втПоследниеДиалогиОтправителей.ИдентификаторБлокировки
+
+СГРУППИРОВАТЬ ПО
+	CRM_ЗаблокированныеОтправителиМессенджера.Идентификатор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втЗаблокированныеОтправители.ИдентификаторБлокировки КАК ИдентификаторБлокировки,
+	МАКСИМУМ(втЗаблокированныеОтправители.Диалог) КАК Диалог,
+	МАКСИМУМ(втЗаблокированныеОтправители.Иконка) КАК Иконка,
+	МАКСИМУМ(ВЫБОР
+			КОГДА НЕ ПартнерыКонтактнаяИнформация.Представление ЕСТЬ NULL
+				ТОГДА ПартнерыКонтактнаяИнформация.Представление
+			КОГДА НЕ КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление ЕСТЬ NULL
+				ТОГДА КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление
+			ИНАЧЕ CRM_ПотенциальныеКлиентыКонтактнаяИнформация.Представление
+		КОНЕЦ) КАК КонтактнаяИнформацияПредставление,
+	МАКСИМУМ(ВЫБОР
+			КОГДА НЕ втЗаблокированныеОтправители.Контакт В (&amp;ПустыеЗначенияКонтакта)
+				ТОГДА втЗаблокированныеОтправители.Контакт
+			КОГДА втЗаблокированныеОтправители.КонтактПредставление &lt;> &quot;&quot;
+				ТОГДА втЗаблокированныеОтправители.КонтактПредставление
+			КОГДА втЗаблокированныеОтправители.ГруппаПредставление &lt;> &quot;&quot;
+				ТОГДА втЗаблокированныеОтправители.ГруппаПредставление
+			ИНАЧЕ &quot;&lt;Нет представления контакта>&quot;
+		КОНЕЦ) КАК Контакт
+ИЗ
+	втЗаблокированныеОтправители КАК втЗаблокированныеОтправители
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Партнеры.КонтактнаяИнформация КАК ПартнерыКонтактнаяИнформация
+		ПО втЗаблокированныеОтправители.Контакт = ПартнерыКонтактнаяИнформация.Ссылка
+			И (ПартнерыКонтактнаяИнформация.Тип = &amp;ТипКИМессенджера)
+			И (ПартнерыКонтактнаяИнформация.Вид.ВидРедактирования = &quot;Диалог&quot;)
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.CRM_ПотенциальныеКлиенты.КонтактнаяИнформация КАК CRM_ПотенциальныеКлиентыКонтактнаяИнформация
+		ПО втЗаблокированныеОтправители.Контакт = CRM_ПотенциальныеКлиентыКонтактнаяИнформация.Ссылка
+			И (CRM_ПотенциальныеКлиентыКонтактнаяИнформация.Тип = &amp;ТипКИМессенджера)
+			И (CRM_ПотенциальныеКлиентыКонтактнаяИнформация.Вид.ВидРедактирования = &quot;Диалог&quot;)
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтактныеЛицаПартнеров.КонтактнаяИнформация КАК КонтактныеЛицаПартнеровКонтактнаяИнформация
+		ПО втЗаблокированныеОтправители.Контакт = КонтактныеЛицаПартнеровКонтактнаяИнформация.Ссылка
+			И (КонтактныеЛицаПартнеровКонтактнаяИнформация.Тип = &amp;ТипКИМессенджера)
+			И (КонтактныеЛицаПартнеровКонтактнаяИнформация.Вид.ВидРедактирования = &quot;Диалог&quot;)
+
+СГРУППИРОВАТЬ ПО
+	втЗаблокированныеОтправители.ИдентификаторБлокировки</queryText>
+      <dynamicDataRead>true</dynamicDataRead>
+      <autoFillAvailableFields>true</autoFillAvailableFields>
+      <customQuery>true</customQuery>
+      <autoSaveUserSettings>true</autoSaveUserSettings>
+      <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИдентификаторБлокировки</dataPath>
+        <field>ИдентификаторБлокировки</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Идентификатор блокировки</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Диалог</dataPath>
+        <field>Диалог</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Диалог</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Иконка</dataPath>
+        <field>Иконка</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Иконка</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Контакт</dataPath>
+        <field>Контакт</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Контакт</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КонтактнаяИнформацияПредставление</dataPath>
+        <field>КонтактнаяИнформацияПредставление</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Контактная информация представление</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <parameters>
+        <name>ТипКИМессенджера</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Тип КИМессенджера</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>EnumRef.ТипыКонтактнойИнформации</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>ТипМессенджера</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Тип мессенджера</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <values xsi:type="core:StringValue">
+          <value></value>
+        </values>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>ПустыеЗначенияКонтакта</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Пустые значения контакта</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>ef6eb18c-edc4-4a60-ad54-d99213952692</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+        <valueListAllowed>true</valueListAllowed>
+      </parameters>
+      <keyField>ИдентификаторБлокировки</keyField>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>СписокОтправителей</name>
+    <title>
+      <key>ru</key>
+      <value>Список отправителей</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>DynamicList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокОтправителей.Группа</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокОтправителей.ИдентификаторПользователя</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокОтправителей.КонтактДиалога</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокОтправителей.ПоследнийДиалог</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокОтправителей.Диалог</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокОтправителей.ИдентификаторБлокировки</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокОтправителей.Контакт</segments>
+    </notDefaultUseAlwaysAttributes>
+    <extInfo xsi:type="form:DynamicListExtInfo">
+      <queryText>ВЫБРАТЬ
+	ВЫБОР
+		КОГДА CRM_Диалоги.ID_Пользователя = &quot;&quot;
+			ТОГДА CRM_Диалоги.Группа
+		КОГДА CRM_Диалоги.ID_Пользователя &lt;> CRM_Диалоги.Группа
+			ТОГДА CRM_Диалоги.ID_Пользователя
+		ИНАЧЕ CRM_Диалоги.Группа
+	КОНЕЦ КАК ИдентификаторБлокировки,
+	МАКСИМУМ(CRM_Диалоги.Ссылка) КАК Диалог,
+	МАКСИМУМ(ВЫБОР
+			КОГДА НЕ CRM_Диалоги.Контакт В (&amp;ПустыеЗначенияКонтакта)
+				ТОГДА CRM_Диалоги.Контакт
+			КОГДА CRM_Диалоги.КонтактПредставление &lt;> &quot;&quot;
+				ТОГДА CRM_Диалоги.КонтактПредставление
+			КОГДА CRM_Диалоги.ГруппаПредставление &lt;> &quot;&quot;
+				ТОГДА CRM_Диалоги.ГруппаПредставление
+			ИНАЧЕ &quot;&lt;Нет представления контакта>&quot;
+		КОНЕЦ) КАК Контакт,
+	МАКСИМУМ(ВЫБОР
+			КОГДА CRM_Диалоги.УчетнаяЗапись.ТипМессенджера = &quot;ВКонтакте&quot;
+				ТОГДА 1
+			КОГДА CRM_Диалоги.УчетнаяЗапись.ТипМессенджера = &quot;InstagramDirect&quot;
+				ТОГДА 2
+			КОГДА CRM_Диалоги.УчетнаяЗапись.ТипМессенджера = &quot;Telegram&quot;
+					ИЛИ CRM_Диалоги.УчетнаяЗапись.ТипМессенджера = &quot;TelegramBot&quot;
+				ТОГДА 3
+			КОГДА CRM_Диалоги.УчетнаяЗапись.ТипМессенджера = &quot;WhatsApp&quot;
+				ТОГДА 4
+			КОГДА CRM_Диалоги.УчетнаяЗапись.ТипМессенджера = &quot;Facebook&quot;
+				ТОГДА 5
+			КОГДА CRM_Диалоги.УчетнаяЗапись.ТипМессенджера = &quot;Viber&quot;
+				ТОГДА 6
+			КОГДА CRM_Диалоги.УчетнаяЗапись.ТипМессенджера = &quot;Instagram&quot;
+				ТОГДА 7
+			КОГДА CRM_Диалоги.УчетнаяЗапись.ТипМессенджера = &quot;ВКонтактеКомментарии&quot;
+				ТОГДА 8
+			КОГДА CRM_Диалоги.УчетнаяЗапись.ТипМессенджера = &quot;СистемаВзаимодействия&quot;
+				ТОГДА 9
+			ИНАЧЕ 0
+		КОНЕЦ) КАК Иконка,
+	МАКСИМУМ(ВЫБОР
+			КОГДА НЕ ПартнерыКонтактнаяИнформация.Представление ЕСТЬ NULL
+				ТОГДА ПартнерыКонтактнаяИнформация.Представление
+			КОГДА НЕ КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление ЕСТЬ NULL
+				ТОГДА КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление
+			ИНАЧЕ CRM_ПотенциальныеКлиентыКонтактнаяИнформация.Представление
+		КОНЕЦ) КАК КонтактнаяИнформацияПредставление
+ИЗ
+	Справочник.CRM_Диалоги КАК CRM_Диалоги
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Партнеры.КонтактнаяИнформация КАК ПартнерыКонтактнаяИнформация
+		ПО CRM_Диалоги.Контакт = ПартнерыКонтактнаяИнформация.Ссылка
+			И (ПартнерыКонтактнаяИнформация.Тип = &amp;ТипКИМессенджера)
+			И (ПартнерыКонтактнаяИнформация.Вид.ВидРедактирования = &quot;Диалог&quot;)
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.CRM_ПотенциальныеКлиенты.КонтактнаяИнформация КАК CRM_ПотенциальныеКлиентыКонтактнаяИнформация
+		ПО CRM_Диалоги.Контакт = CRM_ПотенциальныеКлиентыКонтактнаяИнформация.Ссылка
+			И (CRM_ПотенциальныеКлиентыКонтактнаяИнформация.Тип = &amp;ТипКИМессенджера)
+			И (CRM_ПотенциальныеКлиентыКонтактнаяИнформация.Вид.ВидРедактирования = &quot;Диалог&quot;)
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтактныеЛицаПартнеров.КонтактнаяИнформация КАК КонтактныеЛицаПартнеровКонтактнаяИнформация
+		ПО CRM_Диалоги.Контакт = КонтактныеЛицаПартнеровКонтактнаяИнформация.Ссылка
+			И (КонтактныеЛицаПартнеровКонтактнаяИнформация.Тип = &amp;ТипКИМессенджера)
+			И (КонтактныеЛицаПартнеровКонтактнаяИнформация.Вид.ВидРедактирования = &quot;Диалог&quot;)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.CRM_ЗаблокированныеОтправителиМессенджера КАК CRM_ЗаблокированныеОтправителиМессенджера
+		ПО (CRM_ЗаблокированныеОтправителиМессенджера.Идентификатор = ВЫБОР
+				КОГДА CRM_Диалоги.ID_Пользователя = &quot;&quot;
+					ТОГДА CRM_Диалоги.Группа
+				КОГДА CRM_Диалоги.ID_Пользователя &lt;> CRM_Диалоги.Группа
+					ТОГДА CRM_Диалоги.ID_Пользователя
+				ИНАЧЕ CRM_Диалоги.Группа
+			КОНЕЦ)
+ГДЕ
+	CRM_Диалоги.УчетнаяЗапись.ТипМессенджера В(&amp;ТипМессенджера)
+	И CRM_ЗаблокированныеОтправителиМессенджера.Идентификатор ЕСТЬ NULL
+
+СГРУППИРОВАТЬ ПО
+	ВЫБОР
+		КОГДА CRM_Диалоги.ID_Пользователя = &quot;&quot;
+			ТОГДА CRM_Диалоги.Группа
+		КОГДА CRM_Диалоги.ID_Пользователя &lt;> CRM_Диалоги.Группа
+			ТОГДА CRM_Диалоги.ID_Пользователя
+		ИНАЧЕ CRM_Диалоги.Группа
+	КОНЕЦ</queryText>
+      <dynamicDataRead>true</dynamicDataRead>
+      <autoFillAvailableFields>true</autoFillAvailableFields>
+      <customQuery>true</customQuery>
+      <autoSaveUserSettings>true</autoSaveUserSettings>
+      <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИдентификаторБлокировки</dataPath>
+        <field>ИдентификаторБлокировки</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Идентификатор блокировки</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Контакт</dataPath>
+        <field>Контакт</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Иконка</dataPath>
+        <field>Иконка</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Иконка</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Диалог</dataPath>
+        <field>Диалог</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Диалог</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КонтактнаяИнформацияПредставление</dataPath>
+        <field>КонтактнаяИнформацияПредставление</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Контактная информация представление</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <parameters>
+        <name>ТипМессенджера</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Тип мессенджера</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers>
+            <length>50</length>
+          </stringQualifiers>
+        </valueType>
+        <values xsi:type="core:StringValue">
+          <value></value>
+        </values>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>ТипКИМессенджера</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Тип КИМессенджера</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>EnumRef.ТипыКонтактнойИнформации</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+      </parameters>
+      <parameters>
+        <name>ПустыеЗначенияКонтакта</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Пустые значения контакта</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>ef6eb18c-edc4-4a60-ad54-d99213952692</types>
+        </valueType>
+        <values xsi:type="core:UndefinedValue"/>
+        <useRestriction>true</useRestriction>
+        <valueListAllowed>true</valueListAllowed>
+      </parameters>
+      <keyField>ИдентификаторБлокировки</keyField>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>ФлагИзмененияЗаблокированныхОтправителей</name>
+    <title>
+      <key>ru</key>
+      <value>Флаг изменения заблокированных отправителей</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>ДобавитьБлокировкуОтправителя</name>
+    <title>
+      <key>ru</key>
+      <value>Добавить блокировку отправителя(-ей)</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Добавить блокировку отправителя(-ей)</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.CRM_Влево</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ДобавитьБлокировкуОтправителя</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>УбратьБлокировкуОтправителя</name>
+    <title>
+      <key>ru</key>
+      <value>Убрать блокировку отправителя(-ей)</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Убрать блокировку отправителя(-ей)</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.CRM_Вправо</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>УбратьБлокировкуОтправителя</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f53f87f8-a8b7-4378-b798-2c773069b257">
+  <name>CRM_ЯМ_GigaChat</name>
+  <synonym>
+    <key>ru</key>
+    <value>GigaChat</value>
+  </synonym>
+</mdclass:CommonPicture>

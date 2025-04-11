@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6caa9f82-0acb-4166-a58d-a42323b58de6">
+  <producedTypes>
+    <refType typeId="77c9d728-7b60-49be-b85b-43b6a2d5ce7f" valueTypeId="8872de97-d655-476f-95c4-3d0e8dbf7e00"/>
+    <listType typeId="b3511f9b-505c-4023-85bb-5470908cc8d4" valueTypeId="20364a27-9b62-4692-ad74-b14690068dcf"/>
+    <managerType typeId="55ef2176-990c-4e71-80d6-0987463ec2af" valueTypeId="f1493e3a-520c-4a10-833f-8c39a688565e"/>
+  </producedTypes>
+  <name>cbr_ТипОценкиЧасов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Cbr тип оценки часов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="38dfbac9-479a-4589-976f-0be8eed80e22">
+    <name>Рамочная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рамочная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="da17f625-d379-4cd1-9422-2117f403d8a6">
+    <name>Точная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="420c1dbf-332a-4b61-83eb-ce335e000128">
+    <name>ПоФакту</name>
+    <synonym>
+      <key>ru</key>
+      <value>По факту</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

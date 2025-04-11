@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormField">
+    <name>Код</name>
+    <id>1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Code</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>КодРасширеннаяПодсказка</name>
+      <id>3</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>КодКонтекстноеМеню</name>
+      <id>2</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>Наименование</name>
+    <id>4</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Description</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>НаименованиеРасширеннаяПодсказка</name>
+      <id>6</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>НаименованиеКонтекстноеМеню</name>
+      <id>5</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>AppID</name>
+    <id>7</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.AppID</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>AppIDРасширеннаяПодсказка</name>
+      <id>9</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>AppIDКонтекстноеМеню</name>
+      <id>8</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>Секрет</name>
+    <id>16</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Секрет</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>СекретРасширеннаяПодсказка</name>
+      <id>18</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>СекретКонтекстноеМеню</name>
+      <id>17</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <wrap>true</wrap>
+      <passwordMode>true</passwordMode>
+      <autoMarkIncomplete>true</autoMarkIncomplete>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>Сервис</name>
+    <id>13</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Сервис</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>СервисРасширеннаяПодсказка</name>
+      <id>15</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>СервисКонтекстноеМеню</name>
+      <id>14</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ТестовыйРежим</name>
+    <id>21</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ТестовыйРежим</segments>
+    </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>ТестовыйРежимПриИзменении</name>
+    </handlers>
+    <extendedTooltip>
+      <name>ТестовыйРежимРасширеннаяПодсказка</name>
+      <id>23</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ТестовыйРежимКонтекстноеМеню</name>
+      <id>22</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>CheckBoxField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>ОписаниеТребованийКРаботеТестовогоРежима</name>
+    <id>27</id>
+    <title>
+      <key>ru</key>
+      <value>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>Пакет&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>OpenSSL&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>используется&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>при&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>выпуске&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>закрытого&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>и&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>открытого&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>ключей&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>и &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>подписи&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>запросов,&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> при&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>обмене&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>с&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>сервисом&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>
+&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #1c55ae>&lt;link https://docs.saltedge.com/general/v5/#signature>Инструкция&lt;/>&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #1c55ae>&lt;link https://docs.saltedge.com/general/v5/#signature> &lt;/>&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #1c55ae>&lt;link https://docs.saltedge.com/general/v5/#signature>по&lt;/>&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #1c55ae>&lt;link https://docs.saltedge.com/general/v5/#signature> &lt;/>&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #1c55ae>&lt;link https://docs.saltedge.com/general/v5/#signature>генерации&lt;/>&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #1c55ae>&lt;link https://docs.saltedge.com/general/v5/#signature> &lt;/>&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #1c55ae>&lt;link https://docs.saltedge.com/general/v5/#signature>ключей&lt;/>&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 12>&lt;color #1c55ae>
+&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>1.&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>Установите&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>пакет&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>OpenSSL&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>и&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> укажите &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>путь&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> в &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>переменных&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> среды&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>.&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>
+&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>2.&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>Сгенерируйте&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>ключи.&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>Путь&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>к&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>закрытому&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>ключу&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>укажите&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>на&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>этой&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>форме.&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>Текст&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>открытого&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>ключа&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>укажите&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>на&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>сайте&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>сервиса.&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>(Settings/Keys&amp;secrets/edit&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>key/Public&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>key).&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>
+&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>Примечание:&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>В&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>пути&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>к&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>базе&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>не&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>должно&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>быть&lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333> &lt;/>&lt;/>&lt;/>&lt;font Almarai, Arial, sans-serif>&lt;fontsize 10>&lt;color #333333>пробелов&lt;/>&lt;/>&lt;/></value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ОписаниеТребованийКРаботеТестовогоРежимаРасширеннаяПодсказка</name>
+      <id>29</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ОписаниеТребованийКРаботеТестовогоРежимаКонтекстноеМеню</name>
+      <id>28</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <formatted>true</formatted>
+    <type>Label</type>
+    <maxWidth>60</maxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <horizontalStretch>true</horizontalStretch>
+    <verticalStretch>false</verticalStretch>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>КаталогХраненияКлючей</name>
+    <id>30</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.КаталогХраненияКлючей</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>КаталогХраненияКлючейРасширеннаяПодсказка</name>
+      <id>32</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>КаталогХраненияКлючейКонтекстноеМеню</name>
+      <id>31</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Button">
+    <name>ЗагрузитьКлюч</name>
+    <id>33</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ЗагрузитьКлючРасширеннаяПодсказка</name>
+      <id>34</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualButton</type>
+    <commandName>Form.Command.ЗагрузитьКлюч</commandName>
+    <representation>Auto</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ПутьКСертификату</name>
+    <id>24</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ПутьКСертификату</segments>
+    </dataPath>
+    <toolTipRepresentation>ShowAuto</toolTipRepresentation>
+    <extendedTooltip>
+      <name>ПутьКСертификатуРасширеннаяПодсказка</name>
+      <id>26</id>
+      <title>
+        <key>ru</key>
+        <value>Выберите закрытый ключ. Файл с расширением .pem</value>
+      </title>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ПутьКСертификатуКонтекстноеМеню</name>
+      <id>25</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <handlers>
+        <event>StartChoice</event>
+        <name>ПутьКСертификатуНачалоВыбора</name>
+      </handlers>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <choiceButton>true</choiceButton>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>ФормаПроверитьПодключение</name>
+      <id>19</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаПроверитьПодключениеРасширеннаяПодсказка</name>
+        <id>20</id>
+        <title>
+          <key>ru</key>
+          <value>Проверить настройки подключения провайдера BankFeeds</value>
+        </title>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.ПроверитьПодключение</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <toolTipRepresentation>Balloon</toolTipRepresentation>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>ПриОткрытии</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <handlers>
+    <event>FillCheckProcessingAtServer</event>
+    <name>ОбработкаПроверкиЗаполненияНаСервере</name>
+  </handlers>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Объект</name>
+    <id>1</id>
+    <valueType>
+      <types>CatalogObject.ИнтеграцияBankFeeds</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+    <savedData>true</savedData>
+  </attributes>
+  <formCommands>
+    <name>ПроверитьПодключение</name>
+    <title>
+      <key>ru</key>
+      <value>Проверить подключение</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Проверить подключение</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ПроверитьПодключение</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ЗагрузитьКлюч</name>
+    <title>
+      <key>ru</key>
+      <value>Загрузить ключ на сервер с клиента</value>
+    </title>
+    <id>2</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЗагрузитьКлюч</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:CatalogFormExtInfo">
+    <handlers>
+      <event>OnWriteAtServer</event>
+      <name>ПриЗаписиНаСервере</name>
+    </handlers>
+  </extInfo>
+</form:Form>

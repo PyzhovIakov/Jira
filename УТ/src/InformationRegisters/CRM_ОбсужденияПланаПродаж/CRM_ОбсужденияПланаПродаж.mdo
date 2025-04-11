@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a04198f-a5ef-4ead-b15a-f81acec54689">
+  <producedTypes>
+    <selectionType typeId="60d9944f-0b86-4bcc-836d-66ca2d1f0a19" valueTypeId="36415e5f-b6da-4602-b0eb-ef5f33dcf376"/>
+    <listType typeId="f16f8a5c-c277-4b97-bb5e-f26b606eb701" valueTypeId="bbed36d5-7888-47b6-9eba-295bfd1a34cb"/>
+    <managerType typeId="faf622d7-0543-4445-908c-5f6e8eb3450e" valueTypeId="1260ea5d-b7af-4fd3-bab9-7e9253bb8ca7"/>
+    <recordSetType typeId="c9d57532-ba84-4422-8cb8-b86c9b4aa774" valueTypeId="90e405b1-c5a4-43ec-8680-ed409cb8fc45"/>
+    <recordKeyType typeId="ee8f02cb-c913-484d-845a-f297920b253e" valueTypeId="442d1704-577e-44d3-92ac-94eb8f69cb48"/>
+    <recordType typeId="7de96967-7239-4b3c-bfed-5599651d58eb" valueTypeId="6396dcbb-439e-467d-bce6-798617eb249c"/>
+    <recordManagerType typeId="f1c3fbe8-be18-4ee0-9217-5fddc6e05b83" valueTypeId="4885fc7b-a29e-4d37-9d4d-dae6c3e78133"/>
+  </producedTypes>
+  <name>CRM_ОбсужденияПланаПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обсуждения плана продаж (CRM)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Обсуждение плана продаж</value>
+  </recordPresentation>
+  <dimensions uuid="b243bd03-80d6-482d-a9d4-ddcaeecf2d97">
+    <name>ПланПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>План продаж</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ПланПродаж</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="081d75a3-5a4f-44df-92d5-cf7f90a75338">
+    <name>ПользовательРуководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь руководитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="bcbbc4e4-9a23-40b6-b299-e61c0d463c66">
+    <name>ПользовательПодчиненный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь подчиненный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

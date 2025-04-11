@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f901ab9-1e30-46d9-b18b-1715412568da">
+  <producedTypes>
+    <refType typeId="bc281533-fc06-42ce-a931-452c0dc37ff1" valueTypeId="91211f5c-f84a-4b51-94f3-af1f3321478a"/>
+    <listType typeId="c462e19d-5dc9-4542-89fc-e408a44a5dbe" valueTypeId="b1fd3e37-4d02-4838-859e-277d070fe5a4"/>
+    <managerType typeId="404229ae-4075-4b5a-9a3c-3b7f21f6cffb" valueTypeId="cce7b943-4bed-44d6-a93a-834757c4f28d"/>
+  </producedTypes>
+  <name>CRM_ВариантыОформленийМессенджера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты оформления мессенджера (CRM)</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2f7456dd-c515-4897-9756-e676e0c6391d">
+    <name>Стандартная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стандартная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="09d51aaa-0e2c-4cf4-ba21-4cd2c149dbdb">
+    <name>АкваСинийГрадиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аква синий градиент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0b43b754-30a1-44a6-ba6d-a8bff1a84669">
+    <name>АквамариновыйГрадиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аквамариновый градиент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0876303a-db10-4b26-91a6-e81bc7de4174">
+    <name>ЛедянойБриз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ледяной бриз</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fa3ea882-da96-45b9-9cc1-c4f56efafec4">
+    <name>МорозноеУтро</name>
+    <synonym>
+      <key>ru</key>
+      <value>Морозное утро</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8c2fe91d-e78b-4e14-aab7-5f7ea99fa70c">
+    <name>ЛегкийТуман</name>
+    <synonym>
+      <key>ru</key>
+      <value>Легкий туман</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9e5bfdfe-925c-4d09-8515-f0cd752f20f1">
+    <name>ГлубокийОкеан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Глубокий океан</value>
+    </synonym>
+  </enumValues>
+  <templates uuid="39f1bc55-91d7-4108-9f35-187195e6a986">
+    <name>Стандартная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стандартная</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="14659ecb-39de-4538-8168-57bb534eb3be">
+    <name>АкваСинийГрадиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аква синий градиент</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="7d8552f9-8c80-4521-a639-d0c736f93dce">
+    <name>АквамариновыйГрадиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аквамариновый градиент</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="c518bbf6-03ac-4f0e-9493-0d1449d252f0">
+    <name>ЛедянойБриз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ледяной бриз</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="b9179dfa-5f53-4566-bc08-a0fc717fc496">
+    <name>МорозноеУтро</name>
+    <synonym>
+      <key>ru</key>
+      <value>Морозное утро</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="ed773141-4161-4331-b54b-944ce6332540">
+    <name>ЛегкийТуман</name>
+    <synonym>
+      <key>ru</key>
+      <value>Легкий туман</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="93d2fa0d-2ccc-4bd8-ad5f-6e50e85b458d">
+    <name>ГлубокийОкеан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Глубокий океан</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:Enum>

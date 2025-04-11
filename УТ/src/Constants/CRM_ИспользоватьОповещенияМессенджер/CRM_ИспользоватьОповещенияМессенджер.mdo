@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb93ed48-31ef-475e-97dd-666a996243de">
+  <producedTypes>
+    <managerType typeId="3dacb40a-3d2e-452d-afc8-35789ddc71e6" valueTypeId="1b5e63a2-93d7-4e7b-ac4b-ab83e8db18f0"/>
+    <valueManagerType typeId="8d7c2530-828a-425b-be11-bac3673fc838" valueTypeId="5eb21602-4a80-4309-afe2-a6cc1c3da404"/>
+    <valueKeyType typeId="a4e6a0a9-8216-4903-8397-40a1854f732b" valueTypeId="542b7249-f4a7-403a-814f-a3c015fcc95e"/>
+  </producedTypes>
+  <name>CRM_ИспользоватьОповещенияМессенджер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать оповещения через мессенджер</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

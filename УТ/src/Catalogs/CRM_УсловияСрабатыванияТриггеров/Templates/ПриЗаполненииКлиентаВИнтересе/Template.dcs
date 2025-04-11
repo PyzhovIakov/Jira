@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ответственный</dataPath>
+			<field>Ответственный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номер</dataPath>
+			<field>Номер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПотенциальныйКлиент</dataPath>
+			<field>ПотенциальныйКлиент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияДанных</dataPath>
+			<field>ВерсияДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проведен</dataPath>
+			<field>Проведен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокРешения</dataPath>
+			<field>СрокРешения</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>CRM_Теги</dataPath>
+			<field>CRM_Теги</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДействияСИнтересом.Дата</dataPath>
+			<field>ДействияСИнтересом.Дата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Кратность</dataPath>
+			<field>Кратность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактноеЛицо</dataPath>
+			<field>КонтактноеЛицо</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСкидкиНаценки</dataPath>
+			<field>ВидСкидкиНаценки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Автор</dataPath>
+			<field>Автор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВероятностьСделки</dataPath>
+			<field>ВероятностьСделки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Соисполнители.Ссылка</dataPath>
+			<field>Соисполнители.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Теги.НомерСтроки</dataPath>
+			<field>CRM_Теги.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЦен</dataPath>
+			<field>ВидЦен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СостояниеИнтересаДнейСНачалаГода</dataPath>
+			<field>СостояниеИнтересаДнейСНачалаГода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеРеквизиты.Значение</dataPath>
+			<field>ДополнительныеРеквизиты.Значение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаЗакрытия</dataPath>
+			<field>ДатаЗакрытия</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>Соисполнители</dataPath>
+			<field>Соисполнители</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Договор</dataPath>
+			<field>Договор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаВключаетНДС</dataPath>
+			<field>ЦенаВключаетНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументОснование</dataPath>
+			<field>ДокументОснование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникОбращения</dataPath>
+			<field>ИсточникОбращения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПричинаОтказа</dataPath>
+			<field>ПричинаОтказа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Завершен</dataPath>
+			<field>Завершен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СоисполнителиПредставление</dataPath>
+			<field>СоисполнителиПредставление</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Избранный</dataPath>
+			<field>Избранный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Курс</dataPath>
+			<field>Курс</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОжидаемаяВыручка</dataPath>
+			<field>ОжидаемаяВыручка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Описание</dataPath>
+			<field>Описание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Тема</dataPath>
+			<field>Тема</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньПоддержки</dataPath>
+			<field>УровеньПоддержки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Офис</dataPath>
+			<field>Офис</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>ДополнительныеРеквизиты</dataPath>
+			<field>ДополнительныеРеквизиты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партнер</dataPath>
+			<field>Партнер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Теги.Тег</dataPath>
+			<field>CRM_Теги.Тег</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Отгружено</dataPath>
+			<field>Товары.Отгружено</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СостояниеИнтереса</dataPath>
+			<field>СостояниеИнтереса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипУслуги</dataPath>
+			<field>ТипУслуги</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипОбращения</dataPath>
+			<field>ТипОбращения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеРеквизиты.НомерСтроки</dataPath>
+			<field>ДополнительныеРеквизиты.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокРеакции</dataPath>
+			<field>СрокРеакции</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПричинаОтказаКомментарий</dataPath>
+			<field>ПричинаОтказаКомментарий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОжидаемаяДатаПродажи</dataPath>
+			<field>ОжидаемаяДатаПродажи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РучнойВводДатыПродажи</dataPath>
+			<field>РучнойВводДатыПродажи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КаналОбращения</dataPath>
+			<field>КаналОбращения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтоПоддержка</dataPath>
+			<field>ЭтоПоддержка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СостояниеИнтересаДатаНачала</dataPath>
+			<field>СостояниеИнтересаДатаНачала</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.СтавкаНДС</dataPath>
+			<field>Товары.СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Ссылка</dataPath>
+			<field>Товары.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СостояниеИнтересаДнейДоКонцаГода</dataPath>
+			<field>СостояниеИнтересаДнейДоКонцаГода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Теги.Ссылка</dataPath>
+			<field>CRM_Теги.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеРеквизиты.Ссылка</dataPath>
+			<field>ДополнительныеРеквизиты.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеРеквизиты.Свойство</dataPath>
+			<field>ДополнительныеРеквизиты.Свойство</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>ДействияСИнтересом</dataPath>
+			<field>ДействияСИнтересом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеРеквизиты.ТекстоваяСтрока</dataPath>
+			<field>ДополнительныеРеквизиты.ТекстоваяСтрока</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.НомерСтроки</dataPath>
+			<field>Товары.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Всего</dataPath>
+			<field>Товары.Всего</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.ЕдиницаИзмерения</dataPath>
+			<field>Товары.ЕдиницаИзмерения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Количество</dataPath>
+			<field>Товары.Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Номенклатура</dataPath>
+			<field>Товары.Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.ОсталосьОтгрузить</dataPath>
+			<field>Товары.ОсталосьОтгрузить</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.ПроцентРучнойСкидки</dataPath>
+			<field>Товары.ПроцентРучнойСкидки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Содержание</dataPath>
+			<field>Товары.Содержание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Сумма</dataPath>
+			<field>Товары.Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.СуммаНДС</dataPath>
+			<field>Товары.СуммаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Характеристика</dataPath>
+			<field>Товары.Характеристика</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Цена</dataPath>
+			<field>Товары.Цена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.КлючСтроки</dataPath>
+			<field>Товары.КлючСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>Товары</dataPath>
+			<field>Товары</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контакты.Ссылка</dataPath>
+			<field>Контакты.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контакты.НомерСтроки</dataPath>
+			<field>Контакты.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контакты.Контакт</dataPath>
+			<field>Контакты.Контакт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контакты.Роль</dataPath>
+			<field>Контакты.Роль</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>Контакты</dataPath>
+			<field>Контакты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧекЛист.Ссылка</dataPath>
+			<field>ЧекЛист.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧекЛист.НомерСтроки</dataPath>
+			<field>ЧекЛист.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧекЛист.ОписаниеЗадачи</dataPath>
+			<field>ЧекЛист.ОписаниеЗадачи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧекЛист.Выполнено</dataPath>
+			<field>ЧекЛист.Выполнено</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧекЛист.СостояниеИнтереса</dataPath>
+			<field>ЧекЛист.СостояниеИнтереса</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>ЧекЛист</dataPath>
+			<field>ЧекЛист</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПотенциальныеКлиенты.Ссылка</dataPath>
+			<field>ПотенциальныеКлиенты.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПотенциальныеКлиенты.НомерСтроки</dataPath>
+			<field>ПотенциальныеКлиенты.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПотенциальныеКлиенты.ПотенциальныйКлиент</dataPath>
+			<field>ПотенциальныеКлиенты.ПотенциальныйКлиент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПотенциальныеКлиенты.Порядок</dataPath>
+			<field>ПотенциальныеКлиенты.Порядок</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>ПотенциальныеКлиенты</dataPath>
+			<field>ПотенциальныеКлиенты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Соисполнители.НомерСтроки</dataPath>
+			<field>Соисполнители.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Соисполнители.Соисполнитель</dataPath>
+			<field>Соисполнители.Соисполнитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДействияСИнтересом.Ссылка</dataPath>
+			<field>ДействияСИнтересом.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДействияСИнтересом.НомерСтроки</dataPath>
+			<field>ДействияСИнтересом.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДействияСИнтересом.Действие</dataPath>
+			<field>ДействияСИнтересом.Действие</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДействияСИнтересом.Пользователь</dataPath>
+			<field>ДействияСИнтересом.Пользователь</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДействияСИнтересом.ОбъектДействия</dataPath>
+			<field>ДействияСИнтересом.ОбъектДействия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДействияСИнтересом.Описание</dataPath>
+			<field>ДействияСИнтересом.Описание</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ *
+ИЗ Документ.CRM_Интерес КАК CRM_Интерес
+ГДЕ
+	CRM_Интерес.Ссылка = &amp;Ссылка 
+	И &amp;ПредыдущийПартнер = ЗНАЧЕНИЕ(Справочник.Партнеры.ПустаяСсылка)
+	И CRM_Интерес.Партнер &lt;&gt; ЗНАЧЕНИЕ(Справочник.Партнеры.ПустаяСсылка)</query>
+	</dataSet>
+	<parameter>
+		<name>Ссылка</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ссылка</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.CRM_Интерес</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПредыдущийПартнер</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Предыдущий партнер</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Партнеры</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+	</settingsVariant>
+</DataCompositionSchema>

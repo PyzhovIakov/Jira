@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="642faebd-5df3-47b8-9d47-baf66d2052ad">
+  <producedTypes>
+    <managerType typeId="1a9c5e4b-c062-4fd8-b6f0-8cbb76d6c4db" valueTypeId="22b574cc-bb95-40a1-b35b-fac661e82a74"/>
+    <valueManagerType typeId="a0b9c761-266f-415a-aa6d-cd7e4087c8e4" valueTypeId="6408d3fc-8d99-417a-ad32-c90134d47fb4"/>
+    <valueKeyType typeId="88d11e37-d9dd-405e-ac27-41d15c74bbee" valueTypeId="c06f4f7e-0d72-4963-a2d3-3460d130d2c7"/>
+  </producedTypes>
+  <name>CRM_РассчитыватьВажностьИСрочностьЗадачАвтоматически</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассчитывать важность и срочность задач автоматически</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

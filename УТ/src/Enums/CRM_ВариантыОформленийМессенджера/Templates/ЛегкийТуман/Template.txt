@@ -1,0 +1,38 @@
+#messages {
+	background: #F5F5F5;
+}
+
+.chat__message {
+	background: #ffffff;
+}
+
+.chat__item--responder .chat__message,
+.chat__item--responder .chat__favMessage {
+	background: #CFEFFF;
+}
+
+.action_button,
+.scheduled-message__cancel {
+	color: #00a0f2;
+}
+
+.chat__info {
+	background: rgba(3, 28, 65, 0.3);
+	color: #ffffff;
+}
+
+.chat__info-link {
+	color: #ffffff;
+}
+
+.quoted__message {
+	border-color: #00A0F2;
+}
+
+#dialog::-webkit-scrollbar-thumb {
+	background-color: #55C3FC;
+}
+
+#dialog::-webkit-scrollbar-thumb:hover {
+	background-color: #21b3fc;
+}

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:Decoration">
+    <name>ДекорацияGoogleСинхронизация</name>
+    <id>1</id>
+    <title>
+      <key>ru</key>
+      <value>Интеграция 1C:CRM с Google Apps позволит легко синхронизировать данные с приложениями Google</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Integration of 1C: CRM with Google Apps will allow you to easily synchronize data with Google applications</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ДекорацияGoogleСинхронизацияРасширеннаяПодсказка</name>
+      <id>3</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ДекорацияGoogleСинхронизацияКонтекстноеМеню</name>
+      <id>2</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <width>80</width>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <font xsi:type="core:FontRef">
+      <font>System.DefaultGUIFont</font>
+      <bold>true</bold>
+      <italic>false</italic>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+    </font>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Center</horizontalAlign>
+      <verticalAlign>Center</verticalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>ДекорацияGoogleМодуль</name>
+    <id>4</id>
+    <title>
+      <key>ru</key>
+      <value>
+Больше будет не нужно  дублировать встречи календаря и скачивать файлы на компьютер, вручную загружая их в CRM-систему. Вся интеграция и синхронизация 1C:CRM и GoogleApps происходит автоматически (в обе стороны). 
+В ближайшее время будет выпущена интегарция с облачным диском Google Drive и Google Docs</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>
+You will no longer need to duplicate calendar mettings and download files to compute, manually downloading them to the CRM system. All integration and synchronization of 1C:CRM and GoogleApps occurs automatically (in both directions).
+In near future integration with the cloud drive Google Drive and Google Docs will be released</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ДекорацияGoogleМодульРасширеннаяПодсказка</name>
+      <id>6</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ДекорацияGoogleМодульКонтекстноеМеню</name>
+      <id>5</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <width>80</width>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <font xsi:type="core:FontRef">
+      <font>System.DefaultGUIFont</font>
+      <bold>false</bold>
+      <italic>false</italic>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+    </font>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Center</horizontalAlign>
+      <verticalAlign>Center</verticalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>ДекорацияGoogleНастройка</name>
+    <id>7</id>
+    <title>
+      <key>ru</key>
+      <value>Как настроить синхронизацию с Google календарями описано в разделе решения &quot;Методики - Интеграции - Google календарь&quot;</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>How to set up synchronization with Google calendars is described in the solution section &quot;Techniques - Integration - Google Calendar&quot;</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ДекорацияGoogleНастройкаРасширеннаяПодсказка</name>
+      <id>9</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ДекорацияGoogleНастройкаКонтекстноеМеню</name>
+      <id>8</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <width>80</width>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <font xsi:type="core:FontRef">
+      <font>System.DefaultGUIFont</font>
+      <bold>true</bold>
+      <italic>false</italic>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+    </font>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Center</horizontalAlign>
+      <verticalAlign>Center</verticalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>ДекорацияGoogleПодробнаяИнформация</name>
+    <id>10</id>
+    <title>
+      <key>ru</key>
+      <value>Узнать больше, что позволяет Google Apps</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Learn more about Google Apps</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ДекорацияGoogleПодробнаяИнформацияРасширеннаяПодсказка</name>
+      <id>12</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ДекорацияGoogleПодробнаяИнформацияКонтекстноеМеню</name>
+      <id>11</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <width>80</width>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <font xsi:type="core:FontRef">
+      <font>System.DefaultGUIFont</font>
+      <height>10.0</height>
+    </font>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <handlers>
+        <event>Click</event>
+        <name>ДекорацияGoogleПодробнаяИнформацияНажатие</name>
+      </handlers>
+      <hyperlink>true</hyperlink>
+      <horizontalAlign>Center</horizontalAlign>
+      <verticalAlign>Center</verticalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>ДекорацияGooglreНастройкаПодключения</name>
+    <id>13</id>
+    <title>
+      <key>ru</key>
+      <value>Настройка подключения выполняется в разделе «Общие настройки» - «Настройка системы» - «Сторонние сервисы».</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>The connection is configured in the section &quot;General settings&quot; - &quot;System settings&quot; - &quot;Third-party services&quot;.</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ДекорацияGooglreНастройкаПодключенияРасширеннаяПодсказка</name>
+      <id>15</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ДекорацияGooglreНастройкаПодключенияКонтекстноеМеню</name>
+      <id>14</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <width>80</width>
+    <autoMaxWidth>true</autoMaxWidth>
+    <height>2</height>
+    <autoMaxHeight>true</autoMaxHeight>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <hyperlink>true</hyperlink>
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>ДекорацияGoogleОбщая</name>
+    <id>16</id>
+    <title>
+      <key>ru</key>
+      <value>Интеграция с Google календарем не подключена</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Google Calendar integration is not enabled</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ДекорацияGoogleОбщаяРасширеннаяПодсказка</name>
+      <id>18</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ДекорацияGoogleОбщаяКонтекстноеМеню</name>
+      <id>17</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <width>80</width>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <textColor xsi:type="core:ColorRef">
+      <color>Style.ПоясняющийОшибкуТекст</color>
+    </textColor>
+    <font xsi:type="core:FontRef">
+      <font>System.DefaultGUIFont</font>
+      <height>12.0</height>
+      <bold>true</bold>
+      <italic>false</italic>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+    </font>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Center</horizontalAlign>
+      <verticalAlign>Center</verticalAlign>
+    </extInfo>
+  </items>
+  <commandBarLocation>None</commandBarLocation>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Объект</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.CRM_СообщенияОшибкиПодключения</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+  </attributes>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

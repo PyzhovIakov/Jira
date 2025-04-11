@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1e4b979-6931-410d-9a91-c5a31b92f87b">
+  <name>CRM_ЯМ_Неформальнее</name>
+  <synonym>
+    <key>ru</key>
+    <value>Неформальнее</value>
+  </synonym>
+</mdclass:CommonPicture>

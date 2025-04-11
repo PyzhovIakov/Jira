@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SessionParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc05d599-259b-4af7-aed7-706b16ff977e">
+  <name>CRM_ИдентификаторыНапоминаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Идентификаторы напоминаний</value>
+  </synonym>
+  <type>
+    <types>FixedArray</types>
+  </type>
+</mdclass:SessionParameter>

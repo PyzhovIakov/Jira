@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95b2f1eb-eb4c-4d1c-9b8e-3627a852dbde">
+  <producedTypes>
+    <managerType typeId="aab21a6d-43c6-419d-a8a8-57f0690cd772" valueTypeId="2ad6db52-fd12-4eaf-9081-4c97bf84442b"/>
+    <valueManagerType typeId="c1b8812a-fa33-446b-8c5e-f299649f46f8" valueTypeId="e5d120ee-2750-4804-ae45-09485bf7872b"/>
+    <valueKeyType typeId="95fe3067-a3de-4254-8502-31ed2c7f3374" valueTypeId="1a4b620c-f4fc-4804-bde3-b1f67d396638"/>
+  </producedTypes>
+  <name>CRM_СрокАктуальностиЗапросаНаОценку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Срок актуальности запроса на оценку</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

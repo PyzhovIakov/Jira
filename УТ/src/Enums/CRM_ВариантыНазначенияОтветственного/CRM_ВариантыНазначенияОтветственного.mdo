@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="693b2821-9b56-4dbb-9b22-e3ea9dd7a080">
+  <producedTypes>
+    <refType typeId="46f82c95-4ac9-45fa-b54c-311ec30de60e" valueTypeId="ff719a91-5e2f-4f12-b82a-f87fbae93428"/>
+    <listType typeId="1346feec-0606-47fc-8788-ba947ef9cbc0" valueTypeId="d8563347-f0d2-45ff-b31c-63955707acb2"/>
+    <managerType typeId="1ce0d06c-f703-4ff9-ae3a-6916a62bbe2d" valueTypeId="e7177e56-3a12-411b-8c19-e4e56f33a31b"/>
+  </producedTypes>
+  <name>CRM_ВариантыНазначенияОтветственного</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты назначения ответственного (CRM)</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c36f63e0-1f02-404d-80e5-2b27c97e0e6c">
+    <name>ТекущийПользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущий пользователь</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6a299655-c308-4943-8a71-7548e131b2c9">
+    <name>ПерсональнаяНастройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перс. настройка «основной ответственный»</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3dcde4bc-f686-4db6-b4d5-6d4fec160208">
+    <name>МенеджерКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Менеджер клиента</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="622fff21-50a9-4349-b850-8d113f743941">
+    <name>РольСценария</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль из первого этапа сценария</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="723ca5cd-7e54-41c7-b72c-3d329f599e15">
+    <name>ОтветственныйОбращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный из обращения</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

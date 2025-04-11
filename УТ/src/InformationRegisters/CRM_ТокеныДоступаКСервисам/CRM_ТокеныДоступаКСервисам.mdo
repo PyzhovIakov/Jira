@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="042a4ba1-8125-4b3b-a086-0b4afd2ea0f9">
+  <producedTypes>
+    <selectionType typeId="7b7b2b7f-684d-46a5-8dbb-86dcebdfb8ec" valueTypeId="d97bd59c-657c-4701-8ccc-424118eb2765"/>
+    <listType typeId="23140e11-ebb4-424b-9e7f-99c786f8c9ec" valueTypeId="ae6da2a9-aaab-4a0d-8103-f0b4b9848d9d"/>
+    <managerType typeId="558f6ede-55fb-4993-9ba5-f1b17f955d78" valueTypeId="8cfde0fe-e4f8-465f-835a-060e4e4d449c"/>
+    <recordSetType typeId="131d28f6-a9f9-402b-af9d-5c17f38f0768" valueTypeId="d3ef1fb1-f4e0-4a0c-829c-c80e66eb79f6"/>
+    <recordKeyType typeId="a20129ca-cb94-4aa3-85e1-945eba955958" valueTypeId="1a5ea782-d9c5-479c-a642-d53bdc756953"/>
+    <recordType typeId="14045731-2a06-4d5b-bcfa-9e6ea2856038" valueTypeId="372a1fe3-d704-4c10-8a44-ccbb890dc7c9"/>
+    <recordManagerType typeId="5ac54dd4-ff13-4b96-ba5a-6d1baf9fb20e" valueTypeId="2a0bae77-c25b-4e9c-8c9b-870d2c68c507"/>
+  </producedTypes>
+  <name>CRM_ТокеныДоступаКСервисам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Токены доступа к сервисам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fb4101c9-b3e1-4865-9c45-4bb24c6c13c8">
+    <name>Токен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Токен</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="08fa45cb-14b3-497b-a367-49a9dbffceed">
+    <name>СрокДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c7073fa6-c924-4363-98ca-7ed0c3bff73e">
+    <name>Сервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_СервисыЯзыковыхМоделей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

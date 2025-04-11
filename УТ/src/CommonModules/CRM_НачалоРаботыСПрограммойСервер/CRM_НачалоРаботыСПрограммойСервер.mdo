@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58fc7d3d-3ed7-4af2-b089-48b91a5ca0c5">
+  <name>CRM_НачалоРаботыСПрограммойСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начало работы с программой сервер (CRM)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Start with program server (CRM)</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

@@ -1,0 +1,62 @@
+<table class="calls-info" style="margin-top: 20px;">
+  <colgroup>
+    <col span="1" style="width: 10%">
+    <col span="1" style="width: 60%;">
+    <col span="1" style="width: 30%;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <td>
+        <div class="calls-info__img calls-info__icon1"></div>
+      </td>
+      <td>
+        <h1 class="calls-info__title">Общее количество звонков</h1>
+      </td>
+      <td>
+        <h2 class="calls-info__value">{{CRM:WIDGET_ALL_CALLS}}</h2>
+      </td>
+    </tr>
+
+    <!-- ===================== -->
+
+    <tr>
+      <td>
+        <div class="calls-info__img calls-info__icon2"></div>
+      </td>
+      <td>
+        <h1 class="calls-info__title">Пропущенных</h1>
+      </td>
+      <td>
+        <h2 class="calls-info__value">{{CRM:WIDGET_MISSED_CALLS}}</h2>
+      </td>
+    </tr>
+
+    <!-- ===================== -->
+
+    <tr>
+      <td>
+        <div class="calls-info__img calls-info__icon3"></div>
+      </td>
+      <td>
+        <h1 class="calls-info__title">Отвеченные менее 1 минуты</h1>
+      </td>
+      <td>
+        <h2 class="calls-info__value">{{CRM:WIDGET_LESS_MINUTE_CALLS}}</h2>
+      </td>
+    </tr>
+
+    <!-- ===================== -->
+
+    <tr>
+      <td>
+        <div class="calls-info__img calls-info__icon4"></div>
+      </td>
+      <td>
+        <h1 class="calls-info__title">Отвеченные от 1 минуты и более</h1>
+      </td>
+      <td>
+        <h2 class="calls-info__value">{{CRM:WIDGET_MORE_MINUTE_CALLS}}</h2>
+      </td>
+    </tr>
+  </tbody>
+</table>

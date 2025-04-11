@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="6bdf8b1e-10f6-497b-9108-61e2519eff70">
+  <producedTypes>
+    <refType typeId="6b7d1845-d849-4ee1-ba8d-b615890785cc" valueTypeId="a9a47264-3e46-4209-8b7f-ef29d90bc0f4"/>
+    <listType typeId="d99aca4d-7168-4c2d-893f-4e3dd015a799" valueTypeId="d17458f2-52c2-4868-a2c0-4740509fc177"/>
+    <managerType typeId="8783804d-5481-487a-a6c3-bf18479709f4" valueTypeId="a8a60d96-68b3-4389-a235-556252193e50"/>
+  </producedTypes>
+  <name>СтатусыИзвлеченияТекстаФайлов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension"/>
+</mdclass:Enum>

@@ -1,0 +1,24 @@
+<tr>
+  <td>
+    <div class="d3-diagram-wrap"></div>
+    <script class="executable">
+      var w;
+
+      ((widget) => {
+        const data = '{{CRM:PLOT_DATA}}';
+        const colors = ["#ffd700", "#f78375", "#4ac2f7"];
+        const margin = { top: 15, right: 5, bottom: 15, left: 5 };
+        const isMoney = '{{CRM:PLOT_IS_MONEY}}';
+
+        if (!widget) {
+          widget = { _node: document.body.querySelector('.widget-container') };
+        }
+
+        const plot = new SalesPlanBarPlot(widget);
+
+        plot.init(data, colors, margin, { isMoney: isMoney });
+        plot.draw();
+      })(w);
+    </script>
+  </td>
+</tr>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3029d56-f14b-4a4a-bc21-53ff390f4098">
+  <producedTypes>
+    <managerType typeId="51380e93-6afc-44b1-8a7d-7e63b53475cc" valueTypeId="53f9ecbb-b46b-4fd7-a263-49b6dd394e49"/>
+    <valueManagerType typeId="c1df5e41-d6a4-4c95-b244-82da7cad98d0" valueTypeId="455d4894-2881-4004-85a7-f239d6b42f1a"/>
+    <valueKeyType typeId="3fc1ddb0-ae79-4aa1-91fd-33a9f0969d17" valueTypeId="cfaac38d-95cd-4189-b601-c1feba8247ce"/>
+  </producedTypes>
+  <name>CRM_ИспользоватьВариантыОтветов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать варианты ответов</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

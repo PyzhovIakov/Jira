@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34d70ebe-8ed3-492d-9a1b-613a3b0dbf9a">
+  <name>CRM_ЛентаСобытий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лента событий (CRM)</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>InformationRegister.CRM_ДанныеКарточекЛенты</content>
+  <content>CommonModule.CRM_ЛентаСобытий</content>
+  <content>CommonModule.CRM_ЛентаСобытийПовтИсп</content>
+  <content>CommonModule.CRM_ЛентаСобытийКлиент</content>
+  <content>CommonModule.CRM_ЛентаСобытийКлиентСервер</content>
+  <parentSubsystem>Subsystem.CRM_МодульCRM</parentSubsystem>
+</mdclass:Subsystem>

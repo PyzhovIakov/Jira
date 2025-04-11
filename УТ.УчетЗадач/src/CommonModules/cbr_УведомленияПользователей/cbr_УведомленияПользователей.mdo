@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b28d3ab7-187f-4748-a4d5-5a175bc7325a">
+  <name>cbr_УведомленияПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Cbr уведомления пользователей</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

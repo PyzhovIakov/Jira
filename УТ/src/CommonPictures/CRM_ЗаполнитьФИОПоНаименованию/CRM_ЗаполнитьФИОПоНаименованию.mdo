@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="620e77d3-d94f-49f0-8310-376aedcba6fc">
+  <name>CRM_ЗаполнитьФИОПоНаименованию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнить ФИО по наименованию</value>
+  </synonym>
+</mdclass:CommonPicture>

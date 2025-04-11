@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c85dc0f-f3b9-4d98-85bf-caa6d58f5363">
+  <producedTypes>
+    <objectType typeId="412dab4e-6b99-45fb-b394-a8abdbd36326" valueTypeId="8ab69ab5-6a9f-41a3-8ad1-898898a32a50"/>
+    <managerType typeId="a6aa67c4-2e0e-4b32-855c-18890ee2c97a" valueTypeId="e9bf35f2-fe0b-4e2b-adeb-5dfa171ca0c1"/>
+  </producedTypes>
+  <name>CRM_СистемныйМонитор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Системный монитор (CRM)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.CRM_СистемныйМонитор.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="24cf5f05-6fd4-4352-b763-064ca3f0a758">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7c63d2a7-7474-4303-a8f0-b0b800a492b3">
+    <name>ШаблонВиджетФормируется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон виджет формируется</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="66a71c73-5fc7-4c56-a972-c9cca7b2ed9d">
+    <name>ШаблонВиджетОшибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон виджет ошибка</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="dc9070b5-8084-4961-ad59-d261f2a2199f">
+    <name>ШаблонВиджетПоддержка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон виджет поддержка</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="8d1b03c7-35df-428e-a0c5-0e02da7a5f4f">
+    <name>ШаблонВиджетПочта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон виджет почта</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="29890431-4655-4619-8546-2b0bf81c3724">
+    <name>ШаблонВиджетТриггеры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон виджет триггеры</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="6e2f7389-a8d0-4a3a-8da2-92ac08dfc748">
+    <name>ШаблонВиджетРегламентныеЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон виджет регламентные задания</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="561ca83a-cbf9-49c1-b363-9df54920415d">
+    <name>ШаблонВиджетФайлы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон виджет файлы</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="737228dc-7f27-482d-a509-fe7b093d2849">
+    <name>ШаблонВиджетЖурналРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон виджет журнал регистрации</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

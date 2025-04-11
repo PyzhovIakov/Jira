@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="cef0f1ce-294c-4a02-8db0-994af9dc332d">
+  <producedTypes>
+    <containerType typeId="226084f6-6c3d-4511-911b-0d58a009f5d6" valueTypeId="b77a8e05-c2cf-4ad3-bc77-22a56bfa8fc5"/>
+  </producedTypes>
+  <name>ПрисоединенныйФайлОбъект</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DefinedTypeExtension">
+    <typeExtension>
+      <types>
+        <state>Extended</state>
+        <type>CatalogObject.cbr_ЗадачаПрисоединенныеФайлы</type>
+      </types>
+    </typeExtension>
+  </extension>
+  <type/>
+</mdclass:DefinedType>

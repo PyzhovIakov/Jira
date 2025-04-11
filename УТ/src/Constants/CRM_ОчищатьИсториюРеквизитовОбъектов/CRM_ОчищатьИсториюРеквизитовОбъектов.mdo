@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cde0759d-bd83-4644-9404-08e8ebe11cd9">
+  <producedTypes>
+    <managerType typeId="3ced9e2c-6f7c-4ac8-b8a4-66a3edd8735d" valueTypeId="21f20ba4-4cef-4bb2-ac66-998e235bd976"/>
+    <valueManagerType typeId="db40dc5b-62bc-4e23-b85e-52d6fec837a2" valueTypeId="b5d1ec12-07a8-41de-9cd2-1982556c1c2d"/>
+    <valueKeyType typeId="bb339609-ebe4-4b71-a2a8-05966f191cf4" valueTypeId="435550d6-12d0-498d-a3f8-9a2d5be154e7"/>
+  </producedTypes>
+  <name>CRM_ОчищатьИсториюРеквизитовОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очищать историю реквизитов объектов</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

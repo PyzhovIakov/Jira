@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="86360a89-9157-4d31-86e4-75cc7c74f84a">
+  <name>CRM_ИнтеграцииСИнтернетМагазинами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграции с интернет-магазинами</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.CRM_ИнтеграцияСИнтернетМагазинами</content>
+  <content>ScheduledJob.CRM_ОбменСИнтернетМагазином</content>
+  <content>FunctionalOption.CRM_ИспользоватьИнтеграцииСИнтернетМагазинами</content>
+  <content>Constant.CRM_ИспользоватьИнтеграцииСИнтернетМагазинами</content>
+  <content>DataProcessor.CRM_ИнтеграцияСМагазиномВКонтакте</content>
+  <content>EventSubscription.CRM_ОбменСИнтернетМагазиномПриЗаписиОбъекта</content>
+  <content>EventSubscription.CRM_ОбменСИнтернетМагазиномПриЗаписиРегистра</content>
+  <parentSubsystem>Subsystem.CRM_МодульCRM.Subsystem.CRM_Интеграции</parentSubsystem>
+</mdclass:Subsystem>

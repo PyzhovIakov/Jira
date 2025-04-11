@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ОсновнойНаборДанных</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактноеЛицо</dataPath>
+			<field>КонтактноеЛицо</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контактное лицо</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Автор</dataPath>
+			<field>Автор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_ДополнительнаяИнформация.Свойство</dataPath>
+			<field>CRM_ДополнительнаяИнформация.Свойство</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_КлючевыеСобытия.НапоминатьОСобытии</dataPath>
+			<field>CRM_КлючевыеСобытия.НапоминатьОСобытии</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияДанных</dataPath>
+			<field>ВерсияДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРегистрацииСвязи</dataPath>
+			<field>ДатаРегистрацииСвязи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РолиКонтактногоЛица.РольКонтактногоЛица</dataPath>
+			<field>РолиКонтактногоЛица.РольКонтактногоЛица</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПрекращенияСвязи</dataPath>
+			<field>ДатаПрекращенияСвязи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Владелец</dataPath>
+			<field>Владелец</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.ДоменноеИмяСервера</dataPath>
+			<field>КонтактнаяИнформация.ДоменноеИмяСервера</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комментарий</dataPath>
+			<field>Комментарий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пол</dataPath>
+			<field>Пол</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРождения</dataPath>
+			<field>ДатаРождения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_ОтписалсяОтEmailРассылок</dataPath>
+			<field>CRM_ОтписалсяОтEmailРассылок</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Должность</dataPath>
+			<field>CRM_Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Имя</dataPath>
+			<field>CRM_Имя</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>сфпПользовательДляПереключенияЗвонков</dataPath>
+			<field>сфпПользовательДляПереключенияЗвонков</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Ключевой</dataPath>
+			<field>CRM_Ключевой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_ЛичныеИнтересы</dataPath>
+			<field>CRM_ЛичныеИнтересы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_НапоминатьОДнеРождения</dataPath>
+			<field>CRM_НапоминатьОДнеРождения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Отчество</dataPath>
+			<field>CRM_Отчество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_ДополнительнаяИнформация.Ссылка</dataPath>
+			<field>CRM_ДополнительнаяИнформация.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>ДополнительныеРеквизиты</dataPath>
+			<field>ДополнительныеРеквизиты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.Значение</dataPath>
+			<field>КонтактнаяИнформация.Значение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_ДополнительнаяИнформация.Значение</dataPath>
+			<field>CRM_ДополнительнаяИнформация.Значение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_РольКонтактногоЛица</dataPath>
+			<field>CRM_РольКонтактногоЛица</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеРеквизиты.НомерСтроки</dataPath>
+			<field>ДополнительныеРеквизиты.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Состояние</dataPath>
+			<field>CRM_Состояние</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РолиКонтактногоЛица.Ссылка</dataPath>
+			<field>РолиКонтактногоЛица.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Фамилия</dataPath>
+			<field>CRM_Фамилия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.Страна</dataPath>
+			<field>КонтактнаяИнформация.Страна</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Фотография</dataPath>
+			<field>CRM_Фотография</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.Регион</dataPath>
+			<field>КонтактнаяИнформация.Регион</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>сфпCoMagicID</dataPath>
+			<field>сфпCoMagicID</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.Ссылка</dataPath>
+			<field>КонтактнаяИнформация.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеРеквизиты.Ссылка</dataPath>
+			<field>ДополнительныеРеквизиты.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.НомерСтроки</dataPath>
+			<field>КонтактнаяИнформация.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.Тип</dataPath>
+			<field>КонтактнаяИнформация.Тип</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеРеквизиты.ТекстоваяСтрока</dataPath>
+			<field>ДополнительныеРеквизиты.ТекстоваяСтрока</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.Вид</dataPath>
+			<field>КонтактнаяИнформация.Вид</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.ВидДляСписка</dataPath>
+			<field>КонтактнаяИнформация.ВидДляСписка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.Город</dataPath>
+			<field>КонтактнаяИнформация.Город</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.Представление</dataPath>
+			<field>КонтактнаяИнформация.Представление</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.ЗначенияПолей</dataPath>
+			<field>КонтактнаяИнформация.ЗначенияПолей</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.АдресЭП</dataPath>
+			<field>КонтактнаяИнформация.АдресЭП</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.НомерТелефона</dataPath>
+			<field>КонтактнаяИнформация.НомерТелефона</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.НомерТелефонаБезКодов</dataPath>
+			<field>КонтактнаяИнформация.НомерТелефонаБезКодов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.CRM_ОсновнойДляСвязи</dataPath>
+			<field>КонтактнаяИнформация.CRM_ОсновнойДляСвязи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.сфпВремяЗадержкиНабораДобавочногоНомера</dataPath>
+			<field>КонтактнаяИнформация.сфпВремяЗадержкиНабораДобавочногоНомера</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>КонтактнаяИнформация</dataPath>
+			<field>КонтактнаяИнформация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РолиКонтактногоЛица.НомерСтроки</dataPath>
+			<field>РолиКонтактногоЛица.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>РолиКонтактногоЛица</dataPath>
+			<field>РолиКонтактногоЛица</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеРеквизиты.Свойство</dataPath>
+			<field>ДополнительныеРеквизиты.Свойство</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеРеквизиты.Значение</dataPath>
+			<field>ДополнительныеРеквизиты.Значение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_ДополнительнаяИнформация.НомерСтроки</dataPath>
+			<field>CRM_ДополнительнаяИнформация.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_ДополнительнаяИнформация.ДатаРегистрации</dataPath>
+			<field>CRM_ДополнительнаяИнформация.ДатаРегистрации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_ДополнительнаяИнформация.ДатаОкончания</dataPath>
+			<field>CRM_ДополнительнаяИнформация.ДатаОкончания</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>CRM_ДополнительнаяИнформация</dataPath>
+			<field>CRM_ДополнительнаяИнформация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_КлючевыеСобытия.Ссылка</dataPath>
+			<field>CRM_КлючевыеСобытия.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_КлючевыеСобытия.НомерСтроки</dataPath>
+			<field>CRM_КлючевыеСобытия.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_КлючевыеСобытия.ВидСобытия</dataPath>
+			<field>CRM_КлючевыеСобытия.ВидСобытия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_КлючевыеСобытия.ДатаСобытия</dataPath>
+			<field>CRM_КлючевыеСобытия.ДатаСобытия</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>CRM_КлючевыеСобытия</dataPath>
+			<field>CRM_КлючевыеСобытия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Предопределенный</dataPath>
+			<field>Предопределенный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИмяПредопределенныхДанных</dataPath>
+			<field>ИмяПредопределенныхДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Теги.Тег</dataPath>
+			<field>CRM_Теги.Тег</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_СтатусНаB2BПортале</dataPath>
+			<field>CRM_СтатусНаB2BПортале</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_ПодключенКB2BПорталу</dataPath>
+			<field>CRM_ПодключенКB2BПорталу</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_СтатусыПредставление</dataPath>
+			<field>CRM_СтатусыПредставление</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактнаяИнформация.сфпПрефиксНабора</dataPath>
+			<field>КонтактнаяИнформация.сфпПрефиксНабора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_УровниДоступа.УровеньДоступа</dataPath>
+			<field>CRM_УровниДоступа.УровеньДоступа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Статусы.Ссылка</dataPath>
+			<field>CRM_Статусы.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Статусы.НомерСтроки</dataPath>
+			<field>CRM_Статусы.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Статусы.Статус</dataPath>
+			<field>CRM_Статусы.Статус</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>CRM_Статусы</dataPath>
+			<field>CRM_Статусы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Теги.Ссылка</dataPath>
+			<field>CRM_Теги.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_Теги.НомерСтроки</dataPath>
+			<field>CRM_Теги.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>CRM_Теги</dataPath>
+			<field>CRM_Теги</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_УровниДоступа.Ссылка</dataPath>
+			<field>CRM_УровниДоступа.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_УровниДоступа.НомерСтроки</dataPath>
+			<field>CRM_УровниДоступа.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CRM_УровниДоступа.ТолькоЧтение</dataPath>
+			<field>CRM_УровниДоступа.ТолькоЧтение</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>CRM_УровниДоступа</dataPath>
+			<field>CRM_УровниДоступа</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	КонтактныеЛицаПартнеров.Ссылка КАК КонтактноеЛицо,
+	КонтактныеЛицаПартнеров.Ссылка КАК Ссылка,
+	КонтактныеЛицаПартнеров.ВерсияДанных КАК ВерсияДанных,
+	КонтактныеЛицаПартнеров.ПометкаУдаления КАК ПометкаУдаления,
+	КонтактныеЛицаПартнеров.Владелец КАК Владелец,
+	КонтактныеЛицаПартнеров.Наименование КАК Наименование,
+	КонтактныеЛицаПартнеров.Автор КАК Автор,
+	КонтактныеЛицаПартнеров.ДатаПрекращенияСвязи КАК ДатаПрекращенияСвязи,
+	КонтактныеЛицаПартнеров.ДатаРегистрацииСвязи КАК ДатаРегистрацииСвязи,
+	КонтактныеЛицаПартнеров.ДатаРождения КАК ДатаРождения,
+	КонтактныеЛицаПартнеров.Комментарий КАК Комментарий,
+	КонтактныеЛицаПартнеров.Пол КАК Пол,
+	КонтактныеЛицаПартнеров.CRM_Должность КАК CRM_Должность,
+	КонтактныеЛицаПартнеров.CRM_Имя КАК CRM_Имя,
+	КонтактныеЛицаПартнеров.CRM_Ключевой КАК CRM_Ключевой,
+	КонтактныеЛицаПартнеров.CRM_ЛичныеИнтересы КАК CRM_ЛичныеИнтересы,
+	КонтактныеЛицаПартнеров.CRM_НапоминатьОДнеРождения КАК CRM_НапоминатьОДнеРождения,
+	КонтактныеЛицаПартнеров.CRM_ОтписалсяОтEmailРассылок КАК CRM_ОтписалсяОтEmailРассылок,
+	КонтактныеЛицаПартнеров.CRM_Отчество КАК CRM_Отчество,
+	КонтактныеЛицаПартнеров.CRM_ПодключенКB2BПорталу КАК CRM_ПодключенКB2BПорталу,
+	КонтактныеЛицаПартнеров.CRM_РольКонтактногоЛица КАК CRM_РольКонтактногоЛица,
+	КонтактныеЛицаПартнеров.CRM_Состояние КАК CRM_Состояние,
+	КонтактныеЛицаПартнеров.CRM_СтатусНаB2BПортале КАК CRM_СтатусНаB2BПортале,
+	КонтактныеЛицаПартнеров.CRM_СтатусыПредставление КАК CRM_СтатусыПредставление,
+	КонтактныеЛицаПартнеров.CRM_Фамилия КАК CRM_Фамилия,
+	КонтактныеЛицаПартнеров.CRM_Фотография КАК CRM_Фотография,
+	КонтактныеЛицаПартнеров.сфпCoMagicID КАК сфпCoMagicID,
+	КонтактныеЛицаПартнеров.сфпПользовательДляПереключенияЗвонков КАК сфпПользовательДляПереключенияЗвонков,
+	КонтактныеЛицаПартнеров.КонтактнаяИнформация.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Тип КАК Тип,
+		Вид КАК Вид,
+		Представление КАК Представление,
+		ЗначенияПолей КАК ЗначенияПолей,
+		Страна КАК Страна,
+		Регион КАК Регион,
+		Город КАК Город,
+		АдресЭП КАК АдресЭП,
+		ДоменноеИмяСервера КАК ДоменноеИмяСервера,
+		НомерТелефона КАК НомерТелефона,
+		НомерТелефонаБезКодов КАК НомерТелефонаБезКодов,
+		ВидДляСписка КАК ВидДляСписка,
+		Значение КАК Значение,
+		CRM_ОсновнойДляСвязи КАК CRM_ОсновнойДляСвязи,
+		сфпВремяЗадержкиНабораДобавочногоНомера КАК сфпВремяЗадержкиНабораДобавочногоНомера,
+		сфпПрефиксНабора КАК сфпПрефиксНабора
+	) КАК КонтактнаяИнформация,
+	КонтактныеЛицаПартнеров.РолиКонтактногоЛица.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		РольКонтактногоЛица КАК РольКонтактногоЛица
+	) КАК РолиКонтактногоЛица,
+	КонтактныеЛицаПартнеров.ДополнительныеРеквизиты.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Свойство КАК Свойство,
+		Значение КАК Значение,
+		ТекстоваяСтрока КАК ТекстоваяСтрока
+	) КАК ДополнительныеРеквизиты,
+	КонтактныеЛицаПартнеров.CRM_ДополнительнаяИнформация.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Свойство КАК Свойство,
+		Значение КАК Значение,
+		ДатаРегистрации КАК ДатаРегистрации,
+		ДатаОкончания КАК ДатаОкончания
+	) КАК CRM_ДополнительнаяИнформация,
+	КонтактныеЛицаПартнеров.CRM_КлючевыеСобытия.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		ВидСобытия КАК ВидСобытия,
+		ДатаСобытия КАК ДатаСобытия,
+		НапоминатьОСобытии КАК НапоминатьОСобытии
+	) КАК CRM_КлючевыеСобытия,
+	КонтактныеЛицаПартнеров.CRM_Статусы.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Статус КАК Статус
+	) КАК CRM_Статусы,
+	КонтактныеЛицаПартнеров.CRM_Теги.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Тег КАК Тег
+	) КАК CRM_Теги,
+	КонтактныеЛицаПартнеров.CRM_УровниДоступа.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		УровеньДоступа КАК УровеньДоступа,
+		ТолькоЧтение КАК ТолькоЧтение
+	) КАК CRM_УровниДоступа,
+	КонтактныеЛицаПартнеров.Предопределенный КАК Предопределенный,
+	КонтактныеЛицаПартнеров.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных
+ИЗ
+	Справочник.КонтактныеЛицаПартнеров КАК КонтактныеЛицаПартнеров
+ГДЕ
+	НЕ КонтактныеЛицаПартнеров.ПометкаУдаления</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>ОсновнойВариант</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной вариант</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Formation of a segment</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КонтактноеЛицо</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">CRM_Должность</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.CRM_Должности.ПустаяСсылка</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">РолиКонтактногоЛица.РольКонтактногоЛица</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.РолиКонтактныхЛицПартнеров.ПустаяСсылка</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">CRM_Состояние</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">CRM_ОтписалсяОтEmailРассылок</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>КонтактноеЛицо</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

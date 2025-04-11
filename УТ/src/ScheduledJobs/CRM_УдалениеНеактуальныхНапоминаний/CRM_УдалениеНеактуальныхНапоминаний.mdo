@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a64e7af2-98ed-47fe-a50e-36de85f9be5c">
+  <name>CRM_УдалениеНеактуальныхНапоминаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление неактуальных напоминаний</value>
+  </synonym>
+  <methodName>CommonModule.CRM_НапоминанияСервер.УдалитьНеактуальныеНапоминания</methodName>
+  <key>CRM_УдалениеНеактуальныхНапоминаний</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

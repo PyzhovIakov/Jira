@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9b1efbb-11d1-4861-9590-a255d89b321e">
+  <name>CRM_ОбменСВнешнимиКалендарями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с внешними календарями</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.CRM_УчетныеЗаписиВнешнихКалендарей</content>
+  <content>InformationRegister.CRM_НастройкиСинхронизацииСВнешнимиКалендарями</content>
+  <content>CommonPicture.CRM_СервисЯндекс</content>
+  <content>CommonPicture.CRM_СервисMailRu</content>
+  <content>CommonPicture.CRM_СервисiCloud</content>
+  <parentSubsystem>Subsystem.CRM_МодульCRM.Subsystem.CRM_РазделКалендарьПочта</parentSubsystem>
+</mdclass:Subsystem>

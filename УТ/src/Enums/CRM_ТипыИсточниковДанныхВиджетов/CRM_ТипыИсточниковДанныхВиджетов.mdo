@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9fd34e56-965d-4efe-b39e-75d291d60e44">
+  <producedTypes>
+    <refType typeId="a4379040-fdc0-4555-a0da-7d61736d6fb4" valueTypeId="316eeaa1-565a-402d-af7a-3d340bcc8349"/>
+    <listType typeId="6bbb80e5-4a2f-45d4-87ce-470fe1ec3f9a" valueTypeId="8fa7d672-5456-4f43-adfd-aac7bd5d2083"/>
+    <managerType typeId="0053d986-8403-49cb-b66c-e8acffce06e0" valueTypeId="1021d9b9-1f0d-4871-a160-68515bd992d3"/>
+  </producedTypes>
+  <name>CRM_ТипыИсточниковДанныхВиджетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы источников данных виджетов (CRM)</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Типы источников данных виджетов</value>
+  </listPresentation>
+  <enumValues uuid="0b31fe8b-7fbf-4c98-ac4b-1049d14e1b7a">
+    <name>КлючевойПоказатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключевой показатель</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="41cb179c-a297-4d75-86ab-2b0c96b85b89">
+    <name>ВоронкаПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Воронка продаж</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2a0a6f40-e154-4bb9-b06b-9a0ed0e1a90c">
+    <name>ДинамикаПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Динамика продаж</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="36656561-310c-40ad-8741-392de80bca68">
+    <name>ДебиторскаяЗадолженность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дебиторская задолженность</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="33c8d268-549a-4e72-93f5-f090e60501e0">
+    <name>ДинамикаСтатусовКлиентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Динамика статусов клиентов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b29ef77b-5d35-4a6d-8405-93f9711b33a0">
+    <name>СтатистикаТелефонныхЗвонков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статистика телефонных звонков</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="38765b74-d0e4-439c-ac1a-5dae6abe377a">
+    <name>ТрудозатратыВремениПоВидамРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудозатраты времени по видам работ</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

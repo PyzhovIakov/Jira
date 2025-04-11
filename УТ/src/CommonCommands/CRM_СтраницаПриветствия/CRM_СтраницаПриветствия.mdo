@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c370739-ad41-4902-ad70-25a75f311618">
+  <name>CRM_СтраницаПриветствия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительная информация</value>
+  </synonym>
+  <group>CommandGroup.CRM_РазделМенюПомощь</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Дополнительная информация</value>
+  </toolTip>
+</mdclass:CommonCommand>

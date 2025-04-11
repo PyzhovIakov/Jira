@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="339d0c34-a4f3-437e-b6ff-1e4dd216861d">
+  <producedTypes>
+    <selectionType typeId="e48a9cb9-9e7b-4472-bde7-4ca055c2adff" valueTypeId="f9cabf9e-a97f-45c0-9f8c-fb12ea135b47"/>
+    <listType typeId="6d6ab50b-05d8-457c-a5c0-a2064913f429" valueTypeId="4d502e5e-85ca-4ff7-8917-1208f595ecab"/>
+    <managerType typeId="a5d009ef-11f1-475a-a28c-30e0898fb769" valueTypeId="ad6b08b6-ac9d-4b4a-ba13-77a74a4d7c14"/>
+    <recordSetType typeId="64a8e6bb-69a1-453b-94a7-7d6073c08e21" valueTypeId="038f6e16-9c04-4469-9bcd-93b5df5b2e77"/>
+    <recordKeyType typeId="a733020b-30b5-4de1-941c-e10da585866d" valueTypeId="36eb8e5a-8d7d-479a-99e8-09d49134fa84"/>
+    <recordType typeId="0a500773-d03e-49f7-987d-a1ed0d86ff46" valueTypeId="77d8c9dd-c0c0-49ba-a7ed-579048ade9c6"/>
+  </producedTypes>
+  <name>cbr_ЧасыТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Cbr часы трудозатрат</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="84b20106-52a1-47ef-94f3-95fc2e3ad0e2">
+    <name>Часы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Часы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="1847dc8a-0a79-491c-ad42-b5e06e260249">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ef0dff8-8410-46cf-a3c4-2e617059c87d">
+  <name>CRM_ПередУдалениемОбъекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перед удалением объекта CRM</value>
+  </synonym>
+  <source>
+    <types>BusinessProcessObject.CRM_БизнесПроцесс</types>
+    <types>TaskObject.ЗадачаИсполнителя</types>
+    <types>CatalogObject</types>
+    <types>DocumentObject</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.CRM_УдалениеПомеченныхОбъектов.ПередУдалениемОбъекта</handler>
+</mdclass:EventSubscription>

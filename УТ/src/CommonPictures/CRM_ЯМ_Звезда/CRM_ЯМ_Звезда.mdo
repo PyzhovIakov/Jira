@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="745fcf31-f053-4afd-a359-51a26b55cbaf">
+  <name>CRM_ЯМ_Звезда</name>
+  <synonym>
+    <key>ru</key>
+    <value>Звезда</value>
+  </synonym>
+</mdclass:CommonPicture>

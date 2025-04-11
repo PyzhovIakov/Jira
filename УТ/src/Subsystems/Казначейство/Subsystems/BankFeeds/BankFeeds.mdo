@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e685199-14fa-4817-b414-8786cff7d4af">
+  <name>BankFeeds</name>
+  <synonym>
+    <key>ru</key>
+    <value>BankFeeds</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Constant.ИспользоватьСервисBankFeeds</content>
+  <content>FunctionalOption.ИспользоватьОбменBankFeeds</content>
+  <content>Enum.СервисыBankFeeds</content>
+  <content>Catalog.ИнтеграцияBankFeeds</content>
+  <content>Enum.ТипыИдентификаторовBankFeeds</content>
+  <content>InformationRegister.СтатусыТранзакцийBankFeeds</content>
+  <content>InformationRegister.ПодключенияКБанкамBankFeeds</content>
+  <content>Enum.СтатусыПлатежныхДокументовBankFeeds</content>
+  <content>CommonModule.СловарьBankFeedsСлужебный</content>
+  <content>CommonModule.ОбменССервисомBankFeedsСервер</content>
+  <content>CommonModule.ОбменССервисомBankFeedsКлиент</content>
+  <content>CommonModule.ОбменССервисомBankFeedsВызовСервера</content>
+  <content>Enum.ФорматыПлатежейBankFeeds</content>
+  <content>CommonModule.ОбменССервисомBankFeedsКлиентСервер</content>
+  <content>DefinedType.ПлатежныеДокументыBankFeeds</content>
+  <content>DataProcessor.КлиентБанкBankFeeds</content>
+  <content>CommonForm.ТаблицаСчетовBankFeeds</content>
+  <content>Role.ДобавлениеИзменениеBankFeeds</content>
+  <content>Role.ЧтениеBankFeeds</content>
+  <content>DefinedType.НастройкиПодключeнияКСервисамBankFeeds</content>
+  <content>Role.ИспользованиеОбработкиКлиентБанкBankFeeds</content>
+  <parentSubsystem>Subsystem.Казначейство</parentSubsystem>
+</mdclass:Subsystem>

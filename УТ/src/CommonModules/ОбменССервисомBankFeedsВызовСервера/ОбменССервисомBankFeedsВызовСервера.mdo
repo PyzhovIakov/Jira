@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e15e826d-bf24-44ac-a3cf-3dc9ec9eca75">
+  <name>ОбменССервисомBankFeedsВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с сервисом BankFeeds вызов сервера</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

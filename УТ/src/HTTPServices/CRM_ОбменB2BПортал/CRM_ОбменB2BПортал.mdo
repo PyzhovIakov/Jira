@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cfa47dac-dcf4-431b-8080-3d35abdc27dd">
+  <name>CRM_ОбменB2BПортал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с B2B порталом</value>
+  </synonym>
+  <rootURL>b2bexchange</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="e49ff41a-57d3-4bd7-a4cd-7a90e76e2568">
+    <name>Пинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пинг</value>
+    </synonym>
+    <template>/ping</template>
+    <methods uuid="4f7b7fba-b2da-40c4-9c0e-69e5fcc0a52d">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>Пинг</handler>
+    </methods>
+    <methods uuid="173c6396-933c-4c20-83df-c8ba403722db">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>Пинг</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="88db39ab-4eb1-42e6-8267-f6c9ad54ee18">
+    <name>Версия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия</value>
+    </synonym>
+    <template>/version</template>
+    <methods uuid="1f98a66b-9ef0-44b2-a819-5b8292a7c349">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>Версия</handler>
+    </methods>
+    <methods uuid="3db2833a-80fe-4a55-99b4-d8a54b037f73">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>Версия</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="8da95072-65ff-4d36-a0bf-c17cc497b73c">
+    <name>ПередатьИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передать изменения</value>
+    </synonym>
+    <template>/putchanges</template>
+    <methods uuid="adecd063-9be3-4871-aa47-8c2aed96cb74">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ПередатьИзменения</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="f12b0e1b-7def-4f16-8d7e-91851c520ab7">
+    <name>ПолучитьИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить изменения</value>
+    </synonym>
+    <template>/getchanges</template>
+    <methods uuid="d58513d2-8fba-49d6-86f7-371ad089f24b">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ПолучитьИзменения</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

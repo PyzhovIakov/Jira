@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ff2607e-56f5-4159-b56f-947658774fc9">
+  <name>cbr_УчетЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет задач</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.cbr_Задача</content>
+  <content>Document.cbr_ТрудозатратыПоЗадаче</content>
+  <content>DataProcessor.cbr_Канбан</content>
+  <content>DataProcessor.cbr_РедактированиеПользовательскихНастроек</content>
+</mdclass:Subsystem>

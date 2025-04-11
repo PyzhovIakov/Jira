@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10e6ff45-7e15-40d8-a179-c34d5c622c2d">
+  <name>CRM_КалендарьСписокБелая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь список белая (CRM)</value>
+  </synonym>
+</mdclass:CommonPicture>

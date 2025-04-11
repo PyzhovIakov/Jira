@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3448e111-57f6-47b4-8661-955ed8c465a7">
+  <producedTypes>
+    <selectionType typeId="71c9d6ba-22ce-476c-a1ce-703bef2ee061" valueTypeId="908eaeb0-1f6a-493e-a08f-b434b779f3cd"/>
+    <listType typeId="1fcca772-e302-4877-a754-22729c5b6349" valueTypeId="5893063c-fbe3-488c-a57d-a2c7c618cfff"/>
+    <managerType typeId="6297351c-abcf-42b9-89ac-45089cbf1b87" valueTypeId="c2176b13-9167-4b5e-b550-209caaba2a62"/>
+    <recordSetType typeId="d623350e-fea4-4a00-a392-1399a9699368" valueTypeId="7cdb1c5e-f42c-4a75-b633-b47d31009677"/>
+    <recordKeyType typeId="35979322-7cc7-4d6d-b37d-adffa68aa57c" valueTypeId="10cbbad8-ca1c-47a8-a2a0-86dbe68dc2c7"/>
+    <recordType typeId="e739eb44-c8da-4ce1-b740-d227c46ae5bd" valueTypeId="60723ac8-ac9f-4a9e-9328-fe1707588108"/>
+    <recordManagerType typeId="9e270026-05ff-42fc-b4bc-bcc8b92bcb8d" valueTypeId="65ea3cf4-755d-4868-8fe1-ef4a583743f3"/>
+  </producedTypes>
+  <name>cbr_ПросроченныеДействияПоЗадачам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просроченные действия по задачам</value>
+  </synonym>
+  <comment>Просроченные действия по задачам</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Просроченные действия по задачам</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Просроченные действия по задачам</value>
+  </listPresentation>
+  <dimensions uuid="e73f7f5e-9453-4809-9ea5-7162854cae1a">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.cbr_Задача</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="43fdd38f-0df8-437c-8697-bd9e0c4759b5">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.cbr_КонтрольНадЭтапамиЗадач</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a2e08181-76c3-411f-8a9d-32cd5fb972d0">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

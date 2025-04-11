@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2aedf8e-aa9c-4cc5-aafb-11366784923c">
+  <producedTypes>
+    <selectionType typeId="efaa614e-d15c-4f81-9952-19c3e46bda08" valueTypeId="c90d60a0-1834-4e2e-81e7-6b7a66bcb623"/>
+    <listType typeId="d3025a07-6a65-45c8-8b4c-9f1a71e1a424" valueTypeId="f89385d8-929e-487c-b395-2fe7cae57177"/>
+    <managerType typeId="c268aa63-b923-4953-9704-d907c3a0c4f0" valueTypeId="a7e77195-7514-411e-8dad-a491ac465925"/>
+    <recordSetType typeId="90ab74f0-b923-4b93-83a4-6ae19aebee5b" valueTypeId="257fa6ea-ea44-49ed-8ec3-77b8717c183c"/>
+    <recordKeyType typeId="66a3be7b-f24d-4aaa-b274-aa8f4b5867cb" valueTypeId="b8e22b5d-fedd-428e-a1ed-b7861f1359ea"/>
+    <recordType typeId="4c2f0e6a-2adc-42a2-85cc-4ce31cebf4c5" valueTypeId="d7f699cf-bf22-43d3-ac1a-5679d012c974"/>
+    <recordManagerType typeId="cb90d158-bdb9-49fe-909e-2c9ec8f97b17" valueTypeId="52636109-2e93-41b1-bfe7-4bc91b6b5fe9"/>
+  </producedTypes>
+  <name>cbr_КомментарииЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комментарии задач (Джира)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Комментарий к задаче</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Комментарии задач</value>
+  </listPresentation>
+  <resources uuid="4526e658-17e0-43c3-9cd2-5fd89c42c3dd">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="54b85657-fad2-4e4f-a601-a66ea1bb9bba">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e0d08251-46af-49ae-99aa-40bc776639d1">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.cbr_Задача</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

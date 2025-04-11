@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6bfdbba1-0a68-417c-846c-b110a057b638">
+  <name>cbr_НСИ_УчетЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>НСИ (Учет задач)</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Пользователи</content>
+  <content>Catalog.cbr_ВидыЗадач</content>
+  <content>Catalog.cbr_ГруппыДоступаКЗадачам</content>
+  <content>Catalog.cbr_Доски</content>
+  <content>Catalog.cbr_МеткиЗадач</content>
+  <content>Catalog.cbr_Партнеры</content>
+  <content>Catalog.cbr_Приоритеты</content>
+  <content>Catalog.cbr_ПричинаПереносаДедлайна</content>
+  <content>Catalog.cbr_ПричиныОтказаОтЗадачи</content>
+  <content>Catalog.cbr_СтатусыЗадач</content>
+  <content>Catalog.cbr_Сценарии</content>
+  <content>Catalog.cbr_КонтрольНадЭтапамиЗадач</content>
+  <content>Catalog.cbr_ЗадачаПрисоединенныеФайлы</content>
+  <content>Catalog.cbr_Триггеры</content>
+  <content>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</content>
+  <content>InformationRegister.cbr_ВопросыПоЗадачам</content>
+  <content>InformationRegister.cbr_ДедлайнЗадач</content>
+  <content>InformationRegister.cbr_ИсполнителиЗадач</content>
+  <content>InformationRegister.cbr_КомментарииЗадач</content>
+  <content>InformationRegister.cbr_НастройкиПользователейКолонокКанБан</content>
+  <content>InformationRegister.cbr_НастройкиПользователяКанБан</content>
+  <content>InformationRegister.cbr_ОценкаЧасов</content>
+  <content>InformationRegister.cbr_ПользовательскиеНастройки</content>
+  <content>InformationRegister.cbr_ПросроченныеДействияПоЗадачам</content>
+  <content>InformationRegister.cbr_СвязанныеЗадачи</content>
+  <content>InformationRegister.cbr_СтатусыЗадач</content>
+  <content>AccumulationRegister.cbr_ЧасыТрудозатрат</content>
+</mdclass:Subsystem>

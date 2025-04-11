@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="902c7ac8-5a80-4c37-858e-d7945a0fa9db">
+  <producedTypes>
+    <objectType typeId="870cf29f-7a4c-4e97-a61f-06920f5ea9cf" valueTypeId="b573c387-16d0-4ccc-83b4-e170c86feecf"/>
+    <managerType typeId="54ebd3e4-a1d8-4602-ab2e-ebf495dd5397" valueTypeId="412309f7-0bcb-403c-87fa-43c023e1b3e8"/>
+  </producedTypes>
+  <name>CRM_АРМ_МониторРуководителя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Монитор руководителя</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.CRM_АРМ_МониторРуководителя.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="9281bfc0-7f11-49d9-99c5-85aef69c8b3c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="99ff53d6-2486-4647-9b73-e8d01f970a38">
+    <name>HTML_СеткаВиджетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>HTML сетка виджетов</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <commands uuid="6d397d3c-ef15-4b2d-bc3e-817fdcdac721">
+    <name>МониторРуководителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Монитор руководителя</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html {
+      height: 100%;
+      font-family: 'Arial';
+      font-style: normal;
+      overflow: hidden;
+    }
+
+    .block-header {
+      height: 100vh;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="block-header">
+    <h5 style="color: darkgrey;">Нет данных диаграммы</h5>
+  </div>
+</body>
+</html>

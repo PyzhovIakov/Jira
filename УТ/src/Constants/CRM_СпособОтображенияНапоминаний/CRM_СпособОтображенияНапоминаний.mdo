@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e6289b2-a66b-4624-8570-65cfde17037d">
+  <producedTypes>
+    <managerType typeId="56d6657e-bff9-47df-8da2-914f7c8afb7e" valueTypeId="52cf6813-db73-48ec-a14a-ed2a80388c93"/>
+    <valueManagerType typeId="7f8aadb0-ca79-4d9a-93e9-ba4abd0bde47" valueTypeId="3db58312-47c8-49fd-88f4-c0eae6bd16e5"/>
+    <valueKeyType typeId="1b7f19f6-99bf-4642-92df-938f5685c7b8" valueTypeId="5595eeb5-36d9-4dee-a88d-70cf2e6b225e"/>
+  </producedTypes>
+  <name>CRM_СпособОтображенияНапоминаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способ отображения напоминаний</value>
+  </synonym>
+  <type>
+    <types>EnumRef.CRM_ВариантыОтображенияНапоминаний</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

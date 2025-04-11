@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d7ca44e5-0113-4421-a529-e1fe7d421b28">
+  <name>CRM_ИспользоватьПланированиеПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать планирование продаж</value>
+  </synonym>
+  <location>Constant.CRM_ИспользоватьПланированиеПродаж</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.CRM_КлючиАналитикиПланаПродаж</content>
+  <content>Catalog.CRM_ПланПродаж</content>
+  <content>Catalog.CRM_СхемаПланаПродаж</content>
+  <content>Report.CRM_АнализПлановПродаж</content>
+  <content>DataProcessor.CRM_ПланированиеПродаж</content>
+  <content>DataProcessor.CRM_ПланированиеПродаж.Command.ОткрытьПланированиеПродаж</content>
+  <content>ChartOfCharacteristicTypes.CRM_ТипыАналитикПланирования</content>
+  <content>InformationRegister.CRM_АналитикаУчетаПланаПродаж</content>
+  <content>InformationRegister.CRM_ПланПродаж</content>
+  <content>InformationRegister.CRM_ОбсужденияПланаПродаж</content>
+</mdclass:FunctionalOption>

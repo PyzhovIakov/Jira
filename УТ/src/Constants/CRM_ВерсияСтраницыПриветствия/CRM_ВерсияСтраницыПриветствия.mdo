@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4fe277eb-3573-4e11-8b98-77d460a670de">
+  <producedTypes>
+    <managerType typeId="afa86c68-9d61-4c34-a7df-1678c558ad0a" valueTypeId="be9b7e63-c23d-44e7-bf5d-a954f40097ec"/>
+    <valueManagerType typeId="c07abbfe-f3f5-4ba9-a32f-633254135e44" valueTypeId="5abf5e9e-7c73-47be-94b1-69bb5714fd4d"/>
+    <valueKeyType typeId="e3910551-dfa2-4a9f-bae7-8cf22750aa2f" valueTypeId="ad1c2ad9-5414-4d3a-9dc4-7e1ae3a171cf"/>
+  </producedTypes>
+  <name>CRM_ВерсияСтраницыПриветствия</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM версия страницы приветствия</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c6d4b9a-f488-4550-a6da-8eba7a3d03b6">
+  <name>CRM_МашинноеОбучение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Машинное обучение</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <subsystems>CRM_РаботаСРечью</subsystems>
+  <parentSubsystem>Subsystem.CRM_МодульCRM</parentSubsystem>
+</mdclass:Subsystem>

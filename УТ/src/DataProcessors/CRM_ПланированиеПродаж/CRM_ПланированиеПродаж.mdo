@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e1ae485-e31b-4c4d-8390-a4fc7afb35be">
+  <producedTypes>
+    <objectType typeId="4c3e3baf-644e-420e-a146-e6306fe48943" valueTypeId="b0db3258-a606-4b26-bdf4-4df2f3d9c41f"/>
+    <managerType typeId="09ffee81-3c14-474e-9d18-e8ecc5da4e5e" valueTypeId="ab627e07-f9c8-40c1-934f-ec7de184bd64"/>
+  </producedTypes>
+  <name>CRM_ПланированиеПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планирование продаж (CRM)</value>
+  </synonym>
+  <defaultForm>DataProcessor.CRM_ПланированиеПродаж.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="2f9643f9-2da9-41f0-9de1-f45f27edba7c">
+    <name>ПланПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>План продаж</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CRM_ПланПродаж</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="ac001305-bc81-4179-8f37-a472694c533a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4bef7cba-1891-42c4-8ebc-c7e81fed154c">
+    <name>ВыборПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор периода</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Select a period</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+  </forms>
+  <templates uuid="b463bcac-566e-4cde-a981-2fde73a80d63">
+    <name>ДанныеСверхуHTMLПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные сверху HTMLПлан</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="6d3eba6e-224e-406d-a264-8ac43cfd1222">
+    <name>ДанныеСверхуHTMLФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные сверху HTMLФакт</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <commands uuid="ce215aeb-4f69-4ab7-8168-e1337df02fe4">
+    <name>ОткрытьПланированиеПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Планирование продаж</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

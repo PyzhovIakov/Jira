@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4607f0b4-11ba-445d-a83e-bfa65048547a">
+  <producedTypes>
+    <selectionType typeId="87b67b31-069e-43bf-90d7-5f95699d3280" valueTypeId="2140b150-a5d8-4d6e-a803-fc3449051945"/>
+    <listType typeId="db2d40d1-06ef-4f86-944b-c0236978a3f9" valueTypeId="88f474ff-81af-4d05-94bc-d4079a846a26"/>
+    <managerType typeId="7961a3e9-0e02-4bd2-a77c-9ededb45a960" valueTypeId="c8075b1f-9561-442d-aa33-0cb9bc8a91e7"/>
+    <recordSetType typeId="28a3ebf5-ee06-41b2-b799-cb8a11d3ab49" valueTypeId="ddeaf722-58a2-4068-a2f5-a7cab699e634"/>
+    <recordKeyType typeId="20a4c245-7c5f-4a01-86ec-c960a5fbb45d" valueTypeId="f30fb7c4-535d-4660-bcff-e11067354a29"/>
+    <recordType typeId="3246a2e3-efdd-4540-a0a1-b2c5aee44300" valueTypeId="0d14671b-d916-4279-84c9-707118736f1b"/>
+    <recordManagerType typeId="6abfed7a-928d-480e-921b-8c9be2450ecd" valueTypeId="84536561-3fbe-4d93-a8f6-2ef34216bd13"/>
+  </producedTypes>
+  <name>cbr_ИсполнителиЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исполнители задач (Джира)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Исполнитель задачи</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Исполнители задач</value>
+  </listPresentation>
+  <resources uuid="4656f8f5-4d21-4eab-b1e4-12449ae2f92a">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.cbr_ГруппыДоступаКЗадачам</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0d51d46e-e22e-4f39-a7d6-c284d87ab68e">
+    <name>ЗадачаВзята</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача взята</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a3a55c52-fbe3-4c50-a4d8-fdfce9b1ef93">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.cbr_Задача</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

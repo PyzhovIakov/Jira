@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f064181-1688-466a-a1e1-d7fdbe4e1dc4">
+  <name>CRM_РассчитыватьВажностьИСрочностьЗадачАвтоматически</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассчитывать важность и срочность задач автоматически</value>
+  </synonym>
+  <location>Constant.CRM_РассчитыватьВажностьИСрочностьЗадачАвтоматически</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

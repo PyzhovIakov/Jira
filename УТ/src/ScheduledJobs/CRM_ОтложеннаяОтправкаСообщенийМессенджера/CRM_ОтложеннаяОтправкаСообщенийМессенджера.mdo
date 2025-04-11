@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8f8713b-3128-4edf-a77c-fdd1edbc1242">
+  <name>CRM_ОтложеннаяОтправкаСообщенийМессенджера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отложенная отправка сообщений мессенджера (CRM)</value>
+  </synonym>
+  <comment>Используется для отложенной отправки сообщений мессенджера</comment>
+  <methodName>CommonModule.CRM_РаботаСМессенджерамиСервер.ВыполнитьОтправкуОтложенныхСообщенийМессенджера</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

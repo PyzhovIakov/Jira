@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8432c30-3741-43e4-86df-5283bc59d0a2">
+  <name>CRM_ВоронкиПродажПовтИсп</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM воронки продаж повт исп</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

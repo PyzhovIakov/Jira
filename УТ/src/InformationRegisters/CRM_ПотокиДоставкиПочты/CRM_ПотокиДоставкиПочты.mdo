@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a82a1c6-44dc-4f03-b93c-b2bdd139aaa9">
+  <producedTypes>
+    <selectionType typeId="659f9fc4-5bfa-4520-a6a9-232d138a68e2" valueTypeId="1155bc72-ee69-4d2a-a1bb-9445a1fe4c61"/>
+    <listType typeId="8a7ca1bd-c342-442c-b81d-16ceeb0efb6e" valueTypeId="e903682a-df37-447b-bbd3-a871ef602b9c"/>
+    <managerType typeId="d4d8c829-8947-4579-8af2-e9b23bcca6d9" valueTypeId="f0fb5702-2796-42cc-8361-37201666c60c"/>
+    <recordSetType typeId="52587bdd-75e8-439e-8fa8-21fc40c0b1ca" valueTypeId="6be1951b-fab2-425e-bae3-a0a919ec8998"/>
+    <recordKeyType typeId="431a4fbc-7396-46b0-9746-8cf4fe9a69f9" valueTypeId="a6655fb1-a06d-4dbe-a3b7-29a914b9fbf2"/>
+    <recordType typeId="603c2458-a429-4b79-aec2-2341af879c9b" valueTypeId="c895d150-bc83-42e3-8d3e-2d69f8156e94"/>
+    <recordManagerType typeId="8fd74ea6-3176-48b2-b62a-d63374b3932b" valueTypeId="ef914feb-bfd2-427f-a40e-0ff1e0764f7a"/>
+  </producedTypes>
+  <name>CRM_ПотокиДоставкиПочты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Потоки доставки почты (CRM)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.CRM_ПотокиДоставкиПочты.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2694f9df-41e2-48ba-af11-0046a52db7cf">
+    <name>НомерПотока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер потока</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f7294047-a900-43d8-a0f6-d778a4a394b4">
+    <name>УчетнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7b616f6f-5f70-472f-9fd3-3789bda5c1f0">
+    <name>НастройкаПотоков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потоки доставки почты</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fd301f7b-5f0e-4217-810f-ed1f17d56103">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

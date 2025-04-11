@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеПоказателя</dataPath>
+			<field>ЗначениеПоказателя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение показателя</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Indicator value</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеПоказателяМаксимум</dataPath>
+			<field>ЗначениеПоказателяМаксимум</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение показателя максимум</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Value of the indicator maximum</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Менеджер</dataPath>
+			<field>Менеджер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сумма</dataPath>
+			<field>Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Amount</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Quantity</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ИспользуемыеПоказатели.Менеджер КАК Менеджер,
+	СУММА(ИспользуемыеПоказатели.ЗначениеПоказателя) КАК ЗначениеПоказателя,
+	СУММА(ИспользуемыеПоказатели.ЗначениеПоказателяМаксимум) КАК ЗначениеПоказателяМаксимум
+ПОМЕСТИТЬ ТаблицаПлан
+ИЗ
+	РегистрСведений.CRM_ИспользуемыеКлючевыеПоказатели КАК ИспользуемыеПоказатели
+ГДЕ
+	ИспользуемыеПоказатели.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ИспользуемыеПоказатели.Показатель = &amp;Показатель
+	И ВЫБОР
+			КОГДА &amp;Менеджеры = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)
+				ТОГДА ИСТИНА
+			ИНАЧЕ ИспользуемыеПоказатели.Менеджер = &amp;Менеджеры
+		КОНЕЦ
+
+СГРУППИРОВАТЬ ПО
+	ИспользуемыеПоказатели.Менеджер
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Продажи.Менеджер КАК Менеджер,
+	Продажи.ТипЗапасов КАК ТипЗапасов,
+	ВЫБОР
+		КОГДА &amp;ВариантВаловойПрибыли = 1
+			ТОГДА Продажи.СуммаВыручки
+		КОГДА &amp;ВариантВаловойПрибыли = 2
+			ТОГДА Продажи.СуммаВыручкиБезНДС
+		ИНАЧЕ Продажи.СуммаВыручкиБезНДС
+	КОНЕЦ КАК Выручка,
+	ВЫБОР
+		КОГДА &amp;ВариантВаловойПрибыли = 1
+			ТОГДА Продажи.Стоимость
+		КОГДА &amp;ВариантВаловойПрибыли = 2
+			ТОГДА Продажи.СтоимостьБезНДС
+		ИНАЧЕ Продажи.СтоимостьБезНДС
+	КОНЕЦ КАК Себестоимость,
+	ВЫБОР
+		КОГДА &amp;ВариантВаловойПрибыли = 1
+			ТОГДА Продажи.ДопРасходы
+		КОГДА &amp;ВариантВаловойПрибыли = 2
+			ТОГДА Продажи.ДопРасходыБезНДС
+		ИНАЧЕ Продажи.ДопРасходыБезНДС
+	КОНЕЦ КАК ДопРасходы,
+	Продажи.Трудозатраты КАК Трудозатраты,
+	ВЫБОР
+		КОГДА &amp;ВариантВаловойПрибыли = 1
+			ТОГДА Продажи.ПостатейныеПостоянныеСНДС
+		КОГДА &amp;ВариантВаловойПрибыли = 2
+			ТОГДА Продажи.ПостатейныеПостоянныеБезНДС
+		ИНАЧЕ Продажи.ПостатейныеПостоянныеБезНДС
+	КОНЕЦ КАК ПостатейныеПостоянные,
+	ВЫБОР
+		КОГДА &amp;ВариантВаловойПрибыли = 1
+			ТОГДА Продажи.ПостатейныеПеременныеСНДС
+		КОГДА &amp;ВариантВаловойПрибыли = 2
+			ТОГДА Продажи.ПостатейныеПеременныеБезНДС
+		ИНАЧЕ Продажи.ПостатейныеПеременныеБезНДС
+	КОНЕЦ КАК ПостатейныеПеременные,
+	ВЫБОР
+		КОГДА &amp;ВариантВаловойПрибыли = 1
+			ТОГДА Продажи.РасходыНаПродажуСНДС
+		КОГДА &amp;ВариантВаловойПрибыли = 2
+			ТОГДА Продажи.РасходыНаПродажуБезНДС
+		ИНАЧЕ Продажи.РасходыНаПродажуБезНДС
+	КОНЕЦ КАК РасходыНаПродажу,
+	ВЫБОР
+		КОГДА &amp;ВариантВаловойПрибыли = 1
+			ТОГДА ЕСТЬNULL(СтоимостьНоменклатуры.Стоимость, 0)
+		КОГДА &amp;ВариантВаловойПрибыли = 2
+			ТОГДА ЕСТЬNULL(СтоимостьНоменклатуры.СтоимостьБезНДС, 0)
+		ИНАЧЕ ЕСТЬNULL(СтоимостьНоменклатуры.СтоимостьБезНДС, 0)
+	КОНЕЦ КАК НоменклатураСебестоимость,
+	ВЫБОР
+		КОГДА &amp;ВариантВаловойПрибыли = 1
+			ТОГДА ЕСТЬNULL(СтоимостьНоменклатуры.СтоимостьДопРасходы, 0)
+		КОГДА &amp;ВариантВаловойПрибыли = 2
+			ТОГДА ЕСТЬNULL(СтоимостьНоменклатуры.СтоимостьДопРасходыБезНДС, 0)
+		ИНАЧЕ ЕСТЬNULL(СтоимостьНоменклатуры.СтоимостьДопРасходыБезНДС, 0)
+	КОНЕЦ КАК НоменклатураСтоимостьДопРасходы,
+	ЕСТЬNULL(СтоимостьНоменклатуры.Трудозатраты, 0) КАК НоменклатураТрудозатраты,
+	ВЫБОР
+		КОГДА &amp;ВариантВаловойПрибыли = 1
+			ТОГДА ЕСТЬNULL(СтоимостьНоменклатуры.ПостатейныеПостоянныеСНДС, 0)
+		КОГДА &amp;ВариантВаловойПрибыли = 2
+			ТОГДА ЕСТЬNULL(СтоимостьНоменклатуры.ПостатейныеПостоянныеБезНДС, 0)
+		ИНАЧЕ ЕСТЬNULL(СтоимостьНоменклатуры.ПостатейныеПостоянныеБезНДС, 0)
+	КОНЕЦ КАК НоменклатураПостатейныеПостоянные,
+	ВЫБОР
+		КОГДА &amp;ВариантВаловойПрибыли = 1
+			ТОГДА ЕСТЬNULL(СтоимостьНоменклатуры.ПостатейныеПеременныеСНДС, 0)
+		КОГДА &amp;ВариантВаловойПрибыли = 2
+			ТОГДА ЕСТЬNULL(СтоимостьНоменклатуры.ПостатейныеПеременныеБезНДС, 0)
+		ИНАЧЕ ЕСТЬNULL(СтоимостьНоменклатуры.ПостатейныеПеременныеБезНДС, 0)
+	КОНЕЦ КАК НоменклатураПостатейныеПеременные,
+	ЕСТЬNULL(РасчетСебестоимостиТоваров.Ссылка.ПредварительныйРасчет, ЛОЖЬ) КАК ПредварительныйРасчет,
+	Продажи.Количество КАК Количество
+ПОМЕСТИТЬ втВыручкаИСебестоимостьПродажДляВаловойПрибыли
+ИЗ
+	РегистрНакопления.ВыручкаИСебестоимостьПродаж КАК Продажи
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.РасчетСебестоимостиТоваров.Организации КАК РасчетСебестоимостиТоваров
+		ПО (НАЧАЛОПЕРИОДА(Продажи.Период, МЕСЯЦ) = НАЧАЛОПЕРИОДА(РасчетСебестоимостиТоваров.Ссылка.Дата, МЕСЯЦ))
+			И Продажи.АналитикаУчетаПоПартнерам.Организация = РасчетСебестоимостиТоваров.Организация
+			И (РасчетСебестоимостиТоваров.Ссылка.Проведен)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СтоимостьТоваров КАК СтоимостьНоменклатуры
+		ПО Продажи.АналитикаУчетаНоменклатуры = СтоимостьНоменклатуры.АналитикаУчетаНоменклатуры
+			И Продажи.АналитикаУчетаПоПартнерам.Организация = СтоимостьНоменклатуры.Организация
+			И Продажи.ВидЗапасов = СтоимостьНоменклатуры.ВидЗапасов
+			И (СтоимостьНоменклатуры.Период = НАЧАЛОПЕРИОДА(Продажи.Период, МЕСЯЦ))
+			И Продажи.РазделУчета = СтоимостьНоменклатуры.РазделУчета
+			И (ЕСТЬNULL(РасчетСебестоимостиТоваров.Ссылка.ПредварительныйРасчет, ЛОЖЬ))
+ГДЕ
+	Продажи.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ВЫБОР
+			КОГДА &amp;Менеджеры = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)
+				ТОГДА ИСТИНА
+			ИНАЧЕ Продажи.Менеджер = &amp;Менеджеры
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Продажи.Менеджер КАК Менеджер,
+	Продажи.Выручка КАК Выручка,
+	ВЫБОР
+		КОГДА Продажи.ТипЗапасов = ЗНАЧЕНИЕ(Перечисление.ТипыЗапасов.КомиссионныйТовар)
+			ТОГДА Продажи.Себестоимость
+		КОГДА Продажи.ПредварительныйРасчет
+			ТОГДА ВЫРАЗИТЬ(Продажи.Количество * Продажи.НоменклатураСебестоимость КАК ЧИСЛО(31, 2))
+		ИНАЧЕ Продажи.Себестоимость
+	КОНЕЦ КАК Себестоимость,
+	ВЫБОР
+		КОГДА Продажи.ПредварительныйРасчет
+			ТОГДА ВЫРАЗИТЬ(Продажи.Количество * Продажи.НоменклатураСтоимостьДопРасходы КАК ЧИСЛО(31, 2))
+		ИНАЧЕ Продажи.ДопРасходы
+	КОНЕЦ КАК ДопРасходы,
+	ВЫБОР
+		КОГДА Продажи.ПредварительныйРасчет
+			ТОГДА ВЫРАЗИТЬ(Продажи.Количество * Продажи.НоменклатураТрудозатраты КАК ЧИСЛО(31, 2))
+		ИНАЧЕ Продажи.Трудозатраты
+	КОНЕЦ КАК Трудозатраты,
+	ВЫБОР
+		КОГДА Продажи.ПредварительныйРасчет
+			ТОГДА ВЫРАЗИТЬ(Продажи.Количество * Продажи.НоменклатураПостатейныеПостоянные КАК ЧИСЛО(31, 2))
+		ИНАЧЕ Продажи.ПостатейныеПостоянные
+	КОНЕЦ КАК ПостатейныеПостоянные,
+	ВЫБОР
+		КОГДА Продажи.ПредварительныйРасчет
+			ТОГДА ВЫРАЗИТЬ(Продажи.Количество * Продажи.НоменклатураПостатейныеПеременные КАК ЧИСЛО(31, 2))
+		ИНАЧЕ Продажи.ПостатейныеПеременные
+	КОНЕЦ КАК ПостатейныеПеременные,
+	Продажи.РасходыНаПродажу КАК РасходыНаПродажу,
+	Продажи.Количество КАК Количество
+ПОМЕСТИТЬ втТаблицаФактПредварительная
+ИЗ
+	втВыручкаИСебестоимостьПродажДляВаловойПрибыли КАК Продажи
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТаблицаФактПредварительная.Менеджер КАК Менеджер,
+	СУММА(ТаблицаФактПредварительная.Количество) КАК Количество,
+	СУММА(ТаблицаФактПредварительная.Выручка) - СУММА(ТаблицаФактПредварительная.Себестоимость) - СУММА(ТаблицаФактПредварительная.ДопРасходы) - СУММА(ТаблицаФактПредварительная.Трудозатраты) - СУММА(ТаблицаФактПредварительная.ПостатейныеПостоянные) - СУММА(ТаблицаФактПредварительная.ПостатейныеПеременные) - СУММА(ТаблицаФактПредварительная.РасходыНаПродажу) КАК Сумма
+ПОМЕСТИТЬ ТаблицаФакт
+ИЗ
+	втТаблицаФактПредварительная КАК ТаблицаФактПредварительная
+
+СГРУППИРОВАТЬ ПО
+	ТаблицаФактПредварительная.Менеджер
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТаблицаФакт.Менеджер КАК Менеджер,
+	ЕСТЬNULL(ТаблицаПлан.ЗначениеПоказателя, 0) КАК ЗначениеПоказателя,
+	ЕСТЬNULL(ТаблицаПлан.ЗначениеПоказателяМаксимум, 0) КАК ЗначениеПоказателяМаксимум,
+	ТаблицаФакт.Количество КАК Количество,
+	ТаблицаФакт.Сумма КАК Сумма
+ИЗ
+	ТаблицаФакт КАК ТаблицаФакт
+		ЛЕВОЕ СОЕДИНЕНИЕ ТаблицаПлан КАК ТаблицаПлан
+		ПО (ТаблицаПлан.Менеджер = ТаблицаФакт.Менеджер)</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ЗначениеПоказателя</dataPath>
+		<expression>Сумма(ЗначениеПоказателя)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЗначениеПоказателяМаксимум</dataPath>
+		<expression>Сумма(ЗначениеПоказателяМаксимум)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(Количество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Сумма</dataPath>
+		<expression>Сумма(Сумма)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period start</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period end</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Показатель</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Показатель</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Indicator</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.CRM_ШаблоныКлючевыхПоказателей</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Менеджеры</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Менеджеры</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Managers</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.Пользователи.ПустаяСсылка</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВариантВаловойПрибыли</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вариант валовой прибыли</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">1</value>
+		<useRestriction>false</useRestriction>
+		<availableValue>
+			<value xsi:type="xs:decimal">1</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В валюте упр. учета без НДС</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В валюте упр. учета с НДС</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Менеджер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗначениеПоказателя</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗначениеПоказателяМаксимум</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сумма</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

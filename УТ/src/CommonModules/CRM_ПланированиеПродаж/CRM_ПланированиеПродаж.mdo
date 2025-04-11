@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="996e3215-c4fa-4962-8f77-20d6e4c49336">
+  <name>CRM_ПланированиеПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планирование продаж (CRM)</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

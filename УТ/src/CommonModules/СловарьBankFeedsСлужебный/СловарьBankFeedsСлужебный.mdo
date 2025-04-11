@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90878a1f-97ee-48aa-ba12-da7cfb95f462">
+  <name>СловарьBankFeedsСлужебный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Словарь BankFeeds служебный</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

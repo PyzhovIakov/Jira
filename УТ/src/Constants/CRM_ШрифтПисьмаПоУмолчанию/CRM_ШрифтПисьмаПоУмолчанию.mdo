@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="71cbebd3-f6d1-4e62-8f2e-379dbce32871">
+  <producedTypes>
+    <managerType typeId="4570220f-828b-4fa9-9405-34d5ce278906" valueTypeId="dcdfeaea-2648-451d-98c5-8c3e49adbaaa"/>
+    <valueManagerType typeId="8c6c8abf-8b8d-49e5-ab57-6a4de81014cf" valueTypeId="52b7b2e7-1474-45ff-bcef-863cd900d283"/>
+    <valueKeyType typeId="bcce8889-d1a8-4f49-a954-39a083daf485" valueTypeId="a9db7fa0-3c41-4202-a4e6-8ba330934734"/>
+  </producedTypes>
+  <name>CRM_ШрифтПисьмаПоУмолчанию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шрифт письма по умолчанию (CRM)</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

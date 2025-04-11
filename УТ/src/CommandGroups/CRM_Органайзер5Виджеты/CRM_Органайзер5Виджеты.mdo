@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommandGroup xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="40cf92bf-c856-4e47-896c-2821795a2427">
+  <name>CRM_Органайзер5Виджеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виджеты</value>
+  </synonym>
+  <representation>Auto</representation>
+  <category>ActionsPanel</category>
+</mdclass:CommandGroup>

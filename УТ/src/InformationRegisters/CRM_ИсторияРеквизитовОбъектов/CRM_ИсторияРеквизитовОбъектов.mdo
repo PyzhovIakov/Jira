@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac696230-a7cd-40d6-b218-bd7c5abedd0f">
+  <producedTypes>
+    <selectionType typeId="fb3885c3-8de0-4abe-9dd4-bdc83547609f" valueTypeId="7be4736d-6ee8-483c-99d6-51abff9223ae"/>
+    <listType typeId="bac5d28d-a714-40c4-8420-07a2c669e3ff" valueTypeId="20a14104-2aaf-4327-b8fa-16f9152c9b35"/>
+    <managerType typeId="79d626a3-b1e8-4f40-a00a-565c48831a1d" valueTypeId="1a5cc2ff-4496-4ca7-b709-adf358439326"/>
+    <recordSetType typeId="2610a12f-bb29-4850-a433-da0bf4f31ced" valueTypeId="b41a7376-aed8-48a8-a24a-732c31e8b170"/>
+    <recordKeyType typeId="f821b313-b5b7-4798-9853-71620403c016" valueTypeId="21f7ea6d-6c1c-404b-8112-42c38c0ecf38"/>
+    <recordType typeId="9dbd63a7-22d6-42f3-b6bb-53ebddf52bc2" valueTypeId="fda3f583-f6bc-42b9-8313-a054ebf57b2b"/>
+    <recordManagerType typeId="397296e3-d95e-48f6-af21-a73756a2c857" valueTypeId="52ce27ba-9ae0-4790-8fe8-8c662e4fbac6"/>
+  </producedTypes>
+  <name>CRM_ИсторияРеквизитовОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>История реквизитов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Attributes History</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="2346db4a-d466-436f-83f0-2f0cc49e2e1f">
+    <name>РеквизитТип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизит тип</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="471d37ae-a09f-41bf-8117-b4977aff65ad">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>New Value</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+      <types>Date</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>5</scale>
+      </numberQualifiers>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Указывается значение</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify value</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3dae4053-d7a7-4a48-b73f-a52372d89d2d">
+    <name>ЗначениеСтрока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение строка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="6928b357-c749-4358-a567-b06333dd7438">
+    <name>ЗначениеИдентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="d85680cc-c923-4b5d-bf66-18dddca290af">
+    <name>СтароеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Старое значение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Previous Value</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+      <types>Date</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>5</scale>
+      </numberQualifiers>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Указывается значение</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify value</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0d56775f-e22c-4fd5-8069-871bcb86225f">
+    <name>СтароеЗначениеСтрока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Старое значение строка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="7221466b-e2cc-4ab9-b9af-502dc955b621">
+    <name>СтароеЗначениеИдентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Старое значение идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="7db1b572-205e-41cf-83a5-bc54bb852408">
+    <name>ВидЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид записи</value>
+    </synonym>
+    <type>
+      <types>EnumRef.CRM_ВидыЗаписейИстории</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="08236ab6-83d0-4a9e-9fef-d8b9490759aa">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Author</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВнешниеПользователи</types>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Указывается автор</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify author</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3093f7c7-0f0b-453a-93f8-852df9573446">
+    <name>ЭтоНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это новый</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>New?</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="54f1888f-c8c6-4fb5-8a30-037a355f7c13">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Object</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.CRM_Интерес</types>
+      <types>CatalogRef.Партнеры</types>
+      <types>CatalogRef.КонтактныеЛицаПартнеров</types>
+      <types>CatalogRef.CRM_ПотенциальныеКлиенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Указывается партнер</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The partner are entered</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="589c6b84-3b2e-4a3b-9255-06456d518a0b">
+    <name>Реквизит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизит</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Attribute</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      <types>String</types>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Path</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="17d9c745-dc94-48f2-94d9-083e9bd637d9">
+    <name>КлючУникальности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ уникальности</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

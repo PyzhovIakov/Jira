@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31b18890-2b9f-430a-b212-43b153e98870">
+  <producedTypes>
+    <selectionType typeId="148fa496-849f-4721-bc7a-8501600e7ba5" valueTypeId="8b201606-f435-4229-abf4-1c9a007e9250"/>
+    <listType typeId="671e3af0-661d-4d78-af90-894e17e3447c" valueTypeId="38825a79-f644-476f-93ed-6f27cd2d2e66"/>
+    <managerType typeId="1371d846-5393-479f-a2e7-84168be7b523" valueTypeId="be1cadff-202f-4953-a0d1-a80cea82f226"/>
+    <recordSetType typeId="9cd497b2-24be-4c79-b3db-5d2ae8ed889f" valueTypeId="a279e1a9-09d1-45bb-a2e3-acc2fd4322c4"/>
+    <recordKeyType typeId="1c8ab19c-0f92-4177-8313-38b03bd1c102" valueTypeId="08b8506b-c940-4ef6-a5eb-4021417a31e5"/>
+    <recordType typeId="3e11d7cf-e581-4b27-ab45-1e76c4c4c08e" valueTypeId="9a4382ee-a400-4064-a431-288bf4fa6a25"/>
+    <recordManagerType typeId="92b5b80c-886e-4cd4-a42d-194332baffa5" valueTypeId="0cf539dc-26d0-4b4e-b952-322d2467efee"/>
+  </producedTypes>
+  <name>CRM_ВажностьСрочностьЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Важность и срочность задач</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3db95a4a-93c0-4724-883d-96bf31fdb9eb">
+    <name>Важная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Важная</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9301be95-2330-4865-9c02-6876513c662e">
+    <name>Срочная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срочная</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="18ba4faa-6112-4fff-8aaa-3a1d30e32336">
+    <name>РучнаяУстановкаВажностиИСрочности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная установка важности и срочности</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="97fb9549-8ada-4a86-b2b6-5f50b786b2f9">
+    <name>ТребуетсяПересчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуется пересчет</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d7667d03-d21a-4d57-b28c-69f78f3dd61e">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Object</value>
+    </synonym>
+    <type>
+      <types>TaskRef.ЗадачаИсполнителя</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект задач пользователей</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>User task object</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

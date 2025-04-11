@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6baa6a4b-922f-4bb3-b69b-6c02e25dd147">
+  <producedTypes>
+    <containerType typeId="212ad439-a564-45d0-9a8d-336c2c500b1e" valueTypeId="4f6f1d71-b114-481d-b1a3-db4684ced6ec"/>
+  </producedTypes>
+  <name>CRM_ПараметрИсточникТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM параметр источник трудозатрат</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>CRM labor source</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.CRM_ЭтапКалендарногоПлана</types>
+    <types>DocumentRef.CRM_Интерес</types>
+    <types>DocumentRef.CRM_Взаимодействие</types>
+    <types>DocumentRef.ЭлектронноеПисьмоИсходящее</types>
+    <types>DocumentRef.ЭлектронноеПисьмоВходящее</types>
+    <types>DocumentRef.ТелефонныйЗвонок</types>
+    <types>DocumentRef.CRM_Телемаркетинг</types>
+    <types>TaskRef.ЗадачаИсполнителя</types>
+    <types>DocumentRef.CRM_Заявка</types>
+    <types>BusinessProcessRef.CRM_БизнесПроцесс</types>
+    <types>String</types>
+    <types>DocumentRef.КоммерческоеПредложениеКлиенту</types>
+    <stringQualifiers>
+      <length>36</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

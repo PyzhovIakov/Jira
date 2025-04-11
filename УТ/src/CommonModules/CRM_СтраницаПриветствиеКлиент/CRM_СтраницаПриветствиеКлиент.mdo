@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f6c97a5-a25f-43b9-a26b-41c906d75639">
+  <name>CRM_СтраницаПриветствиеКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>CRM страница приветствие клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

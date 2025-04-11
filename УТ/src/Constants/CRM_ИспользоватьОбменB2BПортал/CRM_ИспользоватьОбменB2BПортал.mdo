@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b509f0fe-07dc-4025-8cce-778c7d46dcdd">
+  <producedTypes>
+    <managerType typeId="06e804b6-a500-47e0-973f-88fc8d80d04a" valueTypeId="fc9b3b3d-4133-4632-8d2c-49ec3a86f659"/>
+    <valueManagerType typeId="775ba5e6-ba48-4197-98c2-bf11be293bdf" valueTypeId="4a03b760-1bdb-4a46-b4b0-0721924d4efb"/>
+    <valueKeyType typeId="e7aa4c05-7d50-4164-9c44-6474ea81c3a1" valueTypeId="977dd94a-c74d-45b5-b509-b1a53a265561"/>
+  </producedTypes>
+  <name>CRM_ИспользоватьОбменB2BПортал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать обмен с B2B порталом</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,43 @@
+<div class="widget-container" id="{{CRM:WIDGET_ID}}">
+  <!-- WIDGET HEADER -->
+
+  <table class="widget-block-header">
+    <tbody>
+      <tr>
+        <td class="widget-header">
+          <p class="widget-header-text" title="{{CRM:WIDGET_TITLE}}">
+            {{CRM:WIDGET_TITLE}}
+          </p>
+        </td>
+        <td class="widget-button-padding">
+          <a class="widget-button widget-button__update" href="Обновить" title="Обновить виджет">
+          </a>
+        </td>
+        <td class="widget-button-padding">
+          <a class="widget-button widget-button__settings" href="НастройкаВиджета" title="Настройки виджета"></a>
+        </td>
+        <td class="widget-button-padding">
+          <a class="widget-button widget-button__remove" href="СкрытьВиджет" title="Скрыть виджет"></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- WIDGET CONTENT -->
+
+  <div class="widget-block-main">
+    {{CRM:WIDGET_CONTENT}}
+  </div>
+
+  <!-- WIDGET FOOTER -->
+
+  <table class="widget-block-footer">
+    <tbody>
+      <tr>
+        <td>
+          <a class="widget-detail" href="Расшифровать" title="Расшифровать виджет">Подробнее</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
