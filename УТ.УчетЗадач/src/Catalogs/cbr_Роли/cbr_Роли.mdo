@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8aa0e6c2-cbb7-487f-8490-37b67765abcf">
+  <producedTypes>
+    <objectType typeId="31e0a3d8-45b6-4c7d-a3f0-cbee870ea27e" valueTypeId="7e6ec71c-f06b-4e9c-9b5a-cae85a2c704e"/>
+    <refType typeId="1fffbf1a-3476-47aa-9130-31478ba6dcd7" valueTypeId="2326aef6-b83f-4363-b236-d0423486b2dd"/>
+    <selectionType typeId="bf3288de-8a92-43fb-a420-4c15e864ea30" valueTypeId="f3419f97-29e4-4e2f-95f5-0625e0abfb62"/>
+    <listType typeId="e3efc8cd-73a3-40d8-ae91-d5a14394582d" valueTypeId="4befc710-d3d0-4d9d-8040-82e258b5f5a4"/>
+    <managerType typeId="c61e968e-cbde-400f-9e5d-dca596ebac91" valueTypeId="4dda0d55-2cbe-415a-ab28-838b610f67e5"/>
+  </producedTypes>
+  <name>cbr_Роли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли (Джира)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.cbr_Роли.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.cbr_Роли.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <tabularSections uuid="512184a4-0db8-4366-9515-34612442faf8">
+    <producedTypes>
+      <objectType typeId="2b0b4cd1-00be-4258-a29d-77999c7ef487" valueTypeId="bef006e0-3b1d-4b15-a7f7-0bdc46f99f6b"/>
+      <rowType typeId="886e7a38-84d2-4249-947f-d407e4dff297" valueTypeId="8e592061-91ca-47a6-bf52-b0f1e83208d3"/>
+    </producedTypes>
+    <name>Пользователи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователи</value>
+    </synonym>
+    <attributes uuid="9d5e8849-5c09-4255-a4f3-cfb11c929ce7">
+      <name>Пользователь</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пользователь</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Catalog>

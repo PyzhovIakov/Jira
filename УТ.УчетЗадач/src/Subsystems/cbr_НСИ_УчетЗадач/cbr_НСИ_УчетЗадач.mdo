@@ -35,4 +35,5 @@
   <content>InformationRegister.cbr_СтатусыЗадач</content>
   <content>AccumulationRegister.cbr_ЧасыТрудозатрат</content>
   <content>InformationRegister.cbr_СобытияПоЗадачам</content>
+  <content>Catalog.cbr_Роли</content>
 </mdclass:Subsystem>
