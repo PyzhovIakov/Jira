@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b4c238c-8c52-4bc0-9592-cf15c9614f1b">
+  <name>cbr_ДвиженияПоРегистрам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения по регистрам</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

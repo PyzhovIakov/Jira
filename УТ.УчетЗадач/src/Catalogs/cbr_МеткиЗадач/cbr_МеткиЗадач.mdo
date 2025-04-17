@@ -171,6 +171,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="ff6cf2b8-d734-4dd3-9858-15ccdbf1f6a1">
+    <name>ВидимостьНаФорме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Видимость на форме</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="c4116c55-2b98-40a7-b5e3-36d7d9d4e5f1">
     <name>ФормаЭлемента</name>
     <synonym>

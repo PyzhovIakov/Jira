@@ -642,6 +642,10 @@
     <items xsi:type="form:Button">
       <name>ФормаПрименитьИзмениения</name>
       <id>50</id>
+      <title>
+        <key>ru</key>
+        <value>Применить изменения</value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>

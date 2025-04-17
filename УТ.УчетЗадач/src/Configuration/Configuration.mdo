@@ -31,7 +31,6 @@
   <version>1,0</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
-  <compatibilityMode>8.3.26</compatibilityMode>
   <languages uuid="939cf021-7c0e-48ea-9d1a-a5cd09c08f19" extendedConfigurationObject="0663bf5b-bcba-4a40-a862-a0b3baa2d884">
     <name>Русский</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -44,6 +43,7 @@
   <subsystems>Subsystem.cbr_НСИ_УчетЗадач</subsystems>
   <subsystems>Subsystem.cbr_УчетЗадач</subsystems>
   <roles>Role.cbr_ОсновнаяРоль</roles>
+  <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.cbr_ВыборЦветаHTMLПовтИсп</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроля</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаТриггеров</commonModules>
@@ -51,10 +51,13 @@
   <commonModules>CommonModule.cbr_УведомленияПользователей</commonModules>
   <commonModules>CommonModule.cbr_ЭлементыФормы</commonModules>
   <commonModules>CommonModule.РаботаСФайламиКлиентСервер</commonModules>
+  <commonModules>CommonModule.cbr_СобытияПоЗадачам</commonModules>
+  <commonModules>CommonModule.cbr_ДвиженияПоРегистрам</commonModules>
   <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументов</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПереопределитьПолучаемуюФормуПрисоединенногоФайла</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.cbr_ЗаписьЗадачи</eventSubscriptions>
   <scheduledJobs>ScheduledJob.cbr_ВызовТриггера</scheduledJobs>
-  <scheduledJobs>ScheduledJob.Центр_ПроверкаВыполненияЭтаповКонтроля1</scheduledJobs>
+  <scheduledJobs>ScheduledJob.cbr_ПроверкаВыполненияЭтаповКонтроля</scheduledJobs>
   <definedTypes>DefinedType.ВладелецПрисоединенныхФайлов</definedTypes>
   <definedTypes>DefinedType.ВладелецПрисоединенныхФайловОбъект</definedTypes>
   <definedTypes>DefinedType.ПредметНапоминания</definedTypes>
@@ -107,6 +110,7 @@
   <informationRegisters>InformationRegister.cbr_СвязанныеЗадачи</informationRegisters>
   <informationRegisters>InformationRegister.cbr_СтатусыЗадач</informationRegisters>
   <informationRegisters>InformationRegister.НапоминанияПользователя</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_СобытияПоЗадачам</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>
 </mdclass:Configuration>
