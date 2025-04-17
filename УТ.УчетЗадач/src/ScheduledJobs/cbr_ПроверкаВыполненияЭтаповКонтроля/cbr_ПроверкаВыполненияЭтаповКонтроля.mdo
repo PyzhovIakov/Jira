@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="271631a2-cf4a-4b51-b082-d454a5d16173">
-  <name>Центр_ПроверкаВыполненияЭтаповКонтроля1</name>
+  <name>cbr_ПроверкаВыполненияЭтаповКонтроля</name>
   <synonym>
     <key>ru</key>
     <value>Проверка выполнения этапов контроля</value>
