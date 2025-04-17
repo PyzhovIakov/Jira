@@ -9,6 +9,9 @@
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
     <defaultRunMode>Checked</defaultRunMode>
     <usePurposes>Checked</usePurposes>
+    <managedApplicationModule>Extended</managedApplicationModule>
+    <sessionModule>Extended</sessionModule>
+    <externalConnectionModule>Extended</externalConnectionModule>
     <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
     <defaultRoles>Extended</defaultRoles>
@@ -31,7 +34,6 @@
   <version>1,0</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
-  <compatibilityMode>8.3.26</compatibilityMode>
   <languages uuid="939cf021-7c0e-48ea-9d1a-a5cd09c08f19" extendedConfigurationObject="0663bf5b-bcba-4a40-a862-a0b3baa2d884">
     <name>Русский</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -44,6 +46,7 @@
   <subsystems>Subsystem.cbr_НСИ_УчетЗадач</subsystems>
   <subsystems>Subsystem.cbr_УчетЗадач</subsystems>
   <roles>Role.cbr_ОсновнаяРоль</roles>
+  <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.cbr_ВыборЦветаHTMLПовтИсп</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроля</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаТриггеров</commonModules>
@@ -61,6 +64,11 @@
   <definedTypes>DefinedType.ПрисоединенныйФайл</definedTypes>
   <definedTypes>DefinedType.ПрисоединенныйФайлОбъект</definedTypes>
   <commonCommands>CommonCommand.ПрисоединенныеФайлы</commonCommands>
+  <commandGroups>CommandGroup.cbr_Документы</commandGroups>
+  <commandGroups>CommandGroup.cbr_Справочники</commandGroups>
+  <commandGroups>CommandGroup.cbr_РегистрыСведений</commandGroups>
+  <commandGroups>CommandGroup.cbr_РегистрыНакопления</commandGroups>
+  <commandGroups>CommandGroup.cbr_Формы</commandGroups>
   <commonForms>CommonForm.cbr_ФормаОтветаНаВопросПоЗадаче</commonForms>
   <commonForms>CommonForm.cbr_ФормаСпискаВопросовПоЗадаче</commonForms>
   <commonForms>CommonForm.cbr_ИерархияЗадачОбщая</commonForms>
@@ -83,6 +91,7 @@
   <catalogs>Catalog.cbr_ЗадачаПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.cbr_Триггеры</catalogs>
   <catalogs>Catalog.Партнеры</catalogs>
+  <catalogs>Catalog.cbr_Роли</catalogs>
   <documents>Document.cbr_Задача</documents>
   <documents>Document.cbr_ТрудозатратыПоЗадаче</documents>
   <enums>Enum.cbr_ВидыВопросов</enums>

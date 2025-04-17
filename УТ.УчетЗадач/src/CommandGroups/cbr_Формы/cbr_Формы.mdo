@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommandGroup xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c4ef2c1-cfeb-4ccb-a817-f7240d1715b6">
+  <name>cbr_Формы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формы</value>
+  </synonym>
+  <representation>Auto</representation>
+</mdclass:CommandGroup>
