@@ -45,6 +45,36 @@
   </languages>
   <subsystems>Subsystem.cbr_НСИ_УчетЗадач</subsystems>
   <subsystems>Subsystem.cbr_УчетЗадач</subsystems>
+  <subsystems>Subsystem.cbr_Календарь</subsystems>
+  <styleItems>StyleItem.cbr_РамкаКалендаряЖелтая</styleItems>
+  <styleItems>StyleItem.cbr_РамкаКалендаряЗеленая</styleItems>
+  <styleItems>StyleItem.cbr_РамкаКалендаряКрасная</styleItems>
+  <styleItems>StyleItem.cbr_РамкаКалендаряОранжевая</styleItems>
+  <styleItems>StyleItem.cbr_РамкаКалендаряОтработана</styleItems>
+  <styleItems>StyleItem.cbr_РамкаКалендаряСиняя</styleItems>
+  <styleItems>StyleItem.cbr_РамкаКалендаряТекущаяЗапись</styleItems>
+  <styleItems>StyleItem.cbr_ЦветКалендаряПоУмолчанию</styleItems>
+  <styleItems>StyleItem.cbr_ЦветКалендаряТекущаяЗапись</styleItems>
+  <styleItems>StyleItem.cbr_ЦветКалендаряФонТекущегоДня</styleItems>
+  <styleItems>StyleItem.cbr_ЦветТекстаНеактуальнойДатыКалендаря</styleItems>
+  <styleItems>StyleItem.cbr_РамкаКалендаряПоУмолчанию</styleItems>
+  <styleItems>StyleItem.cbr_ЦветКалендаряПодпись</styleItems>
+  <styleItems>StyleItem.cbr_ЦветКалендаряПодписьТекущийДень</styleItems>
+  <styleItems>StyleItem.cbr_ЦветКалендаряФонПустойЯчейкиВсегоДня</styleItems>
+  <styleItems>StyleItem.cbr_ЦветКалендаряФонШапки</styleItems>
+  <styleItems>StyleItem.cbr_ЦветКалендаряДоступноеВремя</styleItems>
+  <styleItems>StyleItem.ВидДняПроизводственногоКалендаряВоскресеньеЦвет</styleItems>
+  <styleItems>StyleItem.ВидДняПроизводственногоКалендаряНеУказанЦвет</styleItems>
+  <styleItems>StyleItem.ВидДняПроизводственногоКалендаряПраздникЦвет</styleItems>
+  <styleItems>StyleItem.ВидДняПроизводственногоКалендаряПредпраздничныйЦвет</styleItems>
+  <styleItems>StyleItem.ВидДняПроизводственногоКалендаряРабочийЦвет</styleItems>
+  <styleItems>StyleItem.ВидДняПроизводственногоКалендаряСубботаЦвет</styleItems>
+  <styleItems>StyleItem.НерабочийПериодПроизводственногоКалендаряФон</styleItems>
+  <styles>Style.cbr_Календарь</styles>
+  <commonPictures>CommonPicture.cbr_ЗаписьКалендаряОтклонена</commonPictures>
+  <commonPictures>CommonPicture.cbr_ЗаписьКалендаряПодВопросом</commonPictures>
+  <commonPictures>CommonPicture.cbr_ЗаписьКалендаряУдалена</commonPictures>
+  <commonPictures>CommonPicture.cbr_Календарь16</commonPictures>
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.cbr_ВыборЦветаHTMLПовтИсп</commonModules>
@@ -56,8 +86,12 @@
   <commonModules>CommonModule.РаботаСФайламиКлиентСервер</commonModules>
   <commonModules>CommonModule.cbr_СобытияПоЗадачам</commonModules>
   <commonModules>CommonModule.cbr_ДвиженияПоРегистрам</commonModules>
-  <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументов</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ПереопределитьПолучаемуюФормуПрисоединенногоФайла</eventSubscriptions>
+  <commonModules>CommonModule.cbr_КалендарьКлиент</commonModules>
+  <commonModules>CommonModule.cbr_КаленарьКлиентСервер</commonModules>
+  <commonModules>CommonModule.cbr_КалендарьСервер</commonModules>
+  <commonModules>CommonModule.cbr_Сотрудники</commonModules>
+  <eventSubscriptions>EventSubscription.ВариантыОтчетовПередУдалениемИдентификатораОбъектаМетаданных</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ВыполнитьДействияПриЗаписиПрисоединенногоФайла</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ЗаписьЗадачи</eventSubscriptions>
   <scheduledJobs>ScheduledJob.cbr_ВызовТриггера</scheduledJobs>
   <scheduledJobs>ScheduledJob.cbr_ПроверкаВыполненияЭтаповКонтроля</scheduledJobs>
@@ -72,6 +106,7 @@
   <commandGroups>CommandGroup.cbr_РегистрыСведений</commandGroups>
   <commandGroups>CommandGroup.cbr_РегистрыНакопления</commandGroups>
   <commandGroups>CommandGroup.cbr_Формы</commandGroups>
+  <commandGroups>CommandGroup.Печать</commandGroups>
   <commonForms>CommonForm.cbr_ФормаОтветаНаВопросПоЗадаче</commonForms>
   <commonForms>CommonForm.cbr_ФормаСпискаВопросовПоЗадаче</commonForms>
   <commonForms>CommonForm.cbr_ИерархияЗадачОбщая</commonForms>
@@ -95,6 +130,8 @@
   <catalogs>Catalog.cbr_Триггеры</catalogs>
   <catalogs>Catalog.Партнеры</catalogs>
   <catalogs>Catalog.cbr_Роли</catalogs>
+  <catalogs>Catalog.cbr_Календарь</catalogs>
+  <catalogs>Catalog.cbr_КалендарьЦвета</catalogs>
   <documents>Document.cbr_Задача</documents>
   <documents>Document.cbr_ТрудозатратыПоЗадаче</documents>
   <enums>Enum.cbr_ВидыВопросов</enums>
@@ -104,6 +141,12 @@
   <enums>Enum.cbr_ТипОценкиЧасов</enums>
   <enums>Enum.СтатусыИзвлеченияТекстаФайлов</enums>
   <enums>Enum.ТипыХраненияФайлов</enums>
+  <enums>Enum.cbr_СостояниеЗаписиРабочегоКалендаря</enums>
+  <enums>Enum.cbr_НастройкиЗаписейРабочегоКалендаря</enums>
+  <enums>Enum.cbr_ТипЗаписиКалендаря</enums>
+  <enums>Enum.cbr_ПериодОтображенияРабочегоКалендаря</enums>
+  <enums>Enum.СпособыУстановкиВремениНапоминания</enums>
+  <enums>Enum.cbr_ОтображениеВремениЭлементов</enums>
   <dataProcessors>DataProcessor.cbr_Канбан</dataProcessors>
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
   <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>

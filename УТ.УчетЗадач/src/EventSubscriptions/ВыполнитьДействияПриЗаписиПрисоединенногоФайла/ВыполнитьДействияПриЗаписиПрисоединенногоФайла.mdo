@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:EventSubscription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="02443ddc-12c3-4a46-b6ee-a8580715c981">
-  <name>ПереопределитьПолучаемуюФормуПрисоединенногоФайла</name>
+  <name>ВыполнитьДействияПриЗаписиПрисоединенногоФайла</name>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:EventSubscriptionExtension"/>
-  <source/>
 </mdclass:EventSubscription>

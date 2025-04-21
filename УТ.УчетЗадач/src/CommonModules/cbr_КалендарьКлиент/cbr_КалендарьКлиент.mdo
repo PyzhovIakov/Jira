@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d3c3bda-f668-4e7f-9c86-b8036b297c41">
+  <name>cbr_КалендарьКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+</mdclass:CommonModule>
