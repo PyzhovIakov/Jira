@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c97f9bde-2bf9-45ba-bc4c-6ef5d36bfee2">
+  <producedTypes>
+    <refType typeId="a1ad5af5-3f7e-4b71-8c94-98ef18afea9c" valueTypeId="d3d534c9-795a-422a-bfc1-d0bca0ecc234"/>
+    <listType typeId="2a13afd1-a6e9-43b4-a729-409b7f3091a2" valueTypeId="334b4842-268e-48da-80a4-d4ea6ce10cc0"/>
+    <managerType typeId="aa35a853-9b57-4327-abc9-80fd8f0b0996" valueTypeId="aa79c2ec-8a24-48ec-a093-132aa851849a"/>
+  </producedTypes>
+  <name>cbr_ОтображениеВремениЭлементов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отображение времени элементов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="62ff70cc-8344-4086-8641-af4780113dfa">
+    <name>НеОтображать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не отображать</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1c3c98cd-d67a-496e-bace-6313dd486460">
+    <name>ВремяНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время начала</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e8cca156-2d28-4de9-8d55-5340710bdfd5">
+    <name>ВремяНачалаИКонца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время начала и конца</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

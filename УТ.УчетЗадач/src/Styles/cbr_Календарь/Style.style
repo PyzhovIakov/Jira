@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style:Style xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:style="http://g5.1c.ru/v8/dt/style">
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ВидДняПроизводственногоКалендаряВоскресеньеЦвет</name>
+    <color xsi:type="core:ColorDef">
+      <red>255</red>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ВидДняПроизводственногоКалендаряНеУказанЦвет</name>
+    <color xsi:type="core:ColorDef">
+      <red>255</red>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ВидДняПроизводственногоКалендаряПраздникЦвет</name>
+    <color xsi:type="core:ColorDef">
+      <red>238</red>
+      <green>130</green>
+      <blue>238</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ВидДняПроизводственногоКалендаряПредпраздничныйЦвет</name>
+    <color xsi:type="core:ColorDef">
+      <blue>139</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ВидДняПроизводственногоКалендаряСубботаЦвет</name>
+    <color xsi:type="core:ColorDef">
+      <red>139</red>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.НерабочийПериодПроизводственногоКалендаряФон</name>
+    <color xsi:type="core:ColorDef">
+      <red>251</red>
+      <green>224</green>
+      <blue>224</blue>
+    </color>
+  </items>
+</style:Style>

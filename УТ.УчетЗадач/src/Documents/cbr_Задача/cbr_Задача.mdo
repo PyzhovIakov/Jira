@@ -268,15 +268,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="e4cdf658-f788-40d9-a107-70cc3a451686">
-    <name>ФормаДокумента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма документа</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="c32a6da1-edb7-4563-b62d-f81969915d99">
     <name>ФормаПодбораСвязанных</name>
     <synonym>
@@ -363,6 +354,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма отклонения задачи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e4cdf658-f788-40d9-a107-70cc3a451686">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="01ef83c4-15f3-436e-8390-ba2ad10e641e">
+  <producedTypes>
+    <refType typeId="93683e08-3de1-4ec9-9a7c-dea840d0e5a6" valueTypeId="f5aab0d5-f7af-4387-bda8-535e83f30338"/>
+    <listType typeId="a9fd364f-767a-4b95-ad7e-9f4d2739f125" valueTypeId="7a5167bc-fb41-4040-b21f-8459b63541ce"/>
+    <managerType typeId="25564bcb-6ad6-48c6-a121-95d3da5c9d4f" valueTypeId="b6f01702-0eb6-413c-a97c-3d4327f754eb"/>
+  </producedTypes>
+  <name>cbr_ТипЗаписиКалендаря</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип записи календаря</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="51dcf91f-a104-4406-bbfd-ade1ab2fb024">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cba9f2bc-3420-445f-9690-f8cd40bcc168">
+    <name>Больничный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Больничный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0f00960b-4ebc-41c9-8ddc-1ca9688729da">
+    <name>Отпуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отпуск</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8ba51574-7228-44ba-bca0-aa8a9aa9d974">
+    <name>Уточнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уточнение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9c6b0c46-343c-4d4c-964b-3d16fc737521">
+    <name>ПустоеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пустое значение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
