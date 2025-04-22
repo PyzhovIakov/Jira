@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="864c83ba-32bd-4bd9-84d2-378ce1fbfe19">
+  <name>cbr_ЗаписьЗадачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запись задачи</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.cbr_Задача</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.cbr_СобытияПоЗадачам.cbr_ЗаписьЗадачиПередЗаписью</handler>
+</mdclass:EventSubscription>

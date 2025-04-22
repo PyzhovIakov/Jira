@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97b34c09-ae10-40e7-9e39-eca3cd5bac28">
+  <producedTypes>
+    <refType typeId="b78f3486-c370-4888-8ca0-fbce75a75e29" valueTypeId="e8de9c0b-b2e7-461d-a2f0-c431079c773f"/>
+    <listType typeId="3fc83fe9-6bb2-4479-8f7f-4c17d9c9af53" valueTypeId="cdaf8977-ba41-49e6-9362-4a9d84ae3b5b"/>
+    <managerType typeId="d9d66126-97f4-4a87-8f37-73eb848139cb" valueTypeId="11dd7606-2209-4c0c-a4bf-eb59738e0e29"/>
+  </producedTypes>
+  <name>cbr_НастройкиЗаписейРабочегоКалендаря</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки записей рабочего календаря</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ba1e883c-ceb0-478f-95dc-a4daf6314a85">
+    <name>Цвет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f211a3bf-a008-4563-b28d-44bbb20a8ece">
+    <name>Скрывать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скрывать</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0124ad3f-b50b-4f17-b847-48b88c27c857">
+    <name>Отработана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отработана</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

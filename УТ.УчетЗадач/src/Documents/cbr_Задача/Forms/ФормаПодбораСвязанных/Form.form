@@ -642,6 +642,10 @@
     <items xsi:type="form:Button">
       <name>ФормаПрименитьИзмениения</name>
       <id>50</id>
+      <title>
+        <key>ru</key>
+        <value>Применить изменения</value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -696,16 +700,15 @@
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
-	Центр_Задача.Ссылка,
-	Центр_Задача.Номер,
-	Центр_Задача.Дата
+	cbr_Задача.Ссылка,
+	cbr_Задача.Номер,
+	cbr_Задача.Дата
 ИЗ
-	Документ.cbr_Задача КАК Центр_Задача
+	Документ.cbr_Задача КАК cbr_Задача
 ГДЕ
-	Центр_Задача.Ссылка &lt;> &amp;ОсновнаяЗадача
-	И НЕ(Центр_Задача.Ссылка В (&amp;СписокЗадач))</queryText>
+	cbr_Задача.Ссылка &lt;> &amp;ОсновнаяЗадача
+	И НЕ(cbr_Задача.Ссылка В (&amp;СписокЗадач))</queryText>
       <mainTable>Document.cbr_Задача</mainTable>
-      <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <autoSaveUserSettings>true</autoSaveUserSettings>
@@ -789,6 +792,10 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ПометкаУдаления</dataPath>
         <field>ПометкаУдаления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Метка</dataPath>
+        <field>Метка</field>
       </fields>
       <parameters>
         <name>ОсновнаяЗадача</name>

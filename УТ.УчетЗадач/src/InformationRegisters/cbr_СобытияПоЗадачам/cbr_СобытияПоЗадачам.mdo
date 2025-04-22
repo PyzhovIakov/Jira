@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d34b731-95dd-4137-a7a2-e675f7936b4a">
+  <producedTypes>
+    <selectionType typeId="3cbbdb08-bc1f-44ef-80c3-4195b1d2952c" valueTypeId="0e08a3ea-5443-45c9-9b2a-4a0186102c37"/>
+    <listType typeId="69193120-86d0-4adc-93a3-98b60510260e" valueTypeId="ce56ad96-907a-4fc0-9fd5-867c84877111"/>
+    <managerType typeId="486ad581-a1a8-441a-a93a-251599e86fff" valueTypeId="6fbaa21a-2772-4ad9-ae47-e167d789f9b5"/>
+    <recordSetType typeId="be13409e-2f12-4167-b867-f0c018830548" valueTypeId="0455deb5-1313-425b-abd9-2d60f9976165"/>
+    <recordKeyType typeId="121a2d07-3ad7-4206-b23d-285982e2d37b" valueTypeId="a733825c-eebc-4273-a351-6e71bed3f8ec"/>
+    <recordType typeId="7b260813-ec0e-4112-8e71-148dacb104ba" valueTypeId="5a2a940c-3bca-43be-8a8a-cb7ce2c02ff9"/>
+    <recordManagerType typeId="04c27e66-5210-460a-b427-6b5573bdf410" valueTypeId="0551f85e-8521-453b-9ba6-b3120df82295"/>
+  </producedTypes>
+  <name>cbr_СобытияПоЗадачам</name>
+  <synonym>
+    <key>ru</key>
+    <value>События по задачам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Событие по задаче</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>События по задачам</value>
+  </listPresentation>
+  <resources uuid="368b99c3-1f3e-47e0-8ae3-674b31c0bfdc">
+    <name>Событие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="46f82f10-de48-476f-b3a9-3c29a5184faa">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.cbr_Задача</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="515c75fd-fd41-4514-8da4-dfcc407e3fc6">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="02054708-7723-44c7-9fd1-d92217520732">
+    <name>АвторСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор события</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

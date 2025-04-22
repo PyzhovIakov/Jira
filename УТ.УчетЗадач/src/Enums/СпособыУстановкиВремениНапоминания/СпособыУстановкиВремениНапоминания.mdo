@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="c8cc151f-686b-4092-8414-e5cf1bcab469">
+  <producedTypes>
+    <refType typeId="62e767a9-c850-4850-bbdc-d37e36df3d1a" valueTypeId="3b24e54f-50c1-4010-a838-c8cb66f86221"/>
+    <listType typeId="3a1691ba-02b1-4450-a368-ca3567104678" valueTypeId="eaceed02-f978-4793-b7dd-5933ecf95716"/>
+    <managerType typeId="8a9a5b24-e9ce-4d9f-914e-dbf0b6e44fd6" valueTypeId="42cd4eb9-d761-4ec2-a7c7-34428feee0ce"/>
+  </producedTypes>
+  <name>СпособыУстановкиВремениНапоминания</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension"/>
+</mdclass:Enum>

@@ -66,6 +66,7 @@
       <value>Исполнитель</value>
     </synonym>
     <type>
+      <types>CatalogRef.cbr_Роли</types>
       <types>CatalogRef.Пользователи</types>
       <types>CatalogRef.cbr_ГруппыДоступаКЗадачам</types>
     </type>

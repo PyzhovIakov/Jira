@@ -9,6 +9,9 @@
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
     <defaultRunMode>Checked</defaultRunMode>
     <usePurposes>Checked</usePurposes>
+    <managedApplicationModule>Extended</managedApplicationModule>
+    <sessionModule>Extended</sessionModule>
+    <externalConnectionModule>Extended</externalConnectionModule>
     <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
     <defaultRoles>Extended</defaultRoles>
@@ -31,7 +34,6 @@
   <version>1,0</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
-  <compatibilityMode>8.3.26</compatibilityMode>
   <languages uuid="939cf021-7c0e-48ea-9d1a-a5cd09c08f19" extendedConfigurationObject="0663bf5b-bcba-4a40-a862-a0b3baa2d884">
     <name>Русский</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -43,7 +45,22 @@
   </languages>
   <subsystems>Subsystem.cbr_НСИ_УчетЗадач</subsystems>
   <subsystems>Subsystem.cbr_УчетЗадач</subsystems>
+  <subsystems>Subsystem.cbr_Календарь</subsystems>
+  <styleItems>StyleItem.cbr_ЦветКалендаряДоступноеВремя</styleItems>
+  <styleItems>StyleItem.ВидДняПроизводственногоКалендаряВоскресеньеЦвет</styleItems>
+  <styleItems>StyleItem.ВидДняПроизводственногоКалендаряНеУказанЦвет</styleItems>
+  <styleItems>StyleItem.ВидДняПроизводственногоКалендаряПраздникЦвет</styleItems>
+  <styleItems>StyleItem.ВидДняПроизводственногоКалендаряПредпраздничныйЦвет</styleItems>
+  <styleItems>StyleItem.ВидДняПроизводственногоКалендаряРабочийЦвет</styleItems>
+  <styleItems>StyleItem.ВидДняПроизводственногоКалендаряСубботаЦвет</styleItems>
+  <styleItems>StyleItem.НерабочийПериодПроизводственногоКалендаряФон</styleItems>
+  <styles>Style.cbr_Календарь</styles>
+  <commonPictures>CommonPicture.cbr_ЗаписьКалендаряОтклонена</commonPictures>
+  <commonPictures>CommonPicture.cbr_ЗаписьКалендаряПодВопросом</commonPictures>
+  <commonPictures>CommonPicture.cbr_ЗаписьКалендаряУдалена</commonPictures>
+  <commonPictures>CommonPicture.cbr_Календарь16</commonPictures>
   <roles>Role.cbr_ОсновнаяРоль</roles>
+  <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.cbr_ВыборЦветаHTMLПовтИсп</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроля</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаТриггеров</commonModules>
@@ -51,16 +68,29 @@
   <commonModules>CommonModule.cbr_УведомленияПользователей</commonModules>
   <commonModules>CommonModule.cbr_ЭлементыФормы</commonModules>
   <commonModules>CommonModule.РаботаСФайламиКлиентСервер</commonModules>
-  <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументов</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ПереопределитьПолучаемуюФормуПрисоединенногоФайла</eventSubscriptions>
+  <commonModules>CommonModule.cbr_СобытияПоЗадачам</commonModules>
+  <commonModules>CommonModule.cbr_ДвиженияПоРегистрам</commonModules>
+  <commonModules>CommonModule.cbr_КалендарьКлиент</commonModules>
+  <commonModules>CommonModule.cbr_КаленарьКлиентСервер</commonModules>
+  <commonModules>CommonModule.cbr_КалендарьСервер</commonModules>
+  <commonModules>CommonModule.cbr_Сотрудники</commonModules>
+  <eventSubscriptions>EventSubscription.ВариантыОтчетовПередУдалениемИдентификатораОбъектаМетаданных</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ВыполнитьДействияПриЗаписиПрисоединенногоФайла</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.cbr_ЗаписьЗадачи</eventSubscriptions>
   <scheduledJobs>ScheduledJob.cbr_ВызовТриггера</scheduledJobs>
-  <scheduledJobs>ScheduledJob.Центр_ПроверкаВыполненияЭтаповКонтроля1</scheduledJobs>
+  <scheduledJobs>ScheduledJob.cbr_ПроверкаВыполненияЭтаповКонтроля</scheduledJobs>
   <definedTypes>DefinedType.ВладелецПрисоединенныхФайлов</definedTypes>
   <definedTypes>DefinedType.ВладелецПрисоединенныхФайловОбъект</definedTypes>
   <definedTypes>DefinedType.ПредметНапоминания</definedTypes>
   <definedTypes>DefinedType.ПрисоединенныйФайл</definedTypes>
   <definedTypes>DefinedType.ПрисоединенныйФайлОбъект</definedTypes>
   <commonCommands>CommonCommand.ПрисоединенныеФайлы</commonCommands>
+  <commandGroups>CommandGroup.cbr_Документы</commandGroups>
+  <commandGroups>CommandGroup.cbr_Справочники</commandGroups>
+  <commandGroups>CommandGroup.cbr_РегистрыСведений</commandGroups>
+  <commandGroups>CommandGroup.cbr_РегистрыНакопления</commandGroups>
+  <commandGroups>CommandGroup.cbr_Формы</commandGroups>
+  <commandGroups>CommandGroup.Печать</commandGroups>
   <commonForms>CommonForm.cbr_ФормаОтветаНаВопросПоЗадаче</commonForms>
   <commonForms>CommonForm.cbr_ФормаСпискаВопросовПоЗадаче</commonForms>
   <commonForms>CommonForm.cbr_ИерархияЗадачОбщая</commonForms>
@@ -83,6 +113,10 @@
   <catalogs>Catalog.cbr_ЗадачаПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.cbr_Триггеры</catalogs>
   <catalogs>Catalog.Партнеры</catalogs>
+  <catalogs>Catalog.cbr_Роли</catalogs>
+  <catalogs>Catalog.cbr_Календарь</catalogs>
+  <catalogs>Catalog.cbr_КалендарьЦвета</catalogs>
+  <catalogs>Catalog.cbr_Цвета</catalogs>
   <documents>Document.cbr_Задача</documents>
   <documents>Document.cbr_ТрудозатратыПоЗадаче</documents>
   <enums>Enum.cbr_ВидыВопросов</enums>
@@ -92,6 +126,12 @@
   <enums>Enum.cbr_ТипОценкиЧасов</enums>
   <enums>Enum.СтатусыИзвлеченияТекстаФайлов</enums>
   <enums>Enum.ТипыХраненияФайлов</enums>
+  <enums>Enum.cbr_СостояниеЗаписиРабочегоКалендаря</enums>
+  <enums>Enum.cbr_НастройкиЗаписейРабочегоКалендаря</enums>
+  <enums>Enum.cbr_ТипЗаписиКалендаря</enums>
+  <enums>Enum.cbr_ПериодОтображенияРабочегоКалендаря</enums>
+  <enums>Enum.СпособыУстановкиВремениНапоминания</enums>
+  <enums>Enum.cbr_ОтображениеВремениЭлементов</enums>
   <dataProcessors>DataProcessor.cbr_Канбан</dataProcessors>
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
   <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
@@ -107,6 +147,7 @@
   <informationRegisters>InformationRegister.cbr_СвязанныеЗадачи</informationRegisters>
   <informationRegisters>InformationRegister.cbr_СтатусыЗадач</informationRegisters>
   <informationRegisters>InformationRegister.НапоминанияПользователя</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_СобытияПоЗадачам</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

@@ -133,4 +133,19 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="6e95c19e-1d4b-49e1-b919-a30bb11f5215">
+    <name>Цвет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.cbr_Цвета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
 </mdclass:Catalog>

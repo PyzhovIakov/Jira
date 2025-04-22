@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ddda0a3d-59d0-4f39-9799-b1963c5827bf">
+  <name>cbr_ЗаписьКалендаряУдалена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запись календаря удалена</value>
+  </synonym>
+</mdclass:CommonPicture>
