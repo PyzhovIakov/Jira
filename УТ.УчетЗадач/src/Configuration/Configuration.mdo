@@ -46,22 +46,6 @@
   <subsystems>Subsystem.cbr_НСИ_УчетЗадач</subsystems>
   <subsystems>Subsystem.cbr_УчетЗадач</subsystems>
   <subsystems>Subsystem.cbr_Календарь</subsystems>
-  <styleItems>StyleItem.cbr_РамкаКалендаряЖелтая</styleItems>
-  <styleItems>StyleItem.cbr_РамкаКалендаряЗеленая</styleItems>
-  <styleItems>StyleItem.cbr_РамкаКалендаряКрасная</styleItems>
-  <styleItems>StyleItem.cbr_РамкаКалендаряОранжевая</styleItems>
-  <styleItems>StyleItem.cbr_РамкаКалендаряОтработана</styleItems>
-  <styleItems>StyleItem.cbr_РамкаКалендаряСиняя</styleItems>
-  <styleItems>StyleItem.cbr_РамкаКалендаряТекущаяЗапись</styleItems>
-  <styleItems>StyleItem.cbr_ЦветКалендаряПоУмолчанию</styleItems>
-  <styleItems>StyleItem.cbr_ЦветКалендаряТекущаяЗапись</styleItems>
-  <styleItems>StyleItem.cbr_ЦветКалендаряФонТекущегоДня</styleItems>
-  <styleItems>StyleItem.cbr_ЦветТекстаНеактуальнойДатыКалендаря</styleItems>
-  <styleItems>StyleItem.cbr_РамкаКалендаряПоУмолчанию</styleItems>
-  <styleItems>StyleItem.cbr_ЦветКалендаряПодпись</styleItems>
-  <styleItems>StyleItem.cbr_ЦветКалендаряПодписьТекущийДень</styleItems>
-  <styleItems>StyleItem.cbr_ЦветКалендаряФонПустойЯчейкиВсегоДня</styleItems>
-  <styleItems>StyleItem.cbr_ЦветКалендаряФонШапки</styleItems>
   <styleItems>StyleItem.cbr_ЦветКалендаряДоступноеВремя</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряВоскресеньеЦвет</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряНеУказанЦвет</styleItems>
@@ -132,6 +116,7 @@
   <catalogs>Catalog.cbr_Роли</catalogs>
   <catalogs>Catalog.cbr_Календарь</catalogs>
   <catalogs>Catalog.cbr_КалендарьЦвета</catalogs>
+  <catalogs>Catalog.cbr_Цвета</catalogs>
   <documents>Document.cbr_Задача</documents>
   <documents>Document.cbr_ТрудозатратыПоЗадаче</documents>
   <enums>Enum.cbr_ВидыВопросов</enums>

@@ -294,35 +294,45 @@
               <key>ru</key>
               <value>День</value>
             </presentation>
-            <value xsi:type="core:ReferenceValue"/>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.cbr_ПериодОтображенияРабочегоКалендаря.EnumValue.День</value>
+            </value>
           </choiceList>
           <choiceList>
             <presentation>
               <key>ru</key>
               <value>Неделя</value>
             </presentation>
-            <value xsi:type="core:ReferenceValue"/>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.cbr_ПериодОтображенияРабочегоКалендаря.EnumValue.Неделя</value>
+            </value>
           </choiceList>
           <choiceList>
             <presentation>
               <key>ru</key>
               <value>Две недели</value>
             </presentation>
-            <value xsi:type="core:ReferenceValue"/>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.cbr_ПериодОтображенияРабочегоКалендаря.EnumValue.ДвеНедели</value>
+            </value>
           </choiceList>
           <choiceList>
             <presentation>
               <key>ru</key>
               <value>Месяц</value>
             </presentation>
-            <value xsi:type="core:ReferenceValue"/>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.cbr_ПериодОтображенияРабочегоКалендаря.EnumValue.Месяц</value>
+            </value>
           </choiceList>
           <choiceList>
             <presentation>
               <key>ru</key>
               <value>План дня</value>
             </presentation>
-            <value xsi:type="core:ReferenceValue"/>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.cbr_ПериодОтображенияРабочегоКалендаря.EnumValue.ПланДня</value>
+            </value>
           </choiceList>
         </extInfo>
       </items>
@@ -1508,6 +1518,11 @@
           <items xsi:type="form:FormField">
             <name>Планировщик</name>
             <id>322</id>
+            <titleTextColor xsi:type="core:ColorDef">
+              <red>9</red>
+              <green>12</green>
+              <blue>51</blue>
+            </titleTextColor>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>

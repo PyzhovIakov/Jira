@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="628c6ce7-50d1-480e-b837-718b43cdd82c">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="895be879-95e5-4a79-b7cf-5cfb239a3694">
   <producedTypes>
-    <objectType typeId="daebe107-fc66-4a3a-ac0a-9b25dc3ba2d7" valueTypeId="5163cd49-48e2-4b42-9f92-c802520be242"/>
-    <refType typeId="a57e8646-f2f4-43a6-8424-0eb3ee99cd09" valueTypeId="243fa146-27be-4342-a985-a858b9709c24"/>
-    <selectionType typeId="0aeaf24e-28ae-40ef-8de7-3e61579c0ac5" valueTypeId="24db9b50-ecbe-44da-bfb9-54a518da92ab"/>
-    <listType typeId="f18f6f3e-1f7e-4f58-91d1-098eaa048f65" valueTypeId="c5b1f9e7-9d11-42d5-b5f5-e8d2eb9eb936"/>
-    <managerType typeId="30f684a0-e8e8-437b-a378-00155e9991cd" valueTypeId="34f98920-e6b4-4bb5-96e2-892d64885703"/>
+    <objectType typeId="b942c60f-e11b-4f22-9b73-ddb51b119bed" valueTypeId="1a302190-84b4-4abf-a735-16d3ab76688a"/>
+    <refType typeId="5fda677d-0d69-400b-a49b-9dc4c4447040" valueTypeId="6ff1c27c-3ebc-40e4-96c8-1536845c0556"/>
+    <selectionType typeId="4ec8cf33-b783-4f8e-853a-e20e8aba739a" valueTypeId="4b3f9f08-b7ba-4d52-8b84-414cf6ae1b5c"/>
+    <listType typeId="963ac46b-70b4-44d6-9501-64dadc5a922d" valueTypeId="507f994b-7fb7-424c-b551-3fec8753cbfd"/>
+    <managerType typeId="08d2211d-d51d-4ee0-8746-7328b43f4e35" valueTypeId="60531563-18cb-41db-9a74-c710999339f1"/>
   </producedTypes>
-  <name>cbr_Приоритеты</name>
+  <name>cbr_Цвета</name>
   <synonym>
     <key>ru</key>
-    <value>Приоритеты (Джира)</value>
+    <value>Cbr цвета</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Catalog.cbr_Приоритеты.StandardAttribute.Description</inputByString>
-  <inputByString>Catalog.cbr_Приоритеты.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.cbr_Цвета.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.cbr_Цвета.StandardAttribute.Code</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
@@ -95,18 +95,10 @@
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
-  <objectPresentation>
-    <key>ru</key>
-    <value>Приоритет</value>
-  </objectPresentation>
-  <listPresentation>
-    <key>ru</key>
-    <value>Приоритеты</value>
-  </listPresentation>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>9</codeLength>
-  <descriptionLength>50</descriptionLength>
+  <descriptionLength>25</descriptionLength>
   <codeType>String</codeType>
   <codeAllowedLength>Variable</codeAllowedLength>
   <checkUnique>true</checkUnique>
@@ -114,18 +106,37 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <attributes uuid="e85b61a7-38f7-468b-942a-f62221c180cc">
-    <name>Приоритет</name>
+  <defaultObjectForm>Catalog.cbr_Цвета.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="d6bb362c-866f-49dc-86b6-5a245a8316ec">
+    <name>ЦветHEX</name>
     <synonym>
       <key>ru</key>
-      <value>Приоритет</value>
+      <value>Цвет HEX</value>
     </synonym>
     <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>3</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
+      <types>String</types>
+      <stringQualifiers>
+        <length>7</length>
+      </stringQualifiers>
+    </type>
+    <mask>\#NNNNNN</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f82a2b25-cc22-46bb-b7c4-fbcbbc07209b">
+    <name>ЦветRGB</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет RGB</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>11</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -133,14 +144,17 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="6e95c19e-1d4b-49e1-b919-a30bb11f5215">
-    <name>Цвет</name>
+  <attributes uuid="7a1c0ab7-f844-485d-85e9-749231465f8a">
+    <name>ЦветТекстаRGB</name>
     <synonym>
       <key>ru</key>
-      <value>Цвет</value>
+      <value>Цвет текста RGB</value>
     </synonym>
     <type>
-      <types>CatalogRef.cbr_Цвета</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>11</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -148,4 +162,13 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="50ede756-7155-4c50-bf98-d4bb53b50266">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>
