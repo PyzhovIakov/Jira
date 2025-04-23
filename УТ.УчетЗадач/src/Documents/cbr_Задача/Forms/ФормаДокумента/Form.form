@@ -2713,12 +2713,23 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>PlannerField</type>
-            <readOnly>true</readOnly>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:PlannerFieldExtInfo">
+              <handlers>
+                <event>BeforeCreate</event>
+                <name>ПланировщикПередСозданием</name>
+              </handlers>
+              <handlers>
+                <event>BeforeStartEdit</event>
+                <name>ПланировщикПередНачаломРедактирования</name>
+              </handlers>
+              <handlers>
+                <event>Selection</event>
+                <name>ПланировщикВыбор</name>
+              </handlers>
               <width>50</width>
               <autoMaxWidth>true</autoMaxWidth>
               <height>20</height>

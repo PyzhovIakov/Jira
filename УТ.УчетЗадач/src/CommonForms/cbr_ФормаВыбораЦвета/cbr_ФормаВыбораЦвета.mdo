@@ -3,7 +3,7 @@
   <name>cbr_ФормаВыбораЦвета</name>
   <synonym>
     <key>ru</key>
-    <value>Cbr форма выбора цвета</value>
+    <value>Форма выбора цвета</value>
   </synonym>
   <usePurposes>PersonalComputer</usePurposes>
   <usePurposes>MobileDevice</usePurposes>
