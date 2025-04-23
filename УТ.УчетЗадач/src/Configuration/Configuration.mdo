@@ -12,6 +12,7 @@
     <managedApplicationModule>Extended</managedApplicationModule>
     <sessionModule>Extended</sessionModule>
     <externalConnectionModule>Extended</externalConnectionModule>
+    <homePageWorkArea>Extended</homePageWorkArea>
     <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
     <defaultRoles>Extended</defaultRoles>
@@ -59,6 +60,7 @@
   <commonPictures>CommonPicture.cbr_ЗаписьКалендаряПодВопросом</commonPictures>
   <commonPictures>CommonPicture.cbr_ЗаписьКалендаряУдалена</commonPictures>
   <commonPictures>CommonPicture.cbr_Календарь16</commonPictures>
+  <commonPictures>CommonPicture.КоллекцияПиктограммФайлов</commonPictures>
   <roles>Role.cbr_ОсновнаяРоль</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.cbr_ВыборЦветаHTMLПовтИсп</commonModules>
@@ -117,6 +119,7 @@
   <catalogs>Catalog.cbr_Календарь</catalogs>
   <catalogs>Catalog.cbr_КалендарьЦвета</catalogs>
   <catalogs>Catalog.cbr_Цвета</catalogs>
+  <catalogs>Catalog.СтруктураПредприятия</catalogs>
   <documents>Document.cbr_Задача</documents>
   <documents>Document.cbr_ТрудозатратыПоЗадаче</documents>
   <enums>Enum.cbr_ВидыВопросов</enums>

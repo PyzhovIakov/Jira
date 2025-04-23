@@ -1606,6 +1606,7 @@
               <dataPath xsi:type="form:DataPath">
                 <segments>Объект.КонтрольВремени</segments>
               </dataPath>
+              <titleLocation>Right</titleLocation>
               <handlers>
                 <event>OnChange</event>
                 <name>КонтрольВремениПриИзменении</name>
@@ -1647,6 +1648,7 @@
               <dataPath xsi:type="form:DataPath">
                 <segments>Объект.УчетВремени</segments>
               </dataPath>
+              <titleLocation>Right</titleLocation>
               <extendedTooltip>
                 <name>УчетВремениРасширеннаяПодсказка</name>
                 <id>388</id>
@@ -1684,6 +1686,7 @@
               <dataPath xsi:type="form:DataPath">
                 <segments>Объект.ТребуетКонтроляПоЗавершению</segments>
               </dataPath>
+              <titleLocation>Right</titleLocation>
               <handlers>
                 <event>OnChange</event>
                 <name>ТребуетКонтроляПоЗавершениюПриИзменении</name>
@@ -2309,6 +2312,9 @@
                   <autoMaxHeight>true</autoMaxHeight>
                   <horizontalStretch>true</horizontalStretch>
                   <verticalStretch>true</verticalStretch>
+                  <valuesPicture xsi:type="core:PictureRef">
+                    <picture>CommonPicture.КоллекцияПиктограммФайлов</picture>
+                  </valuesPicture>
                   <border xsi:type="core:BorderDef">
                     <style>Single</style>
                     <width>1</width>
@@ -2713,12 +2719,23 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>PlannerField</type>
-            <readOnly>true</readOnly>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:PlannerFieldExtInfo">
+              <handlers>
+                <event>BeforeCreate</event>
+                <name>ПланировщикПередСозданием</name>
+              </handlers>
+              <handlers>
+                <event>BeforeStartEdit</event>
+                <name>ПланировщикПередНачаломРедактирования</name>
+              </handlers>
+              <handlers>
+                <event>Selection</event>
+                <name>ПланировщикВыбор</name>
+              </handlers>
               <width>50</width>
               <autoMaxWidth>true</autoMaxWidth>
               <height>20</height>

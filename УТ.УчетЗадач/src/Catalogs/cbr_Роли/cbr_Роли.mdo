@@ -29,6 +29,22 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.cbr_Роли.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="c68da21a-9212-4ff7-b9dd-2a56b40f448c">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="512184a4-0db8-4366-9515-34612442faf8">
     <producedTypes>
       <objectType typeId="2b0b4cd1-00be-4258-a29d-77999c7ef487" valueTypeId="bef006e0-3b1d-4b15-a7f7-0bdc46f99f6b"/>
@@ -54,4 +70,13 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <forms uuid="8be74c2c-b11d-4a07-9052-406e219ff871">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>
