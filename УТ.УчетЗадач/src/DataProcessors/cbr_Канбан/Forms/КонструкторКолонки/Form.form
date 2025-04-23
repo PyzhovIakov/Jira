@@ -1465,8 +1465,7 @@
   <parameters>
     <name>Доска</name>
     <valueType>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>CatalogRef.cbr_Доски</types>
     </valueType>
   </parameters>
   <parameters>
