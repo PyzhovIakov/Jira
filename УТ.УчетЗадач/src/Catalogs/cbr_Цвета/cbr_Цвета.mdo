@@ -10,7 +10,7 @@
   <name>cbr_Цвета</name>
   <synonym>
     <key>ru</key>
-    <value>Cbr цвета</value>
+    <value>Цвета</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.cbr_Цвета.StandardAttribute.Description</inputByString>
