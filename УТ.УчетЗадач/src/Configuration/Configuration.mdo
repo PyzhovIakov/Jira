@@ -12,6 +12,7 @@
     <managedApplicationModule>Extended</managedApplicationModule>
     <sessionModule>Extended</sessionModule>
     <externalConnectionModule>Extended</externalConnectionModule>
+    <homePageWorkArea>Extended</homePageWorkArea>
     <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
     <defaultRoles>Extended</defaultRoles>

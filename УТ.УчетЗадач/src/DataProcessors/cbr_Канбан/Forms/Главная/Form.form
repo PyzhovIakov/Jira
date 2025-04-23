@@ -5,7 +5,7 @@
     <id>61</id>
     <items xsi:type="form:FormField">
       <name>ВыбраннаяДоска</name>
-      <id>66</id>
+      <id>75</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -14,13 +14,9 @@
       <dataPath xsi:type="form:DataPath">
         <segments>ВыбраннаяДоска</segments>
       </dataPath>
-      <handlers>
-        <event>OnChange</event>
-        <name>ВыбраннаяДоскаПриИзменении</name>
-      </handlers>
       <extendedTooltip>
         <name>ВыбраннаяДоскаРасширеннаяПодсказка</name>
-        <id>68</id>
+        <id>77</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -30,7 +26,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>ВыбраннаяДоскаКонтекстноеМеню</name>
-        <id>67</id>
+        <id>76</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
