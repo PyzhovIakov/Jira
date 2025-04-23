@@ -117,6 +117,7 @@
   <catalogs>Catalog.cbr_Календарь</catalogs>
   <catalogs>Catalog.cbr_КалендарьЦвета</catalogs>
   <catalogs>Catalog.cbr_Цвета</catalogs>
+  <catalogs>Catalog.СтруктураПредприятия</catalogs>
   <documents>Document.cbr_Задача</documents>
   <documents>Document.cbr_ТрудозатратыПоЗадаче</documents>
   <enums>Enum.cbr_ВидыВопросов</enums>
