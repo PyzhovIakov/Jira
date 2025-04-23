@@ -116,61 +116,6 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.cbr_МеткиЗадач.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.cbr_МеткиЗадач.Form.ФормаСписка</defaultListForm>
-  <attributes uuid="af5cf8b8-e2c0-46d6-b2d2-e8319a35bef5">
-    <name>ЦветHEX</name>
-    <synonym>
-      <key>ru</key>
-      <value>Цвет HEX</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>7</length>
-      </stringQualifiers>
-    </type>
-    <mask>\#NNNNNN</mask>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="1f0c637e-d2d8-4ef4-a741-0efff7feb265">
-    <name>ЦветRGB</name>
-    <synonym>
-      <key>ru</key>
-      <value>Цвет RGB</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>11</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="ac1c93a4-43a7-487d-a054-e5814e7d13fe">
-    <name>ЦветТекстаRGB</name>
-    <synonym>
-      <key>ru</key>
-      <value>Цвет текста RGB</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>11</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="ff6cf2b8-d734-4dd3-9858-15ccdbf1f6a1">
     <name>ВидимостьНаФорме</name>
     <synonym>
@@ -179,6 +124,21 @@
     </synonym>
     <type>
       <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="70c16ea5-4785-4f8d-935c-056c7bf31fbe">
+    <name>Цвет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.cbr_Цвета</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -1606,6 +1606,7 @@
               <dataPath xsi:type="form:DataPath">
                 <segments>Объект.КонтрольВремени</segments>
               </dataPath>
+              <titleLocation>Right</titleLocation>
               <handlers>
                 <event>OnChange</event>
                 <name>КонтрольВремениПриИзменении</name>
@@ -1647,6 +1648,7 @@
               <dataPath xsi:type="form:DataPath">
                 <segments>Объект.УчетВремени</segments>
               </dataPath>
+              <titleLocation>Right</titleLocation>
               <extendedTooltip>
                 <name>УчетВремениРасширеннаяПодсказка</name>
                 <id>388</id>
@@ -1684,6 +1686,7 @@
               <dataPath xsi:type="form:DataPath">
                 <segments>Объект.ТребуетКонтроляПоЗавершению</segments>
               </dataPath>
+              <titleLocation>Right</titleLocation>
               <handlers>
                 <event>OnChange</event>
                 <name>ТребуетКонтроляПоЗавершениюПриИзменении</name>
