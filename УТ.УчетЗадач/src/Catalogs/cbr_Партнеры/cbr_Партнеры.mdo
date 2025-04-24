@@ -10,7 +10,7 @@
   <name>cbr_Партнеры</name>
   <synonym>
     <key>ru</key>
-    <value>Партнеры (Джира)</value>
+    <value>Партнеры</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.cbr_Партнеры.StandardAttribute.Description</inputByString>

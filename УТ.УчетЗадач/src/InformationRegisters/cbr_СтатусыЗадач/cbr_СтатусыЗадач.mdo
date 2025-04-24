@@ -12,7 +12,7 @@
   <name>cbr_СтатусыЗадач</name>
   <synonym>
     <key>ru</key>
-    <value>Установленные статусы задач (Джира)</value>
+    <value>Установленные статусы задач</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>

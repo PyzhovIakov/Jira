@@ -11,7 +11,7 @@
   <name>cbr_ВидыПользовательскихНастроек</name>
   <synonym>
     <key>ru</key>
-    <value>Виды пользовательских настроек (Джира)</value>
+    <value>Виды пользовательских настроек</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек.StandardAttribute.Description</inputByString>
@@ -96,11 +96,11 @@
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
-    <value>Виды пользовательских настроек (Джира)</value>
+    <value>Виды пользовательских настроек</value>
   </objectPresentation>
   <listPresentation>
     <key>ru</key>
-    <value>Виды пользовательских настроек (Джира)</value>
+    <value>Виды пользовательских настроек</value>
   </listPresentation>
   <type>
     <types>CatalogRef.Пользователи</types>
