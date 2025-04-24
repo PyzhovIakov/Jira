@@ -12,7 +12,7 @@
   <name>cbr_СвязанныеЗадачи</name>
   <synonym>
     <key>ru</key>
-    <value>Связанные задачи (Джира)</value>
+    <value>Связанные задачи</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>

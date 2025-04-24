@@ -14,6 +14,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>ВыбраннаяДоска</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ВыбраннаяДоскаПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ВыбраннаяДоскаРасширеннаяПодсказка</name>
         <id>77</id>

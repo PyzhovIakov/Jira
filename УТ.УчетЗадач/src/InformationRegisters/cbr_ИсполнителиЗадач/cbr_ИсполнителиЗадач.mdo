@@ -12,7 +12,7 @@
   <name>cbr_ИсполнителиЗадач</name>
   <synonym>
     <key>ru</key>
-    <value>Исполнители задач (Джира)</value>
+    <value>Исполнители задач</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
