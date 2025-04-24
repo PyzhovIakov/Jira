@@ -12,7 +12,7 @@
   <name>cbr_ПользовательскиеНастройки</name>
   <synonym>
     <key>ru</key>
-    <value>Пользовательские настройки (Джира)</value>
+    <value>Пользовательские настройки</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
@@ -52,11 +52,11 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <recordPresentation>
     <key>ru</key>
-    <value>Пользовательские настройки (Джира)</value>
+    <value>Пользовательские настройки</value>
   </recordPresentation>
   <listPresentation>
     <key>ru</key>
-    <value>Пользовательские настройки (Джира)</value>
+    <value>Пользовательские настройки</value>
   </listPresentation>
   <resources uuid="5637550b-adac-4fd3-9e2d-accbf79a5140">
     <name>Значение</name>

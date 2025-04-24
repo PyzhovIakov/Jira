@@ -7,7 +7,7 @@
   <name>cbr_Канбан</name>
   <synonym>
     <key>ru</key>
-    <value>КанБан (Джира)</value>
+    <value>КанБан</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.cbr_Канбан.Form.Главная</defaultForm>

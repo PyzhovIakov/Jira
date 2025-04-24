@@ -83,32 +83,6 @@
         <textEdit>true</textEdit>
       </extInfo>
     </items>
-    <items xsi:type="form:Button">
-      <name>ФормаВыбратьЦвет</name>
-      <id>22</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>ФормаВыбратьЦветРасширеннаяПодсказка</name>
-        <id>23</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <type>UsualButton</type>
-      <commandName>Form.Command.ВыбратьЦвет</commandName>
-      <representation>Auto</representation>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <representationInContextMenu>Auto</representationInContextMenu>
-    </items>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -149,6 +123,7 @@
     <dataPath xsi:type="form:DataPath">
       <segments>Объект.Новый</segments>
     </dataPath>
+    <titleLocation>Right</titleLocation>
     <handlers>
       <event>OnChange</event>
       <name>НовыйПриИзменении</name>
@@ -186,6 +161,7 @@
     <dataPath xsi:type="form:DataPath">
       <segments>Объект.Закрыт</segments>
     </dataPath>
+    <titleLocation>Right</titleLocation>
     <handlers>
       <event>OnChange</event>
       <name>ЗакрытПриИзменении</name>

@@ -10,7 +10,7 @@
   <name>cbr_Роли</name>
   <synonym>
     <key>ru</key>
-    <value>Роли (Джира)</value>
+    <value>Роли</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.cbr_Роли.StandardAttribute.Code</inputByString>

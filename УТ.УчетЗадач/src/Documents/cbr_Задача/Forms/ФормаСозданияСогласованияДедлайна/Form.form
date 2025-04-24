@@ -486,8 +486,7 @@
     </title>
     <id>8</id>
     <valueType>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>CatalogRef.cbr_ПричинаПереносаДедлайна</types>
     </valueType>
     <view>
       <common>true</common>

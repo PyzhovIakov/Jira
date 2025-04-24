@@ -70,4 +70,32 @@
       <value>Регламентное задание</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="ee4fcd47-2279-4d20-bef4-7673cbaa39a1">
+    <name>ОтправкаДедлайнаНаСогласование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправка дедлайна на согласование</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="51bcd3ee-0ac2-43c3-a873-40c894495846">
+    <name>СогласованиеДедлайна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласование дедлайна</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="37c544ef-43bd-49dc-9e1e-6e0947179116">
+    <name>ОтправкаОценкиНаСогласование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправка оценки на согласование</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0730b6e9-cc6f-4280-9150-7f2dd2d27eae">
+    <name>СогласованиеОценки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласование оценки</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

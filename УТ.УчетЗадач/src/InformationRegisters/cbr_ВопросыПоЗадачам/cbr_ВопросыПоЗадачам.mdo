@@ -12,7 +12,7 @@
   <name>cbr_ВопросыПоЗадачам</name>
   <synonym>
     <key>ru</key>
-    <value>Вопросы по задачам (Джира)</value>
+    <value>Вопросы по задачам</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>

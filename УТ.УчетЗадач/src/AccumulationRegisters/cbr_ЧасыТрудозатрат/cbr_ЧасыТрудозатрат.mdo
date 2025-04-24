@@ -11,7 +11,7 @@
   <name>cbr_ЧасыТрудозатрат</name>
   <synonym>
     <key>ru</key>
-    <value>Cbr часы трудозатрат</value>
+    <value>Часы трудозатрат</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <registerType>Turnovers</registerType>
