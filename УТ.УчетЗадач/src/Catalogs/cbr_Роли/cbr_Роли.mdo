@@ -10,7 +10,7 @@
   <name>cbr_Роли</name>
   <synonym>
     <key>ru</key>
-    <value>Роли (Джира)</value>
+    <value>Роли</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.cbr_Роли.StandardAttribute.Code</inputByString>
@@ -29,6 +29,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.cbr_Роли.Form.ФормаЭлемента</defaultObjectForm>
   <tabularSections uuid="512184a4-0db8-4366-9515-34612442faf8">
     <producedTypes>
       <objectType typeId="2b0b4cd1-00be-4258-a29d-77999c7ef487" valueTypeId="bef006e0-3b1d-4b15-a7f7-0bdc46f99f6b"/>
@@ -54,4 +55,13 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <forms uuid="8be74c2c-b11d-4a07-9052-406e219ff871">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

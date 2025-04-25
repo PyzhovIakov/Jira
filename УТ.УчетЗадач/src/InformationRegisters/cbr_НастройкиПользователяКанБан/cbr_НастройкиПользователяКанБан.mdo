@@ -12,7 +12,7 @@
   <name>cbr_НастройкиПользователяКанБан</name>
   <synonym>
     <key>ru</key>
-    <value>Настройки пользователя КанБан (Джира)</value>
+    <value>Настройки пользователя КанБан</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>

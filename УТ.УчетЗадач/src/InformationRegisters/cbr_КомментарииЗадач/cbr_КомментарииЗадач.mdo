@@ -12,7 +12,7 @@
   <name>cbr_КомментарииЗадач</name>
   <synonym>
     <key>ru</key>
-    <value>Комментарии задач (Джира)</value>
+    <value>Комментарии задач</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>

@@ -7,7 +7,7 @@
   <name>cbr_РедактированиеПользовательскихНастроек</name>
   <synonym>
     <key>ru</key>
-    <value>Редактирование пользовательских настроек (Джира)</value>
+    <value>Редактирование пользовательских настроек</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.cbr_РедактированиеПользовательскихНастроек.Form.Главная</defaultForm>
