@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="336f32cb-a5e6-49b6-befc-1f8a6ff9d2a3">
+  <producedTypes>
+    <objectType typeId="b86175f9-6c90-4cce-8e63-540fd55d7ec2" valueTypeId="46c8a314-b782-43e4-a6c4-94cd6996352f"/>
+    <refType typeId="c1577c8b-92fb-4f54-818e-3028d8dff6cf" valueTypeId="e9911374-f590-4192-b090-57e7286cdbf1"/>
+    <selectionType typeId="b7293f12-8b7f-4f50-949c-c00d9dd116b2" valueTypeId="cd26ac87-0cc1-40ba-9ca5-8a43bfea07ff"/>
+    <listType typeId="f956281a-bd27-4f61-b45d-e8410eb2abbf" valueTypeId="b0890f87-d69b-49df-a60f-aa5901a5fe61"/>
+    <managerType typeId="d2c5719f-30ed-412d-89f1-dd37083f49b9" valueTypeId="b1512855-9653-407f-a77b-409efc0ad831"/>
+  </producedTypes>
+  <name>cbr_ПричиныЗакрытияЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины закрытия задач</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.cbr_ПричиныЗакрытияЗадач.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.cbr_ПричиныЗакрытияЗадач.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>120</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

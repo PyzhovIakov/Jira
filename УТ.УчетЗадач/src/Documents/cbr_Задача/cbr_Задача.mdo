@@ -268,6 +268,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="d7487d2a-8238-4a5f-833e-f3bdd950902a">
+    <name>ПричинаЗакрытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина закрытия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.cbr_ПричиныЗакрытияЗадач</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="c32a6da1-edb7-4563-b62d-f81969915d99">
     <name>ФормаПодбораСвязанных</name>
     <synonym>
@@ -363,6 +378,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="99e193c9-1d1b-4216-957e-528e3864a9aa">
+    <name>ФормаЗакрытияЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма закрытия задачи</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

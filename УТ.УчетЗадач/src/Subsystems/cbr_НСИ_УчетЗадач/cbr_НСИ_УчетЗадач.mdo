@@ -40,4 +40,5 @@
   <content>InformationRegister.cbr_СобытияПоЗадачам</content>
   <content>Catalog.cbr_Роли</content>
   <content>Catalog.cbr_Цвета</content>
+  <content>Catalog.cbr_ПричиныЗакрытияЗадач</content>
 </mdclass:Subsystem>
