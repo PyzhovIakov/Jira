@@ -10,7 +10,7 @@
   <name>cbr_Задача</name>
   <synonym>
     <key>ru</key>
-    <value>Задача (Джира)</value>
+    <value>Задача</value>
   </synonym>
   <comment>Задачи сотрудников</comment>
   <useStandardCommands>true</useStandardCommands>

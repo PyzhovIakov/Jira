@@ -12,6 +12,7 @@
     <key>ru</key>
     <value>Цвета</value>
   </synonym>
+  <comment>Цвета</comment>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.cbr_Цвета.StandardAttribute.Description</inputByString>
   <inputByString>Catalog.cbr_Цвета.StandardAttribute.Code</inputByString>
@@ -95,6 +96,14 @@
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Цвет</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Цвета</value>
+  </listPresentation>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>9</codeLength>

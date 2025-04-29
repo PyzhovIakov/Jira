@@ -30,7 +30,7 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
-  <defaultRoles>Role.cbr_ОсновнаяРоль</defaultRoles>
+  <defaultRoles>Role.cbr_ПолныеПрава</defaultRoles>
   <vendor>ООО Разработка и аналитика</vendor>
   <version>1,0</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
@@ -61,11 +61,10 @@
   <commonPictures>CommonPicture.cbr_ЗаписьКалендаряУдалена</commonPictures>
   <commonPictures>CommonPicture.cbr_Календарь16</commonPictures>
   <commonPictures>CommonPicture.КоллекцияПиктограммФайлов</commonPictures>
-  <roles>Role.cbr_ОсновнаяРоль</roles>
+  <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
-  <commonModules>CommonModule.cbr_ВыборЦветаHTMLПовтИсп</commonModules>
-  <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроля</commonModules>
-  <commonModules>CommonModule.cbr_ОбработкаТриггеров</commonModules>
+  <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</commonModules>
+  <commonModules>CommonModule.cbr_ОбработкаТриггеровВызовСервера</commonModules>
   <commonModules>CommonModule.cbr_ОбработчикиФормыЗадачиСервер</commonModules>
   <commonModules>CommonModule.cbr_УведомленияПользователей</commonModules>
   <commonModules>CommonModule.cbr_ЭлементыФормы</commonModules>
