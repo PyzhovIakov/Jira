@@ -6,7 +6,7 @@
     <value>Вызов триггера</value>
   </synonym>
   <comment>Вызов триггера</comment>
-  <methodName>CommonModule.cbr_ОбработкаТриггеров.cbr_ВызовТриггера</methodName>
+  <methodName>CommonModule.cbr_ОбработкаТриггеровВызовСервера.ВызовТриггераРегЗаданием</methodName>
   <use>true</use>
   <predefined>true</predefined>
   <restartCountOnFailure>3</restartCountOnFailure>

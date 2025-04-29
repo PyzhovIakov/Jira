@@ -118,11 +118,19 @@
     <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
       <radioButtonsType>Tumbler</radioButtonsType>
       <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>Партнер</value>
+        </presentation>
         <value xsi:type="core:ReferenceValue">
           <value>Enum.cbr_ПредставленияВидовЗадачПоПостановщику.EnumValue.Партнер</value>
         </value>
       </choiceList>
       <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>Пользователь</value>
+        </presentation>
         <value xsi:type="core:ReferenceValue">
           <value>Enum.cbr_ПредставленияВидовЗадачПоПостановщику.EnumValue.Пользователь</value>
         </value>
@@ -168,6 +176,10 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
   <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
@@ -215,10 +227,6 @@
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:CatalogFormExtInfo">
-    <handlers>
-      <event>OnReadAtServer</event>
-      <name>ПриЧтенииНаСервере</name>
-    </handlers>
     <handlers>
       <event>BeforeWrite</event>
       <name>ПередЗаписью</name>

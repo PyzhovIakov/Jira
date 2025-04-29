@@ -19,10 +19,6 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Задача</segments>
           </dataPath>
-          <handlers>
-            <event>OnChange</event>
-            <name>ЗадачаПриИзменении</name>
-          </handlers>
           <extendedTooltip>
             <name>ЗадачаРасширеннаяПодсказка</name>
             <id>73</id>
