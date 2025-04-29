@@ -1265,7 +1265,7 @@
               <name>Метки</name>
               <id>642</id>
               <items xsi:type="form:Button">
-                <name>Ещё</name>
+                <name>МеткаЕще</name>
                 <id>640</id>
                 <title>
                   <key>ru</key>
@@ -1277,7 +1277,7 @@
                   <common>true</common>
                 </userVisible>
                 <extendedTooltip>
-                  <name>ЕщёРасширеннаяПодсказка</name>
+                  <name>МеткаЕщеРасширеннаяПодсказка</name>
                   <id>641</id>
                   <type>Label</type>
                   <autoMaxWidth>true</autoMaxWidth>
@@ -1687,10 +1687,6 @@
                 <segments>Объект.ТребуетКонтроляПоЗавершению</segments>
               </dataPath>
               <titleLocation>Right</titleLocation>
-              <handlers>
-                <event>OnChange</event>
-                <name>ТребуетКонтроляПоЗавершениюПриИзменении</name>
-              </handlers>
               <extendedTooltip>
                 <name>ТребуетКонтроляПоЗавершениюРасширеннаяПодсказка</name>
                 <id>439</id>
@@ -2241,9 +2237,7 @@
                 <name>ТаблицаПрисоединенныхФайловСсылка</name>
                 <id>626</id>
                 <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
+                <userVisible/>
                 <dataPath xsi:type="form:DataPath">
                   <segments>ТаблицаПрисоединенныхФайлов.Ссылка</segments>
                 </dataPath>
@@ -2729,10 +2723,6 @@
                 <name>ПланировщикПередСозданием</name>
               </handlers>
               <handlers>
-                <event>BeforeStartEdit</event>
-                <name>ПланировщикПередНачаломРедактирования</name>
-              </handlers>
-              <handlers>
                 <event>Selection</event>
                 <name>ПланировщикВыбор</name>
               </handlers>
@@ -2809,10 +2799,6 @@
               <font>Style.LargeTextFont</font>
             </font>
             <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <handlers>
-                <event>Click</event>
-                <name>НадписьПустоНажатие</name>
-              </handlers>
               <hyperlink>true</hyperlink>
               <horizontalAlign>Center</horizontalAlign>
               <verticalAlign>Center</verticalAlign>
@@ -3153,10 +3139,6 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
-  <handlers>
-    <event>ChoiceProcessing</event>
-    <name>ОбработкаВыбора</name>
-  </handlers>
   <handlers>
     <event>NotificationProcessing</event>
     <name>ОбработкаОповещения</name>
@@ -4278,7 +4260,7 @@
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>МеткаЕщё</name>
+        <name>МеткаЕще</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
@@ -4374,10 +4356,6 @@
     <handlers>
       <event>OnReadAtServer</event>
       <name>ПриЧтенииНаСервере</name>
-    </handlers>
-    <handlers>
-      <event>BeforeWrite</event>
-      <name>ПередЗаписью</name>
     </handlers>
     <handlers>
       <event>BeforeWriteAtServer</event>

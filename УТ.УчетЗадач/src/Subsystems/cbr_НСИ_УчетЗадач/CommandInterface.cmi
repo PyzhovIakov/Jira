@@ -11,20 +11,21 @@
   <commandsPlacement>
     <placementFragments>
       <group>CommandGroup.cbr_Справочники</group>
-      <commands>Catalog.cbr_ВидыЗадач.StandardCommand.OpenList</commands>
-      <commands>Catalog.cbr_ГруппыДоступаКЗадачам.StandardCommand.OpenList</commands>
-      <commands>Catalog.cbr_Доски.StandardCommand.OpenList</commands>
-      <commands>Catalog.cbr_КонтрольНадЭтапамиЗадач.StandardCommand.OpenList</commands>
-      <commands>Catalog.cbr_МеткиЗадач.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Партнеры.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Приоритеты.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ПричинаПереносаДедлайна.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ПричиныОтказаОтЗадачи.StandardCommand.OpenList</commands>
-      <commands>Catalog.cbr_Роли.StandardCommand.OpenList</commands>
+      <commands>Catalog.cbr_ПричиныЗакрытияЗадач.StandardCommand.OpenList</commands>
+      <commands>Catalog.cbr_ВидыЗадач.StandardCommand.OpenList</commands>
+      <commands>Catalog.cbr_ГруппыДоступаКЗадачам.StandardCommand.OpenList</commands>
+      <commands>Catalog.cbr_Доски.StandardCommand.OpenList</commands>
+      <commands>Catalog.cbr_МеткиЗадач.StandardCommand.OpenList</commands>
+      <commands>Catalog.cbr_КонтрольНадЭтапамиЗадач.StandardCommand.OpenList</commands>
+      <commands>Catalog.cbr_Цвета.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_СтатусыЗадач.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Сценарии.StandardCommand.OpenList</commands>
+      <commands>Catalog.cbr_Роли.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Триггеры.StandardCommand.OpenList</commands>
-      <commands>Catalog.cbr_Цвета.StandardCommand.OpenList</commands>
     </placementFragments>
     <placementFragments>
       <group>CommandGroup.cbr_РегистрыНакопления</group>
@@ -53,12 +54,12 @@
   <commandsOrder>
     <orderFragments>
       <group>CommandGroup.cbr_Справочники</group>
-      <commands>Catalog.cbr_Цвета.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ВидыЗадач.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ГруппыДоступаКЗадачам.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Доски.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_КонтрольНадЭтапамиЗадач.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_МеткиЗадач.StandardCommand.OpenList</commands>
+      <commands>Catalog.cbr_ПричиныЗакрытияЗадач.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Партнеры.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Приоритеты.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ПричинаПереносаДедлайна.StandardCommand.OpenList</commands>
@@ -67,6 +68,7 @@
       <commands>Catalog.cbr_СтатусыЗадач.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Сценарии.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Триггеры.StandardCommand.OpenList</commands>
+      <commands>Catalog.cbr_Цвета.StandardCommand.OpenList</commands>
     </orderFragments>
     <orderFragments>
       <group>CommandGroup.cbr_РегистрыНакопления</group>

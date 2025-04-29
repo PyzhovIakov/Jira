@@ -114,6 +114,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.cbr_ГруппыДоступаКЗадачам.Form.ФормаЭлемента</defaultObjectForm>
   <attributes uuid="232dec52-8fe2-4154-bb42-2fd646c24728">
     <name>Руководитель</name>
     <synonym>
@@ -163,4 +164,13 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <forms uuid="54beb43e-8114-41c8-9d77-2fa0e34b92a0">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

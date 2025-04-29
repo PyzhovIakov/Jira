@@ -98,4 +98,25 @@
       <value>Согласование оценки</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="e347b436-7b72-4b06-96e9-a4b426ed42d5">
+    <name>КнопкаВзятьЗадачу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кнопка взять задачу</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2e068fbd-cf75-4e0a-a406-dd7cff0abfe3">
+    <name>КнопкаВзятьЗадачуСебе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кнопка взять задачу себе</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ac602135-9608-4f72-be91-79295870b5e6">
+    <name>ПослеЗаписиНаСервереФормаЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>После записи на сервере форма задачи</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

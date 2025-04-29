@@ -6,7 +6,7 @@
     <value>Проверка выполнения этапов контроля</value>
   </synonym>
   <comment>Проверка выполнения этапов контроля</comment>
-  <methodName>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроля.cbr_ПроверкаВыполненияЭтаповКонтроля</methodName>
+  <methodName>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера.ПроверкаВыполненияЭтаповКонтроля</methodName>
   <use>true</use>
   <predefined>true</predefined>
   <restartCountOnFailure>3</restartCountOnFailure>
