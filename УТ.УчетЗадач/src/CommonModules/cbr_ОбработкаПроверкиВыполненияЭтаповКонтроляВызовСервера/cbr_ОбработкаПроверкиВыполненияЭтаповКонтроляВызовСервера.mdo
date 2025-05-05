@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="535a70f5-1845-4dee-8623-fe116306d739">
-  <name>cbr_ОбработкаПроверкиВыполненияЭтаповКонтроля</name>
+  <name>cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</name>
   <synonym>
     <key>ru</key>
     <value>Обработка проверки выполнения этапов контроля</value>
   </synonym>
   <server>true</server>
-  <externalConnection>true</externalConnection>
   <serverCall>true</serverCall>
 </mdclass:CommonModule>
