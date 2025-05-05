@@ -10,4 +10,13 @@
   <name>Пользователи</name>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:CatalogExtension"/>
+  <forms uuid="5f10b0a7-1449-4200-bcd0-abcd178197b5">
+    <name>cbr_ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>
