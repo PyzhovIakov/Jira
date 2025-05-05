@@ -1520,6 +1520,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>Объект.ГлавныйМенеджер</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ГлавныйМенеджерПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ГлавныйМенеджерРасширеннаяПодсказка</name>
               <id>430</id>
@@ -1752,6 +1756,10 @@
               <dataPath xsi:type="form:DataPath">
                 <segments>Исполнитель</segments>
               </dataPath>
+              <handlers>
+                <event>OnChange</event>
+                <name>ИсполнительПриИзменении</name>
+              </handlers>
               <extendedTooltip>
                 <name>ИсполнительРасширеннаяПодсказка</name>
                 <id>337</id>
