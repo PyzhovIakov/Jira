@@ -19,4 +19,13 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <commands uuid="dc10f99a-ec0f-419b-817f-923e20635718">
+    <name>ПользователиИнформационнойБазы</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicCommandExtension">
+      <group>Checked</group>
+      <commandParameterTypeExtension/>
+    </extension>
+    <group>FormCommandBarImportant</group>
+  </commands>
 </mdclass:Catalog>
