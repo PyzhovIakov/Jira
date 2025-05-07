@@ -4098,6 +4098,10 @@
       <value>Выбрать главную задачу</value>
     </title>
     <id>8</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Выбрать главную задачу</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
