@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95667e52-afc7-47f6-8843-92ec5ca64ffb">
+  <producedTypes>
+    <selectionType typeId="e6a83f3a-a732-423e-b3db-104abe75f83b" valueTypeId="5b450258-0151-40b4-936e-db7f59ac16c4"/>
+    <listType typeId="105b4a7e-8074-4bcf-8d98-110535b2b439" valueTypeId="085e167a-b5f4-47ce-ab88-8dff8538f771"/>
+    <managerType typeId="5702100d-c7aa-420a-9304-cdd1fc970dd8" valueTypeId="2081f09b-2851-41bd-ad0a-db4c2b6c5100"/>
+    <recordSetType typeId="1ffc76be-0e95-44b0-b09f-be070d3aa020" valueTypeId="7aa7b1c7-4437-4a0e-a93d-404855427bfd"/>
+    <recordKeyType typeId="65320366-a020-4091-aec0-05bf3e344e3e" valueTypeId="dd103059-8d8e-4dc8-82e9-9ec847d4eb07"/>
+    <recordType typeId="fd1883e8-a73c-4f8d-abd3-8184212e28e5" valueTypeId="790c0cca-22ad-40af-9957-46eed1546cf0"/>
+    <recordManagerType typeId="7ec18606-fa58-4f77-a591-ddb82420f2a2" valueTypeId="40b177e2-3fc4-4e4c-b187-0b8fd82b198f"/>
+  </producedTypes>
+  <name>cbr_СоответствиеПользователейДляИнтеграций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие пользователей для интеграций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Соответствие пользователя</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Соответствие пользователей</value>
+  </listPresentation>
+  <resources uuid="255faafc-3b37-4006-992c-f9603b623f13">
+    <name>АйДиПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID пользователя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="05e10391-9622-4a6c-9036-c30d7af7361e">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6fb7703b-0bdd-477f-afbd-1bca626d01d3">
+    <name>ТипИнтеграции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип интеграции</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.Центр_ВидыПользовательскихНастроек</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.Родитель</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>ChartOfCharacteristicTypes.Центр_ВидыПользовательскихНастроек.СпособыОповещения</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.ЭтоГруппа</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfCharacteristicTypes.Центр_ВидыПользовательскихНастроек.СпособыОповещения</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -75,6 +75,11 @@
   <commonModules>CommonModule.cbr_КаленарьКлиентСервер</commonModules>
   <commonModules>CommonModule.cbr_КалендарьСервер</commonModules>
   <commonModules>CommonModule.cbr_Сотрудники</commonModules>
+  <commonModules>CommonModule.OPI_Bitrix24</commonModules>
+  <commonModules>CommonModule.OPI_Инструменты</commonModules>
+  <commonModules>CommonModule.OPI_Криптография</commonModules>
+  <commonModules>CommonModule.OPI_ПреобразованиеТипов</commonModules>
+  <commonModules>CommonModule.cbr_Битрикс24</commonModules>
   <eventSubscriptions>EventSubscription.ВариантыОтчетовПередУдалениемИдентификатораОбъектаМетаданных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ВыполнитьДействияПриЗаписиПрисоединенногоФайла</eventSubscriptions>
   <eventSubscriptions>EventSubscription.cbr_ЗаписьЗадачи</eventSubscriptions>
@@ -137,6 +142,7 @@
   <enums>Enum.cbr_ОтображениеВремениЭлементов</enums>
   <dataProcessors>DataProcessor.cbr_Канбан</dataProcessors>
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
+  <dataProcessors>DataProcessor.ТестБитрикс</dataProcessors>
   <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ВопросыПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ДедлайнЗадач</informationRegisters>
@@ -151,6 +157,8 @@
   <informationRegisters>InformationRegister.cbr_СтатусыЗадач</informationRegisters>
   <informationRegisters>InformationRegister.НапоминанияПользователя</informationRegisters>
   <informationRegisters>InformationRegister.cbr_СобытияПоЗадачам</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_СоответствиеПользователейДляИнтеграций</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_Б24_СоответствиеЗадач</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>
 </mdclass:Configuration>
