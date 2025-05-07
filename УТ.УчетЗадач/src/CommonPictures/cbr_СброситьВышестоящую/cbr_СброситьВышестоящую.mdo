@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31e388ad-10f0-4941-a208-b16fd863acd0">
+  <name>cbr_СброситьВышестоящую</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сбросить вышестоящую</value>
+  </synonym>
+</mdclass:CommonPicture>
