@@ -10,6 +10,4 @@
   <name>СтруктураПредприятия</name>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:CatalogExtension"/>
-  <useStandardCommands>true</useStandardCommands>
-  <checkUnique>true</checkUnique>
 </mdclass:Catalog>
