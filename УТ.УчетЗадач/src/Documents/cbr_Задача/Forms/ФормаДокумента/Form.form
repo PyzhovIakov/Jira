@@ -78,7 +78,6 @@
                     <key>ru</key>
                     <value>Связанные</value>
                   </title>
-                  <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
                     <common>true</common>
@@ -131,10 +130,11 @@
                   <commandName>Form.Command.ВыбратьСвязанныеЗадачи</commandName>
                   <representation>Picture</representation>
                   <autoMaxWidth>true</autoMaxWidth>
+                  <height>1</height>
                   <autoMaxHeight>true</autoMaxHeight>
                   <placementArea>UserCmds</placementArea>
                   <picture xsi:type="core:PictureRef">
-                    <picture>StdPicture.Find</picture>
+                    <picture>CommonPicture.cbr_СвязанныеДокументы</picture>
                   </picture>
                   <representationInContextMenu>Auto</representationInContextMenu>
                 </items>
@@ -209,7 +209,6 @@
                     <key>ru</key>
                     <value>Вышестоящая</value>
                   </title>
-                  <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
                     <common>true</common>
@@ -263,12 +262,14 @@
                   <commandName>Form.Command.ВыбратьГлавнуюЗадачу</commandName>
                   <representation>Picture</representation>
                   <autoMaxWidth>true</autoMaxWidth>
+                  <height>1</height>
                   <autoMaxHeight>true</autoMaxHeight>
                   <placementArea>UserCmds</placementArea>
                   <picture xsi:type="core:PictureRef">
-                    <picture>StdPicture.Find</picture>
+                    <picture>CommonPicture.cbr_ВыбратьВышестоящую</picture>
                   </picture>
                   <representationInContextMenu>Auto</representationInContextMenu>
+                  <shape>Usual</shape>
                 </items>
                 <items xsi:type="form:Button">
                   <name>СоздатьГлавнуюЗадачу</name>
@@ -296,10 +297,11 @@
                   <commandName>Form.Command.СоздатьГлавнуюЗадачу</commandName>
                   <representation>Picture</representation>
                   <autoMaxWidth>true</autoMaxWidth>
+                  <height>1</height>
                   <autoMaxHeight>true</autoMaxHeight>
                   <placementArea>UserCmds</placementArea>
                   <picture xsi:type="core:PictureRef">
-                    <picture>StdPicture.CreateListItem</picture>
+                    <picture>CommonPicture.cbr_СоздатьВышестоящую</picture>
                   </picture>
                   <representationInContextMenu>Auto</representationInContextMenu>
                 </items>
@@ -381,7 +383,6 @@
                     <key>ru</key>
                     <value>Подчиненные</value>
                   </title>
-                  <visible>true</visible>
                   <enabled>true</enabled>
                   <userVisible>
                     <common>true</common>
@@ -434,10 +435,11 @@
                   <commandName>Form.Command.СоздатьПодчиненнуюЗадачу</commandName>
                   <representation>Picture</representation>
                   <autoMaxWidth>true</autoMaxWidth>
+                  <height>1</height>
                   <autoMaxHeight>true</autoMaxHeight>
                   <placementArea>UserCmds</placementArea>
                   <picture xsi:type="core:PictureRef">
-                    <picture>StdPicture.CreateListItem</picture>
+                    <picture>CommonPicture.cbr_СоздатьПодчиненную</picture>
                   </picture>
                   <representationInContextMenu>Auto</representationInContextMenu>
                 </items>
@@ -967,10 +969,14 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ОткрытьВопросы</commandName>
-              <representation>PictureAndText</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_ВопросЗадать</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -994,8 +1000,12 @@
               <commandName>Form.Command.ОтветитьНаВопрос</commandName>
               <representation>PictureAndText</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_ВопросОтветить</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -1053,11 +1063,15 @@
               <commandName>Form.Command.ЗакрытьЗадачу</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
               <backColor xsi:type="core:ColorRef">
                 <color>Style.AccentColor</color>
               </backColor>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_ЗакрытьЗадачу</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -1952,10 +1966,12 @@
                 <commandName>Form.Command.СброситьГлавнуюЗадачу</commandName>
                 <representation>Picture</representation>
                 <autoMaxWidth>true</autoMaxWidth>
+                <height>1</height>
                 <autoMaxHeight>true</autoMaxHeight>
+                <groupHorizontalAlign>Left</groupHorizontalAlign>
                 <placementArea>UserCmds</placementArea>
                 <picture xsi:type="core:PictureRef">
-                  <picture>StdPicture.AppearanceCrossIcon</picture>
+                  <picture>CommonPicture.cbr_СброситьВышестоящую</picture>
                 </picture>
                 <representationInContextMenu>Auto</representationInContextMenu>
               </items>
@@ -3177,6 +3193,9 @@
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
+      <picture xsi:type="core:PictureRef">
+        <picture>CommonPicture.cbr_ЗапланироватьСобытие</picture>
+      </picture>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <items xsi:type="form:Button">
@@ -3198,10 +3217,13 @@
         </extInfo>
       </extendedTooltip>
       <commandName>Form.Command.ОткрытьКомментарии</commandName>
-      <representation>Auto</representation>
+      <representation>Picture</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
+      <picture xsi:type="core:PictureRef">
+        <picture>CommonPicture.cbr_Комментарии</picture>
+      </picture>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <horizontalAlign>Left</horizontalAlign>
@@ -4016,6 +4038,10 @@
       <value>Связать задачу</value>
     </title>
     <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Связанные задачи</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4034,6 +4060,10 @@
       <value>Открыть вопросы</value>
     </title>
     <id>4</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Задать вопрос</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4085,6 +4115,10 @@
       <value>Закрыть задачу</value>
     </title>
     <id>7</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Закрыть задачу</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4102,6 +4136,10 @@
       <value>Ответить на вопрос</value>
     </title>
     <id>6</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Ответить на вопрос</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4170,6 +4208,10 @@
       <value>Создать главную задачу</value>
     </title>
     <id>12</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Создать главную задачу</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4187,6 +4229,10 @@
       <value>Создать подчиненную задачу</value>
     </title>
     <id>13</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Создать подчиненную задачу</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4204,6 +4250,10 @@
       <value>Сбросить главную задачу</value>
     </title>
     <id>14</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Сбросить главную задачу</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4221,6 +4271,10 @@
       <value>Открыть комментарии</value>
     </title>
     <id>16</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть комментарии</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4359,7 +4413,7 @@
     <id>2</id>
     <toolTip>
       <key>ru</key>
-      <value>Задача в календарь</value>
+      <value>Запланировать событие</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -4431,7 +4485,12 @@
         <index>0</index>
       </cmiFragmentRecord>
     </navigationPanel>
-    <commandBar/>
+    <commandBar>
+      <cmiFragmentRecord>
+        <command>Document.cbr_ТрудозатратыПоЗадаче.StandardCommand.CreateBasedOn</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+    </commandBar>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
     <handlers>
