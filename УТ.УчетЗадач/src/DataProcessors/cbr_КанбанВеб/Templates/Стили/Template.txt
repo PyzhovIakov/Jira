@@ -1,0 +1,79 @@
+ /* Стили для доски КанБан */
+body {
+ 	padding: 0;
+  	margin: 0;
+  	font-family: "Arial";
+}
+
+.box {
+	width:100%;
+	display: flex;
+    justify-content: center;
+}
+
+ /* Стили для Колонки */
+ 
+ .column {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width:300px;
+    height:90vh;
+    overflow: auto;
+}
+ .column::-webkit-scrollbar {
+  width: 12px;               /* ширина всей полосы прокрутки */
+}
+
+ .column::-webkit-scrollbar-track {
+  background: #fff;        /* цвет зоны отслеживания */
+}
+
+ .column::-webkit-scrollbar-thumb {
+  background-color: #e7e6e6;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  border: 3px solid #fff;  /* отступ вокруг бегунка */
+}
+ .column-title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.buttons {
+	display: flex;
+    justify-content: center;
+}
+.column-button{
+	width:20px;
+	height:20px;
+	margin:10px;
+	border-radius: 10px;
+    padding: 10px;
+}
+.column-button:hover{
+	background-color: #d3cccc;
+}
+
+.tasks {
+	display: flex;
+    flex-direction: column;
+}
+
+
+ /* Стили для Задачи */
+
+&СтилиПриоритетов
+
+ .task {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: 0.95;
+}
+ .task:hover{
+    border-radius: 20px;
+    border:2px;
+}

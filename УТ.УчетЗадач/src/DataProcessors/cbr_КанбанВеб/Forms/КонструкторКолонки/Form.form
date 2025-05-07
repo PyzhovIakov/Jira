@@ -1050,7 +1050,9 @@
 	cbr_ОценкаЧасовСрезПоследних.КомментарийОценки КАК КомментарийОценки,
 	cbr_СтатусыЗадачСрезПоследних.Статус КАК Статус,
 	cbr_ИсполнителиЗадачСрезПоследних.Исполнитель КАК Исполнитель,
-	cbr_ИсполнителиЗадачСрезПоследних.ЗадачаВзята КАК ЗадачаВзята
+	cbr_ИсполнителиЗадачСрезПоследних.ЗадачаВзята КАК ЗадачаВзята,
+	cbr_Цвета.ЦветRGB,
+	cbr_Цвета.ЦветТекстаRGB
 ИЗ
 	Документ.cbr_Задача КАК cbr_Задача
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.cbr_ИсполнителиЗадач.СрезПоследних КАК cbr_ИсполнителиЗадачСрезПоследних
@@ -1062,7 +1064,11 @@
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.cbr_ДедлайнЗадач.СрезПоследних КАК cbr_ДедлайнЗадачСрезПоследних
 		ПО cbr_Задача.Ссылка = cbr_ДедлайнЗадачСрезПоследних.Задача
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.cbr_ОценкаЧасов.СрезПоследних КАК cbr_ОценкаЧасовСрезПоследних
-		ПО cbr_Задача.Ссылка = cbr_ОценкаЧасовСрезПоследних.Задача</queryText>
+		ПО cbr_Задача.Ссылка = cbr_ОценкаЧасовСрезПоследних.Задача
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.cbr_Приоритеты КАК cbr_Приоритеты
+			ЛЕВОЕ СОЕДИНЕНИЕ Справочник.cbr_Цвета КАК cbr_Цвета
+			ПО cbr_Приоритеты.Цвет = cbr_Цвета.Ссылка
+		ПО cbr_Задача.Приоритет = cbr_Приоритеты.Ссылка</queryText>
       <mainTable>Document.cbr_Задача</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
@@ -1320,6 +1326,42 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ЗадачаВзята</dataPath>
         <field>ЗадачаВзята</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЦветRGB</dataPath>
+        <field>ЦветRGB</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЦветТекстаRGB</dataPath>
+        <field>ЦветТекстаRGB</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ГлавныйМенеджер</dataPath>
+        <field>ГлавныйМенеджер</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТребуетКонтроляПоЗавершению</dataPath>
+        <field>ТребуетКонтроляПоЗавершению</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Метка</dataPath>
+        <field>Метка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПричинаЗакрытия</dataPath>
+        <field>ПричинаЗакрытия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЧекЛист</dataPath>
+        <field>ЧекЛист</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПометкаУдаления</dataPath>
+        <field>ПометкаУдаления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Проведен</dataPath>
+        <field>Проведен</field>
       </fields>
       <parameters>
         <name>Период</name>

@@ -153,10 +153,6 @@
     <items xsi:type="form:FormField">
       <name>Владелец</name>
       <id>54</id>
-      <title>
-        <key>ru</key>
-        <value>Статус</value>
-      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
