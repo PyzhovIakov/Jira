@@ -61,6 +61,16 @@
   <commonPictures>CommonPicture.cbr_ЗаписьКалендаряУдалена</commonPictures>
   <commonPictures>CommonPicture.cbr_Календарь16</commonPictures>
   <commonPictures>CommonPicture.КоллекцияПиктограммФайлов</commonPictures>
+  <commonPictures>CommonPicture.cbr_СоздатьВышестоящую</commonPictures>
+  <commonPictures>CommonPicture.cbr_СоздатьПодчиненную</commonPictures>
+  <commonPictures>CommonPicture.cbr_СброситьВышестоящую</commonPictures>
+  <commonPictures>CommonPicture.cbr_ВыбратьВышестоящую</commonPictures>
+  <commonPictures>CommonPicture.cbr_Комментарии</commonPictures>
+  <commonPictures>CommonPicture.cbr_ВопросЗадать</commonPictures>
+  <commonPictures>CommonPicture.cbr_ВопросОтветить</commonPictures>
+  <commonPictures>CommonPicture.cbr_СвязанныеДокументы</commonPictures>
+  <commonPictures>CommonPicture.cbr_ЗапланироватьСобытие</commonPictures>
+  <commonPictures>CommonPicture.cbr_ЗакрытьЗадачу</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</commonModules>
@@ -137,6 +147,7 @@
   <enums>Enum.cbr_ОтображениеВремениЭлементов</enums>
   <dataProcessors>DataProcessor.cbr_Канбан</dataProcessors>
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_КанбанВеб</dataProcessors>
   <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ВопросыПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ДедлайнЗадач</informationRegisters>
