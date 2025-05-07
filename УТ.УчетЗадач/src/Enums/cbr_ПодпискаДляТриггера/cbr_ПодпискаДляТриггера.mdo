@@ -119,4 +119,18 @@
       <value>После записи на сервере форма задачи</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="059385df-99fb-49aa-a3ca-24cad31d9ce8">
+    <name>ПослеЗаписиСобытияКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>После записи события календаря</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cb0eb6dd-02e2-4624-8325-8e6712d06795">
+    <name>ПередУдалениемСобытияКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перед удалением события календаря</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
