@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="664e70d2-7fcc-43c5-ba8b-d08c817ae414">
+  <producedTypes>
+    <objectType typeId="da7a66fa-1a85-48f3-87b7-0c9b6c2aefbc" valueTypeId="819c3f18-b23d-47c2-968e-e4fa7e70c7c5"/>
+    <managerType typeId="a04c0256-fe28-4478-80ee-d6d71fb4baa6" valueTypeId="1dbfcbbb-f55e-4931-8087-888da680bd02"/>
+  </producedTypes>
+  <name>cbr_КанбанВеб</name>
+  <synonym>
+    <key>ru</key>
+    <value>КанБан веб</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.cbr_КанбанВеб.Form.Главная</defaultForm>
+  <forms uuid="54fb9763-cec6-4b0e-ba5e-1fcb8779b325">
+    <name>Главная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Главная</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="059c33bb-bab8-4aa5-8f80-c071fa42b251">
+    <name>КонструкторКолонки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конструктор колонки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e8160b04-0e8a-432d-9d4a-66bddd95d240">
+    <name>СхемаКомпоновкиКолонки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки колонки</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="83452a14-82e9-4169-b13f-f21e888f6aac">
+    <name>Стили</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стили</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="2fb9eca1-8140-4ca6-a54a-5df9683763f6">
+    <name>Доска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доска</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="11388da4-c655-4183-8daf-d10b5f19b9e6">
+    <name>Колонка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Колонка</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a52b88fb-8e32-493a-8733-9641b1f1ac35">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

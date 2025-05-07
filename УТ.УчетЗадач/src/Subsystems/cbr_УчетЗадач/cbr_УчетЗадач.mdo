@@ -11,4 +11,5 @@
   <content>Document.cbr_ТрудозатратыПоЗадаче</content>
   <content>DataProcessor.cbr_Канбан</content>
   <content>DataProcessor.cbr_РедактированиеПользовательскихНастроек</content>
+  <content>DataProcessor.cbr_КанбанВеб</content>
 </mdclass:Subsystem>
