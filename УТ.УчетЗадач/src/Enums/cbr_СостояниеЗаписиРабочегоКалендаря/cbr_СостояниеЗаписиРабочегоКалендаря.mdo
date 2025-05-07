@@ -36,17 +36,17 @@
     </synonym>
   </enumValues>
   <enumValues uuid="4dd99248-17d0-48c9-87e1-3b929c1d66c1">
-    <name>НаПаузе</name>
+    <name>Запланированна</name>
     <synonym>
       <key>ru</key>
-      <value>На паузе</value>
+      <value>Запланированна</value>
     </synonym>
   </enumValues>
   <enumValues uuid="8236fc26-293e-423c-bf4b-71973e8553fe">
-    <name>ДругойОтедел</name>
+    <name>Завершена</name>
     <synonym>
       <key>ru</key>
-      <value>Другой отедел</value>
+      <value>Завершена</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>
