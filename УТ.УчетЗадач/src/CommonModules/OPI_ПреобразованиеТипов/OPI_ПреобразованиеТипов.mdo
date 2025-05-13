@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96f1072b-7cda-4bb5-8b65-979c1b453886">
+  <name>OPI_ПреобразованиеТипов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Преобразование типов (ОПИ)</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2bb17ccf-f8f7-44b8-b66d-34c32f665c31">
+  <producedTypes>
+    <managerType typeId="c2c853b7-4bc5-4856-bdee-4f783f6ce73e" valueTypeId="89185d28-32a8-4255-811e-9068b26b6359"/>
+    <valueManagerType typeId="b227065c-2099-4173-9ad3-399704af75a4" valueTypeId="3614cf49-81af-4c40-862e-a82feab3c24a"/>
+    <valueKeyType typeId="de983a1c-c980-421b-a80b-ed2c43426f34" valueTypeId="64013897-0664-4808-b77e-de20f51315f7"/>
+  </producedTypes>
+  <name>cbr_ПоследнееСообщениеТелеграмИД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Последнее сообщение телеграм ИД</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>20</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
