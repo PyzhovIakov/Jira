@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7db4a3cb-f08b-4723-b9e2-802034c37c18">
+  <producedTypes>
+    <selectionType typeId="acdd15c1-6b1c-439a-b659-bd9a26586199" valueTypeId="c75c96fd-ac0c-4e0d-b040-94905399c3f3"/>
+    <listType typeId="4e71768a-4c5c-4997-bee8-6a948eede486" valueTypeId="37746116-bf2e-446c-be8b-43be2adc6d2b"/>
+    <managerType typeId="33f48497-4ec6-45f9-8665-15398795e388" valueTypeId="7a55cb27-1c7a-4d21-9220-1f7c7a1abbdb"/>
+    <recordSetType typeId="607a6a12-de08-4b1b-9bdb-3f57902ef400" valueTypeId="1af2e788-cba2-42db-b04e-8cbb6ad42c81"/>
+    <recordKeyType typeId="c0204340-9216-4430-86bb-e65846417973" valueTypeId="f1b001ed-56f5-4261-8c7b-c6b48383f6b0"/>
+    <recordType typeId="7b989941-4b3f-4f20-b702-ed1a1499235b" valueTypeId="a7db0aa4-a4ee-49dd-acf7-bb4f954a1157"/>
+    <recordManagerType typeId="d05217b8-1df8-45ee-bf2e-4a20a03f69ca" valueTypeId="d00b4129-a566-43a7-b517-b13ddbc53116"/>
+  </producedTypes>
+  <name>cbr_СоответствиеПользователейДляИнтеграций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие пользователей для интеграций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="354c6acf-4683-4111-adbc-c54e1d8f6556">
+    <name>АйДиПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID пользователя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1b7ae215-ba92-47c1-9016-17b7bb95cbb8">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a13810b8-0557-4a88-9d7d-1c022cef9596">
+    <name>ТипИнтеграции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип интеграции</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.cbr_ВидыПользовательскихНастроек</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

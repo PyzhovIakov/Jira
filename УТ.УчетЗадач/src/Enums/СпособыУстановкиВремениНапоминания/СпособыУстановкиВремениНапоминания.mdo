@@ -8,4 +8,9 @@
   <name>СпособыУстановкиВремениНапоминания</name>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:EnumExtension"/>
+  <enumValues uuid="6b3d2b18-732e-46d4-8249-2088b208a77c">
+    <name>Периодически</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension"/>
+  </enumValues>
 </mdclass:Enum>
