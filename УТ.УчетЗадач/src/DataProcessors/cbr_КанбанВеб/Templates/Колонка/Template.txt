@@ -1,22 +1,17 @@
 <div style="background: rgb(&Цвет); color:rgb(&ТекстаЦвет);" class="column">
 	<div class="column-title">&НазваниеКолонки (&Количество)</div>
 	<div class="buttons">
-		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="column-button">
-			<path d="M38 24H10M10 24L24 38M10 24L24 10" stroke="rgb(&ТекстаЦвет)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-		</svg>
-		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="column-button">
+	&КнопкаВЛево	
+		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="column-button" data-id="&Номер" data-name="Настройки" onclick="onClickItem(event)">
 			<path d="M21 4H14M10 4H3M21 12H12M8 12H3M21 20H16M12 20H3M14 2V6M8 10V14M16 18V22" stroke="rgb(&ТекстаЦвет)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 		</svg>
-		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="column-button">
+		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="column-button" data-id="&Номер" data-name="Скопировать" onclick="onClickItem(event)">
 			<path d="M10 30H8C6.93913 30 5.92172 29.5786 5.17157 28.8284C4.42143 28.0783 4 27.0609 4 26V8C4 6.93913 4.42143 5.92172 5.17157 5.17157C5.92172 4.42143 6.93913 4 8 4H26C27.0609 4 28.0783 4.42143 28.8284 5.17157C29.5786 5.92172 30 6.93913 30 8V10M22 18H40C42.2091 18 44 19.7909 44 22V40C44 42.2091 42.2091 44 40 44H22C19.7909 44 18 42.2091 18 40V22C18 19.7909 19.7909 18 22 18Z" stroke="rgb(&ТекстаЦвет)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 		</svg>		
-		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="column-button">
+		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="column-button" data-id="&Номер" data-name="Удалить" onclick="onClickItem(event)">
 			<path d="M6 12H10M10 12H42M10 12V40C10 41.0609 10.4214 42.0783 11.1716 42.8284C11.9217 43.5786 12.9391 44 14 44H34C35.0609 44 36.0783 43.5786 36.8284 42.8284C37.5786 42.0783 38 41.0609 38 40V12M16 12V8C16 6.93913 16.4214 5.92172 17.1716 5.17157C17.9217 4.42143 18.9391 4 20 4H28C29.0609 4 30.0783 4.42143 30.8284 5.17157C31.5786 5.92172 32 6.93913 32 8V12M20 22V34M28 22V34" stroke="rgb(&ТекстаЦвет)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-		</svg>		
-		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="column-button">
-			<path d="M10 24H38M38 24L24 10M38 24L24 38" stroke="rgb(&ТекстаЦвет)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-		</svg>
-		
+		</svg>	
+	&КнопкаВПраво	
 	</div>
 	<div class="tasks">&Задачи</div>
 </div>

@@ -69,4 +69,28 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="b3abeed7-bd66-4459-944c-0f5adce362c9">
+    <name>Скрипт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скрипт</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="9d4917bf-b053-40ac-a717-724e813320c8">
+    <name>КнопкаВЛево</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кнопка в лево</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="f3521ed0-94cf-44a4-87a7-62bfbe048e6b">
+    <name>КнопкаВПраво</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кнопка в право</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
 </mdclass:DataProcessor>

@@ -328,15 +328,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="9b849967-5b2a-4bb7-ac32-62a5680f4193">
-    <name>ФормаДокументаУпрощенная</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма документа упрощенная</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="f802c3d6-3815-4032-b8af-2492b9bb9021">
     <name>ФормаВыбораЗадачи</name>
     <synonym>
