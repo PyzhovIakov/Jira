@@ -69,7 +69,7 @@
       <value>Тип интеграции</value>
     </synonym>
     <type>
-      <types>ChartOfCharacteristicTypesRef.Центр_ВидыПользовательскихНастроек</types>
+      <types>ChartOfCharacteristicTypesRef.cbr_ВидыПользовательскихНастроек</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -77,19 +77,13 @@
     <choiceParameters>
       <name>Отбор.Родитель</name>
       <value xsi:type="core:ReferenceValue">
-        <value>ChartOfCharacteristicTypes.Центр_ВидыПользовательскихНастроек.СпособыОповещения</value>
+        <value>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек.СпособыОповещения</value>
       </value>
-    </choiceParameters>
-    <choiceParameters>
-      <name>Отбор.ЭтоГруппа</name>
-      <value xsi:type="core:BooleanValue"/>
     </choiceParameters>
     <denyIncompleteValues>true</denyIncompleteValues>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>ChartOfCharacteristicTypes.Центр_ВидыПользовательскихНастроек.СпособыОповещения</value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
 </mdclass:InformationRegister>
