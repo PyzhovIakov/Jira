@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d789332-8282-4f42-aa04-0417cb97f3df">
+  <producedTypes>
+    <selectionType typeId="5c1224f7-5feb-49af-8c14-d9cbf7b21d07" valueTypeId="288e6b70-5322-4dc0-a2ba-fe0263d890a3"/>
+    <listType typeId="dc6226a0-eff9-459b-8e0c-606ab68a2648" valueTypeId="7a168d5c-0a6c-4735-a16a-d754a0486e62"/>
+    <managerType typeId="7670b1c4-f5b0-4784-bafd-287b69315057" valueTypeId="bbb5c199-5ad3-44b6-8241-590f9a776a27"/>
+    <recordSetType typeId="3bd3b0e7-c373-4446-b92b-8ade05a95eed" valueTypeId="bf88b2c3-40c2-4710-afd9-ad8e02d28c2b"/>
+    <recordKeyType typeId="51204f69-8743-4961-9652-67100d697e5a" valueTypeId="f6c337a1-57b8-4fb8-a766-5fd89852cb8c"/>
+    <recordType typeId="b851b341-ba8a-45fb-9c9c-fe63dbd29e28" valueTypeId="853d456e-157b-4f79-8c78-5990eb5c9dfd"/>
+    <recordManagerType typeId="ec98b808-66ae-403f-9d74-5d6a7ba11b16" valueTypeId="9369e6e5-3a41-4775-b8dc-204fc569598d"/>
+  </producedTypes>
+  <name>cbr_Б24_СоответствиеФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Битрикс24 соответствие файлов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Соответствие задачи</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Соответствие задач</value>
+  </listPresentation>
+  <resources uuid="0b233fba-8d25-4deb-8842-790cf10a84a3">
+    <name>АйДиФайлаБитрикс</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID файла в битриксе</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="869b65f9-e485-4e7b-a091-e04c05c0282d">
+    <name>Изменен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл изменен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="29bd727e-d4f1-4ddc-8d0a-90ab03e88a06">
+    <name>Файл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.cbr_ЗадачаПрисоединенныеФайлы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
