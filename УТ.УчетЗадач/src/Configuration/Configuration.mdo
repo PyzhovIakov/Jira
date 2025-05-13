@@ -73,8 +73,8 @@
   <commonPictures>CommonPicture.cbr_ЗакрытьЗадачу</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
+  <commonModules>CommonModule.OPI_Telegram</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</commonModules>
-  <commonModules>CommonModule.cbr_ОбработкаТриггеровВызовСервера</commonModules>
   <commonModules>CommonModule.cbr_ОбработчикиФормыЗадачиСервер</commonModules>
   <commonModules>CommonModule.cbr_УведомленияПользователей</commonModules>
   <commonModules>CommonModule.cbr_ЭлементыФормы</commonModules>
@@ -86,8 +86,15 @@
   <commonModules>CommonModule.cbr_КалендарьСервер</commonModules>
   <commonModules>CommonModule.cbr_Сотрудники</commonModules>
   <commonModules>CommonModule.OPI_Bitrix24</commonModules>
+  <commonModules>CommonModule.OPI_Компоненты</commonModules>
+  <commonModules>CommonModule.OPI_ЗапросыHTTP</commonModules>
   <commonModules>CommonModule.OPI_Инструменты</commonModules>
+  <commonModules>CommonModule.cbr_ОбработкаТриггеровВызовСервера</commonModules>
+  <commonModules>CommonModule.OPI_ЗапросыSQL</commonModules>
   <commonModules>CommonModule.OPI_Криптография</commonModules>
+  <commonModules>CommonModule.OPI_Тесты</commonModules>
+  <commonModules>CommonModule.OPI_ТестыCLI</commonModules>
+  <commonModules>CommonModule.cbr_РаботаСTelegram</commonModules>
   <commonModules>CommonModule.OPI_ПреобразованиеТипов</commonModules>
   <commonModules>CommonModule.cbr_Битрикс24</commonModules>
   <eventSubscriptions>EventSubscription.ВариантыОтчетовПередУдалениемИдентификатораОбъектаМетаданных</eventSubscriptions>
@@ -95,6 +102,7 @@
   <eventSubscriptions>EventSubscription.cbr_ЗаписьЗадачи</eventSubscriptions>
   <scheduledJobs>ScheduledJob.cbr_ВызовТриггера</scheduledJobs>
   <scheduledJobs>ScheduledJob.cbr_ПроверкаВыполненияЭтаповКонтроля</scheduledJobs>
+  <scheduledJobs>ScheduledJob.cbr_ОтправкаСообщенийПользователямТелеграм</scheduledJobs>
   <definedTypes>DefinedType.ВладелецПрисоединенныхФайлов</definedTypes>
   <definedTypes>DefinedType.ВладелецПрисоединенныхФайловОбъект</definedTypes>
   <definedTypes>DefinedType.ПредметНапоминания</definedTypes>
@@ -107,6 +115,8 @@
   <commandGroups>CommandGroup.cbr_РегистрыНакопления</commandGroups>
   <commandGroups>CommandGroup.cbr_Формы</commandGroups>
   <commandGroups>CommandGroup.Печать</commandGroups>
+  <constants>Constant.cbr_Токен_БотТелеграм</constants>
+  <constants>Constant.cbr_ПоследнееСообщениеТелеграмИД</constants>
   <commonForms>CommonForm.cbr_ФормаОтветаНаВопросПоЗадаче</commonForms>
   <commonForms>CommonForm.cbr_ФормаСпискаВопросовПоЗадаче</commonForms>
   <commonForms>CommonForm.cbr_ИерархияЗадачОбщая</commonForms>
@@ -154,6 +164,8 @@
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_КанбанВеб</dataProcessors>
   <dataProcessors>DataProcessor.ТестБитрикс</dataProcessors>
+  <dataProcessors>DataProcessor.OPI_HTTPКлиент</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_АктивацияАккаунтовTelegram</dataProcessors>
   <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ВопросыПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ДедлайнЗадач</informationRegisters>
@@ -171,6 +183,7 @@
   <informationRegisters>InformationRegister.cbr_СоответствиеПользователейДляИнтеграций</informationRegisters>
   <informationRegisters>InformationRegister.cbr_Б24_СоответствиеЗадач</informationRegisters>
   <informationRegisters>InformationRegister.cbr_Б24_СоответствиеФайлов</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_ЗаданияКОтправкеСообщений</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

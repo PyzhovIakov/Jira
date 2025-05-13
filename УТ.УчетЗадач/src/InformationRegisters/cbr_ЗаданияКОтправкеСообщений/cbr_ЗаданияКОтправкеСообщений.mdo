@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a543e6ad-39f9-4325-a3ca-a9fe3cdb4bce">
+  <producedTypes>
+    <selectionType typeId="af17e0fe-defa-49a0-b898-bb3ce486166a" valueTypeId="9cd568ef-74cf-4258-8dff-35d78da75b66"/>
+    <listType typeId="516cb7ba-421d-46b1-870e-c14a2f98067e" valueTypeId="83a045c1-eb30-4b1c-9ee9-bda12a45e50c"/>
+    <managerType typeId="6b745fff-dda6-4724-a0bf-8fc46041cc2d" valueTypeId="4669c780-b75b-4d7d-865f-42fd99964096"/>
+    <recordSetType typeId="de6559e0-63da-4964-a30d-d6b931d02e69" valueTypeId="f8748ebd-a246-4f47-996b-69ddad0fa4be"/>
+    <recordKeyType typeId="6c2cda12-0a9e-46cf-b560-136a15d98316" valueTypeId="c2ba42f2-014e-4356-b0cb-0656687a3a00"/>
+    <recordType typeId="4e812629-b0a1-4850-8407-20d1525aa687" valueTypeId="3ab12df2-3e67-4e1d-8520-1cf59ba996f1"/>
+    <recordManagerType typeId="36ea7c51-641d-429a-801e-bd472714e721" valueTypeId="cd754d92-44a1-4e77-b30a-c574f02c901e"/>
+  </producedTypes>
+  <name>cbr_ЗаданияКОтправкеСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задания к отправке сообщений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="dabd716f-7201-4cc0-bdb8-2887802b986d">
+    <name>ТекстСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст сообщения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4dc0dff7-5dd6-4537-af66-97ba59dfd8ac">
+    <name>ОшибкаПриОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка при отправки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b3eccd85-856c-4d75-aace-3d705899f955">
+    <name>ДоступноДляПовторнойОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступно для повторной отправки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="c552898f-9b90-4e37-bb0d-df477ab7fe80">
+    <name>ДатаПоследнейПопыткиОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней попытки отправки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="0fe9f7aa-5f95-4621-bbb0-cd98dfd029ea">
+    <name>ВидОповещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оповещения</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.cbr_ВидыПользовательскихНастроек</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="59c3391f-c287-478f-b302-612c6ec48007">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="dc570976-8032-4cc9-bb18-d88411cfaeff">
+    <name>СсылкаНаДокументОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка на документ отправки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>AnyRef</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>
