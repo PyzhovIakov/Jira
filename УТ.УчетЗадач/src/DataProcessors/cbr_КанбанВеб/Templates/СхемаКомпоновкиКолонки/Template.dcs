@@ -256,30 +256,42 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проведен</dataPath>
+			<field>Проведен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГлавныйМенеджер</dataPath>
+			<field>ГлавныйМенеджер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТребуетКонтроляПоЗавершению</dataPath>
+			<field>ТребуетКонтроляПоЗавершению</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Метка</dataPath>
+			<field>Метка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПричинаЗакрытия</dataPath>
+			<field>ПричинаЗакрытия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УИД</dataPath>
+			<field>УИД</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>УИД</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	cbr_Задача.Дата КАК Дата,
-	cbr_Задача.Номер КАК Номер,
-	cbr_Задача.Ссылка КАК Ссылка,
-	cbr_Задача.Наименование КАК Наименование,
-	cbr_Задача.ОписаниеЗадачи КАК ОписаниеЗадачи,
-	cbr_Задача.ВидЗадачи КАК ВидЗадачи,
-	cbr_Задача.Постановщик КАК Постановщик,
-	cbr_Задача.Приоритет КАК Приоритет,
-	cbr_Задача.Автор КАК Автор,
-	cbr_Задача.ГлавнаяЗадача КАК ГлавнаяЗадача,
-	cbr_Задача.УчетВремени КАК УчетВремени,
-	cbr_Задача.КонтрольВремени КАК КонтрольВремени,
-	cbr_Задача.Наблюдатели.(
-		Ссылка КАК Ссылка,
-		НомерСтроки КАК НомерСтроки,
-		Пользователь КАК Пользователь) КАК Наблюдатели,
-	cbr_Задача.Метки.(
-		Ссылка КАК Ссылка,
-		НомерСтроки КАК НомерСтроки,
-		Метка КАК Метка) КАК Метки,
-	cbr_Задача.МоментВремени КАК МоментВремени,
-	cbr_Задача.Представление КАК Представление,
 	cbr_ПросроченныеДействияПоЗадачам.Этап КАК ПросроченоеДействие,
 	cbr_ПросроченныеДействияПоЗадачам.Пользователь КАК ПользовательПросроченныхДействий,
 	cbr_ДедлайнЗадачСрезПоследних.Дедлайн КАК Дедлайн,
@@ -303,7 +315,36 @@
 	cbr_СтатусыЗадачСрезПоследних.Статус КАК Статус,
 	cbr_ИсполнителиЗадачСрезПоследних.Исполнитель КАК Исполнитель,
 	cbr_ИсполнителиЗадачСрезПоследних.ЗадачаВзята КАК ЗадачаВзята,
-	cbr_Приоритеты.Код КАК КодПриоритета
+	cbr_Приоритеты.Код КАК КодПриоритета,
+	УНИКАЛЬНЫЙИДЕНТИФИКАТОР(cbr_Задача.Ссылка) как УИД,
+	cbr_Задача.Дата,
+	cbr_Задача.Номер,
+	cbr_Задача.ПометкаУдаления,
+	cbr_Задача.Проведен,
+	cbr_Задача.Ссылка,
+	cbr_Задача.Наименование,
+	cbr_Задача.ОписаниеЗадачи,
+	cbr_Задача.ВидЗадачи,
+	cbr_Задача.Постановщик,
+	cbr_Задача.Приоритет,
+	cbr_Задача.Автор,
+	cbr_Задача.ГлавнаяЗадача,
+	cbr_Задача.УчетВремени,
+	cbr_Задача.КонтрольВремени,
+	cbr_Задача.ГлавныйМенеджер,
+	cbr_Задача.ТребуетКонтроляПоЗавершению,
+	cbr_Задача.Метка,
+	cbr_Задача.ПричинаЗакрытия,
+	cbr_Задача.Наблюдатели.(
+		Ссылка,
+		НомерСтроки,
+		Пользователь),
+	cbr_Задача.Метки.(
+		Ссылка,
+		НомерСтроки,
+		Метка),
+	cbr_Задача.МоментВремени,
+	cbr_Задача.Представление
 ИЗ
 	Документ.cbr_Задача КАК cbr_Задача
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.cbr_ИсполнителиЗадач.СрезПоследних КАК cbr_ИсполнителиЗадачСрезПоследних
@@ -368,6 +409,9 @@
 					<dcsset:field>Исполнитель</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КодПриоритета</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>КомментарийДедлайн</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -381,6 +425,9 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>КонтрольВремени</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Метка</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
 					<dcsset:field>Метки</dcsset:field>
@@ -421,6 +468,9 @@
 					<dcsset:field>ОписаниеЗадачи</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ГлавныйМенеджер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>От</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -433,13 +483,22 @@
 					<dcsset:field>ПользовательПросроченныхДействий</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПометкаУдаления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Постановщик</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Приоритет</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПричинаЗакрытия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ПричинаПереносаДедлайн</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Проведен</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ПросроченоеДействие</dcsset:field>
@@ -472,10 +531,13 @@
 					<dcsset:field>ТипОценки</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>УчетВремени</dcsset:field>
+					<dcsset:field>ТребуетКонтроляПоЗавершению</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>КодПриоритета</dcsset:field>
+					<dcsset:field>УИД</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>УчетВремени</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">

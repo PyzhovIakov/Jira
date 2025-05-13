@@ -17,24 +17,9 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    padding: 10px;
     margin: 10px;
     width:300px;
     height:90vh;
-    overflow: auto;
-}
- .column::-webkit-scrollbar {
-  width: 12px;               /* ширина всей полосы прокрутки */
-}
-
- .column::-webkit-scrollbar-track {
-  background: #fff;        /* цвет зоны отслеживания */
-}
-
- .column::-webkit-scrollbar-thumb {
-  background-color: #e7e6e6;    /* цвет бегунка */
-  border-radius: 20px;       /* округлось бегунка */
-  border: 3px solid #fff;  /* отступ вокруг бегунка */
 }
  .column-title {
     font-size: 20px;
@@ -60,9 +45,30 @@ body {
 .tasks {
 	display: flex;
     flex-direction: column;
+    background-color: #fff;    
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2px;
+    height:90vh;
+    overflow: auto;
+    opacity: 0.9;
 }
 
+ .tasks::-webkit-scrollbar {
+  width: 12px;               /* ширина всей полосы прокрутки */
+  border-radius: 10px;
+}
 
+ .tasks::-webkit-scrollbar-track {
+  background: #fff;        /* цвет зоны отслеживания */
+   border-radius: 10px;
+}
+
+ .tasks::-webkit-scrollbar-thumb {
+  background-color: #e7e6e6;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  border: 3px solid #fff;  /* отступ вокруг бегунка */
+}
  /* Стили для Задачи */
 
 &СтилиПриоритетов

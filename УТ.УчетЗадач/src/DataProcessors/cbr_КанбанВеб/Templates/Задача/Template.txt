@@ -1,4 +1,4 @@
-<div class="task" id="Приоритет&КодПриоритета" >
+<div class="task" id="Приоритет&КодПриоритета" data-id="&УИД" data-name="Задача" onclick="onClickItem(event)">
 	<div>&Название</div>
 	<div>&Постановщик</div>
 	<div>&Дедлайн</div>
