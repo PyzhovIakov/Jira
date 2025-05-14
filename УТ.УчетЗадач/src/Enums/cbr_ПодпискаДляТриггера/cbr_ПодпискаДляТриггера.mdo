@@ -133,4 +133,11 @@
       <value>Перед удалением события календаря</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="4c567afc-722b-415b-8076-c7d77392ad96">
+    <name>КнопкаВернутьВышестоящуюВРаботу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кнопка вернуть вышестоящую в работу</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

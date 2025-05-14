@@ -305,6 +305,31 @@
                   </picture>
                   <representationInContextMenu>Auto</representationInContextMenu>
                 </items>
+                <items xsi:type="form:Button">
+                  <name>ВернутьВышестоящуюВРаботу</name>
+                  <id>833</id>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <extendedTooltip>
+                    <name>ВернутьВышестоящуюВРаботуРасширеннаяПодсказка</name>
+                    <id>834</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <type>UsualButton</type>
+                  <commandName>Form.Command.ВернутьВышестоящуюВРаботу</commandName>
+                  <representation>Auto</representation>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <placementArea>UserCmds</placementArea>
+                  <representationInContextMenu>Auto</representationInContextMenu>
+                </items>
                 <visible>true</visible>
                 <enabled>true</enabled>
                 <userVisible>
@@ -3293,7 +3318,6 @@
     <items xsi:type="form:Button">
       <name>ФормаОткрытьПолнуюФорму</name>
       <id>827</id>
-      <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
@@ -4565,6 +4589,23 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ОткрытьПолнуюФорму</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ВернутьВышестоящуюВРаботу</name>
+    <title>
+      <key>ru</key>
+      <value>Вернуть вышестоящую в работу</value>
+    </title>
+    <id>29</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВернутьВышестоящуюВРаботу</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
