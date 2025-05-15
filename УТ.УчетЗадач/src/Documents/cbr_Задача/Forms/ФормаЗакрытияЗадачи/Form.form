@@ -372,6 +372,40 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>УчетВремени</name>
+    <title>
+      <key>ru</key>
+      <value>Учет времени</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>КонтрольВремени</name>
+    <title>
+      <key>ru</key>
+      <value>Контроль времени</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>ЗаписатьЗакрыть</name>
     <title>
