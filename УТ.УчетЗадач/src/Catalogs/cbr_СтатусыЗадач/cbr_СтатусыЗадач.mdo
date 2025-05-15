@@ -142,6 +142,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="20ec007f-c19b-40fd-9029-4ab7c2ef99bc">
+    <name>СтатусВБитриксе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус в битриксе</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="c4f53eb8-69a2-4f79-9adb-81526a8cefa6">
     <name>ФормаЭлемента</name>
     <synonym>
