@@ -208,6 +208,7 @@
       <commandName>Form.Command.ОтменаЗакрытия</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
+      <height>1</height>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
       <representationInContextMenu>Auto</representationInContextMenu>

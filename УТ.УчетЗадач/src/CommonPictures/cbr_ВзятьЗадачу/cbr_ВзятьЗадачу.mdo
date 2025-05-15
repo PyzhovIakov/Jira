@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d7d1e7e-24ef-42bb-a0ef-04964026ba48">
+  <name>cbr_ВзятьЗадачу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взять задачу</value>
+  </synonym>
+</mdclass:CommonPicture>
