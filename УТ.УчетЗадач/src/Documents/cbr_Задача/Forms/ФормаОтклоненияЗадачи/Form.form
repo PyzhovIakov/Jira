@@ -173,6 +173,25 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ИсполнительЗадачи</name>
+    <title>
+      <key>ru</key>
+      <value>Исполнитель задачи</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>CatalogRef.cbr_Роли</types>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.cbr_ГруппыДоступаКЗадачам</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>Отклонить</name>
     <title>
