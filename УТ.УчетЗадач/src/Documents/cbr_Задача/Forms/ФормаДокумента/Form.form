@@ -324,10 +324,14 @@
                   </extendedTooltip>
                   <type>UsualButton</type>
                   <commandName>Form.Command.ВернутьВышестоящуюВРаботу</commandName>
-                  <representation>Auto</representation>
+                  <representation>Picture</representation>
                   <autoMaxWidth>true</autoMaxWidth>
+                  <height>1</height>
                   <autoMaxHeight>true</autoMaxHeight>
                   <placementArea>UserCmds</placementArea>
+                  <picture xsi:type="core:PictureRef">
+                    <picture>CommonPicture.cbr_ВернутьВышестоящуюЗадачуВРаботу</picture>
+                  </picture>
                   <representationInContextMenu>Auto</representationInContextMenu>
                 </items>
                 <visible>true</visible>
@@ -4600,6 +4604,10 @@
       <value>Вернуть вышестоящую в работу</value>
     </title>
     <id>29</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Вернуть вышестоящую в работу</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
