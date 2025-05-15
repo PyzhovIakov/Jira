@@ -140,4 +140,11 @@
       <value>Кнопка вернуть вышестоящую в работу</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="c9acb043-8ea5-41f3-923b-d51c1ff863c9">
+    <name>КнопкаОтправитьНаИсполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кнопка отправить на исполнение</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

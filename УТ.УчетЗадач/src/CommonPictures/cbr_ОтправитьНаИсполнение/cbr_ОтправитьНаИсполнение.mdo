@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="183b874b-593a-4a9f-8687-1b0e4aeb3470">
+  <name>cbr_ОтправитьНаИсполнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправить на исполнение</value>
+  </synonym>
+</mdclass:CommonPicture>
