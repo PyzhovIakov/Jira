@@ -79,6 +79,7 @@
   <commonPictures>CommonPicture.cbr_СогласоватьДедлайн</commonPictures>
   <commonPictures>CommonPicture.cbr_Трудозатраты</commonPictures>
   <commonPictures>CommonPicture.cbr_ОтправитьНаИсполнение</commonPictures>
+  <commonPictures>CommonPicture.cbr_УчетЗадач</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.OPI_Telegram</commonModules>

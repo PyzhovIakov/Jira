@@ -93,4 +93,28 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="b16d514b-6cc2-46b7-a62e-be257d6d7139">
+    <name>ИконкаГруппыИлиРоли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иконка группы или роли</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="aa78e440-e19b-4f6e-9150-e1f6059f9cfd">
+    <name>ИсполнительПользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель пользователь</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="cacc1054-7863-4ba4-9148-2e74a7a637ae">
+    <name>ИконкаПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иконка пользователя</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
 </mdclass:DataProcessor>
