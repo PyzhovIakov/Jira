@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c871bbd-a9c6-44e5-9fd7-12971704948c">
+  <name>cbr_Трудозатраты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Трудозатраты</value>
+  </synonym>
+</mdclass:CommonPicture>

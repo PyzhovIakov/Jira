@@ -169,6 +169,22 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="8d88d36c-20ba-4aaf-9780-359413dd68e7">
+    <name>ФорматнаяСтрока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форматная строка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="1bfe5a6d-d872-4b7e-bf25-8d98fb210035">
     <producedTypes>
       <objectType typeId="45d4da84-2209-4238-b870-d86595beee99" valueTypeId="27e511d3-5a0c-401d-abd2-d3d03a859877"/>

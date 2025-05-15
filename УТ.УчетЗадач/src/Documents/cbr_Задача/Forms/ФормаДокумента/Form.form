@@ -305,6 +305,35 @@
                   </picture>
                   <representationInContextMenu>Auto</representationInContextMenu>
                 </items>
+                <items xsi:type="form:Button">
+                  <name>ВернутьВышестоящуюВРаботу</name>
+                  <id>837</id>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <extendedTooltip>
+                    <name>ВернутьВышестоящуюВРаботуРасширеннаяПодсказка</name>
+                    <id>838</id>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <type>UsualButton</type>
+                  <commandName>Form.Command.ВернутьВышестоящуюВРаботу</commandName>
+                  <representation>Picture</representation>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <height>1</height>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <placementArea>UserCmds</placementArea>
+                  <picture xsi:type="core:PictureRef">
+                    <picture>CommonPicture.cbr_ВернутьВышестоящуюЗадачуВРаботу</picture>
+                  </picture>
+                  <representationInContextMenu>Auto</representationInContextMenu>
+                </items>
                 <visible>true</visible>
                 <enabled>true</enabled>
                 <userVisible>
@@ -1031,8 +1060,9 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.НазначитьИсполнителя</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
               <backColor xsi:type="core:ColorDef">
@@ -1040,6 +1070,9 @@
                 <green>223</green>
                 <blue>198</blue>
               </backColor>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_ВзятьЗадачу</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -1061,7 +1094,7 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ЗакрытьЗадачу</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1069,6 +1102,7 @@
               <backColor xsi:type="core:ColorRef">
                 <color>Style.AccentColor</color>
               </backColor>
+              <borderColor xsi:type="core:ColorDef"/>
               <picture xsi:type="core:PictureRef">
                 <picture>CommonPicture.cbr_ЗакрытьЗадачу</picture>
               </picture>
@@ -1093,10 +1127,14 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ВзятьЗадачу</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_ВзятьЗадачу</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -1118,10 +1156,20 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ОтклонитьЗадачу</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <backColor xsi:type="core:ColorDef">
+                <red>210</red>
+                <green>4</green>
+                <blue>48</blue>
+              </backColor>
+              <borderColor xsi:type="core:ColorDef"/>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_ОтклонитьЗадачу</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -1143,10 +1191,14 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.СогласоватьОценку</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_СогласоватьОценку</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -1168,10 +1220,14 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.СогласоватьДедлайн</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_СогласоватьДедлайн</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -1193,10 +1249,14 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ВвестиТрудозатраты</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_Трудозатраты</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <visible>true</visible>
@@ -3231,6 +3291,34 @@
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
     <items xsi:type="form:Button">
+      <name>ФормаОтправитьНаИсполнение</name>
+      <id>833</id>
+      <title>
+        <key>ru</key>
+        <value>В работу</value>
+      </title>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаОтправитьНаИсполнениеРасширеннаяПодсказка</name>
+        <id>834</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.ОтправитьНаИсполнение</commandName>
+      <representation>PictureAndText</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
       <name>ФормаЗадачаВКалендарь</name>
       <id>433</id>
       <title>
@@ -3293,7 +3381,6 @@
     <items xsi:type="form:Button">
       <name>ФормаОткрытьПолнуюФорму</name>
       <id>827</id>
-      <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
@@ -3313,6 +3400,34 @@
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>УведомитьОЗадаче</name>
+      <id>835</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>УведомитьОЗадачеРасширеннаяПодсказка</name>
+        <id>836</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.УведомитьОЗадаче</commandName>
+      <representation>Picture</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <picture xsi:type="core:PictureRef">
+        <picture>CommonPicture.cbr_ОповеститьОЗадаче</picture>
+      </picture>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <horizontalAlign>Left</horizontalAlign>
@@ -4170,6 +4285,10 @@
       <value>Назначить исполнителя</value>
     </title>
     <id>5</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Назначить исполнителя</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4250,6 +4369,10 @@
       <value>Отклонить задачу</value>
     </title>
     <id>9</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Отклонить задачу</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4267,6 +4390,10 @@
       <value>Согласовать оценку</value>
     </title>
     <id>10</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Согласовать оценку</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4284,6 +4411,10 @@
       <value>Ввести трудозатраты</value>
     </title>
     <id>11</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Ввести трудозатраты</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4385,6 +4516,10 @@
       <value>Согласовать дедлайн</value>
     </title>
     <id>15</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Согласовать дедлайн</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4419,6 +4554,10 @@
       <value>Взять задачу</value>
     </title>
     <id>18</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Взять задачу</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4565,6 +4704,64 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ОткрытьПолнуюФорму</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ВернутьВышестоящуюВРаботу</name>
+    <title>
+      <key>ru</key>
+      <value>Вернуть вышестоящую в работу</value>
+    </title>
+    <id>31</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Вернуть вышестоящую в работу</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВернутьВышестоящуюВРаботу</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>УведомитьОЗадаче</name>
+    <title>
+      <key>ru</key>
+      <value>Уведомить о задаче</value>
+    </title>
+    <id>30</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>УведомитьОЗадаче</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОтправитьНаИсполнение</name>
+    <title>
+      <key>ru</key>
+      <value>Отправить на исполнение</value>
+    </title>
+    <id>29</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.cbr_ОтправитьНаИсполнение</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОтправитьНаИсполнение</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

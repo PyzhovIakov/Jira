@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ff2607e-56f5-4159-b56f-947658774fc9">
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ff2607e-56f5-4159-b56f-947658774fc9">
   <name>cbr_УчетЗадач</name>
   <synonym>
     <key>ru</key>
@@ -7,6 +7,9 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.cbr_УчетЗадач</picture>
+  </picture>
   <content>Document.cbr_Задача</content>
   <content>Document.cbr_ТрудозатратыПоЗадаче</content>
   <content>DataProcessor.cbr_Канбан</content>

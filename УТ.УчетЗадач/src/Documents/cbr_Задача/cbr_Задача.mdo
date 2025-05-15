@@ -382,6 +382,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="65060edf-3295-4296-9c57-dc2a123b23c0">
+    <name>ФормаУведомлениеПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма уведомление пользователей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="7c56bb2c-9698-4353-ac5c-b6ded8247a43">
     <producedTypes>
       <objectType typeId="3a8d6a07-fedc-4704-9e1e-66f72ba0a580" valueTypeId="99f781e0-5511-40d0-8f35-c00c960fef19"/>

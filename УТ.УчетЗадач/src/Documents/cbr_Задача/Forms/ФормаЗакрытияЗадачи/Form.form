@@ -208,6 +208,7 @@
       <commandName>Form.Command.ОтменаЗакрытия</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
+      <height>1</height>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
       <representationInContextMenu>Auto</representationInContextMenu>
@@ -364,6 +365,40 @@
     <id>7</id>
     <valueType>
       <types>EnumRef.cbr_ТипОценкиЧасов</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>УчетВремени</name>
+    <title>
+      <key>ru</key>
+      <value>Учет времени</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>КонтрольВремени</name>
+    <title>
+      <key>ru</key>
+      <value>Контроль времени</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>Boolean</types>
     </valueType>
     <view>
       <common>true</common>

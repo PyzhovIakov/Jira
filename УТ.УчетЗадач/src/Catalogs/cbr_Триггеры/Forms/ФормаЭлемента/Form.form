@@ -329,6 +329,53 @@
         <horizontalAlign>Left</horizontalAlign>
       </extInfo>
     </items>
+    <items xsi:type="form:Decoration">
+      <name>ДекорацияПомощь1</name>
+      <id>66</id>
+      <title>
+        <key>ru</key>
+        <value>Форматная строка:
+
+Содержит шаблон отправки сообщений пользователю.
+Правила заполнения форматной строки:
+1. ПараметрОпределяется, через знак &quot;&amp;&quot;.
+2. Имя Параметра должно быть слитно
+   - Не корректно - &quot;&amp;Приоритет выполнения&quot;
+   - Корректно - &quot;&amp;ПриоритетВыполнения&quot; 
+3. Параметры определяются из запроса
+
+Пример:
+
+Пользователь - &amp;Пользователь!!! Вы назначены на задачу - &quot;&amp;Ссылка&quot;</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ДекорацияПомощь1РасширеннаяПодсказка</name>
+        <id>68</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ДекорацияПомощь1КонтекстноеМеню</name>
+        <id>67</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -356,6 +403,50 @@
       <united>true</united>
       <throughAlign>Auto</throughAlign>
       <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ФорматнаяСтрока</name>
+    <id>63</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ФорматнаяСтрока</segments>
+    </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>ЗапросПриИзменении</name>
+    </handlers>
+    <extendedTooltip>
+      <name>ФорматнаяСтрокаРасширеннаяПодсказка</name>
+      <id>65</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ФорматнаяСтрокаКонтекстноеМеню</name>
+      <id>64</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>TextDocumentField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:TextDocFieldExtInfo">
+      <width>50</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <height>3</height>
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <verticalStretch>true</verticalStretch>
     </extInfo>
   </items>
   <items xsi:type="form:Table">
