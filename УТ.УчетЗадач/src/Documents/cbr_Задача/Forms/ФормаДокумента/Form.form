@@ -1060,8 +1060,9 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.НазначитьИсполнителя</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
               <backColor xsi:type="core:ColorDef">
@@ -1069,6 +1070,9 @@
                 <green>223</green>
                 <blue>198</blue>
               </backColor>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_ВзятьЗадачу</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -1090,7 +1094,7 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ЗакрытьЗадачу</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1098,6 +1102,7 @@
               <backColor xsi:type="core:ColorRef">
                 <color>Style.AccentColor</color>
               </backColor>
+              <borderColor xsi:type="core:ColorDef"/>
               <picture xsi:type="core:PictureRef">
                 <picture>CommonPicture.cbr_ЗакрытьЗадачу</picture>
               </picture>
@@ -1122,10 +1127,14 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ВзятьЗадачу</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_ВзятьЗадачу</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -1147,10 +1156,20 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ОтклонитьЗадачу</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <backColor xsi:type="core:ColorDef">
+                <red>210</red>
+                <green>4</green>
+                <blue>48</blue>
+              </backColor>
+              <borderColor xsi:type="core:ColorDef"/>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_ОтклонитьЗадачу</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -1172,10 +1191,14 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.СогласоватьОценку</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_СогласоватьОценку</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -1197,10 +1220,14 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.СогласоватьДедлайн</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_СогласоватьДедлайн</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <items xsi:type="form:Button">
@@ -1222,10 +1249,14 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ВвестиТрудозатраты</commandName>
-              <representation>Auto</representation>
+              <representation>Picture</representation>
               <autoMaxWidth>true</autoMaxWidth>
+              <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <picture xsi:type="core:PictureRef">
+                <picture>CommonPicture.cbr_Трудозатраты</picture>
+              </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <visible>true</visible>
@@ -4226,6 +4257,10 @@
       <value>Назначить исполнителя</value>
     </title>
     <id>5</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Назначить исполнителя</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4306,6 +4341,10 @@
       <value>Отклонить задачу</value>
     </title>
     <id>9</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Отклонить задачу</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4323,6 +4362,10 @@
       <value>Согласовать оценку</value>
     </title>
     <id>10</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Согласовать оценку</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4340,6 +4383,10 @@
       <value>Ввести трудозатраты</value>
     </title>
     <id>11</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Ввести трудозатраты</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4441,6 +4488,10 @@
       <value>Согласовать дедлайн</value>
     </title>
     <id>15</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Согласовать дедлайн</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>
@@ -4475,6 +4526,10 @@
       <value>Взять задачу</value>
     </title>
     <id>18</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Взять задачу</value>
+    </toolTip>
     <use>
       <common>true</common>
     </use>

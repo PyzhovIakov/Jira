@@ -73,6 +73,11 @@
   <commonPictures>CommonPicture.cbr_ЗакрытьЗадачу</commonPictures>
   <commonPictures>CommonPicture.cbr_ВернутьВышестоящуюЗадачуВРаботу</commonPictures>
   <commonPictures>CommonPicture.cbr_ОповеститьОЗадаче</commonPictures>
+  <commonPictures>CommonPicture.cbr_ВзятьЗадачу</commonPictures>
+  <commonPictures>CommonPicture.cbr_ОтклонитьЗадачу</commonPictures>
+  <commonPictures>CommonPicture.cbr_СогласоватьОценку</commonPictures>
+  <commonPictures>CommonPicture.cbr_СогласоватьДедлайн</commonPictures>
+  <commonPictures>CommonPicture.cbr_Трудозатраты</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.OPI_Telegram</commonModules>

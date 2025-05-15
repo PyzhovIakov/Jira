@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf14e438-7f64-4e76-bad1-fea54c9dcfc6">
+  <name>cbr_СогласоватьОценку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Согласовать оценку</value>
+  </synonym>
+</mdclass:CommonPicture>
