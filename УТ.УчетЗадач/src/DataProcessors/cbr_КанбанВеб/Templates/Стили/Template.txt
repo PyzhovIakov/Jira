@@ -3,12 +3,26 @@ body {
  	padding: 0;
   	margin: 0;
   	font-family: "Arial", serif;
+  	display: block;
+}
+body::-webkit-scrollbar {
+  width: 12px;               /* ширина всей полосы прокрутки */
+  border-radius: 10px;
 }
 
+body::-webkit-scrollbar-track {
+  background: #fff;        /* цвет зоны отслеживания */
+   border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e7e6e6;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  border: 3px solid #fff;  /* отступ вокруг бегунка */
+}
 .box {
-	width:100%;
 	display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
  /* Стили для Колонки */
@@ -19,7 +33,7 @@ body {
     border-radius: 10px;
     margin: 10px;
     width:300px;
-    height:90vh;
+    height:95vh;
 }
  .column-title {
     font-size: 20px;
@@ -73,16 +87,45 @@ body {
 
 &СтилиПриоритетов
 
- .task {
-    padding: 10px;
+ .task-box {
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     opacity: 0.95;
     background-color: #FFF6B6;
     color: #000;
+    border:1px #e7e6e6 solid; 
 }
- .task:hover{
-    border-radius: 20px;
-    border:2px;
+ .task-box:hover{
+    border-radius: 5px;
     background: #e7e6e6;
+}
+ .task {
+    padding: 10px;
+    margin: 0 0 0 5px;
+    border-radius: 5px;
+    opacity: 0.95;
+    background-color: #FFF;
+    color: #000;
+    font-size: 14px;
+}
+.task-text-1 {	
+	color:#bfb0bd;
+}
+.task-data {
+	text-align: right;
+}
+.task-text-2 {	
+	font-size: 20px;
+	color:#000;
+}
+.task-isp {
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+.task-user{
+	width:25px;
+	height:25px;
+	border-radius: 50%;
+	margin:5px;
 }

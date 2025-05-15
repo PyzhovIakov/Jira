@@ -1,6 +1,10 @@
-<div class="task" id="Приоритет&КодПриоритета" data-id="&УИД" data-name="Задача" onclick="onClickItem(event)">
-	<div>&Название</div>
-	<div>&Постановщик</div>
-	<div>&Дедлайн</div>
-	<div>&Исполнитель</div>
+<div class="task-box" id="Приоритет&КодПриоритета" data-id="&УИД" data-name="Задача" onclick="onClickItem(event)">
+	<div class="task">
+		<div style="display: flex;">
+			<div class="task-text-1" style="width:50%;">&Постановщик</div>
+			<div class="task-text-1 task-data" style="width:50%;" >&Дедлайн</div>
+		</div>
+		<div class="task-text-2">&Название</div>
+		<div class="task-isp">&Исполнитель</div>
+	</div>
 </div>

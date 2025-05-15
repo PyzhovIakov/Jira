@@ -71,6 +71,7 @@
   <commonPictures>CommonPicture.cbr_СвязанныеДокументы</commonPictures>
   <commonPictures>CommonPicture.cbr_ЗапланироватьСобытие</commonPictures>
   <commonPictures>CommonPicture.cbr_ЗакрытьЗадачу</commonPictures>
+  <commonPictures>CommonPicture.cbr_УчетЗадач</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.OPI_Telegram</commonModules>
