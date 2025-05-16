@@ -2,7 +2,7 @@
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormField">
     <name>ПричинаОтказа</name>
-    <id>1</id>
+    <id>6</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -13,7 +13,7 @@
     </dataPath>
     <extendedTooltip>
       <name>ПричинаОтказаРасширеннаяПодсказка</name>
-      <id>3</id>
+      <id>8</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -23,7 +23,7 @@
     </extendedTooltip>
     <contextMenu>
       <name>ПричинаОтказаКонтекстноеМеню</name>
-      <id>2</id>
+      <id>7</id>
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
@@ -32,10 +32,10 @@
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
     <extInfo xsi:type="form:InputFieldExtInfo">
+      <width>30</width>
+      <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
-      <horizontalStretch>true</horizontalStretch>
       <wrap>true</wrap>
-      <multiLine>true</multiLine>
       <chooseType>true</chooseType>
       <typeDomainEnabled>true</typeDomainEnabled>
       <textEdit>true</textEdit>
@@ -86,24 +86,6 @@
   <enabled>true</enabled>
   <showTitle>true</showTitle>
   <showCloseButton>true</showCloseButton>
-  <attributes>
-    <name>ПричинаОтказа</name>
-    <title>
-      <key>ru</key>
-      <value>Причина отказа</value>
-    </title>
-    <id>1</id>
-    <valueType>
-      <types>String</types>
-      <stringQualifiers/>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-  </attributes>
   <attributes>
     <name>Постановщик</name>
     <title>
@@ -191,6 +173,24 @@
     <edit>
       <common>true</common>
     </edit>
+  </attributes>
+  <attributes>
+    <name>ПричинаОтказа</name>
+    <title>
+      <key>ru</key>
+      <value>Причина отказа</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>CatalogRef.cbr_ПричиныОтказаОтЗадачи</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <fillChecking>ShowError</fillChecking>
   </attributes>
   <formCommands>
     <name>Отклонить</name>
