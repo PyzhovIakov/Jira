@@ -1042,7 +1042,7 @@
               <id>370</id>
               <title>
                 <key>ru</key>
-                <value>Взять себе</value>
+                <value>Взять</value>
               </title>
               <enabled>true</enabled>
               <userVisible>
@@ -1060,16 +1060,11 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.НазначитьИсполнителя</commandName>
-              <representation>Picture</representation>
+              <representation>PictureAndText</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
-              <backColor xsi:type="core:ColorDef">
-                <red>175</red>
-                <green>223</green>
-                <blue>198</blue>
-              </backColor>
               <picture xsi:type="core:PictureRef">
                 <picture>CommonPicture.cbr_ВзятьЗадачу</picture>
               </picture>
@@ -1078,6 +1073,10 @@
             <items xsi:type="form:Button">
               <name>ЗакрытьЗадачу</name>
               <id>393</id>
+              <title>
+                <key>ru</key>
+                <value>Завершить</value>
+              </title>
               <enabled>true</enabled>
               <userVisible>
                 <common>true</common>
@@ -1094,13 +1093,15 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ЗакрытьЗадачу</commandName>
-              <representation>Picture</representation>
+              <representation>PictureAndText</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
-              <backColor xsi:type="core:ColorRef">
-                <color>Style.AccentColor</color>
+              <textColor xsi:type="core:ColorDef"/>
+              <backColor xsi:type="core:ColorDef">
+                <green>184</green>
+                <blue>86</blue>
               </backColor>
               <borderColor xsi:type="core:ColorDef"/>
               <picture xsi:type="core:PictureRef">
@@ -1111,6 +1112,10 @@
             <items xsi:type="form:Button">
               <name>ВзятьЗадачу</name>
               <id>465</id>
+              <title>
+                <key>ru</key>
+                <value>Взять</value>
+              </title>
               <enabled>true</enabled>
               <userVisible>
                 <common>true</common>
@@ -1127,7 +1132,7 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ВзятьЗадачу</commandName>
-              <representation>Picture</representation>
+              <representation>PictureAndText</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1140,6 +1145,10 @@
             <items xsi:type="form:Button">
               <name>ОтклонитьЗадачу</name>
               <id>401</id>
+              <title>
+                <key>ru</key>
+                <value>Отклонить</value>
+              </title>
               <enabled>true</enabled>
               <userVisible>
                 <common>true</common>
@@ -1156,15 +1165,16 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ОтклонитьЗадачу</commandName>
-              <representation>Picture</representation>
+              <representation>PictureAndText</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <textColor xsi:type="core:ColorDef"/>
               <backColor xsi:type="core:ColorDef">
-                <red>210</red>
-                <green>4</green>
-                <blue>48</blue>
+                <red>255</red>
+                <green>120</green>
+                <blue>117</blue>
               </backColor>
               <borderColor xsi:type="core:ColorDef"/>
               <picture xsi:type="core:PictureRef">
@@ -1175,6 +1185,10 @@
             <items xsi:type="form:Button">
               <name>СогласоватьОценку</name>
               <id>403</id>
+              <title>
+                <key>ru</key>
+                <value>Согласовать</value>
+              </title>
               <enabled>true</enabled>
               <userVisible>
                 <common>true</common>
@@ -1191,7 +1205,7 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.СогласоватьОценку</commandName>
-              <representation>Picture</representation>
+              <representation>PictureAndText</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1204,6 +1218,10 @@
             <items xsi:type="form:Button">
               <name>СогласоватьДедлайн</name>
               <id>805</id>
+              <title>
+                <key>ru</key>
+                <value>Дедлайн</value>
+              </title>
               <enabled>true</enabled>
               <userVisible>
                 <common>true</common>
@@ -1220,7 +1238,7 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.СогласоватьДедлайн</commandName>
-              <representation>Picture</representation>
+              <representation>PictureAndText</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1233,6 +1251,10 @@
             <items xsi:type="form:Button">
               <name>ВвестиТрудозатраты</name>
               <id>405</id>
+              <title>
+                <key>ru</key>
+                <value>Трудозатраты</value>
+              </title>
               <enabled>true</enabled>
               <userVisible>
                 <common>true</common>
@@ -1249,7 +1271,7 @@
               </extendedTooltip>
               <type>UsualButton</type>
               <commandName>Form.Command.ВвестиТрудозатраты</commandName>
-              <representation>Picture</representation>
+              <representation>PictureAndText</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <height>1</height>
               <autoMaxHeight>true</autoMaxHeight>
