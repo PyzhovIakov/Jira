@@ -8,10 +8,8 @@
 </head>
 <body>	
 	<div class="box">
-Колонки
-
-
-Скрипт
+&Колонки
 	</div>
+&Скрипт
 </body>
 </html>

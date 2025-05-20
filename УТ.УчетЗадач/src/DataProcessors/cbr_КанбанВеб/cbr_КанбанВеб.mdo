@@ -45,14 +45,6 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="2fb9eca1-8140-4ca6-a54a-5df9683763f6">
-    <name>Доска</name>
-    <synonym>
-      <key>ru</key>
-      <value>Доска</value>
-    </synonym>
-    <templateType>HTMLDocument</templateType>
-  </templates>
   <templates uuid="11388da4-c655-4183-8daf-d10b5f19b9e6">
     <name>Колонка</name>
     <synonym>
@@ -114,6 +106,14 @@
     <synonym>
       <key>ru</key>
       <value>Иконка пользователя</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="d7ec19c0-49a4-4c53-bf67-22b77c704760">
+    <name>Доска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доска</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
