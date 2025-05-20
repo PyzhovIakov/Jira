@@ -146,6 +146,23 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="16f75e44-954c-4efa-b25a-1f832b67dfeb">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.cbr_Роли</types>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.cbr_ГруппыДоступаКЗадачам</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="a7825dc8-36fe-4c8b-b9bd-70aba9c9d6e2">
     <name>ФормаЭлемента</name>
     <synonym>
