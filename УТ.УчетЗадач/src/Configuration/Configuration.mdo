@@ -131,29 +131,30 @@
   <commonForms>CommonForm.cbr_ИерархияЗадачОбщая</commonForms>
   <commonForms>CommonForm.cbr_КомментарииЗадач</commonForms>
   <commonForms>CommonForm.cbr_ФормаВыбораЦвета</commonForms>
-  <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.cbr_ВидыЗадач</catalogs>
   <catalogs>Catalog.cbr_ГруппыДоступаКЗадачам</catalogs>
   <catalogs>Catalog.cbr_Доски</catalogs>
+  <catalogs>Catalog.cbr_ЗадачаПрисоединенныеФайлы</catalogs>
+  <catalogs>Catalog.cbr_Календарь</catalogs>
+  <catalogs>Catalog.cbr_КалендарьЦвета</catalogs>
+  <catalogs>Catalog.cbr_КонтрольНадЭтапамиЗадач</catalogs>
   <catalogs>Catalog.cbr_МеткиЗадач</catalogs>
   <catalogs>Catalog.cbr_Партнеры</catalogs>
   <catalogs>Catalog.cbr_Приоритеты</catalogs>
   <catalogs>Catalog.cbr_ПричинаПереносаДедлайна</catalogs>
+  <catalogs>Catalog.cbr_ПричиныЗакрытияЗадач</catalogs>
   <catalogs>Catalog.cbr_ПричиныОтказаОтЗадачи</catalogs>
+  <catalogs>Catalog.cbr_Роли</catalogs>
   <catalogs>Catalog.cbr_СтатусыЗадач</catalogs>
   <catalogs>Catalog.cbr_Сценарии</catalogs>
-  <catalogs>Catalog.cbr_КонтрольНадЭтапамиЗадач</catalogs>
-  <catalogs>Catalog.УчетныеЗаписиСинхронизацииФайлов</catalogs>
-  <catalogs>Catalog.ТомаХраненияФайлов</catalogs>
-  <catalogs>Catalog.cbr_ЗадачаПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.cbr_Триггеры</catalogs>
-  <catalogs>Catalog.Партнеры</catalogs>
-  <catalogs>Catalog.cbr_Роли</catalogs>
-  <catalogs>Catalog.cbr_Календарь</catalogs>
-  <catalogs>Catalog.cbr_КалендарьЦвета</catalogs>
   <catalogs>Catalog.cbr_Цвета</catalogs>
+  <catalogs>Catalog.Партнеры</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.СтруктураПредприятия</catalogs>
-  <catalogs>Catalog.cbr_ПричиныЗакрытияЗадач</catalogs>
+  <catalogs>Catalog.ТомаХраненияФайлов</catalogs>
+  <catalogs>Catalog.УчетныеЗаписиСинхронизацииФайлов</catalogs>
+  <catalogs>Catalog.КонтактныеЛицаПартнеров</catalogs>
   <documents>Document.cbr_Задача</documents>
   <documents>Document.cbr_ТрудозатратыПоЗадаче</documents>
   <enums>Enum.cbr_ВидыВопросов</enums>
