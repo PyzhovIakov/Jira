@@ -223,40 +223,6 @@
       <common>true</common>
     </edit>
   </attributes>
-  <formCommands>
-    <name>СоздатьКолонку</name>
-    <title>
-      <key>ru</key>
-      <value>Создать колонку</value>
-    </title>
-    <id>1</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>СоздатьКолонку</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>СоздатьЗадачу</name>
-    <title>
-      <key>ru</key>
-      <value>Создать задачу</value>
-    </title>
-    <id>2</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>СоздатьЗадачу</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>
