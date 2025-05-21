@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="13976bf4-9987-466a-a900-5f61644afbb6">
+  <producedTypes>
+    <objectType typeId="8843d5db-dad0-4eff-b4c4-c5ca5e75c011" valueTypeId="d4210ee0-6ce2-49a9-bf13-7c50743fd3d6"/>
+    <refType typeId="64eca8af-429e-4748-b5d6-d87a0baf558f" valueTypeId="efccebab-3b3d-4cc8-afb7-ba6a604bea92"/>
+    <selectionType typeId="4b2929ee-1d48-4062-af52-b77465ce14fa" valueTypeId="1a18e2fb-120b-451a-bdd1-7d19bbe4331c"/>
+    <listType typeId="b5bcb643-8358-42e0-8100-1b2f5d0cce96" valueTypeId="5e0f3380-6221-4166-9f50-ea5ce80bf640"/>
+    <managerType typeId="d19b375e-c2f7-4cd0-9d94-365e842cee93" valueTypeId="2a7013c8-1389-4e92-bc50-a6f2c75f6ab4"/>
+  </producedTypes>
+  <name>КонтактныеЛицаПартнеров</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension"/>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Catalog>

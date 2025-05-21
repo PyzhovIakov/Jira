@@ -407,6 +407,23 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ВозможноЗакрыть</name>
+    <title>
+      <key>ru</key>
+      <value>Возможно закрыть</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>ЗаписатьЗакрыть</name>
     <title>
