@@ -25,4 +25,15 @@
     return queue[index]
   }
   
+ function setBoard(index) {
+   	document.getElementById('Board').value = index;
+  }
+  
+  function changeBoard(event) {
+      const eventData = {
+      Name: 'ИзменениеДоски',
+      Id: event.target.value,
+    };
+    pushEvent(eventData);
+  }
 </script>

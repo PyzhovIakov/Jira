@@ -429,34 +429,8 @@
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Метка</dcsset:field>
 				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
-					<dcsset:field>Метки</dcsset:field>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Метки.Метка</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Метки.НомерСтроки</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Метки.Ссылка</dcsset:field>
-					</dcsset:item>
-					<dcsset:placement>Auto</dcsset:placement>
-				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>МоментВремени</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
-					<dcsset:field>Наблюдатели</dcsset:field>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Наблюдатели.НомерСтроки</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Наблюдатели.Пользователь</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Наблюдатели.Ссылка</dcsset:field>
-					</dcsset:item>
-					<dcsset:placement>Auto</dcsset:placement>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Наименование</dcsset:field>
