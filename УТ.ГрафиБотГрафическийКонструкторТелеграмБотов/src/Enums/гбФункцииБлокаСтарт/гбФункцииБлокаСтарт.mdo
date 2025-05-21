@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6249826-b04a-4b96-9ad4-1e3dfd11f5c6">
+  <producedTypes>
+    <refType typeId="7c0e9260-3c3e-41c7-aec4-670e5554b4ab" valueTypeId="c818127d-0b6b-4fa4-9c4e-7b27c861c9db"/>
+    <listType typeId="8d2e3440-bd2e-4ab4-99c6-8f764555126e" valueTypeId="0edf7241-185d-4a0f-b94f-e82c67c92b32"/>
+    <managerType typeId="0408be6b-0716-4c57-85e1-9206b9a07678" valueTypeId="8d13e714-cbca-4b77-8350-1f2a65dc61ba"/>
+  </producedTypes>
+  <name>гбФункцииБлокаСтарт</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Функции блока Старт</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <defaultChoiceForm>Enum.гбФункцииБлокаСтарт.Form.ФормаВыбора</defaultChoiceForm>
+  <listPresentation>
+    <key>ru</key>
+    <value>Функции блока Старт</value>
+  </listPresentation>
+  <enumValues uuid="cd9e3ff7-5246-45ce-a975-92483415356e">
+    <name>ДействиеОператора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действие оператора</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b98302f6-4c13-48c5-b4ab-278f0f55da02">
+    <name>ОбработкаКоманды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка команды</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="152984b2-9a42-4368-a3df-cc7b5115f32a">
+    <name>ВнешнийВход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешний вход</value>
+    </synonym>
+  </enumValues>
+  <forms uuid="9ca70e4c-dde9-46d1-8bdc-ecb7c6d5f793">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Enum>

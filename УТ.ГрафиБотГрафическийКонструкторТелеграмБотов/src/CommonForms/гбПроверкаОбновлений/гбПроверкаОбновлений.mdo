@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="71793ee6-0c35-4544-a93c-870bf67417e8">
+  <name>гбПроверкаОбновлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Проверка обновлений</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+  <useStandardCommands>true</useStandardCommands>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Проверка обновлений</value>
+  </extendedPresentation>
+</mdclass:CommonForm>

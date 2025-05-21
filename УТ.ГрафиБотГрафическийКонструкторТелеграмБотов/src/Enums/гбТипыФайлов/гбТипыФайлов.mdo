@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8c78066-f93e-4b2e-89f4-366e1ac379b0">
+  <producedTypes>
+    <refType typeId="d1060c7d-0b21-4efa-844c-47bfae7acc99" valueTypeId="9ac3e294-3b94-4546-a283-fc34650ec28c"/>
+    <listType typeId="14a5ff9a-1850-491d-bd13-15079eb1982f" valueTypeId="53976ab0-ac35-41b2-81e6-1304dfe5799a"/>
+    <managerType typeId="fd6527ae-ffed-4232-b5cd-f714bad0d9ed" valueTypeId="4cb91b23-2a9e-4372-9383-d29fce9b7433"/>
+  </producedTypes>
+  <name>гбТипыФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Типы файлов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Типы файлов</value>
+  </listPresentation>
+  <enumValues uuid="69278106-1a1e-4b38-b20e-a6ec255d4679">
+    <name>Фото</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фото</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="37627ac2-6768-4887-be01-d4521ef028c2">
+    <name>Видео</name>
+    <synonym>
+      <key>ru</key>
+      <value>Видео</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5f8325ea-72a3-45a5-923d-08ccdf21ea57">
+    <name>Аудио</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аудио</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

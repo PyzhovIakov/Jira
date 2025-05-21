@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4564edd9-e82c-4e96-a27a-9e252be427a1">
+  <producedTypes>
+    <selectionType typeId="3d2e2604-f9b7-42af-aadb-a06f2f1ed64b" valueTypeId="18564018-d3b9-48cc-8fba-00fa19911235"/>
+    <listType typeId="82f81635-1f4f-428e-857f-804d3f72dc47" valueTypeId="74037884-1de4-4471-90c5-654c3f67da1f"/>
+    <managerType typeId="a2cb090c-7f77-4c25-a0f7-8b3063c1de6b" valueTypeId="f35f31cf-f1a3-4ab8-86b5-7739de075748"/>
+    <recordSetType typeId="ee5f21e8-90ca-482c-811f-09a9f2caab35" valueTypeId="1c5d4707-fa2b-4ea1-93eb-84491ba73e33"/>
+    <recordKeyType typeId="47120661-69e5-4068-a2bc-4da2cf2eec69" valueTypeId="ca267914-5ac5-4006-b348-973b0e6f3be8"/>
+    <recordType typeId="f25986df-283d-406b-9dac-aca2f52c8281" valueTypeId="db2d808b-4a59-4894-8528-73bd6c4ecd91"/>
+    <recordManagerType typeId="3afbe3bd-6845-4de2-b59a-cae591ce08e0" valueTypeId="80f6490b-983b-4b73-9e35-26d64ff69567"/>
+  </producedTypes>
+  <name>гбЗахватОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Захват объектов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Захват объекта</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Захват объектов</value>
+  </listPresentation>
+  <attributes uuid="b0910c6d-2091-4fd8-8c74-57c7dea2c99e">
+    <name>ДатаЗахвата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата захвата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="7593f67d-d9dc-497d-86eb-7720f405c502">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбРасширения</types>
+      <types>CatalogRef.гбАлгоритмы</types>
+      <types>CatalogRef.гбБлокСхемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="48eb9033-88cc-4bbc-bac2-fed2aaebb728">
+    <name>Хранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбХранилищаБлокСхем</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

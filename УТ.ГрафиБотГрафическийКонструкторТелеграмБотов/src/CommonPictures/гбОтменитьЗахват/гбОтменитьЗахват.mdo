@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="85d934e5-aff4-43a3-a387-53ff94de3640">
+  <name>гбОтменитьЗахват</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гб отменить захват</value>
+  </synonym>
+</mdclass:CommonPicture>

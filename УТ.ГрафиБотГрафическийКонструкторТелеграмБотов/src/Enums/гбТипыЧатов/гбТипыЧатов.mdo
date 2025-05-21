@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de35e654-a7fc-4e8e-9e33-a4b8f4de58fc">
+  <producedTypes>
+    <refType typeId="b2b69a21-ff9a-4bf2-a39c-9c4f8e10f411" valueTypeId="8c806d1d-31d4-4870-bda7-85471f18beaf"/>
+    <listType typeId="b0e660ac-1d94-497c-b7d1-96de259bf73c" valueTypeId="45f41a07-243c-4961-9f22-97824bbd84b9"/>
+    <managerType typeId="3f209f72-ff8a-46fd-9b14-53d9282ffea0" valueTypeId="ecddc814-94e3-4047-9cf5-bef12d863c36"/>
+  </producedTypes>
+  <name>гбТипыЧатов</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Типы чатов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Типы чатов</value>
+  </listPresentation>
+  <enumValues uuid="0d6ccf87-a343-4eb9-a5d8-e63093036239">
+    <name>Приватный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приватный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="13d48cff-619c-4430-8fc8-208211cddd22">
+    <name>Группа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="aed63ef7-fbc4-411c-b062-44a335ac0cf7">
+    <name>Супергруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Супергруппа</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
