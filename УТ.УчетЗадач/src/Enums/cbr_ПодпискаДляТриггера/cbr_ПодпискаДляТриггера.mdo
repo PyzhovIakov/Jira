@@ -140,4 +140,11 @@
       <value>Кнопка отправить на исполнение</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="0cbd905a-c49d-4d98-8e3c-5b9042966c7b">
+    <name>СменаИсполнителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена исполнителя</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
