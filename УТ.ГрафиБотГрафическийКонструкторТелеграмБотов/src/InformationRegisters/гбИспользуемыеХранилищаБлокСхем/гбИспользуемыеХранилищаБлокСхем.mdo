@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b6902599-cb96-45d6-b717-0c340576515c">
+  <producedTypes>
+    <selectionType typeId="5ba6bf34-fc6c-43e3-98af-784b5eb60ca2" valueTypeId="782d0f04-7db2-42d3-89cf-50a33e60a5da"/>
+    <listType typeId="b0db54d7-b76e-401d-8abf-17bc00995335" valueTypeId="f01f1a2d-1a00-43f6-b823-07ab46d0e679"/>
+    <managerType typeId="5bf45b76-435c-4eef-91c8-54c98845622e" valueTypeId="0ebcaad8-ab40-4e19-9b89-9a4593b6c6a8"/>
+    <recordSetType typeId="bd0f43b0-188c-485d-bd5d-7f388463f3dd" valueTypeId="5e889c0e-4230-4c4d-b732-de65bd14a1d9"/>
+    <recordKeyType typeId="70a48e75-edcc-4aed-8acb-87ef840bc384" valueTypeId="dd899685-e55b-45e2-ad5e-88dd2873ed12"/>
+    <recordType typeId="afb82812-7315-4d72-8763-2790d56350ef" valueTypeId="b1eb9632-14d9-45ca-bdcf-a9db609d6366"/>
+    <recordManagerType typeId="0914ad61-a34f-4408-b7d1-b2950fdda6cc" valueTypeId="a583e45f-37ff-4182-8843-e72653f5aa4d"/>
+  </producedTypes>
+  <name>гбИспользуемыеХранилищаБлокСхем</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Используемые хранилища блок-схем</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Используемое хранилище блок-схемы</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Используемые хранилища блок-схем</value>
+  </listPresentation>
+  <resources uuid="70aa0162-e2d9-405a-86a6-0d7c88c85158">
+    <name>Хранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбХранилищаБлокСхем</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="644333d4-e74e-4499-9927-d1508216de99">
+    <name>БлокСхема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок-схема</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбБлокСхемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

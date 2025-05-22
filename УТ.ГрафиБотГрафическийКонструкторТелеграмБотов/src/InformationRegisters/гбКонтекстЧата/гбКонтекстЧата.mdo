@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6bff668-ff9f-4217-9ae8-fa6627ed90db">
+  <producedTypes>
+    <selectionType typeId="f6042776-bfd9-4718-8680-c0b3d99ae4f2" valueTypeId="ff23c525-b728-4d2a-991d-f623416c5d1f"/>
+    <listType typeId="d2c5c67c-ab76-4995-8563-17710ce68c2f" valueTypeId="97880722-7b70-4141-84ca-b5ca651fd1df"/>
+    <managerType typeId="616cabfe-0625-4ae1-963d-9de6d18eaa9d" valueTypeId="4e2ab228-a827-4e68-ba22-1a6aedb67d15"/>
+    <recordSetType typeId="d836d6ac-c855-4fff-a2e1-445064e79275" valueTypeId="58c2b7f5-4b36-437b-a026-9aa8cae3aad8"/>
+    <recordKeyType typeId="b7dd3630-c09f-4863-982f-62f891a529db" valueTypeId="a0e86e78-9ac4-4c8c-a516-25986b7243ea"/>
+    <recordType typeId="12ff0a2f-b4ea-493b-8113-beba81e742c3" valueTypeId="9c61b365-ce5a-4799-8e1e-96c0bf41789f"/>
+    <recordManagerType typeId="32008b9a-b96c-415f-b249-fb4953f4de95" valueTypeId="3d8b381b-587c-4043-b5a8-8772ccf4852d"/>
+  </producedTypes>
+  <name>гбКонтекстЧата</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Контекст чата</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Контекст чата</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Конекст чатов</value>
+  </listPresentation>
+  <resources uuid="c4441f72-9c13-49bc-8cbd-ea1b809f35dc">
+    <name>ДанныеКонтекста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные контекста</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6c2ea213-2a4f-4f1c-a708-e81b6dcd3bd0">
+    <name>Чат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбЧаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

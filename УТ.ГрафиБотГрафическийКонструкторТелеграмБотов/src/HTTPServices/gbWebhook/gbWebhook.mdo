@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8d3fdee-d6e3-45d3-b562-32bc8846630d">
+  <name>gbWebhook</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Webhook (Телеграм)</value>
+  </synonym>
+  <rootURL>telegram</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="224455f9-9b94-4f06-97d3-8d92c6718c2c">
+    <name>Webhook</name>
+    <synonym>
+      <key>ru</key>
+      <value>Webhook</value>
+    </synonym>
+    <template>/{token}</template>
+    <methods uuid="b145c619-9099-4d9e-a794-528e986077d5">
+      <name>post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>Webhook_post</handler>
+    </methods>
+    <methods uuid="1d0cf44e-5d54-4950-a44f-e402f26600e4">
+      <name>get</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get</value>
+      </synonym>
+      <handler>Webhook_get</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="aa99475a-cf0a-4215-ae12-9af0fa9d7a6e">
+    <name>default</name>
+    <synonym>
+      <key>ru</key>
+      <value>Default</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="07f7dc4b-3f6c-4fe1-9a21-5750337bb46c">
+      <name>get</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get</value>
+      </synonym>
+      <handler>default_get</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

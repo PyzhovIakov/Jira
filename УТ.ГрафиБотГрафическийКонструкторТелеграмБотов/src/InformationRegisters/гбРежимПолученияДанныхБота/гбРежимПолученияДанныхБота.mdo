@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="601b05e8-44a4-4a36-b1f2-63e1e4639a24">
+  <producedTypes>
+    <selectionType typeId="c8205655-9639-4918-8e0f-7405e800e16c" valueTypeId="847e99cc-cc8c-4d85-a47a-dc0da9c722bd"/>
+    <listType typeId="243d2781-316d-45dc-8a93-1e391d4c2ffe" valueTypeId="62a56ad0-a00d-4c78-8180-5bc94b22a89f"/>
+    <managerType typeId="a6d3e465-2117-46d8-8dcc-26d5be9c9de5" valueTypeId="dc7042d9-bd08-472e-bc94-7665525a1df3"/>
+    <recordSetType typeId="2d89a0b3-1965-4754-9118-484998f61d0c" valueTypeId="217c7a7e-bfaa-41fb-9e1d-69c3f997a188"/>
+    <recordKeyType typeId="90a96654-26eb-46b7-be2a-f793a3a05619" valueTypeId="f4df74eb-7525-42ef-87c0-88bab3164b36"/>
+    <recordType typeId="80b9792a-22c1-4ffa-947d-13c231adc7c9" valueTypeId="8a4b1193-efd8-4be1-9dea-97f33cc26af9"/>
+    <recordManagerType typeId="31b1038b-0fc2-44b8-8f87-52775e59dab0" valueTypeId="e80712a0-9309-4e98-8d71-c5cc7da05695"/>
+  </producedTypes>
+  <name>гбРежимПолученияДанныхБота</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Режим получения данных бота</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Режим получения данных ботом</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Режим получения данных ботов</value>
+  </listPresentation>
+  <resources uuid="d4731e55-55bd-4633-bf62-d8db1a6a1ad1">
+    <name>Режим</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим</value>
+    </synonym>
+    <type>
+      <types>EnumRef.гбРежимыПолученияДанныхБота</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="b769aab5-ff3e-48ab-98d7-59e6296e2b1e">
+    <name>ВходящийТокен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входящий токен</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="b3c779ea-1b8a-4807-9eac-322157339cda">
+    <name>ИспользуетсяСамозаверенныйСертификат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется самозаверенный сертификат</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a0ff8359-251e-42a0-8255-2e2d94a89b30">
+    <name>АдресWebhook</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес webhook</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="3ddb8256-91a1-437f-a095-67422850cfaf">
+    <name>ТребуемыйАдресWebhook</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуемый адрес webhook</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="68609d65-48f6-48c7-9255-bd4021f5e54e">
+    <name>ТребуемыйСертификат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуемый сертификат</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="6c17058c-b2ec-43f6-9828-0c079148bf75">
+    <name>Бот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бот</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбБоты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

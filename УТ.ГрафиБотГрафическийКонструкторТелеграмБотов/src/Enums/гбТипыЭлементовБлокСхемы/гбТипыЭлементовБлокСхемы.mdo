@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b9cfa32-4fb6-4b54-8ca5-e6176b572eb0">
+  <producedTypes>
+    <refType typeId="191e1e64-e863-457a-bd6e-00b1496f28dd" valueTypeId="9a2082b2-14fc-49b5-bd01-6aaf072ddc70"/>
+    <listType typeId="24082594-c377-4a72-b94b-6f24fe1ce744" valueTypeId="9cb2b862-c578-4829-a749-82280e01f836"/>
+    <managerType typeId="d225caac-514d-44ef-8501-34d6af45b732" valueTypeId="c8ade20a-d6be-4dc4-97ea-fe8879985666"/>
+  </producedTypes>
+  <name>гбТипыЭлементовБлокСхемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Типы блоков</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Типы блоков</value>
+  </listPresentation>
+  <enumValues uuid="84f6991b-80fe-43fe-a760-c0e069e6e158">
+    <name>АсинхронныйСписокЗначений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Асинхронный список значений</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="06695939-51f7-423a-a45a-5bd9e2f29975">
+    <name>ВложеннаяБлокСхема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вложенная блок схема</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9c765109-28b0-4d7a-a126-a24eb550c8f1">
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a03eb66c-4b0e-4564-8b49-8af3192e26f9">
+    <name>ДеревоЗначений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дерево значений</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2b13ebf0-7468-460d-9d0c-34849aeb1e79">
+    <name>Обработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="db47d8a9-c0b4-463c-ba95-eecfe2ffb8f8">
+    <name>ОтменаСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отмена счета</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="857ed222-ac7d-464c-926f-d563dc0e4728">
+    <name>ПодтверждениеСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение счета</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a7c4809c-26e1-4a2d-b17b-7db8ad17cbdc">
+    <name>ПриемОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прием оплаты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3846367b-5bb7-4780-9233-eb100311de46">
+    <name>ПунктМеню</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт меню</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5eaf621d-5ac7-4b07-a46e-f120e0ad0263">
+    <name>Разделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разделение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="feaa4567-0f4b-449e-b02b-0294ee12c71e">
+    <name>СписокДействий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список действий</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="177bb09f-c8ff-4eaa-ae00-527b0cc564c0">
+    <name>СписокЗначений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список значений</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6cbe5bcc-4b3f-40d3-a456-08a369e0a8bd">
+    <name>СписокСКартинками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список с картинками</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9c0914f4-b54c-4bca-964a-a6901a82b81b">
+    <name>Цикл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цикл</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0bf84c0f-e74c-43bf-80e8-2ed170ec53c4">
+    <name>Старт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Старт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7de82118-1ec7-46df-a7c3-fd3d8dc3e45f">
+    <name>Стоп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоп</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bf3ee78b-c8ba-448a-8e76-5aaf111d79bf">
+    <name>Условие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условие</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2df7fe09-298e-4093-8597-f00ff47b03c8">
+    <name>ФоновоеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фоновое задание</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dc441ed1-615c-4f06-8f2e-af1427c4475f">
+    <name>СписокСПометками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список с пометками</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
