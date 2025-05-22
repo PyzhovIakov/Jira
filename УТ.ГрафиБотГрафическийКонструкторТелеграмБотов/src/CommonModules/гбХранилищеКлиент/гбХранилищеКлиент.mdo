@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31f731bd-7364-477c-846c-3650eb41ce93">
+  <name>гбХранилищеКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гб хранилище клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

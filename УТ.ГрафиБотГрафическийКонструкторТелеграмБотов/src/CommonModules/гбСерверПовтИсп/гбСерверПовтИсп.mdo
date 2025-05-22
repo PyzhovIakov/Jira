@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76d8524a-a1ee-4616-b298-361d1a5361f7">
+  <name>гбСерверПовтИсп</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Сервер, Повт. исп.</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+  <returnValuesReuse>DuringRequest</returnValuesReuse>
+</mdclass:CommonModule>

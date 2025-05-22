@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b533752-4c1e-4f52-b229-1605b27895ed">
+  <producedTypes>
+    <refType typeId="0edbbd1e-478d-4435-bd4f-3a066bbad16c" valueTypeId="5e5a2188-2044-47e4-bff7-eaed69f782de"/>
+    <listType typeId="0e1ff36d-9158-4e9e-bdae-a197499e152f" valueTypeId="b0ed1472-8da2-4c1a-b1ad-e1634450ce3c"/>
+    <managerType typeId="9fa651d2-0781-4f92-9609-ec77d25c53e7" valueTypeId="ae12f876-2e3a-42fa-8868-e1bb6a5c73e3"/>
+  </producedTypes>
+  <name>гбСобытия</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: События</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>События</value>
+  </listPresentation>
+  <enumValues uuid="1b3bcb80-47b2-4fa0-ad79-e25fb4f80e68">
+    <name>АнализБлокСхемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Анализ блок схемы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ba65b95c-9eff-4337-a264-7f600a73c0c3">
+    <name>ВнешнийВход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешний вход</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7fc4318f-a3ae-4c68-ae6e-0f7e34cab130">
+    <name>ВыполнениеАлгоритма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнение алгоритма</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="28cf588d-13bc-4889-9862-6f7397bd0bf7">
+    <name>ВыполнениеЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнение запроса</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9739d880-fe2d-4081-afb3-52f59e8fd6a8">
+    <name>ЗаписьJSON</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись JSON</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dac70cf1-f927-4380-ad4e-72896ef93d99">
+    <name>ЗапросКТелеграм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос к телеграм</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f4002ef3-fc1b-43fc-9693-c0ec86fe4c3e">
+    <name>ИнициализацияДанныхЧата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инициализация данных чата</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dc91e6a6-b2dd-4422-9900-1d5b1d88c02c">
+    <name>НеобработаннаяОшибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Необработанная ошибка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e7d70a46-5c95-4629-8428-a84d7809ac22">
+    <name>ОбработкаВходящегоОбновления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка входящего обновления</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7d56275b-8ae0-4f47-8143-841aee8929cb">
+    <name>ОпределениеИдентификатораОбсуждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Определение идентификатора обсуждения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="61101fcc-176d-4c1d-bb25-a2222c2902ee">
+    <name>ОтветHTTP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответ HTTP</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b2859c5d-36f3-415b-b3c6-7ae235af1b95">
+    <name>ОтправкаДанныхСистемеВзаимодействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправка данных системе взаимодействия</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="44bbadae-d730-4452-ba50-e75df12f8f42">
+    <name>ОтправкаКартинки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправка картинки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="485cb0f7-5010-4c04-b500-ee6393d3b3bb">
+    <name>ОтправкаСлужебногоСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправка служебного сообщения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="29e08fb5-2bcc-4bfa-bfa7-f3680655602d">
+    <name>ОтправкаФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправка файла</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b63795db-84f6-45bd-9001-7ee01a73cc66">
+    <name>ОшибкаЛогики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка логики</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d614d41b-899b-49d9-a80b-51437782f024">
+    <name>ПодключениеОператора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключение оператора</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="825b146d-2f4c-4018-be1f-15a93024ad12">
+    <name>ПоискБотаПоТокену</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поиск бота по токену</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2573ac57-b770-4378-b8d7-da802ea48ae9">
+    <name>ПолучениеБлокСхемыБота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение блок схемы бота</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2df48655-3a2c-4794-bec0-97b9ed599bcb">
+    <name>ПроверкаОтвета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка ответа</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4d8602bf-e216-45fb-992c-73089ed24802">
+    <name>РегистрацияЧата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация чата</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="db95a2a1-a875-4de1-a809-43f90714f5c4">
+    <name>УстановкаWebhook</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установка webhook</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f7cb0912-1480-48eb-a3fa-da45ba672225">
+    <name>ФормированиеДанныхВыбораМеню</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование данных выбора меню</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2166d6d3-1246-4d73-96c5-50ab2fa1a956">
+    <name>ЧтениеJSON</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чтение JSON</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="54422a9c-c76b-4d7e-9bc9-66eac7810410">
+    <name>ЧтениеШтрихкода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чтение штрихкода</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="efdb9510-7dc9-4cfd-858a-ddbbb014292b">
+    <name>ФормированиеДанныхВыбораПриемОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование данных выбора прием оплаты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="54330276-263e-47d7-9d36-94937e8a67d6">
+    <name>ФормированиеДанныхВыбораПодтверждениеОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование данных выбора подтверждение оплаты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="16e12097-236b-4363-b504-98fd611309bb">
+    <name>ЗапросHTTP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос HTTP</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

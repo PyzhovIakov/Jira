@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a3dce69-9cdd-4784-a01f-208fe8474540">
+  <producedTypes>
+    <selectionType typeId="54f18aaf-558d-4e23-ae8f-c599e50e5eed" valueTypeId="32b70da9-8aec-4d25-9ba7-5195feed8488"/>
+    <listType typeId="d9c687b8-8fa3-4158-93f4-050372d18d38" valueTypeId="6271650d-1858-4e4b-9246-118e729b49cb"/>
+    <managerType typeId="25d81683-eaae-4b43-8dd6-6a498b5a7947" valueTypeId="32ac4f99-efb1-4b6f-af3d-471d6ac3a8ef"/>
+    <recordSetType typeId="1c5739e1-f1fd-47f3-b577-ab83e9396c62" valueTypeId="42e09ca9-2af9-4474-a188-5b47a9a1d8a6"/>
+    <recordKeyType typeId="6bce8afb-4243-4b93-b0e8-6e5bdbd11002" valueTypeId="0d8a32d8-9748-4747-8d90-f497e2c25786"/>
+    <recordType typeId="3093c528-8395-4320-9979-7eb17f23d501" valueTypeId="f630f40f-bc28-4792-8184-af977f56a60a"/>
+    <recordManagerType typeId="7adef102-2584-4ebc-986c-00f23aeddf13" valueTypeId="43005ac1-1432-44b7-b7a5-a53451337c5c"/>
+  </producedTypes>
+  <name>гбДанныеСобеседников</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Данные собеседников</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Данные собеседника</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Данные собеседников</value>
+  </listPresentation>
+  <resources uuid="8b682054-2859-4159-8816-f4443011a964">
+    <name>Собеседник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Собеседник</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="675edc65-f6d1-4610-988a-07050a734297">
+    <name>Чат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбЧаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

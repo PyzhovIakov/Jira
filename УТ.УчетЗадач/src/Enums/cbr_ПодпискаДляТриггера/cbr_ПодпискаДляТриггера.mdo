@@ -105,13 +105,6 @@
       <value>Кнопка взять задачу</value>
     </synonym>
   </enumValues>
-  <enumValues uuid="2e068fbd-cf75-4e0a-a406-dd7cff0abfe3">
-    <name>КнопкаВзятьЗадачуСебе</name>
-    <synonym>
-      <key>ru</key>
-      <value>Кнопка взять задачу себе</value>
-    </synonym>
-  </enumValues>
   <enumValues uuid="ac602135-9608-4f72-be91-79295870b5e6">
     <name>ПослеЗаписиНаСервереФормаЗадачи</name>
     <synonym>
@@ -145,6 +138,13 @@
     <synonym>
       <key>ru</key>
       <value>Кнопка отправить на исполнение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0cbd905a-c49d-4d98-8e3c-5b9042966c7b">
+    <name>СменаИсполнителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена исполнителя</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

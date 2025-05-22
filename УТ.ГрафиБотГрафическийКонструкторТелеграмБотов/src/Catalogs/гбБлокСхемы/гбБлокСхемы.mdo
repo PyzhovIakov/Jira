@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef0698cb-4b59-4641-a5d5-3addea3f6f23">
+  <producedTypes>
+    <objectType typeId="96020f8f-e54c-47a1-b01c-986dafa429ac" valueTypeId="b5975000-9f9d-450b-a21c-f07548ba10c7"/>
+    <refType typeId="d118889d-7793-4422-9a3c-da41fe6bced3" valueTypeId="fef61934-4cb3-4929-8e7e-897856d2b221"/>
+    <selectionType typeId="986df014-1e43-46a5-856a-102f4dcb17fc" valueTypeId="940cfa75-fb88-4ca5-a0a5-7969bd2e485b"/>
+    <listType typeId="1e269408-ea41-4f20-b97b-29ef9b4ec265" valueTypeId="d2aa9b97-f2df-4877-ba2e-8103b987534d"/>
+    <managerType typeId="211aaf26-ae6f-41b1-8dc6-b3c48eb15bc0" valueTypeId="17a6f6d4-44bc-41f7-8238-44f1c89772f6"/>
+  </producedTypes>
+  <name>гбБлокСхемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Блок-схемы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.гбБлокСхемы.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.гбБлокСхемы.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Блок-схема</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Блок-схемы</value>
+  </listPresentation>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.гбБлокСхемы.Form.ФормаБлокСхема</defaultObjectForm>
+  <defaultFolderForm>Catalog.гбБлокСхемы.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.гбБлокСхемы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.гбБлокСхемы.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="3154ce61-cc38-4345-b528-275f46a59f61">
+    <name>ГрафическаяСхема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Графическая схема</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="42d4fc75-ed0b-47c4-99c4-4d5a37a824d6">
+    <name>ДействияОператора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действия оператора</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8f68c8b7-80a0-44d7-a3f0-e2b630279385">
+    <name>ДанныеБлокСхемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные блок схемы</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b45988bb-b635-46f0-9a42-05b65046f936">
+    <name>ЭтоВложеннаяБлокСхема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это вложенная блок схема</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7c82a2c1-7715-426c-bb25-f476f3428b28">
+    <name>Расширение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбРасширения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="141be2fc-441f-471b-ac32-7245fbe206c0">
+    <producedTypes>
+      <objectType typeId="de60f515-31df-4e25-af18-0d8b95cda4f7" valueTypeId="6039c383-0b2f-4c4a-aa6f-44e962fde196"/>
+      <rowType typeId="acee1ef5-de00-4eef-8b34-d5bdc8079969" valueTypeId="c6d97c88-255c-4a92-8313-3423afb6f0f0"/>
+    </producedTypes>
+    <name>АлгоритмыЭлементовБлокСхемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Алгоритмы элементов блок схемы</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="ab0f945b-ca1a-4d07-90e8-b2f9b61e358e">
+      <name>ИмяЭлемента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя элемента</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>64</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5ac2f51d-976c-46c3-a6ac-aec12389fe44">
+      <name>Алгоритм</name>
+      <synonym>
+        <key>ru</key>
+        <value>Алгоритм</value>
+      </synonym>
+      <type>
+        <types>EnumRef.гбФункцииБлокаСтоп</types>
+        <types>CatalogRef.гбАлгоритмы</types>
+        <types>EnumRef.гбФункцииБлокаСтарт</types>
+        <types>EnumRef.гбТипыДанных</types>
+        <types>CatalogRef.гбБлокСхемы</types>
+        <types>EnumRef.гбФункцииКнопки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="fac12537-2074-42a9-9be2-ee534ae4e9e2">
+    <name>ФормаБлокСхема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма блок схема</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f2c572fe-d065-4aef-be9c-20d6b78ee6c0">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="00a8514b-a4c3-45f1-b3fc-f3cecb74e97a">
+    <name>ФормаВыбораБлокСхемыБота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора блок схемы бота</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e334249b-aa2a-4781-b1f8-680ed06bd4e8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ffcd5626-cd0d-4b92-bae1-8e0fef4faf78">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="23e49ff4-e948-4fd1-966c-1d16df4eb347">
+    <name>БлокСхемаПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок-схема по умолчанию</value>
+    </synonym>
+    <templateType>GraphicalSchema</templateType>
+  </templates>
+  <templates uuid="91e66b6e-9fa2-4c52-a975-cdc485868431">
+    <name>БлокСхемаВложеннаяПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок схема вложенная по умолчанию</value>
+    </synonym>
+    <templateType>GraphicalSchema</templateType>
+  </templates>
+  <commands uuid="477b15a9-3c7b-4ced-bada-7e7ab1f3c941">
+    <name>гбКонструкторБлокСхемыБота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конструктор блок-схемы бота</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Catalog>

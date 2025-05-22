@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b19bcc5-49fa-4718-bc23-450567b49195">
+  <producedTypes>
+    <objectType typeId="591eaccc-1977-4a04-be88-c5aeb4699eee" valueTypeId="e0959ad4-524d-4a7c-8093-de7bdd940c2b"/>
+    <managerType typeId="5ccd24ba-3cfc-4134-95c8-7de45951cf5d" valueTypeId="45f5f454-aad9-4526-8f20-437c8d69a5e8"/>
+  </producedTypes>
+  <name>гбКонтекст</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Контекст</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>ГрафиБот: Контекст</value>
+  </extendedPresentation>
+  <attributes uuid="a943089f-8f24-4a30-a7ec-eb8ddd3a9ef4">
+    <name>Бот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бот</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбБоты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="824fc36f-5ae5-4bc8-a2f5-f567317f9147">
+    <name>Чат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбЧаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0d39d06a-330c-448e-b645-4a2383f115c8">
+    <name>Контекст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контекст</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="32fef49e-78be-49bf-ad2e-0b7760762183">
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4ccc6af1-0603-47b0-922a-911fa3ab1fa2">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2086dbda-e449-4206-ac65-08a0ffafb35c">
+    <name>СообщениеПолученное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение полученное</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8b09b7f9-4c9e-4dec-ba6a-8b31749ffd5f">
+    <name>Элемент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Элемент</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e2b0307d-46d2-406a-a93c-e191ee555a05">
+    <name>СообщениеИзменяемое</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение изменяемое</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fe7d5abb-a881-4b57-ad6f-40c33496c688">
+    <name>Нагрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нагрузка</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="32fe9d53-d718-46e9-8562-ab77ee41d7f0">
+    <name>Параметры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+</mdclass:DataProcessor>

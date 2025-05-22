@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29214e42-a547-4065-9dce-b03143734742">
+  <producedTypes>
+    <selectionType typeId="b786cfc6-bd80-4d39-8a90-52d08defc87e" valueTypeId="8c1cec40-bd48-4a9d-a2f8-c0c72369a150"/>
+    <listType typeId="1088c4ae-127f-469f-a3d2-646cc216129f" valueTypeId="b5048de1-0f33-4f38-b524-f1fcf39547fc"/>
+    <managerType typeId="c3c24519-f5a2-4548-ab03-a8b13aa6e8a8" valueTypeId="3db5459d-b6dd-44a6-8e64-7cb1e6422bfa"/>
+    <recordSetType typeId="aaa54b97-7404-4953-9a9e-1a6a5208ede0" valueTypeId="e438d5c2-8134-4dca-8058-32de82c2ceea"/>
+    <recordKeyType typeId="5e38b738-cca8-4d54-91bd-3a5f0a1684c9" valueTypeId="7ee67dfe-176f-4369-bf84-6d5ddbfae124"/>
+    <recordType typeId="4ce5abe4-19b8-4c70-b2c0-e38cace7ec6b" valueTypeId="d2737c5b-1bf1-43b2-a0b6-de750a02f6e7"/>
+    <recordManagerType typeId="7b519b73-d9df-43cd-96bc-097647da370a" valueTypeId="59e982c8-88e1-49e0-9f03-1a934bdba971"/>
+  </producedTypes>
+  <name>гбПодчиненныеОбъектыБлокСхем</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Подчиненные объекты блок-схем</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Подчиненный объект блок-схемы</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Подчиненные объекты блок-схем</value>
+  </listPresentation>
+  <dimensions uuid="a471674c-6040-4c59-866b-af0067d08707">
+    <name>БлокСхема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок-схема</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбБлокСхемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ba3664f0-f931-48c5-ab4e-0ca97ca774df">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбРасширения</types>
+      <types>CatalogRef.гбАлгоритмы</types>
+      <types>CatalogRef.гбБлокСхемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

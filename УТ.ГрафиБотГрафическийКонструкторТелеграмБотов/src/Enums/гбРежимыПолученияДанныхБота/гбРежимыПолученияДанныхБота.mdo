@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4ea4c3eb-18eb-419c-a7c5-bc3dd7d9e367">
+  <producedTypes>
+    <refType typeId="49222ab7-256a-4653-ab97-8a772aa7c9bd" valueTypeId="b8212389-e392-4609-8aff-cebba64291b4"/>
+    <listType typeId="9ec8eff1-013c-4b51-b493-06781674f1e3" valueTypeId="f23b498c-40ca-4c30-bd7d-1612c336fcb8"/>
+    <managerType typeId="b51b9b48-d47c-40fd-ae28-f5233e1779d1" valueTypeId="9a8875d6-7547-4fab-b6b2-e96bf78cf1d8"/>
+  </producedTypes>
+  <name>гбРежимыПолученияДанныхБота</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Режим получения данных бота</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Режим получения данных бота</value>
+  </listPresentation>
+  <enumValues uuid="34d611c7-a68d-4643-b82e-1a09eeacb005">
+    <name>webhook</name>
+    <synonym>
+      <key>ru</key>
+      <value>webhook</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="87735f0e-51a2-4999-8643-5d0bb68cce27">
+    <name>long_polling</name>
+    <synonym>
+      <key>ru</key>
+      <value>long polling</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

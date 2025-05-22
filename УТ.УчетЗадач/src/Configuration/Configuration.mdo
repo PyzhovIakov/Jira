@@ -144,6 +144,7 @@
   <catalogs>Catalog.cbr_Сценарии</catalogs>
   <catalogs>Catalog.cbr_КонтрольНадЭтапамиЗадач</catalogs>
   <catalogs>Catalog.УчетныеЗаписиСинхронизацииФайлов</catalogs>
+  <catalogs>Catalog.КонтактныеЛицаПартнеров</catalogs>
   <catalogs>Catalog.ТомаХраненияФайлов</catalogs>
   <catalogs>Catalog.cbr_ЗадачаПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.cbr_Триггеры</catalogs>
