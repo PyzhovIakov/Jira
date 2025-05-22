@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f8e0d73-7866-40f9-8af2-d01a951fb5e3">
+  <producedTypes>
+    <objectType typeId="f38434f0-f669-4a63-9696-60f0cbe1b39e" valueTypeId="c512d8ed-282a-4580-915e-356e532b0c0f"/>
+    <refType typeId="3f01ae99-d080-4569-837f-d6287dac0513" valueTypeId="34cf5327-7f87-4916-bef4-11f757f27cee"/>
+    <selectionType typeId="81f3f6de-aec4-4196-9eca-298305228847" valueTypeId="37045e82-b2d5-4e82-9994-1903c70a1d57"/>
+    <listType typeId="3bf887bc-e9dd-4195-a034-e8b1334cb052" valueTypeId="ed1db467-357a-4a7d-bc7a-169a380acb63"/>
+    <managerType typeId="ab4cdb66-08e0-4dac-be60-20728a5eb163" valueTypeId="2a2561dd-c8cc-4e40-926a-fddb0f0b41b5"/>
+  </producedTypes>
+  <name>гбАлгоритмы</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Алгоритмы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.гбАлгоритмы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.гбАлгоритмы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.гбАлгоритмы.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Алгоритм</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Алгоритмы</value>
+  </listPresentation>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>50</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.гбАлгоритмы.Form.Форма</defaultObjectForm>
+  <defaultFolderForm>Catalog.гбАлгоритмы.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.гбАлгоритмы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.гбАлгоритмы.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="8fec7d7a-876d-46cc-8676-9a98a6dcce95">
+    <name>ТипЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип элемента</value>
+    </synonym>
+    <type>
+      <types>EnumRef.гбТипыЭлементовБлокСхемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e56c734d-6a82-4991-934d-7307b4673247">
+    <name>Алгоритм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Алгоритм</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f66de528-226e-4848-a2cc-00f948cfe5e3">
+    <name>ИзменяетКонтекст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменяет контекст</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="739c00c6-ed13-43fd-a51b-2354795f3459">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="133c78a1-d87a-4b0e-a6f2-1d3c6f999995">
+    <name>УдалитьЭтоСписокДействий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить это список действий</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a8f1e427-ec76-4507-bbd1-09ec88061286">
+    <name>МножественныйВыбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Множественный выбор</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="5363d428-032f-475c-bc45-d85f5417f616">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0d7153fb-91ca-4eb4-bf29-9315967ac1e9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="054a147f-2910-4c50-bcb3-81de5f79b2f5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1d9f032a-9819-4011-a993-e999f849ac36">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9bad49b3-7444-489e-9ecf-fcf8568a6bc0">
+    <name>ПользовательскиеОбъекты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользовательские объекты</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="4c55d99a-d341-4cef-92a9-26e4883f842c">
+    <name>ТекстПоУмолчаниюОбработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст по умолчанию обработка</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="9d50fd14-9c9d-41da-8057-53fb517ad28f">
+    <name>ТекстПоУмолчаниюПустой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст по умолчанию пустой</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="b2519a04-5f95-4942-b707-e101b7bea62f">
+    <name>ТекстПоУмолчаниюРазделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст по умолчанию разделение</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="f46a7ca9-851e-4a85-8182-7a9547b96743">
+    <name>ТекстПоУмолчаниюСписокЗначений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст по умолчанию список значений</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a22ebef7-6207-430b-865b-bed7982153b5">
+    <name>ТекстПоУмолчаниюУсловие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст по умолчанию условие</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="2bd3aeec-2cec-4cc6-a57e-51c2f9c4fb2f">
+    <name>ТекстПоУмолчаниюСписокДействий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст по умолчанию список действий</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="270a37c5-35d4-4349-a3a4-d8441d1149a2">
+    <name>ТекстПоУмолчаниюПриемОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст по умолчанию прием оплаты</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="bf6bb63e-33d8-4a0c-b32a-f3da8dbdcc53">
+    <name>ТекстПоУмолчаниюДеревоЗначений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст по умолчанию дерево значений</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="166fb3aa-ddb5-40f2-b37b-a3bca0ef65ea">
+    <name>ТекстПоУмолчаниюАсинхронныйСписокЗначений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст по умолчанию асинхронный список значений</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5aa5b643-b3eb-4b7b-bcd6-87cae9a07f84">
+    <name>src</name>
+    <synonym>
+      <key>ru</key>
+      <value>src</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="5b06b7ea-3491-4568-bf3d-8c2af8c2ad34">
+    <name>ТекстПоУмолчаниюОбщее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст по умолчанию общее</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="2e54910d-cdfd-40b3-8584-21d2d3461b76">
+    <name>ТекстПоУмолчаниюЦикл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст по умолчанию цикл</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="4df5bd24-67c7-464c-a46e-6f50ec9063fa">
+    <name>ТекстПоУмолчаниюСписокСПометками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст по умолчанию список с пометками</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:Catalog>

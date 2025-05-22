@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f75145a-fd35-4f7b-bce1-fb253c6ddcd6">
+  <name>гбКонструкторТелеграмБотов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конструктор Телеграм-ботов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.гбТелеграм</picture>
+  </picture>
+  <content>Enum.гбТипыЭлементовБлокСхемы</content>
+  <content>CommonPicture.гбТелеграм</content>
+  <content>Enum.гбФункцииКнопки</content>
+  <content>Enum.гбРежимыПолученияДанныхБота</content>
+  <content>Enum.гбТипыЧатов</content>
+  <content>CommonModule.гбСервер</content>
+  <content>Role.гбИспользование</content>
+  <content>CommonPicture.гбКопироватьВБуферОбмена</content>
+  <content>HTTPService.gbWebhook</content>
+  <content>Catalog.гбАлгоритмы</content>
+  <content>Catalog.гбБоты</content>
+  <content>Catalog.гбЧаты</content>
+  <content>InformationRegister.гбНомераОбновлений</content>
+  <content>InformationRegister.гбКонтекстЧата</content>
+  <content>InformationRegister.гбОжидаемыеДанные</content>
+  <content>InformationRegister.гбРежимПолученияДанныхБота</content>
+  <content>CommonModule.гбСерверПовтИсп</content>
+  <content>Enum.гбСобытия</content>
+  <content>InformationRegister.гбОшибки</content>
+  <content>CommonForm.гбПомощникНастройкиWebhook</content>
+  <content>InformationRegister.гбПараметрыWebhook</content>
+  <content>InformationRegister.гбПараметрыИнтеграцииСистемыВзаимодействия</content>
+  <content>Enum.гбФункцииБлокаСтарт</content>
+  <content>CommonModule.гбКлиентСервер</content>
+  <content>CommonModule.гбКлиент</content>
+  <content>InformationRegister.гбПараметрыПользователейСистемыВзаимодействия</content>
+  <content>CommonForm.гбУправлениеСистемойВзаимодействия</content>
+  <content>InformationRegister.гбСообщенияСМеню</content>
+  <content>CommonForm.гбЛицензирование</content>
+  <content>InformationRegister.гбДанныеСобеседников</content>
+  <content>InformationRegister.гбОжидаемыеДанныеМеню</content>
+  <content>Enum.гбТипыДанных</content>
+  <content>Enum.гбФункцииБлокаСтоп</content>
+  <content>InformationRegister.гбСообщенияКУдалению</content>
+  <content>Catalog.гбБлокСхемы</content>
+  <content>InformationRegister.гбТекущиеБлокСхемыЧатов</content>
+  <content>Enum.гбТипыФайлов</content>
+  <content>CommonForm.гбПроверкаОбновлений</content>
+  <content>Catalog.гбПровайдерыОплаты</content>
+  <subsystems>гбХранилищеБлокСхем</subsystems>
+</mdclass:Subsystem>

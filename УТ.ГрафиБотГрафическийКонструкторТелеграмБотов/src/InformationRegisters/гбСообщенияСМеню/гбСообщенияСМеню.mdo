@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3745e5c-1ac2-4187-8990-5069e5279937">
+  <producedTypes>
+    <selectionType typeId="d117b21a-9a95-47a9-a164-5c8943dbc990" valueTypeId="bef10e75-de10-4c36-ba7c-b21fed34762f"/>
+    <listType typeId="62faaaa3-1eaf-4e60-a0d2-54f005301dfa" valueTypeId="c6dd1368-9a22-4503-9ff1-a0ae226795fd"/>
+    <managerType typeId="eaf58ee9-3806-471b-b47e-0b737b5687fa" valueTypeId="51e01a24-370d-45c4-98fd-32360715e5db"/>
+    <recordSetType typeId="1a742e81-b0db-4298-bdc7-4a1d5687e3a2" valueTypeId="4022fd9b-28e5-4c51-86af-d7ae1a5e69a9"/>
+    <recordKeyType typeId="01e4b4d7-3a25-41a5-a7a4-acffbe5ba9d1" valueTypeId="cb757b6c-3e1e-48b2-8076-9e004dca5a49"/>
+    <recordType typeId="6d098577-ce9d-47e9-ba59-1c3a47622ffe" valueTypeId="9e7ff834-bf6d-4882-b2fd-72ad94565f68"/>
+    <recordManagerType typeId="985f7462-b248-4891-a8e0-8433d2471742" valueTypeId="003105ac-6386-4599-9743-29f2761e84e4"/>
+  </producedTypes>
+  <name>гбСообщенияСМеню</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Сообщения с меню</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Сообщение с меню</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Сообщения с меню</value>
+  </listPresentation>
+  <resources uuid="3d9b639b-8521-45aa-abb1-c57fcc159431">
+    <name>ИдентификаторСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор сообщения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ce01abcc-00b9-40a7-a3f8-352608d3fa54">
+    <name>Чат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбЧаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

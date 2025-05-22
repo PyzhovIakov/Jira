@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="1ddab9f6-86ce-409a-8276-997026c7e555">
+  <name>ГрафиБотГрафическийКонструкторТелеграмБотов</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Графический конструктор телеграм-ботов</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <managedApplicationModule>Extended</managedApplicationModule>
+    <sessionModule>Extended</sessionModule>
+    <commandInterface>Extended</commandInterface>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="04a3f561-defa-4035-87b8-ef51d6ed6bb6"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="fa266f68-3be1-464c-bd4b-353b963e68b3"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="7f5d987a-bab9-4690-903c-101ee48d2f99"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="fe83bef5-8fef-4c5b-baaf-17bb91d5416b"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="5d245c9d-310d-43f9-9d9b-a0164d9407d9"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="4bc15d67-1a15-4d7c-aadb-4961d5116a38"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="7abc9c61-faba-445e-b895-3146ddabdd95"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>гб</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
+  <scriptVariant>Russian</scriptVariant>
+  <vendor>ООО &quot;Программные продукты&quot; (КГ Wiseadvice)</vendor>
+  <version>1.1.6.3</version>
+  <briefInformation>
+    <key>ru</key>
+    <value>ГрафиБот: Графический конструктор телеграм ботов, редакция 1.0</value>
+  </briefInformation>
+  <detailedInformation>
+    <key>ru</key>
+    <value>ГрафиБот: Графический конструктор телеграм ботов, редакция 1.0</value>
+  </detailedInformation>
+  <copyright>
+    <key>ru</key>
+    <value>© Валерий Просвирнин</value>
+  </copyright>
+  <vendorInformationAddress>
+    <key>ru</key>
+    <value>http://www.v8-pr.ru</value>
+  </vendorInformationAddress>
+  <configurationInformationAddress>
+    <key>ru</key>
+    <value>http://www.v8-pr.ru</value>
+  </configurationInformationAddress>
+  <compatibilityMode>8.3.26</compatibilityMode>
+  <languages uuid="24e63e15-efaf-4570-8378-15977672b866">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.гбКонструкторТелеграмБотов</subsystems>
+  <commonPictures>CommonPicture.гбКопироватьВБуферОбмена</commonPictures>
+  <commonPictures>CommonPicture.гбТелеграм</commonPictures>
+  <commonPictures>CommonPicture.гбПодключитьсяКХранилищу</commonPictures>
+  <commonPictures>CommonPicture.гбЗахватитьВХранилище</commonPictures>
+  <commonPictures>CommonPicture.гбПоместитьВХранилище</commonPictures>
+  <commonPictures>CommonPicture.гбОтменитьЗахват</commonPictures>
+  <commonPictures>CommonPicture.гбПользователиХранилища</commonPictures>
+  <commonPictures>CommonPicture.гбОтключитьсяОтХранилища</commonPictures>
+  <commonPictures>CommonPicture.гбОбновитьИзХранилища</commonPictures>
+  <commonPictures>CommonPicture.гбКартинкиСписка</commonPictures>
+  <roles>Role.гбИспользование</roles>
+  <roles>Role.гбУправление</roles>
+  <commonTemplates>CommonTemplate.гбИсторияИзменений</commonTemplates>
+  <commonModules>CommonModule.гбКлиент</commonModules>
+  <commonModules>CommonModule.гбКлиентСервер</commonModules>
+  <commonModules>CommonModule.гбСервер</commonModules>
+  <commonModules>CommonModule.гбСерверПовтИсп</commonModules>
+  <commonModules>CommonModule.гбХранилище</commonModules>
+  <commonModules>CommonModule.гбХранилищеКлиент</commonModules>
+  <httpServices>HTTPService.gbWebhook</httpServices>
+  <commonForms>CommonForm.гбЛицензирование</commonForms>
+  <commonForms>CommonForm.гбПомощникНастройкиWebhook</commonForms>
+  <commonForms>CommonForm.гбПроверкаОбновлений</commonForms>
+  <commonForms>CommonForm.гбУправлениеСистемойВзаимодействия</commonForms>
+  <catalogs>Catalog.гбАлгоритмы</catalogs>
+  <catalogs>Catalog.гбБлокСхемы</catalogs>
+  <catalogs>Catalog.гбБоты</catalogs>
+  <catalogs>Catalog.гбЧаты</catalogs>
+  <catalogs>Catalog.гбПровайдерыОплаты</catalogs>
+  <catalogs>Catalog.гбХранилищаБлокСхем</catalogs>
+  <catalogs>Catalog.гбРасширения</catalogs>
+  <enums>Enum.гбРежимыПолученияДанныхБота</enums>
+  <enums>Enum.гбСобытия</enums>
+  <enums>Enum.гбТипыДанных</enums>
+  <enums>Enum.гбТипыФайлов</enums>
+  <enums>Enum.гбТипыЧатов</enums>
+  <enums>Enum.гбТипыЭлементовБлокСхемы</enums>
+  <enums>Enum.гбФункцииБлокаСтарт</enums>
+  <enums>Enum.гбФункцииБлокаСтоп</enums>
+  <enums>Enum.гбФункцииКнопки</enums>
+  <enums>Enum.гбДействияХранилища</enums>
+  <dataProcessors>DataProcessor.гбКонтекст</dataProcessors>
+  <informationRegisters>InformationRegister.гбДанныеСобеседников</informationRegisters>
+  <informationRegisters>InformationRegister.гбКонтекстЧата</informationRegisters>
+  <informationRegisters>InformationRegister.гбНомераОбновлений</informationRegisters>
+  <informationRegisters>InformationRegister.гбОжидаемыеДанные</informationRegisters>
+  <informationRegisters>InformationRegister.гбОжидаемыеДанныеМеню</informationRegisters>
+  <informationRegisters>InformationRegister.гбОшибки</informationRegisters>
+  <informationRegisters>InformationRegister.гбПараметрыWebhook</informationRegisters>
+  <informationRegisters>InformationRegister.гбПараметрыИнтеграцииСистемыВзаимодействия</informationRegisters>
+  <informationRegisters>InformationRegister.гбПараметрыПользователейСистемыВзаимодействия</informationRegisters>
+  <informationRegisters>InformationRegister.гбРежимПолученияДанныхБота</informationRegisters>
+  <informationRegisters>InformationRegister.гбСообщенияКУдалению</informationRegisters>
+  <informationRegisters>InformationRegister.гбСообщенияСМеню</informationRegisters>
+  <informationRegisters>InformationRegister.гбТекущиеБлокСхемыЧатов</informationRegisters>
+  <informationRegisters>InformationRegister.гбЗахватОбъектов</informationRegisters>
+  <informationRegisters>InformationRegister.гбИспользуемыеХранилищаБлокСхем</informationRegisters>
+  <informationRegisters>InformationRegister.гбПодчиненныеОбъектыБлокСхем</informationRegisters>
+</mdclass:Configuration>

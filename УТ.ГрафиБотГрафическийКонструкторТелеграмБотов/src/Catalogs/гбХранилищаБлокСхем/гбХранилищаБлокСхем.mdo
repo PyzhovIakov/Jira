@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f64fbc98-ba4e-45b2-8fc9-2e9d50142aa1">
+  <producedTypes>
+    <objectType typeId="fd5d4a78-ff2b-47b4-b45e-4ee614d68d17" valueTypeId="c7d0ab79-cb8b-4b22-ae51-38af1f1fa107"/>
+    <refType typeId="ad121e4a-4cd4-44bb-8b6a-96c35f4f25f8" valueTypeId="691cf0e4-ac25-49dc-8a51-f64d4176de29"/>
+    <selectionType typeId="ddc39280-d997-4059-ba09-578e548fdb6c" valueTypeId="1f1b9ee6-ffdd-4f2e-a6a7-e5a41f307cf3"/>
+    <listType typeId="f655f8b4-7896-4def-860f-2033a406ddb5" valueTypeId="bb3a73e1-b4d2-4614-82b5-f2fc447e56f2"/>
+    <managerType typeId="618e057f-f71a-4bdc-9804-6e9825200011" valueTypeId="48eaf976-6b66-40fb-96fc-30294b2114c3"/>
+  </producedTypes>
+  <name>гбХранилищаБлокСхем</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Хранилища блок-схем</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.гбХранилищаБлокСхем.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Хранилище блок-схем и алгоритмов</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Хранилища блок-схем и алгоритмов</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>50</codeLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.гбХранилищаБлокСхем.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.гбХранилищаБлокСхем.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="5a4f7434-d053-48d5-8226-7285fb84b3fd">
+    <name>АдресПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес подключения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e1a38de0-c451-444c-b6fd-3a032a5ef598">
+    <name>ИмяПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя пользователя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d859f80e-3e3b-4a75-b60a-30f1a2c07cc9">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="4ec0a818-2706-4346-95fb-fdc86f24c523">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cff16901-e90e-4318-b773-78c3704070f1">
+    <name>ДействияСоСпискомОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действия со списком объектов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="eeba7ffb-2abd-4dc1-a3b9-a8317edf6899">
+    <name>АдминистрированиеПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Администрирование пользователей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="35739762-5ada-4fa1-99c0-d08033167dff">
+    <name>ИзменитьПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменить пользователя</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2f70ac4f-0171-47f3-9d1b-a72f72d7e838">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="9332504a-801f-4ee4-99e8-a5efabfd6b82">
+    <name>ХранилищаБлокСхем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилища блок-схем</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="0c9e7f6d-887e-4d1f-95b7-89cf33ff96a7">
+    <name>АдминистрированиеПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Администрирование пользователей</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.гбХранилищаБлокСхем</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.гбПользователиХранилища</picture>
+    </picture>
+  </commands>
+  <commands uuid="82bfedc0-194c-465d-b10e-17d9f4121ecc">
+    <name>ЗахватитьВХранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Захватить в хранилище</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.гбРасширения</types>
+      <types>CatalogRef.гбАлгоритмы</types>
+      <types>CatalogRef.гбБлокСхемы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.гбЗахватитьВХранилище</picture>
+    </picture>
+  </commands>
+  <commands uuid="6b4a2bec-1322-4f1e-87bf-619fb14ce57f">
+    <name>ПоместитьВХранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поместить в хранилище</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.гбРасширения</types>
+      <types>CatalogRef.гбАлгоритмы</types>
+      <types>CatalogRef.гбБлокСхемы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.гбПоместитьВХранилище</picture>
+    </picture>
+  </commands>
+  <commands uuid="0e12c10a-b3fb-46d1-b0f0-d09b80c9ccaa">
+    <name>ОтменитьЗахват</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменить захват</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.гбРасширения</types>
+      <types>CatalogRef.гбАлгоритмы</types>
+      <types>CatalogRef.гбБлокСхемы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.гбОтменитьЗахват</picture>
+    </picture>
+  </commands>
+  <commands uuid="05525be1-3a59-4dd6-8ba4-7b1dd64b62b1">
+    <name>ОбновитьИзХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновить из хранилища</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.гбРасширения</types>
+      <types>CatalogRef.гбАлгоритмы</types>
+      <types>CatalogRef.гбБлокСхемы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.гбОбновитьИзХранилища</picture>
+    </picture>
+  </commands>
+  <commands uuid="b7514de9-40ce-4277-9ebb-c5270bfeda3c">
+    <name>ОбновитьВсеИзХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновить все из хранилища</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.гбХранилищаБлокСхем</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.гбОбновитьИзХранилища</picture>
+    </picture>
+  </commands>
+  <commands uuid="bc68fd3e-5539-49ef-96e0-4b1ca167d540">
+    <name>ПодключитьКХранилищу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключить к хранилищу</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.гбБлокСхемы</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.гбПодключитьсяКХранилищу</picture>
+    </picture>
+  </commands>
+  <commands uuid="71687cb7-f055-4173-8e88-0fde0f41b75f">
+    <name>ОтключитьОтХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отключить от хранилища</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.гбБлокСхемы</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.гбОтключитьсяОтХранилища</picture>
+    </picture>
+  </commands>
+</mdclass:Catalog>

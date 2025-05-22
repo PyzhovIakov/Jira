@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0aa90987-fc5f-413c-acdf-447b4ec9b67e">
+  <producedTypes>
+    <refType typeId="e0f1587f-57ba-4da3-a0e7-b270057aedb7" valueTypeId="4cc9e538-4e80-4573-a75f-066d6e9a01ba"/>
+    <listType typeId="10a121c8-206c-4236-af36-a0a702e4a988" valueTypeId="9f0c9d80-c372-4794-a19d-edb771f517ab"/>
+    <managerType typeId="3cc4dddd-56b3-4ccf-a1c0-85bb33471fb0" valueTypeId="480899f8-eee3-45bc-ba67-712708e06af9"/>
+  </producedTypes>
+  <name>гбФункцииКнопки</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Функции кнопки</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <defaultChoiceForm>Enum.гбФункцииКнопки.Form.ФормаВыбора</defaultChoiceForm>
+  <listPresentation>
+    <key>ru</key>
+    <value>Функции кнопки</value>
+  </listPresentation>
+  <enumValues uuid="ae6762da-e55d-4c51-8775-3f4c38614b55">
+    <name>ЗапросНомераТелефона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправить номер телефона</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="975a7741-d7f9-4000-8a19-1d9d6adb4f00">
+    <name>ЗапросКоординат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправить координаты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cb565ca1-4ce9-4b3d-bee7-6707ad671d5b">
+    <name>WebApp</name>
+    <synonym>
+      <key>ru</key>
+      <value>Web App</value>
+    </synonym>
+  </enumValues>
+  <forms uuid="23a225d1-7ee5-43a1-b375-b9223773ef2b">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Enum>

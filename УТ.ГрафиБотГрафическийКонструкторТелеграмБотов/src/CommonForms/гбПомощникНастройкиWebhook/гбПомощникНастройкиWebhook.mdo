@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="640884a1-00a1-4395-849a-378cfdd4aa66">
+  <name>гбПомощникНастройкиWebhook</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Помощник настройки webhook</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+  <useStandardCommands>true</useStandardCommands>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Помощник настройки webhook</value>
+  </extendedPresentation>
+</mdclass:CommonForm>

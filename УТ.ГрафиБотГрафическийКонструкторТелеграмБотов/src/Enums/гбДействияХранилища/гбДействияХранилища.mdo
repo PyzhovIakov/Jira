@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a17b56a-5cd2-4a21-aad5-8febde8a8e53">
+  <producedTypes>
+    <refType typeId="660e92f1-60d8-4da9-88dd-b8e749042b65" valueTypeId="8e989f1f-b2c8-4b3d-9dfd-b5e419176d6d"/>
+    <listType typeId="6345ef71-2bd1-4e0e-a2c7-bdb883a62892" valueTypeId="6d3dd794-132a-46cb-aed8-d3b1c088a35d"/>
+    <managerType typeId="ec85f720-fd5e-436d-ba4d-4037baab1093" valueTypeId="03cd1388-54ef-4c63-b05c-5c059e2fca16"/>
+  </producedTypes>
+  <name>гбДействияХранилища</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Действия хранилища</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ebfbc93d-1efd-44e6-b703-e53843d9d795">
+    <name>ПоместитьВХранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поместить в хранилище</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e9b4a893-4787-4497-b601-9a682eedb89d">
+    <name>ЗахватитьВХранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Захватить в хранилище</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6275cce9-67f5-4d5a-a776-5f5fb7caa808">
+    <name>ОбновитьИзХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновить из хранилища</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2c0b468e-2cd1-4531-b9cd-36b3a83a2e0a">
+    <name>ОтменитьЗахват</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменить захват</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="48ae8623-fc46-4ba4-844c-c735057064d8">
+    <name>ОбновитьВсеИзХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновить все из хранилища</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

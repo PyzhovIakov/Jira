@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0bd8506e-67d3-42f4-8442-d1e0397397c1">
+  <name>гбХранилищеБлокСхем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хранилище блок-схем</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.гбХранилищаБлокСхем</content>
+  <content>InformationRegister.гбЗахватОбъектов</content>
+  <content>InformationRegister.гбИспользуемыеХранилищаБлокСхем</content>
+  <parentSubsystem>Subsystem.гбКонструкторТелеграмБотов</parentSubsystem>
+</mdclass:Subsystem>

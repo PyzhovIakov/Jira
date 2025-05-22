@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca0c5ad3-bf4c-4387-a169-b214edf7b1ce">
+  <producedTypes>
+    <selectionType typeId="9f87da27-f85f-4c9e-b485-ef8b08f77dee" valueTypeId="c9109e96-7baf-4bf8-84ce-587817f970fd"/>
+    <listType typeId="1b9028bf-2086-4602-98b3-583f241847df" valueTypeId="7affb10c-c3fb-4646-a8d9-825d8887ddde"/>
+    <managerType typeId="48b6d44f-0ec4-4812-b5e2-f5a9fb5aec41" valueTypeId="868c5284-bfaa-4d7a-a059-ade70d2b09ce"/>
+    <recordSetType typeId="b86fcda2-fc56-4510-91c3-de56c9bb8648" valueTypeId="bbdfef21-166e-4d6d-9b2d-78b717dadb07"/>
+    <recordKeyType typeId="cc5b83ac-bf38-4708-ac99-abf8819f367a" valueTypeId="5ce3fb1c-d11d-4c42-bee5-d02bd67d5971"/>
+    <recordType typeId="f3471170-8403-487a-929b-1c18665402b0" valueTypeId="8b8dd51f-9fca-4c61-9269-6104aafaa1fe"/>
+    <recordManagerType typeId="f0b4e9a3-f3b5-4683-9d03-686c3f2424f2" valueTypeId="61d368d9-15fc-4a29-918d-137dbe9b3dcc"/>
+  </producedTypes>
+  <name>гбТекущиеБлокСхемыЧатов</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Текущие блок-схемы чатов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Текущая блок-схема чата</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Текущие блок-схемы чатов</value>
+  </listPresentation>
+  <resources uuid="43f679b3-321c-4b6e-8f99-4470e63b817e">
+    <name>БлокСхема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок схема</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбБлокСхемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="44f039ca-a722-4e12-9447-42c46a3ce1f1">
+    <name>БлокСхемаСтек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок схема стек</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбБлокСхемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="26fe2f5f-32a5-424a-a632-5f90227425e9">
+    <name>Подчиненные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подчиненные</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c4a2610d-b340-4d3b-9ec2-ff7a7314115d">
+    <name>Нагрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нагрузка</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1cba9e2f-680e-4f69-8ce8-99620cf9f591">
+    <name>Чат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.гбЧаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4ae12c31-8187-49a6-a77f-77f906f47401">
+    <name>Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

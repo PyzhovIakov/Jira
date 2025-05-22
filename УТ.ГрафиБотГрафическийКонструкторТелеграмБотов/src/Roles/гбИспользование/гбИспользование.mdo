@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9d0b42d-962a-4de1-a8d8-dee0523ec617">
+  <name>гбИспользование</name>
+  <synonym>
+    <key>ru</key>
+    <value>ГрафиБот: Использование</value>
+  </synonym>
+</mdclass:Role>
