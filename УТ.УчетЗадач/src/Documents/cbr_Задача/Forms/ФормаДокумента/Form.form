@@ -904,6 +904,9 @@
                 <showTitle>true</showTitle>
                 <throughAlign>Auto</throughAlign>
                 <currentRowUse>Auto</currentRowUse>
+                <associatedTableElementId xsi:type="core:StringValue">
+                  <value>ЧекЛист</value>
+                </associatedTableElementId>
               </extInfo>
             </items>
             <visible>true</visible>
