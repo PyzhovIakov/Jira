@@ -176,6 +176,7 @@
   <dataProcessors>DataProcessor.ТестБитрикс</dataProcessors>
   <dataProcessors>DataProcessor.OPI_HTTPКлиент</dataProcessors>
   <dataProcessors>DataProcessor.cbr_АктивацияАккаунтовTelegram</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_ОтладкаПроверкиЭтапов</dataProcessors>
   <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ВопросыПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ДедлайнЗадач</informationRegisters>

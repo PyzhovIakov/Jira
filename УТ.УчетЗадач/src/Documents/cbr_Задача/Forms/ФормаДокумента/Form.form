@@ -904,9 +904,6 @@
                 <showTitle>true</showTitle>
                 <throughAlign>Auto</throughAlign>
                 <currentRowUse>Auto</currentRowUse>
-                <associatedTableElementId xsi:type="core:StringValue">
-                  <value>ЧекЛист</value>
-                </associatedTableElementId>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -2745,6 +2742,36 @@
           <united>true</united>
           <throughAlign>Auto</throughAlign>
           <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияТекущиеЭтапы</name>
+        <id>844</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДекорацияТекущиеЭтапыРасширеннаяПодсказка</name>
+          <id>846</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияТекущиеЭтапыКонтекстноеМеню</name>
+          <id>845</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </items>
       <visible>true</visible>

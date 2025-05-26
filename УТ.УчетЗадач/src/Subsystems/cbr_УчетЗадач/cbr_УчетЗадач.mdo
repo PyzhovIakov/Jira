@@ -15,4 +15,5 @@
   <content>DataProcessor.cbr_Канбан</content>
   <content>DataProcessor.cbr_РедактированиеПользовательскихНастроек</content>
   <content>DataProcessor.cbr_КанбанВеб</content>
+  <content>DataProcessor.cbr_ОтладкаПроверкиЭтапов</content>
 </mdclass:Subsystem>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2b6406b-9e07-419d-abd6-6a510315e95d">
+  <producedTypes>
+    <objectType typeId="03b0d005-8abc-427d-91ac-07f7af9efca3" valueTypeId="8939143b-4489-4c5c-8d4c-01d5d22d5b23"/>
+    <managerType typeId="95e41615-e11f-4444-95f7-8e5b97355956" valueTypeId="a19f9fb9-bd63-48b7-89cd-f52aace7321f"/>
+  </producedTypes>
+  <name>cbr_ОтладкаПроверкиЭтапов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отладка проверки этапов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.cbr_ОтладкаПроверкиЭтапов.Form.Форма</defaultForm>
+  <forms uuid="3ec9018b-1329-413c-80c5-68bc2e36be9f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
