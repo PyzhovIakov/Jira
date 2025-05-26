@@ -12,7 +12,6 @@
     <placementFragments>
       <group>CommandGroup.cbr_Справочники</group>
       <commands>Catalog.cbr_Партнеры.StandardCommand.OpenList</commands>
-      <commands>Catalog.cbr_Приоритеты.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ПричинаПереносаДедлайна.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ПричиныОтказаОтЗадачи.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ПричиныЗакрытияЗадач.StandardCommand.OpenList</commands>
@@ -45,6 +44,7 @@
       <commands>InformationRegister.cbr_СвязанныеЗадачи.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_СтатусыЗадач.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_СобытияПоЗадачам.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.cbr_ЦветаПриоритетов.StandardCommand.OpenList</commands>
     </placementFragments>
     <placementFragments>
       <group>CommandGroup.cbr_Формы</group>
@@ -61,7 +61,6 @@
       <commands>Catalog.cbr_МеткиЗадач.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ПричиныЗакрытияЗадач.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Партнеры.StandardCommand.OpenList</commands>
-      <commands>Catalog.cbr_Приоритеты.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ПричинаПереносаДедлайна.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ПричиныОтказаОтЗадачи.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Роли.StandardCommand.OpenList</commands>
@@ -88,6 +87,7 @@
       <commands>InformationRegister.cbr_ПросроченныеДействияПоЗадачам.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_СвязанныеЗадачи.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_СтатусыЗадач.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.cbr_ЦветаПриоритетов.StandardCommand.OpenList</commands>
     </orderFragments>
     <orderFragments>
       <group>CommandGroup.cbr_Формы</group>

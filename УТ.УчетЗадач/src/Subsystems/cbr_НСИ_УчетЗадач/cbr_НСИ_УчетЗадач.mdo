@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6bfdbba1-0a68-417c-846c-b110a057b638">
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="6bfdbba1-0a68-417c-846c-b110a057b638">
   <name>cbr_НСИ_УчетЗадач</name>
   <synonym>
     <key>ru</key>
     <value>НСИ (Учет задач)</value>
   </synonym>
+  <extension xsi:type="mdclassExtension:SubsystemExtension">
+    <commandInterface>Extended</commandInterface>
+  </extension>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.Пользователи</content>
@@ -13,7 +16,6 @@
   <content>Catalog.cbr_Доски</content>
   <content>Catalog.cbr_МеткиЗадач</content>
   <content>Catalog.cbr_Партнеры</content>
-  <content>Catalog.cbr_Приоритеты</content>
   <content>Catalog.cbr_ПричинаПереносаДедлайна</content>
   <content>Catalog.cbr_ПричиныОтказаОтЗадачи</content>
   <content>Catalog.cbr_СтатусыЗадач</content>
@@ -38,4 +40,5 @@
   <content>Catalog.cbr_Роли</content>
   <content>Catalog.cbr_Цвета</content>
   <content>Catalog.cbr_ПричиныЗакрытияЗадач</content>
+  <content>InformationRegister.cbr_ЦветаПриоритетов</content>
 </mdclass:Subsystem>
