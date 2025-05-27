@@ -81,6 +81,50 @@
       <textEdit>true</textEdit>
     </extInfo>
   </items>
+  <items xsi:type="form:FormField">
+    <name>Длительность</name>
+    <id>50</id>
+    <title>
+      <key>ru</key>
+      <value>Длительность (сек)</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Длительность</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>ДлительностьРасширеннаяПодсказка</name>
+      <id>52</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ДлительностьКонтекстноеМеню</name>
+      <id>51</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
   <items xsi:type="form:FormGroup">
     <name>Группа</name>
     <id>15</id>
@@ -118,10 +162,13 @@
       <id>47</id>
       <title>
         <key>ru</key>
-        <value>Существует предопределенный параметр &quot;ТекущаяДата&quot;.
+        <value>Существуют предопределенные параметры &quot;ТекущаяДата&quot; и &quot;Длительность&quot;
 Запрос должен возвращать поля: 
 тип &quot;cbr_Задача&quot; с псевдонимом &quot;Ссылка&quot;,
-тип &quot;Пользователи&quot; с псевдонимом &quot;Пользователь&quot;</value>
+тип &quot;Пользователи&quot; с псевдонимом &quot;Пользователь&quot;,
+тип &quot;Число&quot; с псевдонимом &quot;ВремяСНачалаЭтапа&quot; -  разность текущей даты и даты начала этапа.
+В запрос необходимо добавить необязательное условие для ссылки задачи вида 
+Ссылка = ЕСТЬNULL(&amp;Задача, cbr_Задача.Ссылка).</value>
       </title>
       <visible>true</visible>
       <enabled>true</enabled>

@@ -142,7 +142,6 @@
   <catalogs>Catalog.cbr_ПричиныОтказаОтЗадачи</catalogs>
   <catalogs>Catalog.cbr_СтатусыЗадач</catalogs>
   <catalogs>Catalog.cbr_Сценарии</catalogs>
-  <catalogs>Catalog.cbr_КонтрольНадЭтапамиЗадач</catalogs>
   <catalogs>Catalog.УчетныеЗаписиСинхронизацииФайлов</catalogs>
   <catalogs>Catalog.КонтактныеЛицаПартнеров</catalogs>
   <catalogs>Catalog.ТомаХраненияФайлов</catalogs>
@@ -152,6 +151,7 @@
   <catalogs>Catalog.cbr_Роли</catalogs>
   <catalogs>Catalog.cbr_Календарь</catalogs>
   <catalogs>Catalog.cbr_КалендарьЦвета</catalogs>
+  <catalogs>Catalog.cbr_КонтрольНадЭтапамиЗадач</catalogs>
   <catalogs>Catalog.cbr_Цвета</catalogs>
   <catalogs>Catalog.СтруктураПредприятия</catalogs>
   <catalogs>Catalog.cbr_ПричиныЗакрытияЗадач</catalogs>

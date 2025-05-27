@@ -150,6 +150,25 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="1acaaf89-c868-4274-a2d6-cba0e31b879e">
+    <name>Длительность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="59a8609b-76d5-4ca0-a97f-feaf5ea14736">
     <producedTypes>
       <objectType typeId="02d41bf2-5222-4065-993b-c24e131ac8d4" valueTypeId="4f4d2811-e505-4042-9d9f-6a9814d8e5b4"/>
