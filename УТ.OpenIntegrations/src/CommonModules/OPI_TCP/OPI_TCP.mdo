@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed305045-7f7e-4dae-b254-e1e1bdb32293">
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d8512b0-9f35-44b0-bb9c-e62e131dc6cb">
   <name>OPI_TCP</name>
   <synonym>
     <key>ru</key>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8f0d0dd-27b1-4c84-9874-a0adeb256793">
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0b3d581-7640-4485-ad26-5e9da2147a8c">
   <name>OPI_ТестыCLI</name>
   <synonym>
     <key>ru</key>

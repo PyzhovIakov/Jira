@@ -82,7 +82,7 @@
   <commonPictures>CommonPicture.cbr_УчетЗадач</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
-  <commonModules>CommonModule.OPI_Telegram</commonModules>
+  <commonModules>CommonModule.cbr_OPITelegram</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</commonModules>
   <commonModules>CommonModule.cbr_ОбработчикиФормыЗадачиСервер</commonModules>
   <commonModules>CommonModule.cbr_УведомленияПользователей</commonModules>
@@ -94,17 +94,17 @@
   <commonModules>CommonModule.cbr_КаленарьКлиентСервер</commonModules>
   <commonModules>CommonModule.cbr_КалендарьСервер</commonModules>
   <commonModules>CommonModule.cbr_Сотрудники</commonModules>
-  <commonModules>CommonModule.OPI_Bitrix24</commonModules>
-  <commonModules>CommonModule.OPI_Компоненты</commonModules>
-  <commonModules>CommonModule.OPI_ЗапросыHTTP</commonModules>
-  <commonModules>CommonModule.OPI_Инструменты</commonModules>
+  <commonModules>CommonModule.cbr_OPIBitrix24</commonModules>
+  <commonModules>CommonModule.cbr_OPIКомпоненты</commonModules>
+  <commonModules>CommonModule.cbr_OPIЗапросыHTTP</commonModules>
+  <commonModules>CommonModule.cbr_OPIИнструменты</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаТриггеровВызовСервера</commonModules>
-  <commonModules>CommonModule.OPI_ЗапросыSQL</commonModules>
-  <commonModules>CommonModule.OPI_Криптография</commonModules>
-  <commonModules>CommonModule.OPI_Тесты</commonModules>
-  <commonModules>CommonModule.OPI_ТестыCLI</commonModules>
+  <commonModules>CommonModule.cbr_OPIЗапросыSQL</commonModules>
+  <commonModules>CommonModule.cbr_OPIКриптография</commonModules>
+  <commonModules>CommonModule.cbr_OPIТесты</commonModules>
+  <commonModules>CommonModule.cbr_OPIТестыCLI</commonModules>
   <commonModules>CommonModule.cbr_РаботаСTelegram</commonModules>
-  <commonModules>CommonModule.OPI_ПреобразованиеТипов</commonModules>
+  <commonModules>CommonModule.cbr_OPIПреобразованиеТипов</commonModules>
   <commonModules>CommonModule.cbr_Битрикс24</commonModules>
   <eventSubscriptions>EventSubscription.ВариантыОтчетовПередУдалениемИдентификатораОбъектаМетаданных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ВыполнитьДействияПриЗаписиПрисоединенногоФайла</eventSubscriptions>
@@ -174,7 +174,7 @@
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_КанбанВеб</dataProcessors>
   <dataProcessors>DataProcessor.ТестБитрикс</dataProcessors>
-  <dataProcessors>DataProcessor.OPI_HTTPКлиент</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_OPIHTTPКлиент</dataProcessors>
   <dataProcessors>DataProcessor.cbr_АктивацияАккаунтовTelegram</dataProcessors>
   <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ВопросыПоЗадачам</informationRegisters>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="864d4211-db47-4558-954e-443bce2894cf">
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="838c3114-289d-4716-a802-6f31cb31249d">
   <name>OPI_MySQL</name>
   <synonym>
     <key>ru</key>

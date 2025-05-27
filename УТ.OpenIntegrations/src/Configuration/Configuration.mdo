@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="aa51f610-7ed3-4091-8908-8ecccf0aaf0f">
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="9c7fcf79-a0f7-45f2-97f3-24c31c05935e">
   <name>OpenIntegrations</name>
   <synonym>
     <key>ru</key>
@@ -38,8 +38,8 @@
     <key>ru</key>
     <value>https://github.com/Bayselonarrend/OpenIntegrations</value>
   </configurationInformationAddress>
-  <compatibilityMode>8.3.26</compatibilityMode>
   <subsystems>Subsystem.OPI_Интеграция</subsystems>
+  <roles>Role.Расш1_ОсновнаяРоль</roles>
   <commonTemplates>CommonTemplate.OPI_MySQL</commonTemplates>
   <commonTemplates>CommonTemplate.OPI_PostgreSQL</commonTemplates>
   <commonTemplates>CommonTemplate.OPI_RCON</commonTemplates>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="496e68cd-c70d-4c15-aa9e-c2aad28abf8a">
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc79b15e-4c08-488b-b3f0-aec73d58a6f1">
   <name>OPI_Bitrix24</name>
   <synonym>
     <key>ru</key>

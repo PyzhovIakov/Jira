@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a9469ae-ee9b-4a26-a61b-715c5cb13e17">
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0d17cd5-c95f-460e-8c5f-99d10df0670f">
   <name>OPI_ЗапросыHTTP</name>
   <synonym>
     <key>ru</key>

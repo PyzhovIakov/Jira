@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d28e1c58-e694-490d-9b8a-cf3d8418a465">
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab43053d-18e6-4123-9566-0fc393625d0b">
   <producedTypes>
-    <objectType typeId="f8380b17-fc17-434c-af09-1e256a999b26" valueTypeId="1903aff0-3cae-41d2-9206-534e13cff1a3"/>
-    <managerType typeId="31cebf42-d435-40a7-b175-9a487c66b259" valueTypeId="0ade2c3a-405c-4423-8b00-3bd7a2f95c2a"/>
+    <objectType typeId="e8fc95bc-762d-46c3-8b5b-442d8d1bfe8c" valueTypeId="2946b165-e40a-42f5-91be-29b6144a9480"/>
+    <managerType typeId="60c90f82-9d6a-45dc-a3cd-9a09384ead1b" valueTypeId="ca45e551-ac6b-4398-a6fa-7d92f76b2ba2"/>
   </producedTypes>
   <name>OPI_HTTPКлиент</name>
   <synonym>
