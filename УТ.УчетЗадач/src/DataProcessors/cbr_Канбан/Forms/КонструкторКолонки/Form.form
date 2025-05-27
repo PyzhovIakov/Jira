@@ -1030,6 +1030,7 @@
 	cbr_Задача.Представление КАК Представление,
 	cbr_ПросроченныеДействияПоЗадачам.Этап КАК ПросроченоеДействие,
 	cbr_ПросроченныеДействияПоЗадачам.Пользователь КАК ПользовательПросроченныхДействий,
+	cbr_ПросроченныеДействияПоЗадачам.Руководитель КАК РуководительПросроченныхДействий,
 	cbr_ДедлайнЗадачСрезПоследних.Дедлайн КАК Дедлайн,
 	cbr_ДедлайнЗадачСрезПоследних.Согласовано КАК СогласованоДедлайн,
 	cbr_ДедлайнЗадачСрезПоследних.Отказ КАК ОтказДедлайн,
@@ -1320,6 +1321,50 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ЗадачаВзята</dataPath>
         <field>ЗадачаВзята</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РуководительПросроченныхДействий</dataPath>
+        <field>РуководительПросроченныхДействий</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Руководитель просроченных действий</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ГлавныйМенеджер</dataPath>
+        <field>ГлавныйМенеджер</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТребуетКонтроляПоЗавершению</dataPath>
+        <field>ТребуетКонтроляПоЗавершению</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Метка</dataPath>
+        <field>Метка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПричинаЗакрытия</dataPath>
+        <field>ПричинаЗакрытия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КонтактноеЛицо</dataPath>
+        <field>КонтактноеЛицо</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЧекЛист</dataPath>
+        <field>ЧекЛист</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПометкаУдаления</dataPath>
+        <field>ПометкаУдаления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Проведен</dataPath>
+        <field>Проведен</field>
       </fields>
       <parameters>
         <name>Период</name>
