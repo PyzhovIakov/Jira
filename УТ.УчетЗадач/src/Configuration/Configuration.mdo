@@ -105,7 +105,6 @@
   <commonModules>CommonModule.OPI_ЗапросыSQL</commonModules>
   <commonModules>CommonModule.OPI_Криптография</commonModules>
   <commonModules>CommonModule.OPI_Тесты</commonModules>
-  <commonModules>CommonModule.OPI_ТестыCLI</commonModules>
   <commonModules>CommonModule.cbr_РаботаСTelegram</commonModules>
   <commonModules>CommonModule.OPI_ПреобразованиеТипов</commonModules>
   <commonModules>CommonModule.cbr_Битрикс24</commonModules>
