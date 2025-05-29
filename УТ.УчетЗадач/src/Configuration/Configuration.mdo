@@ -80,6 +80,9 @@
   <commonPictures>CommonPicture.cbr_Трудозатраты</commonPictures>
   <commonPictures>CommonPicture.cbr_ОтправитьНаИсполнение</commonPictures>
   <commonPictures>CommonPicture.cbr_УчетЗадач</commonPictures>
+  <commonPictures>CommonPicture.cbr_ПриоритетВысокий</commonPictures>
+  <commonPictures>CommonPicture.cbr_ПриоритетОбычный</commonPictures>
+  <commonPictures>CommonPicture.cbr_ПриоритетНизкий</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.OPI_Telegram</commonModules>
@@ -102,7 +105,6 @@
   <commonModules>CommonModule.OPI_ЗапросыSQL</commonModules>
   <commonModules>CommonModule.OPI_Криптография</commonModules>
   <commonModules>CommonModule.OPI_Тесты</commonModules>
-  <commonModules>CommonModule.OPI_ТестыCLI</commonModules>
   <commonModules>CommonModule.cbr_РаботаСTelegram</commonModules>
   <commonModules>CommonModule.OPI_ПреобразованиеТипов</commonModules>
   <commonModules>CommonModule.cbr_Битрикс24</commonModules>
@@ -137,12 +139,10 @@
   <catalogs>Catalog.cbr_Доски</catalogs>
   <catalogs>Catalog.cbr_МеткиЗадач</catalogs>
   <catalogs>Catalog.cbr_Партнеры</catalogs>
-  <catalogs>Catalog.cbr_Приоритеты</catalogs>
   <catalogs>Catalog.cbr_ПричинаПереносаДедлайна</catalogs>
   <catalogs>Catalog.cbr_ПричиныОтказаОтЗадачи</catalogs>
   <catalogs>Catalog.cbr_СтатусыЗадач</catalogs>
   <catalogs>Catalog.cbr_Сценарии</catalogs>
-  <catalogs>Catalog.cbr_КонтрольНадЭтапамиЗадач</catalogs>
   <catalogs>Catalog.УчетныеЗаписиСинхронизацииФайлов</catalogs>
   <catalogs>Catalog.КонтактныеЛицаПартнеров</catalogs>
   <catalogs>Catalog.ТомаХраненияФайлов</catalogs>
@@ -152,6 +152,7 @@
   <catalogs>Catalog.cbr_Роли</catalogs>
   <catalogs>Catalog.cbr_Календарь</catalogs>
   <catalogs>Catalog.cbr_КалендарьЦвета</catalogs>
+  <catalogs>Catalog.cbr_КонтрольНадЭтапамиЗадач</catalogs>
   <catalogs>Catalog.cbr_Цвета</catalogs>
   <catalogs>Catalog.СтруктураПредприятия</catalogs>
   <catalogs>Catalog.cbr_ПричиныЗакрытияЗадач</catalogs>
@@ -170,6 +171,7 @@
   <enums>Enum.cbr_ПериодОтображенияРабочегоКалендаря</enums>
   <enums>Enum.СпособыУстановкиВремениНапоминания</enums>
   <enums>Enum.cbr_ОтображениеВремениЭлементов</enums>
+  <enums>Enum.cbr_ПриоритетыЗадач</enums>
   <dataProcessors>DataProcessor.cbr_Канбан</dataProcessors>
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_КанбанВеб</dataProcessors>
@@ -194,6 +196,7 @@
   <informationRegisters>InformationRegister.cbr_Б24_СоответствиеЗадач</informationRegisters>
   <informationRegisters>InformationRegister.cbr_Б24_СоответствиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ЗаданияКОтправкеСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_ЦветаПриоритетов</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

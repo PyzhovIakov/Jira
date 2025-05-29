@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b6e5462-9e21-4949-b00b-5e8db5aefeeb">
+  <name>cbr_ПриоритетНизкий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приоритет низкий</value>
+  </synonym>
+</mdclass:CommonPicture>

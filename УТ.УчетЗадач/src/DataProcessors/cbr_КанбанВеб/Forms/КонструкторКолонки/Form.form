@@ -718,7 +718,7 @@
     </items>
     <items xsi:type="form:FormField">
       <name>КолонкаПриоритет</name>
-      <id>90</id>
+      <id>162</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -729,7 +729,7 @@
       </dataPath>
       <extendedTooltip>
         <name>КолонкаПриоритетРасширеннаяПодсказка</name>
-        <id>92</id>
+        <id>164</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -739,7 +739,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>КолонкаПриоритетКонтекстноеМеню</name>
-        <id>91</id>
+        <id>163</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -1030,6 +1030,7 @@
 	cbr_Задача.Представление КАК Представление,
 	cbr_ПросроченныеДействияПоЗадачам.Этап КАК ПросроченоеДействие,
 	cbr_ПросроченныеДействияПоЗадачам.Пользователь КАК ПользовательПросроченныхДействий,
+	cbr_ПросроченныеДействияПоЗадачам.Руководитель КАК РуководительПросроченныхДействий,
 	cbr_ДедлайнЗадачСрезПоследних.Дедлайн КАК Дедлайн,
 	cbr_ДедлайнЗадачСрезПоследних.Согласовано КАК СогласованоДедлайн,
 	cbr_ДедлайнЗадачСрезПоследних.Отказ КАК ОтказДедлайн,
@@ -1336,6 +1337,18 @@
         <field>ЦветТекстаRGB</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РуководительПросроченныхДействий</dataPath>
+        <field>РуководительПросроченныхДействий</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Руководитель просроченных действий</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ГлавныйМенеджер</dataPath>
         <field>ГлавныйМенеджер</field>
       </fields>
@@ -1350,6 +1363,10 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ПричинаЗакрытия</dataPath>
         <field>ПричинаЗакрытия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КонтактноеЛицо</dataPath>
+        <field>КонтактноеЛицо</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ЧекЛист</dataPath>
