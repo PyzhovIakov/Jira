@@ -107,7 +107,7 @@
     <types>CatalogRef.cbr_ГруппыДоступаКЗадачам</types>
     <types>CatalogRef.cbr_ВидыЗадач</types>
     <types>Boolean</types>
-    <types>CatalogRef.cbr_Приоритеты</types>
+    <types>EnumRef.cbr_ПриоритетыЗадач</types>
     <types>CatalogRef.Партнеры</types>
   </type>
   <hierarchical>true</hierarchical>
@@ -164,7 +164,7 @@
         <description>Приоритет</description>
         <code>000000006</code>
         <type>
-          <types>CatalogRef.cbr_Приоритеты</types>
+          <types>EnumRef.cbr_ПриоритетыЗадач</types>
         </type>
       </content>
       <content id="58371a52-2fc4-4f13-b765-63e732c62da9">

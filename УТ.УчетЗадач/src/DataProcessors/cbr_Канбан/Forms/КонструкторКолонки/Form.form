@@ -718,7 +718,7 @@
     </items>
     <items xsi:type="form:FormField">
       <name>КолонкаПриоритет</name>
-      <id>90</id>
+      <id>162</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -729,7 +729,7 @@
       </dataPath>
       <extendedTooltip>
         <name>КолонкаПриоритетРасширеннаяПодсказка</name>
-        <id>92</id>
+        <id>164</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -739,7 +739,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>КолонкаПриоритетКонтекстноеМеню</name>
-        <id>91</id>
+        <id>163</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
