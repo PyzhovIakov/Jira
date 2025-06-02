@@ -42,6 +42,15 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid #fff;  /* отступ вокруг бегунка */
 }
 
+.menu {
+  display: flex;
+  width: 450px;
+  border-radius: 10px;
+  justify-content: center;
+  border: 1px solid #a4a4a4; 	
+  padding: 5px;
+}
+
 .select-css { 
 	display: block; 
 	font-size: 14px;  
@@ -54,19 +63,46 @@ body::-webkit-scrollbar-thumb {
 	margin: 5px; 
 	border: 1px solid #cccccc;
 	box-shadow: 0 1px 0 1px #cccccc; 
-	border-radius: .5em;
+	border-radius: 10px;
 	 -moz-appearance: none;
 	 -webkit-appearance: none;
 	 appearance: none;
 	 background-color: #fff; 
-	 background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); 
+	 background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23444%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); 
 	background-repeat: no-repeat, repeat;
 	background-position: right .7em top 50%, 0 0;
 	background-size: .65em auto, 100%; 
 } 
- .select-css::-ms-expand { display: none; } 
- .select-css:hover { border-color: #a4a4a4; } 
- .select-css option { font-weight:normal; } 
+ .select-css::-ms-expand { display: none;} 
+
+.select-css:hover {
+	border-color: #a4a4a4;
+	box-shadow: 0 0 0 1px #a4a4a4;
+}
+
+.select-css:focus {
+	outline: none;
+	border-color: #444;
+	box-shadow: 0 0 0 2px rgba(68, 68, 68, 0.2);
+}
+
+.select-css option {
+	padding: 8px 12px;
+	font-weight: normal;
+	background-color: #fff;
+	color: #444;
+}
+
+.select-css option:hover {
+	background-color: #444 ;
+	color: white ;
+}
+
+.select-css option:checked {
+	background-color: #ccc;
+	color: #444;
+	font-weight: bold;
+}
 
 .box-button {
 	width:25px;
@@ -86,7 +122,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     margin: 5px;
     width:300px;
-    height:92vh;
+    height:91vh;
     flex-shrink: 0;
 }
  .column-title {
@@ -118,7 +154,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     padding: 10px;
     margin: 2px;
-    height:90vh;
+    height:89vh;
     overflow: auto;
 }
 
@@ -138,13 +174,21 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid #fff;  /* отступ вокруг бегунка */
 }
  /* Стили для Задачи */
-
-&СтилиПриоритетов
-
+.task-box-priority-1{
+	background-color: #7fffd4;
+}
+.task-box-priority-2{
+	background-color: #00ff3d;
+}
+.task-box-priority-3{
+	background-color: #ff0000;
+}
+.task-box-priority-0{
+	 background-color: #FFF;
+}
  .task-box {
     margin: 5px;
     border-radius: 5px;
-    background-color: #FFF;
     color: #000;
     border:1px #cccccc solid; 
 }

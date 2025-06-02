@@ -49,4 +49,11 @@
       <value>Завершена</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="7c9b4ad7-949e-403a-861b-fae32dfd26cd">
+    <name>ПоПлану</name>
+    <synonym>
+      <key>ru</key>
+      <value>По плану</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
