@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a2e0dab-e7fc-4b00-bd24-d98e53accf29">
+  <producedTypes>
+    <objectType typeId="9ec708b5-2e01-496c-a61f-b0570db4c6f2" valueTypeId="f84f900d-872f-4e61-84c7-83e236436428"/>
+    <refType typeId="f8be67e0-2e2c-4696-a921-9403706437ac" valueTypeId="816b5d1b-addd-42a2-bbf4-c4a34a1e715a"/>
+    <selectionType typeId="3f20a42b-d5c5-4392-aadf-6572038b2b63" valueTypeId="c738ecc4-f434-4b40-ae41-b88b92c89d54"/>
+    <listType typeId="a1d910f5-adc9-4d07-89f6-baef0e0f3890" valueTypeId="9878092e-7d3d-4d35-a198-d7f1a6c328e7"/>
+    <managerType typeId="eac75bb7-84fa-4092-8c40-f62a67166400" valueTypeId="2432e338-37a0-4dbc-bf57-e3430a6315f3"/>
+  </producedTypes>
+  <name>cbr_КалендарьОписание</name>
+  <synonym>
+    <key>ru</key>
+    <value>Cbr календарь описание</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.cbr_КалендарьОписание.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.cbr_КалендарьОписание.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="ccd992c0-981e-4485-be13-2c300f9a3cb5">
+    <name>Текст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
