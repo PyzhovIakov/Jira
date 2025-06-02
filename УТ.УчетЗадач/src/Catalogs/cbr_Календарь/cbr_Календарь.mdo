@@ -548,6 +548,26 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="91d0c676-3b0b-4994-a08a-c9354360a2b8">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="76b3a29f-9177-4e1c-9766-6c82eecabbaa">
     <producedTypes>
       <objectType typeId="9d9ba96f-8e84-40d5-b14f-dbd8488893da" valueTypeId="fd892814-45b4-4fda-8a1c-5fb9ab70b864"/>

@@ -80,6 +80,9 @@
   <commonPictures>CommonPicture.cbr_Трудозатраты</commonPictures>
   <commonPictures>CommonPicture.cbr_ОтправитьНаИсполнение</commonPictures>
   <commonPictures>CommonPicture.cbr_УчетЗадач</commonPictures>
+  <commonPictures>CommonPicture.Старт</commonPictures>
+  <commonPictures>CommonPicture.Стоп</commonPictures>
+  <commonPictures>CommonPicture.План</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.OPI_Telegram</commonModules>
@@ -154,6 +157,7 @@
   <catalogs>Catalog.cbr_Цвета</catalogs>
   <catalogs>Catalog.СтруктураПредприятия</catalogs>
   <catalogs>Catalog.cbr_ПричиныЗакрытияЗадач</catalogs>
+  <catalogs>Catalog.cbr_КалендарьОписание</catalogs>
   <documents>Document.cbr_Задача</documents>
   <documents>Document.cbr_ТрудозатратыПоЗадаче</documents>
   <enums>Enum.cbr_ВидыВопросов</enums>
