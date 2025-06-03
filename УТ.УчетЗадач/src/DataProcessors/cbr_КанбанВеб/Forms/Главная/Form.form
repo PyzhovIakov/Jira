@@ -1,70 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
-  <items xsi:type="form:FormGroup">
-    <name>ГруппаОсновногоБлока</name>
-    <id>3</id>
-    <items xsi:type="form:FormField">
-      <name>Доска</name>
-      <id>78</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Доска</segments>
-      </dataPath>
-      <titleLocation>None</titleLocation>
-      <extendedTooltip>
-        <name>ДоскаРасширеннаяПодсказка</name>
-        <id>80</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>ДоскаКонтекстноеМеню</name>
-        <id>79</id>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <type>HTMLDocumentField</type>
-      <editMode>Enter</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:HtmlFieldExtInfo">
-        <handlers>
-          <event>DocumentComplete</event>
-          <name>ДоскаДокументСформирован</name>
-        </handlers>
-        <width>50</width>
-        <autoMaxWidth>true</autoMaxWidth>
-        <height>10</height>
-        <autoMaxHeight>true</autoMaxHeight>
-        <horizontalStretch>true</horizontalStretch>
-        <verticalStretch>true</verticalStretch>
-        <borderColor xsi:type="core:ColorDef">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-        </borderColor>
-      </extInfo>
-    </items>
+  <items xsi:type="form:FormField">
+    <name>Доска</name>
+    <id>78</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
-    <title>
-      <key>ru</key>
-      <value>Группа основного блока</value>
-    </title>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Доска</segments>
+    </dataPath>
+    <titleLocation>None</titleLocation>
     <extendedTooltip>
-      <name>ГруппаОсновногоБлокаРасширеннаяПодсказка</name>
-      <id>4</id>
+      <name>ДоскаРасширеннаяПодсказка</name>
+      <id>80</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -72,14 +22,32 @@
         <horizontalAlign>Left</horizontalAlign>
       </extInfo>
     </extendedTooltip>
-    <type>UsualGroup</type>
-    <extInfo xsi:type="form:UsualGroupExtInfo">
-      <group>AlwaysHorizontal</group>
-      <behavior>Auto</behavior>
-      <showLeftMargin>true</showLeftMargin>
-      <united>true</united>
-      <throughAlign>Auto</throughAlign>
-      <currentRowUse>Auto</currentRowUse>
+    <contextMenu>
+      <name>ДоскаКонтекстноеМеню</name>
+      <id>79</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>HTMLDocumentField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:HtmlFieldExtInfo">
+      <handlers>
+        <event>DocumentComplete</event>
+        <name>ДоскаДокументСформирован</name>
+      </handlers>
+      <width>50</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <height>10</height>
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <verticalStretch>true</verticalStretch>
+      <borderColor xsi:type="core:ColorDef">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+      </borderColor>
     </extInfo>
   </items>
   <commandBarLocation>None</commandBarLocation>
