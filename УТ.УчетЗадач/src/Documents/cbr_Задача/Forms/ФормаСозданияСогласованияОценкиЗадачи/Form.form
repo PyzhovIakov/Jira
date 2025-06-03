@@ -486,14 +486,13 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <groupHorizontalAlign>Center</groupHorizontalAlign>
     <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
     <extInfo xsi:type="form:InputFieldExtInfo">
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
+      <maxWidth>62</maxWidth>
+      <height>4</height>
       <wrap>true</wrap>
       <multiLine>true</multiLine>
       <chooseType>true</chooseType>
