@@ -51,7 +51,7 @@
 // Выполняет запрос, возвращающий базовую информацию о боте: имя, id, возможность добавлять бота в группы и т.д.
 //
 // Примечание:
-// Метод в документации API: [getMe](@core.telegram.org/bots/api#getme)
+// Метод в документации API: [getMe](@core.telegram.org/bots/api#getme).
 //
 // Параметры:
 //  Токен - Строка - Токен бота - token
@@ -73,7 +73,7 @@
 // Выполняет запрос, возвращающий информацию о событиях бота. Используется при работе в polling режиме
 //
 // Примечание:
-// Метод в документации API: [getUpdates](@core.telegram.org/bots/api#getupdates)
+// Метод в документации API: [getUpdates](@core.telegram.org/bots/api#getupdates).
 //
 // Параметры:
 //  Токен    - Строка       - Токен бота                             - token
@@ -101,7 +101,7 @@
 // Устанавливает URL обработчика событий бота для работы в режиме Webhook
 //
 // Примечание:
-// Метод в документации API: [setWebhook](@core.telegram.org/bots/api#setwebhook)
+// Метод в документации API: [setWebhook](@core.telegram.org/bots/api#setwebhook).
 //
 // Параметры:
 //  Токен - Строка - Токен бота                                      - token
@@ -127,7 +127,7 @@
 // Удаляет URL обработчика событий бота для работы в режиме Webhook
 //
 // Примечание:
-// Метод в документации API: [deleteWebhook](@core.telegram.org/bots/api#deletewebhook)
+// Метод в документации API: [deleteWebhook](@core.telegram.org/bots/api#deletewebhook).
 //
 // Параметры:
 //  Токен - Строка - Токен бота - token
@@ -149,7 +149,7 @@
 // Скачивает файл с серверов Telegram
 //
 // Примечание:
-// Метод в документации API: [getFile](@core.telegram.org/bots/api#getfile)
+// Метод в документации API: [getFile](@core.telegram.org/bots/api#getfile).
 //
 // Параметры:
 //  Токен   - Строка - Токен                   - token
@@ -204,7 +204,7 @@
 КонецФункции
 
 // Обработать данные Telegram Mini App !NOCLI
-// Обрабатывает данные Telegram Mini App и опредеяет их достоверность
+// Обрабатывает данные Telegram Mini App и опредеяет их достоверность.
 //
 // Параметры:
 //  СтрокаДанных - Строка - query из Telegram.WebApp.initData - datastring
@@ -292,7 +292,7 @@
 // Отправляет текстовое сообщение в чат или канал
 //
 // Примечание:
-// Метод в документации API: [sendMessage](@core.telegram.org/bots/api#sendmessage)
+// Метод в документации API: [sendMessage](@core.telegram.org/bots/api#sendmessage).
 //
 // Параметры:
 //  Токен       - Строка                             - Токен бота                                            - token
@@ -338,7 +338,7 @@
 // Отправляет картинку в чат или канал
 //
 // Примечание:
-// Метод в документации API: [sendPhoto](@core.telegram.org/bots/api#sendphoto)
+// Метод в документации API: [sendPhoto](@core.telegram.org/bots/api#sendphoto).
 //
 // Параметры:
 //  Токен      - Строка                             - Токен бота                                            - token
@@ -365,7 +365,7 @@
 // Отправляет видео в чат или канал
 //
 // Примечание:
-// Метод в документации API: [sendVideo](@core.telegram.org/bots/api#sendvideo)
+// Метод в документации API: [sendVideo](@core.telegram.org/bots/api#sendvideo).
 //
 // Параметры:
 //  Токен      - Строка                             - Токен бота                                            - token
@@ -392,7 +392,7 @@
 // Отправляет аудиофайл в чат или канал
 //
 // Примечание:
-// Метод в документации API: [sendAudio](@core.telegram.org/bots/api#sendaudio)
+// Метод в документации API: [sendAudio](@core.telegram.org/bots/api#sendaudio).
 //
 // Параметры:
 //  Токен      - Строка                             - Токен бота                                            - token
@@ -419,7 +419,7 @@
 // Отправляет документ в чат или канал
 //
 // Примечание:
-// Метод в документации API: [sendDocument](@core.telegram.org/bots/api#senddocument)
+// Метод в документации API: [sendDocument](@core.telegram.org/bots/api#senddocument).
 //
 // Параметры:
 //  Токен      - Строка                             - Токен бота                                            - token
@@ -448,7 +448,7 @@
 // Отправляет гифку в чат или канал
 //
 // Примечание:
-// Метод в документации API: [sendAnimation](@core.telegram.org/bots/api#sendanimation)
+// Метод в документации API: [sendAnimation](@core.telegram.org/bots/api#sendanimation).
 //
 // Параметры:
 //  Токен      - Строка                             - Токен бота                                            - token
@@ -475,7 +475,7 @@
 // Отправляет набор файлов в чат или канал. Варианты типов медиа: audio, document, photo, video
 //
 // Примечание:
-// Метод в документации API: [sendMediaGroup](@core.telegram.org/bots/api#sendmediagroup)
+// Метод в документации API: [sendMediaGroup](@core.telegram.org/bots/api#sendmediagroup).
 //
 // Параметры:
 //  Токен              - Строка                        - Токен бота                                            - token
@@ -529,7 +529,7 @@
 // Отправляет местоположение по географической широте и долготе в чат или канал
 //
 // Примечание:
-// Метод в документации API: [sendLocation](@core.telegram.org/bots/api#sendlocation)
+// Метод в документации API: [sendLocation](@core.telegram.org/bots/api#sendlocation).
 //
 // Параметры:
 //  Токен      - Строка                             - Токен бота                                            - token
@@ -566,7 +566,7 @@
 // Отправляет контакт с именем и номером телефона
 //
 // Примечание:
-// Метод в документации API: [sendContact](@core.telegram.org/bots/api#sendcontact)
+// Метод в документации API: [sendContact](@core.telegram.org/bots/api#sendcontact).
 //
 // Параметры:
 //  Токен      - Строка                             - Токен бота                                            - token
@@ -605,7 +605,7 @@
 // Отправляет опрос с вариантами ответа
 //
 // Примечание:
-// Метод в документации API: [sendPoll](@core.telegram.org/bots/api#sendpoll)
+// Метод в документации API: [sendPoll](@core.telegram.org/bots/api#sendpoll).
 //
 // Параметры:
 //  Токен         - Строка            - Токен бота                         - token
@@ -644,7 +644,7 @@
 // Пересылает сообщение между чатами или в рамках одного чата
 //
 // Примечание:
-// Метод в документации API: [forwardMessage](@core.telegram.org/bots/api#forwardmessage)
+// Метод в документации API: [forwardMessage](@core.telegram.org/bots/api#forwardmessage).
 //
 // Параметры:
 //  Токен         - Строка        - Токен бота                         - token
@@ -679,7 +679,7 @@
 // Удаляет указанное сообщение из чата или канала
 //
 // Примечание:
-// Метод в документации API: [deleteMessage](@core.telegram.org/bots/api#deletemessage)
+// Метод в документации API: [deleteMessage](@core.telegram.org/bots/api#deletemessage).
 //
 // Параметры:
 //  Токен       - Строка        - Токен                    - token
@@ -707,7 +707,7 @@
 // Заменяет клавиатуру сообщения на новую
 //
 // Примечание:
-// Метод в документации API: [editMessageReplyMarkup](@core.telegram.org/bots/api#editmessagereplymarkup)
+// Метод в документации API: [editMessageReplyMarkup](@core.telegram.org/bots/api#editmessagereplymarkup).
 //
 // Параметры:
 //  Токен       - Строка                             - Токен                                                 - token
@@ -738,7 +738,7 @@
 // Заменяет текст сообщения на новый
 //
 // Примечание:
-// Метод в документации API: [editMessageText](@core.telegram.org/bots/api#editmessagetext)
+// Метод в документации API: [editMessageText](@core.telegram.org/bots/api#editmessagetext).
 //
 // Параметры:
 //  Токен       - Строка         - Токен                                             - token
@@ -780,7 +780,7 @@
 // Заменяет текст в сообщении с вложениями
 //
 // Примечание:
-// Метод в документации API: [editMessageCaption](@core.telegram.org/bots/api#editmessagecaption)
+// Метод в документации API: [editMessageCaption](@core.telegram.org/bots/api#editmessagecaption).
 //
 // Параметры:
 //  Токен       - Строка         - Токен                                             - token
@@ -822,7 +822,7 @@
 // Формирует простую JSON клавиатуру из массив кнопок для сообщения или нижней панели
 //
 // Примечание:
-// О клавиатурах в документации API: [InlineKeyboardMarkup](@core.telegram.org/bots/api#inlinekeyboardmarkup)
+// О клавиатурах в документации API: [InlineKeyboardMarkup](@core.telegram.org/bots/api#inlinekeyboardmarkup).
 //
 // Параметры:
 //  МассивКнопок  - Массив из Строка - Массив кнопок                                        - buttons
@@ -865,7 +865,7 @@
 // Банит пользователя в выбранном чате
 //
 // Примечание:
-// Метод в документации API: [banChatMember](@core.telegram.org/bots/api#banchatmember)
+// Метод в документации API: [banChatMember](@core.telegram.org/bots/api#banchatmember).
 //
 // Параметры:
 //  Токен          - Строка        - Токен бота                         - token
@@ -896,7 +896,7 @@
 // Разбанивает забаненного ранее пользователя
 //
 // Примечание:
-// Метод в документации API: [unbanChatMember](@core.telegram.org/bots/api#unbanchatmember)
+// Метод в документации API: [unbanChatMember](@core.telegram.org/bots/api#unbanchatmember).
 //
 // Параметры:
 //  Токен          - Строка        - Токен бота                         - token
@@ -928,7 +928,7 @@
 // Создает ссылку для вступления в закрытый чат
 //
 // Примечание:
-// Метод в документации API: [createChatInviteLink](@core.telegram.org/bots/api#createchatinvitelink)
+// Метод в документации API: [createChatInviteLink](@core.telegram.org/bots/api#createchatinvitelink).
 //
 // Параметры:
 //  Токен              - Строка        - Токен бота                                               - token
@@ -967,7 +967,7 @@
 // Закрепляет сообщение в шапке чата
 //
 // Примечание:
-// Метод в документации API: [pinChatMessage](@core.telegram.org/bots/api#pinchatmessage)
+// Метод в документации API: [pinChatMessage](@core.telegram.org/bots/api#pinchatmessage).
 //
 // Параметры:
 //  Токен       - Строка        - Токен                 - token
@@ -999,7 +999,7 @@
 // Открепляет сообщение в шапке чата
 //
 // Примечание:
-// Метод в документации API: [unpinChatMessage](@core.telegram.org/bots/api#unpinchatmessage)
+// Метод в документации API: [unpinChatMessage](@core.telegram.org/bots/api#unpinchatmessage).
 //
 // Параметры:
 //  Токен       - Строка        - Токен бота            - token
@@ -1030,7 +1030,7 @@
 // Получает общее число участников чата
 //
 // Примечание:
-// Метод в документации API: [getChatMemberCount](@core.telegram.org/bots/api#getchatmembercount)
+// Метод в документации API: [getChatMemberCount](@core.telegram.org/bots/api#getchatmembercount).
 //
 // Параметры:
 //  Токен  - Строка        - Токен бота       - token
@@ -1062,7 +1062,7 @@
 // Получает соответствие ID Emoji для установки в качестве иконок тем форума
 //
 // Примечание:
-// Метод в документации API: [getForumTopicIconStickers](@core.telegram.org/bots/api#getforumtopiciconstickers)
+// Метод в документации API: [getForumTopicIconStickers](@core.telegram.org/bots/api#getforumtopiciconstickers).
 //
 // Параметры:
 //  Токен - Строка - Токен - token
@@ -1096,7 +1096,7 @@
 // Создает новую тему в группе с включенным функционалом тем
 //
 // Примечание:
-// Метод в документации API: [createForumTopic](@core.telegram.org/bots/api#createforumtopic)
+// Метод в документации API: [createForumTopic](@core.telegram.org/bots/api#createforumtopic).
 //
 // Параметры:
 //  Токен     - Строка        - Токен                            - token
@@ -1116,7 +1116,7 @@
 // Создает новую тему в группе с включенным функционалом тем
 //
 // Примечание:
-// Метод в документации API: [editForumTopic](@core.telegram.org/bots/api#editforumtopic)
+// Метод в документации API: [editForumTopic](@core.telegram.org/bots/api#editforumtopic).
 //
 // Параметры:
 //  Токен     - Строка        - Токен                            - token
@@ -1140,7 +1140,7 @@
 // Закрывает тему для новых сообщений
 //
 // Примечание:
-// Метод в документации API: [closeForumTopic](@core.telegram.org/bots/api#closeforumtopic)
+// Метод в документации API: [closeForumTopic](@core.telegram.org/bots/api#closeforumtopic).
 //
 // Параметры:
 //  Токен  - Строка        - Токен        - token
@@ -1159,7 +1159,7 @@
 // Повторно открывает ранее закрытую тему форума
 //
 // Примечание:
-// Метод в документации API: [reopenForumTopic](@core.telegram.org/bots/api#reopenforumtopic)
+// Метод в документации API: [reopenForumTopic](@core.telegram.org/bots/api#reopenforumtopic).
 //
 // Параметры:
 //  Токен  - Строка        - Токен        - token
@@ -1178,7 +1178,7 @@
 // Удаляет тему форума
 //
 // Примечание:
-// Метод в документации API: [deleteForumTopic](@core.telegram.org/bots/api#deleteforumtopic)
+// Метод в документации API: [deleteForumTopic](@core.telegram.org/bots/api#deleteforumtopic).
 //
 // Параметры:
 //  Токен  - Строка        - Токен        - token
@@ -1197,7 +1197,7 @@
 // Скрывает главную тему форума
 //
 // Примечание:
-// Метод в документации API: [hideGeneralForumTopic](@core.telegram.org/bots/api#hidegeneralforumtopic)
+// Метод в документации API: [hideGeneralForumTopic](@core.telegram.org/bots/api#hidegeneralforumtopic).
 //
 // Параметры:
 //  Токен  - Строка        - Токен        - token
@@ -1215,7 +1215,7 @@
 // Показывает ранее скрытую главную тему форума
 //
 // Примечание:
-// Метод в документации API: [unhideGeneralForumTopic](@core.telegram.org/bots/api#unhidegeneralforumtopic)
+// Метод в документации API: [unhideGeneralForumTopic](@core.telegram.org/bots/api#unhidegeneralforumtopic).
 //
 // Параметры:
 //  Токен  - Строка        - Токен        - token
@@ -1233,7 +1233,7 @@
 // Изменяет имя главной темы форума
 //
 // Примечание:
-// Метод в документации API: [editGeneralForumTopic](@core.telegram.org/bots/api#editgeneralforumtopic)
+// Метод в документации API: [editGeneralForumTopic](@core.telegram.org/bots/api#editgeneralforumtopic).
 //
 // Параметры:
 //  Токен     - Строка        - Токен                   - token
@@ -1262,7 +1262,7 @@
 // Очищает список закрепленных сообщений в теме форума
 //
 // Примечание:
-// Метод в документации API: [unpinAllForumTopicMessages](@core.telegram.org/bots/api#unpinallforumtopicmessages)
+// Метод в документации API: [unpinAllForumTopicMessages](@core.telegram.org/bots/api#unpinallforumtopicmessages).
 //
 // Параметры:
 //  Токен  - Строка        - Токен                               - token

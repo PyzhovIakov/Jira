@@ -3528,10 +3528,6 @@
     <name>ОбработкаОповещения</name>
   </handlers>
   <handlers>
-    <event>OnOpen</event>
-    <name>ПриОткрытии</name>
-  </handlers>
-  <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
@@ -4310,21 +4306,6 @@
         </dateQualifiers>
       </itemValueType>
     </extInfo>
-  </attributes>
-  <attributes>
-    <name>НастройкиАвтообновления</name>
-    <title>
-      <key>ru</key>
-      <value>Настройки автообновления</value>
-    </title>
-    <id>15</id>
-    <valueType/>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
   </attributes>
   <formCommands>
     <name>ВыбратьСвязанныеЗадачи</name>
