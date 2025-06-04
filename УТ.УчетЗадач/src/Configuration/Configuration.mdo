@@ -179,7 +179,6 @@
   <dataProcessors>DataProcessor.cbr_Канбан</dataProcessors>
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_КанбанВеб</dataProcessors>
-  <dataProcessors>DataProcessor.ТестБитрикс</dataProcessors>
   <dataProcessors>DataProcessor.OPI_HTTPКлиент</dataProcessors>
   <dataProcessors>DataProcessor.cbr_АктивацияАккаунтовTelegram</dataProcessors>
   <dataProcessors>DataProcessor.ВводНачальныхНастроек</dataProcessors>

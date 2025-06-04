@@ -400,7 +400,7 @@
     </dataPath>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
-      <name>КолонкаСсылка</name>
+      <name>Ссылка</name>
       <id>156</id>
       <enabled>true</enabled>
       <userVisible/>
@@ -408,7 +408,7 @@
         <segments>Колонка.Ссылка</segments>
       </dataPath>
       <extendedTooltip>
-        <name>КолонкаСсылкаРасширеннаяПодсказка</name>
+        <name>СсылкаРасширеннаяПодсказка</name>
         <id>158</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
@@ -418,7 +418,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>КолонкаСсылкаКонтекстноеМеню</name>
+        <name>СсылкаКонтекстноеМеню</name>
         <id>157</id>
         <autoFill>true</autoFill>
       </contextMenu>

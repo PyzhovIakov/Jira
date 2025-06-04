@@ -2976,70 +2976,6 @@
   <items xsi:type="form:FormGroup">
     <name>МК_ГруппаЗаголовокСтраниц</name>
     <id>367</id>
-    <items xsi:type="form:Button">
-      <name>МК_Основное</name>
-      <id>361</id>
-      <title>
-        <key>ru</key>
-        <value>Основное</value>
-      </title>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>МК_ОсновноеРасширеннаяПодсказка</name>
-        <id>362</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <type>UsualButton</type>
-      <commandName>Form.Command.МК_ТекущаяСтраница</commandName>
-      <representation>Auto</representation>
-      <width>10</width>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <representationInContextMenu>Auto</representationInContextMenu>
-      <shape>Oval</shape>
-    </items>
-    <items xsi:type="form:Button">
-      <name>МК_Календарь</name>
-      <id>365</id>
-      <title>
-        <key>ru</key>
-        <value>Календарь</value>
-      </title>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>МК_КалендарьРасширеннаяПодсказка</name>
-        <id>366</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <type>UsualButton</type>
-      <commandName>Form.Command.МК_ТекущаяСтраница</commandName>
-      <representation>Auto</representation>
-      <width>10</width>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <representationInContextMenu>Auto</representationInContextMenu>
-      <shape>Oval</shape>
-    </items>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
@@ -3521,10 +3457,6 @@
   <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
-  </handlers>
-  <handlers>
-    <event>OnChangeDisplaySettings</event>
-    <name>ПриИзмененииПараметровЭкрана</name>
   </handlers>
   <handlers>
     <event>OnClose</event>
@@ -4973,19 +4905,6 @@
       </handler>
     </action>
     <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>МК_ТекущаяСтраница</name>
-    <id>22</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>МК_ТекущаяСтраница</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
     <name>СостояниеВработе</name>
