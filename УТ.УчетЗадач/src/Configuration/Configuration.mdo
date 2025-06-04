@@ -132,7 +132,7 @@
   <constants>Constant.cbr_Токен_БотТелеграм</constants>
   <constants>Constant.cbr_ПоследнееСообщениеТелеграмИД</constants>
   <commonForms>CommonForm.cbr_ФормаОтветаНаВопросПоЗадаче</commonForms>
-  <commonForms>CommonForm.cbr_ФормаСпискаВопросовПоЗадаче</commonForms>
+  <commonForms>CommonForm.cbr_ФормаВопросаПоЗадаче</commonForms>
   <commonForms>CommonForm.cbr_ИерархияЗадачОбщая</commonForms>
   <commonForms>CommonForm.cbr_КомментарииЗадач</commonForms>
   <commonForms>CommonForm.cbr_ФормаВыбораЦвета</commonForms>
