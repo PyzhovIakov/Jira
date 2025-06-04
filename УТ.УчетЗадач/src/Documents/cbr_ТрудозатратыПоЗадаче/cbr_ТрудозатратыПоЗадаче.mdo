@@ -12,7 +12,7 @@
     <key>ru</key>
     <value>Трудозатраты по задаче</value>
   </synonym>
-  <comment>Трудозатраты по задаче</comment>
+  <comment>Документ устанавливующий трудозатраты по задачам сотрудников</comment>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.cbr_ТрудозатратыПоЗадаче.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
