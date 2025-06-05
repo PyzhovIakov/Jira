@@ -1496,7 +1496,7 @@
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
           <picture xsi:type="core:PictureRef">
-            <picture>CommonPicture.План</picture>
+            <picture>CommonPicture.cbr_План</picture>
           </picture>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
@@ -1526,7 +1526,7 @@
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
           <picture xsi:type="core:PictureRef">
-            <picture>CommonPicture.Старт</picture>
+            <picture>CommonPicture.cbr_Старт</picture>
           </picture>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
@@ -1556,7 +1556,7 @@
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
           <picture xsi:type="core:PictureRef">
-            <picture>CommonPicture.Стоп</picture>
+            <picture>CommonPicture.cbr_Стоп</picture>
           </picture>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>

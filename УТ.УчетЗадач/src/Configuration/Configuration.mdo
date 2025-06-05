@@ -83,14 +83,14 @@
   <commonPictures>CommonPicture.cbr_ПриоритетВысокий</commonPictures>
   <commonPictures>CommonPicture.cbr_ПриоритетОбычный</commonPictures>
   <commonPictures>CommonPicture.cbr_ПриоритетНизкий</commonPictures>
-  <commonPictures>CommonPicture.Старт</commonPictures>
-  <commonPictures>CommonPicture.Стоп</commonPictures>
-  <commonPictures>CommonPicture.План</commonPictures>
+  <commonPictures>CommonPicture.cbr_Старт</commonPictures>
+  <commonPictures>CommonPicture.cbr_Стоп</commonPictures>
+  <commonPictures>CommonPicture.cbr_План</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.OPI_Telegram</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</commonModules>
-  <commonModules>CommonModule.cbr_ОбработчикиФормыЗадачиСервер</commonModules>
+  <commonModules>CommonModule.cbr_ОбработчикиФормыЗадачиВызовСервера</commonModules>
   <commonModules>CommonModule.cbr_УведомленияПользователей</commonModules>
   <commonModules>CommonModule.cbr_ЭлементыФормы</commonModules>
   <commonModules>CommonModule.РаботаСФайламиКлиентСервер</commonModules>
@@ -122,6 +122,8 @@
   <definedTypes>DefinedType.ПредметНапоминания</definedTypes>
   <definedTypes>DefinedType.ПрисоединенныйФайл</definedTypes>
   <definedTypes>DefinedType.ПрисоединенныйФайлОбъект</definedTypes>
+  <definedTypes>DefinedType.ФизическоеЛицо</definedTypes>
+  <definedTypes>DefinedType.Подразделение</definedTypes>
   <commonCommands>CommonCommand.ПрисоединенныеФайлы</commonCommands>
   <commandGroups>CommandGroup.cbr_Документы</commandGroups>
   <commandGroups>CommandGroup.cbr_Справочники</commandGroups>
@@ -160,6 +162,7 @@
   <catalogs>Catalog.СтруктураПредприятия</catalogs>
   <catalogs>Catalog.cbr_ПричиныЗакрытияЗадач</catalogs>
   <catalogs>Catalog.cbr_КалендарьОписание</catalogs>
+  <catalogs>Catalog.ФизическиеЛица</catalogs>
   <documents>Document.cbr_Задача</documents>
   <documents>Document.cbr_ТрудозатратыПоЗадаче</documents>
   <enums>Enum.cbr_ВидыВопросов</enums>
@@ -181,7 +184,7 @@
   <dataProcessors>DataProcessor.cbr_КанбанВеб</dataProcessors>
   <dataProcessors>DataProcessor.OPI_HTTPКлиент</dataProcessors>
   <dataProcessors>DataProcessor.cbr_АктивацияАккаунтовTelegram</dataProcessors>
-  <dataProcessors>DataProcessor.ВводНачальныхНастроек</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_ВводНачальныхНастроек</dataProcessors>
   <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ВопросыПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ДедлайнЗадач</informationRegisters>

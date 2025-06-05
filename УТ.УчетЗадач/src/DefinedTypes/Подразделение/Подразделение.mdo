@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="d9895791-0bd5-4972-a1e4-cd315935886a">
+  <producedTypes>
+    <containerType typeId="c0b94e47-3189-44b4-8284-5102d7e132e0" valueTypeId="5a71cb39-f66e-4b87-af8e-87295658d344"/>
+  </producedTypes>
+  <name>Подразделение</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DefinedTypeExtension">
+    <typeExtension>
+      <types>
+        <state>Checked</state>
+        <type>CatalogRef.СтруктураПредприятия</type>
+      </types>
+    </typeExtension>
+  </extension>
+</mdclass:DefinedType>

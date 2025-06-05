@@ -17,6 +17,14 @@
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Цвет приоритета</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Цвета приоритетов</value>
+  </listPresentation>
   <resources uuid="b0749245-24a1-430b-84f5-e344de47e027">
     <name>Цвет</name>
     <synonym>
