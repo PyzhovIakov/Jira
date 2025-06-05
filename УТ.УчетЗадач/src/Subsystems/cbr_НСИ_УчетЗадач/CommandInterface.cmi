@@ -25,6 +25,7 @@
       <commands>Catalog.cbr_Сценарии.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Роли.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Триггеры.StandardCommand.OpenList</commands>
+      <commands>Catalog.cbr_КалендарьОписание.StandardCommand.OpenList</commands>
     </placementFragments>
     <placementFragments>
       <group>CommandGroup.cbr_РегистрыНакопления</group>
@@ -45,6 +46,10 @@
       <commands>InformationRegister.cbr_СтатусыЗадач.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_СобытияПоЗадачам.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_ЦветаПриоритетов.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.cbr_Б24_СоответствиеЗадач.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.cbr_Б24_СоответствиеФайлов.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.cbr_ЗаданияКОтправкеСообщений.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.cbr_СоответствиеПользователейДляИнтеграций.StandardCommand.OpenList</commands>
     </placementFragments>
     <placementFragments>
       <group>CommandGroup.cbr_Формы</group>
@@ -57,6 +62,7 @@
       <commands>Catalog.cbr_ВидыЗадач.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ГруппыДоступаКЗадачам.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_Доски.StandardCommand.OpenList</commands>
+      <commands>Catalog.cbr_КалендарьОписание.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_КонтрольНадЭтапамиЗадач.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_МеткиЗадач.StandardCommand.OpenList</commands>
       <commands>Catalog.cbr_ПричиныЗакрытияЗадач.StandardCommand.OpenList</commands>
@@ -75,9 +81,12 @@
     </orderFragments>
     <orderFragments>
       <group>CommandGroup.cbr_РегистрыСведений</group>
+      <commands>InformationRegister.cbr_Б24_СоответствиеЗадач.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.cbr_Б24_СоответствиеФайлов.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_СобытияПоЗадачам.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_ВопросыПоЗадачам.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_ДедлайнЗадач.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.cbr_ЗаданияКОтправкеСообщений.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_ИсполнителиЗадач.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_КомментарииЗадач.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_НастройкиПользователейКолонокКанБан.StandardCommand.OpenList</commands>
@@ -86,6 +95,7 @@
       <commands>InformationRegister.cbr_ПользовательскиеНастройки.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_ПросроченныеДействияПоЗадачам.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_СвязанныеЗадачи.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.cbr_СоответствиеПользователейДляИнтеграций.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_СтатусыЗадач.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_ЦветаПриоритетов.StandardCommand.OpenList</commands>
     </orderFragments>
