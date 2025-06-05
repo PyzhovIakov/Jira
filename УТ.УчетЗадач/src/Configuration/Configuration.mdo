@@ -86,6 +86,8 @@
   <commonPictures>CommonPicture.Старт</commonPictures>
   <commonPictures>CommonPicture.Стоп</commonPictures>
   <commonPictures>CommonPicture.План</commonPictures>
+  <commonPictures>CommonPicture.cbr_КалендарьПодсистема</commonPictures>
+  <commonPictures>CommonPicture.cbr_НСИ_УчетЗадач</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.OPI_Telegram</commonModules>
@@ -122,6 +124,7 @@
   <definedTypes>DefinedType.ПредметНапоминания</definedTypes>
   <definedTypes>DefinedType.ПрисоединенныйФайл</definedTypes>
   <definedTypes>DefinedType.ПрисоединенныйФайлОбъект</definedTypes>
+  <definedTypes>DefinedType.Подразделение</definedTypes>
   <commonCommands>CommonCommand.ПрисоединенныеФайлы</commonCommands>
   <commandGroups>CommandGroup.cbr_Документы</commandGroups>
   <commandGroups>CommandGroup.cbr_Справочники</commandGroups>
@@ -176,6 +179,10 @@
   <enums>Enum.СпособыУстановкиВремениНапоминания</enums>
   <enums>Enum.cbr_ОтображениеВремениЭлементов</enums>
   <enums>Enum.cbr_ПриоритетыЗадач</enums>
+  <reports>Report.cbr_ОтработанныеЧасыСотрудников</reports>
+  <reports>Report.cbr_СтатистикаПоЗавершеннымЗадачам</reports>
+  <reports>Report.cbr_СтатистикаОтклоненияЗадач</reports>
+  <reports>Report.cbr_СтатистикаПереносовДедлайнов</reports>
   <dataProcessors>DataProcessor.cbr_Канбан</dataProcessors>
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_КанбанВеб</dataProcessors>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4fac6637-9e6a-409d-9a05-778bc62cca1f">
+  <producedTypes>
+    <objectType typeId="39096329-0243-4e0c-b7e7-205c548a93fd" valueTypeId="e5764217-daca-433e-9659-b52d5a7a764c"/>
+    <managerType typeId="dd40b7c3-47d4-4bec-bf3e-2f950d33b4e5" valueTypeId="b68a524b-1c1a-404d-82c5-7c77a4dd08f3"/>
+  </producedTypes>
+  <name>cbr_ОтработанныеЧасыСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отработанные часы сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.cbr_ОтработанныеЧасыСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="a7adcb59-fd49-4e9c-bc06-9f4ce023a3e3">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3d91755-dff0-4b36-9773-96e039b56e19">
+  <producedTypes>
+    <objectType typeId="7fea420c-53c2-48f9-8f4c-d75eae7d502b" valueTypeId="66f51673-1c55-4160-b653-71fbf8ba3194"/>
+    <managerType typeId="85c60fc0-1a2b-4990-8d81-17a41ea92ad2" valueTypeId="0afaf366-48ad-4530-a1b7-47a4ad3c8374"/>
+  </producedTypes>
+  <name>cbr_СтатистикаОтклоненияЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика отклонения задач</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.cbr_СтатистикаОтклоненияЗадач.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="2d0172cb-c4d6-4a63-a77d-a94d09ccf525">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

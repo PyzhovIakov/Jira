@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="898a613c-8a26-4a99-8e3b-e6c12567cbb0">
+  <producedTypes>
+    <objectType typeId="e37ee719-107b-453e-893c-515808441919" valueTypeId="6f2e1bea-217e-45e0-884a-637809968447"/>
+    <managerType typeId="33b6daba-dc75-4edb-b7a0-f0be73936eb6" valueTypeId="bca209aa-39f9-48dd-ae62-f7062610977f"/>
+  </producedTypes>
+  <name>cbr_СтатистикаПереносовДедлайнов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика переносов дедлайнов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.cbr_СтатистикаПереносовДедлайнов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="4973fee3-1e25-4ec3-8285-e960c5a6c9ef">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
