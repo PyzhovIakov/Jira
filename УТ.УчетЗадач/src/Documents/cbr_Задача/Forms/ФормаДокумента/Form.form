@@ -1350,7 +1350,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <type>UsualButton</type>
-                <commandName>Form.Command.МеткаЕщё</commandName>
+                <commandName>Form.Command.МеткаЕще</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4654,10 +4654,10 @@
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>МеткаЕщё</name>
+    <name>МеткаЕще</name>
     <title>
       <key>ru</key>
-      <value>Метка ещё</value>
+      <value>Метка еще</value>
     </title>
     <id>21</id>
     <use>

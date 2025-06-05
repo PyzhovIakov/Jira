@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="85f9ded2-5a2e-4300-bd83-d2164d9518f4">
+  <name>cbr_НСИ_УчетЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>НСИ Учет задач</value>
+  </synonym>
+</mdclass:CommonPicture>
