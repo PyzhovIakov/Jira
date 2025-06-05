@@ -45,7 +45,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>DataProcessorObject.ВводНачальныхНастроек</types>
+      <types>DataProcessorObject.cbr_ВводНачальныхНастроек</types>
     </valueType>
     <view>
       <common>true</common>

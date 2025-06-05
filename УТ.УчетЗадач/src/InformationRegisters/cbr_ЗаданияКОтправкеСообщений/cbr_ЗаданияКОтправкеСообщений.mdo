@@ -17,6 +17,14 @@
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Задание к отправке сообщений</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Задания к отправке сообщений</value>
+  </listPresentation>
   <resources uuid="dabd716f-7201-4cc0-bdb8-2887802b986d">
     <name>ТекстСообщения</name>
     <synonym>

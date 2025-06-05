@@ -54,10 +54,11 @@
         <key>ru</key>
         <value>Ссылка</value>
       </title>
-      <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
-        <common>true</common>
+        <for>
+          <role>Role.cbr_ПолныеПрава</role>
+        </for>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
         <segments>Список.Ссылка</segments>
@@ -76,6 +77,46 @@
       <contextMenu>
         <name>СсылкаКонтекстноеМеню</name>
         <id>17</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Наименование</name>
+      <id>19</id>
+      <title>
+        <key>ru</key>
+        <value>ФИО</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Наименование</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>НаименованиеРасширеннаяПодсказка</name>
+        <id>21</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НаименованиеКонтекстноеМеню</name>
+        <id>20</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
@@ -255,15 +296,16 @@
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
-	Пользователи.Ссылка,
-	Пользователи.ПометкаУдаления,
-	Пользователи.Предопределенный,
-	Пользователи.ИмяПредопределенныхДанных,
-	Пользователи.Представление
+	Пользователи.Ссылка КАК Ссылка,
+	Пользователи.ПометкаУдаления КАК ПометкаУдаления,
+	Пользователи.Предопределенный КАК Предопределенный,
+	Пользователи.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	Пользователи.Представление КАК Представление,
+	Пользователи.Наименование КАК Наименование
 ИЗ
 	Справочник.Пользователи КАК Пользователи
 {ГДЕ
-	Пользователи.Ссылка В (&amp;ГруппаДоступа)}</queryText>
+	(Пользователи.Ссылка В (&amp;ГруппаДоступа))}</queryText>
       <mainTable>Catalog.Пользователи</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
@@ -285,6 +327,14 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ИмяПредопределенныхДанных</dataPath>
         <field>ИмяПредопределенныхДанных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Наименование</dataPath>
+        <field>Наименование</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Код</dataPath>
+        <field>Код</field>
       </fields>
       <parameters>
         <name>ГруппаДоступа</name>
