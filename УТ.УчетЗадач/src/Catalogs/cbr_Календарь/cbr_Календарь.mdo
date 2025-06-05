@@ -751,27 +751,6 @@
     <commandParameterType/>
     <representation>Auto</representation>
   </commands>
-  <commands uuid="f92b3d8a-d493-40b6-8385-39809310947e">
-    <name>ОткрытьКалендарь</name>
-    <synonym>
-      <key>ru</key>
-      <value>Мой календарь</value>
-    </synonym>
-    <group>NavigationPanelImportant</group>
-    <commandParameterType/>
-    <representation>Auto</representation>
-  </commands>
-  <commands uuid="27530966-eada-4437-9c53-5c4e68ab2c9a">
-    <name>ПечатьЗаписиКалендаря</name>
-    <synonym>
-      <key>ru</key>
-      <value>Карточка записи календаря</value>
-    </synonym>
-    <group>CommandGroup.Печать</group>
-    <commandParameterType/>
-    <representation>Picture</representation>
-    <shortcut>Alt+P</shortcut>
-  </commands>
   <commands uuid="59fd0fd2-78f3-466e-a38e-6138d17f21be">
     <name>ПринятьПриглашение</name>
     <synonym>

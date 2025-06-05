@@ -13,4 +13,19 @@
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:MdObjectExtension"/>
   </enumValues>
+  <enumValues uuid="0052021b-8ccb-4aa8-a51e-76777511a79f">
+    <name>ОтносительноТекущегоВремени</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension"/>
+  </enumValues>
+  <enumValues uuid="74a7c712-85b4-4f68-9639-d0d139b1e8fe">
+    <name>ВУказанноеВремя</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension"/>
+  </enumValues>
+  <enumValues uuid="a97f78de-4b83-4823-8d32-c19d37589557">
+    <name>ОтносительноВремениПредмета</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension"/>
+  </enumValues>
 </mdclass:Enum>
