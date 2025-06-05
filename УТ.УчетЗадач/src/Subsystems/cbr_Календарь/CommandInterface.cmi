@@ -16,6 +16,7 @@
     <placementFragments>
       <group>NavigationPanelImportant</group>
       <commands>Catalog.cbr_Календарь.Command.ОткрытьДругиеКалендари</commands>
+      <commands>Catalog.cbr_Календарь.Command.ОткрытьКалендарь</commands>
     </placementFragments>
   </commandsPlacement>
   <commandsOrder>
