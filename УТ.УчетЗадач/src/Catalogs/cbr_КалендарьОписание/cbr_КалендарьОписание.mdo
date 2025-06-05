@@ -38,6 +38,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.cbr_КалендарьОписание.Form.ФормаЭлемента</defaultObjectForm>
   <attributes uuid="ccd992c0-981e-4485-be13-2c300f9a3cb5">
     <name>Текст</name>
     <synonym>
@@ -58,4 +59,13 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="2d2f788f-e03d-47ec-aa87-10b086d45d3e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>
