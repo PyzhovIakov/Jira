@@ -47,6 +47,7 @@
   <subsystems>Subsystem.cbr_НСИ_УчетЗадач</subsystems>
   <subsystems>Subsystem.cbr_УчетЗадач</subsystems>
   <subsystems>Subsystem.cbr_Календарь</subsystems>
+  <subsystems>Subsystem.cbr_Битрикс24Интеграция</subsystems>
   <styleItems>StyleItem.cbr_ЦветКалендаряДоступноеВремя</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряВоскресеньеЦвет</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряНеУказанЦвет</styleItems>
@@ -169,12 +170,15 @@
   <enums>Enum.cbr_ПериодОтображенияРабочегоКалендаря</enums>
   <enums>Enum.СпособыУстановкиВремениНапоминания</enums>
   <enums>Enum.cbr_ОтображениеВремениЭлементов</enums>
+  <enums>Enum.cbr_Б24_Настройки</enums>
+  <enums>Enum.cbr_ПриоритетыЗадач</enums>
   <dataProcessors>DataProcessor.cbr_Канбан</dataProcessors>
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_КанбанВеб</dataProcessors>
   <dataProcessors>DataProcessor.ТестБитрикс</dataProcessors>
   <dataProcessors>DataProcessor.OPI_HTTPКлиент</dataProcessors>
   <dataProcessors>DataProcessor.cbr_АктивацияАккаунтовTelegram</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_НастройкиБитрикс24</dataProcessors>
   <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ВопросыПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ДедлайнЗадач</informationRegisters>
@@ -193,6 +197,7 @@
   <informationRegisters>InformationRegister.cbr_Б24_СоответствиеЗадач</informationRegisters>
   <informationRegisters>InformationRegister.cbr_Б24_СоответствиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ЗаданияКОтправкеСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_Б24_Настройки</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

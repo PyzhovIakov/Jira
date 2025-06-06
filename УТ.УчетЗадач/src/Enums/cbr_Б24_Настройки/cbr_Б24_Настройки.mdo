@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f00dfbc7-ea16-4263-b5f3-22315ec58257">
+  <producedTypes>
+    <refType typeId="18f390c3-bdef-41c2-813d-b5c64d53f8ca" valueTypeId="665eaa09-66e6-4b5e-a372-e9da7f612664"/>
+    <listType typeId="51cb4f86-6da8-47bc-a881-e91bf32d31b1" valueTypeId="ea9f0d2f-5849-40b8-96f8-fe2aa2bfd275"/>
+    <managerType typeId="51babc1d-3e8e-4e03-b22c-d45e93e31f75" valueTypeId="408e872a-d243-48d4-ab47-09ff8168eb7a"/>
+  </producedTypes>
+  <name>cbr_Б24_Настройки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Битрикс24 настройки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d2a9043c-19f7-4611-a899-cfc8d196fa95">
+    <name>ДанныеАвторизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные авторизации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d8d339af-6681-4b12-917f-1f3103ecc678">
+    <name>ПриоритетСоответствие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет соответствие</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="64d64fd3-30c3-4114-8805-b97922165183">
+    <name>СтатусСоответствие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус соответствие</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

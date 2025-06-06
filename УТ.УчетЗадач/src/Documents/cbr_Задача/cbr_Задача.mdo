@@ -153,7 +153,7 @@
       <value>Приоритет</value>
     </synonym>
     <type>
-      <types>CatalogRef.cbr_Приоритеты</types>
+      <types>EnumRef.cbr_ПриоритетыЗадач</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

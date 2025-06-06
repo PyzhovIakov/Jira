@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c35dcd5-a010-47f8-b34f-b0c4d7349d51">
+  <producedTypes>
+    <objectType typeId="65394e8d-495c-454a-bdb3-c829c48e0dc6" valueTypeId="7788e913-523a-4a2f-ade3-e22878ed54cf"/>
+    <managerType typeId="ffce539b-5acc-4f0f-b6fe-c5694ef846e0" valueTypeId="dc787db5-979c-48aa-88ae-673833c111f2"/>
+  </producedTypes>
+  <name>cbr_НастройкиБитрикс24</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки Битрикс24</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.cbr_НастройкиБитрикс24.Form.Форма</defaultForm>
+  <forms uuid="a8d85c36-e16b-4211-ab53-928247b0d77c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
