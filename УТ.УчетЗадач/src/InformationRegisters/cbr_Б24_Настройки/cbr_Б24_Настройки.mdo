@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f9b003c-acda-41e4-8c57-d0c02530db31">
+  <producedTypes>
+    <selectionType typeId="75daa789-278c-4632-a00c-a12efa24f5d6" valueTypeId="efd6b61c-3ca7-4658-b6d3-292dfb3bef06"/>
+    <listType typeId="ea7d2151-b717-4ac9-830c-68ec5d679ba2" valueTypeId="7450054f-67ae-4348-a00c-c9798b5b386f"/>
+    <managerType typeId="762e5080-9e8f-4e3c-9183-b3a6292ad794" valueTypeId="3936d6e9-e4c1-4473-8d14-fab8040c78d0"/>
+    <recordSetType typeId="da626323-fd27-4ba7-b68f-62496134100b" valueTypeId="2b22a6d3-344b-43c0-a29e-beef9d679697"/>
+    <recordKeyType typeId="e932c294-3386-4235-94c1-6622dd3c6d73" valueTypeId="70fb109b-5186-416d-8a15-51e320be9d68"/>
+    <recordType typeId="a1bfb6e1-5291-4a78-8115-039ed0588758" valueTypeId="41b61282-7a0c-4673-8abc-b20ed20e43d1"/>
+    <recordManagerType typeId="e544703b-0e68-4c15-aa7e-038020e5f408" valueTypeId="b9d77453-1d40-4fce-a389-61bb1aae968e"/>
+  </producedTypes>
+  <name>cbr_Б24_Настройки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Битрикс24 настройки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="64c98ce8-6962-4ce6-8483-23591c59b0f7">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.cbr_ВидыПользовательскихНастроек</types>
+      <types>Boolean</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="92a4ffa3-3e6f-4ef3-b1ec-fcfe2a5ba8c1">
+    <name>ТипНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип настройки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.cbr_Б24_Настройки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="868c53ce-be90-4fd8-96b5-59590f560527">
+    <name>Настройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка</value>
+    </synonym>
+    <type>
+      <types>EnumRef.cbr_ПриоритетыЗадач</types>
+      <types>CatalogRef.cbr_СтатусыЗадач</types>
+      <types>String</types>
+      <types>CatalogRef.cbr_Приоритеты</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

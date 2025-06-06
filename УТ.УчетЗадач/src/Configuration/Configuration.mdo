@@ -47,6 +47,7 @@
   <subsystems>Subsystem.cbr_НСИ_УчетЗадач</subsystems>
   <subsystems>Subsystem.cbr_УчетЗадач</subsystems>
   <subsystems>Subsystem.cbr_Календарь</subsystems>
+  <subsystems>Subsystem.cbr_Битрикс24Интеграция</subsystems>
   <styleItems>StyleItem.cbr_ЦветКалендаряДоступноеВремя</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряВоскресеньеЦвет</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряНеУказанЦвет</styleItems>
@@ -180,6 +181,7 @@
   <enums>Enum.cbr_ПериодОтображенияРабочегоКалендаря</enums>
   <enums>Enum.СпособыУстановкиВремениНапоминания</enums>
   <enums>Enum.cbr_ОтображениеВремениЭлементов</enums>
+  <enums>Enum.cbr_Б24_Настройки</enums>
   <enums>Enum.cbr_ПриоритетыЗадач</enums>
   <reports>Report.cbr_ОтработанныеЧасыСотрудников</reports>
   <reports>Report.cbr_СтатистикаПоЗавершеннымЗадачам</reports>
@@ -191,6 +193,7 @@
   <dataProcessors>DataProcessor.OPI_HTTPКлиент</dataProcessors>
   <dataProcessors>DataProcessor.cbr_АктивацияАккаунтовTelegram</dataProcessors>
   <dataProcessors>DataProcessor.cbr_ВводНачальныхНастроек</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_НастройкиБитрикс24</dataProcessors>
   <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ВопросыПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ДедлайнЗадач</informationRegisters>
@@ -210,6 +213,7 @@
   <informationRegisters>InformationRegister.cbr_Б24_СоответствиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ЗаданияКОтправкеСообщений</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ЦветаПриоритетов</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_Б24_Настройки</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

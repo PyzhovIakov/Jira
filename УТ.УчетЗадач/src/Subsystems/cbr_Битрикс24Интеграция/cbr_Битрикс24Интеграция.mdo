@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9a134e6-eec2-4775-9dba-e3e87e78bfee">
+  <name>cbr_Битрикс24Интеграция</name>
+  <synonym>
+    <key>ru</key>
+    <value>Битрикс24 интеграция</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Enum.cbr_Б24_Настройки</content>
+  <content>DataProcessor.cbr_НастройкиБитрикс24</content>
+  <content>InformationRegister.cbr_Б24_Настройки</content>
+  <content>InformationRegister.cbr_Б24_СоответствиеФайлов</content>
+  <content>InformationRegister.cbr_Б24_СоответствиеЗадач</content>
+</mdclass:Subsystem>
