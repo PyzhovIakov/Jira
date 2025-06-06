@@ -1459,10 +1459,6 @@
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
           <handlers>
-            <event>StartChoice</event>
-            <name>СотрудникНачалоВыбора</name>
-          </handlers>
-          <handlers>
             <event>ChoiceProcessing</event>
             <name>СотрудникОбработкаВыбора</name>
           </handlers>

@@ -1417,10 +1417,6 @@
                 <name>ПланировщикПриСменеТекущегоПериодаОтображения</name>
               </handlers>
               <handlers>
-                <event>OnEditEnd</event>
-                <name>ПланировщикПриОкончанииРедактирования</name>
-              </handlers>
-              <handlers>
                 <event>BeforeDelete</event>
                 <name>ПланировщикПередУдалением</name>
               </handlers>
@@ -3255,8 +3251,7 @@
   <parameters>
     <name>ФизЛицо</name>
     <valueType>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>CatalogRef.Пользователи</types>
     </valueType>
     <keyParameter>true</keyParameter>
   </parameters>
