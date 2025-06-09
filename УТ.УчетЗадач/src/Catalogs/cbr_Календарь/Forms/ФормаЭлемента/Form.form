@@ -149,10 +149,6 @@
               <event>Clearing</event>
               <name>ДатаНачалаВремяОчистка</name>
             </handlers>
-            <handlers>
-              <event>TextEditEnd</event>
-              <name>ДатаНачалаВремяОкончаниеВводаТекста</name>
-            </handlers>
             <width>6</width>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -322,10 +318,6 @@
             <handlers>
               <event>Clearing</event>
               <name>ДатаОкончанияВремяОчистка</name>
-            </handlers>
-            <handlers>
-              <event>TextEditEnd</event>
-              <name>ДатаОкончанияВремяОкончаниеВводаТекста</name>
             </handlers>
             <width>6</width>
             <autoMaxWidth>true</autoMaxWidth>
@@ -810,156 +802,6 @@
           <items xsi:type="form:FormGroup">
             <name>ГруппаЦвета</name>
             <id>226</id>
-            <items xsi:type="form:Button">
-              <name>УстановитьЦветНет</name>
-              <id>228</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>УстановитьЦветНетРасширеннаяПодсказка</name>
-                <id>229</id>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <commandName>Form.Command.УстановитьЦветНет</commandName>
-              <representation>Auto</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <representationInContextMenu>Auto</representationInContextMenu>
-            </items>
-            <items xsi:type="form:Button">
-              <name>УстановитьЦветКрасный</name>
-              <id>230</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>УстановитьЦветКрасныйРасширеннаяПодсказка</name>
-                <id>231</id>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <commandName>Form.Command.УстановитьЦветКрасный</commandName>
-              <representation>Auto</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <representationInContextMenu>Auto</representationInContextMenu>
-            </items>
-            <items xsi:type="form:Button">
-              <name>УстановитьЦветСиний</name>
-              <id>232</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>УстановитьЦветСинийРасширеннаяПодсказка</name>
-                <id>233</id>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <commandName>Form.Command.УстановитьЦветСиний</commandName>
-              <representation>Auto</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <representationInContextMenu>Auto</representationInContextMenu>
-            </items>
-            <items xsi:type="form:Button">
-              <name>УстановитьЦветЖелтый</name>
-              <id>234</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>УстановитьЦветЖелтыйРасширеннаяПодсказка</name>
-                <id>235</id>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <commandName>Form.Command.УстановитьЦветЖелтый</commandName>
-              <representation>Auto</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <representationInContextMenu>Auto</representationInContextMenu>
-            </items>
-            <items xsi:type="form:Button">
-              <name>УстановитьЦветЗеленый</name>
-              <id>236</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>УстановитьЦветЗеленыйРасширеннаяПодсказка</name>
-                <id>237</id>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <commandName>Form.Command.УстановитьЦветЗеленый</commandName>
-              <representation>Auto</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <representationInContextMenu>Auto</representationInContextMenu>
-            </items>
-            <items xsi:type="form:Button">
-              <name>УстановитьЦветОранжевый</name>
-              <id>238</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>УстановитьЦветОранжевыйРасширеннаяПодсказка</name>
-                <id>239</id>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <commandName>Form.Command.УстановитьЦветОранжевый</commandName>
-              <representation>Auto</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <representationInContextMenu>Auto</representationInContextMenu>
-            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1019,174 +861,6 @@
         <items xsi:type="form:FormGroup">
           <name>МК_ГруппаЦвета</name>
           <id>383</id>
-          <items xsi:type="form:Button">
-            <name>МК_УстановитьЦветНет</name>
-            <id>385</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>МК_УстановитьЦветНетРасширеннаяПодсказка</name>
-              <id>386</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <type>UsualButton</type>
-            <commandName>Form.Command.УстановитьЦветНет</commandName>
-            <representation>Picture</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <height>1</height>
-            <horizontalStretch>true</horizontalStretch>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
-            <shape>Oval</shape>
-          </items>
-          <items xsi:type="form:Button">
-            <name>МК_УстановитьЦветКрасный</name>
-            <id>387</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>МК_УстановитьЦветКрасныйРасширеннаяПодсказка</name>
-              <id>388</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <type>UsualButton</type>
-            <commandName>Form.Command.УстановитьЦветКрасный</commandName>
-            <representation>Picture</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <height>1</height>
-            <horizontalStretch>true</horizontalStretch>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
-            <shape>Oval</shape>
-          </items>
-          <items xsi:type="form:Button">
-            <name>МК_УстановитьЦветСиний</name>
-            <id>389</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>МК_УстановитьЦветСинийРасширеннаяПодсказка</name>
-              <id>390</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <type>UsualButton</type>
-            <commandName>Form.Command.УстановитьЦветСиний</commandName>
-            <representation>Picture</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <height>1</height>
-            <horizontalStretch>true</horizontalStretch>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
-            <shape>Oval</shape>
-          </items>
-          <items xsi:type="form:Button">
-            <name>МК_УстановитьЦветЖелтый</name>
-            <id>391</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>МК_УстановитьЦветЖелтыйРасширеннаяПодсказка</name>
-              <id>392</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <type>UsualButton</type>
-            <commandName>Form.Command.УстановитьЦветЖелтый</commandName>
-            <representation>Picture</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <height>1</height>
-            <horizontalStretch>true</horizontalStretch>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
-            <shape>Oval</shape>
-          </items>
-          <items xsi:type="form:Button">
-            <name>МК_УстановитьЦветЗеленый</name>
-            <id>393</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>МК_УстановитьЦветЗеленыйРасширеннаяПодсказка</name>
-              <id>394</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <type>UsualButton</type>
-            <commandName>Form.Command.УстановитьЦветЗеленый</commandName>
-            <representation>Picture</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <height>1</height>
-            <horizontalStretch>true</horizontalStretch>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
-            <shape>Oval</shape>
-          </items>
-          <items xsi:type="form:Button">
-            <name>МК_УстановитьЦветОранжевый</name>
-            <id>395</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>МК_УстановитьЦветОранжевыйРасширеннаяПодсказка</name>
-              <id>396</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <type>UsualButton</type>
-            <commandName>Form.Command.УстановитьЦветОранжевый</commandName>
-            <representation>Picture</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <height>1</height>
-            <horizontalStretch>true</horizontalStretch>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
-            <shape>Oval</shape>
-          </items>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
@@ -1357,10 +1031,6 @@
             <segments>ИнтервалВремениСтрокой</segments>
           </dataPath>
           <titleLocation>None</titleLocation>
-          <handlers>
-            <event>OnChange</event>
-            <name>ИнтервалВремениСтрокойПриИзменении</name>
-          </handlers>
           <extendedTooltip>
             <name>ИнтервалВремениСтрокойРасширеннаяПодсказка</name>
             <id>247</id>
@@ -1496,7 +1166,7 @@
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
           <picture xsi:type="core:PictureRef">
-            <picture>CommonPicture.План</picture>
+            <picture>CommonPicture.cbr_План</picture>
           </picture>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
@@ -1526,7 +1196,7 @@
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
           <picture xsi:type="core:PictureRef">
-            <picture>CommonPicture.Старт</picture>
+            <picture>CommonPicture.cbr_Старт</picture>
           </picture>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
@@ -1556,7 +1226,7 @@
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
           <picture xsi:type="core:PictureRef">
-            <picture>CommonPicture.Стоп</picture>
+            <picture>CommonPicture.cbr_Стоп</picture>
           </picture>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
@@ -1788,10 +1458,6 @@
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
-          <handlers>
-            <event>StartChoice</event>
-            <name>СотрудникНачалоВыбора</name>
-          </handlers>
           <handlers>
             <event>ChoiceProcessing</event>
             <name>СотрудникОбработкаВыбора</name>
@@ -2089,36 +1755,8 @@
           <horizontalAlign>Left</horizontalAlign>
         </autoCommandBar>
         <handlers>
-          <event>DragCheck</event>
-          <name>ПланДняПроверкаПеретаскивания</name>
-        </handlers>
-        <handlers>
           <event>Selection</event>
           <name>ПланДняВыбор</name>
-        </handlers>
-        <handlers>
-          <event>BeforeAddRow</event>
-          <name>ПланДняПередНачаломДобавления</name>
-        </handlers>
-        <handlers>
-          <event>BeforeDeleteRow</event>
-          <name>ПланДняПередУдалением</name>
-        </handlers>
-        <handlers>
-          <event>OnActivateRow</event>
-          <name>ПланДняПриАктивизацииСтроки</name>
-        </handlers>
-        <handlers>
-          <event>DragStart</event>
-          <name>ПланДняНачалоПеретаскивания</name>
-        </handlers>
-        <handlers>
-          <event>Drag</event>
-          <name>ПланДняПеретаскивание</name>
-        </handlers>
-        <handlers>
-          <event>BeforeRowChange</event>
-          <name>ПланДняПередНачаломИзменения</name>
         </handlers>
         <searchStringAddition>
           <name>ПланДняСтрокаПоиска</name>
@@ -2258,162 +1896,12 @@
             <placementArea>UserCmds</placementArea>
             <representationInContextMenu>Auto</representationInContextMenu>
           </items>
-          <items xsi:type="form:Button">
-            <name>ПланДняКонтекстноеМенюОтработать</name>
-            <id>289</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>ПланДняКонтекстноеМенюОтработатьРасширеннаяПодсказка</name>
-              <id>290</id>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <commandName>Form.Command.ОтработатьПланДня</commandName>
-            <representation>Auto</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
-          </items>
           <items xsi:type="form:FormGroup">
             <name>ПланДняКонтекстноеМенюГруппаУстановитьЦвет</name>
             <id>291</id>
             <items xsi:type="form:FormGroup">
               <name>ПланДняКонтекстноеМенюГруппаЦвет</name>
               <id>293</id>
-              <items xsi:type="form:Button">
-                <name>ПланДняКонтекстноеМенюУстановитьЦветКрасный</name>
-                <id>295</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ПланДняКонтекстноеМенюУстановитьЦветКрасныйExtendedTooltip</name>
-                  <id>296</id>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <commandName>Form.Command.УстановитьЦветКрасныйКалендарь</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-              </items>
-              <items xsi:type="form:Button">
-                <name>ПланДняКонтекстноеМенюУстановитьЦветСиний</name>
-                <id>297</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ПланДняКонтекстноеМенюУстановитьЦветСинийExtendedTooltip</name>
-                  <id>298</id>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <commandName>Form.Command.УстановитьЦветСинийКалендарь</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-              </items>
-              <items xsi:type="form:Button">
-                <name>ПланДняКонтекстноеМенюУстановитьЦветЖелтый</name>
-                <id>299</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ПланДняКонтекстноеМенюУстановитьЦветЖелтыйExtendedTooltip</name>
-                  <id>300</id>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <commandName>Form.Command.УстановитьЦветЖелтыйКалендарь</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-              </items>
-              <items xsi:type="form:Button">
-                <name>ПланДняКонтекстноеМенюУстановитьЦветЗеленый</name>
-                <id>301</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ПланДняКонтекстноеМенюУстановитьЦветЗеленыйExtendedTooltip</name>
-                  <id>302</id>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <commandName>Form.Command.УстановитьЦветЗеленыйКалендарь</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-              </items>
-              <items xsi:type="form:Button">
-                <name>ПланДняКонтекстноеМенюУстановитьЦветОранжевый</name>
-                <id>303</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ПланДняКонтекстноеМенюУстановитьЦветОранжевыйExtendedTooltip</name>
-                  <id>304</id>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <commandName>Form.Command.УстановитьЦветОранжевыйКалендарь</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-              </items>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2438,31 +1926,6 @@
                 </extInfo>
               </extendedTooltip>
               <extInfo xsi:type="form:ButtonGroupExtInfo"/>
-            </items>
-            <items xsi:type="form:Button">
-              <name>ПланДняКонтекстноеМенюУстановитьЦветНет</name>
-              <id>305</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>ПланДняКонтекстноеМенюУстановитьЦветНетExtendedTooltip</name>
-                <id>306</id>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <commandName>Form.Command.УстановитьЦветНетКалендарь</commandName>
-              <representation>Auto</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -2607,189 +2070,9 @@
           <items xsi:type="form:FormGroup">
             <name>ПланировщикКонтекстноеМенюКомандыЭлемента</name>
             <id>314</id>
-            <items xsi:type="form:Button">
-              <name>ПланировщикКонтекстноеМенюОтработать</name>
-              <id>316</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>ПланировщикКонтекстноеМенюОтработатьРасширеннаяПодсказка</name>
-                <id>317</id>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <commandName>Form.Command.ОтработатьПланировщик</commandName>
-              <representation>Auto</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <representationInContextMenu>Auto</representationInContextMenu>
-            </items>
             <items xsi:type="form:FormGroup">
               <name>ПланировщикКонтекстноеМенюГруппаЦвет</name>
               <id>318</id>
-              <items xsi:type="form:Button">
-                <name>ПланировщикУстановитьЦветКрасный</name>
-                <id>320</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ПланировщикУстановитьЦветКрасныйРасширеннаяПодсказка</name>
-                  <id>321</id>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <commandName>Form.Command.УстановитьЦветКрасныйКалендарь</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-                <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
-              </items>
-              <items xsi:type="form:Button">
-                <name>ПланировщикУстановитьЦветСиний</name>
-                <id>322</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ПланировщикУстановитьЦветСинийРасширеннаяПодсказка</name>
-                  <id>323</id>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <commandName>Form.Command.УстановитьЦветСинийКалендарь</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-                <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
-              </items>
-              <items xsi:type="form:Button">
-                <name>ПланировщикУстановитьЦветЖелтый</name>
-                <id>324</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ПланировщикУстановитьЦветЖелтыйРасширеннаяПодсказка</name>
-                  <id>325</id>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <commandName>Form.Command.УстановитьЦветЖелтыйКалендарь</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-                <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
-              </items>
-              <items xsi:type="form:Button">
-                <name>ПланировщикУстановитьЦветЗеленый</name>
-                <id>326</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ПланировщикУстановитьЦветЗеленыйРасширеннаяПодсказка</name>
-                  <id>327</id>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <commandName>Form.Command.УстановитьЦветЗеленыйКалендарь</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-                <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
-              </items>
-              <items xsi:type="form:Button">
-                <name>ПланировщикУстановитьЦветОранжевый</name>
-                <id>328</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ПланировщикУстановитьЦветОранжевыйРасширеннаяПодсказка</name>
-                  <id>329</id>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <commandName>Form.Command.УстановитьЦветОранжевыйКалендарь</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-                <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
-              </items>
-              <items xsi:type="form:Button">
-                <name>ПланировщикУстановитьЦветНет</name>
-                <id>330</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ПланировщикУстановитьЦветНетРасширеннаяПодсказка</name>
-                  <id>331</id>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <commandName>Form.Command.УстановитьЦветНетКалендарь</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-              </items>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2893,10 +2176,6 @@
             <name>ПланировщикПередУдалением</name>
           </handlers>
           <handlers>
-            <event>BeforeStartEdit</event>
-            <name>ПланировщикПередНачаломРедактирования</name>
-          </handlers>
-          <handlers>
             <event>BeforeStartQuickEdit</event>
             <name>ПланировщикПередНачаломБыстрогоРедактирования</name>
           </handlers>
@@ -2976,70 +2255,6 @@
   <items xsi:type="form:FormGroup">
     <name>МК_ГруппаЗаголовокСтраниц</name>
     <id>367</id>
-    <items xsi:type="form:Button">
-      <name>МК_Основное</name>
-      <id>361</id>
-      <title>
-        <key>ru</key>
-        <value>Основное</value>
-      </title>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>МК_ОсновноеРасширеннаяПодсказка</name>
-        <id>362</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <type>UsualButton</type>
-      <commandName>Form.Command.МК_ТекущаяСтраница</commandName>
-      <representation>Auto</representation>
-      <width>10</width>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <representationInContextMenu>Auto</representationInContextMenu>
-      <shape>Oval</shape>
-    </items>
-    <items xsi:type="form:Button">
-      <name>МК_Календарь</name>
-      <id>365</id>
-      <title>
-        <key>ru</key>
-        <value>Календарь</value>
-      </title>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>МК_КалендарьРасширеннаяПодсказка</name>
-        <id>366</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <type>UsualButton</type>
-      <commandName>Form.Command.МК_ТекущаяСтраница</commandName>
-      <representation>Auto</representation>
-      <width>10</width>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <representationInContextMenu>Auto</representationInContextMenu>
-      <shape>Oval</shape>
-    </items>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
@@ -3395,7 +2610,6 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <commandName>Catalog.cbr_Календарь.Command.ПечатьЗаписиКалендаря</commandName>
         <representation>Picture</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -3521,14 +2735,6 @@
   <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
-  </handlers>
-  <handlers>
-    <event>OnChangeDisplaySettings</event>
-    <name>ПриИзмененииПараметровЭкрана</name>
-  </handlers>
-  <handlers>
-    <event>OnClose</event>
-    <name>ПриЗакрытии</name>
   </handlers>
   <excludedCommands>Delete</excludedCommands>
   <excludedCommands>SetDeletionMark</excludedCommands>
@@ -4639,321 +3845,6 @@
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>ПраваДоступа</name>
-    <title>
-      <key>ru</key>
-      <value>Права доступа</value>
-    </title>
-    <id>5</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Права доступа</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ПраваДоступа</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьЦветЖелтый</name>
-    <title>
-      <key>ru</key>
-      <value>Желтый</value>
-    </title>
-    <id>6</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Установить желтый цвет записи</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьЦветЖелтый</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьЦветЗеленый</name>
-    <title>
-      <key>ru</key>
-      <value>Зеленый</value>
-    </title>
-    <id>7</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Установить зеленый цвет записи</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьЦветЗеленый</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьЦветКрасный</name>
-    <title>
-      <key>ru</key>
-      <value>Красный</value>
-    </title>
-    <id>8</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Установить красный цвет записи</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьЦветКрасный</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьЦветНет</name>
-    <title>
-      <key>ru</key>
-      <value>Нет</value>
-    </title>
-    <id>9</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Очистить цвет записи</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьЦветНет</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьЦветОранжевый</name>
-    <title>
-      <key>ru</key>
-      <value>Оранжевый</value>
-    </title>
-    <id>10</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Установить оранжевый цвет записи</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьЦветОранжевый</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьЦветСиний</name>
-    <title>
-      <key>ru</key>
-      <value>Синий</value>
-    </title>
-    <id>11</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Установить синий цвет записи</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьЦветСиний</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ОтработатьПланировщик</name>
-    <title>
-      <key>ru</key>
-      <value>Отработано</value>
-    </title>
-    <id>12</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Отработать</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ОтработатьПланировщик</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьЦветЖелтыйКалендарь</name>
-    <title>
-      <key>ru</key>
-      <value>Желтый</value>
-    </title>
-    <id>13</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Установить желтый цвет записи</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьЦветЖелтыйКалендарь</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьЦветЗеленыйКалендарь</name>
-    <title>
-      <key>ru</key>
-      <value>Зеленый</value>
-    </title>
-    <id>14</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Установить зеленый цвет записи</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьЦветЗеленыйКалендарь</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьЦветКрасныйКалендарь</name>
-    <title>
-      <key>ru</key>
-      <value>Красный</value>
-    </title>
-    <id>15</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Установить красный цвет записи</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьЦветКрасныйКалендарь</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьЦветНетКалендарь</name>
-    <title>
-      <key>ru</key>
-      <value>Нет</value>
-    </title>
-    <id>16</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Очистить цвет записи</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьЦветНетКалендарь</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьЦветОранжевыйКалендарь</name>
-    <title>
-      <key>ru</key>
-      <value>Оранжевый</value>
-    </title>
-    <id>17</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Установить оранжевый цвет записи</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьЦветОранжевыйКалендарь</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>УстановитьЦветСинийКалендарь</name>
-    <title>
-      <key>ru</key>
-      <value>Синий</value>
-    </title>
-    <id>18</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Установить синий цвет записи</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>УстановитьЦветСинийКалендарь</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ОтработатьПланДня</name>
-    <title>
-      <key>ru</key>
-      <value>Отработано</value>
-    </title>
-    <id>19</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Отработать</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ОтработатьПланДня</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
     <name>ПоказатьКалендарь</name>
     <title>
       <key>ru</key>
@@ -4973,19 +3864,6 @@
       </handler>
     </action>
     <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>МК_ТекущаяСтраница</name>
-    <id>22</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>МК_ТекущаяСтраница</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
     <name>СостояниеВработе</name>
@@ -5096,16 +3974,8 @@
       <name>ПослеЗаписи</name>
     </handlers>
     <handlers>
-      <event>AfterWriteAtServer</event>
-      <name>ПослеЗаписиНаСервере</name>
-    </handlers>
-    <handlers>
       <event>OnReadAtServer</event>
       <name>ПриЧтенииНаСервере</name>
-    </handlers>
-    <handlers>
-      <event>BeforeWrite</event>
-      <name>ПередЗаписью</name>
     </handlers>
     <handlers>
       <event>BeforeWriteAtServer</event>

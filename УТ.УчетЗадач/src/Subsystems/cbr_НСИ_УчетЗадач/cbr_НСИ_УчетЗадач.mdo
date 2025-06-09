@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6bfdbba1-0a68-417c-846c-b110a057b638">
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6bfdbba1-0a68-417c-846c-b110a057b638">
   <name>cbr_НСИ_УчетЗадач</name>
   <synonym>
     <key>ru</key>
@@ -7,6 +7,9 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.cbr_НСИ_УчетЗадач</picture>
+  </picture>
   <content>Catalog.Пользователи</content>
   <content>Catalog.cbr_ВидыЗадач</content>
   <content>Catalog.cbr_ГруппыДоступаКЗадачам</content>
@@ -38,4 +41,26 @@
   <content>Catalog.cbr_Цвета</content>
   <content>Catalog.cbr_ПричиныЗакрытияЗадач</content>
   <content>InformationRegister.cbr_ЦветаПриоритетов</content>
+  <content>DataProcessor.cbr_ВводНачальныхНастроек</content>
+  <content>Report.cbr_ОтработанныеЧасыСотрудников</content>
+  <content>Report.cbr_СтатистикаПоЗавершеннымЗадачам</content>
+  <content>Report.cbr_СтатистикаОтклоненияЗадач</content>
+  <content>Report.cbr_СтатистикаПереносовДедлайнов</content>
+  <content>Catalog.cbr_КалендарьОписание</content>
+  <content>Enum.cbr_ВидыВопросов</content>
+  <content>Enum.cbr_ЕдиницыИзмеренийВремени</content>
+  <content>Enum.cbr_ПодпискаДляТриггера</content>
+  <content>Enum.cbr_ПредставленияВидовЗадачПоПостановщику</content>
+  <content>Enum.cbr_ТипОценкиЧасов</content>
+  <content>Enum.cbr_СостояниеЗаписиРабочегоКалендаря</content>
+  <content>Enum.cbr_НастройкиЗаписейРабочегоКалендаря</content>
+  <content>Enum.cbr_ТипЗаписиКалендаря</content>
+  <content>Enum.cbr_ПериодОтображенияРабочегоКалендаря</content>
+  <content>Enum.cbr_ОтображениеВремениЭлементов</content>
+  <content>Enum.cbr_ПриоритетыЗадач</content>
+  <content>DataProcessor.cbr_АктивацияАккаунтовTelegram</content>
+  <content>InformationRegister.cbr_СоответствиеПользователейДляИнтеграций</content>
+  <content>InformationRegister.cbr_Б24_СоответствиеФайлов</content>
+  <content>InformationRegister.cbr_Б24_СоответствиеЗадач</content>
+  <content>InformationRegister.cbr_ЗаданияКОтправкеСообщений</content>
 </mdclass:Subsystem>

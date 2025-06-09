@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
   width: 450px;
   border-radius: 10px;
   justify-content: center;
-  border: 1px solid #a4a4a4; 	
+  box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 5px;
 }
 
@@ -62,7 +62,6 @@ body::-webkit-scrollbar-thumb {
 	box-sizing: border-box; 
 	margin: 5px; 
 	border: 1px solid #cccccc;
-	box-shadow: 0 1px 0 1px #cccccc; 
 	border-radius: 10px;
 	 -moz-appearance: none;
 	 -webkit-appearance: none;
@@ -110,9 +109,13 @@ body::-webkit-scrollbar-thumb {
 	margin:5px;
 	border-radius: 10px;
     padding: 5px;
+    background-color: #fff;
+    transition: all 0.3s;
+     box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .box-button:hover{
-	background-color: #cccccc;
+	background-color: #cccccc;	 
+  	transform: translateY(-2px);
 }
  /* Стили для Колонки */
  
@@ -142,6 +145,7 @@ body::-webkit-scrollbar-thumb {
 	margin:5px;
 	border-radius: 10px;
     padding: 5px;
+    transition: all 0.3s;
 }
 .column-button:hover{
 	background-color: #cccccc;
@@ -151,7 +155,7 @@ body::-webkit-scrollbar-thumb {
 	display: flex;
     flex-direction: column;
     background-color: #fff;    
-    border-radius: 10px;
+	border-radius: 10px;
     padding: 10px;
     margin: 2px;
     height:89vh;
@@ -191,6 +195,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
     color: #000;
     border:1px #cccccc solid; 
+    transition: all 0.3s;
 }
  .task-box:hover{
     border-radius: 5px;

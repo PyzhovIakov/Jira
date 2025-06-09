@@ -9,7 +9,34 @@
   </producedTypes>
   <name>Пользователи</name>
   <objectBelonging>Adopted</objectBelonging>
-  <extension xsi:type="mdclassExtension:CatalogExtension"/>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <descriptionLength>Checked</descriptionLength>
+  </extension>
+  <descriptionLength>100</descriptionLength>
+  <attributes uuid="fd8bb800-b44e-4a19-bf03-bb155993ce40">
+    <name>ФизическоеЛицо</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>DefinedType.ФизическоеЛицо</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+  <attributes uuid="a80015eb-910e-4d32-aa2f-9cc32b7279f6">
+    <name>Подразделение</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>DefinedType.Подразделение</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
   <forms uuid="5f10b0a7-1449-4200-bcd0-abcd178197b5">
     <name>cbr_ФормаВыбора</name>
     <synonym>

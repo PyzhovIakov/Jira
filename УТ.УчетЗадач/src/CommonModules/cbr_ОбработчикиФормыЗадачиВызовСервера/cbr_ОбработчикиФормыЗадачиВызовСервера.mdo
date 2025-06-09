@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d19aa8d-0fba-4465-8966-7e455457b68c">
+  <name>cbr_ОбработчикиФормыЗадачиВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Cbr обработчики формы задачи вызов сервера</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

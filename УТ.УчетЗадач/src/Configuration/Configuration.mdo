@@ -47,6 +47,7 @@
   <subsystems>Subsystem.cbr_НСИ_УчетЗадач</subsystems>
   <subsystems>Subsystem.cbr_УчетЗадач</subsystems>
   <subsystems>Subsystem.cbr_Календарь</subsystems>
+  <subsystems>Subsystem.cbr_Битрикс24Интеграция</subsystems>
   <styleItems>StyleItem.cbr_ЦветКалендаряДоступноеВремя</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряВоскресеньеЦвет</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряНеУказанЦвет</styleItems>
@@ -83,14 +84,16 @@
   <commonPictures>CommonPicture.cbr_ПриоритетВысокий</commonPictures>
   <commonPictures>CommonPicture.cbr_ПриоритетОбычный</commonPictures>
   <commonPictures>CommonPicture.cbr_ПриоритетНизкий</commonPictures>
-  <commonPictures>CommonPicture.Старт</commonPictures>
-  <commonPictures>CommonPicture.Стоп</commonPictures>
-  <commonPictures>CommonPicture.План</commonPictures>
+  <commonPictures>CommonPicture.cbr_Старт</commonPictures>
+  <commonPictures>CommonPicture.cbr_Стоп</commonPictures>
+  <commonPictures>CommonPicture.cbr_План</commonPictures>
+  <commonPictures>CommonPicture.cbr_КалендарьПодсистема</commonPictures>
+  <commonPictures>CommonPicture.cbr_НСИ_УчетЗадач</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.OPI_Telegram</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</commonModules>
-  <commonModules>CommonModule.cbr_ОбработчикиФормыЗадачиСервер</commonModules>
+  <commonModules>CommonModule.cbr_ОбработчикиФормыЗадачиВызовСервера</commonModules>
   <commonModules>CommonModule.cbr_УведомленияПользователей</commonModules>
   <commonModules>CommonModule.cbr_ЭлементыФормы</commonModules>
   <commonModules>CommonModule.РаботаСФайламиКлиентСервер</commonModules>
@@ -99,7 +102,6 @@
   <commonModules>CommonModule.cbr_КалендарьКлиент</commonModules>
   <commonModules>CommonModule.cbr_КаленарьКлиентСервер</commonModules>
   <commonModules>CommonModule.cbr_КалендарьСервер</commonModules>
-  <commonModules>CommonModule.cbr_Сотрудники</commonModules>
   <commonModules>CommonModule.OPI_Bitrix24</commonModules>
   <commonModules>CommonModule.OPI_Компоненты</commonModules>
   <commonModules>CommonModule.OPI_ЗапросыHTTP</commonModules>
@@ -122,6 +124,8 @@
   <definedTypes>DefinedType.ПредметНапоминания</definedTypes>
   <definedTypes>DefinedType.ПрисоединенныйФайл</definedTypes>
   <definedTypes>DefinedType.ПрисоединенныйФайлОбъект</definedTypes>
+  <definedTypes>DefinedType.ФизическоеЛицо</definedTypes>
+  <definedTypes>DefinedType.Подразделение</definedTypes>
   <commonCommands>CommonCommand.ПрисоединенныеФайлы</commonCommands>
   <commandGroups>CommandGroup.cbr_Документы</commandGroups>
   <commandGroups>CommandGroup.cbr_Справочники</commandGroups>
@@ -132,7 +136,7 @@
   <constants>Constant.cbr_Токен_БотТелеграм</constants>
   <constants>Constant.cbr_ПоследнееСообщениеТелеграмИД</constants>
   <commonForms>CommonForm.cbr_ФормаОтветаНаВопросПоЗадаче</commonForms>
-  <commonForms>CommonForm.cbr_ФормаСпискаВопросовПоЗадаче</commonForms>
+  <commonForms>CommonForm.cbr_ФормаВопросаПоЗадаче</commonForms>
   <commonForms>CommonForm.cbr_ИерархияЗадачОбщая</commonForms>
   <commonForms>CommonForm.cbr_КомментарииЗадач</commonForms>
   <commonForms>CommonForm.cbr_ФормаВыбораЦвета</commonForms>
@@ -160,6 +164,7 @@
   <catalogs>Catalog.СтруктураПредприятия</catalogs>
   <catalogs>Catalog.cbr_ПричиныЗакрытияЗадач</catalogs>
   <catalogs>Catalog.cbr_КалендарьОписание</catalogs>
+  <catalogs>Catalog.ФизическиеЛица</catalogs>
   <documents>Document.cbr_Задача</documents>
   <documents>Document.cbr_ТрудозатратыПоЗадаче</documents>
   <enums>Enum.cbr_ВидыВопросов</enums>
@@ -175,13 +180,19 @@
   <enums>Enum.cbr_ПериодОтображенияРабочегоКалендаря</enums>
   <enums>Enum.СпособыУстановкиВремениНапоминания</enums>
   <enums>Enum.cbr_ОтображениеВремениЭлементов</enums>
+  <enums>Enum.cbr_Б24_Настройки</enums>
   <enums>Enum.cbr_ПриоритетыЗадач</enums>
+  <reports>Report.cbr_ОтработанныеЧасыСотрудников</reports>
+  <reports>Report.cbr_СтатистикаПоЗавершеннымЗадачам</reports>
+  <reports>Report.cbr_СтатистикаОтклоненияЗадач</reports>
+  <reports>Report.cbr_СтатистикаПереносовДедлайнов</reports>
   <dataProcessors>DataProcessor.cbr_Канбан</dataProcessors>
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_КанбанВеб</dataProcessors>
-  <dataProcessors>DataProcessor.ТестБитрикс</dataProcessors>
   <dataProcessors>DataProcessor.OPI_HTTPКлиент</dataProcessors>
   <dataProcessors>DataProcessor.cbr_АктивацияАккаунтовTelegram</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_ВводНачальныхНастроек</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_НастройкиБитрикс24</dataProcessors>
   <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ВопросыПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ДедлайнЗадач</informationRegisters>
@@ -201,6 +212,7 @@
   <informationRegisters>InformationRegister.cbr_Б24_СоответствиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ЗаданияКОтправкеСообщений</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ЦветаПриоритетов</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_Б24_Настройки</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

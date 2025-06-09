@@ -408,12 +408,29 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ВозможноЗакрыть</name>
+    <name>СобытияЗавершены</name>
     <title>
       <key>ru</key>
-      <value>Возможно закрыть</value>
+      <value>События завершены</value>
     </title>
     <id>10</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НеСогласовано</name>
+    <title>
+      <key>ru</key>
+      <value>Не согласовано</value>
+    </title>
+    <id>11</id>
     <valueType>
       <types>Boolean</types>
     </valueType>

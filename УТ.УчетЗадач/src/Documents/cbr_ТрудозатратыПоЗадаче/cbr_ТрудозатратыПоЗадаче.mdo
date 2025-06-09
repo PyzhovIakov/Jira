@@ -12,7 +12,7 @@
     <key>ru</key>
     <value>Трудозатраты по задаче</value>
   </synonym>
-  <comment>Трудозатраты по задаче</comment>
+  <comment>Документ устанавливующий трудозатраты по задачам сотрудников</comment>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.cbr_ТрудозатратыПоЗадаче.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
@@ -127,6 +127,21 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="16ea36d8-53f3-47e5-af9c-c335466097d2">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
