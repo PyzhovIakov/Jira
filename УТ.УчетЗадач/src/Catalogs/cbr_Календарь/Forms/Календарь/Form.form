@@ -446,32 +446,6 @@
       <name>ГруппаКоманднаяПанель</name>
       <id>352</id>
       <items xsi:type="form:Button">
-        <name>ФормаСоздатьЗанятость</name>
-        <id>444</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ФормаСоздатьЗанятостьРасширеннаяПодсказка</name>
-          <id>445</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <commandName>Form.Command.СоздатьЗанятость</commandName>
-        <representation>Auto</representation>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
-        <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
-      </items>
-      <items xsi:type="form:Button">
         <name>ФормаОбновитьКалендарь</name>
         <id>19</id>
         <visible>true</visible>
@@ -1110,31 +1084,6 @@
                   </extInfo>
                 </extendedTooltip>
                 <commandName>Form.Item.ПланДня.StandardCommand.Delete</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-              </items>
-              <items xsi:type="form:Button">
-                <name>ПланДняКонтекстноеМенюОтработать</name>
-                <id>515</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>ПланДняКонтекстноеМенюОтработатьРасширеннаяПодсказка</name>
-                  <id>516</id>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <commandName>Form.Command.ОтработатьПланДня</commandName>
                 <representation>Auto</representation>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3162,48 +3111,6 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>СкрытьЛегенду</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>СоздатьЗанятость</name>
-    <title>
-      <key>ru</key>
-      <value>Создать занятость</value>
-    </title>
-    <id>8</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Пометить время как доступное / недоступное / под вопросом</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>СоздатьЗанятость</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ОтработатьПланДня</name>
-    <title>
-      <key>ru</key>
-      <value>Отработано</value>
-    </title>
-    <id>16</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Отработать</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ОтработатьПланДня</name>
       </handler>
     </action>
     <currentRowUse>DontUse</currentRowUse>
