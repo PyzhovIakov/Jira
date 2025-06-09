@@ -53,19 +53,18 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <dimensions uuid="868c53ce-be90-4fd8-96b5-59590f560527">
+  <dimensions uuid="df1f76ff-3630-4e97-bb46-e550c1934d16">
     <name>Настройка</name>
     <synonym>
       <key>ru</key>
       <value>Настройка</value>
     </synonym>
     <type>
-      <types>EnumRef.cbr_ПриоритетыЗадач</types>
       <types>CatalogRef.cbr_СтатусыЗадач</types>
+      <types>EnumRef.cbr_ПриоритетыЗадач</types>
       <types>String</types>
-      <types>CatalogRef.cbr_Приоритеты</types>
       <stringQualifiers>
-        <length>50</length>
+        <length>10</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
