@@ -102,7 +102,6 @@
   <commonModules>CommonModule.cbr_КалендарьКлиент</commonModules>
   <commonModules>CommonModule.cbr_КаленарьКлиентСервер</commonModules>
   <commonModules>CommonModule.cbr_КалендарьСервер</commonModules>
-  <commonModules>CommonModule.cbr_Сотрудники</commonModules>
   <commonModules>CommonModule.OPI_Bitrix24</commonModules>
   <commonModules>CommonModule.OPI_Компоненты</commonModules>
   <commonModules>CommonModule.OPI_ЗапросыHTTP</commonModules>
