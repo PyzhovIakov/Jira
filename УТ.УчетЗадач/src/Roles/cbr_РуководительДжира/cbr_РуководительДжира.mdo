@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="643c0ccf-db20-4fec-acbc-02a2bc58d2b6">
+  <name>cbr_РуководительДжира</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рукководитель (Джира)</value>
+  </synonym>
+</mdclass:Role>

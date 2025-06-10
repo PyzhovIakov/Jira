@@ -90,6 +90,8 @@
   <commonPictures>CommonPicture.cbr_КалендарьПодсистема</commonPictures>
   <commonPictures>CommonPicture.cbr_НСИ_УчетЗадач</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
+  <roles>Role.cbr_СотрудникДжира</roles>
+  <roles>Role.cbr_РуководительДжира</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.OPI_Telegram</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</commonModules>
