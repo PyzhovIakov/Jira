@@ -1045,13 +1045,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.cbr_ЦветаПриоритетов</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.cbr_Цвета</name>
 		<right>
 			<name>Read</name>

@@ -213,7 +213,6 @@
   <informationRegisters>InformationRegister.cbr_Б24_СоответствиеЗадач</informationRegisters>
   <informationRegisters>InformationRegister.cbr_Б24_СоответствиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ЗаданияКОтправкеСообщений</informationRegisters>
-  <informationRegisters>InformationRegister.cbr_ЦветаПриоритетов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_Б24_Настройки</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>

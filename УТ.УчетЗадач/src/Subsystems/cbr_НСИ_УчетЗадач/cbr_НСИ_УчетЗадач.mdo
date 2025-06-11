@@ -43,7 +43,6 @@
   <content>Catalog.cbr_Роли</content>
   <content>Catalog.cbr_Цвета</content>
   <content>Catalog.cbr_ПричиныЗакрытияЗадач</content>
-  <content>InformationRegister.cbr_ЦветаПриоритетов</content>
   <content>DataProcessor.cbr_ВводНачальныхНастроек</content>
   <content>Report.cbr_ОтработанныеЧасыСотрудников</content>
   <content>Report.cbr_СтатистикаПоЗавершеннымЗадачам</content>
