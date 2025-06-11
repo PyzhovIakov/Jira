@@ -89,7 +89,7 @@
       <id>50</id>
       <title>
         <key>ru</key>
-        <value>Длительность (сек)</value>
+        <value>Длительность (часов)</value>
       </title>
       <visible>true</visible>
       <enabled>true</enabled>
