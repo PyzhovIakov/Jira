@@ -45,7 +45,6 @@
       <commands>InformationRegister.cbr_СвязанныеЗадачи.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_СтатусыЗадач.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_СобытияПоЗадачам.StandardCommand.OpenList</commands>
-      <commands>InformationRegister.cbr_ЦветаПриоритетов.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_Б24_СоответствиеЗадач.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_Б24_СоответствиеФайлов.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_ЗаданияКОтправкеСообщений.StandardCommand.OpenList</commands>
@@ -97,7 +96,6 @@
       <commands>InformationRegister.cbr_СвязанныеЗадачи.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_СоответствиеПользователейДляИнтеграций.StandardCommand.OpenList</commands>
       <commands>InformationRegister.cbr_СтатусыЗадач.StandardCommand.OpenList</commands>
-      <commands>InformationRegister.cbr_ЦветаПриоритетов.StandardCommand.OpenList</commands>
     </orderFragments>
     <orderFragments>
       <group>CommandGroup.cbr_Формы</group>

@@ -33,16 +33,73 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задача</dataPath>
+			<field>Задача</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипОценки</dataPath>
+			<field>ТипОценки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>От</dataPath>
+			<field>От</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>До</dataPath>
+			<field>До</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
+	Пользователи.Подразделение КАК Подразделение,
 	cbr_ЧасыТрудозатратОбороты.Исполнитель КАК Исполнитель,
-	cbr_ЧасыТрудозатратОбороты.ЧасыОборот КАК Часы,
-	Пользователи.Подразделение КАК Подразделение
+	cbr_ТрудозатратыПоЗадаче.Основание КАК Задача,
+	СУММА(cbr_ЧасыТрудозатратОбороты.ЧасыОборот) КАК Часы
+ПОМЕСТИТЬ ВТ_ЧасыИсполнителей
 ИЗ
-	РегистрНакопления.cbr_ЧасыТрудозатрат.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ) КАК cbr_ЧасыТрудозатратОбороты
+	РегистрНакопления.cbr_ЧасыТрудозатрат.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, ) КАК cbr_ЧасыТрудозатратОбороты
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Пользователи КАК Пользователи
-		ПО (cbr_ЧасыТрудозатратОбороты.Исполнитель = Пользователи.Ссылка)</query>
+		ПО cbr_ЧасыТрудозатратОбороты.Исполнитель = Пользователи.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.cbr_ТрудозатратыПоЗадаче КАК cbr_ТрудозатратыПоЗадаче
+		ПО cbr_ЧасыТрудозатратОбороты.Регистратор = cbr_ТрудозатратыПоЗадаче.Ссылка
+
+СГРУППИРОВАТЬ ПО
+	cbr_ЧасыТрудозатратОбороты.Исполнитель,
+	Пользователи.Подразделение,
+	cbr_ТрудозатратыПоЗадаче.Основание
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЧасыИсполнителей.Подразделение КАК Подразделение,
+	ВТ_ЧасыИсполнителей.Исполнитель КАК Исполнитель,
+	ВТ_ЧасыИсполнителей.Задача КАК Задача,
+	ВТ_ЧасыИсполнителей.Часы КАК Часы,
+	cbr_ОценкаЧасов.ТипОценки КАК ТипОценки,
+	cbr_ОценкаЧасов.От КАК От,
+	cbr_ОценкаЧасов.До КАК До
+ИЗ
+	ВТ_ЧасыИсполнителей КАК ВТ_ЧасыИсполнителей
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.cbr_ОценкаЧасов КАК cbr_ОценкаЧасов
+		ПО ВТ_ЧасыИсполнителей.Исполнитель = cbr_ОценкаЧасов.Согласовант
+			И (cbr_ОценкаЧасов.Задача = ВТ_ЧасыИсполнителей.Задача)</query>
 	</dataSet>
+	<calculatedField>
+		<dataPath>Оценка</dataPath>
+		<expression>ВЫБОР КОГДА ТипОценки = ЗНАЧЕНИЕ(Перечисление.cbr_ТипОценкиЧасов.Рамочная) ТОГДА Строка(От)+" - "+Строка(До) КОГДА ТипОценки = ЗНАЧЕНИЕ(Перечисление.cbr_ТипОценкиЧасов.Точная) ТОГДА Строка(До) ИНАЧЕ НЕОПРЕДЕЛЕНО КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Оценка</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
 	<totalField>
 		<dataPath>Часы</dataPath>
 		<expression>Сумма(Часы)</expression>
@@ -119,7 +176,16 @@
 					<dcsset:field>Исполнитель</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Задача</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Часы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Оценка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТипОценки</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:filter>
@@ -174,12 +240,45 @@
 					</dcsset:item>
 				</dcsset:selection>
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Исполнитель</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 					</dcsset:order>
 					<dcsset:selection>
-						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Часы</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Исполнитель</dcsset:field>
+						</dcsset:item>
 					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Задача</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ТипОценки</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Оценка</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Часы</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+					</dcsset:item>
 				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>
