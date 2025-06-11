@@ -1,5 +1,8 @@
 <div style="background: rgb(&Цвет); color:rgb(&ТекстаЦвет);" class="column">
-	<div class="column-title">&НазваниеКолонки (&Количество)</div>
+	<div class="column-header">
+        <div class="column-title">&НазваниеКолонки</div>
+        <span class="column-count">&Количество</span>
+    </div>
 	<div class="buttons">
 	&КнопкаВЛево	
 		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="column-button" data-id="&Номер" data-name="Настройки" onclick="onClickItem(event)">

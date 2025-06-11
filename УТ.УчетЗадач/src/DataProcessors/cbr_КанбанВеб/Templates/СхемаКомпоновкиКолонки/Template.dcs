@@ -293,6 +293,16 @@
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодМетки</dataPath>
+			<field>КодМетки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код метки</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	cbr_ПросроченныеДействияПоЗадачам.Этап КАК ПросроченоеДействие,
@@ -347,7 +357,8 @@
 		НомерСтроки,
 		Метка),
 	cbr_Задача.МоментВремени,
-	cbr_Задача.Представление
+	cbr_Задача.Представление,
+	cbr_МеткиЗадач.Код КАК КодМетки
 ИЗ
 	Документ.cbr_Задача КАК cbr_Задача
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.cbr_ИсполнителиЗадач.СрезПоследних КАК cbr_ИсполнителиЗадачСрезПоследних
@@ -359,7 +370,9 @@
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.cbr_ДедлайнЗадач.СрезПоследних КАК cbr_ДедлайнЗадачСрезПоследних
 		ПО cbr_Задача.Ссылка = cbr_ДедлайнЗадачСрезПоследних.Задача
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.cbr_ОценкаЧасов.СрезПоследних КАК cbr_ОценкаЧасовСрезПоследних
-		ПО cbr_Задача.Ссылка = cbr_ОценкаЧасовСрезПоследних.Задача</query>
+		ПО cbr_Задача.Ссылка = cbr_ОценкаЧасовСрезПоследних.Задача
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.cbr_МеткиЗадач КАК cbr_МеткиЗадач
+		ПО cbr_Задача.Метка = cbr_МеткиЗадач.Ссылка</query>
 	</dataSet>
 	<parameter>
 		<name>Период</name>
@@ -510,6 +523,9 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>УчетВремени</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КодМетки</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
