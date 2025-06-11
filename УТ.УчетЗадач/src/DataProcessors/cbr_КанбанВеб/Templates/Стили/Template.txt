@@ -144,12 +144,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .column-count {
-  background-color: #ccc;
+  background-color: #fff;
   color: #444;
-  border-radius: 40%;
-  padding:2px 5px;
+  border-radius: 10px;
+  padding:2px 6px;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .buttons {
