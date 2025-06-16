@@ -89,6 +89,7 @@
   <commonPictures>CommonPicture.cbr_План</commonPictures>
   <commonPictures>CommonPicture.cbr_КалендарьПодсистема</commonPictures>
   <commonPictures>CommonPicture.cbr_НСИ_УчетЗадач</commonPictures>
+  <commonPictures>CommonPicture.cbr_Битрикс24</commonPictures>
   <roles>Role.cbr_ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.OPI_Telegram</commonModules>
@@ -182,6 +183,7 @@
   <enums>Enum.cbr_ОтображениеВремениЭлементов</enums>
   <enums>Enum.cbr_Б24_Настройки</enums>
   <enums>Enum.cbr_ПриоритетыЗадач</enums>
+  <enums>Enum.cbr_Б24_Действия</enums>
   <reports>Report.cbr_ОтработанныеЧасыСотрудников</reports>
   <reports>Report.cbr_СтатистикаПоЗавершеннымЗадачам</reports>
   <reports>Report.cbr_СтатистикаОтклоненияЗадач</reports>

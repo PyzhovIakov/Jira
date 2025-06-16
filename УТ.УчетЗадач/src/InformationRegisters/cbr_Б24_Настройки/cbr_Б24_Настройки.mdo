@@ -24,6 +24,7 @@
       <value>Значение</value>
     </synonym>
     <type>
+      <types>EnumRef.cbr_Б24_Действия</types>
       <types>ChartOfCharacteristicTypesRef.cbr_ВидыПользовательскихНастроек</types>
       <types>Boolean</types>
       <types>String</types>
@@ -63,6 +64,7 @@
       <types>CatalogRef.cbr_СтатусыЗадач</types>
       <types>EnumRef.cbr_ПриоритетыЗадач</types>
       <types>String</types>
+      <types>EnumRef.cbr_ПодпискаДляТриггера</types>
       <stringQualifiers>
         <length>50</length>
       </stringQualifiers>
