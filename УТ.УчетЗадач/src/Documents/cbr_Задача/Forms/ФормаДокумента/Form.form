@@ -671,6 +671,52 @@
                 <currentRowUse>Auto</currentRowUse>
               </extInfo>
             </items>
+            <items xsi:type="form:Decoration">
+              <name>ДекорацияЧекЛист</name>
+              <id>856</id>
+              <title>
+                <key>ru</key>
+                <value>Чек-лист</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ДекорацияЧекЛистРасширеннаяПодсказка</name>
+                <id>858</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ДекорацияЧекЛистКонтекстноеМеню</name>
+                <id>857</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorRef">
+                <color>Style.AccentColor</color>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>12.0</height>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <handlers>
+                  <event>Click</event>
+                  <name>ДекорацияЧекЛистНажатие</name>
+                </handlers>
+                <hyperlink>true</hyperlink>
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
             <items xsi:type="form:FormGroup">
               <name>ГруппаЧекЛист</name>
               <id>384</id>
@@ -880,10 +926,6 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <title>
-                <key>ru</key>
-                <value>Чек-Лист</value>
-              </title>
               <extendedTooltip>
                 <name>ГруппаЧекЛистРасширеннаяПодсказка</name>
                 <id>385</id>
@@ -897,11 +939,9 @@
               <type>UsualGroup</type>
               <extInfo xsi:type="form:UsualGroupExtInfo">
                 <group>HorizontalIfPossible</group>
-                <behavior>Collapsible</behavior>
-                <representation>WeakSeparation</representation>
+                <representation>NormalSeparation</representation>
                 <showLeftMargin>true</showLeftMargin>
                 <united>true</united>
-                <showTitle>true</showTitle>
                 <throughAlign>Auto</throughAlign>
                 <currentRowUse>Auto</currentRowUse>
               </extInfo>
@@ -1646,6 +1686,10 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>КонтактноеЛицоНачалоВыбора</name>
+              </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
@@ -4841,6 +4885,37 @@
         <command>0</command>
         <group>FormNavigationPanelGoTo</group>
         <index>0</index>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_КомментарииЗадач.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_ВопросыПоЗадачам.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_Б24_СоответствиеЗадач.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_ПросроченныеДействияПоЗадачам.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_СобытияПоЗадачам.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_СвязанныеЗадачи.StandardCommand.OpenByValue.Задача1</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_СвязанныеЗадачи.StandardCommand.OpenByValue.Задача2</command>
+        <userVisible/>
       </cmiFragmentRecord>
     </navigationPanel>
     <commandBar>
