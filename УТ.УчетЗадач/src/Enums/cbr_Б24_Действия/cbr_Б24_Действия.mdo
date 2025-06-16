@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9dc6811-4daa-4fd6-9ab0-4fe80207ab15">
+  <producedTypes>
+    <refType typeId="12ab95f9-6cbf-416e-98bb-79a48b31093e" valueTypeId="22076087-f6c3-40a1-aed0-d5fd6950ef62"/>
+    <listType typeId="312216ca-d0cc-45fe-93e9-cbd1b25c436a" valueTypeId="6a6df8bd-31d3-420e-b961-a62d7ea01004"/>
+    <managerType typeId="7373b974-0b15-4598-8fe1-31470c4e7ce2" valueTypeId="69be2a7e-bc49-475f-a1c4-6a9039aa5ff5"/>
+  </producedTypes>
+  <name>cbr_Б24_Действия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Б24 действия</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ae7e82dc-fec3-421d-bc0a-d6c3d6b49d07">
+    <name>ОтправитьЗадачу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправить задачу</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c39e2b23-09d4-45ef-b60e-46ac1f7d091a">
+    <name>УдалитьЗадачу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить задачу</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d0da9fc2-7b1c-457d-9960-7312fcffa04a">
+    <name>ОтправитьКомментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправить комментарий</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1eac78ab-f747-4667-98f9-463b609be127">
+    <name>ОтправитьКомментарийИзВопроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправить комментарий из вопроса</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
