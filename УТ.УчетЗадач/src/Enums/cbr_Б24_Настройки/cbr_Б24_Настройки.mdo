@@ -33,4 +33,11 @@
       <value>Статус соответствие</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="d3a7b696-959a-48aa-b7eb-35308c73a809">
+    <name>ТриггерСоответствие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Триггер соответствие</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
