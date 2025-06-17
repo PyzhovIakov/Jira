@@ -91,6 +91,21 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="4efa0118-7bf6-4fcb-9a00-8d5064290a01">
+    <name>Акцентирование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акцентирование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <dimensions uuid="c1967f8f-dbc0-4ebb-8050-11dfd964ebb1">
     <name>Пользователь</name>
     <synonym>

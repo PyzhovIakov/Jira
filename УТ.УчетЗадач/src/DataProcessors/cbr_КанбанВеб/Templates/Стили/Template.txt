@@ -272,4 +272,23 @@ body::-webkit-scrollbar-thumb {
 	margin:auto 0;
 }
 
+.task-blinking-border {
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+    0% {
+        border-color: red;
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    }
+    50% {
+        border-color: transparent;
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0);
+    }
+    100% {
+        border-color: red;
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    }
+}
+
 &КлассыМеток
