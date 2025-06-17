@@ -1,4 +1,4 @@
-<div class="task-box &КлассПриоритета" data-id="&УИД" data-name="Задача" ondblclick="onClickItem(event)">
+<div class="task-box &КлассПриоритета &МигающийСтиль" data-id="&УИД" data-name="Задача" ondblclick="onClickItem(event)">
 	<div class="task">
 		<div style="display: flex;">
 			<div class="task-text-1" style="width:50%;">&Постановщик</div>

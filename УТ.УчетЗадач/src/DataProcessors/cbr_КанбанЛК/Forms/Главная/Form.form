@@ -211,6 +211,23 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>Акцентирование</name>
+    <title>
+      <key>ru</key>
+      <value>Акцентирование</value>
+    </title>
+    <id>22</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>
