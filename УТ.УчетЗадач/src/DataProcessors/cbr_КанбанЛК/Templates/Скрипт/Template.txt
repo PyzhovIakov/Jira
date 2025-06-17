@@ -1,0 +1,39 @@
+<script type="text/javascript">
+	var queue = Array() // Очередь событий
+  	var queueHead = -1 // Указатель на начало очереди
+	var queueTail = -1 // Указатель на конец очереди
+	var totalEventCount = 0 //Количество обработанных событий
+
+ function onClickItem(event) {
+    const eventData = {
+      Name: event.currentTarget.dataset.name,
+      Id: event.currentTarget.dataset.id,
+    };
+    pushEvent(eventData);
+  }
+  
+  function pushEvent(dataEvent) {
+    if (queueHead === queueTail && queueHead > -1) { //Если очередь пуста, сбросим указатели
+      queueHead = queueTail = -1
+    }
+    queue[queueTail + 1] = JSON.stringify(dataEvent) //Преобразуем данные в JSON
+    queueTail += 1
+    totalEventCount += 1
+  }
+  
+  function getEvent(index) {
+    return queue[index]
+  }
+  
+ function setBoard(index) {
+   	document.getElementById('Board').value = index;
+  }
+  
+  function changeBoard(event) {
+      const eventData = {
+      Name: 'ИзменениеДоски',
+      Id: event.target.value,
+    };
+    pushEvent(eventData);
+  }
+</script>

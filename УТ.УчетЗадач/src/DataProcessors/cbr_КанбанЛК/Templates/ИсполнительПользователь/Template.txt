@@ -1,0 +1,2 @@
+<img src="&Басе64" alt="Пользователь" class="task-user" />
+<div>&Исполнитель</div>
