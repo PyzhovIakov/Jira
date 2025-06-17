@@ -147,4 +147,11 @@
       <value>Смена исполнителя</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="7174972b-b2b6-4deb-b10e-327b458a08e3">
+    <name>ДобавлениеКомментарияКЗадаче</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавление комментария к задаче</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

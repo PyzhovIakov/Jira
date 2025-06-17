@@ -20,7 +20,7 @@
   <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
   <namePrefix>OPI_</namePrefix>
   <configurationExtensionCompatibilityMode>8.3.9</configurationExtensionCompatibilityMode>
-  <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
@@ -38,7 +38,6 @@
     <key>ru</key>
     <value>https://github.com/Bayselonarrend/OpenIntegrations</value>
   </configurationInformationAddress>
-  <compatibilityMode>8.3.26</compatibilityMode>
   <subsystems>Subsystem.OPI_Интеграция</subsystems>
   <commonTemplates>CommonTemplate.OPI_MySQL</commonTemplates>
   <commonTemplates>CommonTemplate.OPI_PostgreSQL</commonTemplates>

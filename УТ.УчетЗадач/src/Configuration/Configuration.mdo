@@ -94,7 +94,6 @@
   <roles>Role.cbr_СотрудникДжира</roles>
   <roles>Role.cbr_РуководительДжира</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
-  <commonModules>CommonModule.OPI_Telegram</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</commonModules>
   <commonModules>CommonModule.cbr_ОбработчикиФормыЗадачиВызовСервера</commonModules>
   <commonModules>CommonModule.cbr_УведомленияПользователей</commonModules>
@@ -105,16 +104,8 @@
   <commonModules>CommonModule.cbr_КалендарьКлиент</commonModules>
   <commonModules>CommonModule.cbr_КаленарьКлиентСервер</commonModules>
   <commonModules>CommonModule.cbr_КалендарьСервер</commonModules>
-  <commonModules>CommonModule.OPI_Bitrix24</commonModules>
-  <commonModules>CommonModule.OPI_Компоненты</commonModules>
-  <commonModules>CommonModule.OPI_ЗапросыHTTP</commonModules>
-  <commonModules>CommonModule.OPI_Инструменты</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаТриггеровВызовСервера</commonModules>
-  <commonModules>CommonModule.OPI_ЗапросыSQL</commonModules>
-  <commonModules>CommonModule.OPI_Криптография</commonModules>
-  <commonModules>CommonModule.OPI_Тесты</commonModules>
   <commonModules>CommonModule.cbr_РаботаСTelegram</commonModules>
-  <commonModules>CommonModule.OPI_ПреобразованиеТипов</commonModules>
   <commonModules>CommonModule.cbr_Битрикс24</commonModules>
   <eventSubscriptions>EventSubscription.ВариантыОтчетовПередУдалениемИдентификатораОбъектаМетаданных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ВыполнитьДействияПриЗаписиПрисоединенногоФайла</eventSubscriptions>
@@ -193,7 +184,6 @@
   <dataProcessors>DataProcessor.cbr_Канбан</dataProcessors>
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_КанбанВеб</dataProcessors>
-  <dataProcessors>DataProcessor.OPI_HTTPКлиент</dataProcessors>
   <dataProcessors>DataProcessor.cbr_АктивацияАккаунтовTelegram</dataProcessors>
   <dataProcessors>DataProcessor.cbr_ВводНачальныхНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_НастройкиБитрикс24</dataProcessors>

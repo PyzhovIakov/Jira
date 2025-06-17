@@ -40,4 +40,39 @@
       <value>Отправить комментарий из вопроса</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="98a0d323-7f28-4d41-9dd5-78f2962500d1">
+    <name>СменитьСтатусЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сменить статус задачи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f76b6796-1007-4f2e-bc73-6814f5513cda">
+    <name>СменитьДедлайнЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сменить дедлайн задачи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d8601471-503c-40a7-b2b2-bc6a133da7e9">
+    <name>СменитьОценкуЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сменить оценку задачи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a12b6cef-7501-4a3b-885c-a820ca4db2b5">
+    <name>СменитьИсполнителяЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сменить исполнителя задачи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c35cadc6-602b-4d8b-9bbc-4d26bc782f4a">
+    <name>ВернутьВышестоящуюЗадачуВРаботу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вернуть вышестоящую задачу в работу</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
