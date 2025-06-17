@@ -3425,34 +3425,6 @@
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
     <items xsi:type="form:Button">
-      <name>ФормаОтправитьНаИсполнение</name>
-      <id>833</id>
-      <title>
-        <key>ru</key>
-        <value>В работу</value>
-      </title>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>ФормаОтправитьНаИсполнениеРасширеннаяПодсказка</name>
-        <id>834</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <commandName>Form.Command.ОтправитьНаИсполнение</commandName>
-      <representation>PictureAndText</representation>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <representationInContextMenu>Auto</representationInContextMenu>
-    </items>
-    <items xsi:type="form:Button">
       <name>ФормаЗадачаВКалендарь</name>
       <id>433</id>
       <title>
@@ -4837,26 +4809,6 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>УведомитьОЗадаче</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ОтправитьНаИсполнение</name>
-    <title>
-      <key>ru</key>
-      <value>Отправить на исполнение</value>
-    </title>
-    <id>29</id>
-    <use>
-      <common>true</common>
-    </use>
-    <picture xsi:type="core:PictureRef">
-      <picture>CommonPicture.cbr_ОтправитьНаИсполнение</picture>
-    </picture>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ОтправитьНаИсполнение</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
