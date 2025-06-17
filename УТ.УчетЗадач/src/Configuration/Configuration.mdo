@@ -93,6 +93,7 @@
   <roles>Role.cbr_ПолныеПрава</roles>
   <roles>Role.cbr_СотрудникДжира</roles>
   <roles>Role.cbr_РуководительДжира</roles>
+  <roles>Role.cbr_СотрудникЛКДжира</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
   <commonModules>CommonModule.OPI_Telegram</commonModules>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</commonModules>
@@ -190,13 +191,13 @@
   <reports>Report.cbr_СтатистикаПоЗавершеннымЗадачам</reports>
   <reports>Report.cbr_СтатистикаОтклоненияЗадач</reports>
   <reports>Report.cbr_СтатистикаПереносовДедлайнов</reports>
-  <dataProcessors>DataProcessor.cbr_Канбан</dataProcessors>
   <dataProcessors>DataProcessor.cbr_РедактированиеПользовательскихНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_КанбанВеб</dataProcessors>
   <dataProcessors>DataProcessor.OPI_HTTPКлиент</dataProcessors>
   <dataProcessors>DataProcessor.cbr_АктивацияАккаунтовTelegram</dataProcessors>
   <dataProcessors>DataProcessor.cbr_ВводНачальныхНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_НастройкиБитрикс24</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_КанбанЛК</dataProcessors>
   <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ВопросыПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ДедлайнЗадач</informationRegisters>

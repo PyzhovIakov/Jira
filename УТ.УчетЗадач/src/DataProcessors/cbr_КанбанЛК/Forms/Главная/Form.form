@@ -74,7 +74,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>DataProcessorObject.cbr_КанбанВеб</types>
+      <types>DataProcessorObject.cbr_КанбанЛК</types>
     </valueType>
     <view>
       <common>true</common>
