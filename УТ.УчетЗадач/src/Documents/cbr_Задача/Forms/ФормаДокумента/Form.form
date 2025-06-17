@@ -1255,39 +1255,6 @@
               </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
-            <items xsi:type="form:Button">
-              <name>ВвестиТрудозатраты</name>
-              <id>405</id>
-              <title>
-                <key>ru</key>
-                <value>Трудозатраты</value>
-              </title>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>ВвестиТрудозатратыРасширеннаяПодсказка</name>
-                <id>406</id>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <type>UsualButton</type>
-              <commandName>Form.Command.ВвестиТрудозатраты</commandName>
-              <representation>PictureAndText</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <height>1</height>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <picture xsi:type="core:PictureRef">
-                <picture>CommonPicture.cbr_Трудозатраты</picture>
-              </picture>
-              <representationInContextMenu>Auto</representationInContextMenu>
-            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1690,7 +1657,6 @@
                 <event>StartChoice</event>
                 <name>КонтактноеЛицоНачалоВыбора</name>
               </handlers>
-              <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <chooseType>true</chooseType>
@@ -2967,6 +2933,10 @@
               <handlers>
                 <event>BeforeCreate</event>
                 <name>ПланировщикПередСозданием</name>
+              </handlers>
+              <handlers>
+                <event>BeforeDelete</event>
+                <name>ПланировщикПередУдалением</name>
               </handlers>
               <handlers>
                 <event>Selection</event>
@@ -4472,27 +4442,6 @@
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>ВвестиТрудозатраты</name>
-    <title>
-      <key>ru</key>
-      <value>Ввести трудозатраты</value>
-    </title>
-    <id>11</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Ввести трудозатраты</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ВвестиТрудозатраты</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
     <name>СоздатьГлавнуюЗадачу</name>
     <title>
       <key>ru</key>
@@ -4867,6 +4816,14 @@
       </cmiFragmentRecord>
       <cmiFragmentRecord>
         <command>InformationRegister.cbr_СвязанныеЗадачи.StandardCommand.OpenByValue.Задача2</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_ДедлайнЗадач.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_ОценкаЧасов.StandardCommand.OpenByValue.Задача</command>
         <userVisible/>
       </cmiFragmentRecord>
     </navigationPanel>
