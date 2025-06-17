@@ -671,6 +671,52 @@
                 <currentRowUse>Auto</currentRowUse>
               </extInfo>
             </items>
+            <items xsi:type="form:Decoration">
+              <name>ДекорацияЧекЛист</name>
+              <id>856</id>
+              <title>
+                <key>ru</key>
+                <value>Чек-лист</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ДекорацияЧекЛистРасширеннаяПодсказка</name>
+                <id>858</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ДекорацияЧекЛистКонтекстноеМеню</name>
+                <id>857</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorRef">
+                <color>Style.AccentColor</color>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>12.0</height>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <handlers>
+                  <event>Click</event>
+                  <name>ДекорацияЧекЛистНажатие</name>
+                </handlers>
+                <hyperlink>true</hyperlink>
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
             <items xsi:type="form:FormGroup">
               <name>ГруппаЧекЛист</name>
               <id>384</id>
@@ -880,10 +926,6 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <title>
-                <key>ru</key>
-                <value>Чек-Лист</value>
-              </title>
               <extendedTooltip>
                 <name>ГруппаЧекЛистРасширеннаяПодсказка</name>
                 <id>385</id>
@@ -897,11 +939,9 @@
               <type>UsualGroup</type>
               <extInfo xsi:type="form:UsualGroupExtInfo">
                 <group>HorizontalIfPossible</group>
-                <behavior>Collapsible</behavior>
-                <representation>WeakSeparation</representation>
+                <representation>NormalSeparation</representation>
                 <showLeftMargin>true</showLeftMargin>
                 <united>true</united>
-                <showTitle>true</showTitle>
                 <throughAlign>Auto</throughAlign>
                 <currentRowUse>Auto</currentRowUse>
               </extInfo>
@@ -1212,39 +1252,6 @@
               <placementArea>UserCmds</placementArea>
               <picture xsi:type="core:PictureRef">
                 <picture>CommonPicture.cbr_СогласоватьДедлайн</picture>
-              </picture>
-              <representationInContextMenu>Auto</representationInContextMenu>
-            </items>
-            <items xsi:type="form:Button">
-              <name>ВвестиТрудозатраты</name>
-              <id>405</id>
-              <title>
-                <key>ru</key>
-                <value>Трудозатраты</value>
-              </title>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>ВвестиТрудозатратыРасширеннаяПодсказка</name>
-                <id>406</id>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <type>UsualButton</type>
-              <commandName>Form.Command.ВвестиТрудозатраты</commandName>
-              <representation>PictureAndText</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <height>1</height>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <picture xsi:type="core:PictureRef">
-                <picture>CommonPicture.cbr_Трудозатраты</picture>
               </picture>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
@@ -1646,7 +1653,10 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
+              <handlers>
+                <event>StartChoice</event>
+                <name>КонтактноеЛицоНачалоВыбора</name>
+              </handlers>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <chooseType>true</chooseType>
@@ -2925,6 +2935,10 @@
                 <name>ПланировщикПередСозданием</name>
               </handlers>
               <handlers>
+                <event>BeforeDelete</event>
+                <name>ПланировщикПередУдалением</name>
+              </handlers>
+              <handlers>
                 <event>Selection</event>
                 <name>ПланировщикВыбор</name>
               </handlers>
@@ -3380,34 +3394,6 @@
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
-    <items xsi:type="form:Button">
-      <name>ФормаОтправитьНаИсполнение</name>
-      <id>833</id>
-      <title>
-        <key>ru</key>
-        <value>В работу</value>
-      </title>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>ФормаОтправитьНаИсполнениеРасширеннаяПодсказка</name>
-        <id>834</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <commandName>Form.Command.ОтправитьНаИсполнение</commandName>
-      <representation>PictureAndText</representation>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <representationInContextMenu>Auto</representationInContextMenu>
-    </items>
     <items xsi:type="form:Button">
       <name>ФормаЗадачаВКалендарь</name>
       <id>433</id>
@@ -4456,27 +4442,6 @@
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>ВвестиТрудозатраты</name>
-    <title>
-      <key>ru</key>
-      <value>Ввести трудозатраты</value>
-    </title>
-    <id>11</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Ввести трудозатраты</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ВвестиТрудозатраты</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
     <name>СоздатьГлавнуюЗадачу</name>
     <title>
       <key>ru</key>
@@ -4797,26 +4762,6 @@
     </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
-  <formCommands>
-    <name>ОтправитьНаИсполнение</name>
-    <title>
-      <key>ru</key>
-      <value>Отправить на исполнение</value>
-    </title>
-    <id>29</id>
-    <use>
-      <common>true</common>
-    </use>
-    <picture xsi:type="core:PictureRef">
-      <picture>CommonPicture.cbr_ОтправитьНаИсполнение</picture>
-    </picture>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ОтправитьНаИсполнение</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
   <commandInterface>
     <navigationPanel>
       <cmiFragmentRecord>
@@ -4841,6 +4786,45 @@
         <command>0</command>
         <group>FormNavigationPanelGoTo</group>
         <index>0</index>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_КомментарииЗадач.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_ВопросыПоЗадачам.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_Б24_СоответствиеЗадач.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_ПросроченныеДействияПоЗадачам.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_СобытияПоЗадачам.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_СвязанныеЗадачи.StandardCommand.OpenByValue.Задача1</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_СвязанныеЗадачи.StandardCommand.OpenByValue.Задача2</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_ДедлайнЗадач.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.cbr_ОценкаЧасов.StandardCommand.OpenByValue.Задача</command>
+        <userVisible/>
       </cmiFragmentRecord>
     </navigationPanel>
     <commandBar>
