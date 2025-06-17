@@ -73,6 +73,24 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="2a113dc4-0163-4109-932c-c2e96026e9d2">
+    <name>АвтообновлениеДоски</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автообновление доски</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <dimensions uuid="c1967f8f-dbc0-4ebb-8050-11dfd964ebb1">
     <name>Пользователь</name>
     <synonym>

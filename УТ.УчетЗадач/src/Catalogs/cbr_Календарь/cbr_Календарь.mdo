@@ -568,6 +568,36 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="c6f63f46-7581-4995-96b0-7e6f676bbceb">
+    <name>СписаниеЧасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списание часов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="baa3291e-5be7-4999-9d2e-58f9d06cb835">
+    <name>ДокументТрудозатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ трудозатрат</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.cbr_ТрудозатратыПоЗадаче</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="76b3a29f-9177-4e1c-9766-6c82eecabbaa">
     <producedTypes>
       <objectType typeId="9d9ba96f-8e84-40d5-b14f-dbd8488893da" valueTypeId="fd892814-45b4-4fda-8a1c-5fb9ab70b864"/>

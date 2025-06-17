@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="664e70d2-7fcc-43c5-ba8b-d08c817ae414">
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90feb428-73bd-46f5-929b-dc5e657f0fce">
   <producedTypes>
-    <objectType typeId="da7a66fa-1a85-48f3-87b7-0c9b6c2aefbc" valueTypeId="819c3f18-b23d-47c2-968e-e4fa7e70c7c5"/>
-    <managerType typeId="a04c0256-fe28-4478-80ee-d6d71fb4baa6" valueTypeId="1dbfcbbb-f55e-4931-8087-888da680bd02"/>
+    <objectType typeId="dde7b4ab-d3ec-4653-97df-3d7bcac6d17d" valueTypeId="b7832282-fa59-4efa-bfc8-58a5f348f56c"/>
+    <managerType typeId="187c067a-e69e-4628-81a8-6057e1545d25" valueTypeId="e0ec82ad-4a26-41ad-a8a8-fa4a02af6105"/>
   </producedTypes>
-  <name>cbr_КанбанВеб</name>
+  <name>cbr_КанбанЛК</name>
   <synonym>
     <key>ru</key>
-    <value>КанБан</value>
+    <value>КанБанЛК</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <defaultForm>DataProcessor.cbr_КанбанВеб.Form.Главная</defaultForm>
-  <forms uuid="54fb9763-cec6-4b0e-ba5e-1fcb8779b325">
+  <defaultForm>DataProcessor.cbr_КанбанЛК.Form.Главная</defaultForm>
+  <forms uuid="a65cff14-da07-44f1-adf2-ff76b3dca15e">
     <name>Главная</name>
     <synonym>
       <key>ru</key>
@@ -20,7 +20,7 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="059c33bb-bab8-4aa5-8f80-c071fa42b251">
+  <forms uuid="d001a328-52e6-4c0c-bd2d-bbd334966afa">
     <name>КонструкторКолонки</name>
     <synonym>
       <key>ru</key>
@@ -29,7 +29,7 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="271175e6-685f-49ad-9c2e-d66ca20e64d5">
+  <forms uuid="6bb287df-8a18-40f6-b388-c5609acb5baa">
     <name>НастройкиКанБанДоски</name>
     <synonym>
       <key>ru</key>
@@ -38,7 +38,7 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="e8160b04-0e8a-432d-9d4a-66bddd95d240">
+  <templates uuid="36168695-9810-4e50-b5cc-ac3af00e036c">
     <name>СхемаКомпоновкиКолонки</name>
     <synonym>
       <key>ru</key>
@@ -46,7 +46,7 @@
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>
-  <templates uuid="83452a14-82e9-4169-b13f-f21e888f6aac">
+  <templates uuid="19e7c4d0-7f64-4ac5-80e1-481102defeef">
     <name>Стили</name>
     <synonym>
       <key>ru</key>
@@ -54,7 +54,7 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="11388da4-c655-4183-8daf-d10b5f19b9e6">
+  <templates uuid="b13debf4-ef10-4785-bf54-801f1b3be2cc">
     <name>Колонка</name>
     <synonym>
       <key>ru</key>
@@ -62,7 +62,7 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="a52b88fb-8e32-493a-8733-9641b1f1ac35">
+  <templates uuid="07ec5be8-227f-4cb0-9c96-e6818c5f6416">
     <name>Задача</name>
     <synonym>
       <key>ru</key>
@@ -70,7 +70,7 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="b3abeed7-bd66-4459-944c-0f5adce362c9">
+  <templates uuid="31e11e3a-58df-4e8d-99e4-6cd9229588ab">
     <name>Скрипт</name>
     <synonym>
       <key>ru</key>
@@ -78,7 +78,7 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="9d4917bf-b053-40ac-a717-724e813320c8">
+  <templates uuid="47d120d3-536b-4c00-a241-d870041544cb">
     <name>КнопкаВЛево</name>
     <synonym>
       <key>ru</key>
@@ -86,7 +86,7 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="f3521ed0-94cf-44a4-87a7-62bfbe048e6b">
+  <templates uuid="1c491ffe-252c-43b6-98c6-5465cc05d97d">
     <name>КнопкаВПраво</name>
     <synonym>
       <key>ru</key>
@@ -94,7 +94,7 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="b16d514b-6cc2-46b7-a62e-be257d6d7139">
+  <templates uuid="c0401be9-e062-4f9c-afe6-89e7de7aa311">
     <name>ИконкаГруппыИлиРоли</name>
     <synonym>
       <key>ru</key>
@@ -102,7 +102,7 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="aa78e440-e19b-4f6e-9150-e1f6059f9cfd">
+  <templates uuid="798b3b17-2499-43da-ae70-6cba0c380887">
     <name>ИсполнительПользователь</name>
     <synonym>
       <key>ru</key>
@@ -110,7 +110,7 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="cacc1054-7863-4ba4-9148-2e74a7a637ae">
+  <templates uuid="e6deba8d-b93f-4370-b0de-cc4420cf9191">
     <name>ИконкаПользователя</name>
     <synonym>
       <key>ru</key>
@@ -118,7 +118,7 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="d7ec19c0-49a4-4c53-bf67-22b77c704760">
+  <templates uuid="3e7a6886-9b14-4cbd-8a82-32ea455f895e">
     <name>Доска</name>
     <synonym>
       <key>ru</key>
