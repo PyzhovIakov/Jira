@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="67b676c7-bee8-4d6d-a9f0-1f8ec11433c1">
+  <name>cbr_ОтправкаДанныхВБитрикс24</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправка данных в Битрикс24</value>
+  </synonym>
+  <methodName>CommonModule.cbr_Битрикс24.cbr_ОтправкаДанныхВБитрикс24</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>30</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -113,6 +113,7 @@
   <scheduledJobs>ScheduledJob.cbr_ВызовТриггера</scheduledJobs>
   <scheduledJobs>ScheduledJob.cbr_ПроверкаВыполненияЭтаповКонтроля</scheduledJobs>
   <scheduledJobs>ScheduledJob.cbr_ОтправкаСообщенийПользователямТелеграм</scheduledJobs>
+  <scheduledJobs>ScheduledJob.cbr_ОтправкаДанныхВБитрикс24</scheduledJobs>
   <definedTypes>DefinedType.ВладелецПрисоединенныхФайлов</definedTypes>
   <definedTypes>DefinedType.ВладелецПрисоединенныхФайловОбъект</definedTypes>
   <definedTypes>DefinedType.ПредметНапоминания</definedTypes>
@@ -187,9 +188,12 @@
   <dataProcessors>DataProcessor.cbr_АктивацияАккаунтовTelegram</dataProcessors>
   <dataProcessors>DataProcessor.cbr_ВводНачальныхНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_НастройкиБитрикс24</dataProcessors>
-  <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_Б24_Настройки</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_Б24_СоответствиеЗадач</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_Б24_СоответствиеФайлов</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ВопросыПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ДедлайнЗадач</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_ЗаданияКОтправкеСообщений</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ИсполнителиЗадач</informationRegisters>
   <informationRegisters>InformationRegister.cbr_КомментарииЗадач</informationRegisters>
   <informationRegisters>InformationRegister.cbr_НастройкиПользователейКолонокКанБан</informationRegisters>
@@ -198,14 +202,12 @@
   <informationRegisters>InformationRegister.cbr_ПользовательскиеНастройки</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ПросроченныеДействияПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_СвязанныеЗадачи</informationRegisters>
-  <informationRegisters>InformationRegister.cbr_СтатусыЗадач</informationRegisters>
-  <informationRegisters>InformationRegister.НапоминанияПользователя</informationRegisters>
   <informationRegisters>InformationRegister.cbr_СобытияПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_СоответствиеПользователейДляИнтеграций</informationRegisters>
-  <informationRegisters>InformationRegister.cbr_Б24_СоответствиеЗадач</informationRegisters>
-  <informationRegisters>InformationRegister.cbr_Б24_СоответствиеФайлов</informationRegisters>
-  <informationRegisters>InformationRegister.cbr_ЗаданияКОтправкеСообщений</informationRegisters>
-  <informationRegisters>InformationRegister.cbr_Б24_Настройки</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_СтатусыЗадач</informationRegisters>
+  <informationRegisters>InformationRegister.НаличиеФайлов</informationRegisters>
+  <informationRegisters>InformationRegister.НапоминанияПользователя</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_Б24_ОчередьОтправки</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>
 </mdclass:Configuration>
