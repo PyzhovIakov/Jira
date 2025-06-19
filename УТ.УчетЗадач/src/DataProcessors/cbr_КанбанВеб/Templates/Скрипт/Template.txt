@@ -1,4 +1,28 @@
 <script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    // Находим все кнопки удаления
+    const deleteButtons = document.querySelectorAll('.column-button[data-name="Удалить"]');
+    
+    // Для каждой кнопки добавляем обработчики событий
+    deleteButtons.forEach(button => {
+        button.addEventListener('mouseenter', function() {
+            // Находим ближайший блок tasks-strike в этой колонке
+            const column = this.closest('.column');
+            const strike = column.querySelector('.tasks-strike');
+            if (strike) {
+                strike.style.display = 'block';
+            }
+        });
+        
+        button.addEventListener('mouseleave', function() {
+            const column = this.closest('.column');
+            const strike = column.querySelector('.tasks-strike');
+            if (strike) {
+                strike.style.display = 'none';
+            }
+        });
+    });
+});
 	var queue = Array() // Очередь событий
   	var queueHead = -1 // Указатель на начало очереди
 	var queueTail = -1 // Указатель на конец очереди
