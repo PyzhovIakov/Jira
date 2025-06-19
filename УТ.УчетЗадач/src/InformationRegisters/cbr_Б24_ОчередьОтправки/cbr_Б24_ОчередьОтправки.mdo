@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b917ce6-1cb9-42d7-ba15-687cf525b1ca">
+  <producedTypes>
+    <selectionType typeId="e4256117-ca27-4e8d-897a-e6e8eb2d804c" valueTypeId="477c5887-ee88-4168-9b0d-78733ee52656"/>
+    <listType typeId="cd18699c-28ee-4019-a1dc-d2fe1a6513f7" valueTypeId="fe0f2c5c-fbbd-4306-a29d-6c24ba19cb98"/>
+    <managerType typeId="e6675439-31ff-426f-8688-096aaf9103e6" valueTypeId="1d1999eb-1a19-40f7-8abb-e22ad932d252"/>
+    <recordSetType typeId="ce93a991-8b9d-4463-83f6-9f2d412e0501" valueTypeId="761e6372-803e-4c9f-b408-27fa222e4883"/>
+    <recordKeyType typeId="4c2de0c4-7422-46b4-9b31-6afcbe556953" valueTypeId="486b157b-aa41-4679-9899-32f682541f16"/>
+    <recordType typeId="09fc3040-3a04-4378-abcd-84b359eb127a" valueTypeId="9cc0067f-c5c3-49f0-9e23-bee48c284cc2"/>
+    <recordManagerType typeId="fbaaf117-8c9f-4598-bb73-3ff06338de7c" valueTypeId="94bec793-dfd0-480d-87d6-d554ec5acd28"/>
+  </producedTypes>
+  <name>cbr_Б24_ОчередьОтправки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Б24 очередь отправки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d9bd159d-d7ff-4386-ac9f-46b178ad0d46">
+    <name>ОшибкаПриОтправке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка при отправке</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8390500b-aade-49db-a837-1442fc086a7c">
+    <name>КоличествоПопыток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество попыток</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3c9c4236-e9c9-4089-8d8b-f44d806d1872">
+    <name>Приоритет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="7a413903-138f-48cf-9d58-ebc14c42dbc6">
+    <name>ДатаПоследнейПопытки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней попытки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="a0232d5d-f72e-4904-88a1-868e80ca5b63">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.cbr_Задача</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e29ee763-f1b4-40ea-9de3-355bbff96c26">
+    <name>Действие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действие</value>
+    </synonym>
+    <type>
+      <types>EnumRef.cbr_Б24_Действия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

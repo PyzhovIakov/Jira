@@ -15,4 +15,7 @@
   <content>InformationRegister.cbr_Б24_Настройки</content>
   <content>InformationRegister.cbr_Б24_СоответствиеФайлов</content>
   <content>InformationRegister.cbr_Б24_СоответствиеЗадач</content>
+  <content>Enum.cbr_Б24_Действия</content>
+  <content>InformationRegister.cbr_Б24_ОчередьОтправки</content>
+  <content>ScheduledJob.cbr_ОтправкаДанныхВБитрикс24</content>
 </mdclass:Subsystem>
