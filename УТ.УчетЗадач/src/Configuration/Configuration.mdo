@@ -98,7 +98,7 @@
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</commonModules>
   <commonModules>CommonModule.cbr_ОбработчикиФормыЗадачиВызовСервера</commonModules>
   <commonModules>CommonModule.cbr_УведомленияПользователей</commonModules>
-  <commonModules>CommonModule.cbr_ЭлементыФормы</commonModules>
+  <commonModules>CommonModule.cbr_ЭлементыФормыСервер</commonModules>
   <commonModules>CommonModule.РаботаСФайламиКлиентСервер</commonModules>
   <commonModules>CommonModule.cbr_СобытияПоЗадачам</commonModules>
   <commonModules>CommonModule.cbr_ДвиженияПоРегистрам</commonModules>

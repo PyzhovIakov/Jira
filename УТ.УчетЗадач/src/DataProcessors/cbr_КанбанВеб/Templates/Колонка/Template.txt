@@ -16,5 +16,7 @@
 		</svg>	
 	&КнопкаВПраво	
 	</div>
-	<div class="tasks">&Задачи</div>
+	<div class="tasks">
+		&Задачи
+	</div>
 </div>

@@ -2935,8 +2935,20 @@
                 <name>ПланировщикПередСозданием</name>
               </handlers>
               <handlers>
+                <event>OnCurrentRepresentationPeriodChange</event>
+                <name>ПланировщикПриСменеТекущегоПериодаОтображения</name>
+              </handlers>
+              <handlers>
+                <event>OnEditEnd</event>
+                <name>ПланировщикПриОкончанииРедактирования</name>
+              </handlers>
+              <handlers>
                 <event>BeforeDelete</event>
                 <name>ПланировщикПередУдалением</name>
+              </handlers>
+              <handlers>
+                <event>BeforeStartQuickEdit</event>
+                <name>ПланировщикПередНачаломБыстрогоРедактирования</name>
               </handlers>
               <handlers>
                 <event>Selection</event>
