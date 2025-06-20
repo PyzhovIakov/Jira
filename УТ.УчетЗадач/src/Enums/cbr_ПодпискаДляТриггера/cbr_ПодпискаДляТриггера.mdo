@@ -154,4 +154,11 @@
       <value>Добавление комментария к задаче</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="2b93e21e-f033-40aa-a62f-42de8c594d2c">
+    <name>СменаМенеджера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена менеджера</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
