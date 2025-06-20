@@ -45,7 +45,6 @@
     <key>ru</key>
     <value>http://www.v8-pr.ru</value>
   </configurationInformationAddress>
-  <compatibilityMode>8.3.26</compatibilityMode>
   <languages uuid="24e63e15-efaf-4570-8378-15977672b866">
     <name>Русский</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -86,6 +85,7 @@
   <catalogs>Catalog.гбПровайдерыОплаты</catalogs>
   <catalogs>Catalog.гбХранилищаБлокСхем</catalogs>
   <catalogs>Catalog.гбРасширения</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
   <enums>Enum.гбРежимыПолученияДанныхБота</enums>
   <enums>Enum.гбСобытия</enums>
   <enums>Enum.гбТипыДанных</enums>
