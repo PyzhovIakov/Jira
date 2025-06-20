@@ -2058,7 +2058,7 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonForm.cbr_ФормаВыбораЦвета</name>
+		<name>CommonForm.cbr_ФормаВыбораЦветаДжира</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

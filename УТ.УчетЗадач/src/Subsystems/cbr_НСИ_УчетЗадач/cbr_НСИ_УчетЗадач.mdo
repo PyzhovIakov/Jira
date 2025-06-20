@@ -65,4 +65,5 @@
   <content>InformationRegister.cbr_Б24_СоответствиеФайлов</content>
   <content>InformationRegister.cbr_Б24_СоответствиеЗадач</content>
   <content>InformationRegister.cbr_ЗаданияКОтправкеСообщений</content>
+  <content>DataProcessor.cbr_ПервичнаяНастройкаКолонок</content>
 </mdclass:Subsystem>

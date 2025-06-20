@@ -210,12 +210,13 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    border: #ff0000 2px solid;
-	border-radius: 10px;
-    animation: strike 0.3s ;
-	background-size: 2px;
+    width: 100%;
+    min-height: 100%; /* Занимает минимум высоту контейнера, но растягивается под контент */
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    animation: strike 0.3s;
+    box-sizing: border-box;
+    pointer-events: none;
 }
 
 .tasks-strike::before {
