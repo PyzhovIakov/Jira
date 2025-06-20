@@ -30,7 +30,7 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
-  <defaultRoles>Role.cbr_ПолныеПрава</defaultRoles>
+  <defaultRoles>Role.cbr_ПолныеПраваДжира</defaultRoles>
   <vendor>ООО Разработка и аналитика</vendor>
   <version>1,0</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
@@ -90,11 +90,11 @@
   <commonPictures>CommonPicture.cbr_КалендарьПодсистема</commonPictures>
   <commonPictures>CommonPicture.cbr_НСИ_УчетЗадач</commonPictures>
   <commonPictures>CommonPicture.cbr_Битрикс24</commonPictures>
-  <roles>Role.cbr_ПолныеПрава</roles>
+  <roles>Role.cbr_ПолныеПраваДжира</roles>
   <roles>Role.cbr_СотрудникДжира</roles>
   <roles>Role.cbr_РуководительДжира</roles>
   <roles>Role.cbr_СотрудникЛКДжира</roles>
-  <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTML</commonTemplates>
+  <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTMLДжира</commonTemplates>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</commonModules>
   <commonModules>CommonModule.cbr_ОбработчикиФормыЗадачиВызовСервера</commonModules>
   <commonModules>CommonModule.cbr_УведомленияПользователей</commonModules>
@@ -135,7 +135,7 @@
   <commonForms>CommonForm.cbr_ФормаВопросаПоЗадаче</commonForms>
   <commonForms>CommonForm.cbr_ИерархияЗадачОбщая</commonForms>
   <commonForms>CommonForm.cbr_КомментарииЗадач</commonForms>
-  <commonForms>CommonForm.cbr_ФормаВыбораЦвета</commonForms>
+  <commonForms>CommonForm.cbr_ФормаВыбораЦветаДжира</commonForms>
   <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.cbr_ВидыЗадач</catalogs>
   <catalogs>Catalog.cbr_ГруппыДоступаКЗадачам</catalogs>
@@ -189,6 +189,7 @@
   <dataProcessors>DataProcessor.cbr_ВводНачальныхНастроек</dataProcessors>
   <dataProcessors>DataProcessor.cbr_НастройкиБитрикс24</dataProcessors>
   <dataProcessors>DataProcessor.cbr_КанбанЛК</dataProcessors>
+  <dataProcessors>DataProcessor.cbr_ПервичнаяНастройкаКолонок</dataProcessors>
   <informationRegisters>InformationRegister.cbr_Б24_Настройки</informationRegisters>
   <informationRegisters>InformationRegister.cbr_Б24_СоответствиеЗадач</informationRegisters>
   <informationRegisters>InformationRegister.cbr_Б24_СоответствиеФайлов</informationRegisters>

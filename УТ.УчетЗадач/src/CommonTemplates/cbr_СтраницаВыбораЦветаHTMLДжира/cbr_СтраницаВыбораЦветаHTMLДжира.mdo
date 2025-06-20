@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a64e338-b965-490f-b8e4-def7feb61210">
-  <name>cbr_СтраницаВыбораЦветаHTML</name>
+  <name>cbr_СтраницаВыбораЦветаHTMLДжира</name>
   <synonym>
     <key>ru</key>
     <value>Страница выбора цвета HTML</value>

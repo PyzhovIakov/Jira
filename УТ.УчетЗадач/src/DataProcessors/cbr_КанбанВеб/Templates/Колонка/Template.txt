@@ -17,6 +17,7 @@
 	&КнопкаВПраво	
 	</div>
 	<div class="tasks">
+		<div class="tasks-strike"></div>
 		&Задачи
 	</div>
 </div>
