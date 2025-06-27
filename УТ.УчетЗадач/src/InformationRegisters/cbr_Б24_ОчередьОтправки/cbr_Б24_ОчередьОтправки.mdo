@@ -17,6 +17,24 @@
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="156959e3-165b-44ed-b99a-188f0f3fb333">
+    <name>КоличествоДействий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество действий</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="d9bd159d-d7ff-4386-ac9f-46b178ad0d46">
     <name>ОшибкаПриОтправке</name>
     <synonym>
