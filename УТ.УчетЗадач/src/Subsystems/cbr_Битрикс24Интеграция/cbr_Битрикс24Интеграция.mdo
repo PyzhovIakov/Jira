@@ -18,4 +18,6 @@
   <content>Enum.cbr_Б24_Действия</content>
   <content>InformationRegister.cbr_Б24_ОчередьОтправки</content>
   <content>ScheduledJob.cbr_ОтправкаДанныхВБитрикс24</content>
+  <content>InformationRegister.cbr_СоответствиеПользователейДляИнтеграций</content>
+  <content>InformationRegister.cbr_ПользователиБитрикс</content>
 </mdclass:Subsystem>

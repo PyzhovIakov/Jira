@@ -25,6 +25,7 @@
     </synonym>
     <type>
       <types>EnumRef.cbr_Б24_Действия</types>
+      <types>CatalogRef.Пользователи</types>
       <types>ChartOfCharacteristicTypesRef.cbr_ВидыПользовательскихНастроек</types>
       <types>Boolean</types>
       <types>String</types>
