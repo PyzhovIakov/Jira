@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7646f34-8bc1-4d56-a0ab-92f5eca8411c">
+  <producedTypes>
+    <selectionType typeId="17a801c1-fe2a-4481-8796-3cd729c67d3c" valueTypeId="a7484b35-7d0b-49f6-8de9-c186dcdae427"/>
+    <listType typeId="fc63f35f-902f-47aa-a4bb-a0c1eb6aeae5" valueTypeId="74f73415-cee1-4825-b57a-a73805fad1c4"/>
+    <managerType typeId="5bf9e421-e33c-4576-897a-6d2ce0ccbac1" valueTypeId="3c16d11f-71fb-44bc-bde5-dbc2c59b9465"/>
+    <recordSetType typeId="48f2b15d-5e9a-4e19-b795-b336242e94d1" valueTypeId="f63645f6-e69a-44b2-acdd-ce557e995750"/>
+    <recordKeyType typeId="1ca5f43b-947c-4210-adab-bd12974e72cb" valueTypeId="aa690ed7-2aec-412f-bc3b-a8265c78fe57"/>
+    <recordType typeId="a6f02d8b-1b71-4a2b-9214-ee788c14e57b" valueTypeId="3e4ed042-6695-4811-b36c-23464a056bd1"/>
+    <recordManagerType typeId="7527f1a9-6072-43b5-9924-44dfce93d428" valueTypeId="de94dac4-97ea-493a-8c61-62f2ea4039ee"/>
+  </producedTypes>
+  <name>cbr_ПользователиБитрикс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пользователи битрикс</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="af42184f-c282-4cc6-b9e6-e2213d8b663c">
+    <name>ИДБитрикс</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИДБитрикс</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1dad271c-866a-4e84-8da7-b906d63989b3">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

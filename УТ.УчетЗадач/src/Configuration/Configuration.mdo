@@ -210,6 +210,7 @@
   <informationRegisters>InformationRegister.cbr_СобытияПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_СоответствиеПользователейДляИнтеграций</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ЗаданияКОтправкеСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.cbr_ПользователиБитрикс</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

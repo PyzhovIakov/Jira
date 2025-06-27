@@ -5,9 +5,9 @@
     <key>ru</key>
     <value>Отправка данных в Битрикс24</value>
   </synonym>
-  <methodName>CommonModule.cbr_Битрикс24.cbr_ОтправкаДанныхВБитрикс24</methodName>
+  <methodName>CommonModule.cbr_Битрикс24.ОтправкаДанныхВБитрикс24</methodName>
   <use>true</use>
   <predefined>true</predefined>
   <restartCountOnFailure>3</restartCountOnFailure>
-  <restartIntervalOnFailure>30</restartIntervalOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
 </mdclass:ScheduledJob>
