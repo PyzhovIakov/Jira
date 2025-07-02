@@ -94,6 +94,7 @@
   <roles>Role.cbr_СотрудникДжира</roles>
   <roles>Role.cbr_РуководительДжира</roles>
   <roles>Role.cbr_СотрудникЛКДжира</roles>
+  <roles>Role.cbr_МенеджерДжира</roles>
   <commonTemplates>CommonTemplate.cbr_СтраницаВыбораЦветаHTMLДжира</commonTemplates>
   <commonModules>CommonModule.cbr_ОбработкаПроверкиВыполненияЭтаповКонтроляВызовСервера</commonModules>
   <commonModules>CommonModule.cbr_ОбработчикиФормыЗадачиВызовСервера</commonModules>
