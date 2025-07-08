@@ -56,6 +56,8 @@
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряРабочийЦвет</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряСубботаЦвет</styleItems>
   <styleItems>StyleItem.НерабочийПериодПроизводственногоКалендаряФон</styleItems>
+  <styleItems>StyleItem.CRM_ОсновнойГолубой</styleItems>
+  <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <styles>Style.cbr_Календарь</styles>
   <commonPictures>CommonPicture.cbr_ЗаписьКалендаряОтклонена</commonPictures>
   <commonPictures>CommonPicture.cbr_ЗаписьКалендаряПодВопросом</commonPictures>
@@ -90,6 +92,12 @@
   <commonPictures>CommonPicture.cbr_КалендарьПодсистема</commonPictures>
   <commonPictures>CommonPicture.cbr_НСИ_УчетЗадач</commonPictures>
   <commonPictures>CommonPicture.cbr_Битрикс24</commonPictures>
+  <commonPictures>CommonPicture.CRM_ЦветаКатегорий</commonPictures>
+  <commonPictures>CommonPicture.СостоянияПользователей</commonPictures>
+  <commonPictures>CommonPicture.СостояниеПользователя14</commonPictures>
+  <commonPictures>CommonPicture.СостояниеПользователя13</commonPictures>
+  <commonPictures>CommonPicture.СостояниеПользователя15</commonPictures>
+  <commonPictures>CommonPicture.CRM_ПередатьДокумент24</commonPictures>
   <roles>Role.cbr_ПолныеПраваДжира</roles>
   <roles>Role.cbr_СотрудникДжира</roles>
   <roles>Role.cbr_РуководительДжира</roles>
@@ -123,6 +131,7 @@
   <definedTypes>DefinedType.ПрисоединенныйФайлОбъект</definedTypes>
   <definedTypes>DefinedType.ФизическоеЛицо</definedTypes>
   <definedTypes>DefinedType.Подразделение</definedTypes>
+  <definedTypes>DefinedType.КонтактВзаимодействия</definedTypes>
   <commonCommands>CommonCommand.ПрисоединенныеФайлы</commonCommands>
   <commandGroups>CommandGroup.cbr_Документы</commandGroups>
   <commandGroups>CommandGroup.cbr_Справочники</commandGroups>
@@ -137,6 +146,7 @@
   <commonForms>CommonForm.cbr_ИерархияЗадачОбщая</commonForms>
   <commonForms>CommonForm.cbr_КомментарииЗадач</commonForms>
   <commonForms>CommonForm.cbr_ФормаВыбораЦветаДжира</commonForms>
+  <commonForms>CommonForm.CRM_ПерсональныеНастройки</commonForms>
   <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.cbr_ВидыЗадач</catalogs>
   <catalogs>Catalog.cbr_ГруппыДоступаКЗадачам</catalogs>
@@ -162,6 +172,9 @@
   <catalogs>Catalog.cbr_ПричиныЗакрытияЗадач</catalogs>
   <catalogs>Catalog.cbr_КалендарьОписание</catalogs>
   <catalogs>Catalog.ФизическиеЛица</catalogs>
+  <catalogs>Catalog.CRM_ГруппыПолучателей</catalogs>
+  <catalogs>Catalog.CRM_КатегорииПользователей</catalogs>
+  <catalogs>Catalog.CRM_ВидыОповещений</catalogs>
   <documents>Document.cbr_Задача</documents>
   <documents>Document.cbr_ТрудозатратыПоЗадаче</documents>
   <enums>Enum.cbr_ВидыВопросов</enums>
@@ -180,6 +193,8 @@
   <enums>Enum.cbr_Б24_Настройки</enums>
   <enums>Enum.cbr_ПриоритетыЗадач</enums>
   <enums>Enum.cbr_Б24_Действия</enums>
+  <enums>Enum.ПорядокОтветовНаЗапросыУведомленийОПрочтении</enums>
+  <enums>Enum.CRM_ПериодичностьОповещений</enums>
   <reports>Report.cbr_ОтработанныеЧасыСотрудников</reports>
   <reports>Report.cbr_СтатистикаПоЗавершеннымЗадачам</reports>
   <reports>Report.cbr_СтатистикаОтклоненияЗадач</reports>
@@ -211,6 +226,8 @@
   <informationRegisters>InformationRegister.cbr_СобытияПоЗадачам</informationRegisters>
   <informationRegisters>InformationRegister.cbr_СоответствиеПользователейДляИнтеграций</informationRegisters>
   <informationRegisters>InformationRegister.cbr_ЗаданияКОтправкеСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.CRM_ИзбранныеПолучатели</informationRegisters>
+  <informationRegisters>InformationRegister.CRM_СоставыГруппПолучателей</informationRegisters>
   <accumulationRegisters>AccumulationRegister.cbr_ЧасыТрудозатрат</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.cbr_ВидыПользовательскихНастроек</chartsOfCharacteristicTypes>
 </mdclass:Configuration>
