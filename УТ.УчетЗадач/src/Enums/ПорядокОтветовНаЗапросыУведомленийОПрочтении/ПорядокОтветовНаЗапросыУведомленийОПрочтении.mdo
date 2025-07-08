@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="8b6e1cc4-fd36-4e8c-98f8-f74e329dbfbc">
+  <producedTypes>
+    <refType typeId="45448178-2f6b-4c81-b06e-f9fa1bbfcdc1" valueTypeId="7890e966-572e-4f05-aa05-ffd9f0a56988"/>
+    <listType typeId="f39fa031-ef64-46b7-add3-044b23afcceb" valueTypeId="43bacfbd-0a15-495f-be7d-018b09298c7d"/>
+    <managerType typeId="5de4b158-3946-4870-8615-fd9a4709cc06" valueTypeId="552c2af8-de47-43fe-ad9e-c991fef8f5d5"/>
+  </producedTypes>
+  <name>ПорядокОтветовНаЗапросыУведомленийОПрочтении</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension"/>
+  <useStandardCommands>true</useStandardCommands>
+  <enumValues uuid="0cf6c7b8-076c-4aa1-89fe-bbc9b77c4574">
+    <name>ВсегдаОтправлятьУведомление</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension"/>
+  </enumValues>
+  <enumValues uuid="874ad698-bac1-47b5-a80d-0cbe6c92b64c">
+    <name>НикогдаНеОтправлятьУведомление</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension"/>
+  </enumValues>
+  <enumValues uuid="fa6875cb-510f-47c2-b9da-54ae9e36ea14">
+    <name>ЗапрашиватьПередТемКакОтправитьУведомление</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension"/>
+  </enumValues>
+</mdclass:Enum>

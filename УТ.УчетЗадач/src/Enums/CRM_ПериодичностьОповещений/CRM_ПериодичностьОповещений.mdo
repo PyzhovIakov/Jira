@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="3a917f76-333f-4ecf-9a90-d6be42d6857d">
+  <producedTypes>
+    <refType typeId="1ea59aeb-0505-4ca5-822e-aeb5d5f794d2" valueTypeId="150c6cf4-ff0f-483b-8e5c-0b410f13fc2f"/>
+    <listType typeId="3deadda7-d57c-486a-a263-3953e77095c9" valueTypeId="958a6371-3283-4c08-80bb-9e14cbc65ca4"/>
+    <managerType typeId="18e09ce3-1e99-4c27-8a9b-0208056930ab" valueTypeId="52541ab3-71df-4a18-ac34-4d8f1b2f5db0"/>
+  </producedTypes>
+  <name>CRM_ПериодичностьОповещений</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension"/>
+</mdclass:Enum>

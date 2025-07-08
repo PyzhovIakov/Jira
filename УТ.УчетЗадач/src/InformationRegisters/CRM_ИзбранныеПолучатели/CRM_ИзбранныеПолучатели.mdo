@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="17a0313b-a90f-4db5-8129-82d31590fc21">
+  <producedTypes>
+    <selectionType typeId="baf63ab0-6c7b-44fe-b038-e746bfe38648" valueTypeId="9d8f7448-907b-4a36-8f80-1eb8bd225fc6"/>
+    <listType typeId="594feece-a089-438b-962c-5eab5abcaafd" valueTypeId="b1d0636e-3c1c-4720-9076-4bf2bd6b7be7"/>
+    <managerType typeId="45297c55-483b-4491-ac8c-045ec3e63921" valueTypeId="94c5acb1-ef82-49f4-8459-03aee09155bb"/>
+    <recordSetType typeId="d23782c4-c2e8-46ad-ad0f-fd79a6df9ee8" valueTypeId="44cd86a7-73f0-4d6e-8a26-08fc13bfca7d"/>
+    <recordKeyType typeId="45f9116c-b9a3-470f-9281-8d42b5c677a7" valueTypeId="e3ade7e7-164f-45b2-b669-0bf43a598fd5"/>
+    <recordType typeId="c7589c81-959f-45d5-95c5-bd80c854301e" valueTypeId="3210766a-7aa5-40f5-8c9f-454677b3305b"/>
+    <recordManagerType typeId="dfd5c1c0-53ac-4980-89dc-b4df0350e333" valueTypeId="774a7b89-81ff-458b-9026-7101564177e3"/>
+  </producedTypes>
+  <name>CRM_ИзбранныеПолучатели</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <dimensions uuid="bc60f892-41bb-46e6-afdf-e923a4df8812">
+    <name>Получатель</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Пользователи</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </dimensions>
+</mdclass:InformationRegister>

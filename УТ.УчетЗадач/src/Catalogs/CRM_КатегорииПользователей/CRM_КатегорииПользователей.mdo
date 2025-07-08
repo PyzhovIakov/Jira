@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="fc1f26aa-8338-4997-8b37-24842d37b4d3">
+  <producedTypes>
+    <objectType typeId="217611be-e34b-4467-a2f8-c815799fdf9e" valueTypeId="b7d0bfea-c372-4352-8d75-adbfe70f6b9f"/>
+    <refType typeId="32802d92-2790-4dfd-8b75-d905a5e2f88a" valueTypeId="db58bb80-7dff-4bb7-9bfc-bb95fd07a844"/>
+    <selectionType typeId="ff874eb2-d690-4599-8530-6f6dee6c513b" valueTypeId="299f09ec-10e7-4d91-909d-7622e3982157"/>
+    <listType typeId="28d3a18f-caa6-40b8-993d-1283ad8e5354" valueTypeId="57fa11b4-71fe-4b4e-8663-cbc4e70625d5"/>
+    <managerType typeId="ac904475-afaa-4f54-9795-1400587597b4" valueTypeId="ddcafa48-bf81-4482-88fe-650a1c12a7b6"/>
+  </producedTypes>
+  <name>CRM_КатегорииПользователей</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension"/>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="3790a864-2321-4e36-b9a6-21dc4567e717">
+    <name>ЦветИндекс</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>2</precision>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+  </attributes>
+</mdclass:Catalog>
