@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0a84a71c-1e08-4bc7-9fe4-0c772b74a769">
+  <producedTypes>
+    <objectType typeId="da17de6b-bce9-462c-ac31-f45227808e5e" valueTypeId="6fb91a5a-cfe2-4f16-83f1-73d7848df675"/>
+    <refType typeId="753bae56-96de-4171-8bbf-cd89b2601494" valueTypeId="b4b30c94-9fed-4e42-ab1a-e183c036cc68"/>
+    <selectionType typeId="63e1903f-2836-4643-8df4-28cff46266b1" valueTypeId="ad2a6cb6-69b1-49e1-b650-eca53d534ecd"/>
+    <listType typeId="a4e6d85a-2a03-4335-a362-fb2cf4091121" valueTypeId="57aefffe-53a8-4f57-a081-3967467cff9f"/>
+    <managerType typeId="e01a7958-f51d-446e-aad3-71db15a27823" valueTypeId="9bcef06d-333b-44a3-aa08-97cc5009a012"/>
+  </producedTypes>
+  <name>CRM_ГруппыПолучателей</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension"/>
+  <useStandardCommands>true</useStandardCommands>
+  <checkUnique>true</checkUnique>
+  <attributes uuid="c5542176-26a4-4cc9-bb64-d32d068b232a">
+    <name>Персональная</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+</mdclass:Catalog>

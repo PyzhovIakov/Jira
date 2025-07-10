@@ -19,11 +19,11 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <recordPresentation>
     <key>ru</key>
-    <value>Соответствие задачи</value>
+    <value>Соответствие файла</value>
   </recordPresentation>
   <listPresentation>
     <key>ru</key>
-    <value>Соответствие задач</value>
+    <value>Соответствие файлов</value>
   </listPresentation>
   <resources uuid="0b233fba-8d25-4deb-8842-790cf10a84a3">
     <name>АйДиФайлаБитрикс</name>
