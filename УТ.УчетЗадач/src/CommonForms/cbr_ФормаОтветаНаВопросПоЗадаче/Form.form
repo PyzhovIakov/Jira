@@ -878,6 +878,7 @@
         <valueType>
           <types>DocumentRef.cbr_Задача</types>
         </valueType>
+        <values xsi:type="core:UndefinedValue"/>
         <useRestriction>true</useRestriction>
       </parameters>
     </extInfo>

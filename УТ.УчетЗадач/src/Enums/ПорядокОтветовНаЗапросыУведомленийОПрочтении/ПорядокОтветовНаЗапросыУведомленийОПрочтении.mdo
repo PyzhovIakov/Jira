@@ -8,7 +8,6 @@
   <name>ПорядокОтветовНаЗапросыУведомленийОПрочтении</name>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:EnumExtension"/>
-  <useStandardCommands>true</useStandardCommands>
   <enumValues uuid="0cf6c7b8-076c-4aa1-89fe-bbc9b77c4574">
     <name>ВсегдаОтправлятьУведомление</name>
     <objectBelonging>Adopted</objectBelonging>

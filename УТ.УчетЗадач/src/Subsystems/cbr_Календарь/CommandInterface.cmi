@@ -7,23 +7,17 @@
         <common>true</common>
       </visible>
     </visibilityFragments>
-    <visibilityFragments>
-      <command>Catalog.cbr_Календарь.Command.ОткрытьКалендарь</command>
-      <visible/>
-    </visibilityFragments>
   </commandsVisibility>
   <commandsPlacement>
     <placementFragments>
       <group>NavigationPanelImportant</group>
       <commands>Catalog.cbr_Календарь.Command.ОткрытьДругиеКалендари</commands>
-      <commands>Catalog.cbr_Календарь.Command.ОткрытьКалендарь</commands>
     </placementFragments>
   </commandsPlacement>
   <commandsOrder>
     <orderFragments>
       <group>NavigationPanelImportant</group>
       <commands>Catalog.cbr_Календарь.Command.ОткрытьДругиеКалендари</commands>
-      <commands>Catalog.cbr_Календарь.Command.ОткрытьКалендарь</commands>
     </orderFragments>
   </commandsOrder>
 </cmi:CommandInterface>

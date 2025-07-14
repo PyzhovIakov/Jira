@@ -10,5 +10,4 @@
   <name>ФизическиеЛица</name>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:CatalogExtension"/>
-  <useStandardCommands>true</useStandardCommands>
 </mdclass:Catalog>

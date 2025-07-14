@@ -15,7 +15,6 @@
     <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
     <writeMode>Checked</writeMode>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <dimensions uuid="da08faec-aed0-4807-9ac9-49c6b6c5f607">
     <name>Получатель</name>
     <objectBelonging>Adopted</objectBelonging>

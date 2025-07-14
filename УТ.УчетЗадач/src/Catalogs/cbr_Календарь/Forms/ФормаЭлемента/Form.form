@@ -1158,9 +1158,6 @@
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <hyperlink>true</hyperlink>
-            <border xsi:type="core:BorderDef">
-              <width>1</width>
-            </border>
           </extInfo>
         </items>
         <visible>true</visible>
@@ -2643,6 +2640,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
+        <commandName>0</commandName>
         <representation>Picture</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>

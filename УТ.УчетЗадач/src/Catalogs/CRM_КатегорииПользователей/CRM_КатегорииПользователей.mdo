@@ -10,7 +10,6 @@
   <name>CRM_КатегорииПользователей</name>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:CatalogExtension"/>
-  <useStandardCommands>true</useStandardCommands>
   <attributes uuid="3790a864-2321-4e36-b9a6-21dc4567e717">
     <name>ЦветИндекс</name>
     <objectBelonging>Adopted</objectBelonging>
